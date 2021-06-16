@@ -278,3 +278,22 @@ function colorall()
 
     addref();
 }
+
+function clearall()
+{
+    var checkb = document.getElementsByTagName("input");
+    for(var i=0; i<checkb.length; i++)
+    {
+        var da;
+        if(checkb[i].type == 'checkbox')
+        {
+            checkb[i].checked = false;
+            da = checkb[i].id.replace("check_", "");
+        }
+        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(500);
+        d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(500);
+        d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(500);
+    }
+
+    addref();
+}

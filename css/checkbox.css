@@ -1,5 +1,5 @@
 .container {
-    /* display: block; */
+    display: inline;
     position: relative;
     padding-left: 3vh;
     /* margin-bottom: 12px; */
@@ -25,8 +25,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 3vh;
-    width: 3vh;
+    height: 2.5vh;
+    width: 2.5vh;
     background-color: #eee;
 }
 
@@ -58,21 +58,33 @@
 .container .checkmark:after {
     left: 0.45vw;
     top: 0.4vh;
-    width: 0.3vw;
-    height: 1.2vh;
+    width: 0.2vw;
+    height: 1.0vh;
     border: solid white;
-    border-width: 0 0.6vh 0.6vh 0;
+    border-width: 0 0.5vh 0.5vh 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
+table {
+  border-collapse: collapse;
+}
 tr {
     height: 4vh;
+    border: 0;
+    margin: 0;
+}
+tr:hover {
+    background-color: #eee;
+    transition: background-color 0.3s;
 }
 
 td {
-    padding-left: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border: 0;
+    margin: 0;
 }
 
 .colorpicker {
@@ -126,3 +138,4 @@ select {
     cursor: pointer;
     font-size: 1.1vw;
 }
+
