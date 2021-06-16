@@ -1,22 +1,12 @@
-// generate random data with d3 range and map
-// var data = d3.range(40).map(function(i) {
-//   return {
-//     x: i + 1,
-//     // generate a random value between 40 and 60
-//     y: d3.randomUniform(40, 60)(), 
-//     // generate a random interval between 1 and 5
-//     e: d3.randomUniform(1, 5)()
-//   };
-// });
 
 var width = document.documentElement.clientWidth/2.2,
-    height = document.documentElement.clientWidth/3.2;
+    height = document.documentElement.clientWidth/3.;
 // height = document.documentElement.clientHeight/2;
 
 var svg = d3.select('svg').attr('width', width).attr('height', height);
 // d3.select('svg').style("font-size", "50px");
 
-var margin = { top: height*0.01, right: width*0.05, bottom: height*0.12, left: width*0.12 },
+var margin = { top: height*0.2, right: width*0.05, bottom: height*0.12, left: width*0.12 },
     chartWidth = width - margin.left - margin.right,
     chartHeight = height - margin.top - margin.bottom;
 
@@ -156,13 +146,13 @@ var draw = function()
     d3.selectAll("svg > *").remove();
     setsvg();
 
-    var obs = document.getElementById('observable').innerText;
+    var obs = document.getElementById('observable').value;
 
     for(var da in dataset)
     {
         // console.log(da);
         var thisitem = dataset[da];
-        if(thisitem.observable != obs) continue;
+        if(thisitem.observable !== obs) { continue; }
         if(document.getElementById('check_'+da).checked == true)
             addData(thisitem.data, document.getElementById('color_'+da).value, 20);
     }
