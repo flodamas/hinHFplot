@@ -38,7 +38,7 @@ function loaditem()
         icheck.id = "check_" + da;
         // icheck.checked = true;
         itchecklabel.appendChild(icheck);
-        icheck.setAttribute('onchange', 'draw()');
+        icheck.setAttribute('onchange', "draw('"+da+"')");
         var icheckspan = document.createElement("span");
         icheckspan.setAttribute('class', 'checkmark');
         itchecklabel.appendChild(icheckspan);
@@ -76,7 +76,7 @@ function loaditem()
         icolor.id = "color_" + da;
         icolor.value = "#" + Math.floor(Math.random()*16777215).toString(16);
         icolor.setAttribute('class', 'colorpicker');
-        icolor.setAttribute('onchange', "draw()");
+        icolor.setAttribute('onchange', "draw('" + da + "')");
         itcolor.appendChild(icolor);
 
     }

@@ -139,14 +139,15 @@ var drawaxisgrid = function()
     }
 }
 
-var addData = function(data, thecolor, kmarker) {
+var addData = function(da, data, thecolor, kmarker) {
     //     console.log(data);
     
-    var rects = d3.select("svg").select("g").selectAll('rect.systs')
+    // var rects = d3.select("svg").select("g").selectAll('rect')
+    var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
         .data(data);
     rects.enter()
         .append('rect')
-    // .attr('class', 'systs')
+        .attr('class', 'rectd3' + da)
         .merge(rects)
         .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
         .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
@@ -158,27 +159,27 @@ var addData = function(data, thecolor, kmarker) {
             if(high > chartWidth) { high = chartWidth; }
             if(high > low) { return (high - low); }
             else { return 0; }})
-
-        .transition().duration(300)
+        .transition().duration(1000)
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
-        .attr('stroke-width', '2px')
+        .attr('stroke-width', '1px')
         .attr('opacity', function(d) {
-            if(d.x > xmin && d.x < xmax) { return 0.25; }
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 0.25; }
             else { return 0; }
         });
 
-    var lines = d3.select("svg").select("g").selectAll('line.stats')
+    // var lines = d3.select("svg").select("g").selectAll('line')
+    var lines = d3.select("svg").select("g").selectAll('.lined3'+da)
         .data(data);
     lines.enter()
         .append('line')
-    // .attr('class', 'stats')
+        .attr('class', 'lined3' + da)
         .merge(lines)
         .attr('x1', function(d) { return x(d.x); })
         .attr('x2', function(d) { return x(d.x); })
         .attr('y1', function(d) { return y(Math.min(d.y + d.stath, ymax)); })
         .attr('y2', function(d) { return y(Math.max(d.y - d.statl, ymin)); })
-        .transition().duration(300)
+        .transition().duration(1000)
         .attr('stroke', thecolor)
         .attr('stroke-width', '2px')
         .attr('opacity', function(d) {
@@ -187,22 +188,23 @@ var addData = function(data, thecolor, kmarker) {
         });
     ;
 
-    var points = d3.select("svg").select("g").selectAll('marker.points')
+    // var points = d3.select("svg").select("g").selectAll('marker')
+    var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
         .data(data);
-    if(kmarker==20) { m20(points, thecolor); }
+    if(kmarker==20) { m20(da, points, thecolor); }
 };
 
-var m20 = function(point, thecolor)
+var m20 = function(da, point, thecolor)
 {
     point.enter()
         .append('circle')
-    // .attr('class', 'points')
+        .attr('class', 'pointd3' + da)
         .merge( point )
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
     // .attr('r', 4)
         .attr('r', width/120.)
-        .transition().duration(300)
+        .transition().duration(1000)
         .attr('fill', thecolor)
         .attr('opacity', function(d) {
             if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
@@ -210,7 +212,7 @@ var m20 = function(point, thecolor)
         });
 };
 
-var draw = function()
+var drawall = function()
 {
     d3.selectAll("svg > *").remove();
     setsvg();
@@ -222,6 +224,57 @@ var draw = function()
         var thisitem = dataset[da];
         if(thisitem.observable !== obs) { continue; }
         if(document.getElementById('check_'+da).checked == true)
-            addData(thisitem.data, document.getElementById('color_'+da).value, 20);
+            addData(da, thisitem.data, document.getElementById('color_'+da).value, 20);
     }
+    // document.getElementById('reference').style = 'opacity : 0;';
+    addref();
+}
+
+var draw = function(da)
+{
+    // d3.selectAll("svg > .d3_" + da).remove();
+
+    var ichecked = document.getElementById('check_'+da).checked;
+    if(ichecked)
+    {
+        d3.select("svg").select("g").selectAll('.rectd3'+da).remove();
+        d3.select("svg").select("g").selectAll('.lined3'+da).remove();
+        d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
+
+        var thisitem = dataset[da];
+        addData(da, thisitem.data, document.getElementById('color_'+da).value, 20);
+    }
+    else
+    {
+        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(1000);
+        d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(1000);
+        d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(1000);
+    }
+    // setsvg();
+
+    addref();
+}
+
+function colorall()
+{
+    var colorb = document.getElementsByTagName("input");
+    for(var i=0; i<colorb.length; i++)
+    {
+        if(colorb[i].type == 'color')
+        {
+            var da = colorb[i].id.replace("color_", "");
+            var cc = Math.floor(Math.random()*16777215).toString(16);
+            if(cc.length < 6)
+            { for(var ic = 0; ic<(6-cc.length); ic++) { cc = '0' + cc; } }
+            cc = '#' + cc;
+            colorb[i].value = cc;
+            // console.log(cc)
+            d3.select("svg").select("g").selectAll('.rectd3'+da).attr('fill', cc);
+            d3.select("svg").select("g").selectAll('.rectd3'+da).attr('stroke', cc);
+            d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(500);
+            d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(500);
+        }
+    }
+
+    addref();
 }

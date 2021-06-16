@@ -134,9 +134,10 @@ p {
 #rightpad {
     height: var(--height-body);
     width: var(--width-rightrange);
-    position: fixed;
+    /* position: fixed; */
     margin-left: 0;
     margin-top: var(--height-list-title);
+    padding-bottom: 3vh;
     border: none;
     overflow: auto;
     display: block;
@@ -190,3 +191,34 @@ p {
     /* width: 2px; */
     stroke-width: 1.5px;
 }
+
+/* #divreference { */
+/*     columns: 3; */
+/* } */
+
+#reference {
+    padding-right: 2vw;
+    /* columns: 3; */
+    -webkit-columns: 3;
+    /* -moz-columns: 3; */
+    overflow: auto;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#divreference {
+    overflow: auto;
+    /* padding: 0.8vh 0.8vh 0.8vh 0.8vh; */
+}
+
+li {
+    margin-bottom: 1vh;
+}
+
+.liref {
+    text-decoration: none;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+
+

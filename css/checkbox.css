@@ -38,7 +38,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #1f77b4;
     transition: background-color 0.5s;
 }
 
@@ -100,7 +100,7 @@ button {
 
 button:hover {
     /* opacity: 1.0;     */
-    background-color: #2196F3;
+    background-color: #1f77b4;
     color: white;
     transition: background-color 0.5s;
     transition: color 0.3s;
