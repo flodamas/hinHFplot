@@ -38,6 +38,7 @@ function loaditem()
         icheck.id = "check_" + da;
         // icheck.checked = true;
         itchecklabel.appendChild(icheck);
+        icheck.setAttribute('onchange', 'draw()');
         var icheckspan = document.createElement("span");
         icheckspan.setAttribute('class', 'checkmark');
         itchecklabel.appendChild(icheckspan);

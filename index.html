@@ -30,30 +30,31 @@
       <div id="setup">
         <div>
           Observable: 
-          <select id="observable" onchange="loaditem()">
+          <select id="observable" onchange="defaultrange(); loaditem()">
+            <option value="RAA" selected="selected">RAA</option>
             <option value="v2">v2</option>
-            <option value="RAA">RAA</option>
             <option value="LcD0">Lc/D0</option>
           </select>
           vs.
-          <select id="xvariable" onchange="loaditem()">
+          <select id="xvariable" onchange="defaultrange(); loaditem()">
             <option value="pT (GeV/c)">pT</option>
           </select>          
         </div>
         <div>X-axis range:
-          <input type="number" id="pxmin" name="pxmin" min="0" max="100" step="0.1" value="0" class="numberinput">
+          <input type="number" id="pxmin" name="pxmin" min="0" max="100" step="0.1" value="0" class="numberinput" onchange="draw()">
           <p> - </p>
-          <input type="number" id="pxmax" name="pxmax" min="0" max="100" step="0.1" value="40" class="numberinput">
+          <input type="number" id="pxmax" name="pxmax" min="0" max="100" step="0.1" value="40" class="numberinput" onchange="draw()">
+          <!-- <button type="submit" onclick="draw()">Draw</button> -->
         </div>
         <div>Y-axis range:
-          <input type="number" id="pymin" name="pymin" min="-0.2" max="2" step="0.1" value="-0.03" class="numberinput">
+          <input type="number" id="pymin" name="pymin" min="-0.2" max="2" step="0.1" value="-0.03" class="numberinput" onchange="draw()">
           <p> - </p>
-          <input type="number" id="pymax" name="pymax" min="-0.2" max="2" step="0.1" value="0.27" class="numberinput">
+          <input type="number" id="pymax" name="pymax" min="-0.2" max="2" step="0.1" value="0.27" class="numberinput" onchange="draw()">
         </div>
         <div>
           <button type="submit" onclick="selectall()">Select all</button>
           <button type="submit" onclick="clearall()">Clear all</button>
-          <button type="submit" onclick="draw()">Draw</button>
+          <!-- <button type="submit" onclick="draw()">Draw</button> -->
           <button type="submit" onclick="colorall();draw();">Random color</button>
         </div>
       </div>
@@ -63,6 +64,7 @@
       </div>
       <script src="js/loaditem.js"></script>
       <script src="js/general.js"></script>
+      <script>defaultrange()</script>
       <script>loaditem()</script>
     </div>
     <!-- <script>loadtoc()</script> -->

@@ -166,26 +166,3 @@ var draw = function()
             addData(thisitem.data, document.getElementById('color_'+da).value, 20);
     }
 }
-
-// resize
-// window.onresize = function() {
-//     width = document.documentElement.clientWidth;
-//     height = document.documentElement.clientHeight;
-
-//     svg.attr('width', width).attr('height', height)
-
-//     chartWidth = width - margin.left - margin.right;
-//     chartHeight = height - margin.top - margin.bottom;
-
-//     x.range([0, chartWidth]);
-//     y.range([chartHeight, 0]);
-
-//     xAxis
-//         .attr('transform', 'translate(0,' + chartHeight + ')')
-//         .call( d3.axisBottom(x) );
-//     yAxis.call( d3.axisLeft(y) );
-
-//     addData();
-// };
-
-
