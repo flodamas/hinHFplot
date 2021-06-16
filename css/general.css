@@ -4,6 +4,7 @@ html{
     height: 100%;
     width: 100%;
     font-family: Tahoma, sans-serif;
+    transition-timing-function: linear;
 }
 
 /* colors */
@@ -192,18 +193,15 @@ p {
     stroke-width: 1.5px;
 }
 
-/* #divreference { */
-/*     columns: 3; */
-/* } */
-
 #reference {
     padding-right: 2vw;
-    /* columns: 3; */
+    columns: 3;
     -webkit-columns: 3;
-    /* -moz-columns: 3; */
+    -moz-columns: 3;
     overflow: auto;
     opacity: 0;
     transition: opacity 2s;
+    list-style-type: square;
 }
 
 #divreference {

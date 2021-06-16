@@ -1,7 +1,6 @@
 
 var width = document.documentElement.clientWidth/2.4,
     height = document.documentElement.clientWidth/3.;
-// height = document.documentElement.clientHeight/2;
 
 var svg = d3.select('svg').attr('width', width).attr('height', height);
 // d3.select('svg').style("font-size", "50px");
@@ -38,6 +37,7 @@ var setsvg = function()
     var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
     setscale();
     drawaxisgrid();
+    drawvline();
 }
 
 // axes
@@ -139,10 +139,47 @@ var drawaxisgrid = function()
     }
 }
 
+var drawvline = function() {
+    var obs = document.getElementById('observable').value;
+    var vy = 0;
+    if(obs == "RAA") vy = 1;
+    else if(obs == "LcD0") vy = -10;
+
+    if(vy > ymin && vy < ymax)
+    {
+        var vline = d3.select("svg").select("g")
+            .append('line')
+            .attr('id', 'vline')
+            .attr('x1', function() { return x(xmin); })
+            .attr('x2', function() { return x(xmax); })
+            .attr('y1', function() { return y(vy); })
+            .attr('y2', function() { return y(vy); })
+            .transition().duration(1000)
+            .attr('stroke', 'black')
+            .attr('stroke-width', '2px')
+            .attr('stroke-dasharray', '5,3')
+            .attr('opacity', '0');
+    }
+    document.getElementById('btnvline').value = 0;
+}
+
+var vlineopacity = function() {
+    var vline = d3.select("svg").select("g").select('#vline');
+    if(document.getElementById('btnvline').value == 1)
+    {
+        vline.attr('opacity', '0').transition().duration(2000);
+        document.getElementById('btnvline').value = 0;
+    }
+    else
+    {
+        vline.attr('opacity', '1').transition().duration(2000);
+        document.getElementById('btnvline').value = 1;
+    }
+}
+
+
 var addData = function(da, data, thecolor, kmarker) {
-    //     console.log(data);
-    
-    // var rects = d3.select("svg").select("g").selectAll('rect')
+
     var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
         .data(data);
     rects.enter()
@@ -168,7 +205,6 @@ var addData = function(da, data, thecolor, kmarker) {
             else { return 0; }
         });
 
-    // var lines = d3.select("svg").select("g").selectAll('line')
     var lines = d3.select("svg").select("g").selectAll('.lined3'+da)
         .data(data);
     lines.enter()
@@ -188,7 +224,6 @@ var addData = function(da, data, thecolor, kmarker) {
         });
     ;
 
-    // var points = d3.select("svg").select("g").selectAll('marker')
     var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
         .data(data);
     if(kmarker==20) { m20(da, points, thecolor); }
@@ -202,7 +237,6 @@ var m20 = function(da, point, thecolor)
         .merge( point )
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
-    // .attr('r', 4)
         .attr('r', width/120.)
         .transition().duration(1000)
         .attr('fill', thecolor)
@@ -218,11 +252,12 @@ var drawall = function()
     setsvg();
 
     var obs = document.getElementById('observable').value;
+    var xvar = document.getElementById('xvariable').value;
 
     for(var da in dataset)
     {
         var thisitem = dataset[da];
-        if(thisitem.observable !== obs) { continue; }
+        if(thisitem.observable !== obs || thisitem.xtitle != xvar) { continue; }
         if(document.getElementById('check_'+da).checked == true)
             addData(da, thisitem.data, document.getElementById('color_'+da).value, 20);
     }
@@ -250,8 +285,6 @@ var draw = function(da)
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(1000);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(1000);
     }
-    // setsvg();
-
     addref();
 }
 
@@ -268,7 +301,6 @@ function colorall()
             { for(var ic = 0; ic<(6-cc.length); ic++) { cc = '0' + cc; } }
             cc = '#' + cc;
             colorb[i].value = cc;
-            // console.log(cc)
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('fill', cc);
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('stroke', cc);
             d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(500);
