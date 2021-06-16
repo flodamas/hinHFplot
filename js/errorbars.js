@@ -88,7 +88,7 @@ var addData = function(data, thecolor, kmarker) {
     // .attr('class', 'systs')
         .merge(rects)
         .attr('x', function(d) { return x(d.x) - chartWidth/80.; }) // box width = chartwidth/40.?
-        .attr('y', function(d) { return y(d.y + d.systh); })
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
     // .attr('height', function(d) { return y(d.y - d.systl) - y(d.y + d.systh); })
         .attr('height', function(d) { return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax)); })
         .attr('width', function(d) {
@@ -145,7 +145,7 @@ var m20 = function(point, thecolor)
         .transition().duration(300)
         .attr('fill', thecolor)
         .attr('opacity', function(d) {
-            if(d.x > xmin && d.x < xmax) { return 1; }
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
             else { return 0; }
         });
 };
