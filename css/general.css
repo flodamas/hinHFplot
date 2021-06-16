@@ -165,7 +165,7 @@ p {
 }
 
 .axis {
-    font: 1.5vw sans-serif;
+    font: 1.3vw sans-serif;
 }
 .axis path,
 .axis line {
@@ -188,4 +188,3 @@ p {
     /* width: 2px; */
     stroke-width: 1.5px;
 }
-

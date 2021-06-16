@@ -33,11 +33,13 @@
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
     background-color: #ccc;
+    transition: background-color 0.5s;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
     background-color: #2196F3;
+    transition: background-color 0.5s;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -94,14 +96,14 @@ button {
     cursor: pointer;
     /* height: 5vh; */
     /* opacity: 0.75; */
-    transition: background-color 0.3s;
-    transition: color 0.3s;
 }
 
 button:hover {
     /* opacity: 1.0;     */
     background-color: #2196F3;
     color: white;
+    transition: background-color 0.5s;
+    transition: color 0.3s;
 }
 
 input[type=number] {

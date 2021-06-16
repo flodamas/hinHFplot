@@ -1,12 +1,12 @@
 
-var width = document.documentElement.clientWidth/2.2,
+var width = document.documentElement.clientWidth/2.4,
     height = document.documentElement.clientWidth/3.;
 // height = document.documentElement.clientHeight/2;
 
 var svg = d3.select('svg').attr('width', width).attr('height', height);
 // d3.select('svg').style("font-size", "50px");
 
-var margin = { top: height*0.2, right: width*0.05, bottom: height*0.12, left: width*0.12 },
+var margin = { top: height*0.15, right: width*0.05, bottom: height*0.12, left: width*0.12 },
     chartWidth = width - margin.left - margin.right,
     chartHeight = height - margin.top - margin.bottom;
 
@@ -48,27 +48,33 @@ var drawaxisgrid = function()
     var xGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "grid")
+        // .transition().duration(300)
         .call( d3.axisBottom(x).tickSize(-chartHeight).ticks(ticksx).tickFormat("").tickSizeOuter(0) );
     var yGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "grid")
+        // .transition().duration(300)
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
 
     var xAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "axis")
+        // .transition().duration(300)
         .call( d3.axisBottom(x).tickSize(ticksize).ticks(ticksx).tickSizeOuter(0).tickPadding(10) );
     var yAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
+        // .transition().duration(300)
         .call( d3.axisLeft(y).tickSize(ticksize).ticks(ticksy).tickSizeOuter(0).tickPadding(6) );
     var xLine = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
+        // .transition().duration(300)
         .call( d3.axisBottom(x).tickFormat("").tickSize(0).ticks(ticksx).tickSizeOuter(0) );
     var yLine = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(' + chartWidth + ',0)')
         .attr("class", "axis")
+        // .transition().duration(300)
         .call( d3.axisLeft(y).tickFormat("").tickSize(0).ticks(ticksy).tickSizeOuter(0) );
 }
 
@@ -93,6 +99,7 @@ var addData = function(data, thecolor, kmarker) {
             if(high > low) { return (high - low); }
             else { return 0; }})
     // .attr('width', function(d) { return chartWidth/40.; })
+        .transition().duration(300)
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
         .attr('stroke-width', '2px')
@@ -111,6 +118,7 @@ var addData = function(data, thecolor, kmarker) {
         .attr('x2', function(d) { return x(d.x); })
         .attr('y1', function(d) { return y(Math.min(d.y + d.stath, ymax)); })
         .attr('y2', function(d) { return y(Math.max(d.y - d.statl, ymin)); })
+        .transition().duration(300)
         .attr('stroke', thecolor)
         .attr('stroke-width', '2px')
         .attr('opacity', function(d) {
@@ -133,7 +141,8 @@ var m20 = function(point, thecolor)
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
     // .attr('r', 4)
-        .attr('r', width/100.)
+        .attr('r', width/120.)
+        .transition().duration(300)
         .attr('fill', thecolor)
         .attr('opacity', function(d) {
             if(d.x > xmin && d.x < xmax) { return 1; }

@@ -22,3 +22,15 @@ function clearall()
         }
     }
 }
+
+function colorall()
+{
+    var colorb = document.getElementsByTagName("input");
+    for(var i=0; i<colorb.length; i++)
+    {
+        if(colorb[i].type == 'color')
+        {
+            colorb[i].value = "#" + Math.floor(Math.random()*16777215).toString(16);
+        }
+    }
+}
