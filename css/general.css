@@ -33,13 +33,16 @@ body {
     font-size: var(--size-font-default);
     background-color: white;
     color: var(--color-default);
-    text-align: center;
+    /* text-align: center; */
     border: none;
     margin: 0;
     padding: 0;
 }
 
-p { font-size: var(--size-font-default); }
+p {
+    font-size: var(--size-font-default);
+    display: inline;
+}
 
 #header {
     height: var(--height-header);
@@ -96,9 +99,6 @@ p { font-size: var(--size-font-default); }
     /* z-index: 220; */
 }
 
-.boldp {
-    color: #666666;
-}
 .linkp {
     color: var(--color-nico);
     text-decoration: none;
