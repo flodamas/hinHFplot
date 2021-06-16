@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/slider.css">
+  </head>
+  <title>Heavy Flavor Measurement Compilation</title>
+  <body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="datasets/dataset.js"></script>
+    <script data-main="js/errorbars.js" src="datasets/dataset.js"></script>
+    <div id="header">
+      <div id="title">
+        <div id="titletext">
+          Heavy Flavor Measurement Compilation
+        </div>
+      </div>
+    </div>
+
+    <div id="descholder">
+      <div id="desc">
+        <div id="desctext">
+          Apologize for any possible incorrect information.</div>
+      </div>
+    </div>
+
+    <div id="leftrange">
+      <div>X-axis range: <p id="pv2xmin"></p> - <p id="pv2xmax"></p></div>
+      <div id="v2slider" class="twoslides">
+        <input type="range" id="v2xmin" name="v2xmin" min="0" max="20" step="1" value="0" class="slidermin">
+        <input type="range" id="v2xmax" name="v2xmax" min="21" max="40" step="1" value="40" class="slidermax"> 
+      </div>
+      <output></output>
+      <script src="js/slider.js"></script>
+      <div id="datainput">
+        <input type="checkbox" id="ALICE_D0_v2_pt_30-50" name="ALICE_D0_v2_pt_30-50">
+        <label for="ALICE_D0_v2_pt_30-50">ALICE Prompt D0 v2 PbPb (Centrality 30-50%)</label><br>
+        <input type="checkbox" id="CMS_D0_v2_pt_30-50" name="CMS_D0_v2_pt_30-50">
+        <label for="CMS_D0_v2_pt_30-50">CMS Prompt D0 v2 PbPb (Centrality 30-50%)</label><br>
+      </div>
+      <div>
+        <button type="submit" onclick="draw()">Submit</button>
+      </div>
+    </div>
+    <!-- <script>loadtoc()</script> -->
+
+    <div id="rightrange">
+      <div id="ranlist">
+        <svg></svg>
+        <script src="js/errorbars.js"></script>
+        <script>setsvg()</script>
+      </div>
+    </div>
+
+    <div id="footercontainerright">
+      <div id="footerright">
+        Copyright © 2021 boundin
+      </div>
+    </div>
+
+  </body>
+</html>
