@@ -10,6 +10,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="datasets/dataset.js"></script>
     <script data-main="js/errorbars.js" src="datasets/dataset.js"></script>
+    <script data-main="js/loaditem.js" src="datasets/dataset.js"></script>
     <div id="header">
       <div id="title">
         <div id="titletext">
@@ -26,38 +27,53 @@
     </div>
 
     <div id="leftrange">
-      <div>X-axis range: <p id="pv2xmin"></p> - <p id="pv2xmax"></p></div>
-      <div id="v2slider" class="twoslides">
-        <input type="range" id="v2xmin" name="v2xmin" min="0" max="20" step="1" value="0" class="slidermin">
-        <input type="range" id="v2xmax" name="v2xmax" min="21" max="40" step="1" value="40" class="slidermax"> 
+      <p id="observable">v2</p>
+      <div>X-axis range:
+        <input type="number" id="pxmin" name="pxmin" min="0" max="100" step="0.1" value="0">
+        <p> - </p>
+        <input type="number" id="pxmax" name="pxmax" min="0" max="100" step="0.1" value="40">
       </div>
-      <output></output>
-      <script src="js/slider.js"></script>
-      <div id="datainput">
-        <input type="checkbox" id="ALICE_D0_v2_pt_30-50" name="ALICE_D0_v2_pt_30-50">
-        <label for="ALICE_D0_v2_pt_30-50">ALICE Prompt D0 v2 PbPb (Centrality 30-50%)</label><br>
-        <input type="checkbox" id="CMS_D0_v2_pt_30-50" name="CMS_D0_v2_pt_30-50">
-        <label for="CMS_D0_v2_pt_30-50">CMS Prompt D0 v2 PbPb (Centrality 30-50%)</label><br>
+      <div>Y-axis range:
+        <input type="number" id="pymin" name="pymin" min="-0.2" max="2" step="0.1" value="-0.03">
+        <p> - </p>
+        <input type="number" id="pymax" name="pymax" min="-0.2" max="2" step="0.1" value="0.27">
       </div>
-      <div>
-        <button type="submit" onclick="draw()">Submit</button>
-      </div>
-    </div>
-    <!-- <script>loadtoc()</script> -->
 
-    <div id="rightrange">
-      <div id="ranlist">
-        <svg></svg>
-        <script src="js/errorbars.js"></script>
-        <script>setsvg()</script>
-      </div>
+      <!-- <p id="pxmin"></p> - <p id="pxmax"></p></div> -->
+    <!-- <div id="xslider" class="twoslides"> -->
+      <!--   <input type="range" id="xmin" name="xmin" min="0" max="50" step="1" value="0" class="slidermin"> -->
+      <!--   <input type="range" id="xmax" name="xmax" min="51" max="100" step="1" value="100" class="slidermax">  -->
+      <!-- </div> -->
+    <!-- <script src="js/xslider.js"></script> -->
+    <!-- <div>Y-axis range: <p id="pymin"></p> - <p id="pymax"></p></div> -->
+    <!-- <div id="yslider" class="twoslides"> -->
+    <!--   <input type="range" id="ymin" name="ymin" min="-0.1" max="0.5" step="0.01" value="0" class="slidermin"> -->
+    <!--   <input type="range" id="ymax" name="ymax" min="0.51" max="1.2" step="0.01" value="1" class="slidermax">  -->
+    <!-- </div> -->
+    <script src="js/yslider.js"></script>
+    <div id="datainput">
     </div>
-
-    <div id="footercontainerright">
-      <div id="footerright">
-        Copyright © 2021 boundin
-      </div>
+    <script src="js/loaditem.js"></script>
+    <script>loaditem()</script>
+    <div>
+      <button type="submit" onclick="draw()">Submit</button>
     </div>
+</div>
+<!-- <script>loadtoc()</script> -->
 
-  </body>
+<div id="rightrange">
+  <div id="ranlist">
+    <svg></svg>
+    <script src="js/errorbars.js"></script>
+    <script>setsvg()</script>
+  </div>
+</div>
+
+<div id="footercontainerright">
+  <div id="footerright">
+    Copyright © 2021 boundin
+  </div>
+</div>
+
+</body>
 </html>

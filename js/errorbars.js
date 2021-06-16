@@ -25,9 +25,15 @@ var x, y;
 
 var setscale = function()
 {
-    xmin = document.getElementById('pv2xmin').innerText;
-    xmax = document.getElementById('pv2xmax').innerText;
-    ymin = -0.03, ymax = 0.27;
+    xmin = Math.min(document.getElementById('pxmin').value,
+                    document.getElementById('pxmax').value);
+    xmax = Math.max(document.getElementById('pxmin').value,
+                    document.getElementById('pxmax').value);
+    ymin = Math.min(document.getElementById('pymin').value,
+                    document.getElementById('pymax').value);
+    ymax = Math.max(document.getElementById('pymin').value,
+                    document.getElementById('pymax').value);
+
     x = d3.scaleLinear()
         .range([0, chartWidth])
         .domain([xmin, xmax]);
@@ -96,7 +102,7 @@ var addData = function(data, thecolor, kmarker) {
             if(high > chartWidth) { high = chartWidth; }
             if(high > low) { return (high - low); }
             else { return 0; }})
-        // .attr('width', function(d) { return chartWidth/40.; })
+    // .attr('width', function(d) { return chartWidth/40.; })
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
         .attr('stroke-width', '2px')
@@ -149,13 +155,17 @@ var draw = function()
 {
     d3.selectAll("svg > *").remove();
     setsvg();
-    if(document.getElementById('ALICE_D0_v2_pt_30-50').checked == true)
-        addData(dataset["ALICE_D0_v2_pt_30-50"].data, '#EAAD31', 20);
-    if(document.getElementById('CMS_D0_v2_pt_30-50').checked ==true)
-        addData(dataset["CMS_D0_v2_pt_30-50"].data, '#CF5959', 20);
-    // addData(dataset["ATLAS_bm_v2_pt_30-40"].data, '#2D6BB4', 20);
-    // // addData(dataset["CMS_upsilon1S_v2_pt_30-50"].data, '#329FAE', 20);
-    // addData(dataset["ALICE_Jpsi_v2_pt_30-50_fwd"].data, '#89AF4B', 20);
+
+    var obs = document.getElementById('observable').innerText;
+
+    for(var da in dataset)
+    {
+        // console.log(da);
+        var thisitem = dataset[da];
+        if(thisitem.observable != obs) continue;
+        if(document.getElementById('check_'+da).checked == true)
+            addData(thisitem.data, document.getElementById('color_'+da).value, 20);
+    }
 }
 
 // resize
