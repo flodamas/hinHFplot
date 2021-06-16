@@ -30,14 +30,14 @@
       <div id="setup">
         <div>
           Observable: 
-          <select id="observable" onchange="defaultrange(); loaditem()">
+          <select id="observable" onchange="defaultrange(); loaditem(); draw()">
             <option value="RAA" selected="selected">RAA</option>
             <option value="v2">v2</option>
             <option value="LcD0">Lc/D0</option>
           </select>
           vs.
-          <select id="xvariable" onchange="defaultrange(); loaditem()">
-            <option value="pT (GeV/c)">pT</option>
+          <select id="xvariable" onchange="defaultrange(); loaditem(); draw()">
+            <option value="pT">pT</option>
           </select>          
         </div>
         <div>X-axis range:

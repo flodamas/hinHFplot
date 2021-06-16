@@ -3,7 +3,7 @@ var dataset = {};
 dataset["ALICE_D0_v2_pt_30-50"] = {
     reference : "PLB 813 (2021) 136054",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "Prompt D0",
     collision : "PbPb",
     energy : "5 TeV",
@@ -30,7 +30,7 @@ dataset["ALICE_D0_v2_pt_30-50"] = {
 dataset["ALICE_D_RAA_pt_0-10"] = {
     reference : "Preliminary",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "Prompt D",
     collision : "PbPb",
     energy : "5 TeV",
@@ -67,7 +67,7 @@ dataset["ALICE_D_RAA_pt_0-10"] = {
 dataset["ALICE_Jpsi_v2_pt_30-50_fwd"] = {
     reference : "JHEP 10 (2020) 141",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "J/ψ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -92,7 +92,7 @@ dataset["ALICE_Jpsi_v2_pt_30-50_fwd"] = {
 dataset["ALICE_Jpsi_v2_pt_30-50_mid"] = {
     reference : "JHEP 10 (2020) 141",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "J/ψ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -109,7 +109,7 @@ dataset["ALICE_Jpsi_v2_pt_30-50_mid"] = {
 dataset["ALICE_be_RAA_pt_0-10"] = {
     reference : "Preliminary",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)e",
     collision : "PbPb",
     energy : "5 TeV",
@@ -137,7 +137,7 @@ dataset["ALICE_be_RAA_pt_0-10"] = {
 dataset["ALICE_be_v2_pt_30-50"] = {
     reference : "arXiv:2005.11130",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)e",
     collision : "PbPb",
     energy : "5 TeV",
@@ -158,7 +158,7 @@ dataset["ALICE_be_v2_pt_30-50"] = {
 dataset["ALICE_npD_RAA_pt_0-10"] = {
     reference : "Preliminary",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)D0",
     collision : "PbPb",
     energy : "5 TeV",
@@ -184,7 +184,7 @@ dataset["ALICE_npD_RAA_pt_0-10"] = {
 dataset["ATLAS_bm_RAA_pt_0-10"] = {
     reference : "Preliminary",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)μ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -211,7 +211,7 @@ dataset["ATLAS_bm_RAA_pt_0-10"] = {
 dataset["ATLAS_bm_v2_pt_30-40"] = {
     reference : "PLB 807 (2020) 135595",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)μ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -237,7 +237,7 @@ dataset["ATLAS_bm_v2_pt_30-40"] = {
 dataset["ATLAS_cm_RAA_pt_0-10"] = {
     reference : "Preliminary",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(c→)μ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -264,7 +264,7 @@ dataset["ATLAS_cm_RAA_pt_0-10"] = {
 dataset["ATLAS_cm_v2_pt_30-40"] = {
     reference : "PLB 807 (2020) 135595",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(c→)μ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -290,7 +290,7 @@ dataset["ATLAS_cm_v2_pt_30-40"] = {
 dataset["CMS_Bp_RAA_pt_0-100"] = {
     reference : "PRL 119 (2017) 152301",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "B+",
     collision : "PbPb",
     energy : "5 TeV",
@@ -310,7 +310,7 @@ dataset["CMS_Bp_RAA_pt_0-100"] = {
 dataset["CMS_D0_RAA_pt_0-10"] = {
     reference : "PLB 782 (2018) 474",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "Prompt D0",
     collision : "PbPb",
     energy : "5 TeV",
@@ -339,7 +339,7 @@ dataset["CMS_D0_RAA_pt_0-10"] = {
 dataset["CMS_D0_v2_pt_30-50"] = {
     reference : "PLB 816 (2021) 136253",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "Prompt D0",
     collision : "PbPb",
     energy : "5 TeV",
@@ -373,7 +373,7 @@ dataset["CMS_D0_v2_pt_30-50"] = {
 dataset["CMS_npD_RAA_pt_0-100"] = {
     reference : "PRL 123 (2019) 022001",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)D0",
     collision : "PbPb",
     energy : "5 TeV",
@@ -400,7 +400,7 @@ dataset["CMS_npD_RAA_pt_0-100"] = {
 dataset["CMS_npJpsi_RAA_pt_0-10"] = {
     reference : "EPJC 78 (2018) 509",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)J/ψ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -423,7 +423,7 @@ dataset["CMS_npJpsi_RAA_pt_0-10"] = {
 dataset["CMS_npJpsi_RAA_pt_0-100"] = {
     reference : "EPJC 78 (2018) 509",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)J/ψ",
     collision : "PbPb",
     energy : "5 TeV",
@@ -453,7 +453,7 @@ dataset["CMS_npJpsi_RAA_pt_0-100"] = {
 dataset["CMS_upsilon1S_v2_pt_30-50"] = {
     reference : "arXiv:2006.07707",
     observable : "v2",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "Υ(1S)",
     collision : "PbPb",
     energy : "5 TeV",
@@ -472,7 +472,7 @@ dataset["CMS_upsilon1S_v2_pt_30-50"] = {
 dataset["STAR_D0_RAA_pt_0-10"] = {
     reference : "PRC 99 (2019) 034908",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "Prompt D0",
     collision : "PbPb",
     energy : "200 GeV",
@@ -498,7 +498,7 @@ dataset["STAR_D0_RAA_pt_0-10"] = {
 dataset["STAR_be_RAA_pt_0-80"] = {
     reference : "Preliminary",
     observable : "RAA",
-    xtitle : "pT (GeV/c)",
+    xtitle : "pT",
     particle : "(b→)e",
     collision : "PbPb",
     energy : "200 GeV",

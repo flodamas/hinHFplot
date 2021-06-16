@@ -6,7 +6,7 @@ var width = document.documentElement.clientWidth/2.4,
 var svg = d3.select('svg').attr('width', width).attr('height', height);
 // d3.select('svg').style("font-size", "50px");
 
-var margin = { top: height*0.15, right: width*0.05, bottom: height*0.12, left: width*0.12 },
+var margin = { top: height*0.15, right: width*0.05, bottom: height*0.12, left: width*0.13 },
     chartWidth = width - margin.left - margin.right,
     chartHeight = height - margin.top - margin.bottom;
 
@@ -48,34 +48,95 @@ var drawaxisgrid = function()
     var xGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "grid")
-        // .transition().duration(300)
         .call( d3.axisBottom(x).tickSize(-chartHeight).ticks(ticksx).tickFormat("").tickSizeOuter(0) );
     var yGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "grid")
-        // .transition().duration(300)
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
 
     var xAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "axis")
-        // .transition().duration(300)
         .call( d3.axisBottom(x).tickSize(ticksize).ticks(ticksx).tickSizeOuter(0).tickPadding(10) );
     var yAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
-        // .transition().duration(300)
         .call( d3.axisLeft(y).tickSize(ticksize).ticks(ticksy).tickSizeOuter(0).tickPadding(6) );
     var xLine = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
-        // .transition().duration(300)
         .call( d3.axisBottom(x).tickFormat("").tickSize(0).ticks(ticksx).tickSizeOuter(0) );
     var yLine = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(' + chartWidth + ',0)')
         .attr("class", "axis")
-        // .transition().duration(300)
         .call( d3.axisLeft(y).tickFormat("").tickSize(0).ticks(ticksy).tickSizeOuter(0) );
+
+    var xtitle = svg.append("text")             
+        .attr("transform",
+              "translate(" + (chartWidth/2. + margin.left) + " ," + 
+              (chartHeight + margin.top + margin.bottom/1.25) + ")")
+        .style("text-anchor", "middle")
+        .style("font", "1.3em sans-serif")
+    // .text(document.getElementById('xvariable').value);
+    if(document.getElementById('xvariable').value === "pT")
+    {
+        xtitle.append('tspan')
+            .text('p')
+            .style('font', '1.1em sans-serif')
+        xtitle.append('tspan')
+            .text('T')
+            .style('font', '0.6em sans-serif')
+            .attr('baseline-shift', 'sub')
+        xtitle.append('tspan')
+            .text(' (GeV/c)')
+            .style('font', '1.1em sans-serif')
+    }
+
+    var ytitle = svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0)
+        .attr("x", 0 - (margin.bottom + chartHeight / 2.))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .style("font", "1.1em sans-serif")
+
+    if(document.getElementById('observable').value === "RAA")
+    {
+        ytitle.append('tspan')
+            .text('R')
+            .style('font', '1.3em sans-serif')
+        ytitle.append('tspan')
+            .text('AA')
+            .style('font', '0.8em sans-serif')
+            .attr('baseline-shift', 'sub')
+    }
+    else if(document.getElementById('observable').value === "v2")
+    {
+        ytitle.append('tspan')
+            .text('v')
+            .style('font', '1.3em sans-serif')
+        ytitle.append('tspan')
+            .text('2')
+            .style('font', '0.8em sans-serif')
+            .attr('baseline-shift', 'sub')
+    }
+    else if(document.getElementById('observable').value === "LcD0")
+    {
+        ytitle.append('tspan')
+            .text('L')
+            .style('font', '1.3em sans-serif')
+        ytitle.append('tspan')
+            .text('c')
+            .style('font', '0.8em sans-serif')
+            .attr('baseline-shift', 'sub')
+        ytitle.append('tspan')
+            .text(' / D')
+            .style('font', '1.3em sans-serif')
+        ytitle.append('tspan')
+            .text('0')
+            .style('font', '0.8em sans-serif')
+            .attr('baseline-shift', 'super')
+    }
 }
 
 var addData = function(data, thecolor, kmarker) {
@@ -87,9 +148,8 @@ var addData = function(data, thecolor, kmarker) {
         .append('rect')
     // .attr('class', 'systs')
         .merge(rects)
-        .attr('x', function(d) { return x(d.x) - chartWidth/80.; }) // box width = chartwidth/40.?
+        .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
         .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
-    // .attr('height', function(d) { return y(d.y - d.systl) - y(d.y + d.systh); })
         .attr('height', function(d) { return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax)); })
         .attr('width', function(d) {
             var low = x(d.x) - chartWidth/80.;
@@ -98,7 +158,7 @@ var addData = function(data, thecolor, kmarker) {
             if(high > chartWidth) { high = chartWidth; }
             if(high > low) { return (high - low); }
             else { return 0; }})
-    // .attr('width', function(d) { return chartWidth/40.; })
+
         .transition().duration(300)
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
@@ -122,7 +182,7 @@ var addData = function(data, thecolor, kmarker) {
         .attr('stroke', thecolor)
         .attr('stroke-width', '2px')
         .attr('opacity', function(d) {
-	    if(d.x > xmin && d.x < xmax) { return 1; }
+	    if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
             else { return 0; }
         });
     ;
@@ -159,7 +219,6 @@ var draw = function()
 
     for(var da in dataset)
     {
-        // console.log(da);
         var thisitem = dataset[da];
         if(thisitem.observable !== obs) { continue; }
         if(document.getElementById('check_'+da).checked == true)

@@ -175,9 +175,11 @@ p {
     /* width: 2px; */
     stroke-width: 1.5px;
 }
+.axis {
+    font: 1.3vw sans-serif;
+}
 
 .grid {
-    font: 15px sans-serif;
 }
 .grid path,
 .grid line {

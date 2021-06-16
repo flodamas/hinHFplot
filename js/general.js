@@ -42,19 +42,19 @@ function defaultrange()
 {
     var drange =
         {
-            "v2+pT (GeV/c)" : {
+            "v2+pT" : {
                 pxmin : 0,
                 pxmax : 40,
                 pymin : -0.03,
                 pymax : 0.25
             },
-            "RAA+pT (GeV/c)" : {
+            "RAA+pT" : {
                 pxmin : 0.2,
                 pxmax : 98,
                 pymin : 0,
                 pymax : 1.3
             },
-            "LcD0+pT (GeV/c)" : {
+            "LcD0+pT" : {
                 pxmin : 0,
                 pxmax : 22,
                 pymin : 0,
