@@ -2,6 +2,7 @@ var dataset = {};
 
 dataset["ALICE_D0_v2_pt_30-50"] = {
     reference : "PLB 813 (2021) 136054",
+    link : "https://arxiv.org/abs/2005.11131",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D0",
@@ -28,7 +29,8 @@ dataset["ALICE_D0_v2_pt_30-50"] = {
 };
 
 dataset["ALICE_D_RAA_pt_0-10"] = {
-    reference : "Preliminary",
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/15443",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D",
@@ -66,6 +68,7 @@ dataset["ALICE_D_RAA_pt_0-10"] = {
 
 dataset["ALICE_Jpsi_v2_pt_30-50_fwd"] = {
     reference : "JHEP 10 (2020) 141",
+    link : "https://arxiv.org/abs/2005.14518",
     observable : "v2",
     xtitle : "pT",
     particle : "J/ψ",
@@ -91,6 +94,7 @@ dataset["ALICE_Jpsi_v2_pt_30-50_fwd"] = {
 
 dataset["ALICE_Jpsi_v2_pt_30-50_mid"] = {
     reference : "JHEP 10 (2020) 141",
+    link : "https://arxiv.org/abs/2005.14518",
     observable : "v2",
     xtitle : "pT",
     particle : "J/ψ",
@@ -107,10 +111,11 @@ dataset["ALICE_Jpsi_v2_pt_30-50_mid"] = {
 };
 
 dataset["ALICE_be_RAA_pt_0-10"] = {
-    reference : "Preliminary",
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/13142",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)e",
+    particle : "(b→) e",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ALICE",
@@ -136,9 +141,10 @@ dataset["ALICE_be_RAA_pt_0-10"] = {
 
 dataset["ALICE_be_v2_pt_30-50"] = {
     reference : "arXiv:2005.11130",
+    link : "https://arxiv.org/abs/2005.11130",
     observable : "v2",
     xtitle : "pT",
-    particle : "(b→)e",
+    particle : "(b→) e",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ALICE",
@@ -156,10 +162,11 @@ dataset["ALICE_be_v2_pt_30-50"] = {
 };
 
 dataset["ALICE_npD_RAA_pt_0-10"] = {
-    reference : "Preliminary",
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/16423",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)D0",
+    particle : "(b→) D0",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ALICE",
@@ -182,10 +189,11 @@ dataset["ALICE_npD_RAA_pt_0-10"] = {
 };
 
 dataset["ATLAS_bm_RAA_pt_0-10"] = {
-    reference : "Preliminary",
+    reference : "ATLAS-CONF-2021-020",
+    link : "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)μ",
+    particle : "(b→) μ",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ATLAS",
@@ -210,9 +218,10 @@ dataset["ATLAS_bm_RAA_pt_0-10"] = {
 
 dataset["ATLAS_bm_v2_pt_30-40"] = {
     reference : "PLB 807 (2020) 135595",
+    link : "https://arxiv.org/abs/2003.03565",
     observable : "v2",
     xtitle : "pT",
-    particle : "(b→)μ",
+    particle : "(b→) μ",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ATLAS",
@@ -234,11 +243,33 @@ dataset["ATLAS_bm_v2_pt_30-40"] = {
     ]
 };
 
+dataset["ATLAS_bm_v2_pt_pp"] = {
+    reference : "PRL 124 (2020) 082301",
+    link : "https://arxiv.org/abs/1909.01650",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(b→) μ",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "ATLAS",
+    centrality : "",
+    rapidity : "|η| < 2.4",
+    pt : "",
+    data : [
+        {"x": 4.3, "y": -0.0179, "stath": 0.02234, "statl": 0.02234, "systh": 0.00687, "systl": 0.00687},
+        {"x": 4.8, "y": -0.0128, "stath": 0.01999, "statl": 0.01999, "systh": 0.00859, "systl": 0.00859},
+        {"x": 5.3, "y": -0.0206, "stath": 0.02127, "statl": 0.02127, "systh": 0.00704, "systl": 0.00704},
+        {"x": 5.8, "y": 0.0126, "stath": 0.02429, "statl": 0.02429, "systh": 0.00806, "systl": 0.00806},
+        {"x": 6.55, "y": 0.0027, "stath": 0.01893, "statl": 0.01893, "systh": 0.00511, "systl": 0.00511},
+    ]
+};
+
 dataset["ATLAS_cm_RAA_pt_0-10"] = {
-    reference : "Preliminary",
+    reference : "ATLAS-CONF-2021-020",
+    link : "https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-020/",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(c→)μ",
+    particle : "(c→) μ",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ATLAS",
@@ -263,9 +294,10 @@ dataset["ATLAS_cm_RAA_pt_0-10"] = {
 
 dataset["ATLAS_cm_v2_pt_30-40"] = {
     reference : "PLB 807 (2020) 135595",
+    link : "https://arxiv.org/abs/2003.03565",
     observable : "v2",
     xtitle : "pT",
-    particle : "(c→)μ",
+    particle : "(c→) μ",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "ATLAS",
@@ -287,8 +319,30 @@ dataset["ATLAS_cm_v2_pt_30-40"] = {
     ]
 };
 
+dataset["ATLAS_cm_v2_pt_pp"] = {
+    reference : "PRL 124 (2020) 082301",
+    link : "https://arxiv.org/abs/1909.01650",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(c→) μ",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "ATLAS",
+    centrality : "",
+    rapidity : "|η| < 2.4",
+    pt : "",
+    data : [
+        {"x": 4.3, "y": 0.0761, "stath": 0.02225, "statl": 0.02225, "systh": 0.00758, "systl": 0.00758},
+        {"x": 4.8, "y": 0.0619, "stath": 0.02966, "statl": 0.02966, "systh": 0.00944, "systl": 0.00944},
+        {"x": 5.3, "y": 0.0427, "stath": 0.03841, "statl": 0.03841, "systh": 0.00789, "systl": 0.00789},
+        {"x": 5.8, "y": 0.022, "stath": 0.04741, "statl": 0.04741, "systh": 0.0081, "systl": 0.0081},
+        {"x": 6.55, "y": 0.0239, "stath": 0.05908, "statl": 0.05908, "systh": 0.00537, "systl": 0.00537},
+    ]
+};
+
 dataset["CMS_Bp_RAA_pt_0-100"] = {
     reference : "PRL 119 (2017) 152301",
+    link : "https://arxiv.org/abs/1705.04727",
     observable : "RAA",
     xtitle : "pT",
     particle : "B+",
@@ -309,6 +363,7 @@ dataset["CMS_Bp_RAA_pt_0-100"] = {
 
 dataset["CMS_D0_RAA_pt_0-10"] = {
     reference : "PLB 782 (2018) 474",
+    link : "https://arxiv.org/abs/1708.04962",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D0",
@@ -338,6 +393,7 @@ dataset["CMS_D0_RAA_pt_0-10"] = {
 
 dataset["CMS_D0_v2_pt_30-50"] = {
     reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D0",
@@ -370,11 +426,105 @@ dataset["CMS_D0_v2_pt_30-50"] = {
     ]
 };
 
+dataset["CMS_D0_v2_pt_pPb"] = {
+    reference : "PRL 121 (2018) 082301",
+    link : "https://arxiv.org/abs/1804.09767",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt D0",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "CMS",
+    centrality : "",
+    rapidity : "|y| < 1",
+    pt : "",
+    data : [
+        {"x": 1.98, "y": 0.007, "stath": 0.032, "statl": 0.032, "systh": 0.002, "systl": 0.002},
+        {"x": 2.7, "y": 0.053, "stath": 0.018, "statl": 0.018, "systh": 0.008, "systl": 0.008},
+        {"x": 3.25, "y": 0.094, "stath": 0.013, "statl": 0.013, "systh": 0.015, "systl": 0.015},
+        {"x": 3.84, "y": 0.093, "stath": 0.009, "statl": 0.009, "systh": 0.015, "systl": 0.015},
+        {"x": 4.58, "y": 0.089, "stath": 0.008, "statl": 0.008, "systh": 0.014, "systl": 0.014},
+        {"x": 5.48, "y": 0.066, "stath": 0.008, "statl": 0.008, "systh": 0.01, "systl": 0.01},
+        {"x": 6.48, "y": 0.081, "stath": 0.009, "statl": 0.009, "systh": 0.013, "systl": 0.013},
+        {"x": 7.47, "y": 0.047, "stath": 0.011, "statl": 0.011, "systh": 0.007, "systl": 0.007},
+    ]
+};
+
+dataset["CMS_D0_v2_pt_pp"] = {
+    reference : "PLB 813 (2021) 136036",
+    link : "https://arxiv.org/abs/2009.07065",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt D0",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "CMS",
+    centrality : "",
+    rapidity : "|y| < 1",
+    pt : "",
+    data : [
+        {"x": 2.98724, "y": 0.0610137, "stath": 0.0183783, "statl": 0.0183783, "systh": 0.0145945, "systl": 0.0145945},
+        {"x": 4.98192, "y": 0.0406079, "stath": 0.0199999, "statl": 0.0199999, "systh": 0.0189188, "systl": 0.0189188},
+        {"x": 6.9942, "y": -0.0430399, "stath": 0.0308098, "statl": 0.0308098, "systh": 0.0118918, "systl": 0.0118918},
+    ]
+};
+
+dataset["CMS_Jpsi_v2_pt_pPb"] = {
+    reference : "PLB 791 (2019) 172",
+    link : "https://arxiv.org/abs/1810.01473",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt J/ψ",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "CMS",
+    centrality : "",
+    rapidity : "|y| < 2.4",
+    pt : "",
+    data : [
+        {"x": 1.08415, "y": 0.00862069, "stath": 0.0350575, "statl": 0.0350575, "systh": 0.0126437, "systl": 0.0143678},
+        {"x": 2.33443, "y": 0.058046, "stath": 0.0321839, "statl": 0.0321839, "systh": 0.0149425, "systl": 0.0143678},
+        {"x": 3.61093, "y": 0.0902299, "stath": 0.0241379, "statl": 0.0241379, "systh": 0.0143678, "systl": 0.0149425},
+        {"x": 5.09727, "y": 0.0678161, "stath": 0.0218391, "statl": 0.0218391, "systh": 0.0143678, "systl": 0.0149425},
+        {"x": 6.77596, "y": 0.033908, "stath": 0.0224138, "statl": 0.0224138, "systh": 0.0172414, "systl": 0.0166667},
+    ]
+};
+
+dataset["CMS_Ks_v2_pt_pPb"] = {
+    reference : "PRL 121 (2018) 082301",
+    link : "https://arxiv.org/abs/1804.09767",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Ks0",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "CMS",
+    centrality : "",
+    rapidity : "|y| < 1",
+    pt : "",
+    data : [
+        {"x": 0.329, "y": 0.0131, "stath": 0.002, "statl": 0.002, "systh": 0.0008, "systl": 0.0008},
+        {"x": 0.509, "y": 0.0278, "stath": 0.0005, "statl": 0.0005, "systh": 0.0018, "systl": 0.0018},
+        {"x": 0.702, "y": 0.041, "stath": 0.0003, "statl": 0.0003, "systh": 0.0027, "systl": 0.0027},
+        {"x": 0.899, "y": 0.056, "stath": 0.0002, "statl": 0.0002, "systh": 0.0036, "systl": 0.0036},
+        {"x": 1.18, "y": 0.0769, "stath": 0.0002, "statl": 0.0002, "systh": 0.005, "systl": 0.005},
+        {"x": 1.58, "y": 0.0981, "stath": 0.0002, "statl": 0.0002, "systh": 0.0064, "systl": 0.0064},
+        {"x": 1.98, "y": 0.113, "stath": 0.0002, "statl": 0.0002, "systh": 0.0074, "systl": 0.0074},
+        {"x": 2.46, "y": 0.123, "stath": 0.0003, "statl": 0.0003, "systh": 0.008, "systl": 0.008},
+        {"x": 3.13, "y": 0.126, "stath": 0.0003, "statl": 0.0003, "systh": 0.0082, "systl": 0.0082},
+        {"x": 4.01, "y": 0.117, "stath": 0.0005, "statl": 0.0005, "systh": 0.0076, "systl": 0.0076},
+        {"x": 5.15, "y": 0.0938, "stath": 0.0008, "statl": 0.0008, "systh": 0.0061, "systl": 0.0061},
+        {"x": 6.43, "y": 0.0739, "stath": 0.0016, "statl": 0.0016, "systh": 0.0048, "systl": 0.0048},
+        {"x": 7.62, "y": 0.0636, "stath": 0.0021, "statl": 0.0021, "systh": 0.0041, "systl": 0.0041},
+    ]
+};
+
 dataset["CMS_npD_RAA_pt_0-100"] = {
     reference : "PRL 123 (2019) 022001",
+    link : "https://arxiv.org/abs/1810.11102",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)D0",
+    particle : "(b→) D0",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "CMS",
@@ -397,11 +547,30 @@ dataset["CMS_npD_RAA_pt_0-100"] = {
     ]
 };
 
+dataset["CMS_npD_v2_pt_pPb"] = {
+    reference : "PLB 813 (2021) 136036",
+    link : "https://arxiv.org/abs/2009.07065",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(b→) D0",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "CMS",
+    centrality : "",
+    rapidity : "|y| < 1",
+    pt : "",
+    data : [
+        {"x": 3.50601, "y": -0.00862069, "stath": 0.0270115, "statl": 0.0270115, "systh": 0.0143678, "systl": 0.0137931},
+        {"x": 6.50492, "y": 0.0568966, "stath": 0.0281609, "statl": 0.0281609, "systh": 0.0149425, "systl": 0.016092},
+    ]
+};
+
 dataset["CMS_npJpsi_RAA_pt_0-10"] = {
     reference : "EPJC 78 (2018) 509",
+    link : "https://arxiv.org/abs/1712.08959",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)J/ψ",
+    particle : "(b→) J/ψ",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "CMS",
@@ -422,9 +591,10 @@ dataset["CMS_npJpsi_RAA_pt_0-10"] = {
 
 dataset["CMS_npJpsi_RAA_pt_0-100"] = {
     reference : "EPJC 78 (2018) 509",
+    link : "https://arxiv.org/abs/1712.08959",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)J/ψ",
+    particle : "(b→) J/ψ",
     collision : "PbPb",
     energy : "5 TeV",
     collab : "CMS",
@@ -452,6 +622,7 @@ dataset["CMS_npJpsi_RAA_pt_0-100"] = {
 
 dataset["CMS_upsilon1S_v2_pt_30-50"] = {
     reference : "arXiv:2006.07707",
+    link : "https://arxiv.org/abs/2006.07707",
     observable : "v2",
     xtitle : "pT",
     particle : "Υ(1S)",
@@ -471,6 +642,7 @@ dataset["CMS_upsilon1S_v2_pt_30-50"] = {
 
 dataset["STAR_D0_RAA_pt_0-10"] = {
     reference : "PRC 99 (2019) 034908",
+    link : "https://arxiv.org/abs/1812.10224",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D0",
@@ -496,20 +668,41 @@ dataset["STAR_D0_RAA_pt_0-10"] = {
 };
 
 dataset["STAR_be_RAA_pt_0-80"] = {
-    reference : "Preliminary",
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/792436/contributions/3535848/attachments/1938681/3213669/Kelsey_QM2019.pdf",
     observable : "RAA",
     xtitle : "pT",
-    particle : "(b→)e",
+    particle : "(b→) e",
     collision : "PbPb",
     energy : "200 GeV",
     collab : "STAR",
     centrality : "0-80%",
-    rapidity : "",
+    rapidity : "|η| < 1",
     pt : "",
     data : [
         {"x": 3.01061, "y": 1.10577, "stath": 0.197161, "statl": 0.197161, "systh": 0.153347, "systl": 0.158824},
         {"x": 3.99686, "y": 0.719664, "stath": 0.101319, "statl": 0.101319, "systh": 0.0547669, "systl": 0.0684587},
         {"x": 5.00386, "y": 0.632036, "stath": 0.071197, "statl": 0.071197, "systh": 0.0410752, "systl": 0.0492902},
         {"x": 7.00958, "y": 0.689542, "stath": 0.0821504, "statl": 0.0821504, "systh": 0.11501, "systl": 0.106795},
+    ]
+};
+
+dataset["STAR_ce_RAA_pt_0-80"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/985652/contributions/4305124/attachments/2245001/3810816/HFE_for_SQM2021_v6.pdf",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(c→) e",
+    collision : "PbPb",
+    energy : "200 GeV",
+    collab : "STAR",
+    centrality : "0-80%",
+    rapidity : "|η| < 1",
+    pt : "",
+    data : [
+        {"x": 1.33333, "y": 0.515406, "stath": 0.10084, "statl": 0.10084, "systh": 0.0784314, "systl": 0.0784314},
+        {"x": 2.65359, "y": 0.330532, "stath": 0.0448179, "statl": 0.0448179, "systh": 0.0280112, "systl": 0.0280112},
+        {"x": 4, "y": 0.380952, "stath": 0.0168067, "statl": 0.0168067, "systh": 0.0392157, "systl": 0.0392157},
+        {"x": 6.67974, "y": 0.397759, "stath": 0.0504202, "statl": 0.0504202, "systh": 0.0616246, "systl": 0.0616246},
     ]
 };

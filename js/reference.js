@@ -35,7 +35,7 @@ function addref()
         iaref.setAttribute('onmouseover', "changecolor('"+da+"')");
         iaref.setAttribute('onmouseleave', "changecolorback('"+da+"')");
         iaref.innerText = dataset[da].reference;
-        iaref.href = "https://arxiv.org/pdf/1812.10224.pdf";
+        iaref.href = dataset[da].link;
         iaref.style = 'color: ' + cc + ';';
         iref.appendChild(iaref);
     }
