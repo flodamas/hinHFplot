@@ -45,28 +45,28 @@ function loaditem()
 
         var itparticle = document.createElement("td");
         var iparticle = document.createElement("span");
-        iparticle.innerText = thisitem.particle;
+        iparticle.innerHTML = thisitem.particle;
         itparticle.appendChild(iparticle);
         iline.appendChild(itparticle);
 
         var itcollision = document.createElement("td");
-        itcollision.innerText = thisitem.collision;
+        itcollision.innerHTML = thisitem.collision;
         iline.appendChild(itcollision);
 
         var itenergy = document.createElement("td");
-        itenergy.innerText = thisitem.energy;
+        itenergy.innerHTML = thisitem.energy;
         iline.appendChild(itenergy);
 
         var itcollab = document.createElement("td");
-        itcollab.innerText = thisitem.collab;
+        itcollab.innerHTML = thisitem.collab;
         iline.appendChild(itcollab);
 
         var itcentrality = document.createElement("td");
-        itcentrality.innerText = thisitem.centrality;
+        itcentrality.innerHTML = thisitem.centrality;
         iline.appendChild(itcentrality);
 
         var itrapidity = document.createElement("td");
-        itrapidity.innerText = thisitem.rapidity;
+        itrapidity.innerHTML = thisitem.rapidity;
         iline.appendChild(itrapidity);
 
         var itcolor = document.createElement("td");

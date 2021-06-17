@@ -1,7 +1,7 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 50vw;
+    --width-leftrange: 49vw;
     --size-font-header: 1.2vw;
     --size-font-default: 1.0vw;
     --size-font-desc: 1.0vw;
@@ -163,4 +163,13 @@ p {
     text-align: center;
 }
 
-
+#clipboard {
+    position: absolute;
+    padding: 0.1vw;
+    /* top: 4%; */
+    /* left: 60%; */
+    color: white;
+    font-size: calc(var(--size-font-default) * 0.8);
+    opacity: 0;
+    transition: opacity 1s;
+}

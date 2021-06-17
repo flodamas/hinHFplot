@@ -1,5 +1,5 @@
 #reference {
-    padding-right: 2vw;
+    /* padding-right: 2vw; */
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -11,8 +11,9 @@
 }
 
 #divreference {
+    width: 30vw;
     overflow: auto;
-    padding-left: 4vw;
+    padding-left: 7vw;
     /* padding: 0.8vh 0.8vh 0.8vh 0.8vh; */
 }
 
@@ -24,4 +25,5 @@ li {
     text-decoration: none;
     transition: background-color 0.3s;
     transition: color 0.3s;
+    cursor: pointer;
 }
