@@ -20,11 +20,11 @@ function defaultrange()
                 pxmin : 0,
                 pxmax : 40,
                 pymin : -0.03,
-                pymax : 0.25
+                pymax : 0.24
             },
             "RAA+pT" : {
-                pxmin : 0.2,
-                pxmax : 98,
+                pxmin : 0.1,
+                pxmax : 85,
                 pymin : 0,
                 pymax : 1.3
             },
