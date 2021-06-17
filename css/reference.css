@@ -1,0 +1,27 @@
+#reference {
+    padding-right: 2vw;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    overflow: auto;
+    opacity: 0;
+    transition: opacity 2s;
+    list-style-type: square;
+    text-align: left;
+}
+
+#divreference {
+    overflow: auto;
+    padding-left: 5vw;
+    /* padding: 0.8vh 0.8vh 0.8vh 0.8vh; */
+}
+
+li {
+    margin-bottom: 1vh;
+}
+
+.liref {
+    text-decoration: none;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}

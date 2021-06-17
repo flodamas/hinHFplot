@@ -1,0 +1,27 @@
+:root {
+    --width-axis: 0.08vw;
+}
+
+.axis {
+    font: 1.3vw sans-serif;
+}
+.axis path,
+.axis line {
+    stroke: black;
+    stroke-opacity: 1.0;
+    /* stroke-width: 1.5px; */
+    stroke-width: var(--width-axis);
+}
+.axis {
+    font: 1.3vw sans-serif;
+}
+
+.grid {
+}
+.grid path,
+.grid line {
+    stroke: #e5e5e5;
+    stroke-opacity: 0.5;
+    stroke-dasharray: 5,3;
+    stroke-width: var(--width-axis);
+}

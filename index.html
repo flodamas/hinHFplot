@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/general.css">
-    <!-- <link rel="stylesheet" href="css/slider.css"> -->
     <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/reference.css">
+    <link rel="stylesheet" href="css/svg.css">
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
@@ -12,18 +14,23 @@
     <script src="datasets/dataset.js"></script>
     <script data-main="js/errorbars.js" src="datasets/dataset.js"></script>
     <script data-main="js/loaditem.js" src="datasets/dataset.js"></script>
+
+    <!-- Top-left -->
     <div id="header">
       <div id="title">
         Heavy Flavor Measurement Compilation Tool
       </div>
     </div>
 
+    <!-- Top-right -->
     <div id="descholder">
       <div id="desc">
-        Contact: Jing Wang (boundino@gmail.com)
+        Contact: Jing Wang (boundino@gmail.com)<br>
+        <button type="submit" onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmlA9d3D66kaOERzHraFUj0bi6a12KLmf--rCzEl7GkfwyIWaCa8LJnQTT_SLYy_Xi8ruj11HQB-jR/pubhtml')">Heavy Flavor Publications</button>
       </div>
     </div>
 
+    <!-- Bottom-left -->
     <div id="leftrange">
       <div id="setup">
         <div>
@@ -42,7 +49,6 @@
           <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawall();">
           <p> - </p>
           <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="drawall();">
-          <!-- <button type="submit" onclick="drawall()">Draw</button> -->
         </div>
         <div>Y-axis range:
           <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="drawall();">
@@ -52,14 +58,13 @@
         <div>
           <button type="submit" onclick="selectall()">Select all</button>
           <button type="submit" onclick="clearall()">Clear all</button>
-          <!-- <button type="submit" onclick="drawall()">Draw</button> -->
           <button type="submit" onclick="colorall(); ">Random color</button>
           <button type="submit" id="btnvline" onclick="vlineopacity(); ">Horizontal line</button>
         </div>
       </div>
+
       <div id="data">
-        <table id="datainput">
-        </table>
+          <table id="datainput"></table>
       </div>
       <script src="js/loaditem.js"></script>
       <script src="js/general.js"></script>
@@ -68,9 +73,9 @@
     </div>
     <!-- <script>loadtoc()</script> -->
 
+    <!-- Bottom-right -->
     <div id="rightrange">
       <div id="rightpad">
-          <button type="submit" onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmlA9d3D66kaOERzHraFUj0bi6a12KLmf--rCzEl7GkfwyIWaCa8LJnQTT_SLYy_Xi8ruj11HQB-jR/pubhtml')">Heavy Flavor Publications</button>
         <svg></svg>
         <div id="divreference">
           <!-- <p>Reference:</p> -->
