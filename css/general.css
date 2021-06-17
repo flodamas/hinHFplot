@@ -81,9 +81,10 @@ p {
     width: var(--width-desc);
     height: var(--height-header);
     position: absolute;
-    left: 0;
-    top: 0.5vh;
-    text-align: center;
+    right: 6vw;
+    top: 3vh;
+    font-size: 0.9vw;
+    text-align: right;
 }
 
 #desctext {
