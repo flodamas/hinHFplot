@@ -1,19 +1,22 @@
 
-var width = document.documentElement.clientWidth/2.4,
-    height = document.documentElement.clientWidth/3.4;
-
-var svg = d3.select('svg').attr('width', width).attr('height', height);
-// d3.select('svg').style("font-size", "50px");
-
-var margin = { top: height*0.05, right: width*0.05, bottom: height*0.13, left: width*0.13 },
-    chartWidth = width - margin.left - margin.right,
-    chartHeight = height - margin.top - margin.bottom;
+var width, height;
+var svg;
+var margin, chartWidth, chartHeight;
 
 var xmin, xmax, ymin, ymax;
 var x, y;
 
 var setscale = function()
 {
+    width = document.getElementById('rightpad').clientWidth*0.85;
+    height = width * 0.695;
+
+    svg = d3.select('svg').attr('width', width).attr('height', height);
+
+    margin = { top: height*0.06, right: width*0.05, bottom: height*0.13, left: width*0.14 },
+    chartWidth = width - margin.left - margin.right,
+    chartHeight = height - margin.top - margin.bottom;
+
     xmin = Math.min(document.getElementById('pxmin').value,
                     document.getElementById('pxmax').value);
     xmax = Math.max(document.getElementById('pxmin').value,
@@ -34,8 +37,8 @@ var setscale = function()
 // create svg
 var setsvg = function()
 {
-    var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
     setscale();
+    var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
     drawaxisgrid();
     drawvline();
 }
@@ -76,75 +79,55 @@ var drawaxisgrid = function()
               "translate(" + (chartWidth/2. + margin.left) + " ," + 
               (chartHeight + margin.top + margin.bottom/1.15) + ")")
         .style("text-anchor", "middle")
-        .style("font", "1.3em sans-serif")
-    // .text(document.getElementById('xvariable').value);
     if(document.getElementById('xvariable').value === "pT")
     {
-        xtitle.append('tspan')
-            .text('p')
-            .style('font', '1.1em sans-serif')
-        xtitle.append('tspan')
-            .text('T')
-            .style('font', '0.6em sans-serif')
-            .attr('baseline-shift', 'sub')
-        xtitle.append('tspan')
-            .text(' (GeV/c)')
-            .style('font', '1.1em sans-serif')
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text('p');
+        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('T');
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text(' (GeV/c)');
     }
 
     var ytitle = svg.append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 0)
         .attr("x", 0 - (margin.top + chartHeight / 2.))
-        .attr("dy", "1em")
+        .attr("dy", "1.4em")
         .style("text-anchor", "middle")
-        .style("font", "1.1em sans-serif")
 
     if(document.getElementById('observable').value === "RAA")
     {
-        ytitle.append('tspan')
-            .text('R')
-            .style('font', '1.3em sans-serif')
-        ytitle.append('tspan')
-            .text('AA')
-            .style('font', '0.8em sans-serif')
-            .attr('baseline-shift', 'sub')
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('R');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('AA');
     }
     else if(document.getElementById('observable').value === "v2")
     {
-        ytitle.append('tspan')
-            .text('v')
-            .style('font', '1.3em sans-serif')
-        ytitle.append('tspan')
-            .text('2')
-            .style('font', '0.8em sans-serif')
-            .attr('baseline-shift', 'sub')
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('v');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('2');
     }
     else if(document.getElementById('observable').value === "LcD0")
     {
-        ytitle.append('tspan')
-            .text('L')
-            .style('font', '1.3em sans-serif')
-        ytitle.append('tspan')
-            .text('c')
-            .style('font', '0.8em sans-serif')
-            .attr('baseline-shift', 'sub')
-        ytitle.append('tspan')
-            .text(' / D')
-            .style('font', '1.3em sans-serif')
-        ytitle.append('tspan')
-            .text('0')
-            .style('font', '0.8em sans-serif')
-            .attr('baseline-shift', 'super')
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('L');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('c');
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text(' / D');
+        ytitle.append('tspan').attr('class', 'axistitlesup')
+            .text('0');
     }
 
     var tmark = svg.append("text")
         .attr("transform",
               "translate(" + (chartWidth + margin.left) + " ," +
               margin.top*0.8 + ")")
+        .attr("class", "watermark")
         .style("text-anchor", "end")
-        .style("fill", "#ccc")
-        .style("font", "0.9em sans-serif")
         .text("Generated by boundino.github.io/hinHFplot")
 }
 
@@ -338,3 +321,5 @@ function clearall()
 
     addref();
 }
+
+window.addEventListener("resize", drawall);

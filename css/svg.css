@@ -1,9 +1,9 @@
 :root {
-    --width-axis: 0.08vw;
+    --width-axis: 0.09vw;
 }
 
 .axis {
-    font: 1.3vw sans-serif;
+    font: 1.2vw sans-serif;
 }
 .axis path,
 .axis line {
@@ -11,9 +11,6 @@
     stroke-opacity: 1.0;
     /* stroke-width: 1.5px; */
     stroke-width: var(--width-axis);
-}
-.axis {
-    font: 1.3vw sans-serif;
 }
 
 .grid {
@@ -24,4 +21,24 @@
     stroke-opacity: 0.5;
     stroke-dasharray: 5,3;
     stroke-width: var(--width-axis);
+}
+
+.axistitle {
+    font: 1.3vw sans-serif;
+}
+
+.axistitlesub, .axistitlesup {
+    font: 1vw sans-serif;
+}
+
+.axistitlesub {
+    baseline-shift: sub;
+}
+.axistitlesup {
+    baseline-shift: super;
+}
+
+.watermark {
+    fill: #ccc;
+    font: 1vw sans-serif;
 }

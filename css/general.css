@@ -1,18 +1,15 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 48vw;
-    --width-rightrange: 48vw;
-    --position-rightpanel: 50vw;
+    --width-leftrange: 50vw;
     --size-font-header: 1.2vw;
     --size-font-default: 1.0vw;
     --size-font-desc: 1.0vw;
     --size-font-footer: 0.9vw;
     --height-footer: 1.1vw;
     --height-header-left: 2.8vw;
-    --height-header-right: 7vw;
-
-    --width-input: 3.5vw;
+    --height-header-right: 8vw;
+    --margin-rightrange: 1.05;
 }
 
 html{
@@ -41,6 +38,8 @@ p {
     display: inline;
 }
 
+/* Top left */
+
 #header {
     height: var(--height-header-left);
     width: var(--width-leftrange);
@@ -65,21 +64,23 @@ p {
     padding-top: 1vw;
 }
 
+/* Top right */
+
 #descholder {
-    width: var(--width-rightrange);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     height: var(--height-header-right);
     position: fixed;
     top: 0;
-    margin-left: var(--position-rightpanel);
+    margin-left: calc(var(--width-leftrange) * var(--margin-rightrange));
     background-color: white;
     z-index: 1;
 }
 
 #desc {
-    width: var(--width-rightrange);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     height: var(--height-header-right);
     position: absolute;
-    right: 6vw;
+    right: 10vw;
     top: 1.5vw;
     font-size: var(--size-font-desc);
     text-align: right;
@@ -114,9 +115,11 @@ p {
 /* Bottom right */
 
 #rightrange {
-    width: var(--width-rightrange);
-    position: absolute;
-    left: var(--position-rightpanel);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
+    height: calc((100vh - var(--height-header-right) - var(--height-footer))*0.96);
+    /* position: absolute; */
+    position: fixed;
+    left: calc(var(--width-leftrange) * var(--margin-rightrange));
     top: var(--height-header-right);
     padding-bottom: var(--height-footer);
     overflow: auto;
@@ -125,8 +128,8 @@ p {
 }
 
 #rightpad {
-    width: var(--width-rightrange);
-    /* position: fixed; */
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.95);
+    position: relative;
     margin-left: 0;
     margin-top: var(--height-list-title);
     padding-bottom: var(--height-footer);
@@ -134,17 +137,17 @@ p {
     overflow: auto;
     display: block;
     background-color: white;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* Footers */
 
 #footercontainerright {
     height: var(--height-footer);
-    width: var(--width-rightrange);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     position: fixed;
     bottom: 0;
-    left: var(--position-rightpanel);
+    left: calc(var(--width-leftrange) * var(--margin-rightrange));
     background-color: white;
     text-align: center;
     z-index: 1;
@@ -152,7 +155,7 @@ p {
 
 #footerright {
     height: calc(var(--height-footer)*0.8);
-    width: var(--width-rightrange);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     position: absolute;
     left: 0;
     bottom: calc(var(--height-footer)*0.2);
