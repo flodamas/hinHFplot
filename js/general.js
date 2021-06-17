@@ -24,7 +24,7 @@ function defaultrange()
             },
             "RAA+pT" : {
                 pxmin : 0.1,
-                pxmax : 85,
+                pxmax : 50,
                 pymin : 0,
                 pymax : 1.3
             },
