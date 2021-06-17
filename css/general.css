@@ -111,7 +111,6 @@ p {
     background-color: white;
     display: block;
     overflow: auto;
-    padding-bottom: 2vh;
 }
 
 #setup {
@@ -120,6 +119,7 @@ p {
 
 #data {
     padding-left: 5vw;
+    padding-bottom: 4vw;
 }
 
 #rightrange {
