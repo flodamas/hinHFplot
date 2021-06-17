@@ -71,7 +71,7 @@ table {
   border-collapse: collapse;
 }
 tr {
-    height: 4vh;
+    height: 2.2vw;
     border: 0;
     margin: 0;
 }
@@ -81,6 +81,7 @@ tr:hover {
 }
 
 td {
+    text-align: left;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     border: 0;

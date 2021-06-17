@@ -83,7 +83,7 @@ p {
     position: absolute;
     left: 0;
     top: 0.5vh;
-    text-align: left;
+    text-align: center;
 }
 
 #desctext {
@@ -110,6 +110,7 @@ p {
     background-color: white;
     display: block;
     overflow: auto;
+    padding-bottom: 2vh;
 }
 
 #setup {
@@ -143,6 +144,7 @@ p {
     overflow: auto;
     display: block;
     background-color: white;
+    text-align: center;
 }
 
 #footercontainerright {
@@ -202,10 +204,12 @@ p {
     opacity: 0;
     transition: opacity 2s;
     list-style-type: square;
+    text-align: left;
 }
 
 #divreference {
     overflow: auto;
+    padding-left: 5vw;
     /* padding: 0.8vh 0.8vh 0.8vh 0.8vh; */
 }
 
