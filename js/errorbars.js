@@ -309,6 +309,10 @@ function colorall()
 
 function clearall()
 {
+    var checkm = document.getElementsByClassName("checkmark");
+    for(var i=0; i<checkm.length; i++)
+        checkm[i].style = '';
+    
     var checkb = document.getElementsByTagName("input");
     for(var i=0; i<checkb.length; i++)
     {

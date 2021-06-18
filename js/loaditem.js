@@ -82,9 +82,27 @@ function loaditem()
         itcolor.appendChild(icolor);
 
         iline.setAttribute('onclick', "checkthis('"+da+"')");
-        // iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
-        // iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
+        iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
+        iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
     }
+}
+
+function selectall()
+{
+    var checkm = document.getElementsByClassName("checkmark");
+    for(var i=0; i<checkm.length; i++)
+        checkm[i].style = '';
+
+    var checkb = document.getElementsByTagName("input");
+    for(var i=0; i<checkb.length; i++)
+    {
+        if(checkb[i].type == 'checkbox')
+        {
+            checkb[i].checked = true;
+
+        }
+    }
+    drawall();
 }
 
 function checkthis(da)
@@ -94,12 +112,12 @@ function checkthis(da)
     if(icheck.checked == true)
     {
         icheck.checked = false;
-        document.getElementById('checkmark_' + da).style.backgroundColor = '#eee';
+        document.getElementById('checkmark_' + da).style = '';
     }
     else
     {
         icheck.checked = 'checked';
-        document.getElementById('checkmark_' + da).style.backgroundColor = '#1f77b4';
+        document.getElementById('checkmark_' + da).style = '';
     }
 
     draw(da);
