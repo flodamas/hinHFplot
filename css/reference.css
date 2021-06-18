@@ -16,7 +16,7 @@
 #divreference {
     width: var(--width-reference);
     overflow: auto;
-    padding-left: 7vw;
+    padding-left: var(--padding-reference);
     /* padding: 0.8vh 0.8vh 0.8vh 0.8vh; */
 }
 

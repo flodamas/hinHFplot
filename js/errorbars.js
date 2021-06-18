@@ -94,7 +94,7 @@ var drawaxisgrid = function()
         .attr("y", 0)
         .attr("x", 0 - (margin.top + chartHeight / 2.))
         .attr("class", "ytitle")
-        .attr("dy", (1.8*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0)) + "rem")
+        .attr("dy", (2.2*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, -0.8)) + "rem")
         .style("text-anchor", "middle")
 
     if(document.getElementById('observable').value === "RAA")

@@ -33,6 +33,7 @@
     /*reference*/
     --ncol-reference: 2;
     --width-reference: 30vw;
+    --padding-reference: 7vw;
 }
 
 html{
