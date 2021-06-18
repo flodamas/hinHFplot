@@ -1,13 +1,13 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 96vw;
+    --width-leftrange: 100vw;
     --size-font-header: 3vw;
     --size-font-default: 3vw;
     --size-font-desc: 3vw;
     --size-font-footer: 3vw;
     --height-footer: 3.2vw;
-    --height-header-left: 7vw;
+    --height-header-left: 0;
     --height-leftrange: 50vh;
 
     /* svg.css */
@@ -31,7 +31,7 @@
 
     /*reference*/
     --ncol-reference: 2;
-    --width-reference: 96vw;
+    --width-reference: 95vw;
     --padding-reference: 2vw;
 }
 
@@ -63,28 +63,18 @@ p {
 
 /* Top left */
 
-#header {
-    width: var(--width-leftrange);
-    height: var(--height-header-left);
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 0;
-    background-color: white;
-    z-index: 1;
-}
-
 #title {
-    width: var(--width-leftrange);
+    width: calc(var(--width-leftrange)*0.95);
     text-align: center;
-    position: absolute;
-    left: 0;
-    top: 0;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
     font-size: var(--size-font-header);
     color: var(--color-default);
     font-weight: bold;
-    position: absolute;
-    padding-top: 1vw;
+    /* position: absolute; */
+    /* padding-top: 2.5vw; */
+    margin-top: 2.5vw;
 }
 
 /* Top right */
@@ -111,6 +101,7 @@ p {
 /* Bottom left */
 
 #leftrange {
+    width: var(--width-leftrange);
     height: var(--height-leftrange);
     left: 0;
     padding-left: 0;
@@ -121,16 +112,18 @@ p {
 }
 
 #setup {
+    margin-top: 1vw;
     text-align: center;
-    width: calc(var(--width-leftrange)*1.);
+    width: calc(var(--width-leftrange)*0.95);
 }
 
 #data {
-    width: calc(var(--width-leftrange)*1.);
+    width: calc(var(--width-leftrange)*0.95);
     padding-top: 1vw;
 }
 
 #datainput {
+    /* width: calc(var(--width-leftrange)); */
     margin: 0 auto; /* or margin: 0 auto 0 auto */
 }
 
@@ -138,7 +131,7 @@ p {
 
 #rightrange {
     width: var(--width-leftrange);
-    height: calc((100vh - var(--height-header-left) - var(--height-footer) - var(--height-leftrange))*0.96);
+    height: calc((100vh - var(--height-footer) - var(--height-leftrange))*1.0);
     /* position: absolute; */
     position: fixed;
     left: 0;
@@ -150,6 +143,7 @@ p {
 }
 
 #rightpad {
+    /* width: calc(var(--width-leftrange)*0.95); */
     position: relative;
     margin-left: 0;
     /* margin-top: 1vw; */
