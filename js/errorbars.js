@@ -91,10 +91,10 @@ var drawaxisgrid = function()
 
     var ytitle = svg.append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", 0)
+        .attr("y", margin.left / 3.8)
         .attr("x", 0 - (margin.top + chartHeight / 2.))
         .attr("class", "ytitle")
-        .attr("dy", (2.2*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, -0.8)) + "rem")
+        // .attr("dy", (2.2*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, -0.8)) + "vw")
         .style("text-anchor", "middle")
 
     if(document.getElementById('observable').value === "RAA")

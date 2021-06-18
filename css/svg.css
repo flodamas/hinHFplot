@@ -44,6 +44,6 @@
     stroke-width: var(--width-axis);
 }
 
-.ytitle {
-    dy: 1.4em;
-}
+/* .ytitle { */
+/*     dy: 1.4em; */
+/* } */

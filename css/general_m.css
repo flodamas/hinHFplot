@@ -1,12 +1,12 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 97vw;
+    --width-leftrange: 96vw;
     --size-font-header: 3vw;
     --size-font-default: 3vw;
     --size-font-desc: 3vw;
     --size-font-footer: 3vw;
-    --height-footer: 3.5vw;
+    --height-footer: 3.2vw;
     --height-header-left: 7vw;
     --height-leftrange: 50vh;
 
@@ -30,9 +30,9 @@
     --padding-input: 2vw;
 
     /*reference*/
-    --ncol-reference: 1;
-    --width-reference: 97vw;
-    --padding-reference: 0px;
+    --ncol-reference: 2;
+    --width-reference: 96vw;
+    --padding-reference: 2vw;
 }
 
 html{
@@ -63,12 +63,8 @@ p {
 
 /* Top left */
 
-#header, #title, #descholder, #desc, #footercontainerright, #footerright, #leftrange, #rightrange, #rightpad {
-    width: var(--width-leftrange);
-    left: 0;
-}
-
 #header {
+    width: var(--width-leftrange);
     height: var(--height-header-left);
     position: fixed;
     left: 0;
@@ -79,6 +75,7 @@ p {
 }
 
 #title {
+    width: var(--width-leftrange);
     text-align: center;
     position: absolute;
     left: 0;
@@ -107,7 +104,7 @@ p {
     /* padding-right: 15vw; */
     /* top: 1.5vw; */
     font-size: var(--size-font-desc);
-    text-align: right;
+    /* text-align: right; */
     /* opacity: 0; */
 }
 
@@ -153,11 +150,10 @@ p {
 }
 
 #rightpad {
-    width: var(--width-leftrange);
     position: relative;
     margin-left: 0;
-    margin-top: 1vw;
-    padding-bottom: var(--height-footer);
+    /* margin-top: 1vw; */
+    padding-bottom: calc(var(--height-footer) + 10vh);
     border: none;
     overflow: auto;
     display: block;
@@ -179,7 +175,7 @@ p {
 
 #footerright {
     width: var(--width-leftrange);
-    height: calc(var(--height-footer)*0.8);
+    height: calc(var(--height-footer));
     position: absolute;
     left: 0;
     bottom: calc(var(--height-footer)*0.2);
