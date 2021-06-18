@@ -3,6 +3,7 @@
 
 #reference {
     /* padding-right: 2vw; */
+    width: var(--width-reference);
     columns: var(--ncol-reference);
     -webkit-columns: var(--ncol-reference);
     -moz-columns: var(--ncol-reference);
@@ -16,7 +17,9 @@
 
 #divreference {
     overflow: auto;
-    padding-left: var(--padding-reference);
+    padding-top: 1vw;
+    /* padding-left: var(--padding-reference); */
+    margin: 0 auto;
 }
 
 li {
