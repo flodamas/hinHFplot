@@ -136,7 +136,7 @@ var drawaxisgrid = function()
     
 }
 
-var drawvline = function() {
+var drawvline = function(transt = 1000) {
     var obs = document.getElementById('observable').value;
     var vy = 0;
     if(obs == "RAA") vy = 1;
@@ -152,7 +152,7 @@ var drawvline = function() {
             .attr('x2', function() { return x(xmax); })
             .attr('y1', function() { return y(vy); })
             .attr('y2', function() { return y(vy); })
-            .transition().duration(1000)
+            .transition().duration(transt)
             .attr('stroke', 'black')
             .attr('stroke-dasharray', '5,3')
             .attr('opacity', '0');
@@ -175,7 +175,7 @@ var vlineopacity = function() {
 }
 
 
-var addData = function(da, data, thecolor, kmarker) {
+var addData = function(da, data, thecolor, kmarker, transt = 1000) {
 
     var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
         .data(data);
@@ -193,7 +193,7 @@ var addData = function(da, data, thecolor, kmarker) {
             if(high > chartWidth) { high = chartWidth; }
             if(high > low) { return (high - low); }
             else { return 0; }})
-        .transition().duration(1000)
+        .transition().duration(transt)
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
         .attr('stroke-width', '1px')
@@ -212,7 +212,7 @@ var addData = function(da, data, thecolor, kmarker) {
         .attr('x2', function(d) { return x(d.x); })
         .attr('y1', function(d) { return y(Math.min(d.y + d.stath, ymax)); })
         .attr('y2', function(d) { return y(Math.max(d.y - d.statl, ymin)); })
-        .transition().duration(1000)
+        .transition().duration(transt)
         .attr('stroke', thecolor)
         .attr('stroke-width', '2px')
         .attr('opacity', function(d) {
@@ -223,10 +223,10 @@ var addData = function(da, data, thecolor, kmarker) {
 
     var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
         .data(data);
-    if(kmarker==20) { m20(da, points, thecolor); }
+    if(kmarker==20) { m20(da, points, thecolor, transt); }
 };
 
-var m20 = function(da, point, thecolor)
+var m20 = function(da, point, thecolor, transt = 1000)
 {
     point.enter()
         .append('circle')
@@ -235,7 +235,7 @@ var m20 = function(da, point, thecolor)
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
         .attr('r', width/120.)
-        .transition().duration(1000)
+        .transition().duration(transt)
         .attr('fill', thecolor)
         .attr('opacity', function(d) {
             if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
@@ -243,7 +243,7 @@ var m20 = function(da, point, thecolor)
         });
 };
 
-var drawall = function()
+var drawall = function(transt)
 {
     d3.selectAll("svg > *").remove();
     setsvg();
@@ -256,15 +256,13 @@ var drawall = function()
         var thisitem = dataset[da];
         if(thisitem.observable !== obs || thisitem.xtitle != xvar) { continue; }
         if(document.getElementById('check_'+da).checked == true)
-            addData(da, thisitem.data, document.getElementById('color_'+da).value, 20);
+            addData(da, thisitem.data, document.getElementById('color_'+da).value, 20, transt);
     }
     addref();
 }
 
-var draw = function(da)
+var draw = function(da, transt = 1000)
 {
-    // d3.selectAll("svg > .d3_" + da).remove();
-
     var ichecked = document.getElementById('check_'+da).checked;
     if(ichecked)
     {
@@ -277,9 +275,9 @@ var draw = function(da)
     }
     else
     {
-        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(1000);
-        d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(1000);
-        d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(1000);
+        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(transt);
+        d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(transt);
+        d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
     }
     addref();
 }
@@ -330,4 +328,4 @@ function clearall()
     addref();
 }
 
-window.addEventListener("resize", drawall);
+window.addEventListener("resize", function() { drawall(0); });
