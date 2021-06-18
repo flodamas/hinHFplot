@@ -81,7 +81,8 @@ tr {
 }
 tr:hover {
     background-color: #eee;
-    transition: background-color 1s;
+    transition: background-color 0.2s;
+    /* transition-timing-function: ease; */
 }
 
 td {

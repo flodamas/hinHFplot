@@ -82,8 +82,8 @@ function loaditem()
         itcolor.appendChild(icolor);
 
         iline.setAttribute('onclick', "checkthis('"+da+"')");
-        iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
-        iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
+        // iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
+        // iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
     }
 }
 
