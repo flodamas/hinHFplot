@@ -2,7 +2,7 @@
 :root {
     --color-default: black;
     --width-leftrange: 100vw;
-    --width-leftrange-inner: 0.96;
+    --width-leftrange-inner: 0.99;
     --size-font-header: 3vw;
     --size-font-default: 3vw;
     --size-font-desc: 3vw;
@@ -33,7 +33,6 @@
     /*reference*/
     --ncol-reference: 2;
     --width-reference: 95vw;
-    --padding-reference: 2vw;
 }
 
 html{
