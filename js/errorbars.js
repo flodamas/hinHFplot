@@ -60,11 +60,11 @@ var drawaxisgrid = function()
     var xAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "axis")
-        .call( d3.axisBottom(x).tickSize(ticksize).ticks(ticksx).tickSizeOuter(0).tickPadding(10) );
+        .call( d3.axisBottom(x).tickSize(ticksize).ticks(ticksx).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.9)) );
     var yAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
-        .call( d3.axisLeft(y).tickSize(ticksize).ticks(ticksy).tickSizeOuter(0).tickPadding(6) );
+        .call( d3.axisLeft(y).tickSize(ticksize).ticks(ticksy).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.9)) );
     var xLine = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
@@ -93,7 +93,8 @@ var drawaxisgrid = function()
         .attr("transform", "rotate(-90)")
         .attr("y", 0)
         .attr("x", 0 - (margin.top + chartHeight / 2.))
-        .attr("dy", "1.4em")
+        .attr("class", "ytitle")
+        .attr("dy", (1.2*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.5)) + "rem")
         .style("text-anchor", "middle")
 
     if(document.getElementById('observable').value === "RAA")
@@ -141,6 +142,7 @@ var drawvline = function() {
     {
         var vline = d3.select("svg").select("g")
             .append('line')
+            .attr("class", "hline")
             .attr('id', 'vline')
             .attr('x1', function() { return x(xmin); })
             .attr('x2', function() { return x(xmax); })
@@ -148,7 +150,6 @@ var drawvline = function() {
             .attr('y2', function() { return y(vy); })
             .transition().duration(1000)
             .attr('stroke', 'black')
-            .attr('stroke-width', '2px')
             .attr('stroke-dasharray', '5,3')
             .attr('opacity', '0');
     }
@@ -253,7 +254,6 @@ var drawall = function()
         if(document.getElementById('check_'+da).checked == true)
             addData(da, thisitem.data, document.getElementById('color_'+da).value, 20);
     }
-    // document.getElementById('reference').style = 'opacity : 0;';
     addref();
 }
 

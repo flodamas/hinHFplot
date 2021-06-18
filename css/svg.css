@@ -1,9 +1,6 @@
-:root {
-    --width-axis: 0.09vw;
-}
 
 .axis {
-    font: 1.2vw sans-serif;
+    font: var(--size-axis-font) sans-serif;
 }
 .axis path,
 .axis line {
@@ -24,11 +21,11 @@
 }
 
 .axistitle {
-    font: 1.3vw sans-serif;
+    font: var(--size-axistitle-font) sans-serif;
 }
 
 .axistitlesub, .axistitlesup {
-    font: 1vw sans-serif;
+    font: var(--size-axissub-font) sans-serif;
 }
 
 .axistitlesub {
@@ -40,5 +37,13 @@
 
 .watermark {
     fill: #ccc;
-    font: 1vw sans-serif;
+    font: var(--size-axissub-font) sans-serif;
+}
+
+.hline {
+    stroke-width: var(--width-axis);
+}
+
+.ytitle {
+    dy: 1.4em;
 }

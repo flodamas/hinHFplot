@@ -1,37 +1,36 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 49vw;
-    --size-font-header: 1.2vw;
-    --size-font-default: 1.0vw;
+    --width-leftrange: 95vw;
+    --size-font-header: 3vw;
+    --size-font-default: 3vw;
     --size-font-desc: 1.0vw;
-    --size-font-footer: 0.9vw;
-    --height-footer: 1.1vw;
-    --height-header-left: 2.8vw;
-    --height-header-right: 8vw;
-    --margin-rightrange: 1.05;
+    --size-font-footer: 3vw;
+    --height-footer: 3.5vw;
+    --height-header-left: 7vw;
+    --height-leftrange: 50vh;
 
     /* svg.css */
-    --width-axis: 0.09vw;
-    --size-axis-font: 1.2vw;
-    --size-axistitle-font: 1.3vw;
-    --size-axissub-font: 1.1vw;
+    --width-axis: 0.3vw;
+    --size-axis-font: 3vw;
+    --size-axistitle-font: 3vw;
+    --size-axissub-font: 1.7vw;
 
     /* checkbox */
-    --width-colorpicker: 2vw;
+    --width-colorpicker: 5vw;
     --padding-td: 0.5vw;
     --height-tr: 2.2vw;
-    --size-checkmark: 1.4vw;
-    --opacity-checkafter: 1;
+    --size-checkmark: 3vw;
+    --opacity-checkafter: 0;
 
     /* input */
-    --height-margin-input: 0.3vw;
-    --width-input: 3.5vw;
-    --padding-input: 0.5vw;
+    --height-margin-input: 0.8vw;
+    --width-input: 10vw;
+    --padding-input: 2vw;
 
     /*reference*/
-    --ncol-reference: 2;
-    --width-reference: 30vw;
+    --ncol-reference: 1;
+    --width-reference: 95vw;
 }
 
 html{
@@ -62,9 +61,13 @@ p {
 
 /* Top left */
 
+#header, #title, #descholder, #desc, #footercontainerright, #footerright, #leftrange, #rightrange, #rightpad {
+    width: var(--width-leftrange);
+    left: 0;
+}
+
 #header {
     height: var(--height-header-left);
-    width: var(--width-leftrange);
     position: fixed;
     left: 0;
     top: 0;
@@ -74,7 +77,6 @@ p {
 }
 
 #title {
-    width: var(--width-leftrange);
     text-align: center;
     position: absolute;
     left: 0;
@@ -89,30 +91,28 @@ p {
 /* Top right */
 
 #descholder {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     height: var(--height-header-right);
     position: fixed;
     top: 0;
-    margin-left: calc(var(--width-leftrange) * var(--margin-rightrange));
     background-color: white;
     z-index: 1;
+    opacity: 0;
 }
 
 #desc {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     height: var(--height-header-right);
     position: absolute;
     right: 10vw;
     top: 1.5vw;
     font-size: var(--size-font-desc);
     text-align: right;
+    opacity: 0;
 }
 
 /* Bottom left */
 
 #leftrange {
-    width: var(--width-leftrange);
-    height: calc(100vh - var(--height-header-left));
+    height: var(--height-leftrange);
     left: 0;
     padding-left: 0;
     padding-top: var(--height-header-left);
@@ -123,11 +123,12 @@ p {
 
 #setup {
     text-align: center;
-    width: calc(var(--width-leftrange)*0.96);
+    width: calc(var(--width-leftrange)*1.);
 }
 
 #data {
-    width: calc(var(--width-leftrange)*0.96);
+    width: calc(var(--width-leftrange)*1.);
+    padding-top: 1vw;
 }
 
 #datainput {
@@ -137,39 +138,35 @@ p {
 /* Bottom right */
 
 #rightrange {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
-    height: calc((100vh - var(--height-header-right) - var(--height-footer))*0.96);
+    height: calc((100vh - var(--height-header-left) - var(--height-footer) - var(--height-leftrange))*0.96);
     /* position: absolute; */
     position: fixed;
-    left: calc(var(--width-leftrange) * var(--margin-rightrange));
-    top: var(--height-header-right);
-    padding-bottom: var(--height-footer);
+    left: 0;
+    top: calc(var(--height-header-left) + var(--height-leftrange));
+    /* padding-bottom: var(--height-footer); */
     overflow: auto;
     /* display: block; */
     background-color: white;
 }
 
 #rightpad {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.95);
     position: relative;
     margin-left: 0;
-    margin-top: var(--height-list-title);
+    margin-top: 1vw;
     padding-bottom: var(--height-footer);
     border: none;
     overflow: auto;
     display: block;
     background-color: white;
-    /* text-align: center; */
+    text-align: center;
 }
 
 /* Footers */
 
 #footercontainerright {
     height: var(--height-footer);
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     position: fixed;
     bottom: 0;
-    left: calc(var(--width-leftrange) * var(--margin-rightrange));
     background-color: white;
     text-align: center;
     z-index: 1;
@@ -177,7 +174,6 @@ p {
 
 #footerright {
     height: calc(var(--height-footer)*0.8);
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
     position: absolute;
     left: 0;
     bottom: calc(var(--height-footer)*0.2);
@@ -188,8 +184,6 @@ p {
 #clipboard {
     position: absolute;
     padding: 0.1vw;
-    /* top: 4%; */
-    /* left: 60%; */
     color: white;
     font-size: calc(var(--size-font-default) * 0.8);
     opacity: 0;

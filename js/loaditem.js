@@ -25,7 +25,6 @@ function loaditem()
 
         var iline = document.createElement("tr");
         iline.id = "tr_" + da;
-        // iline.setAttribute('style', 'height: 4vh;');
         datainput.appendChild(iline);
 
         var itcheck = document.createElement("td");
@@ -36,12 +35,15 @@ function loaditem()
         var icheck = document.createElement("input");
         icheck.setAttribute('type', 'checkbox');
         icheck.id = "check_" + da;
+
         // icheck.checked = true;
+
         itchecklabel.appendChild(icheck);
         icheck.setAttribute('onchange', "draw('"+da+"')");
-        var icheckspan = document.createElement("span");
-        icheckspan.setAttribute('class', 'checkmark');
-        itchecklabel.appendChild(icheckspan);
+        var icheckmark = document.createElement("span");
+        icheckmark.setAttribute('class', 'checkmark');
+        icheckmark.id = "checkmark_" + da;
+        itchecklabel.appendChild(icheckmark);
 
         var itparticle = document.createElement("td");
         var iparticle = document.createElement("span");
@@ -79,5 +81,40 @@ function loaditem()
         icolor.setAttribute('onchange', "draw('" + da + "')");
         itcolor.appendChild(icolor);
 
+        iline.setAttribute('onclick', "checkthis('"+da+"')");
+        iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
+        iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
     }
+}
+
+function checkthis(da)
+{
+    var icheck = document.getElementById('check_' + da);
+    // console.log(icheck.checked);
+    if(icheck.checked == true)
+    {
+        icheck.checked = false;
+        document.getElementById('checkmark_' + da).style.backgroundColor = '#eee';
+    }
+    else
+    {
+        icheck.checked = 'checked';
+        document.getElementById('checkmark_' + da).style.backgroundColor = '#1f77b4';
+    }
+
+    draw(da);
+}
+
+function checkcolor(da)
+{
+    var icheck = document.getElementById('check_' + da);
+    if(icheck.checked == false)
+        document.getElementById('checkmark_' + da).style.backgroundColor = '#ccc';
+}
+
+function checkcolorback(da)
+{
+    var icheck = document.getElementById('check_' + da);
+    if(icheck.checked == false)
+        document.getElementById('checkmark_' + da).style.backgroundColor = '#eee';
 }

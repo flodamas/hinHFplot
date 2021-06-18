@@ -1,8 +1,11 @@
+:root {
+}
+
 #reference {
     /* padding-right: 2vw; */
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    columns: var(--ncol-reference);
+    -webkit-columns: var(--ncol-reference);
+    -moz-columns: var(--ncol-reference);
     overflow: auto;
     opacity: 0;
     transition: opacity 2s;
@@ -11,7 +14,7 @@
 }
 
 #divreference {
-    width: 30vw;
+    width: var(--width-reference);
     overflow: auto;
     padding-left: 7vw;
     /* padding: 0.8vh 0.8vh 0.8vh 0.8vh; */
