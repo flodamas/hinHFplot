@@ -80,11 +80,6 @@ tr {
     margin: 0;
     cursor: pointer;
 }
-tr:hover {
-    background-color: #eee;
-    transition: background-color 0.2s;
-    /* transition-timing-function: ease; */
-}
 
 td {
     text-align: left;

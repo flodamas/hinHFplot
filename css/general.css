@@ -35,6 +35,22 @@
     --width-reference: 30vw;
 }
 
+/* transition */
+
+button:hover {
+    background-color: #1f77b4;
+    color: white;
+    transition: background-color 0.5s;
+    transition: color 0.3s;
+}
+
+tr:hover {
+    background-color: #eee;
+    transition: background-color 0.2s;
+}
+
+/* main */
+
 html{
     font-size: var(--size-font-default);
     color: var(--color-default);

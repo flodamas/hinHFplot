@@ -15,13 +15,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #1f77b4;
-    color: white;
-    transition: background-color 0.5s;
-    transition: color 0.3s;
-}
-
 input[type=number] {
     width: var(--width-input);
     padding: calc(var(--padding-input)*0.5) var(--padding-input);
