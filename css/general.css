@@ -20,6 +20,7 @@
     /* checkbox */
     --width-colorpicker: 2vw;
     --padding-td: 0.5vw;
+    --padding-td-tb: 0.4vw;
     --height-tr: 2.2vw;
     --size-checkmark: 1.4vw;
     --opacity-checkafter: 1;
@@ -42,6 +43,7 @@ html{
     width: 100%;
     font-family: Tahoma, sans-serif;
     transition-timing-function: linear;
+    background-color: white;
 }
 
 body {

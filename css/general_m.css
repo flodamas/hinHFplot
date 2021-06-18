@@ -4,7 +4,7 @@
     --width-leftrange: 95vw;
     --size-font-header: 3vw;
     --size-font-default: 3vw;
-    --size-font-desc: 1.0vw;
+    --size-font-desc: 3vw;
     --size-font-footer: 3vw;
     --height-footer: 3.5vw;
     --height-header-left: 7vw;
@@ -19,6 +19,7 @@
     /* checkbox */
     --width-colorpicker: 5vw;
     --padding-td: 0.5vw;
+    --padding-td-tb: 1.2vw;
     --height-tr: 2.2vw;
     --size-checkmark: 3vw;
     --opacity-checkafter: 0;
@@ -92,21 +93,21 @@ p {
 
 #descholder {
     height: var(--height-header-right);
-    position: fixed;
-    top: 0;
+    position: default;
+    /* top: 0; */
     background-color: white;
-    z-index: 1;
-    opacity: 0;
+    /* z-index: 1; */
+    /* opacity: 0; */
 }
 
 #desc {
     height: var(--height-header-right);
-    position: absolute;
-    right: 10vw;
-    top: 1.5vw;
+    position: default;
+    padding-right: 15vw;
+    /* top: 1.5vw; */
     font-size: var(--size-font-desc);
     text-align: right;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /* Bottom left */

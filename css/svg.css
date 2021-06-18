@@ -37,7 +37,7 @@
 
 .watermark {
     fill: #ccc;
-    font: var(--size-axissub-font) sans-serif;
+    font: calc(var(--size-axis-font)*0.95) sans-serif;
 }
 
 .hline {

@@ -88,6 +88,8 @@ td {
     text-align: left;
     padding-left: var(--padding-td);
     padding-right: var(--padding-td);
+    padding-top: var(--padding-td-tb);
+    padding-bottom: var(--padding-td-tb);
     border: 0;
     margin: 0;
 }

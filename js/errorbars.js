@@ -60,11 +60,11 @@ var drawaxisgrid = function()
     var xAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "axis")
-        .call( d3.axisBottom(x).tickSize(ticksize).ticks(ticksx).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.9)) );
+        .call( d3.axisBottom(x).tickSize(ticksize).ticks(ticksx).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.3)) );
     var yAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
-        .call( d3.axisLeft(y).tickSize(ticksize).ticks(ticksy).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.9)) );
+        .call( d3.axisLeft(y).tickSize(ticksize).ticks(ticksy).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.6)) );
     var xLine = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "axis")
@@ -94,7 +94,7 @@ var drawaxisgrid = function()
         .attr("y", 0)
         .attr("x", 0 - (margin.top + chartHeight / 2.))
         .attr("class", "ytitle")
-        .attr("dy", (1.2*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.5)) + "rem")
+        .attr("dy", (1.8*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0)) + "rem")
         .style("text-anchor", "middle")
 
     if(document.getElementById('observable').value === "RAA")
