@@ -22,23 +22,23 @@
       </div>
       <div id="setup">
         <div>
-          Observable: 
+          <p>Observable:</p> 
           <select id="observable" onchange="defaultrange(); loaditem(); drawall();" class="custom-select">
             <option value="RAA" selected="selected">RAA</option>
             <option value="v2">v2</option>
             <option value="LcD0">&Lambda;c/D0</option>
           </select>
-          vs.
+          <p>vs.</p>
           <select id="xvariable" onchange="defaultrange(); loaditem(); drawall();" class="custom-select">
             <option value="pT">pT</option>
           </select>          
         </div>
-        <div>X-axis range:
+        <div><p>X-axis range:</p>
           <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawall();" inputmode="decimal">
           <p> - </p>
           <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="drawall();" inputmode="decimal">
         </div>
-        <div>Y-axis range:
+        <div><p>Y-axis range:</p>
           <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="drawall();" inputmode="decimal">
           <p> - </p>
           <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="drawall();" inputmode="decimal">
@@ -75,7 +75,7 @@
         <div id="descholder">
           <div id="desc">
             <button type="submit" onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmlA9d3D66kaOERzHraFUj0bi6a12KLmf--rCzEl7GkfwyIWaCa8LJnQTT_SLYy_Xi8ruj11HQB-jR/pubhtml')">Heavy Flavor Publications</button> <br>
-            Contact: Jing Wang (boundino@gmail.com)<br>
+            <p>Contact: Jing Wang (boundino@gmail.com)</p><br>
           </div>
         </div>
       </div>
