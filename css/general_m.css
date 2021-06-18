@@ -9,7 +9,8 @@
     --size-font-footer: 3vw;
     --height-footer: 3.2vw;
     --height-header-left: 0;
-    --height-leftrange: 50vh;
+    /* --height-leftrange: 110vw; */
+    --height-rightrange: 61vw;
 
     /* svg.css */
     --width-axis: 0.3vw;
@@ -32,7 +33,7 @@
 
     /*reference*/
     --ncol-reference: 2;
-    --width-reference: 90vw;
+    --width-reference: 80vw;
 }
 
 html{
@@ -74,7 +75,8 @@ p {
     font-weight: bold;
     /* position: absolute; */
     /* padding-top: 2.5vw; */
-    margin-top: 2.5vw;
+    /* margin-top: 2.5vw; */
+    /* margin-top: 2.5vw; */
 }
 
 /* Top right */
@@ -102,13 +104,15 @@ p {
 
 #leftrange {
     width: var(--width-leftrange);
-    height: var(--height-leftrange);
+    /* height: var(--height-leftrange); */
     left: 0;
     padding-left: 0;
-    padding-top: var(--height-header-left);
+    /* padding-top: calc(100vh - var(--height-leftrange) - var(--height-footer)); */
+    padding-top: var(--height-rightrange);
     background-color: white;
     display: block;
     overflow: auto;
+    padding-bottom: calc(var(--height-footer) + 20vh);
 }
 
 #setup {
@@ -131,12 +135,13 @@ p {
 
 #rightrange {
     width: var(--width-leftrange);
-    height: calc((100vh - var(--height-footer) - var(--height-leftrange))*1.0);
+    /* height: calc((100vh - var(--height-footer) - var(--height-leftrange))*1.0); */
+    height: var(--height-rightrange);
     /* position: absolute; */
     position: fixed;
     left: 0;
-    top: calc(var(--height-header-left) + var(--height-leftrange));
-    /* padding-bottom: var(--height-footer); */
+    /* top: calc(var(--height-header-left) + var(--height-leftrange)); */
+    top: 0;
     overflow: auto;
     /* display: block; */
     background-color: white;
@@ -147,7 +152,7 @@ p {
     position: relative;
     margin-left: 0;
     /* margin-top: 1vw; */
-    padding-bottom: calc(var(--height-footer) + 15vh);
+    /* padding-bottom: calc(var(--height-footer) + 15vh); */
     border: none;
     overflow: auto;
     display: block;
