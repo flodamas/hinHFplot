@@ -18,8 +18,6 @@ function loaditem()
     for(var da in dataset)
     {
         var thisitem = dataset[da];
-        // console.log(thisitem.observable);
-        // console.log(obs);
         
         if(thisitem.observable !== obs) { continue; }
 
@@ -108,7 +106,6 @@ function selectall()
 function checkthis(da)
 {
     var icheck = document.getElementById('check_' + da);
-    // console.log(icheck.checked);
     if(icheck.checked == true)
     {
         icheck.checked = false;

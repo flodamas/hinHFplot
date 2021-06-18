@@ -35,6 +35,12 @@
     --padding-reference: 2vw;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 html{
     font-size: var(--size-font-default);
     color: var(--color-default);
