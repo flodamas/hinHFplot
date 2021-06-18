@@ -5,11 +5,10 @@
     --width-leftrange-inner: 0.99;
     --size-font-header: 3vw;
     --size-font-default: 3vw;
-    --size-font-desc: 3vw;
+    --size-font-desc: 5vw;
     --size-font-footer: 3vw;
     --height-footer: 3.2vw;
     --height-header-left: 0;
-    /* --height-leftrange: 110vw; */
     --height-rightrange: 60vw;
 
     /* svg.css */
@@ -58,8 +57,12 @@ body {
 }
 
 p {
-    font-size: var(--size-font-default);
+    font-size: calc(var(--size-font-default)*0.97);
     display: inline;
+}
+
+div {
+    font-size: var(--size-font-default);
 }
 
 /* Top left */
@@ -75,6 +78,7 @@ p {
 /* Top right */
 
 #descholder {
+    margin-top: 2vw;
     position: default;
     background-color: white;
 }
@@ -133,6 +137,7 @@ p {
     display: block;
     background-color: white;
     text-align: center;
+    padding-bottom: 3vw;
 }
 
 /* Footers */
