@@ -13,6 +13,7 @@ button {
     display: inline-block;
     font-size: var(--size-font-default);
     cursor: pointer;
+    font-family: Tahoma, sans-serif;
 }
 
 input[type=number] {
@@ -24,6 +25,7 @@ input[type=number] {
     background-color: #f5f5f5;
     font-size: var(--size-font-default);
     -moz-appearance: textfield;
+    font-family: Tahoma, sans-serif;
 }
 
 select {
@@ -37,5 +39,6 @@ select {
     border: 0px solid white;
     background-color: #f5f5f5;
     cursor: pointer;
-    font-size: var(--size-font-default);    
+    font-size: var(--size-font-default);
+    font-family: Tahoma, sans-serif;
 }
