@@ -3,9 +3,9 @@
     --color-default: black;
     --width-leftrange: 49vw;
     --size-font-header: 1.2vw;
-    --size-font-default: 1.0vw;
-    --size-font-desc: 1.0vw;
-    --size-font-footer: 0.9vw;
+    --size-font-default: 1.2vw;
+    --size-font-desc: 1.2vw;
+    --size-font-footer: 1vw;
     --height-footer: 1.1vw;
     --height-header-left: 2.8vw;
     --height-header-right: 8vw;
@@ -27,7 +27,7 @@
 
     /* input */
     --height-margin-input: 0.3vw;
-    --width-input: 3.5vw;
+    --width-input: 5vw;
     --padding-input: 0.6vw;
 
     /*reference*/

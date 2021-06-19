@@ -14,12 +14,17 @@ function loaditem()
     var datainput = document.getElementById('datainput');
     clearitems();
     var obs = document.getElementById('observable').value;
+    var xvar = document.getElementById('xvariable').value;
 
     for(var da in dataset)
     {
         var thisitem = dataset[da];
-        
-        if(thisitem.observable !== obs) { continue; }
+
+        var ifdrawx = thisitem.xtitle == xvar;
+        var ifdrawy = thisitem.observable == obs ||
+	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3"));
+
+        if(!ifdrawx || !ifdrawy) { continue; }
 
         var iline = document.createElement("tr");
         iline.id = "tr_" + da;
@@ -43,6 +48,15 @@ function loaditem()
         icheckmark.id = "checkmark_" + da;
         itchecklabel.appendChild(icheckmark);
 
+        if(obs == "vn")
+        {
+            var itobs = document.createElement("td");
+            var iobs = document.createElement("span");
+            iobs.innerHTML = thisitem.observable;
+            itobs.appendChild(iobs);
+            iline.appendChild(itobs);
+        }
+        
         var itparticle = document.createElement("td");
         var iparticle = document.createElement("span");
         iparticle.innerHTML = thisitem.particle;

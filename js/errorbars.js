@@ -110,6 +110,20 @@ var drawaxisgrid = function()
         ytitle.append('tspan').attr('class', 'axistitlesub')
             .text('2');
     }
+    else if(document.getElementById('observable').value === "v3")
+    {
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('v');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('3');
+    }
+    else if(document.getElementById('observable').value === "vn")
+    {
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('v');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('n');
+    }
     else if(document.getElementById('observable').value === "LcD0")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
@@ -243,20 +257,21 @@ var m20 = function(da, point, thecolor, transt = 1000)
         });
 };
 
-var drawall = function(transt)
+var drawall = function(transt = 1000)
 {
     d3.selectAll("svg > *").remove();
     setsvg();
 
-    var obs = document.getElementById('observable').value;
-    var xvar = document.getElementById('xvariable').value;
-
-    for(var da in dataset)
+    var checkb = document.getElementsByTagName("input");
+    for(var i=0; i<checkb.length; i++)
     {
-        var thisitem = dataset[da];
-        if(thisitem.observable !== obs || thisitem.xtitle != xvar) { continue; }
-        if(document.getElementById('check_'+da).checked == true)
+        if(checkb[i].type == 'checkbox')
+        {
+            if(!checkb[i].checked) continue;
+            var da = checkb[i].id.replace("check_", "");
+            var thisitem = dataset[da];
             addData(da, thisitem.data, document.getElementById('color_'+da).value, 20, transt);
+        }
     }
     addref();
 }

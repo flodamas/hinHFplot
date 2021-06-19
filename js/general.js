@@ -9,6 +9,18 @@ function defaultrange()
                 pymin : -0.03,
                 pymax : 0.24
             },
+            "v3+pT" : {
+                pxmin : 0,
+                pxmax : 40,
+                pymin : -0.03,
+                pymax : 0.1
+            },
+            "vn+pT" : {
+                pxmin : 0,
+                pxmax : 40,
+                pymin : -0.03,
+                pymax : 0.24
+            },
             "RAA+pT" : {
                 pxmin : 0.1,
                 pxmax : 50,
