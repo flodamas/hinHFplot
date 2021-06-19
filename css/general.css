@@ -28,11 +28,11 @@
     /* input */
     --height-margin-input: 0.3vw;
     --width-input: 5vw;
-    --padding-input: 0.6vw;
+    --padding-input: 0.8vw;
 
     /*reference*/
     --ncol-reference: 2;
-    --width-reference: 30vw;
+    --width-reference: 38vw;
 }
 
 /* transition */
