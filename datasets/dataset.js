@@ -1597,6 +1597,26 @@ dataset["CMS_Upsilon1S_v2_pt_10-30"] = {
     ]
 };
 
+dataset["CMS_Upsilon1S_v2_pt_30-50"] = {
+    reference : "PLB 819 (2021) 136385",
+    link : "https://arxiv.org/abs/2006.07707",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    centrality : "30-50%",
+    rapidity : "|y| < 2.4",
+    pt : "",
+    data : [
+        {"x": 1.5, "y": 0.039, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
+        {"x": 4.5, "y": -0.006, "stath": 0.033, "statl": 0.033, "systh": 0.013, "systl": 0.013},
+        {"x": 8, "y": 0.078, "stath": 0.041, "statl": 0.041, "systh": 0.011, "systl": 0.011},
+        {"x": 30, "y": -0.007, "stath": 0.035, "statl": 0.035, "systh": 0.012, "systl": 0.012},
+    ]
+};
+
 dataset["CMS_Upsilon1S_v2_pt_5-60"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
@@ -1975,26 +1995,6 @@ dataset["CMS_pJpsi_RAA_pt_30-100_y2p4"] = {
         {"x": 14, "y": 0.579, "stath": 0.028, "statl": 0.028, "systh": 0.032, "systl": 0.032},
         {"x": 17.5, "y": 0.586, "stath": 0.028, "statl": 0.028, "systh": 0.024, "systl": 0.024},
         {"x": 25, "y": 0.703, "stath": 0.05, "statl": 0.05, "systh": 0.029, "systl": 0.029},
-    ]
-};
-
-dataset["CMS_Upsilon1S_v2_pt_30-50"] = {
-    reference : "PLB 819 (2021) 136385",
-    link : "https://arxiv.org/abs/2006.07707",
-    observable : "v2",
-    xtitle : "pT",
-    particle : "&Upsilon;(1S)",
-    collision : "PbPb",
-    energy : "5 TeV",
-    collab : "CMS",
-    centrality : "30-50%",
-    rapidity : "|y| < 2.4",
-    pt : "",
-    data : [
-        {"x": 1.5, "y": 0.039, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
-        {"x": 4.5, "y": -0.006, "stath": 0.033, "statl": 0.033, "systh": 0.013, "systl": 0.013},
-        {"x": 8, "y": 0.078, "stath": 0.041, "statl": 0.041, "systh": 0.011, "systl": 0.011},
-        {"x": 30, "y": -0.007, "stath": 0.035, "statl": 0.035, "systh": 0.012, "systl": 0.012},
     ]
 };
 
