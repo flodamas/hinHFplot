@@ -40,7 +40,6 @@ var setsvg = function()
     setscale();
     var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
     drawaxisgrid();
-    drawvline();
 }
 
 // axes
@@ -56,6 +55,28 @@ var drawaxisgrid = function()
         .attr('transform', 'translate(0,0)')
         .attr("class", "grid")
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
+
+    var obs = document.getElementById('observable').value;
+    var vy = 0;
+    if(obs == "RAA") vy = 1;
+    else if(obs == "LcD0") vy = -10;
+
+    if(vy > ymin && vy < ymax)
+    {
+        var vline = d3.select("svg").select("g")
+            .append('line')
+            .attr("class", "hline")
+            .attr('id', 'vline')
+            .attr('x1', function() { return x(xmin); })
+            .attr('x2', function() { return x(xmax); })
+            .attr('y1', function() { return y(vy); })
+            .attr('y2', function() { return y(vy); })
+            .transition().duration(1000)
+            .attr('stroke', '#bbb')
+            .attr('stroke-dasharray', '5,3')
+            .attr('opacity', '0');
+    }
+    document.getElementById('btnvline').value = 0;
 
     var xAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
@@ -96,35 +117,35 @@ var drawaxisgrid = function()
         .attr("class", "ytitle")
         .style("text-anchor", "middle")
 
-    if(document.getElementById('observable').value === "RAA")
+    if(obs === "RAA")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('R');
         ytitle.append('tspan').attr('class', 'axistitlesub')
             .text('AA');
     }
-    else if(document.getElementById('observable').value === "v2")
+    else if(obs === "v2")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('v');
         ytitle.append('tspan').attr('class', 'axistitlesub')
             .text('2');
     }
-    else if(document.getElementById('observable').value === "v3")
+    else if(obs === "v3")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('v');
         ytitle.append('tspan').attr('class', 'axistitlesub')
             .text('3');
     }
-    else if(document.getElementById('observable').value === "vn")
+    else if(obs === "vn")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('v');
         ytitle.append('tspan').attr('class', 'axistitlesub')
             .text('n');
     }
-    else if(document.getElementById('observable').value === "LcD0")
+    else if(obs === "LcD0")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('L');
@@ -148,30 +169,6 @@ var drawaxisgrid = function()
     // tmark.append('tspan')
     //     .text("boundino.github.io/hinHFplot");
     
-}
-
-var drawvline = function(transt = 1000) {
-    var obs = document.getElementById('observable').value;
-    var vy = 0;
-    if(obs == "RAA") vy = 1;
-    else if(obs == "LcD0") vy = -10;
-
-    if(vy > ymin && vy < ymax)
-    {
-        var vline = d3.select("svg").select("g")
-            .append('line')
-            .attr("class", "hline")
-            .attr('id', 'vline')
-            .attr('x1', function() { return x(xmin); })
-            .attr('x2', function() { return x(xmax); })
-            .attr('y1', function() { return y(vy); })
-            .attr('y2', function() { return y(vy); })
-            .transition().duration(transt)
-            .attr('stroke', 'black')
-            .attr('stroke-dasharray', '5,3')
-            .attr('opacity', '0');
-    }
-    document.getElementById('btnvline').value = 0;
 }
 
 var vlineopacity = function() {
