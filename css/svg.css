@@ -42,6 +42,7 @@
 
 .hline {
     stroke-width: var(--width-axis);
+    transition: opacity 1s;
 }
 
 /* .ytitle { */

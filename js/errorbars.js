@@ -71,7 +71,6 @@ var drawaxisgrid = function()
             .attr('x2', function() { return x(xmax); })
             .attr('y1', function() { return y(vy); })
             .attr('y2', function() { return y(vy); })
-            .transition().duration(1000)
             .attr('stroke', '#bbb')
             .attr('stroke-dasharray', '5,3')
             .attr('opacity', document.getElementById('btnvline').value);
@@ -174,12 +173,12 @@ var vlineopacity = function() {
     var vline = d3.select("svg").select("g").select('#vline');
     if(document.getElementById('btnvline').value == 1)
     {
-        vline.attr('opacity', '0').transition().duration(2000);
+        vline.attr('opacity', '0')
         document.getElementById('btnvline').value = 0;
     }
     else
     {
-        vline.attr('opacity', '1').transition().duration(2000);
+        vline.attr('opacity', '1')
         document.getElementById('btnvline').value = 1;
     }
 }
