@@ -74,9 +74,8 @@ var drawaxisgrid = function()
             .transition().duration(1000)
             .attr('stroke', '#bbb')
             .attr('stroke-dasharray', '5,3')
-            .attr('opacity', '0');
+            .attr('opacity', document.getElementById('btnvline').value);
     }
-    document.getElementById('btnvline').value = 0;
 
     var xAxis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
