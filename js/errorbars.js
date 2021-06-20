@@ -304,7 +304,7 @@ var draw = function(da, transt = 500)
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
     }
     
-    legend(da, transt);
+    // legend(da, transt);
     addref();
 }
 
@@ -381,7 +381,6 @@ function legend(da, trans = 500)
             if(legys["legend_" + ida] > legys["legend_" + da])
             {
                 var ileg = d3.select('svg').select('#legend_' + ida);
-                console.log(ileg);
                 ileg.transition().attr("y", legys["legend_" + ida] - dy).duration(trans);
                 legys["legend_" + ida] = legys["legend_" + ida] - dy;
             }
@@ -431,6 +430,17 @@ function legend(da, trans = 500)
         tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
 
         ynow = ynow + dy;
+    }
+}
+
+function relegend(da, transt = 500)
+{
+    var icheck = document.getElementById('check_' + da);
+    var cc = document.getElementById('color_' + da).value;
+    // var ileg = d3.select('svg').select('#legend_' + da);
+    if(icheck.checked)
+    {
+        d3.select("svg").select("#legendmark_"+da).transition().style('fill', cc).duration(transt);
     }
 }
 

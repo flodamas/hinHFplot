@@ -42,7 +42,7 @@ function loaditem()
         // icheck.checked = true;
 
         itchecklabel.appendChild(icheck);
-        icheck.setAttribute('onchange', "draw('"+da+"')");
+        icheck.setAttribute('onchange', "draw('"+da+"'); legend('"+da+"');");
         var icheckmark = document.createElement("span");
         icheckmark.setAttribute('class', 'checkmark');
         icheckmark.id = "checkmark_" + da;
@@ -90,10 +90,17 @@ function loaditem()
         icolor.id = "color_" + da;
         icolor.value = "#" + Math.floor(Math.random()*16777215).toString(16);
         icolor.setAttribute('class', 'colorpicker');
-        icolor.setAttribute('onchange', "draw('" + da + "')");
+        icolor.setAttribute('onchange', "draw('" + da + "'); relegend('" + da + "'); ");
         itcolor.appendChild(icolor);
 
-        iline.setAttribute('onclick', "checkthis('"+da+"')");
+        // iline.setAttribute('onclick', "checkthis('"+da+"')");
+        itparticle.setAttribute('onclick', "checkthis('"+da+"')");
+        itcollision.setAttribute('onclick', "checkthis('"+da+"')");
+        itenergy.setAttribute('onclick', "checkthis('"+da+"')");
+        itcollab.setAttribute('onclick', "checkthis('"+da+"')");
+        itcentrality.setAttribute('onclick', "checkthis('"+da+"')");
+        itrapidity.setAttribute('onclick', "checkthis('"+da+"')");
+
         iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
         iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
     }
@@ -132,6 +139,7 @@ function checkthis(da)
     }
 
     draw(da);
+    legend(da);
 }
 
 function checkcolor(da)
