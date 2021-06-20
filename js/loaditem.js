@@ -20,9 +20,13 @@ function loaditem()
     {
         var thisitem = dataset[da];
 
-        var ifdrawx = thisitem.xtitle == xvar;
+        var ifdrawx = thisitem.xtitle == xvar ||
+            (xvar == "y" && (thisitem.xtitle == "absy" || thisitem.xtitle == "ycm")) ||
+            (xvar == "absy" && (thisitem.xtitle == "absycm")) ||
+            false;            
         var ifdrawy = thisitem.observable == obs ||
-	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3"));
+	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3")) ||
+            false;
 
         if(!ifdrawx || !ifdrawy) { continue; }
 
@@ -76,11 +80,11 @@ function loaditem()
         iline.appendChild(itcollab);
 
         var itcentrality = document.createElement("td");
-        itcentrality.innerHTML = thisitem.centrality;
+        itcentrality.innerHTML = thisitem.kinea;
         iline.appendChild(itcentrality);
 
         var itrapidity = document.createElement("td");
-        itrapidity.innerHTML = thisitem.rapidity;
+        itrapidity.innerHTML = thisitem.kineb;
         iline.appendChild(itrapidity);
 
         var itcolor = document.createElement("td");

@@ -27,6 +27,18 @@ function defaultrange()
                 pymin : 0,
                 pymax : 1.3
             },
+            "RAA+y" : {
+                pxmin : -2.5,
+                pxmax : 2.5,
+                pymin : 0,
+                pymax : 1.3
+            },
+            "RAA+absy" : {
+                pxmin : 0,
+                pxmax : 3.5,
+                pymin : 0,
+                pymax : 1.3
+            },
             "LcD0+pT" : {
                 pxmin : 0,
                 pxmax : 22,

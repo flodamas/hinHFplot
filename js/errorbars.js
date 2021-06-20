@@ -108,8 +108,9 @@ var drawaxisgrid = function()
     var xtitle = svg.append("text")             
         .attr("transform",
               "translate(" + (chartWidth/2. + margin.left) + " ," + 
-              (chartHeight + margin.top + margin.bottom/1.15) + ")")
+              (chartHeight + margin.top + margin.bottom/1.3) + ")")
         .style("text-anchor", "middle")
+
     if(document.getElementById('xvariable').value === "pT")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
@@ -118,6 +119,22 @@ var drawaxisgrid = function()
             .text('T');
         xtitle.append('tspan').attr('class', 'axistitle')
             .text(' (GeV/c)');
+    }
+    else if(document.getElementById('xvariable').value === "y")
+    {
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text('y');
+        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('CM');
+    }
+    else if(document.getElementById('xvariable').value === "absy")
+    {
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text('|y');
+        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('CM');
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text('|');
     }
 
     var ytitle = svg.append("text")
@@ -414,17 +431,17 @@ function legend(da, trans = 500)
             .style("class", "legendlabel")
             .style("font-style", "italic")
             .text(' ' + thisitem.collision + ' ' + thisitem.energy);
-        if(thisitem.centrality != "")
+        if(thisitem.kinea != "")
         {
             tlegend.append('tspan')
                 .style("class", "legendlabel")
-                .text(' ' + thisitem.centrality);
+                .text(', ' + decodehtml(thisitem.kinea));
         }
-        if(thisitem.rapidity != "")
+        if(thisitem.kineb != "")
         {
             tlegend.append('tspan')
                 .style("class", "legendlabel")
-                .text(', ' + decodehtml(thisitem.rapidity));
+                .text(' ' + decodehtml(thisitem.kineb));
         }
 
         tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
