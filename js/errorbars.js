@@ -438,12 +438,12 @@ var legendopacity = function() {
     var tlegend = d3.select("svg").selectAll('.legend');
     if(document.getElementById('btnlegend').value == 1)
     {
-        tlegend.attr('opacity', '0')
+        tlegend.transition().attr('opacity', '0').duration(500);
         document.getElementById('btnlegend').value = 0;
     }
     else
     {
-        tlegend.attr('opacity', '1')
+        tlegend.transition().attr('opacity', '1').duration(500);
         document.getElementById('btnlegend').value = 1;
     }
 }
