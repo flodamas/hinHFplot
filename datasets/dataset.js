@@ -1844,7 +1844,6 @@ dataset["CMS_Upsilon1S_v2_pt_10-30"] = {
     rapidity : "|y| < 2.4",
     pt : "",
     data : [
-        {"x": 0, "y": -1.0842e-19, "stath": 4.18131e+24, "statl": 1.90508e+31, "systh": 1.5935e-19, "systl": 5.07163e+16},
         {"x": 1.5, "y": -0.006, "stath": 0.028, "statl": 0.028, "systh": 0.015, "systl": 0.015},
         {"x": 4.5, "y": -0.017, "stath": 0.025, "statl": 0.025, "systh": 0.013, "systl": 0.013},
         {"x": 8, "y": 0.065, "stath": 0.033, "statl": 0.033, "systh": 0.007, "systl": 0.007},
@@ -2250,26 +2249,6 @@ dataset["CMS_pJpsi_RAA_pt_30-100_y2p4"] = {
         {"x": 14, "y": 0.579, "stath": 0.028, "statl": 0.028, "systh": 0.032, "systl": 0.032},
         {"x": 17.5, "y": 0.586, "stath": 0.028, "statl": 0.028, "systh": 0.024, "systl": 0.024},
         {"x": 25, "y": 0.703, "stath": 0.05, "statl": 0.05, "systh": 0.029, "systl": 0.029},
-    ]
-};
-
-dataset["CMS_upsilon1S_v2_pt_30-50"] = {
-    reference : "arXiv:2006.07707",
-    link : "https://arxiv.org/abs/2006.07707",
-    observable : "v2",
-    xtitle : "pT",
-    particle : "&Upsilon;(1S)",
-    collision : "PbPb",
-    energy : "5 TeV",
-    collab : "CMS",
-    centrality : "30-50%",
-    rapidity : "|y| < 2.4",
-    pt : "",
-    data : [
-        {"x": 1.5, "y": 0.039, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
-        {"x": 4.5, "y": -0.006, "stath": 0.033, "statl": 0.033, "systh": 0.013, "systl": 0.013},
-        {"x": 8, "y": 0.078, "stath": 0.041, "statl": 0.041, "systh": 0.011, "systl": 0.011},
-        {"x": 30, "y": -0.007, "stath": 0.035, "statl": 0.035, "systh": 0.012, "systl": 0.012},
     ]
 };
 
