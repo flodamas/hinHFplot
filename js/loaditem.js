@@ -42,11 +42,11 @@ function loaditem()
         // icheck.checked = true;
 
         itchecklabel.appendChild(icheck);
-        icheck.setAttribute('onchange', "draw('"+da+"'); legend('"+da+"');");
         var icheckmark = document.createElement("span");
         icheckmark.setAttribute('class', 'checkmark');
         icheckmark.id = "checkmark_" + da;
         itchecklabel.appendChild(icheckmark);
+        icheck.setAttribute('onchange', "draw('"+da+"'); legend('"+da+"'); document.getElementById('checkmark_' + '"+da+"').style = ''; ");
 
         if(obs == "vn")
         {
@@ -94,6 +94,7 @@ function loaditem()
         itcolor.appendChild(icolor);
 
         // iline.setAttribute('onclick', "checkthis('"+da+"')");
+        // itcheck.setAttribute('onclick', "checkthis('"+da+"')");
         itparticle.setAttribute('onclick', "checkthis('"+da+"')");
         itcollision.setAttribute('onclick', "checkthis('"+da+"')");
         itenergy.setAttribute('onclick', "checkthis('"+da+"')");
