@@ -329,7 +329,6 @@ function colorall(transt = 500)
             d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(transt);
 
             if(!document.getElementById("check_"+da).checked) continue;
-            console.log(d3.select("svg").select("#legendmark_"+da));
             d3.select("svg").select("#legendmark_"+da).transition().style('fill', cc).duration(transt);
         }
     }
@@ -356,8 +355,13 @@ function clearall()
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(500);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(500);
     }
-
     addref();
+
+    d3.select("svg").selectAll('.legend').attr('opacity', 0).transition().duration(500);
+    setTimeout(function() {
+        d3.select("svg").selectAll('.legend').remove();
+    }, 500);
+    ynow = y0;
 }
 
 function legend(da, trans = 500)
