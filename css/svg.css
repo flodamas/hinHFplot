@@ -49,7 +49,7 @@
 
 .legend {
     font: var(--size-legend) sans-serif;
-    transition: opacity 0.5s;
+    /* transition: opacity 0.5s; */
 }
 
 .legendlebel {
