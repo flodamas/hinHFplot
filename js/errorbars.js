@@ -6,6 +6,12 @@ var margin, chartWidth, chartHeight;
 var xmin, xmax, ymin, ymax;
 var x, y;
 
+// legend -->
+var x0, y0, dy;
+var ynow = -1;
+var legys = {};
+// <-- legend
+
 var setscale = function()
 {
     width = document.getElementById('rightpad').clientWidth*0.85;
@@ -32,6 +38,12 @@ var setscale = function()
     y = d3.scaleLinear()
         .range([chartHeight, 0])
         .domain([ymin, ymax]);
+
+    x0 = margin.left + chartWidth/6.;
+    y0 = margin.top + chartHeight/9.;
+    if(ynow < 0)
+        ynow = y0;
+    dy = chartHeight/15.;
 }
 
 // create svg
@@ -184,7 +196,7 @@ var vlineopacity = function() {
 }
 
 
-var addData = function(da, data, thecolor, kmarker, transt = 1000) {
+var addData = function(da, data, thecolor, kmarker, transt = 500) {
 
     var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
         .data(data);
@@ -235,7 +247,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 1000) {
     if(kmarker==20) { m20(da, points, thecolor, transt); }
 };
 
-var m20 = function(da, point, thecolor, transt = 1000)
+var m20 = function(da, point, thecolor, transt = 500)
 {
     point.enter()
         .append('circle')
@@ -252,10 +264,11 @@ var m20 = function(da, point, thecolor, transt = 1000)
         });
 };
 
-var drawall = function(transt = 1000)
+var drawall = function(transt = 500)
 {
     d3.selectAll("svg > *").remove();
     setsvg();
+    ynow = y0;
 
     var checkb = document.getElementsByTagName("input");
     for(var i=0; i<checkb.length; i++)
@@ -266,12 +279,13 @@ var drawall = function(transt = 1000)
             var da = checkb[i].id.replace("check_", "");
             var thisitem = dataset[da];
             addData(da, thisitem.data, document.getElementById('color_'+da).value, 20, transt);
+            legend(da, transt);
         }
     }
     addref();
 }
 
-var draw = function(da, transt = 1000)
+var draw = function(da, transt = 500)
 {
     var ichecked = document.getElementById('check_'+da).checked;
     if(ichecked)
@@ -289,10 +303,12 @@ var draw = function(da, transt = 1000)
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
     }
+    
+    legend(da, transt);
     addref();
 }
 
-function colorall()
+function colorall(transt = 500)
 {
     var colorb = document.getElementsByTagName("input");
     for(var i=0; i<colorb.length; i++)
@@ -301,14 +317,20 @@ function colorall()
         {
             var da = colorb[i].id.replace("color_", "");
             var cc = Math.floor(Math.random()*16777215).toString(16);
-            if(cc.length < 6)
-            { for(var ic = 0; ic<(6-cc.length); ic++) { cc = '0' + cc; } }
+            var ccl = cc.length;
+            if(ccl < 6)
+            { for(var ic = 0; ic<(6-ccl); ic++) { cc = '0' + cc; } }
             cc = '#' + cc;
             colorb[i].value = cc;
+
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('fill', cc);
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('stroke', cc);
-            d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(500);
-            d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(500);
+            d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
+            d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(transt);
+
+            if(!document.getElementById("check_"+da).checked) continue;
+            console.log(d3.select("svg").select("#legendmark_"+da));
+            d3.select("svg").select("#legendmark_"+da).transition().style('fill', cc).duration(transt);
         }
     }
 
@@ -336,6 +358,90 @@ function clearall()
     }
 
     addref();
+}
+
+function legend(da, trans = 500)
+{
+    var icheck = document.getElementById('check_' + da);
+    if(!icheck.checked)
+    {
+        ynow = ynow - dy;
+        ilegend = svg.select('#legend_'+da);
+        ilegend.remove();
+        var trs = document.getElementsByTagName('tr');
+        for(var l=0; l<trs.length; l++)
+        {
+            var ida = trs[l].id.replace("tr_", "");
+            if(!(document.getElementById("check_" + ida).checked))
+                continue;
+            if(legys["legend_" + ida] > legys["legend_" + da])
+            {
+                var ileg = d3.select('svg').select('#legend_' + ida);
+                console.log(ileg);
+                ileg.transition().attr("y", legys["legend_" + ida] - dy).duration(trans);
+                legys["legend_" + ida] = legys["legend_" + ida] - dy;
+            }
+        }
+    }
+    else
+    {
+        var thisitem = dataset[da];
+
+        legys["legend_" + da] = ynow;
+        var tlegend = svg.append("text")
+            .attr("x", x0)
+            .attr("y", ynow)
+            .attr("class", "legend")
+            .attr("id", "legend_" + da)
+            .attr('opacity', '0')
+	    .style("text-anchor", "start");
+        tlegend.append('tspan')
+            .attr("class", "legendmark")
+            .attr("id", "legendmark_" + da)
+            .style("fill", document.getElementById('color_'+da).value)
+            .text(decodehtml("&#9679; "));
+        tlegend.append('tspan')
+            .style("class", "legendlabel")
+            .style("font-weight", "bold")
+            .text(' ' + decodehtml(thisitem.particle));
+        tlegend.append('tspan')
+            .style("class", "legendlabel")
+            .text(' ' + thisitem.collab);
+        tlegend.append('tspan')
+            .style("class", "legendlabel")
+            .style("font-style", "italic")
+            .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+        if(thisitem.centrality != "")
+        {
+            tlegend.append('tspan')
+                .style("class", "legendlabel")
+                .text(' ' + thisitem.centrality);
+        }
+        if(thisitem.rapidity != "")
+        {
+            tlegend.append('tspan')
+                .style("class", "legendlabel")
+                .text(', ' + decodehtml(thisitem.rapidity));
+        }
+
+        tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
+
+        ynow = ynow + dy;
+    }
+}
+
+var legendopacity = function() {
+    var tlegend = d3.select("svg").selectAll('.legend');
+    if(document.getElementById('btnlegend').value == 1)
+    {
+        tlegend.attr('opacity', '0')
+        document.getElementById('btnlegend').value = 0;
+    }
+    else
+    {
+        tlegend.attr('opacity', '1')
+        document.getElementById('btnlegend').value = 1;
+    }
 }
 
 window.addEventListener("resize", function() { drawall(0); });

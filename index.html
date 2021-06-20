@@ -12,8 +12,8 @@
   <body>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="datasets/dataset.js"></script>
-    <script data-main="js/errorbars.js" src="datasets/dataset.js"></script>
-    <script data-main="js/loaditem.js" src="datasets/dataset.js"></script>
+    <!-- <script data-main="js/errorbars.js" src="datasets/dataset.js"></script> -->
+    <!-- <script data-main="js/loaditem.js" src="datasets/dataset.js"></script> -->
     <script>
       if(screen.width/screen.height < 1) {
           window.location = "https://boundino.github.io/hinHFplot/index_m.html";
@@ -67,6 +67,7 @@
           <button type="submit" onclick="clearall()">Clear all</button>
           <button type="submit" onclick="colorall(); ">Random color</button>
           <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Horizontal line</button>
+          <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
         </div>
       </div>
 

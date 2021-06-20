@@ -41,3 +41,12 @@ function defaultrange()
     document.getElementById('pymin').value = drange[varkey].pymin;
     document.getElementById('pymax').value = drange[varkey].pymax;
 }
+
+function decodehtml(str)
+{
+    var temp = document.createElement("p");
+    temp.innerHTML = str;
+    var result = temp.innerText;
+    temp.remove();
+    return result;
+}

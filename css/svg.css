@@ -1,3 +1,10 @@
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
 
 .axis {
     font: var(--size-axis-font) sans-serif;
@@ -40,11 +47,22 @@
     font: calc(var(--size-axis-font)*0.95) sans-serif;
 }
 
-.hline {
-    stroke-width: var(--width-axis);
-    transition: opacity 1s;
+.legend {
+    font: var(--size-legend) sans-serif;
+    transition: opacity 0.5s;
 }
 
-/* .ytitle { */
-/*     dy: 1.4em; */
-/* } */
+.legendlebel {
+    fill: black;
+}
+
+.legendmark {
+    font: calc(var(--size-legend)*1.2) sans-serif;
+}
+
+.hline {
+    stroke-width: var(--width-axis);
+    transition: opacity 0.5s;
+}
+
+
