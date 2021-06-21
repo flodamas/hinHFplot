@@ -867,6 +867,32 @@ dataset["ALICE_be_RAA_pt_0-10"] = {
     ]
 };
 
+dataset["ALICE_be_RAA_pt_5TeV_pPb_ycmm1p06-0p14"] = {
+    reference : "JHEP 07 (2017) 052",
+    link : "https://arxiv.org/abs/1609.03898",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "(b&rarr;) e",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "-1.06 < ycm < 0.14",
+    kinec : "",
+    data : [
+        {"x": 1.05, "y": 0.84, "stath": 0.23, "statl": 0.23, "systh": 0.48, "systl": 0.49},
+        {"x": 1.2, "y": 0.87, "stath": 0.19, "statl": 0.19, "systh": 0.44, "systl": 0.42},
+        {"x": 1.4, "y": 1.07, "stath": 0.2, "statl": 0.2, "systh": 0.46, "systl": 0.43},
+        {"x": 1.75, "y": 1.18, "stath": 0.15, "statl": 0.15, "systh": 0.41, "systl": 0.38},
+        {"x": 2.25, "y": 1.26, "stath": 0.16, "statl": 0.16, "systh": 0.37, "systl": 0.34},
+        {"x": 2.75, "y": 1.2, "stath": 0.17, "statl": 0.17, "systh": 0.27, "systl": 0.28},
+        {"x": 3.5, "y": 1, "stath": 0.11, "statl": 0.11, "systh": 0.19, "systl": 0.22},
+        {"x": 4.5, "y": 0.99, "stath": 0.13, "statl": 0.13, "systh": 0.18, "systl": 0.21},
+        {"x": 5.5, "y": 1.16, "stath": 0.22, "statl": 0.22, "systh": 0.21, "systl": 0.24},
+        {"x": 7, "y": 0.9, "stath": 0.15, "statl": 0.15, "systh": 0.18, "systl": 0.2},
+    ]
+};
+
 dataset["ALICE_be_v2_pt_30-50"] = {
     reference : "PRL 126 (2021) 162001",
     link : "https://arxiv.org/abs/2005.11130",
