@@ -12,8 +12,12 @@
   <body>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="datasets/dataset.js"></script>
-    <script data-main="js/errorbars.js" src="datasets/dataset.js"></script>
-    <script data-main="js/loaditem.js" src="datasets/dataset.js"></script>
+    <script>
+      // if(screen.width/screen.height < 1) {
+      if(window.innerWidth/window.innerHeight > 1) {
+          window.location = "https://boundino.github.io/hinHFplot/index.html";
+      }
+    </script>
 
     <!-- Bottom-left -->
     <div id="leftrange">
@@ -75,8 +79,13 @@
     <div id="rightrange">
       <div id="rightpad">
         <svg></svg>
+        <div id="divrange">
+          <p>Legend position: </p>
+          <input type="range" min="1" max="100" value="20" class="slider" id="x0range" oninput="movelegend()">
+        </div>
         <div id="divreference">
           <!-- <p>Reference:</p> -->
+          <br>
           <ul id="reference"> </ul>
         </div>
         <script src="js/reference.js"></script>

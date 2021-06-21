@@ -8,7 +8,7 @@
     --size-font-footer: 1vw;
     --height-footer: 1.1vw;
     --height-header-left: 2.8vw;
-    --height-header-right: 8vw;
+    --height-header-right: 9vw;
     --margin-rightrange: 1.05;
 
     /* svg.css */
@@ -30,6 +30,7 @@
     --height-margin-input: 0.3vw;
     --width-input: 5vw;
     --padding-input: 0.8vw;
+    --height-slider: 0.8vw;
 
     /*reference*/
     --ncol-reference: 2;
@@ -116,6 +117,12 @@ p {
     margin-left: calc(var(--width-leftrange) * var(--margin-rightrange));
     background-color: white;
     z-index: 1;
+}
+
+#divrange {
+    position: absolute;
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.8);
+    right: 0;
 }
 
 #desc {

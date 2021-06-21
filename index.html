@@ -16,7 +16,8 @@
     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
     <script src="datasets/dataset.js"></script>
     <script>
-      if(screen.width/screen.height < 1) {
+      // if(screen.width/screen.height < 1) {
+      if(window.innerWidth/window.innerHeight <= 1) {
           window.location = "https://boundino.github.io/hinHFplot/index_m.html";
       }
     </script>
@@ -34,6 +35,10 @@
         Contact: Jing Wang (jing.wang@cern.ch)<br>
         <!-- <button type="submit" id='saveButton'>Save as PNG</button> -->
         <button type="submit" onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmlA9d3D66kaOERzHraFUj0bi6a12KLmf--rCzEl7GkfwyIWaCa8LJnQTT_SLYy_Xi8ruj11HQB-jR/pubhtml')">Heavy Flavor Publications</button>
+        <div id="divrange">
+          <p>Legend position: </p>
+          <input type="range" min="1" max="100" value="20" class="slider" id="x0range" oninput="movelegend()">
+        </div>
       </div>
     </div>
 

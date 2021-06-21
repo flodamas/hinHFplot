@@ -9,7 +9,7 @@
     --size-font-footer: 3vw;
     --height-footer: 3.2vw;
     --height-header-left: 0;
-    --height-rightrange: 60vw;
+    --height-rightrange: 65vw;
 
     /* svg.css */
     --width-axis: 0.3vw;
@@ -30,6 +30,7 @@
     --height-margin-input: 0.8vw;
     --width-input: 10vw;
     --padding-input: 2vw;
+    --height-slider: 2vw;
 
     /*reference*/
     --ncol-reference: 2;

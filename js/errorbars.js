@@ -39,7 +39,7 @@ var setscale = function()
         .range([chartHeight, 0])
         .domain([ymin, ymax]);
 
-    x0 = margin.left + chartWidth/15.;
+    x0 = margin.left + chartWidth/100.*document.getElementById('x0range').value;
     y0 = margin.top + chartHeight/9.;
     if(ynow < 0)
         ynow = y0;
@@ -235,7 +235,8 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .merge(rects)
         .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
         .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
-        .attr('height', function(d) { return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax)); })
         .attr('width', function(d) {
             var low = x(d.x) - chartWidth/80.;
             if(low < 0) { low = 0; }
@@ -471,6 +472,13 @@ function relegend(da, transt = 500)
     {
         d3.select("svg").select("#legendmark_"+da).transition().style('fill', cc).duration(transt);
     }
+}
+
+function movelegend()
+{
+    x0 = margin.left + chartWidth/100.*document.getElementById('x0range').value;
+    // d3.select("svg").selectAll(".legend").transition().attr("x", x0).duration(500);;
+    d3.select("svg").selectAll(".legend").attr("x", x0);
 }
 
 var legendopacity = function() {

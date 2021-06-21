@@ -1,6 +1,6 @@
-
 :root {
 }
+
 button {
     border: none;
     margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
@@ -29,6 +29,10 @@ input[type=number] {
     font-family: Tahoma, sans-serif;
 }
 
+input[type=range] {
+    display: inline-block;    
+}
+
 select {
 }
 
@@ -43,3 +47,41 @@ select {
     font-size: var(--size-font-default);
     font-family: Tahoma, sans-serif;
 }
+
+.slider {
+  -webkit-appearance: none;
+  width: 60%;
+  height: var(--height-slider);
+  border-radius: calc(var(--height-slider)*0.33);
+  background: #eee;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;  
+  cursor: pointer;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: calc(var(--height-slider)*1.4);
+  height: calc(var(--height-slider)*1.4);
+  border-radius: 50%; 
+  background: #1f77b4;
+  cursor: pointer;
+}
+
+/* .slider::-webkit-slider-thumb:hover { */
+/*     background: #1f77b4; */
+/* } */
+
+/* .slider::-moz-range-thumb { */
+/*   width: 25px; */
+/*   height: 25px; */
+/*   border-radius: 50%; */
+/*   background: #1f77b4; */
+/*   cursor: pointer; */
+/* } */
