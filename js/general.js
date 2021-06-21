@@ -125,7 +125,7 @@ function defaultrange()
                 pymin : 0,
                 pymax : 1.3
             },
-            "LcD0+absy" : {
+            "LcD0+cent" : {
                 pxmin : 0,
                 pxmax : 100,
                 pymin : 0,
