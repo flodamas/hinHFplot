@@ -9,7 +9,7 @@
     --size-font-footer: 3vw;
     --height-footer: 3.2vw;
     --height-header-left: 0;
-    --height-rightrange: 65vw;
+    --height-rightrange: 59vw;
 
     /* svg.css */
     --width-axis: 0.3vw;
@@ -19,8 +19,8 @@
     --size-legend: 2.2vw;
 
     /* checkbox */
-    --width-colorpicker: 5vw;
-    --padding-td: 0.5vw;
+    --width-colorpicker: 2vw;
+    --padding-td: 0.4vw;
     --padding-td-tb: 1.2vw;
     --height-tr: 2.2vw;
     --size-checkmark: 3vw;
