@@ -50,7 +50,7 @@ select {
 
 .slider {
   -webkit-appearance: none;
-  width: 60%;
+  width: 30%;
   height: var(--height-slider);
   border-radius: calc(var(--height-slider)*0.33);
   background: #eee;
@@ -67,16 +67,18 @@ select {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: calc(var(--height-slider)*1.4);
-  height: calc(var(--height-slider)*1.4);
+  width: calc(var(--height-slider)*1.5);
+  height: calc(var(--height-slider)*1.5);
   border-radius: 50%; 
-  background: #1f77b4;
+  /* background: #1f77b4; */
+  background: black;
   cursor: pointer;
 }
 
-/* .slider::-webkit-slider-thumb:hover { */
-/*     background: #1f77b4; */
-/* } */
+.slider::-webkit-slider-thumb:hover {
+    background: #1f77b4;
+    transition: background .2s;
+}
 
 /* .slider::-moz-range-thumb { */
 /*   width: 25px; */

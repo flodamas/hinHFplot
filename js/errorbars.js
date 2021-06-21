@@ -8,8 +8,7 @@ var x, y;
 
 // legend -->
 var x0, y0, dy;
-var ynow = -1;
-var legys = {};
+var legs = [];
 // <-- legend
 
 var setscale = function()
@@ -39,10 +38,8 @@ var setscale = function()
         .range([chartHeight, 0])
         .domain([ymin, ymax]);
 
-    x0 = margin.left + chartWidth/100.*document.getElementById('x0range').value;
-    y0 = margin.top + chartHeight/9.;
-    if(ynow < 0)
-        ynow = y0;
+    x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
+    y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
     dy = chartHeight/15.;
 }
 
@@ -298,7 +295,6 @@ var drawall = function(transt = 500)
 {
     d3.selectAll("svg > *").remove();
     setsvg();
-    ynow = y0;
 
     var checkb = document.getElementsByTagName("input");
     for(var i=0; i<checkb.length; i++)
@@ -309,10 +305,22 @@ var drawall = function(transt = 500)
             var da = checkb[i].id.replace("check_", "");
             var thisitem = dataset[da];
             addData(da, thisitem.data, document.getElementById('color_'+da).value, 20, transt);
-            legend(da, transt);
         }
     }
+
     addref();
+}
+
+var drawallwleg = function(transt = 500)
+{
+    drawall(transt);
+    alllegend(transt);
+}
+
+var drawallnoleg = function(transt = 500)
+{
+    drawall(transt);
+    legs = [];
 }
 
 var draw = function(da, transt = 500)
@@ -334,7 +342,6 @@ var draw = function(da, transt = 500)
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
     }
     
-    // legend(da, transt);
     addref();
 }
 
@@ -391,7 +398,7 @@ function clearall()
     setTimeout(function() {
         d3.select("svg").selectAll('.legend').remove();
     }, 500);
-    ynow = y0;
+    legs = [];
 }
 
 function legend(da, trans = 500)
@@ -399,28 +406,23 @@ function legend(da, trans = 500)
     var icheck = document.getElementById('check_' + da);
     if(!icheck.checked)
     {
-        ynow = ynow - dy;
+        // remove legend;
         ilegend = svg.select('#legend_'+da);
         ilegend.remove();
-        var trs = document.getElementsByTagName('tr');
-        for(var l=0; l<trs.length; l++)
+        var ileg = legs.indexOf(da);
+        legs.splice(ileg, 1);
+        for(var l=ileg; l<legs.length; l++)
         {
-            var ida = trs[l].id.replace("tr_", "");
-            if(!(document.getElementById("check_" + ida).checked))
-                continue;
-            if(legys["legend_" + ida] > legys["legend_" + da])
-            {
-                var ileg = d3.select('svg').select('#legend_' + ida);
-                ileg.transition().attr("y", legys["legend_" + ida] - dy).duration(trans);
-                legys["legend_" + ida] = legys["legend_" + ida] - dy;
-            }
+            var lleg = d3.select('svg').select('#legend_' + legs[l]);
+            lleg.transition().attr("y", y0 + dy*l).duration(trans);
         }
     }
     else
     {
+        // add legend
         var thisitem = dataset[da];
-
-        legys["legend_" + da] = ynow;
+        var ynow = y0 + legs.length*dy; 
+        legs.push(da);
         var tlegend = svg.append("text")
             .attr("x", x0)
             .attr("y", ynow)
@@ -458,8 +460,6 @@ function legend(da, trans = 500)
         }
 
         tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
-
-        ynow = ynow + dy;
     }
 }
 
@@ -474,11 +474,29 @@ function relegend(da, transt = 500)
     }
 }
 
-function movelegend()
+function alllegend(transt = 500)
 {
-    x0 = margin.left + chartWidth/100.*document.getElementById('x0range').value;
-    // d3.select("svg").selectAll(".legend").transition().attr("x", x0).duration(500);;
+    var copy_legs = legs;
+    legs = [];
+    for(var l=0; l<copy_legs.length; l++)
+        legend(copy_legs[l], transt);
+}
+
+function movelegendx()
+{
+    x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
     d3.select("svg").selectAll(".legend").attr("x", x0);
+    document.getElementById('tx0').innerText = " " + document.getElementById('x0range').value;
+}
+
+function movelegendy()
+{
+    for(var l=0; l<legs.length; l++)
+    {
+        y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
+        d3.select("svg").select("#legend_" + legs[l]).attr("y", y0 + l*dy);;
+    }
+    document.getElementById('ty0').innerText = " " + document.getElementById('y0range').value;
 }
 
 var legendopacity = function() {
@@ -495,4 +513,4 @@ var legendopacity = function() {
     }
 }
 
-window.addEventListener("resize", function() { drawall(0); });
+window.addEventListener("resize", function() { drawallwleg(0); });
