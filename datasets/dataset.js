@@ -143,6 +143,71 @@ dataset["ALICE_D_v3_pt_30-50"] = {
     ]
 };
 
+dataset["ALICE_Jpsi_v2_cent_pT0-5_y2"] = {
+    reference : "JHEP 10 (2020) 141",
+    link : "https://arxiv.org/abs/2005.14518",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 5 GeV",
+    kineb : "2.5 < y < 4",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.036, "stath": 0.0093, "statl": 0.0093, "systh": 0.0031078, "systl": 0.0031078},
+        {"x": 15, "y": 0.05, "stath": 0.0081, "statl": 0.0081, "systh": 0.0044159, "systl": 0.0044159},
+        {"x": 25, "y": 0.056, "stath": 0.0084, "statl": 0.0084, "systh": 0.0057615, "systl": 0.0057615},
+        {"x": 35, "y": 0.055, "stath": 0.0099, "statl": 0.0099, "systh": 0.0053348, "systl": 0.0053348},
+        {"x": 45, "y": 0.031, "stath": 0.011, "statl": 0.011, "systh": 0.0065608, "systl": 0.0065608},
+        {"x": 55, "y": 0.065, "stath": 0.014, "statl": 0.014, "systh": 0.0065192, "systl": 0.0065192},
+        {"x": 75, "y": 0.045, "stath": 0.019, "statl": 0.019, "systh": 0.0082189, "systl": 0.0082189},
+    ]
+};
+
+dataset["ALICE_Jpsi_v2_cent_pT2-15_y2"] = {
+    reference : "PRL 123 (2019) 192301",
+    link : "https://arxiv.org/abs/1907.03169",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "2 < p&#7451; < 15 GeV",
+    kineb : "2.5 < y < 4",
+    kinec : "",
+    data : [
+        {"x": 32.5, "y": 0.075, "stath": 0.005, "statl": 0.005, "systh": 0.002, "systl": 0.002},
+        {"x": 12.5, "y": 0.063, "stath": 0.007, "statl": 0.007, "systh": 0.002, "systl": 0.002},
+        {"x": 40, "y": 0.089, "stath": 0.006, "statl": 0.006, "systh": 0.003, "systl": 0.003},
+    ]
+};
+
+dataset["ALICE_Jpsi_v2_cent_pT5-20_y2"] = {
+    reference : "JHEP 10 (2020) 141",
+    link : "https://arxiv.org/abs/2005.14518",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "5 < p&#7451; < 20 GeV",
+    kineb : "2.5 < y < 4",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.04, "stath": 0.02, "statl": 0.02, "systh": 0.0044385, "systl": 0.0044385},
+        {"x": 15, "y": 0.064, "stath": 0.015, "statl": 0.015, "systh": 0.0044843, "systl": 0.0044843},
+        {"x": 25, "y": 0.105, "stath": 0.015, "statl": 0.015, "systh": 0.0065419, "systl": 0.0065419},
+        {"x": 35, "y": 0.096, "stath": 0.016, "statl": 0.016, "systh": 0.0064786, "systl": 0.0064786},
+        {"x": 45, "y": 0.092, "stath": 0.019, "statl": 0.019, "systh": 0.0083954, "systl": 0.0083954},
+        {"x": 55, "y": 0.106, "stath": 0.025, "statl": 0.025, "systh": 0.0085108, "systl": 0.0085108},
+        {"x": 75, "y": 0.1, "stath": 0.036, "statl": 0.036, "systh": 0.011057, "systl": 0.011057},
+    ]
+};
+
 dataset["ALICE_Jpsi_v2_pt_0-10_y0p9"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
@@ -171,7 +236,7 @@ dataset["ALICE_Jpsi_v2_pt_0-10_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "0-10%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 0.64, "y": 0.03, "stath": 0.013, "statl": 0.013, "systh": 0.0041243, "systl": 0.0041243},
@@ -197,7 +262,7 @@ dataset["ALICE_Jpsi_v2_pt_0-50_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "0-50%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 1.19, "y": 0.031, "stath": 0.0053, "statl": 0.0053, "systh": 0.0031976, "systl": 0.0031976},
@@ -217,7 +282,7 @@ dataset["ALICE_Jpsi_v2_pt_10-30_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "10-30%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 0.64, "y": 0.011, "stath": 0.0085, "statl": 0.0085, "systh": 0.0038391, "systl": 0.0038391},
@@ -261,7 +326,7 @@ dataset["ALICE_Jpsi_v2_pt_30-50_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "30-50%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 0.64, "y": 0.0008, "stath": 0.011, "statl": 0.011, "systh": 0.0032389, "systl": 0.0032389},
@@ -287,12 +352,54 @@ dataset["ALICE_Jpsi_v2_pt_5-60_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "5-60%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 1.54, "y": 0.033, "stath": 0.005, "statl": 0.005, "systh": 0.002, "systl": 0.002},
         {"x": 4.08, "y": 0.081, "stath": 0.006, "statl": 0.006, "systh": 0.002, "systl": 0.002},
         {"x": 7.78, "y": 0.079, "stath": 0.011, "statl": 0.011, "systh": 0.004, "systl": 0.004},
+    ]
+};
+
+dataset["ALICE_Jpsi_v3_cent_pT0-5_y2"] = {
+    reference : "JHEP 10 (2020) 141",
+    link : "https://arxiv.org/abs/2005.14518",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 5 GeV",
+    kineb : "2.5 < y < 4",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.012, "stath": 0.012, "statl": 0.012, "systh": 0.0036972, "systl": 0.0036972},
+        {"x": 15, "y": 0.0095, "stath": 0.01, "statl": 0.01, "systh": 0.0030366, "systl": 0.0030366},
+        {"x": 25, "y": 0.0065, "stath": 0.012, "statl": 0.012, "systh": 0.0050048, "systl": 0.0050048},
+        {"x": 35, "y": 0.016, "stath": 0.015, "statl": 0.015, "systh": 0.004587, "systl": 0.004587},
+        {"x": 45, "y": 0.027, "stath": 0.023, "statl": 0.023, "systh": 0.0085174, "systl": 0.0085174},
+    ]
+};
+
+dataset["ALICE_Jpsi_v3_cent_pT5-20_y2"] = {
+    reference : "JHEP 10 (2020) 141",
+    link : "https://arxiv.org/abs/2005.14518",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "5 < p&#7451; < 20 GeV",
+    kineb : "2.5 < y < 4",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.017, "stath": 0.022, "statl": 0.022, "systh": 0.0043672, "systl": 0.0043672},
+        {"x": 15, "y": 0.0081, "stath": 0.02, "statl": 0.02, "systh": 0.0043374, "systl": 0.0043374},
+        {"x": 25, "y": -0.0085, "stath": 0.021, "statl": 0.021, "systh": 0.0062219, "systl": 0.0062219},
+        {"x": 35, "y": 0.015, "stath": 0.025, "statl": 0.025, "systh": 0.0062219, "systl": 0.0062219},
+        {"x": 45, "y": 0.0099, "stath": 0.033, "statl": 0.033, "systh": 0.0081933, "systl": 0.0081933},
     ]
 };
 
@@ -306,7 +413,7 @@ dataset["ALICE_Jpsi_v3_pt_0-10_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "0-10%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 0.64, "y": -0.006, "stath": 0.014, "statl": 0.014, "systh": 0.0031753, "systl": 0.0031753},
@@ -331,7 +438,7 @@ dataset["ALICE_Jpsi_v3_pt_0-50_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "0-50%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 1.19, "y": 0.0078, "stath": 0.0064, "statl": 0.0064, "systh": 0.0020748, "systl": 0.0020748},
@@ -351,7 +458,7 @@ dataset["ALICE_Jpsi_v3_pt_10-30_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "10-30%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 0.64, "y": -0.0013, "stath": 0.011, "statl": 0.011, "systh": 0.0028638, "systl": 0.0028638},
@@ -376,7 +483,7 @@ dataset["ALICE_Jpsi_v3_pt_30-50_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "30-50%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 0.64, "y": 0.029, "stath": 0.018, "statl": 0.018, "systh": 0.0039034, "systl": 0.0039034},
@@ -401,7 +508,7 @@ dataset["ALICE_Upsilon1S_RAA_cent_y2p5-4_pT15"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "p&#7451; < 15 GeV",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 5, "y": 0.34, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
@@ -421,7 +528,7 @@ dataset["ALICE_Upsilon1S_RAA_npart_y2p5-4_pT15"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "p&#7451; < 15 GeV",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 355.7, "y": 0.34, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
@@ -441,7 +548,7 @@ dataset["ALICE_Upsilon1S_RAA_pt_0-90_y2p5-4"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 1, "y": 0.37, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
@@ -470,6 +577,25 @@ dataset["ALICE_Upsilon1S_RAA_y_0-90_pT15"] = {
     ]
 };
 
+dataset["ALICE_Upsilon1S_v2_cent_pT2-15_y2"] = {
+    reference : "PRL 123 (2019) 192301",
+    link : "https://arxiv.org/abs/1907.03169",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "&Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "2 < p&#7451; < 15 GeV",
+    kineb : "2.5 < y < 4",
+    kinec : "",
+    data : [
+        {"x": 32.5, "y": -0.003, "stath": 0.03, "statl": 0.03, "systh": 0.006, "systl": 0.006},
+        {"x": 12.5, "y": 0.017, "stath": 0.044, "statl": 0.044, "systh": 0.011, "systl": 0.011},
+        {"x": 40, "y": -0.03, "stath": 0.04, "statl": 0.04, "systh": 0.005, "systl": 0.005},
+    ]
+};
+
 dataset["ALICE_Upsilon1S_v2_pt_5-60"] = {
     reference : "PRL 123 (2019) 192301",
     link : "https://arxiv.org/abs/1907.03169",
@@ -480,7 +606,7 @@ dataset["ALICE_Upsilon1S_v2_pt_5-60"] = {
     energy : "5 TeV",
     collab : "ALICE",
     kinea : "5-60%",
-    kineb : "2.5 < |y| < 4",
+    kineb : "2.5 < y < 4",
     kinec : "",
     data : [
         {"x": 1.89, "y": 0.013, "stath": 0.041, "statl": 0.041, "systh": 0.016, "systl": 0.016},
@@ -2527,6 +2653,25 @@ dataset["CMS_Upsilon1S_RAA_pt_0-100_y2p4"] = {
         {"x": 7.5, "y": 0.402, "stath": 0.028, "statl": 0.028, "systh": 0.032, "systl": 0.032},
         {"x": 10.5, "y": 0.422, "stath": 0.035, "statl": 0.035, "systh": 0.045, "systl": 0.045},
         {"x": 21, "y": 0.425, "stath": 0.026, "statl": 0.026, "systh": 0.036, "systl": 0.036},
+    ]
+};
+
+dataset["CMS_Upsilon1S_v2_cent_pT50_y2"] = {
+    reference : "PLB 819 (2021) 136385",
+    link : "https://arxiv.org/abs/2006.07707",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "&Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "p&#7451; < 50 GeV",
+    kineb : "|y| < 2.4",
+    kinec : "",
+    data : [
+        {"x": 20, "y": 0.005, "stath": 0.016, "statl": 0.016, "systh": 0.005, "systl": 0.005},
+        {"x": 40, "y": 0.025, "stath": 0.018, "statl": 0.018, "systh": 0.009, "systl": 0.009},
+        {"x": 70, "y": -0.016, "stath": 0.032, "statl": 0.032, "systh": 0.011, "systl": 0.011},
     ]
 };
 
