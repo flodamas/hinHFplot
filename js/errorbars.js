@@ -57,7 +57,7 @@ var setsvg = function()
 // axes
 var drawaxisgrid = function()
 {
-    var ticksx = 10, ticksy = 5;
+    var ticksx = 8, ticksy = 5;
     var ticksize = -5;
     var xGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
