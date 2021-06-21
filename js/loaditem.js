@@ -26,6 +26,7 @@ function loaditem()
             false;            
         var ifdrawy = thisitem.observable == obs ||
 	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3")) ||
+	    (obs == "RpARAA" && (thisitem.observable == "RpA" || thisitem.observable == "RAA")) ||
             false;
 
         if(!ifdrawx || !ifdrawy) { continue; }
@@ -52,7 +53,7 @@ function loaditem()
         itchecklabel.appendChild(icheckmark);
         icheck.setAttribute('onchange', "draw('"+da+"'); legend('"+da+"'); document.getElementById('checkmark_' + '"+da+"').style = ''; ");
 
-        if(obs == "vn")
+        if(obs == "vn" || obs == "RpARAA")
         {
             var itobs = document.createElement("td");
             var iobs = document.createElement("span");

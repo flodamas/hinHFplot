@@ -67,7 +67,7 @@ var drawaxisgrid = function()
 
     var obs = document.getElementById('observable').value;
     var vy = 0;
-    if(obs == "RAA" || obs == "RpA") vy = 1;
+    if(obs == "RAA" || obs == "RpA" || obs == "RpARAA") vy = 1;
     else if(obs == "LcD0") vy = -10;
 
     if(vy > ymin && vy < ymax)
@@ -157,6 +157,24 @@ var drawaxisgrid = function()
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('R');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('AA');
+    }
+    else if(obs === "RpA")
+    {
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('R');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('pA');
+    }
+    else if(obs === "RpARAA")
+    {
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('R');
+        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('pA');
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text(', R');
         ytitle.append('tspan').attr('class', 'axistitlesub')
             .text('AA');
     }
