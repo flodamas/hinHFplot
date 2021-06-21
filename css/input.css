@@ -14,6 +14,7 @@ button {
     font-size: var(--size-font-default);
     cursor: pointer;
     font-family: Tahoma, sans-serif;
+    -webkit-appearance: none;
 }
 
 input[type=number] {

@@ -44,6 +44,7 @@ html{
     width: 100%;
     font-family: Tahoma, sans-serif;
     transition-timing-function: linear;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
