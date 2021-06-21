@@ -39,7 +39,7 @@ var setscale = function()
         .range([chartHeight, 0])
         .domain([ymin, ymax]);
 
-    x0 = margin.left + chartWidth/6.;
+    x0 = margin.left + chartWidth/15.;
     y0 = margin.top + chartHeight/9.;
     if(ynow < 0)
         ynow = y0;
