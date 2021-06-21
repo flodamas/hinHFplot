@@ -39,6 +39,18 @@ function defaultrange()
                 pymin : 0,
                 pymax : 1.3
             },
+            "RAA+cent" : {
+                pxmin : 0,
+                pxmax : 100,
+                pymin : 0,
+                pymax : 1.3
+            },
+            "RAA+Npart" : {
+                pxmin : 0,
+                pxmax : 450,
+                pymin : 0,
+                pymax : 1.3
+            },
             "LcD0+pT" : {
                 pxmin : 0,
                 pxmax : 22,

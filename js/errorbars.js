@@ -136,6 +136,18 @@ var drawaxisgrid = function()
         xtitle.append('tspan').attr('class', 'axistitle')
             .text('|');
     }
+    else if(document.getElementById('xvariable').value === "cent")
+    {
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text('Centrality');
+    }
+    else if(document.getElementById('xvariable').value === "Npart")
+    {
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text('N');
+        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('part');
+    }
 
     var ytitle = svg.append("text")
         .attr("transform", "rotate(-90)")
