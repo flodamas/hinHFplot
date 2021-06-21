@@ -70,7 +70,7 @@ var drawaxisgrid = function()
 
     var obs = document.getElementById('observable').value;
     var vy = 0;
-    if(obs == "RAA") vy = 1;
+    if(obs == "RAA" || obs == "RpA") vy = 1;
     else if(obs == "LcD0") vy = -10;
 
     if(vy > ymin && vy < ymax)

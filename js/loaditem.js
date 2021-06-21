@@ -21,7 +21,7 @@ function loaditem()
         var thisitem = dataset[da];
 
         var ifdrawx = thisitem.xtitle == xvar ||
-            (xvar == "y" && (thisitem.xtitle == "absy" || thisitem.xtitle == "ycm")) ||
+            (xvar == "y" && (thisitem.xtitle == "absy" || thisitem.xtitle == "ycm" || thisitem.xtitle == "absycm")) ||
             (xvar == "absy" && (thisitem.xtitle == "absycm")) ||
             false;            
         var ifdrawy = thisitem.observable == obs ||

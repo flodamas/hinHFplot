@@ -28,6 +28,12 @@ function defaultrange()
                 pymin : 0,
                 pymax : 1.3
             },
+            "RpA+pT" : {
+                pxmin : 0.1,
+                pxmax : 50,
+                pymin : 0,
+                pymax : 2
+            },
             "LcD0+pT" : {
                 pxmin : 0,
                 pxmax : 22,
@@ -60,6 +66,12 @@ function defaultrange()
                 pymin : 0,
                 pymax : 1.3
             },
+            "RpA+y" : {
+                pxmin : -4,
+                pxmax : 4,
+                pymin : 0,
+                pymax : 2
+            },
             "LcD0+y" : {
                 pxmin : -4,
                 pxmax : 4,
@@ -91,6 +103,12 @@ function defaultrange()
                 pxmax : 4,
                 pymin : 0,
                 pymax : 1.3
+            },
+            "RpA+absy" : {
+                pxmin : 0,
+                pxmax : 4,
+                pymin : 0,
+                pymax : 2
             },
             "LcD0+absy" : {
                 pxmin : 0,
@@ -125,6 +143,12 @@ function defaultrange()
                 pymin : 0,
                 pymax : 1.3
             },
+            "RpA+cent" : {
+                pxmin : 0,
+                pxmax : 100,
+                pymin : 0,
+                pymax : 2
+            },
             "LcD0+cent" : {
                 pxmin : 0,
                 pxmax : 100,
@@ -156,6 +180,12 @@ function defaultrange()
                 pxmax : 450,
                 pymin : 0,
                 pymax : 1.3
+            },
+            "RpA+Npart" : {
+                pxmin : 0,
+                pxmax : 450,
+                pymin : 0,
+                pymax : 2
             },
             "LcD0+Npart" : {
                 pxmin : 0,
