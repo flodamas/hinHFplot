@@ -16,7 +16,9 @@ var setscale = function()
     width = document.getElementById('rightpad').clientWidth*0.85;
     height = width * 0.695;
 
-    svg = d3.select('svg').attr('width', width).attr('height', height);
+    svg = d3.select('svg').attr('width', width).attr('height', height)
+        .attr('font-family', 'sans-serif')
+        .attr('font-size', width/100.);
 
     margin = { top: height*0.06, right: width*0.05, bottom: height*0.13, left: width*0.14 },
     chartWidth = width - margin.left - margin.right,
@@ -46,6 +48,7 @@ var setscale = function()
 // create svg
 var setsvg = function()
 {
+    // document.getElementsByTagName("svg")[0];//.style("background: white;");
     setscale();
     var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
     drawaxisgrid();
@@ -80,7 +83,7 @@ var drawaxisgrid = function()
             .attr('x2', function() { return x(xmax); })
             .attr('y1', function() { return y(vy); })
             .attr('y2', function() { return y(vy); })
-            .attr('stroke', '#bbb')
+            .attr('stroke', '#333')
             .attr('stroke-dasharray', '5,3')
             .attr('opacity', document.getElementById('btnvline').value);
     }
@@ -111,8 +114,8 @@ var drawaxisgrid = function()
     if(document.getElementById('xvariable').value === "pT")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
-            .text('p');
-        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('p')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('T');
         xtitle.append('tspan').attr('class', 'axistitle')
             .text(' (GeV/c)');
@@ -120,15 +123,15 @@ var drawaxisgrid = function()
     else if(document.getElementById('xvariable').value === "y")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
-            .text('y');
-        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('y')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('CM');
     }
     else if(document.getElementById('xvariable').value === "absy")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
-            .text('|y');
-        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('|y')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('CM');
         xtitle.append('tspan').attr('class', 'axistitle')
             .text('|');
@@ -141,8 +144,8 @@ var drawaxisgrid = function()
     else if(document.getElementById('xvariable').value === "Npart")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
-            .text('N');
-        xtitle.append('tspan').attr('class', 'axistitlesub')
+            .text('N')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('part');
     }
 
@@ -156,58 +159,58 @@ var drawaxisgrid = function()
     if(obs === "RAA")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('R');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('R')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('AA');
     }
     else if(obs === "RpA")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('R');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('R')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('pA');
     }
     else if(obs === "RpARAA")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('R');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('R')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('pA');
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text(', R');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text(', R')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('AA');
     }
     else if(obs === "v2")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('v');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('v')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('2');
     }
     else if(obs === "v3")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('v');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('v')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('3');
     }
     else if(obs === "vn")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('v');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('v')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('n');
     }
     else if(obs === "LcD0")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('L');
-        ytitle.append('tspan').attr('class', 'axistitlesub')
+            .text('L')
+            .append('tspan').attr('class', 'axistitlesub')
             .text('c');
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text(' / D');
-        ytitle.append('tspan').attr('class', 'axistitlesup')
+            .text(' / D')
+            .append('tspan').attr('class', 'axistitlesup')
             .text('0');
     }
 
@@ -216,12 +219,11 @@ var drawaxisgrid = function()
               "translate(" + (chartWidth + margin.left) + " ," +
               margin.top*0.8 + ")")
         .attr("class", "watermark")
-        .style("text-anchor", "end")
+        .style("font-family", "Serif")
+        .style("text-anchor", "end");
     tmark.append('tspan')
         .style("font-variant", "small-caps")
         .text("Generated by boundino.github.io/hinHFplot");
-    // tmark.append('tspan')
-    //     .text("boundino.github.io/hinHFplot");
     
 }
 
@@ -280,7 +282,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .attr('y2', function(d) { return y(Math.max(d.y - d.statl, ymin)); })
         .transition().duration(transt)
         .attr('stroke', thecolor)
-        .attr('stroke-width', '2px')
+        .attr('stroke-width', width/100.*0.3)
         .attr('opacity', function(d) {
 	    if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
             else { return 0; }

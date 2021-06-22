@@ -11,13 +11,6 @@
     --height-header-left: 0;
     --height-rightrange: 59vw;
 
-    /* svg.css */
-    --width-axis: 0.3vw;
-    --size-axis-font: 3vw;
-    --size-axistitle-font: 3vw;
-    --size-axissub-font: 1.7vw;
-    --size-legend: 2.2vw;
-
     /* checkbox */
     --width-colorpicker: 2vw;
     --padding-td: 0.4vw;

@@ -2,25 +2,22 @@
 // https://gist.github.com/Rokotyan/0556f8facbaf344507cdc45dc3622177
 // https://stackoverflow.com/questions/36303964/save-d3-chart-as-image
 
-// Set-up the export button
 d3.select('#saveButton').on('click', function()
                             {
                                 var svgString = getSVGString(svg.node());
-                                // svgString2Image( svgString, 2*width, 2*height, 'png', save ); // passes Blob and filesize String to the callback // !!!!!
+                                svgString2Image( svgString, 2*width, 2*height, 'png', save );
 
                                 function save( dataBlob, filesize )
                                 {
-	                            saveAs( dataBlob, 'hinHFplot.png' ); // FileSaver.js function
+	                            saveAs( dataBlob, 'hinHFplot.png' );
                                 }
                             });
 
-// Below are the functions that handle actual exporting:
-// getSVGString ( svgNode ) and svgString2Image( svgString, width, height, format, callback )
 function getSVGString( svgNode )
 {
     svgNode.setAttribute('xlink', 'http://www.w3.org/1999/xlink');
     var cssStyleText = getCSSStyles( svgNode );
-    // console.log(cssStyleText);
+    // var cssStyleText = '  .axis,  .watermark,  .axistitle {      font-size: 3.2em;  }    .legend {      font-size: 2.6em;  }    .axis path,  .axis line {      stroke-width: 0.08em;  }    .grid path,  .grid line,  .hline {      stroke-width: 0.16em;  }    .axis path,  .axis line {      stroke: black;      stroke-opacity: 1;  }    .grid path,  .grid line {      stroke: #e5e5e5;      stroke-opacity: 0.5;      stroke-dasharray: 5,3;  }    .axistitlesub,  .axistitlesup {      font-size: 0.6em;  }    .axistitlesub {      baseline-shift: sub;  }  .axistitlesup {      baseline-shift: super;  }    .watermark {      fill: #e5e5e5;  }    .legendlebel {      fill: black;  }    .legendmark {      font-size: 1.2em;  }    .hline {      transition: opacity 0.5s;  }  ';
     appendCSS( cssStyleText, svgNode );
 
     var serializer = new XMLSerializer();
@@ -55,16 +52,12 @@ function getSVGString( svgNode )
 		    selectorTextArr.push( '.'+classes[c] );
 	}
         
-        // console.log(selectorTextArr);
-        // console.log(document.styleSheets);
-        
 	// Extract CSS Rules
 	var extractedCSSText = "";
 	for (var i = 0; i < document.styleSheets.length; i++)
         {
 	    var s = document.styleSheets[i];
-	    console.log(s);
-            console.log(s.cssRules);
+            if(!s.href.includes("svg.css")) continue;
 
 	    try {
 		if(!s.cssRules) continue;
@@ -81,7 +74,6 @@ function getSVGString( svgNode )
 	    }
 	}
 	
-
 	return extractedCSSText;
 
 	function contains(str,arr) {
@@ -90,7 +82,8 @@ function getSVGString( svgNode )
 
     }
 
-    function appendCSS( cssText, element ) {
+    function appendCSS( cssText, element )
+    {
 	var styleElement = document.createElement("style");
 	styleElement.setAttribute("type","text/css"); 
 	styleElement.innerHTML = cssText;

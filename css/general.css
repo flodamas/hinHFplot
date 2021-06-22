@@ -4,22 +4,15 @@
     --width-leftrange: 49vw;
     --size-font-header: 1.2vw;
     --size-font-default: 1.1vw;
-    --size-font-desc: 1vw;
+    --size-font-desc: 1.1vw;
     --size-font-footer: 1vw;
     --height-footer: 1.1vw;
     --height-header-left: 2.8vw;
     --height-header-right: 9vw;
     --margin-rightrange: 1.05;
 
-    /* svg.css */
-    --width-axis: 0.1vw;
-    --size-axis-font: 1.2vw;
-    --size-axistitle-font: 1.3vw;
-    --size-axissub-font: 1.1vw;
-    --size-legend: 1vw;
-
     /* checkbox */
-    --width-colorpicker: 1.2vw;
+    --width-colorpicker: 1.4vw;
     --padding-td: 0.5vw;
     --padding-td-tb: 0.4vw;
     --height-tr: 2.2vw;
@@ -30,7 +23,7 @@
     --height-margin-input: 0.3vw;
     --width-input: 5vw;
     --padding-input: 0.8vw;
-    --height-slider: 0.7vw;
+    --height-slider: 0.6vw;
 
     /*reference*/
     --ncol-reference: 2;

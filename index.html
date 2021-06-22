@@ -11,7 +11,6 @@
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <!-- <script src="https://rawgit.com/exupero/saveSvgAsPng/gh-pages/saveSvgAsPng.js"></script> -->
     <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
     <script src="datasets/dataset.js"></script>
@@ -32,10 +31,9 @@
     <!-- Top-right -->
     <div id="descholder">
       <div id="desc">
-        Contact: Jing Wang (jing.wang@cern.ch)<br>
-        <!-- <button type="submit" id='saveButton'>Save as PNG</button> -->
-        <!-- <button type="submit" onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmlA9d3D66kaOERzHraFUj0bi6a12KLmf--rCzEl7GkfwyIWaCa8LJnQTT_SLYy_Xi8ruj11HQB-jR/pubhtml?gid=0&single=true')">Heavy Flavor Publications</button> -->
-        <button type="submit" onclick="window.open('datasets/publication.html')">Heavy Flavor Publications</button>
+        Contact: Jing Wang (jing.wang@cern.ch)<br><br>
+        <button type="submit" id='saveButton'>Save as PNG</button>
+        <button type="submit" onclick="window.open('datasets/publication.html')">Publications</button>
         <div id="divrange">
           <p>Legend x: </p>
           <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
@@ -102,7 +100,7 @@
     <!-- Bottom-right -->
     <div id="rightrange">
       <div id="rightpad">
-        <svg></svg>
+        <svg id="svgparent" style="background-color: white;"></svg>
         <div id="divreference">
           <!-- <p>Reference:</p> -->
           <ul id="reference"> </ul>
