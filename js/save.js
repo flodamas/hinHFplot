@@ -18,6 +18,7 @@ function getSVGString( svgNode )
     svgNode.setAttribute('xlink', 'http://www.w3.org/1999/xlink');
     var cssStyleText = getCSSStyles( svgNode );
     // var cssStyleText = '  .axis,  .watermark,  .axistitle {      font-size: 3.2em;  }    .legend {      font-size: 2.6em;  }    .axis path,  .axis line {      stroke-width: 0.08em;  }    .grid path,  .grid line,  .hline {      stroke-width: 0.16em;  }    .axis path,  .axis line {      stroke: black;      stroke-opacity: 1;  }    .grid path,  .grid line {      stroke: #e5e5e5;      stroke-opacity: 0.5;      stroke-dasharray: 5,3;  }    .axistitlesub,  .axistitlesup {      font-size: 0.6em;  }    .axistitlesub {      baseline-shift: sub;  }  .axistitlesup {      baseline-shift: super;  }    .watermark {      fill: #e5e5e5;  }    .legendlebel {      fill: black;  }    .legendmark {      font-size: 1.2em;  }    .hline {      transition: opacity 0.5s;  }  ';
+    console.log(cssStyleText);
     appendCSS( cssStyleText, svgNode );
 
     var serializer = new XMLSerializer();
