@@ -3,8 +3,8 @@
     --color-default: black;
     --width-leftrange: 49vw;
     --size-font-header: 1.2vw;
-    --size-font-default: 1.2vw;
-    --size-font-desc: 1.2vw;
+    --size-font-default: 1.1vw;
+    --size-font-desc: 1vw;
     --size-font-footer: 1vw;
     --height-footer: 1.1vw;
     --height-header-left: 2.8vw;
@@ -19,11 +19,11 @@
     --size-legend: 1vw;
 
     /* checkbox */
-    --width-colorpicker: 2vw;
+    --width-colorpicker: 1.2vw;
     --padding-td: 0.5vw;
     --padding-td-tb: 0.4vw;
     --height-tr: 2.2vw;
-    --size-checkmark: 1.4vw;
+    --size-checkmark: 1.2vw;
     --opacity-checkafter: 1;
 
     /* input */
