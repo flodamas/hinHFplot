@@ -33,11 +33,12 @@ input[type=range] {
     display: inline-block;    
 }
 
-select {
-}
-
 .custom-select {
-    -webkit-appearance: none;
+    /* background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%; */
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEuNDEgNC42NyAyLjQ4IDMuMTggMy41NCA0LjY3IDEuNDEgNC42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzLjU0IDUuMzMgMi40OCA2LjgyIDEuNDEgNS4zMyAzLjU0IDUuMzMiLz48L3N2Zz4=) no-repeat 95% 50%;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    appearance: none;
     width: calc(var(--width-input)*1.4);
     padding: calc(var(--padding-input)*0.5) var(--padding-input);
     margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
@@ -49,15 +50,15 @@ select {
 }
 
 .slider {
-  -webkit-appearance: none;
-  width: 30%;
-  height: var(--height-slider);
-  border-radius: calc(var(--height-slider)*0.33);
-  background: #eee;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;  
-  cursor: pointer;
+    -webkit-appearance: none;
+    width: 30%;
+    height: var(--height-slider);
+    border-radius: calc(var(--height-slider)*0.33);
+    background: #eee;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;  
+    cursor: pointer;
 }
 
 .slider:hover {
@@ -65,14 +66,14 @@ select {
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: calc(var(--height-slider)*1.5);
-  height: calc(var(--height-slider)*1.5);
-  border-radius: 50%; 
-  /* background: #1f77b4; */
-  background: black;
-  cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(var(--height-slider)*1.5);
+    height: calc(var(--height-slider)*1.5);
+    border-radius: 50%; 
+    /* background: #1f77b4; */
+    background: black;
+    cursor: pointer;
 }
 
 .slider::-webkit-slider-thumb:hover {
