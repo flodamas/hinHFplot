@@ -8,7 +8,8 @@ d3.select('#saveButton').on('click', function()
                                 var svgString = getSVGString(svg.node());
                                 // svgString2Image( svgString, 2*width, 2*height, 'png', save ); // passes Blob and filesize String to the callback // !!!!!
 
-                                function save( dataBlob, filesize ){
+                                function save( dataBlob, filesize )
+                                {
 	                            saveAs( dataBlob, 'hinHFplot.png' ); // FileSaver.js function
                                 }
                             });
