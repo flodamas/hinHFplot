@@ -3,20 +3,23 @@
 // https://stackoverflow.com/questions/36303964/save-d3-chart-as-image
 
 // Set-up the export button
-d3.select('#saveButton').on('click', function(){
-    var svgString = getSVGString(svg.node());
-    svgString2Image( svgString, 2*width, 2*height, 'png', save ); // passes Blob and filesize String to the callback
+d3.select('#saveButton').on('click', function()
+                            {
+                                var svgString = getSVGString(svg.node());
+                                // svgString2Image( svgString, 2*width, 2*height, 'png', save ); // passes Blob and filesize String to the callback // !!!!!
 
-    function save( dataBlob, filesize ){
-	saveAs( dataBlob, 'hinHFplot.png' ); // FileSaver.js function
-    }
-});
+                                function save( dataBlob, filesize ){
+	                            saveAs( dataBlob, 'hinHFplot.png' ); // FileSaver.js function
+                                }
+                            });
 
 // Below are the functions that handle actual exporting:
 // getSVGString ( svgNode ) and svgString2Image( svgString, width, height, format, callback )
-function getSVGString( svgNode ) {
+function getSVGString( svgNode )
+{
     svgNode.setAttribute('xlink', 'http://www.w3.org/1999/xlink');
     var cssStyleText = getCSSStyles( svgNode );
+    // console.log(cssStyleText);
     appendCSS( cssStyleText, svgNode );
 
     var serializer = new XMLSerializer();
@@ -25,8 +28,10 @@ function getSVGString( svgNode ) {
     svgString = svgString.replace(/NS\d+:href/g, 'xlink:href'); // Safari NS namespace fix
 
     return svgString;
+    // ======> return;
 
-    function getCSSStyles( parentElement ) {
+    function getCSSStyles( parentElement )
+    {
 	var selectorTextArr = [];
 
 	// Add Parent element Id and Classes to the list
@@ -37,7 +42,8 @@ function getSVGString( svgNode ) {
 
 	// Add Children element Ids and Classes to the list
 	var nodes = parentElement.getElementsByTagName("*");
-	for (var i = 0; i < nodes.length; i++) {
+	for (var i = 0; i < nodes.length; i++)
+        {
 	    var id = nodes[i].id;
 	    if ( !contains('#'+id, selectorTextArr) )
 		selectorTextArr.push( '#'+id );
@@ -47,12 +53,18 @@ function getSVGString( svgNode ) {
 		if ( !contains('.'+classes[c], selectorTextArr) )
 		    selectorTextArr.push( '.'+classes[c] );
 	}
-
+        
+        // console.log(selectorTextArr);
+        // console.log(document.styleSheets);
+        
 	// Extract CSS Rules
 	var extractedCSSText = "";
-	for (var i = 0; i < document.styleSheets.length; i++) {
+	for (var i = 0; i < document.styleSheets.length; i++)
+        {
 	    var s = document.styleSheets[i];
-	    
+	    console.log(s);
+            console.log(s.cssRules);
+
 	    try {
 		if(!s.cssRules) continue;
 	    } catch( e ) {
@@ -61,7 +73,8 @@ function getSVGString( svgNode ) {
 	    }
 
 	    var cssRules = s.cssRules;
-	    for (var r = 0; r < cssRules.length; r++) {
+	    for (var r = 0; r < cssRules.length; r++)
+            {
 		if ( contains( cssRules[r].selectorText, selectorTextArr ) )
 		    extractedCSSText += cssRules[r].cssText;
 	    }
@@ -86,7 +99,8 @@ function getSVGString( svgNode ) {
 }
 
 
-function svgString2Image( svgString, width, height, format, callback ) {
+function svgString2Image( svgString, width, height, format, callback )
+{
     var format = format ? format : 'png';
 
     var imgsrc = 'data:image/svg+xml;base64,'+ btoa( unescape( encodeURIComponent( svgString ) ) ); // Convert SVG string to data URL
@@ -96,6 +110,7 @@ function svgString2Image( svgString, width, height, format, callback ) {
 
     canvas.width = width;
     canvas.height = height;
+    canvas.style = 'background-color: white';
 
     var image = new Image();
     image.onload = function() {
