@@ -28,10 +28,10 @@
         <div>
           <p>Observable:</p> 
           <select id="observable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
-            <option value="RAA" selected="selected">RAA</option>
+            <option value="RAA">RAA</option>
             <option value="RpA">RpA</option>
             <!-- <option value="RpARAA">RpA, RAA</option> -->
-            <option value="v2">v2</option>
+            <option value="v2" selected="selected">v2</option>
             <option value="v3">v3</option>
             <option value="vn">vn</option>
             <option value="LcD0">&Lambda;c/D0</option>
@@ -79,8 +79,8 @@
     <!-- Bottom-right -->
     <div id="rightrange">
       <div id="rightpad">
-        <svg></svg>
         <div id="divrange">
+          <br>
           <p>Legend x: </p>
           <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
           <p id="tx0"> 25 </p>
@@ -88,6 +88,7 @@
           <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
           <p id="ty0"> 20 </p>
         </div>
+        <svg></svg>
         <div id="divreference">
           <!-- <p>Reference:</p> -->
           <br>
