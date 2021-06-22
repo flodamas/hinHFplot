@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/reference.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+  <title>Heavy Flavor Measurement Compilation Tool</title>
+  <body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="https://rawgit.com/exupero/saveSvgAsPng/gh-pages/saveSvgAsPng.js"></script> -->
+    <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
+    <script src="datasets/dataset.js"></script>
+    <script>
+      // if(screen.width/screen.height < 1) {
+      if(window.innerWidth/window.innerHeight <= 1) {
+          window.location = "https://boundino.github.io/hinHFplot/index_m.html";
+      }
+    </script>
+
+    <!-- Top-left -->
+    <div id="header">
+      <div id="title">
+        Heavy Flavor Measurement Compilation Tool
+      </div>
+    </div>
+
+    <!-- Top-right -->
+    <div id="descholder">
+      <div id="desc">
+        Contact: Jing Wang (jing.wang@cern.ch)<br>
+        <button type="submit" id='saveButton'>Save as PNG</button>
+        <!-- <button type="submit" onclick="window.open('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmlA9d3D66kaOERzHraFUj0bi6a12KLmf--rCzEl7GkfwyIWaCa8LJnQTT_SLYy_Xi8ruj11HQB-jR/pubhtml?gid=0&single=true')">Heavy Flavor Publications</button> -->
+        <button type="submit" onclick="window.open('datasets/publication.html')">Heavy Flavor Publications</button>
+        <div id="divrange">
+          <p>Legend x: </p>
+          <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
+          <p id="tx0"> 25 </p>
+          <p>  y: </p>
+          <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
+          <p id="ty0"> 20 </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom-left -->
+    <div id="leftrange">
+      <div id="setup">
+        <div>
+          Observable: 
+          <select id="observable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
+            <option value="RAA">RAA</option>
+            <option value="RpA">RpA</option>
+            <!-- <option value="RpARAA">RpA, RAA</option> -->
+            <option value="v2" selected="selected">v2</option>
+            <option value="v3">v3</option>
+            <option value="vn">vn</option>
+            <option value="LcD0">&Lambda;c/D0</option>
+          </select>
+          vs.
+          <select id="xvariable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
+            <option value="pT">pT</option>
+            <option value="y">y</option>
+            <option value="absy">|y|</option>
+            <option value="Npart">Npart</option>
+            <option value="cent">Centrality</option>
+          </select>          
+        </div>
+        <div>X-axis range:
+          <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawallwleg(0);">
+          <p> - </p>
+          <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="drawallwleg(0);">
+        </div>
+        <div>Y-axis range:
+          <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="drawallwleg(0);">
+          <p> - </p>
+          <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="drawallwleg(0);">
+        </div>
+        <div>
+          <!-- <button type="submit" onclick="selectall()">Select all</button> -->
+          <button type="submit" onclick="clearall()">Clear all</button>
+          <button type="submit" onclick="colorall(); ">Random color</button>
+          <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Horizontal line</button>
+          <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
+        </div>
+      </div>
+
+      <div id="data">
+        <table id="datainput"></table>
+      </div>
+      <script src="js/loaditem.js"></script>
+      <script src="js/general.js"></script>
+      <script>defaultrange()</script>
+      <script>loaditem()</script>
+    </div>
+    <!-- <script>loadtoc()</script> -->
+
+    <!-- Bottom-right -->
+    <div id="rightrange">
+      <div id="rightpad">
+        <svg id="svgparent"></svg>
+        <div id="divreference">
+          <!-- <p>Reference:</p> -->
+          <ul id="reference"> </ul>
+        </div>
+        <script src="js/reference.js"></script>
+        <script src="js/errorbars.js"></script>
+        <script>setsvg()</script>
+        <script src="js/save.js"></script>
+      </div>
+    </div>
+
+    <div id="footercontainerright">
+      <div id="footerright">
+        Copyright &copy; 2021 boundin
+      </div>
+    </div>
+
+    <div id="clipboard">
+      
+    </div>
+
+  </body>
+</html>
