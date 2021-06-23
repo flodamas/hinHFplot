@@ -527,16 +527,9 @@ function movelegendy()
 
 var legendopacity = function() {
     var tlegend = d3.select("svg").selectAll('.legend');
-    if(document.getElementById('btnlegend').value == 1)
-    {
-        tlegend.transition().attr('opacity', '0').duration(500);
-        document.getElementById('btnlegend').value = 0;
-    }
-    else
-    {
-        tlegend.transition().attr('opacity', '1').duration(500);
-        document.getElementById('btnlegend').value = 1;
-    }
+    var opa = 1 - document.getElementById('btnlegend').value;
+    tlegend.transition().attr('opacity', opa).duration(500);
+    document.getElementById('btnlegend').value = opa;
 }
 
 window.addEventListener("resize", function() { drawallwleg(0); });

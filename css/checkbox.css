@@ -1,7 +1,3 @@
-:root {
-
-}
-
 .container {
     display: inline;
     position: relative;
@@ -72,10 +68,10 @@
 
 table {
     border-collapse: collapse;
+    border-spacing: 0vw;
 }
 
 tr {
-    height: var(--height-tr);
     border: 0;
     margin: 0;
     cursor: pointer;
