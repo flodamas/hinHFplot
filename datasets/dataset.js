@@ -3142,26 +3142,6 @@ dataset["CMS_Upsilon1S_v2_pt_10-30"] = {
     ]
 };
 
-dataset["CMS_Upsilon1S_v2_pt_30-50"] = {
-    reference : "PLB 819 (2021) 136385",
-    link : "https://arxiv.org/abs/2006.07707",
-    observable : "v2",
-    xtitle : "pT",
-    particle : "&Upsilon;(1S)",
-    collision : "PbPb",
-    energy : "5 TeV",
-    collab : "CMS",
-    kinea : "30-50%",
-    kineb : "|y| < 2.4",
-    kinec : "",
-    data : [
-        {"x": 1.5, "y": 0.039, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
-        {"x": 4.5, "y": -0.006, "stath": 0.033, "statl": 0.033, "systh": 0.013, "systl": 0.013},
-        {"x": 8, "y": 0.078, "stath": 0.041, "statl": 0.041, "systh": 0.011, "systl": 0.011},
-        {"x": 30, "y": -0.007, "stath": 0.035, "statl": 0.035, "systh": 0.012, "systl": 0.012},
-    ]
-};
-
 dataset["CMS_Upsilon1S_v2_pt_5-60"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
@@ -3922,6 +3902,128 @@ dataset["CMS_npJpsi_v2_pt_2TeV_10-60_y2p4"] = {
     kinec : "",
     data : [
         {"x": 18.25, "y": 0.032, "stath": 0.027, "statl": 0.027, "systh": 0.032, "systl": 0.032},
+    ]
+};
+
+dataset["CMS_pD0_v2_absy_cent20-70_pT2-8"] = {
+    reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
+    observable : "v2",
+    xtitle : "absy",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "20-70%",
+    kineb : "2 < p&#7451; < 8 GeV",
+    kinec : "",
+    data : [
+        {"x": 0.3, "y": 0.165413, "stath": 0.00145703, "statl": 0.00145703, "systh": 0.00958134, "systl": 0.00958134},
+        {"x": 0.9, "y": 0.154595, "stath": 0.00197451, "statl": 0.00197451, "systh": 0.0122446, "systl": 0.0122446},
+        {"x": 1.6, "y": 0.146669, "stath": 0.00353103, "statl": 0.00353103, "systh": 0.0121528, "systl": 0.0121528},
+    ]
+};
+
+dataset["CMS_pD0_v2_cent_pT2-8_absy1-2"] = {
+    reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "2 < p&#7451; < 8 GeV",
+    kineb : "1 < |y| < 2",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.0602455, "stath": 0.00576615, "statl": 0.00576615, "systh": 0.00824786, "systl": 0.00824786},
+        {"x": 15, "y": 0.11578, "stath": 0.00419683, "statl": 0.00419683, "systh": 0.00908542, "systl": 0.00908542},
+        {"x": 25, "y": 0.137747, "stath": 0.00386129, "statl": 0.00386129, "systh": 0.00952973, "systl": 0.00952973},
+        {"x": 40, "y": 0.147883, "stath": 0.00348013, "statl": 0.00348013, "systh": 0.00851666, "systl": 0.00851666},
+        {"x": 60, "y": 0.133413, "stath": 0.00659494, "statl": 0.00659494, "systh": 0.00840783, "systl": 0.00840783},
+    ]
+};
+
+dataset["CMS_pD0_v2_cent_pT2-8_absylt1"] = {
+    reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "2 < p&#7451; < 8 GeV",
+    kineb : "|y| < 1",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.067072, "stath": 0.00195608, "statl": 0.00195608, "systh": 0.00645557, "systl": 0.00645557},
+        {"x": 15, "y": 0.115109, "stath": 0.00155303, "statl": 0.00155303, "systh": 0.007394, "systl": 0.007394},
+        {"x": 25, "y": 0.140217, "stath": 0.00153155, "statl": 0.00153155, "systh": 0.00801199, "systl": 0.00801199},
+        {"x": 40, "y": 0.150677, "stath": 0.00145401, "statl": 0.00145401, "systh": 0.00672812, "systl": 0.00672812},
+        {"x": 60, "y": 0.132885, "stath": 0.00311682, "statl": 0.00311682, "systh": 0.00655626, "systl": 0.00655626},
+    ]
+};
+
+dataset["CMS_pD0_v3_absy_cent20-70_pT2-8"] = {
+    reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
+    observable : "v3",
+    xtitle : "absy",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "20-70%",
+    kineb : "2 < p&#7451; < 8 GeV",
+    kinec : "",
+    data : [
+        {"x": 0.3, "y": 0.0648311, "stath": 0.00258532, "statl": 0.00258532, "systh": 0.00415307, "systl": 0.00415307},
+        {"x": 0.9, "y": 0.053136, "stath": 0.00351503, "statl": 0.00351503, "systh": 0.00582797, "systl": 0.00582797},
+        {"x": 1.6, "y": 0.0476761, "stath": 0.00629577, "statl": 0.00629577, "systh": 0.0109959, "systl": 0.0109959},
+    ]
+};
+
+dataset["CMS_pD0_v3_cent_pT2-8_absy1-2"] = {
+    reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "2 < p&#7451; < 8 GeV",
+    kineb : "1 < |y| < 2",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.0427735, "stath": 0.00754661, "statl": 0.00754661, "systh": 0.0115038, "systl": 0.0115038},
+        {"x": 15, "y": 0.0622284, "stath": 0.00640639, "statl": 0.00640639, "systh": 0.0115192, "systl": 0.0115192},
+        {"x": 25, "y": 0.0453723, "stath": 0.0064745, "statl": 0.0064745, "systh": 0.0115055, "systl": 0.0115055},
+        {"x": 40, "y": 0.0500695, "stath": 0.00668949, "statl": 0.00668949, "systh": 0.01149, "systl": 0.01149},
+        {"x": 60, "y": 0.0389711, "stath": 0.0199618, "statl": 0.0199618, "systh": 0.01149, "systl": 0.01149},
+    ]
+};
+
+dataset["CMS_pD0_v3_cent_pT2-8_absylt1"] = {
+    reference : "PLB 816 (2021) 136253",
+    link : "https://arxiv.org/abs/2009.12628",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "Prompt D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "2 < p&#7451; < 8 GeV",
+    kineb : "|y| < 1",
+    kinec : "",
+    data : [
+        {"x": 5, "y": 0.0481088, "stath": 0.00255053, "statl": 0.00255053, "systh": 0.00642216, "systl": 0.00642216},
+        {"x": 15, "y": 0.0588555, "stath": 0.00237002, "statl": 0.00237002, "systh": 0.00643767, "systl": 0.00643767},
+        {"x": 25, "y": 0.0564187, "stath": 0.00255903, "statl": 0.00255903, "systh": 0.00643388, "systl": 0.00643388},
+        {"x": 40, "y": 0.0527285, "stath": 0.0027944, "statl": 0.0027944, "systh": 0.006391, "systl": 0.006391},
+        {"x": 60, "y": 0.0431575, "stath": 0.00941759, "statl": 0.00941759, "systh": 0.00639094, "systl": 0.00639094},
     ]
 };
 
@@ -5004,6 +5106,26 @@ dataset["CMS_ppsi2S_RAA_ycm_5TeV_pPb_pT6p5-10"] = {
         {"x": 0.45, "y": 0.84, "stath": 0.1, "statl": 0.1, "systh": 0.06, "systl": 0.06},
         {"x": 1.2, "y": 0.94, "stath": 0.11, "statl": 0.11, "systh": 0.06, "systl": 0.06},
         {"x": 1.715, "y": 0.93, "stath": 0.17, "statl": 0.17, "systh": 0.12, "systl": 0.12},
+    ]
+};
+
+dataset["CMS_Upsilon1S_v2_pt_30-50"] = {
+    reference : "PLB 819 (2021) 136385",
+    link : "https://arxiv.org/abs/2006.07707",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "30-50%",
+    kineb : "|y| < 2.4",
+    kinec : "",
+    data : [
+        {"x": 1.5, "y": 0.039, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
+        {"x": 4.5, "y": -0.006, "stath": 0.033, "statl": 0.033, "systh": 0.013, "systl": 0.013},
+        {"x": 8, "y": 0.078, "stath": 0.041, "statl": 0.041, "systh": 0.011, "systl": 0.011},
+        {"x": 30, "y": -0.007, "stath": 0.035, "statl": 0.035, "systh": 0.012, "systl": 0.012},
     ]
 };
 
