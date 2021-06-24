@@ -3814,7 +3814,6 @@ dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     kinea : "",
     kineb : "-4.46 < ycm < -2.96",
     data : [
-        {"x": 0, "y": 5.60519e-45, "stath": 1.4013e-45, "statl": 0, "systh": 0, "systl": 0},
         {"x": 0.5, "y": 0.82, "stath": 0.01, "statl": 0.01, "systh": 0.114018, "systl": 0.114018},
         {"x": 1.5, "y": 0.93, "stath": 0.01, "statl": 0.01, "systh": 0.106301, "systl": 0.106301},
         {"x": 2.5, "y": 1.06, "stath": 0.01, "statl": 0.01, "systh": 0.106301, "systl": 0.106301},
