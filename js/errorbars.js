@@ -205,7 +205,7 @@ var drawaxisgrid = function()
     else if(obs === "LcD0")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
-            .text('L')
+            .text(decodehtml('&Lambda;'))
             .append('tspan').attr('class', 'axistitlesub')
             .text('c');
         ytitle.append('tspan').attr('class', 'axistitle')
@@ -253,7 +253,10 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
         .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
         .attr('height', function(d) {
-            return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax)); })
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
         .attr('width', function(d) {
             var low = x(d.x) - chartWidth/80.;
             if(low < 0) { low = 0; }
@@ -266,7 +269,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', '1px')
         .attr('opacity', function(d) {
-            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 0.25; }
+            if(d.x > xmin && d.x < xmax) { return 0.25; }
             else { return 0; }
         });
 
@@ -278,13 +281,21 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .merge(lines)
         .attr('x1', function(d) { return x(d.x); })
         .attr('x2', function(d) { return x(d.x); })
-        .attr('y1', function(d) { return y(Math.min(d.y + d.stath, ymax)); })
-        .attr('y2', function(d) { return y(Math.max(d.y - d.statl, ymin)); })
+        .attr('y1', function(d) {
+            if((d.y - d.statl) < ymax && (d.y + d.stath) > ymin)
+                return y(Math.min(d.y + d.stath, ymax));
+            else { return 0; }
+        })
+        .attr('y2', function(d) {
+            if((d.y - d.statl) < ymax && (d.y + d.stath) > ymin)
+                return y(Math.max(d.y - d.statl, ymin));
+            else { return 0; }
+        })
         .transition().duration(transt)
         .attr('stroke', thecolor)
         .attr('stroke-width', width/100.*0.3)
         .attr('opacity', function(d) {
-	    if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
+	    if(d.x > xmin && d.x < xmax && (d.y - d.statl) < ymax && (d.y + d.stath) > ymin) { return 1; }
             else { return 0; }
         });
     ;
