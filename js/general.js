@@ -3,11 +3,11 @@ function defaultrange()
 {
     var drange =
         {
-            "LcD0+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 0.8 }  ,
-            "LcD0+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 0.8 }  ,
-            "LcD0+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 0.8 }  ,
-            "LcD0+pT"      : { pxmin : 0   , pxmax : 22  , pymin : 0     , pymax : 0.8 }  ,
-            "LcD0+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 0.8 }  ,
+            "LcToD0+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
+            "LcToD0+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 0.9 }  ,
+            "LcToD0+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 0.9 }  ,
+            "LcToD0+pT"      : { pxmin : 0   , pxmax : 22  , pymin : 0     , pymax : 0.9 }  ,
+            "LcToD0+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
 
             "RAA+absy"     : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
             "RAA+cent"     : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.3 }  ,

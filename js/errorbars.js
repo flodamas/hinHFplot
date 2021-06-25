@@ -71,7 +71,7 @@ var drawaxisgrid = function()
     var obs = document.getElementById('observable').value;
     var vy = 0;
     if(obs == "RAA" || obs == "RpA" || obs == "RpARAA") vy = 1;
-    else if(obs == "LcD0") vy = -10;
+    else if(obs == "LcToD0") vy = -10;
 
     if(vy > ymin && vy < ymax)
     {
@@ -202,7 +202,7 @@ var drawaxisgrid = function()
             .append('tspan').attr('class', 'axistitlesub')
             .text('n');
     }
-    else if(obs === "LcD0")
+    else if(obs === "LcToD0")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(decodehtml('&Lambda;'))
