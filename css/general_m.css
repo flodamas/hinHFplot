@@ -161,9 +161,10 @@ div {
 
 #clipboard {
     position: absolute;
-    padding: 0.1vw;
+    padding: 0.2vw;
     color: white;
-    font-size: calc(var(--size-font-default) * 0.8);
-    opacity: 0;
-    transition: opacity 1s;
+    font-size: calc(var(--size-font-default)*0.9);
+    opacity: 1;
+    border-radius: calc(var(--size-font-default)*0.25);
+    display: block;
 }

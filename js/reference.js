@@ -1,14 +1,6 @@
 
 function addref()
 {
-    // var divreference = document.getElementById('divreference');
-    // divreference.removeChild(divreference.lastChild);
-
-    // var reference = document.createElement('ul');
-    // reference.id = "reference";
-    // // reference.style = 'opacity : 0;';
-    // divreference.appendChild(reference);
-
     var reference = document.getElementById('reference');
     while(reference.firstChild)
     {
@@ -26,7 +18,6 @@ function addref()
         var cc = document.getElementById("color_" + da).value;
 
         var iref = document.createElement("li");
-        // iref.id = "ref_" + da;
         iref.style = 'color : ' + cc + ';';
         reference.appendChild(iref);
         var iaref = document.createElement("a");
@@ -39,16 +30,16 @@ function addref()
         iaref.style = 'color: ' + cc + ';';
         iref.appendChild(iaref);
         var sp = document.createElement("a");
-        sp.innerText = ' ';
+        sp.innerHTML = "&nbsp;";
         iref.appendChild(sp);
-        var iacref = document.createElement("a");
+        var iacref = document.createElement("i");
         iacref.id = "acref_" + da;
-        iacref.setAttribute('class', 'liref');
-        iacref.innerHTML = '&#10000;';
-        iacref.setAttribute('onmouseover', "changecolor('"+iacref.id+"')");
-        iacref.setAttribute('onmouseleave', "changecolorback('"+iacref.id+"')");
-        iacref.setAttribute("onclick", "copylink(event, '"+dataset[da].reference+"', '" + cc + "')");
+        iacref.setAttribute('class', 'far fa-copy liref');
+        iacref.setAttribute('onmouseover', "showcopy('acref_"+da+"', '" + cc + "')");
+        iacref.setAttribute('onmouseleave', "hidecopy()");
+        iacref.setAttribute("onclick", "copylink('acref_"+da+"', '"+dataset[da].reference+"', '" + cc + "')");
         iacref.style = 'color: ' + cc + ';';
+        iacref.innerHTML = iacref.innerHTML + "&nbsp";
         iref.appendChild(iacref);
     }
     reference.style = 'opacity : 1;';
@@ -56,40 +47,44 @@ function addref()
 
 function changecolor(da)
 {
-    var iaref = document.getElementById(da);
-    var cc = iaref.style.color;
-    iaref.style = 'color: white; background-color: ' + cc + ';';
+    document.getElementById(da).style.textDecoration = "underline";
 }
 
 function changecolorback(da)
 {
-    var iaref = document.getElementById(da);
-    var cc = iaref.style.backgroundColor;
-    iaref.style = 'background-color: white; color: ' + cc + ';';
+    document.getElementById(da).style.textDecoration = "none";
 }
 
-function copylink(event, str, cc)
+function showcopy(id, cc)
+{
+    var rect = document.getElementById(id).getBoundingClientRect();
+    var cl = document.getElementById('clipboard');
+    var clheight = cl.getBoundingClientRect().top - cl.getBoundingClientRect().bottom;
+    cl.innerHTML = "&nbsp;Copy reference&nbsp;";
+    cl.style.backgroundColor = cc;
+    cl.style.display = 'block';
+    cl.style.left = rect.right + 'px';
+    cl.style.top = (rect.top+rect.bottom)/2. - cl.offsetHeight/2. + 'px';
+}
+
+function hidecopy()
+{
+    document.getElementById('clipboard').style.display = 'none';
+}
+
+function copylink(id, str, cc)
 {
     const el = document.createElement('textarea');
     el.value = str;
     document.body.appendChild(el);
     el.select();
     document.execCommand('copy');
-    document.body.removeChild(el); 
-    var cl = document.getElementById('clipboard');
-    // var rr = (document.documentElement.clientWidth - event.clientX) * 1.02 + 'px';
-    // var bb = (document.documentElement.clientHeight - event.clientY) * 1.02 + 'px';
-    var ll = event.clientX + 10 + 'px';
-    var tt = event.clientY + 'px';
+    document.body.removeChild(el);
 
-    cl.innerHTML = "Copied \""+str+"\"";
-    // cl.style.right = rr;
-    // cl.style.bottom = bb;
-    cl.style.left = ll;
-    cl.style.top = tt;
+    var rect = document.getElementById(id).getBoundingClientRect();
+    var cl = document.getElementById('clipboard');
+    cl.innerHTML = "&nbsp;Copied reference&nbsp;";
     cl.style.backgroundColor = cc;
-    cl.style.opacity = '0.8';
-    setTimeout(function() {
-        cl.style.opacity = '0';
-    }, 1000);
+    cl.style.left = rect.right + 'px';
+    cl.style.top = (rect.top+rect.bottom)/2. - cl.offsetHeight/2. + 'px';
 }
