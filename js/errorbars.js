@@ -435,9 +435,8 @@ function clearall()
 function legend(da, trans = 500)
 {
     var icheck = document.getElementById('check_' + da);
-    if(!icheck.checked)
+    if(!icheck.checked) // remove legend
     {
-        // remove legend;
         ilegend = svg.select('#legend_'+da);
         ilegend.remove();
         var ileg = legs.indexOf(da);
@@ -448,9 +447,8 @@ function legend(da, trans = 500)
             lleg.transition().attr("y", y0 + dy*l).duration(trans);
         }
     }
-    else
+    else  // add legend
     {
-        // add legend
         var thisitem = dataset[da];
         var ynow = y0 + legs.length*dy; 
         legs.push(da);
@@ -477,23 +475,17 @@ function legend(da, trans = 500)
             .style("class", "legendlabel")
             .style("font-style", "italic")
             .text(' ' + thisitem.collision + ' ' + thisitem.energy);
-        if(thisitem.kinea != "" || thisitem.kineb != "")
-        {
-            tlegend.append('tspan')
-                .style("class", "legendlabel")
-                .text(', ');
-        }
         if(thisitem.kinea != "")
         {
             tlegend.append('tspan')
                 .style("class", "legendlabel")
-                .text(decodehtml(thisitem.kinea));
+                .text(', ' + decodehtml(thisitem.kinea));
         }
         if(thisitem.kineb != "")
         {
             tlegend.append('tspan')
                 .style("class", "legendlabel")
-                .text(' ' + decodehtml(thisitem.kineb));
+                .text(', ' + decodehtml(thisitem.kineb));
         }
 
         tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
