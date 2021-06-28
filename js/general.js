@@ -3,6 +3,12 @@ function defaultrange()
 {
     var drange =
         {
+            "DsToD+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.2 }  ,
+            "DsToD+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.2 }  ,
+            "DsToD+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.2 }  ,
+            "DsToD+pT"      : { pxmin : 0   , pxmax : 35  , pymin : 0     , pymax : 1.2 }  ,
+            "DsToD+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.2 }  ,
+
             "LcToD0+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
             "LcToD0+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 0.9 }  ,
             "LcToD0+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 0.9 }  ,
@@ -15,10 +21,16 @@ function defaultrange()
             "RAA+pT"       : { pxmin : 0.1 , pxmax : 50  , pymin : 0     , pymax : 1.3 }  ,
             "RAA+y"        : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
 
+            "Ratio+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
+            "Ratio+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 0.9 }  ,
+            "Ratio+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 0.9 }  ,
+            "Ratio+pT"      : { pxmin : 0   , pxmax : 22  , pymin : 0     , pymax : 0.9 }  ,
+            "Ratio+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
+
             "RpA+absy"     : { pxmin : 0   , pxmax : 4   , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+cent"     : { pxmin : 0   , pxmax : 100 , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+Npart"    : { pxmin : 0   , pxmax : 450 , pymin : 0.2   , pymax : 1.8 }  ,
-            "RpA+pT"       : { pxmin : 0.1 , pxmax : 50  , pymin : 0.2   , pymax : 1.8 }  ,
+            "RpA+pT"       : { pxmin : 0   , pxmax : 30  , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+y"        : { pxmin : -4.5, pxmax : 4.5 , pymin : 0.2   , pymax : 1.8 }  ,
 
             "RpARAA+absy"  : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,

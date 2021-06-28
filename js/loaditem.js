@@ -27,6 +27,8 @@ function loaditem()
         var ifdrawy = thisitem.observable == obs ||
 	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3")) ||
 	    (obs == "RpARAA" && (thisitem.observable == "RpA" || thisitem.observable == "RAA")) ||
+	    (obs == "DsToD" && (thisitem.observable == "DsToD0" || thisitem.observable == "DsToDplusmn" || thisitem.observable == "DsToDstar")) ||
+	    (obs == "Ratio" && thisitem.observable.includes("To")) ||
             false;
 
         if(!ifdrawx || !ifdrawy) { continue; }
