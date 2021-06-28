@@ -44,36 +44,6 @@ tr:hover {
     transition: background-color 0.2s;
 }
 
-/* main */
-
-html{
-    font-size: var(--size-font-default);
-    color: var(--color-default);
-    overflow-y: scroll;
-    height: 100%;
-    width: 100%;
-    font-family: Tahoma, sans-serif;
-    transition-timing-function: linear;
-    background-color: white;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    font-size: var(--size-font-default);
-    background-color: white;
-    color: var(--color-default);
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-family: Tahoma, sans-serif;
-    font-size: var(--size-font-default);
-    display: inline;
-}
-
 /* Top left */
 
 #header {
