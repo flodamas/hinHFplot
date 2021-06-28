@@ -19,7 +19,7 @@ function defaultrange()
             "RpA+cent"     : { pxmin : 0   , pxmax : 100 , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+Npart"    : { pxmin : 0   , pxmax : 450 , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+pT"       : { pxmin : 0.1 , pxmax : 50  , pymin : 0.2   , pymax : 1.8 }  ,
-            "RpA+y"        : { pxmin : -4  , pxmax : 4   , pymin : 0.2   , pymax : 1.8 }  ,
+            "RpA+y"        : { pxmin : -4.5, pxmax : 4.5 , pymin : 0.2   , pymax : 1.8 }  ,
 
             "RpARAA+absy"  : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
             "RpARAA+cent"  : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.3 }  ,
