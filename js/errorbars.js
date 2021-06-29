@@ -222,6 +222,11 @@ var drawaxisgrid = function()
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(' / D');
     }
+    else if(obs === "Ratio")
+    {
+        ytitle.append('tspan').attr('class', 'axistitle')
+            .text('Yield ratio');
+    }
 
     var tmark = svg.append("text")
         .attr("transform",

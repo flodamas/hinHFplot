@@ -37,7 +37,7 @@ input[type=range] {
     -moz-appearance: none; 
     -webkit-appearance: none; 
     appearance: none;
-    width: calc(var(--width-input)*1.4);
+    width: calc(var(--width-input)*1.6);
     padding: calc(var(--padding-input)*0.5) var(--padding-input);
     margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
     border: 0px solid white;
