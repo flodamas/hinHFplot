@@ -3412,8 +3412,8 @@ dataset["Bs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 };
 
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/16423",
+    reference : " ALICE Preliminary",
+    link : " https://alice-figure.web.cern.ch/node/16377",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) D&#8304;",
@@ -3501,8 +3501,8 @@ dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
 };
 
 dataset["bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/13142",
+    reference : " ALICE Preliminary",
+    link : " https://alice-figure.web.cern.ch/node/13134",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
