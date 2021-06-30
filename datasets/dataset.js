@@ -6838,8 +6838,8 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
-    reference : " PRL 120 (2018) 142301",
-    link : " https://arxiv.org/abs/1706.05984",
+    reference : "PRL 120 (2018) 142301",
+    link : "https://arxiv.org/abs/1706.05984",
     observable : "DoubleRatio",
     xtitle : "absy",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -6855,8 +6855,8 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
 };
 
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : " PRL 120 (2018) 142301",
-    link : " https://arxiv.org/abs/1706.05984",
+    reference : "PRL 120 (2018) 142301",
+    link : "https://arxiv.org/abs/1706.05984",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -6875,13 +6875,13 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
         {"x": 15, "y": 0.3, "stath": 0.13, "statl": 0.13, "systh": 0.0220565, "systl": 0.0220565},
         {"x": 7.5, "y": 0.38, "stath": 0.16, "statl": 0.16, "systh": 0.0322299, "systl": 0.0322299},
         {"x": 2.5, "y": 0.1, "stath": 0.14, "statl": 0.14, "systh": 0.0301597, "systl": 0.0301597},
-        {"x": 50, "y": 0.308, "stath": 0.055, "statl": 0.055, "systh": 0.0212642, "systl": 0.0212642},
+        //{"x": 50, "y": 0.308, "stath": 0.055, "statl": 0.055, "systh": 0.0212642, "systl": 0.0212642},
     ]
 };
 
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : " PRL 120 (2018) 142301",
-    link : " https://arxiv.org/abs/1706.05984",
+    reference : "PRL 120 (2018) 142301",
+    link : "https://arxiv.org/abs/1706.05984",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -6904,8 +6904,8 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2
 };
 
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
-    reference : " PRL 120 (2018) 142301",
-    link : " https://arxiv.org/abs/1706.05984",
+    reference : "PRL 120 (2018) 142301",
+    link : "https://arxiv.org/abs/1706.05984",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
