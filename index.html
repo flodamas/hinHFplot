@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/svg.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">    
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
@@ -52,7 +52,7 @@
     <div id="leftrange">
       <div id="setup">
         <div>
-          Observable: 
+          Observable:
           <select id="observable" name="observable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
             <option value="RAA">RAA</option>
             <option value="RpA">RpA</option>
@@ -63,6 +63,7 @@
             <option value="LcToD0">&Lambda;c/D0</option>
             <option value="DsToD">Ds/D</option>
             <option value="Ratio">Particle ratio</option>
+            <option value="DoubleRatio">Double ratio</option>
           </select>
           vs.
           <select id="xvariable" name="xvariable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
@@ -71,7 +72,7 @@
             <option value="absy">|y|</option>
             <option value="Npart">Npart</option>
             <option value="cent">Centrality</option>
-          </select>          
+          </select>
         </div>
         <div>X-axis range:
           <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawallwleg(0);">
@@ -124,7 +125,7 @@
     </div>
 
     <div id="clipboard">
-      
+
     </div>
 
   </body>
