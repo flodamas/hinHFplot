@@ -3305,6 +3305,44 @@ dataset["Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     ]
 };
 
+dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
+    reference : " PRD 99 (2019) 052011",
+    link : " https://arxiv.org/abs/1902.05599",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "B&plusmn;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2.5 < ycm < 3.5",
+    data : [
+        {"x": 3, "y": 0.75, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
+        {"x": 5.5, "y": 0.77, "stath": 0.03, "statl": 0.03, "systh": 0.04, "systl": 0.04},
+        {"x": 9.5, "y": 0.83, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
+        {"x": 18, "y": 1.01, "stath": 0.12, "statl": 0.12, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
+dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
+    reference : " PRD 99 (2019) 052011",
+    link : " https://arxiv.org/abs/1902.05599",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "B&plusmn;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-3.5 < ycm < -2.5",
+    data : [
+        {"x": 3, "y": 0.96, "stath": 0.06, "statl": 0.06, "systh": 0.11, "systl": 0.11},
+        {"x": 5.5, "y": 1.03, "stath": 0.05, "statl": 0.05, "systh": 0.1, "systl": 0.1},
+        {"x": 9.5, "y": 0.96, "stath": 0.05, "statl": 0.05, "systh": 0.08, "systl": 0.08},
+        {"x": 18, "y": 1.13, "stath": 0.12, "statl": 0.12, "systh": 0.09, "systl": 0.09},
+    ]
+};
+
 dataset["Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60"] = {
     reference : "PRL 116 (2016) 032301",
     link : "https://arxiv.org/abs/1508.06678",
@@ -3322,6 +3360,23 @@ dataset["Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60"] = {
         {"x": -0.5, "y": 1.04, "stath": 0.11, "statl": 0.11, "systh": 0.326497, "systl": 0.300167},
         {"x": 0.5, "y": 1.1, "stath": 0.1, "statl": 0.1, "systh": 0.353553, "systl": 0.319061},
         {"x": 1.465, "y": 1.21, "stath": 0.14, "statl": 0.14, "systh": 0.384708, "systl": 0.349857},
+    ]
+};
+
+dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
+    reference : " PRD 99 (2019) 052011",
+    link : " https://arxiv.org/abs/1902.05599",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "B&plusmn;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < p&#7451; < 20 GeV",
+    data : [
+        {"x": 3, "y": 0.78, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
+        {"x": -3, "y": 1, "stath": 0.03, "statl": 0.03, "systh": 0.1, "systl": 0.1},
     ]
 };
 
