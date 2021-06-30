@@ -3265,6 +3265,57 @@ dataset["B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     ]
 };
 
+dataset["Bc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
+    reference : " CMS-PAS-HIN-20-004",
+    link : " https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "Bc",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "6 < p&#7451; < 35 GeV",
+    kineb : "(1.3 <) |y| < 2.3",
+    data : [
+        {"x": 10, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
+        {"x": 55, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
+    ]
+};
+
+dataset["Bc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
+    reference : " CMS-PAS-HIN-20-004",
+    link : " https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Bc",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "6 < p&#7451; < 35 GeV",
+    kineb : "(1.3 <) |y| < 2.3",
+    data : [
+        {"x": 309.9, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
+        {"x": 73.5, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
+    ]
+};
+
+dataset["Bc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_Rabsy-L1p3-2p3"] = {
+    reference : " CMS-PAS-HIN-20-004",
+    link : " https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Bc",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-90%",
+    kineb : "(1.3 <) |y| < 2.3",
+    data : [
+        {"x": 8.059, "y": 1.665, "stath": 0.79, "statl": 0.586, "systh": 0.302, "systl": 0.258},
+        {"x": 17.165, "y": 0.696, "stath": 0.123, "statl": 0.119, "systh": 0.047, "systl": 0.052},
+    ]
+};
+
 dataset["Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PRL 119 (2017) 152301",
     link : "https://arxiv.org/abs/1705.04727",
