@@ -3320,7 +3320,7 @@ dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
         {"x": 3, "y": 0.75, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
         {"x": 5.5, "y": 0.77, "stath": 0.03, "statl": 0.03, "systh": 0.04, "systl": 0.04},
         {"x": 9.5, "y": 0.83, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
-        {"x": 18, "y": 1.01, "stath": 0.12, "statl": 0.12, "systh": 0.07, "systl": 0.07},
+        {"x": 16, "y": 1.01, "stath": 0.12, "statl": 0.12, "systh": 0.07, "systl": 0.07},
     ]
 };
 
@@ -3339,7 +3339,7 @@ dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
         {"x": 3, "y": 0.96, "stath": 0.06, "statl": 0.06, "systh": 0.11, "systl": 0.11},
         {"x": 5.5, "y": 1.03, "stath": 0.05, "statl": 0.05, "systh": 0.1, "systl": 0.1},
         {"x": 9.5, "y": 0.96, "stath": 0.05, "statl": 0.05, "systh": 0.08, "systl": 0.08},
-        {"x": 18, "y": 1.13, "stath": 0.12, "statl": 0.12, "systh": 0.09, "systl": 0.09},
+        {"x": 16, "y": 1.13, "stath": 0.12, "statl": 0.12, "systh": 0.09, "systl": 0.09},
     ]
 };
 
@@ -3433,6 +3433,23 @@ dataset["BsToBplusmn_BsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
     ]
 };
 
+dataset["BsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
+    reference : " PLB 796 (2019) 168",
+    link : " https://arxiv.org/abs/1810.03022",
+    observable : "DoubleRatio",
+    xtitle : "pT",
+    particle : "Bs / B&plusmn;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-100%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 11, "y": 4, "stath": 1.8, "statl": 1.8, "systh": 1.3, "systl": 1.3},
+        {"x": 32.5, "y": 1.8, "stath": 0.66, "statl": 0.66, "systh": 0.34, "systl": 0.34},
+    ]
+};
+
 dataset["Bs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 796 (2019) 168",
     link : "https://arxiv.org/abs/1810.03022",
@@ -3489,6 +3506,31 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
         {"x": 10.9982, "y": 0.204566, "stath": 0.032994, "statl": 0.032994, "systh": 0.027495, "systl": 0.027495},
         {"x": 14.0045, "y": 0.275639, "stath": 0.0531569, "statl": 0.0531569, "systh": 0.0476579, "systl": 0.0476579},
         {"x": 19.9686, "y": 0.30048, "stath": 0.104481, "statl": 0.104481, "systh": 0.0549833, "systl": 0.0549833},
+    ]
+};
+
+dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
+    reference : " ALICE Preliminary",
+    link : " https://alice-figure.web.cern.ch/node/16377",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) D&#8304;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "30-50%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.56298, "y": 1.10346, "stath": 0.228972, "statl": 0.228972, "systh": 0.243364, "systl": 0.242056},
+        {"x": 2.55153, "y": 0.907196, "stath": 0.125607, "statl": 0.125607, "systh": 0.150467, "systl": 0.151776},
+        {"x": 3.56679, "y": 0.775047, "stath": 0.0955141, "statl": 0.0955141, "systh": 0.116449, "systl": 0.116449},
+        {"x": 4.55534, "y": 0.594486, "stath": 0.0601869, "statl": 0.0601869, "systh": 0.088972, "systl": 0.0915888},
+        {"x": 5.57061, "y": 0.502897, "stath": 0.0562617, "statl": 0.0562617, "systh": 0.0758879, "systl": 0.0758879},
+        {"x": 6.55916, "y": 0.527757, "stath": 0.0719627, "statl": 0.0719627, "systh": 0.0745795, "systl": 0.0745794},
+        {"x": 9.04389, "y": 0.51729, "stath": 0.073271, "statl": 0.073271, "systh": 0.0758879, "systl": 0.0771962},
+        {"x": 11.0477, "y": 0.368131, "stath": 0.0654206, "statl": 0.0654206, "systh": 0.0536449, "systl": 0.0549533},
+        {"x": 14.0668, "y": 0.559159, "stath": 0.111215, "statl": 0.111215, "systh": 0.0968224, "systl": 0.0994392},
+        {"x": 20.0382, "y": 0.459502, "stath": 0.163551, "statl": 0.163551, "systh": 0.0861371, "systl": 0.0872274},
     ]
 };
 
@@ -5798,6 +5840,61 @@ dataset["Ks0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
         {"x": 5.15, "y": 0.0938, "stath": 0.0008, "statl": 0.0008, "systh": 0.0061, "systl": 0.0061},
         {"x": 6.43, "y": 0.0739, "stath": 0.0016, "statl": 0.0016, "systh": 0.0048, "systl": 0.0048},
         {"x": 7.62, "y": 0.0636, "stath": 0.0021, "statl": 0.0021, "systh": 0.0041, "systl": 0.0041},
+    ]
+};
+
+dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
+    reference : " PRD 99 (2019) 052011",
+    link : " https://arxiv.org/abs/1902.05599",
+    observable : "DoubleRatio",
+    xtitle : "pT",
+    particle : "&Lambda;b / B&#8304;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2.5 < ycm < 3.5",
+    data : [
+        {"x": 3, "y": 0.84, "stath": 0.17, "statl": 0.17, "systh": 0.05, "systl": 0.05},
+        {"x": 5.5, "y": 1.11, "stath": 0.14, "statl": 0.14, "systh": 0.03, "systl": 0.03},
+        {"x": 9.5, "y": 0.91, "stath": 0.13, "statl": 0.13, "systh": 0.03, "systl": 0.03},
+        {"x": 16, "y": 0.81, "stath": 0.21, "statl": 0.21, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
+    reference : " PRD 99 (2019) 052011",
+    link : " https://arxiv.org/abs/1902.05599",
+    observable : "DoubleRatio",
+    xtitle : "pT",
+    particle : "&Lambda;b / B&#8304;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-3.5 < ycm < -2.5",
+    data : [
+        {"x": 3, "y": 0.47, "stath": 0.18, "statl": 0.18, "systh": 0.05, "systl": 0.05},
+        {"x": 5.5, "y": 0.97, "stath": 0.17, "statl": 0.17, "systh": 0.05, "systl": 0.05},
+        {"x": 9.5, "y": 1.44, "stath": 0.21, "statl": 0.21, "systh": 0.07, "systl": 0.07},
+        {"x": 16, "y": 0.89, "stath": 0.22, "statl": 0.22, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
+dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
+    reference : " PRD 99 (2019) 052011",
+    link : " https://arxiv.org/abs/1902.05599",
+    observable : "DoubleRatio",
+    xtitle : "ycm",
+    particle : "&Lambda;b / B&#8304;",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < p&#7451; < 20 GeV",
+    data : [
+        {"x": 3, "y": 0.92, "stath": 0.09, "statl": 0.09, "systh": 0.03, "systl": 0.03},
+        {"x": -3, "y": 0.78, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
     ]
 };
 
