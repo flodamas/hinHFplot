@@ -232,7 +232,7 @@ var drawaxisgrid = function()
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('(Yield ratio)')
             .append('tspan').attr('class', 'axistitlesub')
-            .text('PbPb');
+            .text('AA');
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(' / (Yield ratio)')
             .append('tspan').attr('class', 'axistitlesub')
