@@ -6,7 +6,7 @@ function clearitems()
     {
         datainput.removeChild(datainput.firstChild);
     }
-    // console.log(document.getElementsByTagName('tr'));    
+    // console.log(document.getElementsByTagName('tr'));
 }
 
 function loaditem()
@@ -23,12 +23,13 @@ function loaditem()
         var ifdrawx = thisitem.xtitle == xvar ||
             (xvar == "y" && (thisitem.xtitle == "absy" || thisitem.xtitle == "ycm" || thisitem.xtitle == "absycm")) ||
             (xvar == "absy" && (thisitem.xtitle == "absycm")) ||
-            false;            
+            false;
         var ifdrawy = thisitem.observable == obs ||
 	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3")) ||
 	    (obs == "RpARAA" && (thisitem.observable == "RpA" || thisitem.observable == "RAA")) ||
 	    (obs == "DsToD" && (thisitem.observable == "DsToD0" || thisitem.observable == "DsToDplusmn" || thisitem.observable == "DsToDstar")) ||
 	    (obs == "Ratio" && thisitem.observable.includes("To")) ||
+      (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||
             false;
 
         if(!ifdrawx || !ifdrawy) { continue; }
@@ -63,7 +64,7 @@ function loaditem()
             itobs.appendChild(iobs);
             iline.appendChild(itobs);
         }
-        
+
         var itparticle = document.createElement("td");
         var iparticle = document.createElement("span");
         iparticle.innerHTML = thisitem.particle;

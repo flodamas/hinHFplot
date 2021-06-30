@@ -27,6 +27,12 @@ function defaultrange()
             "Ratio+pT"      : { pxmin : 0   , pxmax : 22  , pymin : 0     , pymax : 0.9 }  ,
             "Ratio+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
 
+            "DoubleRatio+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.2 }  ,
+            "DoubleRatio+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.2 }  ,
+            "DoubleRatio+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.2 }  ,
+            "DoubleRatio+pT"      : { pxmin : 0   , pxmax : 30  , pymin : 0     , pymax : 1.2 }  ,
+            "DoubleRatio+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.2 }  ,
+
             "RpA+absy"     : { pxmin : 0   , pxmax : 4   , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+cent"     : { pxmin : 0   , pxmax : 100 , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+Npart"    : { pxmin : 0   , pxmax : 450 , pymin : 0.2   , pymax : 1.8 }  ,
