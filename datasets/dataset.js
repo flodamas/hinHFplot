@@ -6835,7 +6835,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2
         {"x": 87, "y": 0.43, "stath": 0.15, "statl": 0.15, "systh": 0.03, "systl": 0.03},
         {"x": 131.4, "y": 0.39, "stath": 0.12, "statl": 0.12, "systh": 0.03, "systl": 0.03},
         {"x": 189.2, "y": 0.40, "stath": 0.12, "statl": 0.12, "systh": 0.02, "systl": 0.02},
-        {"x": 264.2, "y": 0.30, "stath": 0.013, "statl": 0.013, "systh": 0.02, "systl": 0.02},
+        {"x": 264.2, "y": 0.30, "stath": 0.13, "statl": 0.13, "systh": 0.02, "systl": 0.02},
         {"x": 333.3, "y": 0.38, "stath": 0.16, "statl": 0.16, "systh": 0.03, "systl": 0.03},
         {"x": 384.3, "y": 0.10, "stath": 0.14, "statl": 0.14, "systh": 0.03, "systl": 0.03},
     ]
@@ -6859,7 +6859,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
         {"x": 45, "y": 0.43, "stath": 0.15, "statl": 0.15, "systh": 0.03, "systl": 0.03},
         {"x": 35, "y": 0.39, "stath": 0.12, "statl": 0.12, "systh": 0.03, "systl": 0.03},
         {"x": 25, "y": 0.40, "stath": 0.12, "statl": 0.12, "systh": 0.02, "systl": 0.02},
-        {"x": 15, "y": 0.30, "stath": 0.013, "statl": 0.013, "systh": 0.02, "systl": 0.02},
+        {"x": 15, "y": 0.30, "stath": 0.13, "statl": 0.13, "systh": 0.02, "systl": 0.02},
         {"x": 7.5, "y": 0.38, "stath": 0.16, "statl": 0.16, "systh": 0.03, "systl": 0.03},
         {"x": 2.5, "y": 0.10, "stath": 0.14, "statl": 0.14, "systh": 0.03, "systl": 0.03},
     ]
