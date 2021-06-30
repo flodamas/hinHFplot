@@ -15,11 +15,11 @@ function defaultrange()
             "LcToD0+pT"      : { pxmin : 0   , pxmax : 22  , pymin : 0     , pymax : 0.9 }  ,
             "LcToD0+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
 
-            "RAA+absy"     : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
-            "RAA+cent"     : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.3 }  ,
-            "RAA+Npart"    : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.3 }  ,
-            "RAA+pT"       : { pxmin : 0.1 , pxmax : 50  , pymin : 0     , pymax : 1.3 }  ,
-            "RAA+y"        : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
+            "RAA+absy"     : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.5 }  ,
+            "RAA+cent"     : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.5 }  ,
+            "RAA+Npart"    : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.5 }  ,
+            "RAA+pT"       : { pxmin : 0.1 , pxmax : 50  , pymin : 0     , pymax : 1.5 }  ,
+            "RAA+y"        : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.5 }  ,
 
             "Ratio+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
             "Ratio+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 0.9 }  ,
@@ -39,11 +39,11 @@ function defaultrange()
             "RpA+pT"       : { pxmin : 0   , pxmax : 30  , pymin : 0.2   , pymax : 1.8 }  ,
             "RpA+y"        : { pxmin : -4.5, pxmax : 4.5 , pymin : 0.2   , pymax : 1.8 }  ,
 
-            "RpARAA+absy"  : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
-            "RpARAA+cent"  : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.3 }  ,
-            "RpARAA+Npart" : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.3 }  ,
-            "RpARAA+pT"    : { pxmin : 0.1 , pxmax : 50  , pymin : 0     , pymax : 1.3 }  ,
-            "RpARAA+y"     : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.3 }  ,
+            "RpARAA+absy"  : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.5 }  ,
+            "RpARAA+cent"  : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.5 }  ,
+            "RpARAA+Npart" : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.5 }  ,
+            "RpARAA+pT"    : { pxmin : 0.1 , pxmax : 50  , pymin : 0     , pymax : 1.5 }  ,
+            "RpARAA+y"     : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.5 }  ,
 
             "v2+absy"      : { pxmin : 0   , pxmax : 4   , pymin : -0.03 , pymax : 0.24 } ,
             "v2+cent"      : { pxmin : 0   , pxmax : 100 , pymin : -0.03 , pymax : 0.24 } ,
