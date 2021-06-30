@@ -6437,8 +6437,8 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
 };
 
 dataset["Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "PLB 790 (2019) 89",
-    link : "https://arxiv.org/abs/1805.04387",
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -6448,10 +6448,15 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     kinea : "p&#7451; < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
-        {"x": 5, "y": 0.34, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
-        {"x": 20, "y": 0.35, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
-        {"x": 40, "y": 0.5, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
-        {"x": 70, "y": 0.6, "stath": 0.1, "statl": 0.1, "systh": 0.04, "systl": 0.04},
+        {"x": 2.5, "y": 0.318, "stath": 0.028, "statl": 0.028, "systh": 0.016, "systl": 0.016},
+        {"x": 7.5, "y": 0.338, "stath": 0.029, "statl": 0.029, "systh": 0.024, "systl": 0.024},
+        {"x": 12.5, "y": 0.325, "stath": 0.031, "statl": 0.031, "systh": 0.015, "systl": 0.015},
+        {"x": 17.5, "y": 0.317, "stath": 0.033, "statl": 0.033, "systh": 0.024, "systl": 0.024},
+        {"x": 25, "y": 0.403, "stath": 0.031, "statl": 0.031, "systh": 0.025, "systl": 0.025},
+        {"x": 35, "y": 0.412, "stath": 0.037, "statl": 0.037, "systh": 0.017, "systl": 0.017},
+        {"x": 45, "y": 0.456, "stath": 0.053, "statl": 0.053, "systh": 0.023, "systl": 0.023},
+        {"x": 60, "y": 0.450, "stath": 0.061, "statl": 0.061, "systh": 0.023, "systl": 0.023},
+        {"x": 80, "y": 0.864, "stath": 0.174, "statl": 0.174, "systh": 0.082, "systl": 0.082},
     ]
 };
 
@@ -6480,8 +6485,8 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "PLB 790 (2019) 89",
-    link : "https://arxiv.org/abs/1805.04387",
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(1S)",
@@ -6491,10 +6496,15 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     kinea : "p&#7451; < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
-        {"x": 355.7, "y": 0.34, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
-        {"x": 223.5, "y": 0.35, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
-        {"x": 108.6, "y": 0.5, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
-        {"x": 27.01, "y": 0.6, "stath": 0.1, "statl": 0.1, "systh": 0.04, "systl": 0.04},
+        {"x": 383.4, "y": 0.318, "stath": 0.028, "statl": 0.028, "systh": 0.016, "systl": 0.016},
+        {"x": 331.2, "y": 0.338, "stath": 0.029, "statl": 0.029, "systh": 0.024, "systl": 0.024},
+        {"x": 283.0, "y": 0.325, "stath": 0.031, "statl": 0.031, "systh": 0.015, "systl": 0.015},
+        {"x": 241.0, "y": 0.317, "stath": 0.033, "statl": 0.033, "systh": 0.024, "systl": 0.024},
+        {"x": 187.9, "y": 0.403, "stath": 0.031, "statl": 0.031, "systh": 0.025, "systl": 0.025},
+        {"x": 130.8, "y": 0.412, "stath": 0.037, "statl": 0.037, "systh": 0.017, "systl": 0.017},
+        {"x": 87.1, "y": 0.456, "stath": 0.053, "statl": 0.053, "systh": 0.023, "systl": 0.023},
+        {"x": 42.7, "y": 0.450, "stath": 0.061, "statl": 0.061, "systh": 0.023, "systl": 0.023},
+        {"x": 11.3, "y": 0.864, "stath": 0.174, "statl": 0.174, "systh": 0.082, "systl": 0.082},
     ]
 };
 
@@ -6523,8 +6533,8 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
-    reference : "PLB 790 (2019) 89",
-    link : "https://arxiv.org/abs/1805.04387",
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -6534,10 +6544,11 @@ dataset["Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
     kinea : "0-90%",
     kineb : "2.5 < y < 4",
     data : [
-        {"x": 1, "y": 0.37, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
-        {"x": 3, "y": 0.41, "stath": 0.03, "statl": 0.03, "systh": 0.03, "systl": 0.03},
-        {"x": 5, "y": 0.38, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
-        {"x": 10.5, "y": 0.45, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
+        {"x": 1, "y": 0.345, "stath": 0.031, "statl": 0.031, "systh": 0.040, "systl": 0.040},
+        {"x": 3, "y": 0.387, "stath": 0.022, "statl": 0.022, "systh": 0.035, "systl": 0.035},
+        {"x": 5, "y": 0.345, "stath": 0.021, "statl": 0.021, "systh": 0.026, "systl": 0.026},
+        {"x": 7.5, "y": 0.298, "stath": 0.027, "statl": 0.027, "systh": 0.039, "systl": 0.039},
+        {"x": 12, "y": 0.364, "stath": 0.044, "statl": 0.044, "systh": 0.065, "systl": 0.065},
     ]
 };
 
@@ -6563,8 +6574,8 @@ dataset["Upsilon1S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon1S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
-    reference : "PLB 790 (2019) 89",
-    link : "https://arxiv.org/abs/1805.04387",
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
     observable : "RAA",
     xtitle : "y",
     particle : "&Upsilon;(1S)",
@@ -6574,9 +6585,11 @@ dataset["Upsilon1S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
     kinea : "0-90%",
     kineb : "p&#7451; < 15 GeV",
     data : [
-        {"x": 2.75, "y": 0.43, "stath": 0.03, "statl": 0.03, "systh": 0.06, "systl": 0.06},
-        {"x": 3.25, "y": 0.38, "stath": 0.03, "statl": 0.03, "systh": 0.04, "systl": 0.04},
-        {"x": 3.75, "y": 0.35, "stath": 0.04, "statl": 0.04, "systh": 0.04, "systl": 0.04},
+        {"x": 2.65, "y": 0.433, "stath": 0.043, "statl": 0.043, "systh": 0.055, "systl": 0.055},
+        {"x": 2.95, "y": 0.396, "stath": 0.023, "statl": 0.023, "systh": 0.036, "systl": 0.036},
+        {"x": 3.2, "y": 0.398, "stath": 0.029, "statl": 0.029, "systh": 0.041, "systl": 0.041},
+        {"x": 3.45, "y": 0.338, "stath": 0.021, "statl": 0.021, "systh": 0.041, "systl": 0.041},
+        {"x": 3.8, "y": 0.305, "stath": 0.032, "statl": 0.032, "systh": 0.048, "systl": 0.048},
     ]
 };
 
@@ -6854,6 +6867,23 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
     ]
 };
 
+dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "&Upsilon;(2S) / &Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 15 GeV",
+    kineb : "2.5 < y < 4",
+    data : [
+        {"x": 15, "y": 0.311, "stath": 0.078, "statl": 0.078, "systh": 0.063, "systl": 0.063},
+        {"x": 60, "y": 0.513, "stath": 0.131, "statl": 0.131, "systh": 0.056, "systl": 0.056},
+    ]
+};
+
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : " PRL 120 (2018) 142301",
     link : " https://arxiv.org/abs/1706.05984",
@@ -6876,6 +6906,23 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
         {"x": 7.5, "y": 0.38, "stath": 0.16, "statl": 0.16, "systh": 0.0322299, "systl": 0.0322299},
         {"x": 2.5, "y": 0.1, "stath": 0.14, "statl": 0.14, "systh": 0.0301597, "systl": 0.0301597},
         {"x": 50, "y": 0.308, "stath": 0.055, "statl": 0.055, "systh": 0.0212642, "systl": 0.0212642},
+    ]
+};
+
+dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "DoubleRatio",
+    xtitle : "Npart",
+    particle : "&Upsilon;(2S) / &Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 15 GeV",
+    kineb : "2.5 < y < 4",
+    data : [
+        {"x": 269.1, "y": 0.311, "stath": 0.078, "statl": 0.078, "systh": 0.063, "systl": 0.063},
+        {"x": 54.3, "y": 0.513, "stath": 0.131, "statl": 0.131, "systh": 0.056, "systl": 0.056},
     ]
 };
 
@@ -6939,6 +6986,23 @@ dataset["Upsilon2S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     ]
 };
 
+dataset["Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "&Upsilon;(2S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 15 GeV",
+    kineb : "2.5 < y < 4",
+    data : [
+        {"x": 15, "y": 0.104, "stath": 0.026, "statl": 0.026, "systh": 0.024, "systl": 0.024},
+        {"x": 60, "y": 0.226, "stath": 0.057, "statl": 0.057, "systh": 0.032, "systl": 0.032},
+    ]
+};
+
 dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
@@ -6959,6 +7023,23 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
         {"x": 25, "y": 0.154, "stath": 0.092, "statl": 0.092, "systh": 0.032, "systl": 0.032},
         {"x": 15, "y": 0.101, "stath": 0.042, "statl": 0.042, "systh": 0.031, "systl": 0.031},
         {"x": 7.5, "y": 0.119, "stath": 0.051, "statl": 0.051, "systh": 0.009, "systl": 0.009},
+    ]
+};
+
+dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(2S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 15 GeV",
+    kineb : "2.5 < y < 4",
+    data : [
+        {"x": 269.1, "y": 0.104, "stath": 0.026, "statl": 0.026, "systh": 0.024, "systl": 0.024},
+        {"x": 54.3, "y": 0.226, "stath": 0.057, "statl": 0.057, "systh": 0.032, "systl": 0.032},
     ]
 };
 
@@ -7000,6 +7081,23 @@ dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
         {"x": 2, "y": 0.085, "stath": 0.039, "statl": 0.039, "systh": 0.095, "systl": 0.095},
         {"x": 6.5, "y": 0.129, "stath": 0.038, "statl": 0.038, "systh": 0.031, "systl": 0.031},
         {"x": 19.5, "y": 0.126, "stath": 0.032, "statl": 0.032, "systh": 0.016, "systl": 0.016},
+    ]
+};
+
+dataset["Upsilon2S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "&Upsilon;(2S)",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "ALICE",
+    kinea : "0-90%",
+    kineb : "p&#7451; < 15 GeV",
+    data : [
+        {"x": 2.9, "y": 0.081, "stath": 0.030, "statl": 0.030, "systh": 0.033, "systl": 0.033},
+        {"x": 3.65, "y": 0.197, "stath": 0.040, "statl": 0.040, "systh": 0.035, "systl": 0.035},
     ]
 };
 
