@@ -7315,6 +7315,23 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p
     ]
 };
 
+dataset["Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
+    reference : "JHEP 11 (2018) 194",
+    link : "https://arxiv.org/abs/1810.07655",
+    observable : "DoubleRatio",
+    xtitle : "ycm",
+    particle : "&Upsilon;(2S) / &Upsilon;(1S)",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p&#7451; < 25 GeV",
+    data : [
+        {"x": -3.5, "y": 0.91, "stath": 0.21, "statl": 0.21, "systh": 0, "systl": 0},
+        {"x": 3, "y": 0.86, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
+    ]
+};
+
 dataset["Upsilon2S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
@@ -7548,6 +7565,23 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
         {"x": 30, "y": 0.68945, "stath": 0.29574, "statl": 0.29574, "systh": 0.059725521, "systl": 0.059725521},
         {"x": 12.5, "y": 0.53445, "stath": 0.33031, "statl": 0.33031, "systh": 0.076959819, "systl": 0.076959819},
         {"x": 2.5, "y": 0.86711, "stath": 0.4043, "statl": 0.4043, "systh": 0.074873609, "systl": 0.074873609},
+    ]
+};
+
+dataset["Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
+    reference : "JHEP 11 (2018) 194",
+    link : "https://arxiv.org/abs/1810.07655",
+    observable : "DoubleRatio",
+    xtitle : "ycm",
+    particle : "&Upsilon;(3S) / &Upsilon;(1S)",
+    collision : "pPb",
+    energy : "8 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p&#7451; < 25 GeV",
+    data : [
+        {"x": -3.5, "y": 0.44, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
+        {"x": 3, "y": 0.81, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
     ]
 };
 
