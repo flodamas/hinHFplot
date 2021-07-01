@@ -2954,6 +2954,115 @@ dataset["aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     ]
 };
 
+dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
+    reference : "PRL 118 (2017) 162301",
+    link : "https://arxiv.org/abs/1611.01438",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "3 < p&#7451; < 30 GeV",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 10, "y": 0.52, "stath": 0.39, "statl": 0.39, "systh": 0.1533, "systl": 0.1533},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
+    reference : "PRL 118 (2017) 162301",
+    link : "https://arxiv.org/abs/1611.01438",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p&#7451; < 30 GeV",
+    kineb : "|y| < 1.6",
+    data : [
+        {"x": 15, "y": 0.35, "stath": 0.16, "statl": 0.053, "systh": 0.07126, "systl": 0.07126},
+        {"x": 25, "y": 0.54, "stath": 0.18, "statl": 0.18, "systh": 0.08144, "systl": 0.08144},
+        {"x": 35, "y": 0.53, "stath": 0.16, "statl": 0.16, "systh": 0.09162, "systl": 0.09162},
+        {"x": 45, "y": 0.31, "stath": 0.15, "statl": 0.15, "systh": 0.08144, "systl": 0.08144},
+        {"x": 75, "y": 0.43, "stath": 0.13, "statl": 0.13, "systh": 0.06108, "systl": 0.06108},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
+    reference : "PRL 118 (2017) 162301",
+    link : "https://arxiv.org/abs/1611.01438",
+    observable : "DoubleRatio",
+    xtitle : "Npart",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "3 < p&#7451; < 30 GeV",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 311.5, "y": 0.52, "stath": 0.39, "statl": 0.39, "systh": 0.1533, "systl": 0.1533},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
+    reference : "PRL 118 (2017) 162301",
+    link : "https://arxiv.org/abs/1611.01438",
+    observable : "DoubleRatio",
+    xtitle : "Npart",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p&#7451; < 30 GeV",
+    kineb : "|y| < 1.6",
+    data : [
+        {"x": 264.2, "y": 0.35, "stath": 0.16, "statl": 0.053, "systh": 0.07126, "systl": 0.07126},
+        {"x": 189.2, "y": 0.54, "stath": 0.18, "statl": 0.18, "systh": 0.08144, "systl": 0.08144},
+        {"x": 131.4, "y": 0.53, "stath": 0.16, "statl": 0.16, "systh": 0.09162, "systl": 0.09162},
+        {"x": 86.9, "y": 0.31, "stath": 0.15, "statl": 0.15, "systh": 0.08144, "systl": 0.08144},
+        {"x": 21.9, "y": 0.43, "stath": 0.13, "statl": 0.13, "systh": 0.06108, "systl": 0.06108},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
+    reference : "PRL 118 (2017) 162301",
+    link : "https://arxiv.org/abs/1611.01438",
+    observable : "DoubleRatio",
+    xtitle : "pT",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-100%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 9.25, "y": 0.41, "stath": 0.24, "statl": 0.24, "systh": 0.11, "systl": 0.11},
+        {"x": 21, "y": 0.71, "stath": 0.28, "statl": 0.28, "systh": 0.11, "systl": 0.11},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = {
+    reference : "PRL 118 (2017) 162301",
+    link : "https://arxiv.org/abs/1611.01438",
+    observable : "DoubleRatio",
+    xtitle : "pT",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-100%",
+    kineb : "|y| < 1.6",
+    data : [
+        {"x": 7.75, "y": 0.31, "stath": 0.16, "statl": 0.16, "systh": 0.04, "systl": 0.04},
+        {"x": 10.5, "y": 0.38, "stath": 0.10, "statl": 0.10, "systh": 0.03, "systl": 0.03},
+        {"x": 13.5, "y": 0.47, "stath": 0.13, "statl": 0.13, "systh": 0.04, "systl": 0.04},
+        {"x": 17.5, "y": 0.40, "stath": 0.17, "statl": 0.17, "systh": 0.05, "systl": 0.05},
+        {"x": 25, "y": 0.26, "stath": 0.23, "statl": 0.23, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
 dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
