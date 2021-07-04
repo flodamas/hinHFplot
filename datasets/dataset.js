@@ -2137,14 +2137,14 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     kinea : "",
     kineb : "-2 < ycm < 1.5",
     data : [
-        {"x": 8.465, "y": 0.996, "stath": 0.039, "statl": 0.039, "systh": 0.1174138, "systl": 0.1174138},
-        {"x": 9.456, "y": 1.104, "stath": 0.03, "statl": 0.03, "systh": 0.1099318, "systl": 0.1099318},
-        {"x": 10.465, "y": 1.093, "stath": 0.031, "statl": 0.031, "systh": 0.10245975, "systl": 0.10245975},
-        {"x": 11.467, "y": 1.110, "stath": 0.033, "statl": 0.033, "systh": 0.1010198, "systl": 0.1010198},
+        {"x": 8.465, "y": 0.996, "stath": 0.039, "statl": 0.039, "systh": 0.117414, "systl": 0.117414},
+        {"x": 9.456, "y": 1.104, "stath": 0.03, "statl": 0.03, "systh": 0.109932, "systl": 0.109932},
+        {"x": 10.465, "y": 1.093, "stath": 0.031, "statl": 0.031, "systh": 0.10246, "systl": 0.10246},
+        {"x": 11.467, "y": 1.11, "stath": 0.033, "statl": 0.033, "systh": 0.10102, "systl": 0.10102},
         {"x": 12.864, "y": 1.092, "stath": 0.028, "statl": 0.028, "systh": 0.0990202, "systl": 0.0990202},
-        {"x": 14.884, "y": 1.063, "stath": 0.037, "statl": 0.037, "systh": 0.09656604, "systl": 0.09656604},
-        {"x": 17.611, "y": 1.038, "stath": 0.04, "statl": 0.04, "systh": 0.097508974, "systl": 0.097508974},
-        {"x": 24.619, "y": 1.085, "stath": 0.054, "statl": 0.054, "systh": 0.10567876, "systl": 0.10567876},
+        {"x": 14.884, "y": 1.063, "stath": 0.037, "statl": 0.037, "systh": 0.096566, "systl": 0.096566},
+        {"x": 17.611, "y": 1.038, "stath": 0.04, "statl": 0.04, "systh": 0.097509, "systl": 0.097509},
+        {"x": 24.619, "y": 1.085, "stath": 0.054, "statl": 0.054, "systh": 0.105679, "systl": 0.105679},
     ]
 };
 
@@ -2363,11 +2363,11 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     kinea : "",
     kineb : "8 < p&#7451; < 40 GeV",
     data : [
-        {"x": -1.75, "y": 1.005, "stath": 0.039, "statl": 0.039, "systh": 0.097529483, "systl": 0.097529483},
-        {"x": -1.125, "y": 1.136, "stath": 0.038, "statl": 0.038, "systh": 0.10778683, "systl": 0.10778683},
-        {"x": -0.375, "y": 0.965, "stath": 0.032, "statl": 0.032, "systh": 0.090801982, "systl": 0.090801982},
-        {"x": 0.375, "y": 1.086, "stath": 0.033, "statl": 0.033, "systh": 0.10470912, "systl": 0.10470912},
-        {"x": 1.125, "y": 1.111, "stath": 0.037, "statl": 0.037, "systh": 0.10782393, "systl": 0.10782393},
+        {"x": -1.75, "y": 1.005, "stath": 0.039, "statl": 0.039, "systh": 0.0975295, "systl": 0.0975295},
+        {"x": -1.125, "y": 1.136, "stath": 0.038, "statl": 0.038, "systh": 0.107787, "systl": 0.107787},
+        {"x": -0.375, "y": 0.965, "stath": 0.032, "statl": 0.032, "systh": 0.090802, "systl": 0.090802},
+        {"x": 0.375, "y": 1.086, "stath": 0.033, "statl": 0.033, "systh": 0.104709, "systl": 0.104709},
+        {"x": 1.125, "y": 1.111, "stath": 0.037, "statl": 0.037, "systh": 0.107824, "systl": 0.107824},
     ]
 };
 
@@ -2997,25 +2997,6 @@ dataset["aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     ]
 };
 
-dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
-    reference : "EPJC 78 (2018) 171",
-    link : "https://arxiv.org/abs/1709.03089",
-    observable : "DoubleRatio",
-    xtitle : "cent",
-    particle : "Prompt &psi;(2S) / J/&psi;",
-    collision : "pPb",
-    energy : "5 TeV",
-    collab : "ATLAS",
-    kinea : "8 < p&#7451; < 40 GeV",
-    kineb : "-2 < ycm < 1.5",
-    data : [
-        {"x": 65, "y": 0.959, "stath": 0.131, "statl": 0.131, "systh": 0.13619104, "systl": 0.13619104},
-        {"x": 30, "y": 0.794, "stath": 0.125, "statl": 0.125, "systh": 0.15078461, "systl": 0.15078461},
-        {"x": 12.5, "y": 0.661, "stath": 0.122, "statl": 0.122, "systh": 0.11686745, "systl": 0.11686745},
-        {"x": 2.5, "y": 0.768, "stath": 0.202, "statl": 0.202, "systh": 0.11189281, "systl": 0.11189281},
-    ]
-};
-
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
@@ -3049,6 +3030,25 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] =
         {"x": 35, "y": 0.53, "stath": 0.16, "statl": 0.16, "systh": 0.0905042, "systl": 0.0905042},
         {"x": 45, "y": 0.31, "stath": 0.15, "statl": 0.15, "systh": 0.0801944, "systl": 0.0801944},
         {"x": 75, "y": 0.43, "stath": 0.13, "statl": 0.13, "systh": 0.0604972, "systl": 0.0604972},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "8 < p&#7451; < 40 GeV",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 65, "y": 0.959, "stath": 0.131, "statl": 0.131, "systh": 0.136191, "systl": 0.136191},
+        {"x": 30, "y": 0.794, "stath": 0.125, "statl": 0.125, "systh": 0.150785, "systl": 0.150785},
+        {"x": 12.5, "y": 0.661, "stath": 0.122, "statl": 0.122, "systh": 0.116867, "systl": 0.116867},
+        {"x": 2.5, "y": 0.768, "stath": 0.202, "statl": 0.202, "systh": 0.111893, "systl": 0.111893},
     ]
 };
 
@@ -3140,7 +3140,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
         {"x": -1.75, "y": 0.911, "stath": 0.197, "statl": 0.197, "systh": 0.138, "systl": 0.138},
         {"x": -1.125, "y": 0.893, "stath": 0.137, "statl": 0.137, "systh": 0.119, "systl": 0.119},
         {"x": -0.375, "y": 0.789, "stath": 0.146, "statl": 0.146, "systh": 0.089, "systl": 0.089},
-        {"x": 0.375, "y": 0.700, "stath": 0.131, "statl": 0.131, "systh": 0.092, "systl": 0.092},
+        {"x": 0.375, "y": 0.7, "stath": 0.131, "statl": 0.131, "systh": 0.092, "systl": 0.092},
         {"x": 1.125, "y": 0.681, "stath": 0.142, "statl": 0.142, "systh": 0.102, "systl": 0.102},
     ]
 };
@@ -4322,14 +4322,14 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     kinea : "",
     kineb : "-2 < ycm < 1.5",
     data : [
-        {"x": 8.465, "y": 1.140, "stath": 0.087, "statl": 0.087, "systh": 0.13717872, "systl": 0.13717872},
-        {"x": 9.456, "y": 1.033, "stath": 0.051, "statl": 0.051, "systh": 0.11374093, "systl": 0.11374093},
-        {"x": 10.465, "y": 0.991, "stath": 0.046, "statl": 0.046, "systh": 0.094366308, "systl": 0.094366308},
-        {"x": 11.467, "y": 1.009, "stath": 0.046, "statl": 0.046, "systh": 0.093621579, "systl": 0.093621579},
-        {"x": 12.864, "y": 1.015, "stath": 0.037, "statl": 0.037, "systh": 0.096602277, "systl": 0.096602277},
-        {"x": 14.884, "y": 1.064, "stath": 0.046, "statl": 0.046, "systh": 0.097144223, "systl": 0.097144223},
-        {"x": 17.611, "y": 1.006, "stath": 0.042, "statl": 0.042, "systh": 0.094021274, "systl": 0.094021274},
-        {"x": 24.619, "y": 0.974, "stath": 0.045, "statl": 0.045, "systh": 0.096384646, "systl": 0.096384646},
+        {"x": 8.465, "y": 1.14, "stath": 0.087, "statl": 0.087, "systh": 0.137179, "systl": 0.137179},
+        {"x": 9.456, "y": 1.033, "stath": 0.051, "statl": 0.051, "systh": 0.104307, "systl": 0.104307},
+        {"x": 10.465, "y": 0.991, "stath": 0.046, "statl": 0.046, "systh": 0.0943663, "systl": 0.0943663},
+        {"x": 11.467, "y": 1.009, "stath": 0.046, "statl": 0.046, "systh": 0.0936216, "systl": 0.0936216},
+        {"x": 12.864, "y": 1.015, "stath": 0.037, "statl": 0.037, "systh": 0.0966023, "systl": 0.0966023},
+        {"x": 14.884, "y": 1.064, "stath": 0.046, "statl": 0.046, "systh": 0.0971442, "systl": 0.0971442},
+        {"x": 17.611, "y": 1.006, "stath": 0.042, "statl": 0.042, "systh": 0.0940213, "systl": 0.0940213},
+        {"x": 24.619, "y": 0.974, "stath": 0.045, "statl": 0.045, "systh": 0.0963846, "systl": 0.0963846},
     ]
 };
 
@@ -4548,11 +4548,11 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     kinea : "",
     kineb : "8 < p&#7451; < 40 GeV",
     data : [
-        {"x": -1.75, "y": 0.816, "stath": 0.061, "statl": 0.061, "systh": 0.076485293, "systl": 0.076485293},
-        {"x": -1.125, "y": 1.114, "stath": 0.059, "statl": 0.059, "systh": 0.11130588, "systl": 0.11130588},
-        {"x": -0.375, "y": 1.088, "stath": 0.057, "statl": 0.057, "systh": 0.10163661, "systl": 0.10163661},
-        {"x": 0.375, "y": 1.095, "stath": 0.055, "statl": 0.055, "systh": 0.10511898, "systl": 0.10511898},
-        {"x": 1.125, "y": 1.063, "stath": 0.058, "statl": 0.058, "systh": 0.11975391, "systl": 0.11975391},
+        {"x": -1.75, "y": 0.816, "stath": 0.061, "statl": 0.061, "systh": 0.0764853, "systl": 0.0764853},
+        {"x": -1.125, "y": 1.114, "stath": 0.059, "statl": 0.059, "systh": 0.111306, "systl": 0.111306},
+        {"x": -0.375, "y": 1.088, "stath": 0.057, "statl": 0.057, "systh": 0.101637, "systl": 0.101637},
+        {"x": 0.375, "y": 1.095, "stath": 0.055, "statl": 0.055, "systh": 0.105119, "systl": 0.105119},
+        {"x": 1.125, "y": 1.063, "stath": 0.058, "statl": 0.058, "systh": 0.119754, "systl": 0.119754},
     ]
 };
 
@@ -6716,7 +6716,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
         {"x": 0.2, "y": 0.446, "stath": 0.028, "statl": 0.028, "systh": 0.043, "systl": 0.043},
         {"x": 0.6, "y": 0.415, "stath": 0.028, "statl": 0.028, "systh": 0.069, "systl": 0.069},
         {"x": 1, "y": 0.491, "stath": 0.033, "statl": 0.033, "systh": 0.065, "systl": 0.065},
-        {"x": 1.4, "y": 0.490, "stath": 0.036, "statl": 0.036, "systh": 0.072, "systl": 0.072},
+        {"x": 1.4, "y": 0.49, "stath": 0.036, "statl": 0.036, "systh": 0.072, "systl": 0.072},
         {"x": 1.8, "y": 0.479, "stath": 0.038, "statl": 0.038, "systh": 0.072, "systl": 0.072},
         {"x": 2.2, "y": 0.399, "stath": 0.06, "statl": 0.06, "systh": 0.084, "systl": 0.084},
     ]
@@ -6775,11 +6775,11 @@ dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
         {"x": 85, "y": 1.271, "stath": 0.229, "statl": 0.229, "systh": 0.401, "systl": 0.401},
         {"x": 60, "y": 0.815, "stath": 0.083, "statl": 0.083, "systh": 0.137, "systl": 0.137},
         {"x": 45, "y": 0.605, "stath": 0.065, "statl": 0.065, "systh": 0.144, "systl": 0.144},
-        {"x": 35, "y": 0.546, "stath": 0.047, "statl": 0.047, "systh": 0.120, "systl": 0.120},
+        {"x": 35, "y": 0.546, "stath": 0.047, "statl": 0.047, "systh": 0.12, "systl": 0.12},
         {"x": 25, "y": 0.476, "stath": 0.035, "statl": 0.035, "systh": 0.059, "systl": 0.059},
         {"x": 15, "y": 0.442, "stath": 0.028, "statl": 0.028, "systh": 0.093, "systl": 0.093},
         {"x": 7.5, "y": 0.408, "stath": 0.033, "statl": 0.033, "systh": 0.073, "systl": 0.073},
-        {"x": 2.5, "y": 0.330, "stath": 0.029, "statl": 0.029, "systh": 0.070, "systl": 0.070},
+        {"x": 2.5, "y": 0.33, "stath": 0.029, "statl": 0.029, "systh": 0.07, "systl": 0.07},
     ]
 };
 
@@ -6863,11 +6863,11 @@ dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
         {"x": 8.8, "y": 1.271, "stath": 0.229, "statl": 0.229, "systh": 0.401, "systl": 0.401},
         {"x": 42, "y": 0.815, "stath": 0.083, "statl": 0.083, "systh": 0.137, "systl": 0.137},
         {"x": 86.2, "y": 0.605, "stath": 0.065, "statl": 0.065, "systh": 0.144, "systl": 0.144},
-        {"x": 130, "y": 0.546, "stath": 0.047, "statl": 0.047, "systh": 0.120, "systl": 0.120},
+        {"x": 130, "y": 0.546, "stath": 0.047, "statl": 0.047, "systh": 0.12, "systl": 0.12},
         {"x": 187, "y": 0.476, "stath": 0.035, "statl": 0.035, "systh": 0.059, "systl": 0.059},
         {"x": 261, "y": 0.442, "stath": 0.028, "statl": 0.028, "systh": 0.093, "systl": 0.093},
         {"x": 329, "y": 0.408, "stath": 0.033, "statl": 0.033, "systh": 0.073, "systl": 0.073},
-        {"x": 381, "y": 0.330, "stath": 0.029, "statl": 0.029, "systh": 0.070, "systl": 0.070},
+        {"x": 381, "y": 0.33, "stath": 0.029, "statl": 0.029, "systh": 0.07, "systl": 0.07},
     ]
 };
 
@@ -7029,14 +7029,14 @@ dataset["Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     kinea : "",
     kineb : "-2 < ycm < 1.5",
     data : [
-        {"x": 0.973, "y": 0.67361, "stath": 0.07388, "statl": 0.07388, "systh": 0.12392375, "systl": 0.12392375},
-        {"x": 2.289, "y": 0.72705, "stath": 0.06381, "statl": 0.06381, "systh": 0.096011262, "systl": 0.096011262},
-        {"x": 3.935, "y": 0.79457, "stath": 0.0594, "statl": 0.0594, "systh": 0.12343599, "systl": 0.12343599},
-        {"x": 5.905, "y": 0.78017, "stath": 0.05912, "statl": 0.05912, "systh": 0.096714964, "systl": 0.096714964},
-        {"x": 8.305, "y": 0.84922, "stath": 0.06003, "statl": 0.06003, "systh": 0.098685837, "systl": 0.098685837},
-        {"x": 11.502, "y": 0.85121, "stath": 0.06039, "statl": 0.06039, "systh": 0.084157916, "systl": 0.084157916},
-        {"x": 16.179, "y": 1.00895, "stath": 0.08252, "statl": 0.08252, "systh": 0.10283744, "systl": 0.10283744},
-        {"x": 24.708, "y": 1.14631, "stath": 0.14601, "statl": 0.14601, "systh": 0.10659686, "systl": 0.10659686},
+        {"x": 0.973, "y": 0.67361, "stath": 0.07388, "statl": 0.07388, "systh": 0.123924, "systl": 0.123924},
+        {"x": 2.289, "y": 0.72705, "stath": 0.06381, "statl": 0.06381, "systh": 0.0960113, "systl": 0.0960113},
+        {"x": 3.935, "y": 0.79457, "stath": 0.0594, "statl": 0.0594, "systh": 0.123436, "systl": 0.123436},
+        {"x": 5.905, "y": 0.78017, "stath": 0.05912, "statl": 0.05912, "systh": 0.096715, "systl": 0.096715},
+        {"x": 8.305, "y": 0.84922, "stath": 0.06003, "statl": 0.06003, "systh": 0.0986858, "systl": 0.0986858},
+        {"x": 11.502, "y": 0.85121, "stath": 0.06039, "statl": 0.06039, "systh": 0.0841579, "systl": 0.0841579},
+        {"x": 16.179, "y": 1.00895, "stath": 0.08252, "statl": 0.08252, "systh": 0.102837, "systl": 0.102837},
+        {"x": 24.708, "y": 1.14631, "stath": 0.14601, "statl": 0.14601, "systh": 0.106597, "systl": 0.106597},
     ]
 };
 
@@ -7136,11 +7136,11 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
     kinea : "",
     kineb : "p&#7451; < 40 GeV",
     data : [
-        {"x": -1.75, "y": 0.74404, "stath": 0.06771, "statl": 0.06771, "systh": 0.10755238, "systl": 0.10755238},
-        {"x": -1.125, "y": 0.71056, "stath": 0.05065, "statl": 0.05065, "systh": 0.079533345, "systl": 0.079533345},
-        {"x": -0.375, "y": 0.70485, "stath": 0.04808, "statl": 0.04808, "systh": 0.090873882, "systl": 0.090873882},
-        {"x": 0.375, "y": 0.83138, "stath": 0.05479, "statl": 0.05479, "systh": 0.11657857, "systl": 0.11657857},
-        {"x": 1.125, "y": 0.87859, "stath": 0.06035, "statl": 0.06035, "systh": 0.095619122, "systl": 0.095619122},
+        {"x": -1.75, "y": 0.74404, "stath": 0.06771, "statl": 0.06771, "systh": 0.107552, "systl": 0.107552},
+        {"x": -1.125, "y": 0.71056, "stath": 0.05065, "statl": 0.05065, "systh": 0.0795333, "systl": 0.0795333},
+        {"x": -0.375, "y": 0.70485, "stath": 0.04808, "statl": 0.04808, "systh": 0.0908739, "systl": 0.0908739},
+        {"x": 0.375, "y": 0.83138, "stath": 0.05479, "statl": 0.05479, "systh": 0.116579, "systl": 0.116579},
+        {"x": 1.125, "y": 0.87859, "stath": 0.06035, "statl": 0.06035, "systh": 0.0956191, "systl": 0.0956191},
     ]
 };
 
@@ -7334,25 +7334,6 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
     ]
 };
 
-dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5"] = {
-    reference : "EPJC 78 (2018) 171",
-    link : "https://arxiv.org/abs/1709.03089",
-    observable : "DoubleRatio",
-    xtitle : "cent",
-    particle : "&Upsilon;(2S) / &Upsilon;(1S)",
-    collision : "pPb",
-    energy : "5 TeV",
-    collab : "ATLAS",
-    kinea : "p&#7451; < 40 GeV",
-    kineb : "-2 < ycm < 1.5",
-    data : [
-        {"x": 65, "y": 0.79145, "stath": 0.11760, "statl": 0.11760, "systh": 0.067314908, "systl": 0.067314908},
-        {"x": 30, "y": 1.01095, "stath": 0.14842, "statl": 0.14842, "systh": 0.080330095, "systl": 0.080330095},
-        {"x": 12.5, "y": 0.54841, "stath": 0.17273, "statl": 0.17273, "systh": 0.068803512, "systl": 0.068803512},
-        {"x": 2.5, "y": 0.38966, "stath": 0.19354, "statl": 0.19354, "systh": 0.036663569, "systl": 0.036663569},
-    ]
-};
-
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
@@ -7391,6 +7372,25 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
         {"x": 15, "y": 0.3, "stath": 0.13, "statl": 0.13, "systh": 0.0220565, "systl": 0.0220565},
         {"x": 7.5, "y": 0.38, "stath": 0.16, "statl": 0.16, "systh": 0.0322299, "systl": 0.0322299},
         {"x": 2.5, "y": 0.1, "stath": 0.14, "statl": 0.14, "systh": 0.0301597, "systl": 0.0301597},
+    ]
+};
+
+dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "&Upsilon;(2S) / &Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "p&#7451; < 40 GeV",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 65, "y": 0.79145, "stath": 0.1176, "statl": 0.1176, "systh": 0.0673149, "systl": 0.0673149},
+        {"x": 30, "y": 1.01095, "stath": 0.14842, "statl": 0.14842, "systh": 0.0803301, "systl": 0.0803301},
+        {"x": 12.5, "y": 0.54841, "stath": 0.17273, "statl": 0.17273, "systh": 0.0688035, "systl": 0.0688035},
+        {"x": 2.5, "y": 0.38966, "stath": 0.19354, "statl": 0.19354, "systh": 0.0366636, "systl": 0.0366636},
     ]
 };
 
@@ -7772,10 +7772,10 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
     kinea : "p&#7451; < 40 GeV",
     kineb : "-2 < ycm < 1.5",
     data : [
-        {"x": 65, "y": 0.8344, "stath": 0.23896, "statl": 0.23896, "systh": 0.072110100, "systl": 0.072110100},
-        {"x": 30, "y": 0.68945, "stath": 0.29574, "statl": 0.29574, "systh": 0.059725521, "systl": 0.059725521},
-        {"x": 12.5, "y": 0.53445, "stath": 0.33031, "statl": 0.33031, "systh": 0.076959819, "systl": 0.076959819},
-        {"x": 2.5, "y": 0.86711, "stath": 0.4043, "statl": 0.4043, "systh": 0.074873609, "systl": 0.074873609},
+        {"x": 65, "y": 0.8344, "stath": 0.23896, "statl": 0.23896, "systh": 0.0721101, "systl": 0.0721101},
+        {"x": 30, "y": 0.68945, "stath": 0.29574, "statl": 0.29574, "systh": 0.0597255, "systl": 0.0597255},
+        {"x": 12.5, "y": 0.53445, "stath": 0.33031, "statl": 0.33031, "systh": 0.0769598, "systl": 0.0769598},
+        {"x": 2.5, "y": 0.86711, "stath": 0.4043, "statl": 0.4043, "systh": 0.0748736, "systl": 0.0748736},
     ]
 };
 
