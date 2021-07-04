@@ -3440,57 +3440,6 @@ dataset["B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     ]
 };
 
-dataset["Bc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    observable : "RAA",
-    xtitle : "cent",
-    particle : "Bc",
-    collision : "PbPb",
-    energy : "5 TeV",
-    collab : "CMS",
-    kinea : "6 < p&#7451; < 35 GeV",
-    kineb : "(1.3 <) |y| < 2.3",
-    data : [
-        {"x": 10, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
-        {"x": 55, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
-    ]
-};
-
-dataset["Bc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    observable : "RAA",
-    xtitle : "Npart",
-    particle : "Bc",
-    collision : "PbPb",
-    energy : "5 TeV",
-    collab : "CMS",
-    kinea : "6 < p&#7451; < 35 GeV",
-    kineb : "(1.3 <) |y| < 2.3",
-    data : [
-        {"x": 309.9, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
-        {"x": 73.5, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
-    ]
-};
-
-dataset["Bc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_Rabsy-L1p3-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    observable : "RAA",
-    xtitle : "pT",
-    particle : "Bc",
-    collision : "PbPb",
-    energy : "5 TeV",
-    collab : "CMS",
-    kinea : "0-90%",
-    kineb : "(1.3 <) |y| < 2.3",
-    data : [
-        {"x": 8.059, "y": 1.665, "stath": 0.79, "statl": 0.586, "systh": 0.302, "systl": 0.258},
-        {"x": 17.165, "y": 0.696, "stath": 0.123, "statl": 0.119, "systh": 0.047, "systl": 0.052},
-    ]
-};
-
 dataset["Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PRL 119 (2017) 152301",
     link : "https://arxiv.org/abs/1705.04727",
@@ -3603,6 +3552,72 @@ dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     data : [
         {"x": 3, "y": 0.78, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
         {"x": -3, "y": 1, "stath": 0.03, "statl": 0.03, "systh": 0.1, "systl": 0.1},
+    ]
+};
+
+dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
+    reference : "CMS-PAS-HIN-20-004",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "B<sub>c</sub>",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "6 < p&#7451; < 35 GeV",
+    kineb : "(1.3 <) |y| < 2.3",
+    data : [
+        {"x": 10, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
+        {"x": 55, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
+    ]
+};
+
+dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
+    reference : "CMS-PAS-HIN-20-004",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "B<sub>c</sub>",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "6 < p&#7451; < 35 GeV",
+    kineb : "(1.3 <) |y| < 2.3",
+    data : [
+        {"x": 309.9, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
+        {"x": 73.5, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
+    ]
+};
+
+dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
+    reference : "CMS-PAS-HIN-20-004",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "B<sub>c</sub>",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-90%",
+    kineb : "1.3 < |y| < 2.3",
+    data : [
+        {"x": 8.059, "y": 1.665, "stath": 0.79, "statl": 0.586, "systh": 0.302, "systl": 0.258},
+    ]
+};
+
+dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
+    reference : "CMS-PAS-HIN-20-004",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "B<sub>c</sub>",
+    collision : "PbPb",
+    energy : "5 TeV",
+    collab : "CMS",
+    kinea : "0-90%",
+    kineb : "|y| < 2.3",
+    data : [
+        {"x": 17.165, "y": 0.696, "stath": 0.123, "statl": 0.119, "systh": 0.047, "systl": 0.052},
     ]
 };
 
@@ -6136,12 +6151,12 @@ dataset["incpsi2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-12"] = {
     ]
 };
 
-dataset["Ks0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
+dataset["Ksubs0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     reference : "PRL 121 (2018) 082301",
     link : "https://arxiv.org/abs/1804.09767",
     observable : "v2",
     xtitle : "pT",
-    particle : "Ks<sup>0</sup>",
+    particle : "K<sub>s</sub><sup>0</sup>",
     collision : "pPb",
     energy : "8 TeV",
     collab : "CMS",
