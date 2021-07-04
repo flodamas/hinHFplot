@@ -114,6 +114,11 @@ tr:hover {
 #setup {
     text-align: center;
     width: calc(var(--width-leftrange)*0.96);
+    background-color: white;
+    z-index: 1;
+    /* padding-bottom: 0.2vw; */
+    /* position: sticky; */
+    /* top: 0; */
 }
 
 #data {

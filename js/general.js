@@ -3,12 +3,6 @@ function defaultrange()
 {
     var drange =
         {
-            "DsToD+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 1.2 }  ,
-            "DsToD+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 1.2 }  ,
-            "DsToD+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 1.2 }  ,
-            "DsToD+pT"      : { pxmin : 0   , pxmax : 35  , pymin : 0     , pymax : 1.2 }  ,
-            "DsToD+y"       : { pxmin : -4  , pxmax : 4   , pymin : 0     , pymax : 1.2 }  ,
-
             "LcToD0+absy"    : { pxmin : 0   , pxmax : 4   , pymin : 0     , pymax : 0.9 }  ,
             "LcToD0+cent"    : { pxmin : 0   , pxmax : 100 , pymin : 0     , pymax : 0.9 }  ,
             "LcToD0+Npart"   : { pxmin : 0   , pxmax : 450 , pymin : 0     , pymax : 0.9 }  ,
@@ -74,7 +68,7 @@ function defaultrange()
 function decodehtml(str)
 {
     str = str.replace("<sup>0</sup>", "&#8304;");
-    str = str.replace("<sub>s</sub>", "&#8347;");
+    // str = str.replace("<sub>s</sub>", "&#8347;");
     str = str.replace("<sup>&plusmn;</sup>", "&#8314;");
     var temp = document.createElement("p");
     temp.innerHTML = str;

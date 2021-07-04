@@ -79,3 +79,27 @@ input[type=range] {
     transition: background .2s;
 }
 
+input[type=text] {
+    outline: none;
+    /* height: var(--height-filter); */
+    width: calc(var(--width-leftrange)*0.6);
+    /* color: black; */
+    opacity: 0.5;
+    border: 0.1rem solid #999;
+    border-radius: 0.3vw;
+    font-size: calc(var(--size-font-default));
+    padding-left: 0.3vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
+    ::placeholder {
+        color: #999;
+    }
+    display: inline;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+input[type=text]:hover {
+    opacity: 1.0;
+}

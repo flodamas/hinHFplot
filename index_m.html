@@ -39,7 +39,6 @@
             <option value="v3">v3</option>
             <option value="vn">vn</option>
             <option value="LcToD0">&Lambda;c/D0</option>
-            <option value="DsToD">Ds/D</option>
             <option value="Ratio">Particle ratio</option>
             <option value="DoubleRatio">Double ratio</option>
           </select>
@@ -70,6 +69,9 @@
           <button type="submit" onclick="colorall(); ">Random color</button>
           <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Horizontal line</button>
           <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
+        </div>
+        <div id="filter" style="display: none">
+          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="Filter.. e.g. charmonia, open, baryon, pPb, lepton, etc.">
         </div>
       </div>
 

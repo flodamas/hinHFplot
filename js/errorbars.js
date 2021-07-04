@@ -213,15 +213,6 @@ var drawaxisgrid = function()
             .append('tspan').attr('class', 'axistitlesup')
             .text('0');
     }
-    else if(obs === "DsToD")
-    {
-        ytitle.append('tspan').attr('class', 'axistitle')
-            .text('D')
-            .append('tspan').attr('class', 'axistitlesub')
-            .text('s');
-        ytitle.append('tspan').attr('class', 'axistitle')
-            .text(' / D');
-    }
     else if(obs === "Ratio")
     {
         ytitle.append('tspan').attr('class', 'axistitle')

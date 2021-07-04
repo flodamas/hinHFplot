@@ -54,14 +54,13 @@
         <div>
           Observable:
           <select id="observable" name="observable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
-            <option value="RAA">RAA</option>
+            <option value="RAA" selected="selected">RAA</option>
             <option value="RpA">RpA</option>
             <!-- <option value="RpARAA">RpA, RAA</option> -->
-            <option value="v2" selected="selected">v2</option>
+            <option value="v2">v2</option>
             <option value="v3">v3</option>
             <option value="vn">vn</option>
             <option value="LcToD0">&Lambda;c/D0</option>
-            <option value="DsToD">Ds/D</option>
             <option value="Ratio">Particle ratio</option>
             <option value="DoubleRatio">Double ratio</option>
           </select>
@@ -91,6 +90,9 @@
           <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Horizontal line</button>
           <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
         </div>
+        <div id="filter">
+          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="Filter.. e.g. charmonia, open, baryon, pPb, lepton, etc.">
+        </div>
       </div>
 
       <div id="data">
@@ -98,8 +100,9 @@
       </div>
       <script src="js/loaditem.js"></script>
       <script src="js/general.js"></script>
+      <script src="js/filter.js"></script>
       <script>defaultrange()</script>
-      <script>loaditem()</script>
+      <script>loaditem()</script>      
     </div>
     <!-- <script>loadtoc()</script> -->
 

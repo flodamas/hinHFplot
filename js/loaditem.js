@@ -113,6 +113,8 @@ function loaditem()
         iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
         iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
     }
+    
+    keyfilter();
 }
 
 function selectall()
