@@ -73,6 +73,9 @@ function defaultrange()
 
 function decodehtml(str)
 {
+    str = str.replace("<sup>0</sup>", "&#8304;");
+    str = str.replace("<sub>s</sub>", "&#8347;");
+    str = str.replace("<sup>&plusmn;</sup>", "&#8314;");
     var temp = document.createElement("p");
     temp.innerHTML = str;
     var result = temp.innerText;
