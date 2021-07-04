@@ -82,9 +82,9 @@ input[type=range] {
 input[type=text] {
     outline: none;
     width: 25%;
-    /* color: black; */
-    opacity: 0.5;
-    border: 0.1rem solid #999;
+    color: #444;
+    opacity: 0.4;
+    border: 0.1vw solid #999;
     border-radius: 0.3vw;
     font-size: calc(var(--size-font-default));
     padding-left: 0.3vw;
@@ -92,7 +92,7 @@ input[type=text] {
     padding-bottom: 0.3vw;
     margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
     ::placeholder {
-        color: #999;
+        color: #666;
     }
     display: inline;
     vertical-align: middle;
