@@ -81,8 +81,7 @@ input[type=range] {
 
 input[type=text] {
     outline: none;
-    /* height: var(--height-filter); */
-    width: calc(var(--width-leftrange)*0.6);
+    width: 25%;
     /* color: black; */
     opacity: 0.5;
     border: 0.1rem solid #999;

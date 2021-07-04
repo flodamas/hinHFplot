@@ -1,21 +1,19 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 49vw;
+    --width-leftrange: 48vw;
     --size-font-header: 1.2vw;
     --size-font-default: 1vw;
     --size-font-desc: 1vw;
     --size-font-footer: 1vw;
     --height-footer: 1.1vw;
     --height-header-left: 2.8vw;
-    --height-header-right: 9vw;
-    --margin-rightrange: 1.05;
+    --margin-rightrange: 1.0;
 
     /* checkbox */
     --width-colorpicker: 1.4vw;
     --padding-td: 0.5vw;
     --padding-td-tb: 0.35vw;
-    /* --height-tr: 1.5vw; */
     --size-checkmark: 1.2vw;
     --opacity-checkafter: 1;
 
@@ -27,7 +25,8 @@
 
     /*reference*/
     --ncol-reference: 2;
-    --width-reference: 38vw;
+    --width-reference: 90%;
+    --margin-reference: 7vw;
 }
 
 /* transition */
@@ -70,34 +69,6 @@ tr:hover {
     padding-top: 1vw;
 }
 
-/* Top right */
-
-#descholder {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
-    height: var(--height-header-right);
-    position: fixed;
-    top: 0;
-    margin-left: calc(var(--width-leftrange) * var(--margin-rightrange));
-    background-color: white;
-    z-index: 1;
-}
-
-#divrange {
-    position: absolute;
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.8);
-    right: 0;
-}
-
-#desc {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
-    height: var(--height-header-right);
-    position: absolute;
-    right: 10vw;
-    top: 1.5vw;
-    font-size: var(--size-font-desc);
-    text-align: right;
-}
-
 /* Bottom left */
 
 #leftrange {
@@ -117,8 +88,8 @@ tr:hover {
     background-color: white;
     z-index: 1;
     /* padding-bottom: 0.2vw; */
-    /* position: sticky; */
-    /* top: 0; */
+    position: sticky;
+    top: 0;
 }
 
 #data {
@@ -129,23 +100,32 @@ tr:hover {
     margin: 0 auto; /* or margin: 0 auto 0 auto */
 }
 
+/* Top right */
+
+#descholder {
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.75);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    text-align: right;
+}
+
 /* Bottom right */
 
 #rightrange {
     width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
-    height: calc((100vh - var(--height-header-right) - var(--height-footer))*0.96);
-    /* position: absolute; */
-    position: fixed;
+    height: calc((100vh - var(--height-footer))*0.96);
+    position: absolute;
     left: calc(var(--width-leftrange) * var(--margin-rightrange));
-    top: var(--height-header-right);
+    top: 0;
     padding-bottom: var(--height-footer);
     overflow: auto;
-    /* display: block; */
     background-color: white;
 }
 
 #rightpad {
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.95);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.78);
     position: relative;
     margin-left: 0;
     margin-top: var(--height-list-title);
@@ -154,14 +134,14 @@ tr:hover {
     overflow: auto;
     display: block;
     background-color: white;
-    /* text-align: center; */
+    text-align: right;
 }
 
 /* Footers */
 
 #footercontainerright {
     height: var(--height-footer);
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
+    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.93);
     position: fixed;
     bottom: 0;
     left: calc(var(--width-leftrange) * var(--margin-rightrange));
@@ -172,7 +152,8 @@ tr:hover {
 
 #footerright {
     height: calc(var(--height-footer)*0.8);
-    width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98);
+    /* width: calc((100vw - var(--width-leftrange) * var(--margin-rightrange))*0.98); */
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: calc(var(--height-footer)*0.2);
@@ -181,11 +162,12 @@ tr:hover {
 }
 
 #clipboard {
-    position: absolute;
+    position: fixed;
     padding: 0.2vw;
     color: white;
     font-size: calc(var(--size-font-default)*0.9);
     opacity: 1;
     border-radius: calc(var(--size-font-default)*0.25);
     display: block;
+    z-index: 1;
 }

@@ -13,17 +13,11 @@
     list-style-type: square;
     text-align: left;
     margin: 0 auto;
-}
-
-#divreference {
-    overflow: auto;
-    padding-top: 1vw;
-    /* padding-left: var(--padding-reference); */
-    margin: 0 auto;
+    margin-left: var(--margin-reference);
 }
 
 li {
-    margin-bottom: 1vh;
+    margin-bottom: 0;
 }
 
 .liref {

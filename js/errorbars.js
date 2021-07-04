@@ -13,7 +13,7 @@ var legs = [];
 
 var setscale = function()
 {
-    width = document.getElementById('rightpad').clientWidth*0.85;
+    width = document.getElementById('rightpad').clientWidth*0.93;
     height = width * 0.695;
 
     svg = d3.select('svg').attr('width', width).attr('height', height)

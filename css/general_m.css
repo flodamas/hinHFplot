@@ -27,7 +27,8 @@
 
     /*reference*/
     --ncol-reference: 2;
-    --width-reference: 80vw;
+    --width-reference: 92%;
+    --margin-reference: 7vw;
 }
 
 /* Top left */
@@ -84,7 +85,7 @@
 /* Bottom right */
 
 #rightrange {
-    width: var(--width-leftrange);
+    width: calc(var(--width-leftrange));
     height: var(--height-rightrange);
     position: fixed;
     left: 0;
@@ -94,9 +95,9 @@
 }
 
 #rightpad {
-    width: calc(var(--width-leftrange)*var(--width-leftrange-inner));
+    width: calc(var(--width-leftrange)*0.90*var(--width-leftrange-inner));
     position: relative;
-    margin-left: 0;
+    margin: 0 auto;
     border: none;
     overflow: auto;
     display: block;

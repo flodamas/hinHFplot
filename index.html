@@ -31,23 +31,6 @@
       </div>
     </div>
 
-    <!-- Top-right -->
-    <div id="descholder">
-      <div id="desc">
-        <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" style="color:black"><i class="far fa-envelope"></i></a> <p>Jing Wang (jing.wang@cern.ch)</p><br><br>
-        <button type="submit" id='saveButton'>Save as PNG</button>
-        <button type="submit" onclick="window.open('datasets/publication.html')">Publications</button>
-        <div id="divrange">
-          <p>Legend x: </p>
-          <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
-          <p id="tx0"> 25 </p>
-          <p>  y: </p>
-          <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
-          <p id="ty0"> 20 </p>
-        </div>
-      </div>
-    </div>
-
     <!-- Bottom-left -->
     <div id="leftrange">
       <div id="setup">
@@ -87,11 +70,9 @@
           <!-- <button type="submit" onclick="selectall()">Select all</button> -->
           <button type="submit" onclick="clearall()">Clear all</button>
           <button type="submit" onclick="colorall(); ">Random color</button>
-          <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Horizontal line</button>
-          <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
-        </div>
-        <div id="filter">
-          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="Filter.. e.g. charmonia, open, baryon, pPb, lepton, etc.">
+          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton">
+          <!-- <div id="filter" style="display: inline"> -->
+            <!-- </div> -->
         </div>
       </div>
 
@@ -106,30 +87,43 @@
     </div>
     <!-- <script>loadtoc()</script> -->
 
-    <!-- Bottom-right -->
     <div id="rightrange">
+      <!-- Top-right -->
+      <div id="descholder">
+        <br>
+        <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" style="color:black"><i class="far fa-paper-plane"></i></a> <p>Jing Wang (jing.wang@cern.ch) &nbsp;&nbsp;</p><br>
+        <i class="far fa-file-alt"></i> <p>Check <a href="datasets/publication.html" class="link">here</a> for the full publication list  &nbsp;&nbsp;</p> <br><br>
+        <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Horizontal line</button>
+        <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
+        <button type="submit" id='saveButton'>Save as PNG</button><p>&nbsp;</p> <br>
+        <p>Legend x: </p>
+        <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
+        <p id="tx0"> 25 </p>
+        <p>  y: </p>
+        <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
+        <p id="ty0"> 20 </p>
+        <p>&nbsp;</p><br>
+        <p>&nbsp;</p><br>          
+      </div>
+      <!-- Bottom-right -->
       <div id="rightpad">
         <svg id="svgparent" style="background-color: white;"></svg>
-        <div id="divreference">
-          <!-- <p>Reference:</p> -->
-          <ul id="reference"> </ul>
-        </div>
+        <ul id="reference"> </ul>
         <script src="js/reference.js"></script>
         <script src="js/errorbars.js"></script>
         <script>setsvg()</script>
         <script src="js/save.js"></script>
       </div>
-    </div>
 
-    <div id="footercontainerright">
-      <div id="footerright">
-        Copyright &copy; 2021 boundin
+      <div id="footercontainerright">
+        <div id="footerright">
+          Copyright &copy; 2021 boundin
+        </div>
       </div>
-    </div>
 
-    <div id="clipboard">
+      <div id="clipboard">
 
-    </div>
+      </div>
 
   </body>
 </html>

@@ -11,7 +11,7 @@ function keyfilter() {
         var findmatch = idd;
         if(idd.indexOf("psi") > -1) // quarkonia
         {
-            findmatch += " quarkonium quarkonia";
+            findmatch += " quarkonium quarkonia hidden closed";
             if(idd.indexOf("upsilon") > -1)
                 findmatch += " bottomonium bottomonia beauty";
             else
