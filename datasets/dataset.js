@@ -2125,6 +2125,29 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     ]
 };
 
+dataset["aprJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 8.465, "y": 0.996, "stath": 0.039, "statl": 0.039, "systh": 0.1174138, "systl": 0.1174138},
+        {"x": 9.456, "y": 1.104, "stath": 0.03, "statl": 0.03, "systh": 0.1099318, "systl": 0.1099318},
+        {"x": 10.465, "y": 1.093, "stath": 0.031, "statl": 0.031, "systh": 0.10245975, "systl": 0.10245975},
+        {"x": 11.467, "y": 1.110, "stath": 0.033, "statl": 0.033, "systh": 0.1010198, "systl": 0.1010198},
+        {"x": 12.864, "y": 1.092, "stath": 0.028, "statl": 0.028, "systh": 0.0990202, "systl": 0.0990202},
+        {"x": 14.884, "y": 1.063, "stath": 0.037, "statl": 0.037, "systh": 0.09656604, "systl": 0.09656604},
+        {"x": 17.611, "y": 1.038, "stath": 0.04, "statl": 0.04, "systh": 0.097508974, "systl": 0.097508974},
+        {"x": 24.619, "y": 1.085, "stath": 0.054, "statl": 0.054, "systh": 0.10567876, "systl": 0.10567876},
+    ]
+};
+
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
@@ -2325,6 +2348,26 @@ dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
         {"x": 11.5, "y": 0.97, "stath": 0.14, "statl": 0.14, "systh": 0, "systl": 0},
         {"x": 12.5, "y": 1.07, "stath": 0.17, "statl": 0.17, "systh": 0, "systl": 0},
         {"x": 13.5, "y": 0.89, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["aprJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Prompt J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "8 < p&#7451; < 40 GeV",
+    data : [
+        {"x": -1.75, "y": 1.005, "stath": 0.039, "statl": 0.039, "systh": 0.097529483, "systl": 0.097529483},
+        {"x": -1.125, "y": 1.136, "stath": 0.038, "statl": 0.038, "systh": 0.10778683, "systl": 0.10778683},
+        {"x": -0.375, "y": 0.965, "stath": 0.032, "statl": 0.032, "systh": 0.090801982, "systl": 0.090801982},
+        {"x": 0.375, "y": 1.086, "stath": 0.033, "statl": 0.033, "systh": 0.10470912, "systl": 0.10470912},
+        {"x": 1.125, "y": 1.111, "stath": 0.037, "statl": 0.037, "systh": 0.10782393, "systl": 0.10782393},
     ]
 };
 
@@ -2954,6 +2997,25 @@ dataset["aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     ]
 };
 
+dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "8 < p&#7451; < 40 GeV",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 65, "y": 0.959, "stath": 0.131, "statl": 0.131, "systh": 0.13619104, "systl": 0.13619104},
+        {"x": 30, "y": 0.794, "stath": 0.125, "statl": 0.125, "systh": 0.15078461, "systl": 0.15078461},
+        {"x": 12.5, "y": 0.661, "stath": 0.122, "statl": 0.122, "systh": 0.11686745, "systl": 0.11686745},
+        {"x": 2.5, "y": 0.768, "stath": 0.202, "statl": 0.202, "systh": 0.11189281, "systl": 0.11189281},
+    ]
+};
+
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
@@ -3060,6 +3122,26 @@ dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = 
         {"x": 13.5, "y": 0.47, "stath": 0.13, "statl": 0.13, "systh": 0.04, "systl": 0.04},
         {"x": 17.5, "y": 0.4, "stath": 0.17, "statl": 0.17, "systh": 0.05, "systl": 0.05},
         {"x": 25, "y": 0.26, "stath": 0.23, "statl": 0.23, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "DoubleRatio",
+    xtitle : "ycm",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "8 < p&#7451; < 40 GeV",
+    data : [
+        {"x": -1.75, "y": 0.911, "stath": 0.197, "statl": 0.197, "systh": 0.138, "systl": 0.138},
+        {"x": -1.125, "y": 0.893, "stath": 0.137, "statl": 0.137, "systh": 0.119, "systl": 0.119},
+        {"x": -0.375, "y": 0.789, "stath": 0.146, "statl": 0.146, "systh": 0.089, "systl": 0.089},
+        {"x": 0.375, "y": 0.700, "stath": 0.131, "statl": 0.131, "systh": 0.092, "systl": 0.092},
+        {"x": 1.125, "y": 0.681, "stath": 0.142, "statl": 0.142, "systh": 0.102, "systl": 0.102},
     ]
 };
 
@@ -4228,6 +4310,29 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     ]
 };
 
+dataset["bTOJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 8.465, "y": 1.140, "stath": 0.087, "statl": 0.087, "systh": 0.13717872, "systl": 0.13717872},
+        {"x": 9.456, "y": 1.033, "stath": 0.051, "statl": 0.051, "systh": 0.11374093, "systl": 0.11374093},
+        {"x": 10.465, "y": 0.991, "stath": 0.046, "statl": 0.046, "systh": 0.094366308, "systl": 0.094366308},
+        {"x": 11.467, "y": 1.009, "stath": 0.046, "statl": 0.046, "systh": 0.093621579, "systl": 0.093621579},
+        {"x": 12.864, "y": 1.015, "stath": 0.037, "statl": 0.037, "systh": 0.096602277, "systl": 0.096602277},
+        {"x": 14.884, "y": 1.064, "stath": 0.046, "statl": 0.046, "systh": 0.097144223, "systl": 0.097144223},
+        {"x": 17.611, "y": 1.006, "stath": 0.042, "statl": 0.042, "systh": 0.094021274, "systl": 0.094021274},
+        {"x": 24.619, "y": 0.974, "stath": 0.045, "statl": 0.045, "systh": 0.096384646, "systl": 0.096384646},
+    ]
+};
+
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
@@ -4428,6 +4533,26 @@ dataset["bTOJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
         {"x": 11.5, "y": 1.11, "stath": 0.18, "statl": 0.18, "systh": 0, "systl": 0},
         {"x": 12.5, "y": 0.97, "stath": 0.18, "statl": 0.18, "systh": 0, "systl": 0},
         {"x": 13.5, "y": 0.94, "stath": 0.19, "statl": 0.19, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["bTOJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "8 < p&#7451; < 40 GeV",
+    data : [
+        {"x": -1.75, "y": 0.816, "stath": 0.061, "statl": 0.061, "systh": 0.076485293, "systl": 0.076485293},
+        {"x": -1.125, "y": 1.114, "stath": 0.059, "statl": 0.059, "systh": 0.11130588, "systl": 0.11130588},
+        {"x": -0.375, "y": 1.088, "stath": 0.057, "statl": 0.057, "systh": 0.10163661, "systl": 0.10163661},
+        {"x": 0.375, "y": 1.095, "stath": 0.055, "statl": 0.055, "systh": 0.10511898, "systl": 0.10511898},
+        {"x": 1.125, "y": 1.063, "stath": 0.058, "statl": 0.058, "systh": 0.11975391, "systl": 0.11975391},
     ]
 };
 
@@ -6754,6 +6879,29 @@ dataset["Upsilon1S_RAA_y_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
     ]
 };
 
+dataset["Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 0.973, "y": 0.67361, "stath": 0.07388, "statl": 0.07388, "systh": 0.12392375, "systl": 0.12392375},
+        {"x": 2.289, "y": 0.72705, "stath": 0.06381, "statl": 0.06381, "systh": 0.096011262, "systl": 0.096011262},
+        {"x": 3.935, "y": 0.79457, "stath": 0.0594, "statl": 0.0594, "systh": 0.12343599, "systl": 0.12343599},
+        {"x": 5.905, "y": 0.78017, "stath": 0.05912, "statl": 0.05912, "systh": 0.096714964, "systl": 0.096714964},
+        {"x": 8.305, "y": 0.84922, "stath": 0.06003, "statl": 0.06003, "systh": 0.098685837, "systl": 0.098685837},
+        {"x": 11.502, "y": 0.85121, "stath": 0.06039, "statl": 0.06039, "systh": 0.084157916, "systl": 0.084157916},
+        {"x": 16.179, "y": 1.00895, "stath": 0.08252, "statl": 0.08252, "systh": 0.10283744, "systl": 0.10283744},
+        {"x": 24.708, "y": 1.14631, "stath": 0.14601, "statl": 0.14601, "systh": 0.10659686, "systl": 0.10659686},
+    ]
+};
+
 dataset["Upsilon1S_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
@@ -6835,6 +6983,26 @@ dataset["Upsilon1S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
         {"x": 9, "y": 0.81, "stath": 0.12, "statl": 0.12, "systh": 0, "systl": 0},
         {"x": 12.5, "y": 1.14, "stath": 0.16, "statl": 0.16, "systh": 0, "systl": 0},
         {"x": 20, "y": 1.04, "stath": 0.18, "statl": 0.18, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "",
+    kineb : "p&#7451; < 40 GeV",
+    data : [
+        {"x": -1.75, "y": 0.74404, "stath": 0.06771, "statl": 0.06771, "systh": 0.10755238, "systl": 0.10755238},
+        {"x": -1.125, "y": 0.71056, "stath": 0.05065, "statl": 0.05065, "systh": 0.079533345, "systl": 0.079533345},
+        {"x": -0.375, "y": 0.70485, "stath": 0.04808, "statl": 0.04808, "systh": 0.090873882, "systl": 0.090873882},
+        {"x": 0.375, "y": 0.83138, "stath": 0.05479, "statl": 0.05479, "systh": 0.11657857, "systl": 0.11657857},
+        {"x": 1.125, "y": 0.87859, "stath": 0.06035, "statl": 0.06035, "systh": 0.095619122, "systl": 0.095619122},
     ]
 };
 
@@ -7025,6 +7193,25 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
     data : [
         {"x": 0.6, "y": 0.341, "stath": 0.067, "statl": 0.067, "systh": 0.014, "systl": 0.014},
         {"x": 1.8, "y": 0.198, "stath": 0.096, "statl": 0.096, "systh": 0.013, "systl": 0.013},
+    ]
+};
+
+dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "&Upsilon;(2S) / &Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "p&#7451; < 40 GeV",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 65, "y": 0.79145, "stath": 0.11760, "statl": 0.11760, "systh": 0.067314908, "systl": 0.067314908},
+        {"x": 30, "y": 1.01095, "stath": 0.14842, "statl": 0.14842, "systh": 0.080330095, "systl": 0.080330095},
+        {"x": 12.5, "y": 0.54841, "stath": 0.17273, "statl": 0.17273, "systh": 0.068803512, "systl": 0.068803512},
+        {"x": 2.5, "y": 0.38966, "stath": 0.19354, "statl": 0.19354, "systh": 0.036663569, "systl": 0.036663569},
     ]
 };
 
@@ -7359,6 +7546,25 @@ dataset["Upsilon2S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
         {"x": 2.75, "y": 0.61, "stath": 0.11, "statl": 0.11, "systh": 0, "systl": 0},
         {"x": 3.25, "y": 0.36, "stath": 0.1, "statl": 0.1, "systh": 0, "systl": 0},
         {"x": 3.75, "y": 0.46, "stath": 0.14, "statl": 0.14, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5"] = {
+    reference : "EPJC 78 (2018) 171",
+    link : "https://arxiv.org/abs/1709.03089",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "&Upsilon;(3S) / &Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5 TeV",
+    collab : "ATLAS",
+    kinea : "p&#7451; < 40 GeV",
+    kineb : "-2 < ycm < 1.5",
+    data : [
+        {"x": 65, "y": 0.8344, "stath": 0.23896, "statl": 0.23896, "systh": 0.072110100, "systl": 0.072110100},
+        {"x": 30, "y": 0.68945, "stath": 0.29574, "statl": 0.29574, "systh": 0.059725521, "systl": 0.059725521},
+        {"x": 12.5, "y": 0.53445, "stath": 0.33031, "statl": 0.33031, "systh": 0.076959819, "systl": 0.076959819},
+        {"x": 2.5, "y": 0.86711, "stath": 0.4043, "statl": 0.4043, "systh": 0.074873609, "systl": 0.074873609},
     ]
 };
 
