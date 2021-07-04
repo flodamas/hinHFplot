@@ -28,7 +28,7 @@
 .grid path,
 .grid line {
     stroke: #e5e5e5;
-    stroke-opacity: 0.5;
+    /* stroke-opacity: 0.5; */
     stroke-dasharray: 5,3;
 }
 
