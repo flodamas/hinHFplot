@@ -4078,9 +4078,28 @@ dataset["bTOD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     ]
 };
 
+dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
+    reference : "STAR Preliminary",
+    link : "https://arxiv.org/abs/2002.09057",
+    observable : "DoubleRatio",
+    xtitle : "pT",
+    particle : "(b&rarr;) e / (c&rarr;) e",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-80%",
+    kineb : "|&eta;| < 1",
+    data : [
+        {"x": 3.00848, "y": 2.11325, "stath": 0.528624, "statl": 0.528624, "systh": 0.352416, "systl": 0.306045},
+        {"x": 4.00244, "y": 2.17817, "stath": 0.510075, "statl": 0.510075, "systh": 0.36169, "systl": 0.324594},
+        {"x": 5.00523, "y": 1.67737, "stath": 0.380238, "statl": 0.380238, "systh": 0.296771, "systl": 0.278223},
+        {"x": 7.01081, "y": 1.72374, "stath": 0.649187, "statl": 0.649187, "systh": 0.537898, "systl": 0.51935},
+    ]
+};
+
 dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     reference : "STAR Preliminary",
-    link : "https://indico.cern.ch/event/792436/contributions/3535848/attachments/1938681/3213669/Kelsey_QM2019.pdf",
+    link : "https://arxiv.org/abs/2002.09057",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -5517,7 +5536,7 @@ dataset["cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8"] = {
 
 dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     reference : "STAR Preliminary",
-    link : "https://indico.cern.ch/event/985652/contributions/4305124/attachments/2245001/3810816/HFE_for_SQM2021_v6.pdf",
+    link : "https://arxiv.org/abs/2002.09057",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) e",
@@ -6596,7 +6615,7 @@ dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     link : "https://arxiv.org/abs/1902.05599",
     observable : "DoubleRatio",
     xtitle : "pT",
-    particle : "Lambdb<sub>b</sub> / B<sup>0</sup>",
+    particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
     collision : "pPb",
     energy : "8 TeV",
     collab : "LHCb",
@@ -6615,7 +6634,7 @@ dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     link : "https://arxiv.org/abs/1902.05599",
     observable : "DoubleRatio",
     xtitle : "pT",
-    particle : "Lambdb<sub>b</sub> / B<sup>0</sup>",
+    particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
     collision : "pPb",
     energy : "8 TeV",
     collab : "LHCb",
@@ -6634,7 +6653,7 @@ dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     link : "https://arxiv.org/abs/1902.05599",
     observable : "DoubleRatio",
     xtitle : "ycm",
-    particle : "Lambdb<sub>b</sub> / B<sup>0</sup>",
+    particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
     collision : "pPb",
     energy : "8 TeV",
     collab : "LHCb",
