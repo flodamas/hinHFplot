@@ -192,9 +192,11 @@ var drawaxisgrid = function()
     else if(document.getElementById('xvariable').value === "Npart")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
-            .text('N')
+            .text(decodehtml('&#10216;N'))
             .append('tspan').attr('class', 'axistitlesub')
             .text('part');
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text(decodehtml('&#10217;'));
     }
 
     var ytitle = svg.append("text")
