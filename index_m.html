@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="A compilation tool of heavy flavor measurements in heavy ion collisions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general_m.css">
     <link rel="stylesheet" href="css/basis.css">
     <link rel="stylesheet" href="css/checkbox.css">
@@ -56,12 +58,14 @@
           <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
           <p> - </p>
           <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
+          <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
         </div>
         <div>
           <p>Y-axis range:</p>
           <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
           <p> - </p>
           <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
+          <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
         </div>
         <div>
           <button type="submit" onclick="clearall()">Clear all</button>

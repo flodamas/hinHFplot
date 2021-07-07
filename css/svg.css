@@ -13,23 +13,23 @@
     stroke-width: 0.08em;
 }
 
-.grid path,
-.grid line,
 .hline {
+    transition: opacity 0.5s;
+}
+
+.grid path,
+.grid line
+{
     stroke-width: 0.16em;
+    transition: opacity 0.5s;
+    stroke: #e5e5e5;
+    stroke-dasharray: 5,3;
 }
 
 .axis path,
 .axis line {
     stroke: black;
     stroke-opacity: 1;
-}
-
-.grid path,
-.grid line {
-    stroke: #e5e5e5;
-    /* stroke-opacity: 0.5; */
-    stroke-dasharray: 5,3;
 }
 
 .axistitlesub,
@@ -56,7 +56,5 @@
     font-size: 1.2em;
 }
 
-.hline {
-    transition: opacity 0.5s;
-}
+
 
