@@ -7220,26 +7220,6 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_ALICE_cent-0-90_pT-gt-0"] = {
     ]
 };
 
-dataset["Upsilon1S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
-    reference : "arXiv:2011.05758",
-    link : "https://arxiv.org/abs/2011.05758",
-    observable : "RAA",
-    xtitle : "absy",
-    particle : "&Upsilon;(1S)",
-    collision : "PbPb",
-    energy : "5.02 TeV",
-    collab : "ALICE",
-    kinea : "0-90%",
-    kineb : "p&#7451; < 15 GeV",
-    data : [
-        {"x": 2.65, "y": 0.433, "stath": 0.043, "statl": 0.043, "systh": 0.055, "systl": 0.055},
-        {"x": 2.95, "y": 0.396, "stath": 0.023, "statl": 0.023, "systh": 0.036, "systl": 0.036},
-        {"x": 3.2, "y": 0.398, "stath": 0.029, "statl": 0.029, "systh": 0.041, "systl": 0.041},
-        {"x": 3.45, "y": 0.338, "stath": 0.021, "statl": 0.021, "systh": 0.041, "systl": 0.041},
-        {"x": 3.8, "y": 0.305, "stath": 0.032, "statl": 0.032, "systh": 0.048, "systl": 0.048},
-    ]
-};
-
 dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
@@ -7258,6 +7238,26 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
         {"x": 1.4, "y": 0.49, "stath": 0.036, "statl": 0.036, "systh": 0.072, "systl": 0.072},
         {"x": 1.8, "y": 0.479, "stath": 0.038, "statl": 0.038, "systh": 0.072, "systl": 0.072},
         {"x": 2.2, "y": 0.399, "stath": 0.06, "statl": 0.06, "systh": 0.084, "systl": 0.084},
+    ]
+};
+
+dataset["Upsilon1S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "RAA",
+    xtitle : "absy",
+    particle : "&Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-90%",
+    kineb : "p&#7451; < 15 GeV",
+    data : [
+        {"x": 2.65, "y": 0.433, "stath": 0.043, "statl": 0.043, "systh": 0.055, "systl": 0.055},
+        {"x": 2.95, "y": 0.396, "stath": 0.023, "statl": 0.023, "systh": 0.036, "systl": 0.036},
+        {"x": 3.2, "y": 0.398, "stath": 0.029, "statl": 0.029, "systh": 0.041, "systl": 0.041},
+        {"x": 3.45, "y": 0.338, "stath": 0.021, "statl": 0.021, "systh": 0.041, "systl": 0.041},
+        {"x": 3.8, "y": 0.305, "stath": 0.032, "statl": 0.032, "systh": 0.048, "systl": 0.048},
     ]
 };
 
@@ -7972,23 +7972,6 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     ]
 };
 
-dataset["Upsilon2S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
-    reference : "arXiv:2011.05758",
-    link : "https://arxiv.org/abs/2011.05758",
-    observable : "RAA",
-    xtitle : "absy",
-    particle : "&Upsilon;(2S)",
-    collision : "PbPb",
-    energy : "5.02 TeV",
-    collab : "ALICE",
-    kinea : "0-90%",
-    kineb : "p&#7451; < 15 GeV",
-    data : [
-        {"x": 2.9, "y": 0.081, "stath": 0.03, "statl": 0.03, "systh": 0.033, "systl": 0.033},
-        {"x": 3.65, "y": 0.197, "stath": 0.04, "statl": 0.04, "systh": 0.035, "systl": 0.035},
-    ]
-};
-
 dataset["Upsilon2S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
@@ -8003,6 +7986,23 @@ dataset["Upsilon2S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     data : [
         {"x": 0.6, "y": 0.116, "stath": 0.034, "statl": 0.034, "systh": 0.039, "systl": 0.039},
         {"x": 1.8, "y": 0.138, "stath": 0.049, "statl": 0.049, "systh": 0.064, "systl": 0.064},
+    ]
+};
+
+dataset["Upsilon2S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
+    reference : "arXiv:2011.05758",
+    link : "https://arxiv.org/abs/2011.05758",
+    observable : "RAA",
+    xtitle : "absy",
+    particle : "&Upsilon;(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-90%",
+    kineb : "p&#7451; < 15 GeV",
+    data : [
+        {"x": 2.9, "y": 0.081, "stath": 0.03, "statl": 0.03, "systh": 0.033, "systl": 0.033},
+        {"x": 3.65, "y": 0.197, "stath": 0.04, "statl": 0.04, "systh": 0.035, "systl": 0.035},
     ]
 };
 
