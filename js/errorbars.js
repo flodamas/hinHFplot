@@ -303,10 +303,11 @@ var vlineopacity = function() {
 }
 
 
-var gridopacity = function() {
+var gridopacity = function(transt=500) {
     var grid = d3.select("svg").select("g").selectAll('.grid');
-    var newopa = 1 - document.getElementById('btngrid').value;
-    grid.transition().attr('opacity', newopa).duration(500);
+    var next = {0 : 1, 1 : 0.5, 0.5 : 0};
+    var newopa = next[document.getElementById('btngrid').value];
+    grid.transition().attr('opacity', newopa).duration(transt);
     document.getElementById('btngrid').value = newopa;
 }
 
