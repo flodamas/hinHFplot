@@ -102,11 +102,13 @@ var drawaxisgrid = function()
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "grid")
         .attr('opacity', document.getElementById('btngrid').value)
+        .attr('stroke-width', width/100.*0.25)
         .call( d3.axisBottom(x).tickSize(-chartHeight).ticks(ticksx).tickFormat("").tickSizeOuter(0) );
     var yGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "grid")
         .attr('opacity', document.getElementById('btngrid').value)
+        .attr('stroke-width', width/100.*0.25)
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
 
     var obs = document.getElementById('observable').value;
@@ -303,16 +305,9 @@ var vlineopacity = function() {
 
 var gridopacity = function() {
     var grid = d3.select("svg").select("g").selectAll('.grid');
-    if(document.getElementById('btngrid').value == 0.5)
-    {
-        grid.transition().attr('opacity', '0').duration(500);
-        document.getElementById('btngrid').value = 0;
-    }
-    else
-    {
-        grid.transition().attr('opacity', '0.5').duration(500);
-        document.getElementById('btngrid').value = 0.5;
-    }
+    var newopa = 1 - document.getElementById('btngrid').value;
+    grid.transition().attr('opacity', newopa).duration(500);
+    document.getElementById('btngrid').value = newopa;
 }
 
 

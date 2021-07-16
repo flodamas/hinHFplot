@@ -20,7 +20,6 @@
 .grid path,
 .grid line
 {
-    stroke-width: 0.16em;
     transition: opacity 0.5s;
     stroke: #e5e5e5;
     stroke-dasharray: 5,3;
