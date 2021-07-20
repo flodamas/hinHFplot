@@ -6524,6 +6524,23 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
     ]
 };
 
+dataset["incJpsi_RAA_Npart_XeXe_5p44TeV_ALICE_pT-gt-0_y-2p5-4"] = {
+    reference : "PLB 785 (2018) 419",
+    link : "https://arxiv.org/abs/1805.04383",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "XeXe",
+    energy : "5.44 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; > 0 GeV",
+    kineb : "2.5 < y < 4",
+    data : [
+        {"x": 190, "y": 0.59, "stath": 0.14, "statl": 0.14, "systh": 0.09, "systl": 0.09},
+        {"x": 79, "y": 0.52, "stath": 0.14, "statl": 0.14, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
