@@ -6330,6 +6330,26 @@ dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
     ]
 };
 
+dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-10_absy-lt-0p9"] = {
+    reference : "PLB 805 (2020) 135434",
+    link : "https://arxiv.org/abs/1910.14404",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0.15 < p&#7451; < 10 GeV",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 18, "y": 0.977, "stath": 0.119, "statl": 0.119, "systh": 0.066, "systl": 0.066},
+        {"x": 70, "y": 0.79, "stath": 0.091, "statl": 0.091, "systh": 0.08, "systl": 0.08},
+        {"x": 159, "y": 0.874, "stath": 0.077, "statl": 0.077, "systh": 0.068, "systl": 0.068},
+        {"x": 263, "y": 0.743, "stath": 0.101, "statl": 0.101, "systh": 0.069, "systl": 0.069},
+        {"x": 359, "y": 1.156, "stath": 0.106, "statl": 0.106, "systh": 0.096, "systl": 0.096},
+    ]
+};
+
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
@@ -6415,6 +6435,26 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
         {"x": 87.14, "y": 0.6, "stath": 0.05, "statl": 0.05, "systh": 0.02, "systl": 0.02},
         {"x": 54.34, "y": 0.67, "stath": 0.08, "statl": 0.08, "systh": 0.02, "systl": 0.02},
         {"x": 17.89, "y": 0.75, "stath": 0.09, "statl": 0.09, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-10_absy-lt-0p9"] = {
+    reference : "PLB 805 (2020) 135434",
+    link : "https://arxiv.org/abs/1910.14404",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "p&#7451; < 10 GeV",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 18, "y": 1.119, "stath": 0.122, "statl": 0.122, "systh": 0.085, "systl": 0.085},
+        {"x": 70, "y": 0.819, "stath": 0.092, "statl": 0.092, "systh": 0.077, "systl": 0.077},
+        {"x": 159, "y": 0.885, "stath": 0.077, "statl": 0.077, "systh": 0.07, "systl": 0.07},
+        {"x": 263, "y": 0.751, "stath": 0.101, "statl": 0.101, "systh": 0.068, "systl": 0.068},
+        {"x": 359, "y": 1.168, "stath": 0.106, "statl": 0.106, "systh": 0.094, "systl": 0.094},
     ]
 };
 
@@ -6719,6 +6759,25 @@ dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-lt-0p35"] = {
     ]
 };
 
+dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_absy-lt-0p9"] = {
+    reference : "PLB 805 (2020) 135434",
+    link : "https://arxiv.org/abs/1910.14404",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-20%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 0.725, "y": 1.179, "stath": 0.242, "statl": 0.242, "systh": 0.144, "systl": 0.144},
+        {"x": 2.15, "y": 1.185, "stath": 0.148, "statl": 0.148, "systh": 0.098, "systl": 0.098},
+        {"x": 4, "y": 0.767, "stath": 0.1, "statl": 0.1, "systh": 0.062, "systl": 0.062},
+        {"x": 7.5, "y": 0.294, "stath": 0.058, "statl": 0.058, "systh": 0.021, "systl": 0.021},
+    ]
+};
+
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
@@ -6771,6 +6830,25 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
     ]
 };
 
+dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_absy-lt-0p9"] = {
+    reference : "PLB 805 (2020) 135434",
+    link : "https://arxiv.org/abs/1910.14404",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "20-40%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 0.725, "y": 0.967, "stath": 0.244, "statl": 0.244, "systh": 0.118, "systl": 0.118},
+        {"x": 2.15, "y": 1.003, "stath": 0.144, "statl": 0.144, "systh": 0.083, "systl": 0.083},
+        {"x": 4, "y": 0.637, "stath": 0.103, "statl": 0.103, "systh": 0.052, "systl": 0.052},
+        {"x": 7.5, "y": 0.5, "stath": 0.079, "statl": 0.079, "systh": 0.036, "systl": 0.036},
+    ]
+};
+
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
@@ -6792,6 +6870,25 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4"] = {
         {"x": 6.5, "y": 0.5, "stath": 0.03, "statl": 0.03, "systh": 0.05, "systl": 0.05},
         {"x": 7.5, "y": 0.48, "stath": 0.03, "statl": 0.03, "systh": 0.06, "systl": 0.06},
         {"x": 10, "y": 0.43, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_absy-lt-0p9"] = {
+    reference : "PLB 805 (2020) 135434",
+    link : "https://arxiv.org/abs/1910.14404",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "40-90%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 0.725, "y": 1.304, "stath": 0.25, "statl": 0.25, "systh": 0.16, "systl": 0.16},
+        {"x": 2.15, "y": 0.538, "stath": 0.133, "statl": 0.133, "systh": 0.044, "systl": 0.044},
+        {"x": 4, "y": 0.892, "stath": 0.118, "statl": 0.118, "systh": 0.073, "systl": 0.073},
+        {"x": 7.5, "y": 0.628, "stath": 0.105, "statl": 0.105, "systh": 0.045, "systl": 0.045},
     ]
 };
 
@@ -6861,6 +6958,22 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-20_pT-lt-12"] = {
         {"x": 3.375, "y": 0.61, "stath": 0.02, "statl": 0.02, "systh": 0.04, "systl": 0.04},
         {"x": 3.625, "y": 0.61, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
         {"x": 3.875, "y": 0.55, "stath": 0.02, "statl": 0.02, "systh": 0.06, "systl": 0.06},
+    ]
+};
+
+dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-10"] = {
+    reference : "PLB 805 (2020) 135434",
+    link : "https://arxiv.org/abs/1910.14404",
+    observable : "RAA",
+    xtitle : "ycm",
+    particle : "Inclusive J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-90%",
+    kineb : "p&#7451; < 10 GeV",
+    data : [
+        {"x": 0, "y": 0.97, "stath": 0.05, "statl": 0.05, "systh": 0.078, "systl": 0.078},
     ]
 };
 
