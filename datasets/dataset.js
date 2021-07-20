@@ -6066,6 +6066,375 @@ dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
     ]
 };
 
+dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-0_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p&#7451; > 0 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 325.5, "y": 0.3614, "stath": 0.0275, "statl": 0.0275, "systh": 0.0639, "systl": 0.0639},
+        {"x": 237.3, "y": 0.4757, "stath": 0.0298, "statl": 0.0298, "systh": 0.0757, "systl": 0.0757},
+        {"x": 169, "y": 0.5167, "stath": 0.0297, "statl": 0.0297, "systh": 0.0833, "systl": 0.0833},
+        {"x": 116.7, "y": 0.5339, "stath": 0.0312, "statl": 0.0312, "systh": 0.0866, "systl": 0.0866},
+        {"x": 76.9, "y": 0.5853, "stath": 0.0337, "statl": 0.0337, "systh": 0.0906, "systl": 0.0906},
+        {"x": 47.8, "y": 0.6788, "stath": 0.0375, "statl": 0.0375, "systh": 0.1102, "systl": 0.1102},
+        {"x": 27.4, "y": 0.6842, "stath": 0.0468, "statl": 0.0468, "systh": 0.1278, "systl": 0.1278},
+        {"x": 14.4, "y": 0.9712, "stath": 0.0694, "statl": 0.0694, "systh": 0.1812, "systl": 0.1812},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p&#7451; > 5 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 325.5, "y": 0.3265, "stath": 0.0411, "statl": 0.0411, "systh": 0.0457, "systl": 0.0457},
+        {"x": 237.3, "y": 0.4771, "stath": 0.0522, "statl": 0.0522, "systh": 0.0806, "systl": 0.0806},
+        {"x": 169, "y": 0.5607, "stath": 0.0617, "statl": 0.0617, "systh": 0.0983, "systl": 0.0983},
+        {"x": 116.7, "y": 0.6925, "stath": 0.0749, "statl": 0.0749, "systh": 0.114, "systl": 0.114},
+        {"x": 76.9, "y": 0.7343, "stath": 0.0945, "statl": 0.0945, "systh": 0.1081, "systl": 0.1081},
+        {"x": 47.8, "y": 0.7786, "stath": 0.1235, "statl": 0.1235, "systh": 0.1127, "systl": 0.1127},
+        {"x": 21, "y": 0.5517, "stath": 0.1195, "statl": 0.1195, "systh": 0.0848, "systl": 0.0848},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p&#7451; > 5 GeV",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 325.5, "y": 0.3558, "stath": 0.0778, "statl": 0.0778, "systh": 0.0315, "systl": 0.0315},
+        {"x": 237.3, "y": 0.4354, "stath": 0.0896, "statl": 0.0896, "systh": 0.0379, "systl": 0.0379},
+        {"x": 169, "y": 0.4685, "stath": 0.0911, "statl": 0.0911, "systh": 0.0525, "systl": 0.0525},
+        {"x": 116.7, "y": 0.6353, "stath": 0.107, "statl": 0.107, "systh": 0.0623, "systl": 0.0623},
+        {"x": 62.4, "y": 0.7221, "stath": 0.0936, "statl": 0.0936, "systh": 0.0761, "systl": 0.0761},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-1p2-2p2"] = {
+    reference : "PRL101 (2008) 122301",
+    link : "https://arxiv.org/abs/0801.0220",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "CuCu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p&#7451; < 5 GeV",
+    kineb : "1.2 < |y| < 2.2",
+    data : [
+        {"x": 4.7, "y": 0.8506, "stath": 0.0707, "statl": 0.0707, "systh": 0.1053, "systl": 0.1053},
+        {"x": 10.4, "y": 0.8496, "stath": 0.079, "statl": 0.079, "systh": 0.1002, "systl": 0.1002},
+        {"x": 16.7, "y": 0.8709, "stath": 0.0608, "statl": 0.0608, "systh": 0.1076, "systl": 0.1076},
+        {"x": 25.4, "y": 0.6616, "stath": 0.0463, "statl": 0.0463, "systh": 0.0841, "systl": 0.0841},
+        {"x": 37.3, "y": 0.719, "stath": 0.0428, "statl": 0.0428, "systh": 0.0856, "systl": 0.0856},
+        {"x": 53, "y": 0.593, "stath": 0.037, "statl": 0.037, "systh": 0.0701, "systl": 0.0701},
+        {"x": 73.6, "y": 0.5224, "stath": 0.0333, "statl": 0.0333, "systh": 0.0621, "systl": 0.0621},
+        {"x": 98.2, "y": 0.5323, "stath": 0.0305, "statl": 0.0305, "systh": 0.0637, "systl": 0.0637},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
+    reference : "PRL101 (2008) 122301",
+    link : "https://arxiv.org/abs/0801.0220",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "CuCu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p&#7451; < 5 GeV",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 6.4, "y": 0.6679, "stath": 0.0849, "statl": 0.0849, "systh": 0.1048, "systl": 0.1048},
+        {"x": 16.7, "y": 0.8911, "stath": 0.1007, "statl": 0.1007, "systh": 0.1238, "systl": 0.1238},
+        {"x": 25.4, "y": 0.8561, "stath": 0.0812, "statl": 0.0812, "systh": 0.1202, "systl": 0.1202},
+        {"x": 37.3, "y": 0.8563, "stath": 0.0638, "statl": 0.0638, "systh": 0.1143, "systl": 0.1143},
+        {"x": 53, "y": 0.7606, "stath": 0.0498, "statl": 0.0498, "systh": 0.101, "systl": 0.101},
+        {"x": 73.6, "y": 0.5929, "stath": 0.0401, "statl": 0.0401, "systh": 0.0792, "systl": 0.0792},
+        {"x": 98.2, "y": 0.496, "stath": 0.0355, "statl": 0.0355, "systh": 0.0667, "systl": 0.0667},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-20%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0.575, "y": 0.36557, "stath": 0.056332, "statl": 0.056332, "systh": 0.07667, "systl": 0.07667},
+        {"x": 1.5, "y": 0.44281, "stath": 0.043872, "statl": 0.043872, "systh": 0.08779, "systl": 0.08779},
+        {"x": 2.5, "y": 0.51188, "stath": 0.042139, "statl": 0.042139, "systh": 0.094273, "systl": 0.094273},
+        {"x": 3.5, "y": 0.3603, "stath": 0.03957, "statl": 0.03957, "systh": 0.075738, "systl": 0.075738},
+        {"x": 4.5, "y": 0.55877, "stath": 0.057607, "statl": 0.057607, "systh": 0.10016, "systl": 0.10016},
+        {"x": 5.5, "y": 0.3843, "stath": 0.054827, "statl": 0.054827, "systh": 0.066836, "systl": 0.066836},
+        {"x": 7, "y": 0.43005, "stath": 0.055089, "statl": 0.055089, "systh": 0.08868, "systl": 0.08868},
+        {"x": 9, "y": 0.52399, "stath": 0.12933, "statl": 0.12933, "systh": 0.14911, "systl": 0.14911},
+        {"x": 12.5, "y": 0.5026, "stath": 0.17324, "statl": 0.17324, "systh": 0.18537, "systl": 0.18537},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-1"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-20%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 3.5, "y": 0.63102, "stath": 0.14114, "statl": 0.14114, "systh": 0.079687, "systl": 0.079687},
+        {"x": 4.5, "y": 0.56113, "stath": 0.085382, "statl": 0.085382, "systh": 0.083806, "systl": 0.083806},
+        {"x": 5.5, "y": 0.37056, "stath": 0.079101, "statl": 0.079101, "systh": 0.055235, "systl": 0.055235},
+        {"x": 7, "y": 0.41667, "stath": 0.095637, "statl": 0.095637, "systh": 0.058972, "systl": 0.058972},
+        {"x": 9, "y": 0.48119, "stath": 0.2654, "statl": 0.2654, "systh": 0.092376, "systl": 0.092376},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-1"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-60%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 3.5, "y": 0.76808, "stath": 0.13619, "statl": 0.13619, "systh": 0.099987, "systl": 0.099987},
+        {"x": 4.5, "y": 0.54541, "stath": 0.068084, "statl": 0.068084, "systh": 0.075952, "systl": 0.075952},
+        {"x": 5.5, "y": 0.46706, "stath": 0.062883, "statl": 0.062883, "systh": 0.064895, "systl": 0.064895},
+        {"x": 7, "y": 0.49521, "stath": 0.073078, "statl": 0.073078, "systh": 0.06315, "systl": 0.06315},
+        {"x": 9, "y": 0.71979, "stath": 0.21783, "statl": 0.21783, "systh": 0.15209, "systl": 0.15209},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0.575, "y": 0.42493, "stath": 0.040128, "statl": 0.040128, "systh": 0.087791, "systl": 0.087791},
+        {"x": 1.5, "y": 0.43438, "stath": 0.031649, "statl": 0.031649, "systh": 0.085467, "systl": 0.085467},
+        {"x": 2.5, "y": 0.53094, "stath": 0.033087, "statl": 0.033087, "systh": 0.095222, "systl": 0.095222},
+        {"x": 3.5, "y": 0.45174, "stath": 0.033415, "statl": 0.033415, "systh": 0.082075, "systl": 0.082075},
+        {"x": 4.5, "y": 0.5847, "stath": 0.04993, "statl": 0.04993, "systh": 0.10282, "systl": 0.10282},
+        {"x": 5.5, "y": 0.49069, "stath": 0.047059, "statl": 0.047059, "systh": 0.084655, "systl": 0.084655},
+        {"x": 7, "y": 0.47445, "stath": 0.04507, "statl": 0.04507, "systh": 0.091159, "systl": 0.091159},
+        {"x": 9, "y": 0.59095, "stath": 0.11205, "statl": 0.11205, "systh": 0.12967, "systl": 0.12967},
+        {"x": 12.5, "y": 0.45081, "stath": 0.13757, "statl": 0.13757, "systh": 0.14755, "systl": 0.14755},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "20-40%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0.575, "y": 0.51734, "stath": 0.062768, "statl": 0.062768, "systh": 0.11463, "systl": 0.11463},
+        {"x": 1.5, "y": 0.4647, "stath": 0.048015, "statl": 0.048015, "systh": 0.09578, "systl": 0.09578},
+        {"x": 2.5, "y": 0.63831, "stath": 0.049721, "statl": 0.049721, "systh": 0.11775, "systl": 0.11775},
+        {"x": 3.5, "y": 0.56319, "stath": 0.05239, "statl": 0.05239, "systh": 0.099591, "systl": 0.099591},
+        {"x": 4.5, "y": 0.67149, "stath": 0.073217, "statl": 0.073217, "systh": 0.1196, "systl": 0.1196},
+        {"x": 5.5, "y": 0.66372, "stath": 0.081833, "statl": 0.081833, "systh": 0.12862, "systl": 0.12862},
+        {"x": 7, "y": 0.65472, "stath": 0.083801, "statl": 0.083801, "systh": 0.118, "systl": 0.118},
+        {"x": 9, "y": 0.64125, "stath": 0.19853, "statl": 0.19853, "systh": 0.16595, "systl": 0.16595},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "20-40%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 3.5, "y": 0.39611, "stath": 0.14834, "statl": 0.14834, "systh": 0.05519, "systl": 0.05519},
+        {"x": 4.5, "y": 0.57134, "stath": 0.1069, "statl": 0.1069, "systh": 0.085529, "systl": 0.085529},
+        {"x": 5.5, "y": 0.51106, "stath": 0.10251, "statl": 0.10251, "systh": 0.070735, "systl": 0.070735},
+        {"x": 7, "y": 0.62328, "stath": 0.12093, "statl": 0.12093, "systh": 0.086368, "systl": 0.086368},
+        {"x": 9, "y": 0.82139, "stath": 0.32992, "statl": 0.32992, "systh": 0.18588, "systl": 0.18588},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-40-60_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "40-60%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0.575, "y": 0.68363, "stath": 0.071381, "statl": 0.071381, "systh": 0.13831, "systl": 0.13831},
+        {"x": 1.5, "y": 0.50302, "stath": 0.053887, "statl": 0.053887, "systh": 0.10152, "systl": 0.10152},
+        {"x": 2.5, "y": 0.60831, "stath": 0.056232, "statl": 0.056232, "systh": 0.11084, "systl": 0.11084},
+        {"x": 3.5, "y": 0.83245, "stath": 0.073313, "statl": 0.073313, "systh": 0.14725, "systl": 0.14725},
+        {"x": 4.5, "y": 0.80862, "stath": 0.097356, "statl": 0.097356, "systh": 0.14565, "systl": 0.14565},
+        {"x": 5.5, "y": 0.87729, "stath": 0.12633, "statl": 0.12633, "systh": 0.16269, "systl": 0.16269},
+        {"x": 7, "y": 0.611, "stath": 0.11807, "statl": 0.11807, "systh": 0.11168, "systl": 0.11168},
+        {"x": 9, "y": 1.1784, "stath": 0.37034, "statl": 0.37034, "systh": 0.25295, "systl": 0.25295},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-40-60_absy-lt-1"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "40-60%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 3.5, "y": 0.6187, "stath": 0.19937, "statl": 0.19937, "systh": 0.10099, "systl": 0.10099},
+        {"x": 4.5, "y": 0.55574, "stath": 0.12907, "statl": 0.12907, "systh": 0.073083, "systl": 0.073083},
+        {"x": 5.5, "y": 0.81917, "stath": 0.14805, "statl": 0.14805, "systh": 0.11261, "systl": 0.11261},
+        {"x": 7, "y": 0.63861, "stath": 0.15919, "statl": 0.15919, "systh": 0.085748, "systl": 0.085748},
+        {"x": 9, "y": 0.90517, "stath": 0.40769, "statl": 0.40769, "systh": 0.31174, "systl": 0.31174},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-60-80_absy-lt-0p5"] = {
+    reference : "PLB 797 (2019) 134917",
+    link : "https://arxiv.org/abs/1905.13669",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0.575, "y": 0.80054, "stath": 0.093505, "statl": 0.093505, "systh": 0.1732, "systl": 0.1732},
+        {"x": 1.5, "y": 0.6347, "stath": 0.075436, "statl": 0.075436, "systh": 0.12862, "systl": 0.12862},
+        {"x": 2.5, "y": 0.66122, "stath": 0.080164, "statl": 0.080164, "systh": 0.13558, "systl": 0.13558},
+        {"x": 3.5, "y": 0.87328, "stath": 0.10896, "statl": 0.10896, "systh": 0.15598, "systl": 0.15598},
+        {"x": 4.5, "y": 0.67149, "stath": 0.13133, "statl": 0.13133, "systh": 0.13383, "systl": 0.13383},
+        {"x": 5.5, "y": 0.70246, "stath": 0.18799, "statl": 0.18799, "systh": 0.13223, "systl": 0.13223},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-1p2-2p2"] = {
+    reference : "PRL101 (2008) 122301",
+    link : "https://arxiv.org/abs/0801.0220",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "CuCu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-20%",
+    kineb : "1.2 < |y| < 2.2",
+    data : [
+        {"x": 0.5, "y": 0.4761, "stath": 0.0386, "statl": 0.0386, "systh": 0.0454, "systl": 0.0454},
+        {"x": 1.5, "y": 0.4742, "stath": 0.0341, "statl": 0.0341, "systh": 0.0453, "systl": 0.0453},
+        {"x": 2.5, "y": 0.6206, "stath": 0.0638, "statl": 0.0638, "systh": 0.0594, "systl": 0.0594},
+        {"x": 3.5, "y": 0.5364, "stath": 0.0769, "statl": 0.0769, "systh": 0.0519, "systl": 0.0519},
+        {"x": 4.5, "y": 0.5316, "stath": 0.1666, "statl": 0.1666, "systh": 0.0542, "systl": 0.0542},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-lt-0p35"] = {
+    reference : "PRL101 (2008) 122301",
+    link : "https://arxiv.org/abs/0801.0220",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "CuCu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-20%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 0.5, "y": 0.5501, "stath": 0.057, "statl": 0.057, "systh": 0.082, "systl": 0.082},
+        {"x": 1.5, "y": 0.4876, "stath": 0.048, "statl": 0.048, "systh": 0.0686, "systl": 0.0686},
+        {"x": 2.5, "y": 0.4843, "stath": 0.0653, "statl": 0.0653, "systh": 0.067, "systl": 0.067},
+        {"x": 3.5, "y": 0.5835, "stath": 0.1351, "statl": 0.1351, "systh": 0.0797, "systl": 0.0797},
+        {"x": 4.5, "y": 0.8111, "stath": 0.3611, "statl": 0.3589, "systh": 0.1094, "systl": 0.1094},
+    ]
+};
+
+dataset["incJpsi_RAA_ycm_CuCu_200GeV_PHENIX_cent-0-20_pT-lt-5"] = {
+    reference : "PRL101 (2008) 122301",
+    link : "https://arxiv.org/abs/0801.0220",
+    observable : "RAA",
+    xtitle : "ycm",
+    particle : "Inclusive J/&psi;",
+    collision : "CuCu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-20%",
+    kineb : "p&#7451; < 5 GeV",
+    data : [
+        {"x": -2.075, "y": 0.5094, "stath": 0.1211, "statl": 0.1211, "systh": 0.0671, "systl": 0.0671},
+        {"x": -1.825, "y": 0.4794, "stath": 0.0509, "statl": 0.0509, "systh": 0.063, "systl": 0.063},
+        {"x": -1.575, "y": 0.4926, "stath": 0.055, "statl": 0.055, "systh": 0.0648, "systl": 0.0648},
+        {"x": -1.325, "y": 0.6017, "stath": 0.0837, "statl": 0.0837, "systh": 0.0792, "systl": 0.0792},
+        {"x": 0, "y": 0.5342, "stath": 0.0267, "statl": 0.0267, "systh": 0.0716, "systl": 0.0716},
+        {"x": 1.325, "y": 0.4807, "stath": 0.0701, "statl": 0.0701, "systh": 0.0633, "systl": 0.0633},
+        {"x": 1.575, "y": 0.5696, "stath": 0.0423, "statl": 0.0423, "systh": 0.075, "systl": 0.075},
+        {"x": 1.825, "y": 0.5458, "stath": 0.0746, "statl": 0.0746, "systh": 0.0718, "systl": 0.0718},
+        {"x": 2.075, "y": 0.4563, "stath": 0.1037, "statl": 0.1037, "systh": 0.0601, "systl": 0.0601},
+    ]
+};
+
 dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "JHEP 07 (2018) 160",
     link : "https://arxiv.org/abs/1805.04381",
