@@ -502,9 +502,9 @@ function clearall()
     legs = [];
 }
 
-function parselegend(tlegend, thisitem)
+function parsescript(pa)
 {
-    var pa = thisitem.particle;
+    var results = [];
     while(pa.length > 0)
     {
         var i = pa.indexOf("<su"), j = pa.indexOf("</su");
@@ -519,29 +519,55 @@ function parselegend(tlegend, thisitem)
         if(substr.indexOf("<sup>") > -1) { icl = icl + " tsup"; substr = substr.replace("<sup>", ""); }
         if(substr.indexOf("</su") > -1) substr = substr.replace(substr.substring(0, 6), "");
 
-        tlegend.append('tspan')
-            .attr("class", icl)
-            .style("font-weight", "bold")
-            .text(decodehtml(substr));
+        results.push({
+            content : substr,
+            cl : icl
+        });
     }
+    return results;
+}
+
+function parselegend(tlegend, thisitem)
+{
+    // particle
+    var rpa = parsescript(thisitem.particle);
+    for(var p in rpa)
+    {
+        tlegend.append('tspan')
+            .attr("class", rpa[p].cl)
+            .style("font-weight", "bold")
+            .text(decodehtml(rpa[p].content));
+    }
+    // collab
     tlegend.append('tspan')
-        .style("class", "legendlabel")
         .text(' ' + thisitem.collab);
+    // collision
     tlegend.append('tspan')
-        .style("class", "legendlabel")
         .style("font-style", "italic")
         .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+    // kinea
     if(thisitem.kinea != "")
     {
-        tlegend.append('tspan')
-            .style("class", "legendlabel")
-            .text(', ' + decodehtml(thisitem.kinea));
+        var rpa = parsescript(thisitem.kinea);
+        rpa[0].content = ", " + rpa[0].content;
+        for(var p in rpa)
+        {
+            tlegend.append('tspan')
+                .attr("class", rpa[p].cl)
+                .text(decodehtml(rpa[p].content));
+        }
     }
+    // kineb
     if(thisitem.kineb != "")
     {
-        tlegend.append('tspan')
-            .style("class", "legendlabel")
-            .text(', ' + decodehtml(thisitem.kineb));
+        var rpa = parsescript(thisitem.kineb);
+        rpa[0].content = ", " + rpa[0].content;
+        for(var p in rpa)
+        {
+            tlegend.append('tspan')
+                .attr("class", rpa[p].cl)
+                .text(decodehtml(rpa[p].content));
+        }
     }
 }
 

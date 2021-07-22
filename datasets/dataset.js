@@ -262,7 +262,7 @@ dataset["aprD0_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
     energy : "5.02 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 10 GeV",
+    kineb : "p<sub>T</sub> < 10 GeV",
     data : [
         {"x": -4.25, "y": 1.31, "stath": 0.02, "statl": 0.02, "systh": 0.06, "systl": 0.06},
         {"x": -3.75, "y": 1.05, "stath": 0.01, "statl": 0.01, "systh": 0.05, "systl": 0.05},
@@ -285,7 +285,7 @@ dataset["aprD0_v2_absy_PbPb_5TeV_CMS_cent-20-70_pT-2-8"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "20-70%",
-    kineb : "2 < p&#7451; < 8 GeV",
+    kineb : "2 < p<sub>T</sub> < 8 GeV",
     data : [
         {"x": 0.3, "y": 0.165413, "stath": 0.00145703, "statl": 0.00145703, "systh": 0.00958134, "systl": 0.00958134},
         {"x": 0.9, "y": 0.154595, "stath": 0.00197451, "statl": 0.00197451, "systh": 0.0122446, "systl": 0.0122446},
@@ -302,7 +302,7 @@ dataset["aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "2 < p&#7451; < 8 GeV",
+    kinea : "2 < p<sub>T</sub> < 8 GeV",
     kineb : "1 < |y| < 2",
     data : [
         {"x": 5, "y": 0.0602455, "stath": 0.00576615, "statl": 0.00576615, "systh": 0.00824786, "systl": 0.00824786},
@@ -322,7 +322,7 @@ dataset["aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "2 < p&#7451; < 8 GeV",
+    kinea : "2 < p<sub>T</sub> < 8 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 5, "y": 0.067072, "stath": 0.00195608, "statl": 0.00195608, "systh": 0.00645557, "systl": 0.00645557},
@@ -561,7 +561,7 @@ dataset["aprD0_v3_absy_PbPb_5TeV_CMS_cent-20-70_pT-2-8"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "20-70%",
-    kineb : "2 < p&#7451; < 8 GeV",
+    kineb : "2 < p<sub>T</sub> < 8 GeV",
     data : [
         {"x": 0.3, "y": 0.0648311, "stath": 0.00258532, "statl": 0.00258532, "systh": 0.00415307, "systl": 0.00415307},
         {"x": 0.9, "y": 0.053136, "stath": 0.00351503, "statl": 0.00351503, "systh": 0.00582797, "systl": 0.00582797},
@@ -578,7 +578,7 @@ dataset["aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "2 < p&#7451; < 8 GeV",
+    kinea : "2 < p<sub>T</sub> < 8 GeV",
     kineb : "1 < |y| < 2",
     data : [
         {"x": 5, "y": 0.0427735, "stath": 0.00754661, "statl": 0.00754661, "systh": 0.0115038, "systl": 0.0115038},
@@ -598,7 +598,7 @@ dataset["aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "2 < p&#7451; < 8 GeV",
+    kinea : "2 < p<sub>T</sub> < 8 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 5, "y": 0.0481088, "stath": 0.00255053, "statl": 0.00255053, "systh": 0.00642216, "systl": 0.00642216},
@@ -1027,7 +1027,7 @@ dataset["aprDsubsToD0_DsubsToD0_cent_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1"] = {
     collision : "AuAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "1.5 < p&#7451; < 5 GeV",
+    kinea : "1.5 < p<sub>T</sub> < 5 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 70, "y": 0.441104, "stath": 0.0595498, "statl": 0.0595498, "systh": 0.0595498, "systl": 0.0588235},
@@ -1047,7 +1047,7 @@ dataset["aprDsubsToD0_DsubsToD0_Npart_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1"] = {
     collision : "AuAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "1.5 < p&#7451; < 5 GeV",
+    kinea : "1.5 < p<sub>T</sub> < 5 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 20.9288, "y": 0.441104, "stath": 0.0595498, "statl": 0.0595498, "systh": 0.0595498, "systl": 0.0588235},
@@ -1658,7 +1658,7 @@ dataset["aprJpsi_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-6p5-30"] = {
     energy : "2.76 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "6.5 < p&#7451; < 30 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 30 GeV",
     data : [
         {"x": 0.2, "y": 0.343, "stath": 0.014, "statl": 0.014, "systh": 0.034, "systl": 0.034},
         {"x": 0.6, "y": 0.373, "stath": 0.015, "statl": 0.015, "systh": 0.042, "systl": 0.042},
@@ -1679,7 +1679,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-10_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "0-10%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.279139, "stath": 0.0541652, "statl": 0.0541652, "systh": 0.0184059, "systl": 0.0191222},
         {"x": 1.125, "y": 0.211468, "stath": 0.011039, "statl": 0.011039, "systh": 0.0127446, "systl": 0.0134546},
@@ -1697,7 +1697,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-80_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "0-80%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.388595, "stath": 0.0118863, "statl": 0.0118863, "systh": 0.0256232, "systl": 0.0266204},
         {"x": 1.125, "y": 0.304484, "stath": 0.00877961, "statl": 0.00877961, "systh": 0.0183504, "systl": 0.0193728},
@@ -1715,7 +1715,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-20-40_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "20-40%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.487745, "stath": 0.0246976, "statl": 0.0246976, "systh": 0.0321609, "systl": 0.0334125},
         {"x": 1.125, "y": 0.403813, "stath": 0.0181233, "statl": 0.0181233, "systh": 0.0243367, "systl": 0.0256926},
@@ -1733,7 +1733,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-40-80_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "40-80%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.78948, "stath": 0.047542, "statl": 0.047542, "systh": 0.0520567, "systl": 0.0540826},
         {"x": 1.125, "y": 0.653733, "stath": 0.0363773, "statl": 0.0363773, "systh": 0.0393987, "systl": 0.0415938},
@@ -1751,7 +1751,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-6p5-50"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "6.5 < p&#7451; < 50 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 50 GeV",
     data : [
         {"x": 0.2, "y": 0.356, "stath": 0.008, "statl": 0.008, "systh": 0.024, "systl": 0.024},
         {"x": 0.6, "y": 0.351, "stath": 0.008, "statl": 0.008, "systh": 0.024, "systl": 0.024},
@@ -1771,7 +1771,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 75, "y": 0.581, "stath": 0.038, "statl": 0.038, "systh": 0.112, "systl": 0.112},
@@ -1792,7 +1792,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.2 < |y| < 1.6",
     data : [
         {"x": 75, "y": 0.758, "stath": 0.066, "statl": 0.066, "systh": 0.124, "systl": 0.124},
@@ -1813,7 +1813,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 75, "y": 0.64, "stath": 0.052, "statl": 0.052, "systh": 0.11, "systl": 0.11},
@@ -1834,7 +1834,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.2",
     data : [
         {"x": 75, "y": 0.756, "stath": 0.045, "statl": 0.045, "systh": 0.127, "systl": 0.127},
@@ -1855,7 +1855,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 80, "y": 0.712, "stath": 0.045, "statl": 0.045, "systh": 0.128, "systl": 0.128},
@@ -1882,7 +1882,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 10, "y": 0.372, "stath": 0.01, "statl": 0.01, "systh": 0.058, "systl": 0.058},
@@ -1900,7 +1900,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 5, "y": 0.328, "stath": 0.034, "statl": 0.034, "systh": 0.06, "systl": 0.06},
@@ -1921,7 +1921,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 5, "y": 0.251, "stath": 0.005, "statl": 0.005, "systh": 0.02, "systl": 0.02},
@@ -1942,7 +1942,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 5, "y": 0.212, "stath": 0.012, "statl": 0.012, "systh": 0.016, "systl": 0.016},
@@ -1963,7 +1963,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 0.6",
     data : [
         {"x": 5, "y": 0.241, "stath": 0.008, "statl": 0.008, "systh": 0.014, "systl": 0.015},
@@ -1984,7 +1984,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 2.5, "y": 0.219, "stath": 0.005, "statl": 0.005, "systh": 0.014, "systl": 0.015},
@@ -2012,7 +2012,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 22.1, "y": 0.581, "stath": 0.038, "statl": 0.038, "systh": 0.112, "systl": 0.112},
@@ -2033,7 +2033,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.2 < |y| < 1.6",
     data : [
         {"x": 22.1, "y": 0.758, "stath": 0.066, "statl": 0.066, "systh": 0.124, "systl": 0.124},
@@ -2054,7 +2054,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 22.1, "y": 0.64, "stath": 0.052, "statl": 0.052, "systh": 0.11, "systl": 0.11},
@@ -2075,7 +2075,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.2",
     data : [
         {"x": 22.1, "y": 0.756, "stath": 0.045, "statl": 0.045, "systh": 0.127, "systl": 0.127},
@@ -2096,7 +2096,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 14.2, "y": 0.712, "stath": 0.045, "statl": 0.045, "systh": 0.128, "systl": 0.128},
@@ -2123,7 +2123,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 40 GeV",
+    kinea : "9 < p<sub>T</sub> < 40 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 22.989, "y": 0.934285, "stath": 0.0660994, "statl": 0.0660994, "systh": 0.113643, "systl": 0.115093},
@@ -2146,7 +2146,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 311.5, "y": 0.372, "stath": 0.01, "statl": 0.01, "systh": 0.058, "systl": 0.058},
@@ -2164,7 +2164,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 358.8, "y": 0.328, "stath": 0.034, "statl": 0.034, "systh": 0.06, "systl": 0.06},
@@ -2185,7 +2185,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 358.8, "y": 0.251, "stath": 0.005, "statl": 0.005, "systh": 0.02, "systl": 0.02},
@@ -2206,7 +2206,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 358.8, "y": 0.212, "stath": 0.012, "statl": 0.012, "systh": 0.016, "systl": 0.016},
@@ -2227,7 +2227,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 0.6",
     data : [
         {"x": 358.8, "y": 0.241, "stath": 0.008, "statl": 0.008, "systh": 0.014, "systl": 0.015},
@@ -2248,7 +2248,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 384.3, "y": 0.219, "stath": 0.005, "statl": 0.005, "systh": 0.014, "systl": 0.015},
@@ -2814,7 +2814,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "",
-    kineb : "8 < p&#7451; < 40 GeV",
+    kineb : "8 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": -1.75, "y": 1.005, "stath": 0.039, "statl": 0.039, "systh": 0.0975295, "systl": 0.0975295},
         {"x": -1.125, "y": 1.136, "stath": 0.038, "statl": 0.038, "systh": 0.107787, "systl": 0.107787},
@@ -2834,7 +2834,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "10 < p&#7451; < 30 GeV",
+    kineb : "10 < p<sub>T</sub> < 30 GeV",
     data : [
         {"x": -2.165, "y": 1.17, "stath": 0.05, "statl": 0.05, "systh": 0.07, "systl": 0.07},
         {"x": -1.715, "y": 1.11, "stath": 0.04, "statl": 0.04, "systh": 0.06, "systl": 0.06},
@@ -2856,7 +2856,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "6.5 < p&#7451; < 10 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 10 GeV",
     data : [
         {"x": -2.165, "y": 1.144, "stath": 0.032, "statl": 0.032, "systh": 0.07, "systl": 0.07},
         {"x": -1.715, "y": 1.117, "stath": 0.027, "statl": 0.027, "systh": 0.06, "systl": 0.06},
@@ -2878,7 +2878,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     energy : "5.02 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 14 GeV",
+    kineb : "p<sub>T</sub> < 14 GeV",
     data : [
         {"x": -3.25, "y": 0.93, "stath": 0.03, "statl": 0.03, "systh": 0.0707107, "systl": 0.0707107},
         {"x": 3.25, "y": 0.62, "stath": 0.01, "statl": 0.01, "systh": 0.0360555, "systl": 0.0360555},
@@ -2895,7 +2895,7 @@ dataset["aprJpsi_RpA_ycm_pPb_8TeV_LHCb__pT-lt-14"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 14 GeV",
+    kineb : "p<sub>T</sub> < 14 GeV",
     data : [
         {"x": -4.25, "y": 0.86, "stath": 0.1, "statl": 0.1, "systh": 0, "systl": 0},
         {"x": -3.75, "y": 0.84, "stath": 0.09, "statl": 0.09, "systh": 0, "systl": 0},
@@ -2919,7 +2919,7 @@ dataset["aprJpsi_v2_absy_PbPb_2p76TeV_CMS_cent-10-60_pT-6p5-30"] = {
     energy : "2.76 TeV",
     collab : "CMS",
     kinea : "10-60%",
-    kineb : "6.5 < p&#7451; < 30 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 30 GeV",
     data : [
         {"x": 0.6, "y": 0.063, "stath": 0.019, "statl": 0.019, "systh": 0.015, "systl": 0.015},
         {"x": 1.4, "y": 0.065, "stath": 0.029, "statl": 0.029, "systh": 0.009, "systl": 0.009},
@@ -2936,7 +2936,7 @@ dataset["aprJpsi_v2_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 45, "y": 0.064, "stath": 0.023, "statl": 0.023, "systh": 0.007, "systl": 0.007},
@@ -2954,7 +2954,7 @@ dataset["aprJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 30 GeV",
+    kinea : "9 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 50, "y": 0.04371, "stath": 0.02867, "statl": 0.02867, "systh": 0.00979, "systl": 0.00979},
@@ -2972,7 +2972,7 @@ dataset["aprJpsi_v2_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 90, "y": 0.064, "stath": 0.023, "statl": 0.023, "systh": 0.007, "systl": 0.007},
@@ -2990,7 +2990,7 @@ dataset["aprJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 30 GeV",
+    kinea : "9 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 70.42, "y": 0.04371, "stath": 0.02867, "statl": 0.02867, "systh": 0.00979, "systl": 0.00979},
@@ -3313,7 +3313,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pPb_5TeV_ALICE__pT-2-12"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "2 < p&#7451; < 12 GeV",
+    kineb : "2 < p<sub>T</sub> < 12 GeV",
     data : [
         {"x": -0.465116, "y": 0.563506, "stath": 0.0304115, "statl": 0.0304115, "systh": 0.0536673, "systl": 0.0518783},
     ]
@@ -3329,7 +3329,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pPb_5TeV_LHCb__pT-2-10"] = {
     energy : "5.02 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "2 < p&#7451; < 10 GeV",
+    kineb : "2 < p<sub>T</sub> < 10 GeV",
     data : [
         {"x": -4.24207, "y": 0.4463, "stath": 0.135104, "statl": 0.135104, "systh": 0.0941176, "systl": 0.0941177},
         {"x": -3.7464, "y": 0.326376, "stath": 0.0834914, "statl": 0.0834914, "systh": 0.0683112, "systl": 0.0652752},
@@ -3353,7 +3353,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pp_7TeV_ALICE__pT-2-8"] = {
     energy : "7 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "2 < p&#7451; < 8 GeV",
+    kineb : "2 < p<sub>T</sub> < 8 GeV",
     data : [
         {"x": 0, "y": 0.543, "stath": 0.061, "statl": 0.061, "systh": 0.16, "systl": 0.16},
     ]
@@ -3368,7 +3368,7 @@ dataset["aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "10 < p&#7451; < 20 GeV",
+    kinea : "10 < p<sub>T</sub> < 20 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 15, "y": 0.188, "stath": 0.05, "statl": 0.044, "systh": 0.049, "systl": 0.049},
@@ -3495,7 +3495,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"]
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 10, "y": 2.31, "stath": 0.53, "statl": 0.53, "systh": 0.37, "systl": 0.37},
@@ -3513,7 +3513,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6"
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 10, "y": 0.43, "stath": 0.2, "statl": 0.2, "systh": 0.07, "systl": 0.07},
@@ -3530,7 +3530,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = 
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 10, "y": 0.52, "stath": 0.39, "statl": 0.39, "systh": 0.150436, "systl": 0.150436},
@@ -3546,7 +3546,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] =
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 15, "y": 0.35, "stath": 0.16, "statl": 0.16, "systh": 0.0702829, "systl": 0.0702829},
@@ -3566,7 +3566,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
     collision : "pPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "8 < p&#7451; < 40 GeV",
+    kinea : "8 < p<sub>T</sub> < 40 GeV",
     kineb : "-2 < ycm < 1.5",
     data : [
         {"x": 65, "y": 0.959, "stath": 0.131, "statl": 0.131, "systh": 0.136191, "systl": 0.136191},
@@ -3585,7 +3585,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 308.4, "y": 2.31, "stath": 0.53, "statl": 0.53, "systh": 0.37, "systl": 0.37},
@@ -3603,7 +3603,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 308.4, "y": 0.43, "stath": 0.2, "statl": 0.2, "systh": 0.07, "systl": 0.07},
@@ -3620,7 +3620,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = 
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 40 GeV",
+    kinea : "9 < p<sub>T</sub> < 40 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 22.989, "y": 0.800565, "stath": 0.466763, "statl": 0.466763, "systh": 0.0643892, "systl": 0.0643892},
@@ -3640,7 +3640,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] =
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 312, "y": 0.52, "stath": 0.39, "statl": 0.39, "systh": 0.150436, "systl": 0.150436},
@@ -3656,7 +3656,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] 
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 264, "y": 0.35, "stath": 0.16, "statl": 0.16, "systh": 0.0702829, "systl": 0.0702829},
@@ -3714,7 +3714,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "",
-    kineb : "8 < p&#7451; < 40 GeV",
+    kineb : "8 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": -1.75, "y": 0.911, "stath": 0.197, "statl": 0.197, "systh": 0.138, "systl": 0.138},
         {"x": -1.125, "y": 0.893, "stath": 0.137, "statl": 0.137, "systh": 0.119, "systl": 0.119},
@@ -3733,7 +3733,7 @@ dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 10, "y": 0.193, "stath": 0.145, "statl": 0.145, "systh": 0.063, "systl": 0.063},
@@ -3749,7 +3749,7 @@ dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 15, "y": 0.116, "stath": 0.053, "statl": 0.053, "systh": 0.025, "systl": 0.025},
@@ -3769,7 +3769,7 @@ dataset["aprpsi2S_RAA_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 30 GeV",
+    kinea : "3 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 311.5, "y": 0.193, "stath": 0.145, "statl": 0.145, "systh": 0.063, "systl": 0.063},
@@ -3785,7 +3785,7 @@ dataset["aprpsi2S_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.6",
     data : [
         {"x": 264.2, "y": 0.116, "stath": 0.053, "statl": 0.053, "systh": 0.025, "systl": 0.025},
@@ -3965,7 +3965,7 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "10 < p&#7451; < 30 GeV",
+    kineb : "10 < p<sub>T</sub> < 30 GeV",
     data : [
         {"x": -2.165, "y": 0.81, "stath": 0.21, "statl": 0.21, "systh": 0.09, "systl": 0.09},
         {"x": -1.715, "y": 0.98, "stath": 0.19, "statl": 0.19, "systh": 0.08, "systl": 0.08},
@@ -3987,7 +3987,7 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-4-6p5"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "4 < p&#7451; < 6.5 GeV",
+    kineb : "4 < p<sub>T</sub> < 6.5 GeV",
     data : [
         {"x": -2.165, "y": 0.84, "stath": 0.17, "statl": 0.17, "systh": 0.22, "systl": 0.22},
         {"x": -1.715, "y": 0.6, "stath": 0.2, "statl": 0.2, "systh": 0.09, "systl": 0.09},
@@ -4005,7 +4005,7 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "6.5 < p&#7451; < 10 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 10 GeV",
     data : [
         {"x": -2.165, "y": 0.58, "stath": 0.12, "statl": 0.12, "systh": 0.09, "systl": 0.09},
         {"x": -1.715, "y": 0.96, "stath": 0.14, "statl": 0.14, "systh": 0.11, "systl": 0.11},
@@ -4123,7 +4123,7 @@ dataset["Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "10 < p&#7451; < 60 GeV",
+    kineb : "10 < p<sub>T</sub> < 60 GeV",
     data : [
         {"x": -2.395, "y": 1.47, "stath": 0.18, "statl": 0.18, "systh": 0.474131, "systl": 0.430465},
         {"x": -1.465, "y": 1.31, "stath": 0.13, "statl": 0.13, "systh": 0.420595, "systl": 0.385876},
@@ -4143,7 +4143,7 @@ dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "2 < p&#7451; < 20 GeV",
+    kineb : "2 < p<sub>T</sub> < 20 GeV",
     data : [
         {"x": 3, "y": 0.78, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
         {"x": -3, "y": 1, "stath": 0.03, "statl": 0.03, "systh": 0.1, "systl": 0.1},
@@ -4159,7 +4159,7 @@ dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6 < p&#7451; < 35 GeV",
+    kinea : "6 < p<sub>T</sub> < 35 GeV",
     kineb : "(1.3 <) |y| < 2.3",
     data : [
         {"x": 10, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
@@ -4176,7 +4176,7 @@ dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6 < p&#7451; < 35 GeV",
+    kinea : "6 < p<sub>T</sub> < 35 GeV",
     kineb : "(1.3 <) |y| < 2.3",
     data : [
         {"x": 309.9, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
@@ -4225,7 +4225,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"]
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "10 < p&#7451; < 50 GeV",
+    kinea : "10 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 60, "y": 0.214061, "stath": 0.049813, "statl": 0.049813, "systh": 0.0228871, "systl": 0.0228871},
@@ -4242,7 +4242,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "10 < p&#7451; < 50 GeV",
+    kinea : "10 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 54.5028, "y": 0.214061, "stath": 0.049813, "statl": 0.049813, "systh": 0.0228871, "systl": 0.0228871},
@@ -4588,7 +4588,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-6p5-30"] = {
     energy : "2.76 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "6.5 < p&#7451; < 30 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 30 GeV",
     data : [
         {"x": 0.2, "y": 0.526, "stath": 0.035, "statl": 0.035, "systh": 0.072, "systl": 0.072},
         {"x": 0.6, "y": 0.507, "stath": 0.035, "statl": 0.035, "systh": 0.068, "systl": 0.068},
@@ -4609,7 +4609,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-10_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "0-10%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.335569, "stath": 0.0902396, "statl": 0.0902396, "systh": 0.0218893, "systl": 0.0227594},
         {"x": 1.125, "y": 0.288541, "stath": 0.0183881, "statl": 0.0183881, "systh": 0.0170843, "systl": 0.0180696},
@@ -4627,7 +4627,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-80_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "0-80%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.490813, "stath": 0.0196752, "statl": 0.0196752, "systh": 0.032016, "systl": 0.0332886},
         {"x": 1.125, "y": 0.396924, "stath": 0.0154737, "statl": 0.0154737, "systh": 0.0235016, "systl": 0.0248569},
@@ -4645,7 +4645,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-20-40_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "20-40%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.644456, "stath": 0.0406995, "statl": 0.0406995, "systh": 0.0420382, "systl": 0.0437092},
         {"x": 1.125, "y": 0.489783, "stath": 0.03124, "statl": 0.03124, "systh": 0.0289997, "systl": 0.0306721},
@@ -4663,7 +4663,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-40-80_pT-9-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "40-80%",
-    kineb : "9 < p&#7451; < 40 GeV",
+    kineb : "9 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": 0.375, "y": 0.851568, "stath": 0.0721119, "statl": 0.0721119, "systh": 0.0555482, "systl": 0.0577562},
         {"x": 1.125, "y": 0.739277, "stath": 0.0591672, "statl": 0.0591672, "systh": 0.0437721, "systl": 0.0462964},
@@ -4681,7 +4681,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-6p5-50"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "6.5 < p&#7451; < 50 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 50 GeV",
     data : [
         {"x": 0.2, "y": 0.448, "stath": 0.01, "statl": 0.01, "systh": 0.027, "systl": 0.027},
         {"x": 0.6, "y": 0.477, "stath": 0.011, "statl": 0.011, "systh": 0.033, "systl": 0.033},
@@ -4701,7 +4701,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 75, "y": 0.906, "stath": 0.221, "statl": 0.221, "systh": 0.202, "systl": 0.202},
@@ -4722,7 +4722,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.2 < |y| < 1.6",
     data : [
         {"x": 75, "y": 0.688, "stath": 0.138, "statl": 0.138, "systh": 0.13, "systl": 0.13},
@@ -4743,7 +4743,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 75, "y": 0.574, "stath": 0.119, "statl": 0.119, "systh": 0.112, "systl": 0.112},
@@ -4764,7 +4764,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.2",
     data : [
         {"x": 75, "y": 0.774, "stath": 0.094, "statl": 0.094, "systh": 0.151, "systl": 0.151},
@@ -4785,7 +4785,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 75, "y": 0.702, "stath": 0.066, "statl": 0.066, "systh": 0.128, "systl": 0.128},
@@ -4806,7 +4806,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 5, "y": 0.56, "stath": 0.058, "statl": 0.058, "systh": 0.17, "systl": 0.17},
@@ -4827,7 +4827,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 5, "y": 0.358, "stath": 0.019, "statl": 0.019, "systh": 0.029, "systl": 0.03},
@@ -4848,7 +4848,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 0.6",
     data : [
         {"x": 5, "y": 0.356, "stath": 0.011, "statl": 0.011, "systh": 0.02, "systl": 0.022},
@@ -4869,7 +4869,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 2.5, "y": 0.365, "stath": 0.009, "statl": 0.009, "systh": 0.023, "systl": 0.024},
@@ -4897,10 +4897,9 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
-        {"x": 0, "y": 2.95026e-39, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
         {"x": 22.1, "y": 0.906, "stath": 0.221, "statl": 0.221, "systh": 0.202, "systl": 0.202},
         {"x": 86.3, "y": 1.069, "stath": 0.194, "statl": 0.194, "systh": 0.175, "systl": 0.175},
         {"x": 130, "y": 0.801, "stath": 0.159, "statl": 0.159, "systh": 0.129, "systl": 0.129},
@@ -4919,7 +4918,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.2 < |y| < 1.6",
     data : [
         {"x": 22.1, "y": 0.688, "stath": 0.138, "statl": 0.138, "systh": 0.13, "systl": 0.13},
@@ -4940,7 +4939,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "1.6 < |y| < 2.4",
     data : [
         {"x": 22.1, "y": 0.574, "stath": 0.119, "statl": 0.119, "systh": 0.112, "systl": 0.112},
@@ -4961,7 +4960,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 1.2",
     data : [
         {"x": 22.1, "y": 0.774, "stath": 0.094, "statl": 0.094, "systh": 0.151, "systl": 0.151},
@@ -4982,7 +4981,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 30 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 22.1, "y": 0.702, "stath": 0.066, "statl": 0.066, "systh": 0.128, "systl": 0.128},
@@ -5003,7 +5002,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 40 GeV",
+    kinea : "9 < p<sub>T</sub> < 40 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 22.989, "y": 0.846393, "stath": 0.0993666, "statl": 0.0993666, "systh": 0.0999181, "systl": 0.101271},
@@ -5026,7 +5025,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "3 < p&#7451; < 6.5 GeV",
+    kinea : "3 < p<sub>T</sub> < 6.5 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 358.8, "y": 0.56, "stath": 0.058, "statl": 0.058, "systh": 0.17, "systl": 0.17},
@@ -5047,7 +5046,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "1.8 < |y| < 2.4",
     data : [
         {"x": 358.8, "y": 0.358, "stath": 0.019, "statl": 0.019, "systh": 0.029, "systl": 0.03},
@@ -5068,7 +5067,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 0.6",
     data : [
         {"x": 358.8, "y": 0.356, "stath": 0.011, "statl": 0.011, "systh": 0.02, "systl": 0.022},
@@ -5089,7 +5088,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "6.5 < p&#7451; < 50 GeV",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 384.3, "y": 0.365, "stath": 0.009, "statl": 0.009, "systh": 0.023, "systl": 0.024},
@@ -5617,7 +5616,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "",
-    kineb : "8 < p&#7451; < 40 GeV",
+    kineb : "8 < p<sub>T</sub> < 40 GeV",
     data : [
         {"x": -1.75, "y": 0.816, "stath": 0.061, "statl": 0.061, "systh": 0.0764853, "systl": 0.0764853},
         {"x": -1.125, "y": 1.114, "stath": 0.059, "statl": 0.059, "systh": 0.111306, "systl": 0.111306},
@@ -5637,7 +5636,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "10 < p&#7451; < 30 GeV",
+    kineb : "10 < p<sub>T</sub> < 30 GeV",
     data : [
         {"x": -2.165, "y": 1.08, "stath": 0.06, "statl": 0.06, "systh": 0.08, "systl": 0.08},
         {"x": -1.715, "y": 0.98, "stath": 0.04, "statl": 0.04, "systh": 0.07, "systl": 0.07},
@@ -5659,7 +5658,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "",
-    kineb : "6.5 < p&#7451; < 10 GeV",
+    kineb : "6.5 < p<sub>T</sub> < 10 GeV",
     data : [
         {"x": -2.165, "y": 1.07, "stath": 0.05, "statl": 0.05, "systh": 0.09, "systl": 0.09},
         {"x": -1.715, "y": 1.1, "stath": 0.05, "statl": 0.05, "systh": 0.08, "systl": 0.08},
@@ -5681,7 +5680,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     energy : "5.02 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 14 GeV",
+    kineb : "p<sub>T</sub> < 14 GeV",
     data : [
         {"x": -3.25, "y": 0.98, "stath": 0.06, "statl": 0.06, "systh": 0.106301, "systl": 0.106301},
         {"x": 3.25, "y": 0.83, "stath": 0.02, "statl": 0.02, "systh": 0.0806226, "systl": 0.0806226},
@@ -5698,7 +5697,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_8TeV_LHCb__pT-lt-14"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 14 GeV",
+    kineb : "p<sub>T</sub> < 14 GeV",
     data : [
         {"x": -4.25, "y": 1.1, "stath": 0.13, "statl": 0.13, "systh": 0, "systl": 0},
         {"x": -3.75, "y": 1.03, "stath": 0.11, "statl": 0.11, "systh": 0, "systl": 0},
@@ -5721,7 +5720,7 @@ dataset["bTOJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 30 GeV",
+    kinea : "9 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 50, "y": 0.07993, "stath": 0.03732, "statl": 0.03732, "systh": 0.01972, "systl": 0.01972},
@@ -5739,7 +5738,7 @@ dataset["bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 30 GeV",
+    kinea : "9 < p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 70.42, "y": 0.07993, "stath": 0.03732, "statl": 0.03732, "systh": 0.01972, "systl": 0.01972},
@@ -6202,7 +6201,7 @@ dataset["bTOpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = 
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "9 < p&#7451; < 40 GeV",
+    kinea : "9 < p<sub>T</sub> < 40 GeV",
     kineb : "|y| < 2",
     data : [
         {"x": 46.7345, "y": 1.07585, "stath": 0.304207, "statl": 0.304207, "systh": 0.0866481, "systl": 0.0866481},
@@ -6698,7 +6697,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "2 < p&#7451; < 5 GeV",
+    kinea : "2 < p<sub>T</sub> < 5 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.425, "stath": 0.019, "statl": 0.019, "systh": 0.017, "systl": 0.017},
@@ -6720,7 +6719,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "5 < p&#7451; < 8 GeV",
+    kinea : "5 < p<sub>T</sub> < 8 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.28, "stath": 0.021, "statl": 0.021, "systh": 0.011, "systl": 0.011},
@@ -6742,7 +6741,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 2 GeV",
+    kinea : "p<sub>T</sub> < 2 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.732, "stath": 0.034, "statl": 0.034, "systh": 0.041, "systl": 0.041},
@@ -6764,7 +6763,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-8_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 8 GeV",
+    kinea : "p<sub>T</sub> < 8 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.557, "stath": 0.019, "statl": 0.019, "systh": 0.024, "systl": 0.024},
@@ -6788,7 +6787,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "0.3 < p&#7451; < 2 GeV",
+    kinea : "0.3 < p<sub>T</sub> < 2 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.74, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
@@ -6810,7 +6809,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "2 < p&#7451; < 5 GeV",
+    kinea : "2 < p<sub>T</sub> < 5 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.57, "stath": 0.01, "statl": 0.01, "systh": 0.01, "systl": 0.01},
@@ -6832,7 +6831,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "5 < p&#7451; < 8 GeV",
+    kinea : "5 < p<sub>T</sub> < 8 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.31, "stath": 0.01, "statl": 0.01, "systh": 0.01, "systl": 0.01},
@@ -6854,7 +6853,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "8 < p&#7451; < 12 GeV",
+    kinea : "8 < p<sub>T</sub> < 12 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.29, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
@@ -6876,7 +6875,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-2p5-3"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 12 GeV",
+    kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "2.5 < y < 3",
     data : [
         {"x": 5, "y": 0.7, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
@@ -6898,7 +6897,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 12 GeV",
+    kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "3 < y < 3.5",
     data : [
         {"x": 357.3, "y": -0.01, "stath": 0.01, "statl": 0.01, "systh": 0.04, "systl": 0.04},
@@ -6920,7 +6919,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 12 GeV",
+    kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "3.5 < y < 4",
     data : [
         {"x": 5, "y": 0.6, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
@@ -6942,7 +6941,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-0_absy-lt-0p5"] = {
     collision : "AuAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "p&#7451; > 0 GeV",
+    kinea : "p<sub>T</sub> > 0 GeV",
     kineb : "|y| < 0.5",
     data : [
         {"x": 325.5, "y": 0.3614, "stath": 0.0275, "statl": 0.0275, "systh": 0.0639, "systl": 0.0639},
@@ -6965,7 +6964,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-0p5"] = {
     collision : "AuAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "p&#7451; > 5 GeV",
+    kinea : "p<sub>T</sub> > 5 GeV",
     kineb : "|y| < 0.5",
     data : [
         {"x": 325.5, "y": 0.3265, "stath": 0.0411, "statl": 0.0411, "systh": 0.0457, "systl": 0.0457},
@@ -6987,7 +6986,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
     collision : "AuAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "p&#7451; > 5 GeV",
+    kinea : "p<sub>T</sub> > 5 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 325.5, "y": 0.3558, "stath": 0.0778, "statl": 0.0778, "systh": 0.0315, "systl": 0.0315},
@@ -7007,7 +7006,7 @@ dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-1p2-2p2"] = {
     collision : "CuCu",
     energy : "200 GeV",
     collab : "PHENIX",
-    kinea : "p&#7451; < 5 GeV",
+    kinea : "p<sub>T</sub> < 5 GeV",
     kineb : "1.2 < |y| < 2.2",
     data : [
         {"x": 4.7, "y": 0.8506, "stath": 0.0707, "statl": 0.0707, "systh": 0.1053, "systl": 0.1053},
@@ -7030,7 +7029,7 @@ dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
     collision : "CuCu",
     energy : "200 GeV",
     collab : "PHENIX",
-    kinea : "p&#7451; < 5 GeV",
+    kinea : "p<sub>T</sub> < 5 GeV",
     kineb : "|y| < 0.35",
     data : [
         {"x": 6.4, "y": 0.6679, "stath": 0.0849, "statl": 0.0849, "systh": 0.1048, "systl": 0.1048},
@@ -7052,7 +7051,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "2 < p&#7451; < 5 GeV",
+    kinea : "2 < p<sub>T</sub> < 5 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 356, "y": 0.425, "stath": 0.019, "statl": 0.019, "systh": 0.017, "systl": 0.017},
@@ -7074,7 +7073,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "5 < p&#7451; < 8 GeV",
+    kinea : "5 < p<sub>T</sub> < 8 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 356, "y": 0.28, "stath": 0.021, "statl": 0.021, "systh": 0.011, "systl": 0.011},
@@ -7096,7 +7095,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 2 GeV",
+    kinea : "p<sub>T</sub> < 2 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 356, "y": 0.732, "stath": 0.034, "statl": 0.034, "systh": 0.041, "systl": 0.041},
@@ -7118,7 +7117,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-lt-8_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 8 GeV",
+    kinea : "p<sub>T</sub> < 8 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 356, "y": 0.557, "stath": 0.019, "statl": 0.019, "systh": 0.024, "systl": 0.024},
@@ -7142,7 +7141,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-10_absy-lt-0p9"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "0.15 < p&#7451; < 10 GeV",
+    kinea : "0.15 < p<sub>T</sub> < 10 GeV",
     kineb : "|y| < 0.9",
     data : [
         {"x": 18, "y": 0.977, "stath": 0.119, "statl": 0.119, "systh": 0.066, "systl": 0.066},
@@ -7162,7 +7161,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "0.3 < p&#7451; < 2 GeV",
+    kinea : "0.3 < p<sub>T</sub> < 2 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 357.3, "y": 0.74, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
@@ -7184,7 +7183,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "2 < p&#7451; < 5 GeV",
+    kinea : "2 < p<sub>T</sub> < 5 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 357.3, "y": 0.57, "stath": 0.01, "statl": 0.01, "systh": 0.01, "systl": 0.01},
@@ -7206,7 +7205,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "5 < p&#7451; < 8 GeV",
+    kinea : "5 < p<sub>T</sub> < 8 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 357.3, "y": 0.31, "stath": 0.01, "statl": 0.01, "systh": 0.01, "systl": 0.01},
@@ -7228,7 +7227,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "8 < p&#7451; < 12 GeV",
+    kinea : "8 < p<sub>T</sub> < 12 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 357.3, "y": 0.29, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
@@ -7250,7 +7249,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-10_absy-lt-0p9"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 10 GeV",
+    kinea : "p<sub>T</sub> < 10 GeV",
     kineb : "|y| < 0.9",
     data : [
         {"x": 18, "y": 1.119, "stath": 0.122, "statl": 0.122, "systh": 0.085, "systl": 0.085},
@@ -7270,7 +7269,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-2p5-3"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 12 GeV",
+    kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "2.5 < y < 3",
     data : [
         {"x": 357.3, "y": 0.7, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
@@ -7292,7 +7291,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 12 GeV",
+    kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "3 < y < 3.5",
     data : [
         {"x": 357.3, "y": 0.61, "stath": 0.01, "statl": 0.01, "systh": 0.01, "systl": 0.01},
@@ -7314,7 +7313,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 12 GeV",
+    kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "3.5 < y < 4",
     data : [
         {"x": 357.3, "y": 0.6, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
@@ -7336,7 +7335,7 @@ dataset["incJpsi_RAA_Npart_XeXe_5p44TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     collision : "XeXe",
     energy : "5.44 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; > 0 GeV",
+    kinea : "p<sub>T</sub> > 0 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 190, "y": 0.59, "stath": 0.14, "statl": 0.14, "systh": 0.09, "systl": 0.09},
@@ -7856,7 +7855,7 @@ dataset["incJpsi_RAA_ycm_CuCu_200GeV_PHENIX_cent-0-20_pT-lt-5"] = {
     energy : "200 GeV",
     collab : "PHENIX",
     kinea : "0-20%",
-    kineb : "p&#7451; < 5 GeV",
+    kineb : "p<sub>T</sub> < 5 GeV",
     data : [
         {"x": -2.075, "y": 0.5094, "stath": 0.1211, "statl": 0.1211, "systh": 0.0671, "systl": 0.0671},
         {"x": -1.825, "y": 0.4794, "stath": 0.0509, "statl": 0.0509, "systh": 0.063, "systl": 0.063},
@@ -7880,7 +7879,7 @@ dataset["incJpsi_RAA_ycm_PbPb_2p76TeV_ALICE_cent-0-90_pT-lt-8"] = {
     energy : "2.76 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "p&#7451; < 8 GeV",
+    kineb : "p<sub>T</sub> < 8 GeV",
     data : [
         {"x": 2.625, "y": 0.631, "stath": 0.087, "statl": 0.087, "systh": 0.088, "systl": 0.088},
         {"x": 2.875, "y": 0.747, "stath": 0.068, "statl": 0.068, "systh": 0.097, "systl": 0.097},
@@ -7901,7 +7900,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-20_pT-lt-12"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "0-20%",
-    kineb : "p&#7451; < 12 GeV",
+    kineb : "p<sub>T</sub> < 12 GeV",
     data : [
         {"x": 2.625, "y": 0.71, "stath": 0.04, "statl": 0.04, "systh": 0.09, "systl": 0.09},
         {"x": 2.875, "y": 0.66, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
@@ -7922,7 +7921,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-10"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "p&#7451; < 10 GeV",
+    kineb : "p<sub>T</sub> < 10 GeV",
     data : [
         {"x": 0, "y": 0.97, "stath": 0.05, "statl": 0.05, "systh": 0.078, "systl": 0.078},
     ]
@@ -7938,7 +7937,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-12"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "p&#7451; < 12 GeV",
+    kineb : "p<sub>T</sub> < 12 GeV",
     data : [
         {"x": 2.625, "y": 0.72, "stath": 0.03, "statl": 0.03, "systh": 0.09, "systl": 0.09},
         {"x": 2.875, "y": 0.67, "stath": 0.01, "statl": 0.01, "systh": 0.06, "systl": 0.06},
@@ -7959,7 +7958,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-20-40_pT-lt-12"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "20-40%",
-    kineb : "p&#7451; < 12 GeV",
+    kineb : "p<sub>T</sub> < 12 GeV",
     data : [
         {"x": 2.625, "y": 0.72, "stath": 0.04, "statl": 0.04, "systh": 0.08, "systl": 0.08},
         {"x": 2.875, "y": 0.66, "stath": 0.02, "statl": 0.02, "systh": 0.06, "systl": 0.06},
@@ -7980,7 +7979,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-40-90_pT-lt-12"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "40-90%",
-    kineb : "p&#7451; < 12 GeV",
+    kineb : "p<sub>T</sub> < 12 GeV",
     data : [
         {"x": 2.625, "y": 0.8, "stath": 0.04, "statl": 0.04, "systh": 0.09, "systl": 0.09},
         {"x": 2.875, "y": 0.73, "stath": 0.02, "statl": 0.02, "systh": 0.06, "systl": 0.06},
@@ -8055,7 +8054,7 @@ dataset["incJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     energy : "5.02 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 14 GeV",
+    kineb : "p<sub>T</sub> < 14 GeV",
     data : [
         {"x": -3.25, "y": 0.93, "stath": 0.03, "statl": 0.03, "systh": 0.0707107, "systl": 0.0707107},
         {"x": 3.25, "y": 0.63, "stath": 0.01, "statl": 0.01, "systh": 0.0424264, "systl": 0.0424264},
@@ -8072,7 +8071,7 @@ dataset["incJpsi_RpA_ycm_pPb_8TeV_ALICE__pT-lt-20"] = {
     energy : "8.16 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "p&#7451; < 20 GeV",
+    kineb : "p<sub>T</sub> < 20 GeV",
     data : [
         {"x": -3.085, "y": 0.95, "stath": 0.02, "statl": 0.02, "systh": 0.0921954, "systl": 0.0921954},
         {"x": -3.335, "y": 0.94, "stath": 0.01, "statl": 0.01, "systh": 0.0921954, "systl": 0.0921954},
@@ -8098,7 +8097,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-2-15_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "2 < p&#7451; < 15 GeV",
+    kinea : "2 < p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 32.5, "y": 0.075, "stath": 0.005, "statl": 0.005, "systh": 0.002, "systl": 0.002},
@@ -8116,7 +8115,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "5 < p&#7451; < 20 GeV",
+    kinea : "5 < p<sub>T</sub> < 20 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.04, "stath": 0.02, "statl": 0.02, "systh": 0.0044385, "systl": 0.0044385},
@@ -8138,7 +8137,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 5 GeV",
+    kinea : "p<sub>T</sub> < 5 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.036, "stath": 0.0093, "statl": 0.0093, "systh": 0.0031078, "systl": 0.0031078},
@@ -8306,7 +8305,7 @@ dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "5 < p&#7451; < 20 GeV",
+    kinea : "5 < p<sub>T</sub> < 20 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.017, "stath": 0.022, "statl": 0.022, "systh": 0.0043672, "systl": 0.0043672},
@@ -8326,7 +8325,7 @@ dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 5 GeV",
+    kinea : "p<sub>T</sub> < 5 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 5, "y": 0.012, "stath": 0.012, "statl": 0.012, "systh": 0.0036972, "systl": 0.0036972},
@@ -8437,7 +8436,7 @@ dataset["incLambdacToD0_LcToD0_Npart_AuAu_200GeV_STAR_pT-3-6_absy-lt-1"] = {
     collision : "AuAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "3 < p&#7451; < 6 GeV",
+    kinea : "3 < p<sub>T</sub> < 6 GeV",
     kineb : "|y| < 1",
     data : [
         {"x": 30.1, "y": 0.4991, "stath": 0.1245, "statl": 0.1245, "systh": 0.1448, "systl": 0.1448},
@@ -8473,7 +8472,7 @@ dataset["incpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] = 
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 3 GeV",
+    kinea : "p<sub>T</sub> < 3 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 30, "y": 0.86, "stath": 0.51, "statl": 0.51, "systh": 0.23, "systl": 0.23},
@@ -8491,7 +8490,7 @@ dataset["incpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] =
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 3 GeV",
+    kinea : "p<sub>T</sub> < 3 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 157.2, "y": 0.86, "stath": 0.51, "statl": 0.51, "systh": 0.23, "systl": 0.23},
@@ -8589,7 +8588,7 @@ dataset["incpsi2S_RpA_ycm_pPb_5TeV_ALICE__pT-lt-8"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "p&#7451; < 8 GeV",
+    kineb : "p<sub>T</sub> < 8 GeV",
     data : [
         {"x": -3.71, "y": 0.56, "stath": 0.1, "statl": 0.1, "systh": 0.0848528, "systl": 0.0848528},
         {"x": 2.78, "y": 0.48, "stath": 0.06, "statl": 0.06, "systh": 0.0781025, "systl": 0.0781025},
@@ -8606,7 +8605,7 @@ dataset["incpsi2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-12"] = {
     energy : "8.16 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "p&#7451; < 12 GeV",
+    kineb : "p<sub>T</sub> < 12 GeV",
     data : [
         {"x": -4.085, "y": 0.788, "stath": 0.08, "statl": 0.08, "systh": 0.127012, "systl": 0.127012},
         {"x": -3.335, "y": 0.572, "stath": 0.068, "statl": 0.068, "systh": 0.0998098, "systl": 0.0998098},
@@ -8691,7 +8690,7 @@ dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "2 < p&#7451; < 20 GeV",
+    kineb : "2 < p<sub>T</sub> < 20 GeV",
     data : [
         {"x": 3, "y": 0.92, "stath": 0.09, "statl": 0.09, "systh": 0.03, "systl": 0.03},
         {"x": -3, "y": 0.78, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
@@ -9174,7 +9173,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_ALICE_cent-0-90_pT-gt-0"] = {
     energy : "2.76 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "p&#7451; > 0 GeV",
+    kineb : "p<sub>T</sub> > 0 GeV",
     data : [
         {"x": 2.85, "y": 0.3, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
         {"x": 3.6, "y": 0.29, "stath": 0.07, "statl": 0.07, "systh": 0.05, "systl": 0.05},
@@ -9191,7 +9190,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     energy : "2.76 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "p&#7451; < 20 GeV",
+    kineb : "p<sub>T</sub> < 20 GeV",
     data : [
         {"x": 0.2, "y": 0.446, "stath": 0.028, "statl": 0.028, "systh": 0.043, "systl": 0.043},
         {"x": 0.6, "y": 0.415, "stath": 0.028, "statl": 0.028, "systh": 0.069, "systl": 0.069},
@@ -9212,7 +9211,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "p&#7451; < 15 GeV",
+    kineb : "p<sub>T</sub> < 15 GeV",
     data : [
         {"x": 2.65, "y": 0.433, "stath": 0.043, "statl": 0.043, "systh": 0.055, "systl": 0.055},
         {"x": 2.95, "y": 0.396, "stath": 0.023, "statl": 0.023, "systh": 0.036, "systl": 0.036},
@@ -9232,7 +9231,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "p&#7451; < 30 GeV",
+    kineb : "p<sub>T</sub> < 30 GeV",
     data : [
         {"x": 0.2, "y": 0.383, "stath": 0.022, "statl": 0.022, "systh": 0.03, "systl": 0.03},
         {"x": 0.6, "y": 0.382, "stath": 0.026, "statl": 0.026, "systh": 0.024, "systl": 0.024},
@@ -9252,7 +9251,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; > 0 GeV",
+    kinea : "p<sub>T</sub> > 0 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 10, "y": 0.22, "stath": 0.05, "statl": 0.05, "systh": 0.02, "systl": 0.02},
@@ -9269,7 +9268,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 20 GeV",
+    kinea : "p<sub>T</sub> < 20 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 85, "y": 1.271, "stath": 0.229, "statl": 0.229, "systh": 0.401, "systl": 0.401},
@@ -9292,7 +9291,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 15 GeV",
+    kinea : "p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 2.5, "y": 0.318, "stath": 0.028, "statl": 0.028, "systh": 0.016, "systl": 0.016},
@@ -9316,7 +9315,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 30 GeV",
+    kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 85, "y": 0.792, "stath": 0.131, "statl": 0.131, "systh": 0.14, "systl": 0.097},
@@ -9340,7 +9339,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; > 0 GeV",
+    kinea : "p<sub>T</sub> > 0 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 308, "y": 0.22, "stath": 0.05, "statl": 0.05, "systh": 0.02, "systl": 0.02},
@@ -9357,7 +9356,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 20 GeV",
+    kinea : "p<sub>T</sub> < 20 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 8.8, "y": 1.271, "stath": 0.229, "statl": 0.229, "systh": 0.401, "systl": 0.401},
@@ -9380,7 +9379,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 15 GeV",
+    kinea : "p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 383.4, "y": 0.318, "stath": 0.028, "statl": 0.028, "systh": 0.016, "systl": 0.016},
@@ -9404,7 +9403,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 30 GeV",
+    kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 8.3, "y": 0.792, "stath": 0.131, "statl": 0.131, "systh": 0.14, "systl": 0.097},
@@ -9597,7 +9596,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
     energy : "5.02 TeV",
     collab : "ATLAS",
     kinea : "",
-    kineb : "p&#7451; < 40 GeV",
+    kineb : "p<sub>T</sub> < 40 GeV",
     data : [
         {"x": -1.75, "y": 0.74404, "stath": 0.06771, "statl": 0.06771, "systh": 0.107552, "systl": 0.107552},
         {"x": -1.125, "y": 0.71056, "stath": 0.05065, "statl": 0.05065, "systh": 0.0795333, "systl": 0.0795333},
@@ -9617,7 +9616,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
     energy : "8.16 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "p&#7451; < 15 GeV",
+    kineb : "p<sub>T</sub> < 15 GeV",
     data : [
         {"x": 2.28, "y": 0.73, "stath": 0.09, "statl": 0.09, "systh": 0.0632455, "systl": 0.0632455},
         {"x": 2.78, "y": 0.72, "stath": 0.07, "statl": 0.07, "systh": 0.0538516, "systl": 0.0538516},
@@ -9638,7 +9637,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 25 GeV",
+    kineb : "p<sub>T</sub> < 25 GeV",
     data : [
         {"x": -4.25, "y": 1.09, "stath": 0.14, "statl": 0.14, "systh": 0, "systl": 0},
         {"x": -3.75, "y": 0.82, "stath": 0.12, "statl": 0.12, "systh": 0, "systl": 0},
@@ -9660,7 +9659,7 @@ dataset["Upsilon1S_v2_cent_PbPb_5TeV_ALICE_pT-2-15_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "2 < p&#7451; < 15 GeV",
+    kinea : "2 < p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 32.5, "y": -0.003, "stath": 0.03, "statl": 0.03, "systh": 0.006, "systl": 0.006},
@@ -9678,7 +9677,7 @@ dataset["Upsilon1S_v2_cent_PbPb_5TeV_CMS_pT-lt-50_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 50 GeV",
+    kinea : "p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 20, "y": 0.005, "stath": 0.016, "statl": 0.016, "systh": 0.005, "systl": 0.005},
@@ -9790,7 +9789,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "p&#7451; < 30 GeV",
+    kineb : "p<sub>T</sub> < 30 GeV",
     data : [
         {"x": 0.6, "y": 0.341, "stath": 0.067, "statl": 0.067, "systh": 0.014, "systl": 0.014},
         {"x": 1.8, "y": 0.198, "stath": 0.096, "statl": 0.096, "systh": 0.013, "systl": 0.013},
@@ -9806,7 +9805,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 15 GeV",
+    kinea : "p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 15, "y": 0.311, "stath": 0.078, "statl": 0.078, "systh": 0.063, "systl": 0.063},
@@ -9823,7 +9822,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 30 GeV",
+    kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 85, "y": 0.78, "stath": 0.36, "statl": 0.36, "systh": 0.142073, "systl": 0.142073},
@@ -9847,7 +9846,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
     collision : "pPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "p&#7451; < 40 GeV",
+    kinea : "p<sub>T</sub> < 40 GeV",
     kineb : "-2 < ycm < 1.5",
     data : [
         {"x": 65, "y": 0.79145, "stath": 0.1176, "statl": 0.1176, "systh": 0.0673149, "systl": 0.0673149},
@@ -9866,7 +9865,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 15 GeV",
+    kinea : "p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 269.1, "y": 0.311, "stath": 0.078, "statl": 0.078, "systh": 0.063, "systl": 0.063},
@@ -9883,7 +9882,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 30 GeV",
+    kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 8, "y": 0.78, "stath": 0.36, "statl": 0.36, "systh": 0.142073, "systl": 0.142073},
@@ -9926,7 +9925,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 25 GeV",
+    kineb : "p<sub>T</sub> < 25 GeV",
     data : [
         {"x": -3.5, "y": 0.91, "stath": 0.21, "statl": 0.21, "systh": 0, "systl": 0},
         {"x": 3, "y": 0.86, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
@@ -9943,7 +9942,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     energy : "2.76 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "p&#7451; < 20 GeV",
+    kineb : "p<sub>T</sub> < 20 GeV",
     data : [
         {"x": 0.6, "y": 0.116, "stath": 0.034, "statl": 0.034, "systh": 0.039, "systl": 0.039},
         {"x": 1.8, "y": 0.138, "stath": 0.049, "statl": 0.049, "systh": 0.064, "systl": 0.064},
@@ -9960,7 +9959,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
     energy : "5.02 TeV",
     collab : "ALICE",
     kinea : "0-90%",
-    kineb : "p&#7451; < 15 GeV",
+    kineb : "p<sub>T</sub> < 15 GeV",
     data : [
         {"x": 2.9, "y": 0.081, "stath": 0.03, "statl": 0.03, "systh": 0.033, "systl": 0.033},
         {"x": 3.65, "y": 0.197, "stath": 0.04, "statl": 0.04, "systh": 0.035, "systl": 0.035},
@@ -9977,7 +9976,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     energy : "5.02 TeV",
     collab : "CMS",
     kinea : "0-100%",
-    kineb : "p&#7451; < 30 GeV",
+    kineb : "p<sub>T</sub> < 30 GeV",
     data : [
         {"x": 0.4, "y": 0.111, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
         {"x": 1.2, "y": 0.13, "stath": 0.039, "statl": 0.039, "systh": 0.027, "systl": 0.027},
@@ -9994,7 +9993,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 20 GeV",
+    kinea : "p<sub>T</sub> < 20 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 75, "y": 0.235, "stath": 0.155, "statl": 0.155, "systh": 0.128, "systl": 0.128},
@@ -10013,7 +10012,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 15 GeV",
+    kinea : "p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 15, "y": 0.104, "stath": 0.026, "statl": 0.026, "systh": 0.024, "systl": 0.024},
@@ -10030,7 +10029,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 30 GeV",
+    kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 85, "y": 0.563, "stath": 0.319, "statl": 0.319, "systh": 0.154, "systl": 0.136},
@@ -10053,7 +10052,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "2.76 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 20 GeV",
+    kinea : "p<sub>T</sub> < 20 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 22.1, "y": 0.235, "stath": 0.155, "statl": 0.155, "systh": 0.128, "systl": 0.128},
@@ -10072,7 +10071,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "ALICE",
-    kinea : "p&#7451; < 15 GeV",
+    kinea : "p<sub>T</sub> < 15 GeV",
     kineb : "2.5 < y < 4",
     data : [
         {"x": 269.1, "y": 0.104, "stath": 0.026, "statl": 0.026, "systh": 0.024, "systl": 0.024},
@@ -10089,7 +10088,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "CMS",
-    kinea : "p&#7451; < 30 GeV",
+    kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
         {"x": 8.3, "y": 0.563, "stath": 0.319, "statl": 0.319, "systh": 0.154, "systl": 0.136},
@@ -10193,7 +10192,7 @@ dataset["Upsilon2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
     energy : "8.16 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "p&#7451; < 15 GeV",
+    kineb : "p<sub>T</sub> < 15 GeV",
     data : [
         {"x": 2.78, "y": 0.59, "stath": 0.12, "statl": 0.12, "systh": 0.0632455, "systl": 0.0632455},
         {"x": -3.71, "y": 0.69, "stath": 0.12, "statl": 0.12, "systh": 0.0632455, "systl": 0.0632455},
@@ -10210,7 +10209,7 @@ dataset["Upsilon2S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 25 GeV",
+    kineb : "p<sub>T</sub> < 25 GeV",
     data : [
         {"x": -4.25, "y": 0.61, "stath": 0.13, "statl": 0.13, "systh": 0, "systl": 0},
         {"x": -3.75, "y": 0.83, "stath": 0.16, "statl": 0.16, "systh": 0, "systl": 0},
@@ -10232,7 +10231,7 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
     collision : "pPb",
     energy : "5.02 TeV",
     collab : "ATLAS",
-    kinea : "p&#7451; < 40 GeV",
+    kinea : "p<sub>T</sub> < 40 GeV",
     kineb : "-2 < ycm < 1.5",
     data : [
         {"x": 65, "y": 0.8344, "stath": 0.23896, "statl": 0.23896, "systh": 0.0721101, "systl": 0.0721101},
@@ -10252,7 +10251,7 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     energy : "8.16 TeV",
     collab : "LHCb",
     kinea : "",
-    kineb : "p&#7451; < 25 GeV",
+    kineb : "p<sub>T</sub> < 25 GeV",
     data : [
         {"x": -3.5, "y": 0.44, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
         {"x": 3, "y": 0.81, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
@@ -10269,7 +10268,7 @@ dataset["Upsilon3S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
     energy : "8.16 TeV",
     collab : "ALICE",
     kinea : "",
-    kineb : "p&#7451; < 15 GeV",
+    kineb : "p<sub>T</sub> < 15 GeV",
     data : [
         {"x": 2.78, "y": 0.32, "stath": 0.24, "statl": 0.24, "systh": 0.0608276, "systl": 0.0608276},
         {"x": -3.71, "y": 0.71, "stath": 0.23, "statl": 0.23, "systh": 0.0921954, "systl": 0.0921954},
