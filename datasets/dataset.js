@@ -3486,6 +3486,41 @@ dataset["aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     ]
 };
 
+dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
+    reference : "PRL 113 (2014) 262301",
+    link : "https://arxiv.org/abs/1410.1804",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "2.76 TeV",
+    collab : "CMS",
+    kinea : "3 < p&#7451; < 30 GeV",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 10, "y": 2.31, "stath": 0.53, "statl": 0.53, "systh": 0.37, "systl": 0.37},
+        {"x": 30, "y": 0.93, "stath": 0.47, "statl": 0.47, "systh": 0.27, "systl": 0.27},
+        {"x": 70, "y": 0.89, "stath": 0.39, "statl": 0.39, "systh": 0.17, "systl": 0.17},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
+    reference : "PRL 113 (2014) 262301",
+    link : "https://arxiv.org/abs/1410.1804",
+    observable : "DoubleRatio",
+    xtitle : "cent",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "2.76 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p&#7451; < 30 GeV",
+    kineb : "|y| < 1.6",
+    data : [
+        {"x": 10, "y": 0.43, "stath": 0.2, "statl": 0.2, "systh": 0.07, "systl": 0.07},
+        {"x": 30, "y": 0.67, "stath": 0.2, "statl": 0.2, "systh": 0.09, "systl": 0.09},
+    ]
+};
+
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
@@ -3538,6 +3573,41 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
         {"x": 30, "y": 0.794, "stath": 0.125, "statl": 0.125, "systh": 0.150785, "systl": 0.150785},
         {"x": 12.5, "y": 0.661, "stath": 0.122, "statl": 0.122, "systh": 0.116867, "systl": 0.116867},
         {"x": 2.5, "y": 0.768, "stath": 0.202, "statl": 0.202, "systh": 0.111893, "systl": 0.111893},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
+    reference : "PRL 113 (2014) 262301",
+    link : "https://arxiv.org/abs/1410.1804",
+    observable : "DoubleRatio",
+    xtitle : "Npart",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "2.76 TeV",
+    collab : "CMS",
+    kinea : "3 < p&#7451; < 30 GeV",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 308.4, "y": 2.31, "stath": 0.53, "statl": 0.53, "systh": 0.37, "systl": 0.37},
+        {"x": 158.6, "y": 0.93, "stath": 0.47, "statl": 0.47, "systh": 0.27, "systl": 0.27},
+        {"x": 32.8, "y": 0.89, "stath": 0.39, "statl": 0.39, "systh": 0.17, "systl": 0.17},
+    ]
+};
+
+dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
+    reference : "PRL 113 (2014) 262301",
+    link : "https://arxiv.org/abs/1410.1804",
+    observable : "DoubleRatio",
+    xtitle : "Npart",
+    particle : "Prompt &psi;(2S) / J/&psi;",
+    collision : "PbPb",
+    energy : "2.76 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p&#7451; < 30 GeV",
+    kineb : "|y| < 1.6",
+    data : [
+        {"x": 308.4, "y": 0.43, "stath": 0.2, "statl": 0.2, "systh": 0.07, "systl": 0.07},
+        {"x": 158.6, "y": 0.67, "stath": 0.2, "statl": 0.2, "systh": 0.09, "systl": 0.09},
     ]
 };
 
