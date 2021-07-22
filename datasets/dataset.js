@@ -9173,6 +9173,24 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     ]
 };
 
+dataset["Upsilon1S_RAA_cent_AuAu_200GeV_STAR_absy-lt-1"] = {
+    reference : "PLB 735 (2014) 127",
+    link : "https://arxiv.org/abs/1312.3675",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "&Upsilon;(1S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "|y| < 1",
+    kineb : "",
+    data : [
+        {"x": 5, "y": 0.66, "stath": 0.13, "statl": 0.13, "systh": 0.02, "systl": 0.05},
+        {"x": 20, "y": 1.07, "stath": 0.2, "statl": 0.2, "systh": 0.03, "systl": 0.09},
+        {"x": 45, "y": 1.19, "stath": 0.22, "statl": 0.22, "systh": 0.04, "systl": 0.1},
+    ]
+};
+
 dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     reference : "PLB 738 (2014) 361",
     link : "https://arxiv.org/abs/1405.4493",
@@ -9258,6 +9276,24 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
         {"x": 15, "y": 0.324, "stath": 0.017, "statl": 0.017, "systh": 0.02, "systl": 0.021},
         {"x": 7.5, "y": 0.321, "stath": 0.021, "statl": 0.021, "systh": 0.019, "systl": 0.02},
         {"x": 2.5, "y": 0.319, "stath": 0.019, "statl": 0.019, "systh": 0.019, "systl": 0.02},
+    ]
+};
+
+dataset["Upsilon1S_RAA_Npart_AuAu_200GeV_STAR_absy-lt-1"] = {
+    reference : "PLB 735 (2014) 127",
+    link : "https://arxiv.org/abs/1312.3675",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(1S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "|y| < 1",
+    kineb : "",
+    data : [
+        {"x": 326, "y": 0.66, "stath": 0.13, "statl": 0.13, "systh": 0.02, "systl": 0.05},
+        {"x": 203, "y": 1.07, "stath": 0.2, "statl": 0.2, "systh": 0.03, "systl": 0.09},
+        {"x": 80, "y": 1.19, "stath": 0.22, "statl": 0.22, "systh": 0.04, "systl": 0.1},
     ]
 };
 
@@ -9707,6 +9743,78 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-2p4"] = {
         {"x": 4.5, "y": -0.022, "stath": 0.056, "statl": 0.056, "systh": 0.013, "systl": 0.013},
         {"x": 8, "y": -0.028, "stath": 0.062, "statl": 0.062, "systh": 0.015, "systl": 0.015},
         {"x": 30, "y": 0.083, "stath": 0.068, "statl": 0.068, "systh": 0.025, "systl": 0.025},
+    ]
+};
+
+dataset["Upsilon1S2S3S_RAA_cent_AuAu_200GeV_STAR_absy-lt-0p5"] = {
+    reference : "PLB 735 (2014) 127",
+    link : "https://arxiv.org/abs/1312.3675",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "&Upsilon;(1S+2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "|y| < 0.5",
+    kineb : "",
+    data : [
+        {"x": 5, "y": 0.46, "stath": 0.05, "statl": 0.05, "systh": 0.02, "systl": 0.02},
+        {"x": 20, "y": 0.69, "stath": 0.16, "statl": 0.16, "systh": 0.02, "systl": 0.02},
+        {"x": 45, "y": 0.74, "stath": 0.22, "statl": 0.22, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["Upsilon1S2S3S_RAA_Npart_AuAu_200GeV_STAR_absy-lt-0p5"] = {
+    reference : "PLB 735 (2014) 127",
+    link : "https://arxiv.org/abs/1312.3675",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(1S+2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "|y| < 0.5",
+    kineb : "",
+    data : [
+        {"x": 326, "y": 0.46, "stath": 0.05, "statl": 0.05, "systh": 0.02, "systl": 0.02},
+        {"x": 203, "y": 0.69, "stath": 0.16, "statl": 0.16, "systh": 0.02, "systl": 0.02},
+        {"x": 80, "y": 0.74, "stath": 0.22, "statl": 0.22, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["Upsilon1S2S3S_RAA_cent_AuAu_200GeV_STAR_absy-lt-1"] = {
+    reference : "PLB 735 (2014) 127",
+    link : "https://arxiv.org/abs/1312.3675",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "&Upsilon;(1S+2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "|y| < 1",
+    kineb : "",
+    data : [
+        {"x": 5, "y": 0.49, "stath": 0.13, "statl": 0.13, "systh": 0.02, "systl": 0.02},
+        {"x": 20, "y": 0.82, "stath": 0.2, "statl": 0.2, "systh": 0.03, "systl": 0.03},
+        {"x": 45, "y": 0.82, "stath": 0.22, "statl": 0.22, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["Upsilon1S2S3S_RAA_Npart_AuAu_200GeV_STAR_absy-lt-1"] = {
+    reference : "PLB 735 (2014) 127",
+    link : "https://arxiv.org/abs/1312.3675",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(1S+2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "|y| < 1",
+    kineb : "",
+    data : [
+        {"x": 326, "y": 0.49, "stath": 0.13, "statl": 0.13, "systh": 0.02, "systl": 0.02},
+        {"x": 203, "y": 0.82, "stath": 0.2, "statl": 0.2, "systh": 0.03, "systl": 0.03},
+        {"x": 80, "y": 0.82, "stath": 0.22, "statl": 0.22, "systh": 0.03, "systl": 0.03},
     ]
 };
 
