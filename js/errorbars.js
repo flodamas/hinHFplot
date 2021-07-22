@@ -165,7 +165,7 @@ var drawaxisgrid = function()
     {
         xtitle.append('tspan').attr('class', 'axistitle')
             .text('p')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('T');
         xtitle.append('tspan').attr('class', 'axistitle')
             .text(' (GeV/c)');
@@ -174,14 +174,14 @@ var drawaxisgrid = function()
     {
         xtitle.append('tspan').attr('class', 'axistitle')
             .text('y')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('CM');
     }
     else if(document.getElementById('xvariable').value === "absy")
     {
         xtitle.append('tspan').attr('class', 'axistitle')
             .text('|y')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('CM');
         xtitle.append('tspan').attr('class', 'axistitle')
             .text('|');
@@ -195,7 +195,7 @@ var drawaxisgrid = function()
     {
         xtitle.append('tspan').attr('class', 'axistitle')
             .text(decodehtml('&#10216;N'))
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('part');
         xtitle.append('tspan').attr('class', 'axistitle')
             .text(decodehtml('&#10217;'));
@@ -212,57 +212,57 @@ var drawaxisgrid = function()
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('R')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('AA');
     }
     else if(obs === "RpA")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('R')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('pA');
     }
     else if(obs === "RpARAA")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('R')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('pA');
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(', R')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('AA');
     }
     else if(obs === "v2")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('v')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('2');
     }
     else if(obs === "v3")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('v')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('3');
     }
     else if(obs === "vn")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('v')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('n');
     }
     else if(obs === "LcToD0")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(decodehtml('&Lambda;'))
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('c');
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(' / D')
-            .append('tspan').attr('class', 'axistitlesup')
+            .append('tspan').attr('class', 'tsup')
             .text('0');
     }
     else if(obs === "Ratio")
@@ -274,11 +274,11 @@ var drawaxisgrid = function()
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('(Yield ratio)')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('AA');
         ytitle.append('tspan').attr('class', 'axistitle')
             .text(' / (Yield ratio)')
-            .append('tspan').attr('class', 'axistitlesub')
+            .append('tspan').attr('class', 'tsub')
             .text('pp');
     }
 
@@ -502,6 +502,49 @@ function clearall()
     legs = [];
 }
 
+function parselegend(tlegend, thisitem)
+{
+    var pa = thisitem.particle;
+    while(pa.length > 0)
+    {
+        var i = pa.indexOf("<su"), j = pa.indexOf("</su");
+        var substr = "";
+        if(i > 0) substr = pa.substring(0, i);
+        else if(j > 0) substr = pa.substring(0, j);
+        else substr = pa;
+        pa = pa.replace(substr, "");
+
+        var icl = "";
+        if(substr.indexOf("<sub>") > -1) { icl = icl + " tsub"; substr = substr.replace("<sub>", ""); }
+        if(substr.indexOf("<sup>") > -1) { icl = icl + " tsup"; substr = substr.replace("<sup>", ""); }
+        if(substr.indexOf("</su") > -1) substr = substr.replace(substr.substring(0, 6), "");
+
+        tlegend.append('tspan')
+            .attr("class", icl)
+            .style("font-weight", "bold")
+            .text(decodehtml(substr));
+    }
+    tlegend.append('tspan')
+        .style("class", "legendlabel")
+        .text(' ' + thisitem.collab);
+    tlegend.append('tspan')
+        .style("class", "legendlabel")
+        .style("font-style", "italic")
+        .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+    if(thisitem.kinea != "")
+    {
+        tlegend.append('tspan')
+            .style("class", "legendlabel")
+            .text(', ' + decodehtml(thisitem.kinea));
+    }
+    if(thisitem.kineb != "")
+    {
+        tlegend.append('tspan')
+            .style("class", "legendlabel")
+            .text(', ' + decodehtml(thisitem.kineb));
+    }
+}
+
 function legend(da, trans = 500)
 {
     var icheck = document.getElementById('check_' + da);
@@ -534,30 +577,7 @@ function legend(da, trans = 500)
             .attr("id", "legendmark_" + da)
             .style("fill", document.getElementById('color_'+da).value)
             .text(decodehtml("&#9679; "));
-        tlegend.append('tspan')
-            .style("class", "legendlabel")
-            .style("font-weight", "bold")
-            .text(' ' + decodehtml(thisitem.particle));
-        tlegend.append('tspan')
-            .style("class", "legendlabel")
-            .text(' ' + thisitem.collab);
-        tlegend.append('tspan')
-            .style("class", "legendlabel")
-            .style("font-style", "italic")
-            .text(' ' + thisitem.collision + ' ' + thisitem.energy);
-        if(thisitem.kinea != "")
-        {
-            tlegend.append('tspan')
-                .style("class", "legendlabel")
-                .text(', ' + decodehtml(thisitem.kinea));
-        }
-        if(thisitem.kineb != "")
-        {
-            tlegend.append('tspan')
-                .style("class", "legendlabel")
-                .text(', ' + decodehtml(thisitem.kineb));
-        }
-
+        parselegend(tlegend, thisitem);
         tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
     }
 }

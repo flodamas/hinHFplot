@@ -31,25 +31,27 @@
     stroke-opacity: 1;
 }
 
-.axistitlesub,
-.axistitlesup {
+.tsub,
+.tsup {
     font-size: 0.6em;
 }
 
-.axistitlesub {
-    baseline-shift: sub;
+.tsub {
+    /* baseline-shift: sub; */
+    baseline-shift: -20%;
 }
-.axistitlesup {
-    baseline-shift: super;
+.tsup {
+    /* baseline-shift: super; */
+    baseline-shift: 70%;
 }
 
 .watermark {
     fill: #e5e5e5;
 }
 
-.legendlebel {
-    fill: black;
-}
+/* .legendlebel { */
+/*     fill: black; */
+/* } */
 
 .legendmark {
     font-size: 1.2em;
