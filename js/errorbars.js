@@ -527,7 +527,7 @@ function parsescript(pa)
     return results;
 }
 
-function parselegend(tlegend, thisitem)
+function legenditem(tlegend, thisitem, type=1)
 {
     // particle
     var rpa = parsescript(thisitem.particle);
@@ -603,7 +603,7 @@ function legend(da, trans = 500)
             .attr("id", "legendmark_" + da)
             .style("fill", document.getElementById('color_'+da).value)
             .text(decodehtml("&#9679; "));
-        parselegend(tlegend, thisitem);
+        legenditem(tlegend, thisitem);
         tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
     }
 }
