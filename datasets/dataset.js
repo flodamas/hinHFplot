@@ -1,7 +1,7 @@
 var dataset = {};
 
 dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
-    reference : "PRC99 (2019) 034908",
+    reference : "PRC 99 (2019) 034908",
     link : "https://arxiv.org/abs/1812.10224",
     observable : "RAA",
     xtitle : "pT",
@@ -27,7 +27,7 @@ dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
 };
 
 dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
-    reference : "PRC99 (2019) 034908",
+    reference : "PRC 99 (2019) 034908",
     link : "https://arxiv.org/abs/1812.10224",
     observable : "RAA",
     xtitle : "pT",
@@ -53,7 +53,7 @@ dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
 };
 
 dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1"] = {
-    reference : "PRC99 (2019) 034908",
+    reference : "PRC 99 (2019) 034908",
     link : "https://arxiv.org/abs/1812.10224",
     observable : "RAA",
     xtitle : "pT",
