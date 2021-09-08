@@ -529,6 +529,8 @@ function parsescript(pa)
 
 function legenditem(tlegend, thisitem, type=1)
 {
+    var type_legend = document.getElementById('btnlegend').value;
+
     // particle
     var rpa = parsescript(thisitem.particle);
     for(var p in rpa)
@@ -542,11 +544,14 @@ function legenditem(tlegend, thisitem, type=1)
     tlegend.append('tspan')
         .text(' ' + thisitem.collab);
     // collision
-    tlegend.append('tspan')
-        .style("font-style", "italic")
-        .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+    if(type_legend != 4)
+    {
+        tlegend.append('tspan')
+            .style("font-style", "italic")
+            .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+    }
     // kinea
-    if(thisitem.kinea != "")
+    if(thisitem.kinea != "" && type_legend != 3)
     {
         var rpa = parsescript(thisitem.kinea);
         rpa[0].content = ", " + rpa[0].content;
@@ -558,7 +563,7 @@ function legenditem(tlegend, thisitem, type=1)
         }
     }
     // kineb
-    if(thisitem.kineb != "")
+    if(thisitem.kineb != "" && type_legend != 2)
     {
         var rpa = parsescript(thisitem.kineb);
         rpa[0].content = ", " + rpa[0].content;
@@ -573,6 +578,7 @@ function legenditem(tlegend, thisitem, type=1)
 
 function legend(da, trans = 500)
 {
+    var opa_legend = document.getElementById('btnlegend').value==0?0:1;
     var icheck = document.getElementById('check_' + da);
     if(!icheck.checked) // remove legend
     {
@@ -604,11 +610,11 @@ function legend(da, trans = 500)
             .style("fill", document.getElementById('color_'+da).value)
             .text(decodehtml("&#9679; "));
         legenditem(tlegend, thisitem);
-        tlegend.transition().attr('opacity', document.getElementById('btnlegend').value).duration(trans);
+        tlegend.transition().attr('opacity', opa_legend).duration(trans);
     }
 }
 
-function relegend(da, transt = 500)
+function relegend(da, transt = 500) // change color
 {
     var icheck = document.getElementById('check_' + da);
     var cc = document.getElementById('color_' + da).value;
@@ -645,10 +651,11 @@ function movelegendy()
 }
 
 function legendopacity() {
-    var tlegend = d3.select("svg").selectAll('.legend');
-    var opa = 1 - document.getElementById('btnlegend').value;
-    tlegend.transition().attr('opacity', opa).duration(500);
-    document.getElementById('btnlegend').value = opa;
+    var next = {1 : 2, 2 : 3, 3 : 4, 4 : 0, 0 : 1};
+    var newtype = next[document.getElementById('btnlegend').value];
+    document.getElementById('btnlegend').value = newtype;
+    d3.select("svg").selectAll('.legend').remove();
+    alllegend(0);
 }
 
 window.addEventListener("resize", function() { drawallwleg(0); });
