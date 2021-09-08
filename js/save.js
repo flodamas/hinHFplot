@@ -57,6 +57,8 @@ function getSVGString( svgNode )
 	for (var i = 0; i < document.styleSheets.length; i++)
         {
 	    var s = document.styleSheets[i];
+            console.log(s);
+            if(s.href === null) continue;
             if(!s.href.includes("svg.css")) continue;
 
 	    try {
