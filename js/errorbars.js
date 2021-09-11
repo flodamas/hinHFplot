@@ -302,10 +302,27 @@ var vlineopacity = function() {
     document.getElementById('btnvline').value = vo;
 }
 
+var binningopacity = function(transt = 500) {
+    var newopa = 1 - document.getElementById('btnbinning').value;
+    var checkb = document.getElementsByTagName("input");
+    for(var i=0; i<checkb.length; i++)
+    {
+        if(checkb[i].type !== 'checkbox') continue;
+     	if(!checkb[i].checked) continue;
+        var da = checkb[i].id.replace("check_", "");
+        d3.select("svg").select("g").selectAll('.linevd3'+da).transition()
+            .attr('opacity', function(d) {
+                if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin) { return newopa; }
+                else { return 0; }
+            })
+            .duration(transt);
+    }
+    document.getElementById('btnbinning').value = newopa;
+}
 
 var gridopacity = function(transt=500) {
     var grid = d3.select("svg").select("g").selectAll('.grid');
-    var next = {0 : 1, 1 : 0.5, 0.5 : 0};
+    var next = {0 : 1, 1 : 0.5, 0.5 : 0.3, 0.3 : 0};
     var newopa = next[document.getElementById('btngrid').value];
     grid.transition().attr('opacity', newopa).duration(transt);
     document.getElementById('btngrid').value = newopa;
@@ -334,14 +351,16 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             if(high > chartWidth) { high = chartWidth; }
             if(high > low) { return (high - low); }
             else { return 0; }})
-        .transition().duration(transt)
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
         .attr('stroke-width', width/100.*0.3)
+        .attr('opacity', 0)
+        .transition()
         .attr('opacity', function(d) {
             if(d.x > xmin && d.x < xmax) { return 0.25; }
             else { return 0; }
-        });
+        })
+        .duration(transt);
 
     var lines = d3.select("svg").select("g").selectAll('.lined3'+da)
         .data(data);
@@ -361,15 +380,44 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
                 return y(Math.max(d.y - d.statl, ymin));
             else { return 0; }
         })
-        .transition().duration(transt)
         .attr('stroke', thecolor)
         .attr('stroke-width', width/100.*0.3)
+        .attr('opacity', 0)
+        .transition()
         .attr('opacity', function(d) {
 	    if(d.x > xmin && d.x < xmax && (d.y - d.statl) < ymax && (d.y + d.stath) > ymin) { return 1; }
             else { return 0; }
-        });
-    ;
-
+        })
+        .duration(transt);
+    
+    var linevs = d3.select("svg").select("g").selectAll('.linevd3'+da)
+        .data(data);
+    linevs.enter()
+        .append('line')
+        .attr('class', 'linevd3' + da)
+        .merge(linevs)
+        .attr('x1', function(d) {
+            var low = x(d.xl);
+            if(low < 0) { low = 0; }
+            return low;
+        })
+        .attr('x2', function(d) {
+            var high = x(d.xh);
+            if(high > chartWidth) { high = chartWidth; }
+            return high;
+        })
+        .attr('y1', function(d) { return y(d.y); })
+        .attr('y2', function(d) { return y(d.y); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', width/100.*0.3)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin) { return document.getElementById('btnbinning').value; }
+            else { return 0; }
+        })
+        .duration(transt);
+    
     var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
         .data(data);
     if(kmarker==20) { m20(da, points, thecolor, transt); }
@@ -384,12 +432,14 @@ var m20 = function(da, point, thecolor, transt = 500)
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
         .attr('r', width/120.)
-        .transition().duration(transt)
-        .attr('fill', thecolor)
+            .attr('fill', thecolor)
+        .attr('opacity', 0)
+        .transition()
         .attr('opacity', function(d) {
             if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
             else { return 0; }
-        });
+        })
+        .duration(transt);
 };
 
 var drawall = function(transt = 500)
@@ -431,6 +481,7 @@ var draw = function(da, transt = 500)
     {
         d3.select("svg").select("g").selectAll('.rectd3'+da).remove();
         d3.select("svg").select("g").selectAll('.lined3'+da).remove();
+        d3.select("svg").select("g").selectAll('.linevd3'+da).remove();
         d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
 
         var thisitem = dataset[da];
@@ -440,6 +491,7 @@ var draw = function(da, transt = 500)
     {
         d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(transt);
+        d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
     }
 
@@ -464,6 +516,7 @@ function colorall(transt = 500)
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('fill', cc);
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('stroke', cc);
             d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
+            d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
             d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(transt);
 
             if(!document.getElementById("check_"+da).checked) continue;
@@ -491,6 +544,7 @@ function clearall()
         }
         d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(500);
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(500);
+        d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(500);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(500);
     }
     addref();
