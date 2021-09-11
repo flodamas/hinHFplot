@@ -1,3 +1,18 @@
+/////////////////////////////////////////////////////
+//  Type  rect  rectl  line  linev  rectv  rectvl  //
+//  0     1     0      1     1      0      0       //
+//  1     1     0      1     0      0      0       //
+//  2     1     1      1     0      0      0       //
+//  3     1     1      1     1      0      0       //
+//  4     0     1      1     1      0      0       //
+//  5     0     1      1     0      0      0       //
+//  6     0     0      1     0      1      0       //
+//  7     0     0      1     1      1      0       //
+//  8     0     0      1     1      1      1       //
+//  9     0     0      1     0      1      1       //
+//  10    0     0      1     0      0      1       //
+//  11    0     0      1     1      0      1       //
+/////////////////////////////////////////////////////
 
 var width, height;
 var svg;
@@ -302,22 +317,61 @@ var vlineopacity = function() {
     document.getElementById('btnvline').value = vo;
 }
 
-var binningopacity = function(transt = 500) {
-    var newopa = 1 - document.getElementById('btnbinning').value;
+var binningopacity = function(transt = 400) {
+    var next = {0 : 1, 1 : 2, 2 : 3, 3 : 4, 4 : 5, 5 : 6, 6 : 7, 7 : 8, 8 : 9, 9 : 10, 10 : 11, 11 : 0};
+    var newtype = next[document.getElementById('btnbinning').value];
+    document.getElementById('btnbinning').value = newtype;
     var checkb = document.getElementsByTagName("input");
     for(var i=0; i<checkb.length; i++)
     {
         if(checkb[i].type !== 'checkbox') continue;
      	if(!checkb[i].checked) continue;
         var da = checkb[i].id.replace("check_", "");
-        d3.select("svg").select("g").selectAll('.linevd3'+da).transition()
-            .attr('opacity', function(d) {
-                if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin) { return newopa; }
+        // rectd3
+        if(newtype >= 0 && newtype <= 3)
+            d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', function(d) {
+                if(d.x > xmin && d.x < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return 0.2; }
                 else { return 0; }
-            })
-            .duration(transt);
+            }).duration(transt);
+        else
+            d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(transt);
+
+        // rectld3
+        if(newtype >= 2 && newtype <= 5)
+            d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', function(d) {
+                if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax) { return 1; }
+                else { return 0; }
+            }).duration(transt);
+        else
+            d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(transt);            
+
+        // rectvd3
+        if(newtype >= 6 && newtype <= 9)
+            d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', function(d) {
+                if(d.xh > xmin && d.xl < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return 0.2; }
+                else { return 0; }
+            }).duration(transt);
+        else
+            d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', 0).duration(transt);
+
+        // rectvld3
+        if(newtype >= 8 && newtype <= 11)
+            d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', function(d) {
+                if(d.xh > xmin && d.xl < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return 1; }
+                else { return 0; }
+            }).duration(transt);
+        else
+            d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 0).duration(transt);
+
+        // linevd3
+        if(newtype == 0 || (newtype >= 3 && newtype <= 4) || (newtype >= 7 && newtype <= 8) || newtype == 11)
+            d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', function(d) {
+                if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin) { return 1; }
+                else { return 0; }
+            }).duration(transt);
+        else
+            d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(transt);
     }
-    document.getElementById('btnbinning').value = newopa;
 }
 
 var gridopacity = function(transt=500) {
@@ -357,7 +411,114 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
-            if(d.x > xmin && d.x < xmax) { return 0.25; }
+            if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 0 && document.getElementById('btnbinning').value <= 3) { return 0.2; }
+            else { return 0; }
+        })
+        .duration(transt);
+
+    var rectls = d3.select("svg").select("g").selectAll('.rectld3'+da)
+        .data(data);
+    rectls.enter()
+        .append('rect')
+        .attr('class', 'rectld3' + da)
+        .merge(rectls)
+        .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var low = x(d.x) - chartWidth/80.;
+            if(low < 0) { low = 0; }
+            var high = x(d.x) + chartWidth/80.;
+            if(high > chartWidth) { high = chartWidth; }
+            if(high > low) { return (high - low); }
+            else { return 0; }})
+        .attr('fill', 'transparent')
+        .attr('stroke', thecolor)
+        .attr('stroke-width', width/100.*0.3)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 2 && document.getElementById('btnbinning').value <= 5) { return 1; }
+            else { return 0; }
+        })
+        .duration(transt);
+
+    var rectvs = d3.select("svg").select("g").selectAll('.rectvd3'+da)
+        .data(data);
+    rectvs.enter()
+        .append('rect')
+        .attr('class', 'rectvd3' + da)
+        .merge(rectvs)
+        .attr('x', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            return Math.max(0, xlow); })
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            if(xlow < 0) { xlow = 0; }
+            var xhigh = x(d.xh);
+            if(d.xh == d.x) xhigh = x(d.x) + chartWidth/80.;
+            if(xhigh > chartWidth) { xhigh = chartWidth; }
+            if(xhigh > xlow) { return (xhigh - xlow); }
+            else { return 0; }})
+        .attr('fill', thecolor)
+        .attr('stroke', thecolor)
+        .attr('stroke-width', 0)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.xh > xmin && d.xl < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 6 && document.getElementById('btnbinning').value <= 9) { return 0.2; }
+            else { return 0; }
+        })
+        .duration(transt);
+
+    var rectvls = d3.select("svg").select("g").selectAll('.rectvld3'+da)
+        .data(data);
+    rectvls.enter()
+        .append('rect')
+        .attr('class', 'rectvld3' + da)
+        .merge(rectvls)
+        .attr('x', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            return Math.max(0, xlow); })
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            if(xlow < 0) { xlow = 0; }
+            var xhigh = x(d.xh);
+            if(d.xh == d.x) xhigh = x(d.x) + chartWidth/80.;
+            if(xhigh > chartWidth) { xhigh = chartWidth; }
+            if(xhigh > xlow) { return (xhigh - xlow); }
+            else { return 0; }})
+        .attr('fill', 'transparent')
+        .attr('stroke', thecolor)
+        .attr('stroke-width', width/100.*0.3)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.xh > xmin && d.xl < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 8 && document.getElementById('btnbinning').value <= 11) { return 1; }
             else { return 0; }
         })
         .duration(transt);
@@ -413,7 +574,11 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
-            if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin) { return document.getElementById('btnbinning').value; }
+            if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin &&
+               (document.getElementById('btnbinning').value == 0 ||
+                (document.getElementById('btnbinning').value >= 3 && document.getElementById('btnbinning').value <= 4) ||
+                (document.getElementById('btnbinning').value >= 7 && document.getElementById('btnbinning').value <= 8) ||
+                document.getElementById('btnbinning').value == 11)) { return 1; }
             else { return 0; }
         })
         .duration(transt);
@@ -432,7 +597,7 @@ var m20 = function(da, point, thecolor, transt = 500)
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
         .attr('r', width/120.)
-            .attr('fill', thecolor)
+        .attr('fill', thecolor)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
@@ -480,6 +645,9 @@ var draw = function(da, transt = 500)
     if(ichecked)
     {
         d3.select("svg").select("g").selectAll('.rectd3'+da).remove();
+        d3.select("svg").select("g").selectAll('.rectld3'+da).remove();
+        d3.select("svg").select("g").selectAll('.rectvd3'+da).remove();
+        d3.select("svg").select("g").selectAll('.rectvld3'+da).remove();
         d3.select("svg").select("g").selectAll('.lined3'+da).remove();
         d3.select("svg").select("g").selectAll('.linevd3'+da).remove();
         d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
@@ -490,6 +658,9 @@ var draw = function(da, transt = 500)
     else
     {
         d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(transt);
+        d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(transt);
+        d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', 0).duration(transt);
+        d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
@@ -515,6 +686,10 @@ function colorall(transt = 500)
 
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('fill', cc);
             d3.select("svg").select("g").selectAll('.rectd3'+da).attr('stroke', cc);
+            d3.select("svg").select("g").selectAll('.rectld3'+da).attr('stroke', cc);
+            d3.select("svg").select("g").selectAll('.rectvd3'+da).attr('fill', cc);
+            d3.select("svg").select("g").selectAll('.rectvd3'+da).attr('stroke', cc);
+            d3.select("svg").select("g").selectAll('.rectvld3'+da).attr('stroke', cc);
             d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
             d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
             d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(transt);
@@ -543,6 +718,9 @@ function clearall()
             da = checkb[i].id.replace("check_", "");
         }
         d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(500);
+        d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(500);
+        d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', 0).duration(500);
+        d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 0).duration(500);
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(500);
         d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(500);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(500);
