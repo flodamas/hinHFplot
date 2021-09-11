@@ -23,10 +23,16 @@
     --padding-input: 0.8vw;
     --height-slider: 0.9vw;
 
-    /*reference*/
+    /* reference */
     --ncol-reference: 2;
     --width-reference: 70%;
     --margin-reference: 20%;
+
+    /* updatelog */
+    --height-log: 4vw;
+    --width-log: 10vw;
+    --margin-log-right: 0.8vw;
+    --margin-log-top: 1.2vw;
 }
 
 /* transition */
@@ -168,4 +174,22 @@ tr:hover {
     border-radius: calc(var(--size-font-default)*0.25);
     display: block;
     z-index: 1;
+}
+
+#updatelog {
+    position: fixed;
+    padding: 0.5vw;
+    color: black;
+    background-color: #fbfbfb;
+    opacity: 0.8;
+    font-size: 0.8vw;
+    border-radius: calc(var(--size-font-default)*0.5);
+    display: block;
+    z-index: 1;
+    top: var(--margin-log-top);
+    right: var(--margin-log-right);
+    height: var(--height-log);
+    width: var(--width-log);
+    transition: opacity 0.5s;
+    cursor: pointer;
 }
