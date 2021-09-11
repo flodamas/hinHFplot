@@ -190,6 +190,6 @@ tr:hover {
     right: var(--margin-log-right);
     height: var(--height-log);
     width: var(--width-log);
-    transition: opacity 0.5s;
+    transition: all 0.5s;
     cursor: pointer;
 }
