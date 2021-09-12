@@ -2,7 +2,6 @@
 function keyfilter() {
     var input = document.getElementById('filterinput').value.toLowerCase();
     var lines = document.getElementsByTagName('tr');
-
     
     for(var i=0; i<lines.length; i++)
     {
@@ -30,13 +29,14 @@ function keyfilter() {
                 findmatch += " baryon";
             if(idd.indexOf("bplus") > -1 || idd.indexOf("bsubs") > -1 || idd.indexOf("b0") > -1 || idd.indexOf("bc") > -1)
                 findmatch += " beauty"
-        }
-        
+        }        
         if(idd.indexOf("bto") > -1)
             findmatch += " nonprompt beauty";
-
         let re = /cent-([0-9]+)-([0-9]+)/;
         findmatch = findmatch.replace(re, 'cent-$1-$2%');
+        var da = lines[i].id.replace("tr_", "");
+        if(document.getElementById('check_' + da).checked)
+            findmatch += " checked";
 
         if(input == "" || findmatch.indexOf(input) > -1) { lines[i].style.display = ""; }
         else { lines[i].style.display = "none"; }

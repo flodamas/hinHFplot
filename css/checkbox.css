@@ -26,6 +26,7 @@
     width: var(--size-checkmark);
     background-color: #eee;
     transition: background-color 0.5s;
+    border-radius: 30%;
 }
 
 .container:hover input:not(:checked) ~ .checkmark {
