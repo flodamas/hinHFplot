@@ -29,7 +29,6 @@
     --margin-reference: 20%;
 
     /* updatelog */
-    --height-log: 4vw;
     --width-log: 10vw;
     --margin-log-right: 0.8vw;
     --margin-log-top: 1.2vw;
@@ -188,7 +187,6 @@ tr:hover {
     z-index: 1;
     top: var(--margin-log-top);
     right: var(--margin-log-right);
-    height: var(--height-log);
     width: var(--width-log);
     transition: all 0.5s;
     cursor: pointer;
