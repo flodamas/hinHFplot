@@ -56,7 +56,7 @@ function loaditem()
         itchecklabel.appendChild(icheckmark);
         icheck.setAttribute('onchange', "draw('"+da+"'); legend('"+da+"'); document.getElementById('checkmark_' + '"+da+"').style = ''; ");
 
-        if(obs == "vn" || obs == "RpARAA")
+        if(obs == "vn")
         {
             var itobs = document.createElement("td");
             var iobs = document.createElement("span");
