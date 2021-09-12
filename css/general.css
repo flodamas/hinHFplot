@@ -191,3 +191,7 @@ tr:hover {
     transition: all 0.5s;
     cursor: pointer;
 }
+
+.myul {
+    padding-inline-start: 1.5vw;
+}
