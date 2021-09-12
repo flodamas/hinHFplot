@@ -29,8 +29,8 @@
     --margin-reference: 20%;
 
     /* updatelog */
-    --width-log: 10vw;
-    --margin-log-right: 0.8vw;
+    --width-log: 10.5vw;
+    --margin-log-right: 1.2vw;
     --margin-log-top: 1.2vw;
 }
 
@@ -177,7 +177,7 @@ tr:hover {
 
 #updatelog {
     position: fixed;
-    padding: 0.5vw;
+    padding: 0.6vw 0.1vw 0vw 0.5vw;
     color: black;
     background-color: #fbfbfb;
     opacity: 0.8;
@@ -188,8 +188,18 @@ tr:hover {
     top: var(--margin-log-top);
     right: var(--margin-log-right);
     width: var(--width-log);
-    transition: all 0.5s;
+    transition: all .4s;
+}
+
+#updatelogx {
+    position: absolute;
+    top: 0.05vw;
+    right: 0.4vw;
+    color: black;
+    z-index: 1;
+    font-size: 0.9vw;
     cursor: pointer;
+    transition: all .4s;
 }
 
 .myul {

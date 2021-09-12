@@ -129,14 +129,16 @@
       <div id="clipboard"> </div>
     </div>
 
-    <div id="updatelog" onclick="this.style.opacity = 0; this.style.cursor = 'default';">
+    <div id="updatelog">
       <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update log (Sep 11): </br>
       <ul class="myul">
         <li>Multiple display styles</li>
         <li>"Checked only" option</li>
       </ul>
+      <div id="updatelogx" style="font-weight : bold;" onclick="this.style.opacity = 0; this.style.cursor = 'default'; document.getElementById('updatelog').style.opacity = 0;">
+        &times; 
+      </div>      
     </div>
-    <div id="updatelogx"> </div>
 
   </body>
 </html>
