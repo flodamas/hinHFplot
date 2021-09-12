@@ -35,7 +35,9 @@ function keyfilter() {
         let re = /cent-([0-9]+)-([0-9]+)/;
         findmatch = findmatch.replace(re, 'cent-$1-$2%');
 
-        if(input == "" || findmatch.indexOf(input) > -1) { lines[i].style.display = ""; }
+        if((input == "" || findmatch.indexOf(input) > -1) &&
+           (document.getElementById('btncheckedonly').value == 0 || document.getElementById(lines[i].id.replace('tr_', 'check_')).checked))
+            lines[i].style.display = ""; 
         else { lines[i].style.display = "none"; }
     }
 }
