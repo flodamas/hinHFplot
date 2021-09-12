@@ -34,11 +34,35 @@ function keyfilter() {
             findmatch += " nonprompt beauty";
         let re = /cent-([0-9]+)-([0-9]+)/;
         findmatch = findmatch.replace(re, 'cent-$1-$2%');
-        var da = lines[i].id.replace("tr_", "");
-        if(document.getElementById('check_' + da).checked)
-            findmatch += " checked";
 
         if(input == "" || findmatch.indexOf(input) > -1) { lines[i].style.display = ""; }
         else { lines[i].style.display = "none"; }
+    }
+}
+
+function checkedonly() {
+
+    var lines = document.getElementsByTagName('tr');
+    var btncheck = document.getElementById('btncheckedonly');
+    var checkonly = 1 - btncheck.value;
+    btncheck.value = checkonly;
+
+    if(btncheck.value == 1)
+    {
+        btncheck.style.backgroundColor = "#1f77b4";
+	btncheck.style.color = "white";
+    }
+    else
+    {
+        btncheck.style.backgroundColor = "#f5f5f5";
+	btncheck.style.color = "black";
+    }
+    
+    for(var i=0; i<lines.length; i++)
+    {
+        var da = lines[i].id.replace("tr_", "");
+        if(checkonly == 0) lines[i].style.display = "";
+        else if(document.getElementById('check_' + da).checked) {  lines[i].style.display = ""; }
+        else {  lines[i].style.display = "none"; }
     }
 }

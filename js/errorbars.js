@@ -64,7 +64,7 @@ function changerangewlog()
 var setscale = function()
 {
     width = document.getElementById('rightpad').clientWidth*0.93;
-    height = width * 0.695;
+    height = width * 0.72;
 
     svg = d3.select('svg').attr('width', width).attr('height', height)
         .attr('font-family', 'sans-serif')
@@ -117,13 +117,13 @@ var drawaxisgrid = function()
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "grid")
         .attr('opacity', document.getElementById('btngrid').value)
-        .attr('stroke-width', width/100.*0.25)
+        .attr('stroke-width', width/100.*0.24)
         .call( d3.axisBottom(x).tickSize(-chartHeight).ticks(ticksx).tickFormat("").tickSizeOuter(0) );
     var yGrid = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "grid")
         .attr('opacity', document.getElementById('btngrid').value)
-        .attr('stroke-width', width/100.*0.25)
+        .attr('stroke-width', width/100.*0.24)
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
 
     var obs = document.getElementById('observable').value;
@@ -143,7 +143,7 @@ var drawaxisgrid = function()
             .attr('y2', function() { return y(vy); })
             .attr('stroke', '#000')
             .attr('stroke-dasharray', '5,3')
-            .attr('stroke-width', width/100.*0.25)
+            .attr('stroke-width', width/100.*0.24)
             .attr('opacity', document.getElementById('btnvline').value);
     }
 
@@ -407,7 +407,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             else { return 0; }})
         .attr('fill', thecolor)
         .attr('stroke', thecolor)
-        .attr('stroke-width', width/100.*0.3)
+        .attr('stroke-width', 0)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
@@ -439,7 +439,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             else { return 0; }})
         .attr('fill', 'transparent')
         .attr('stroke', thecolor)
-        .attr('stroke-width', width/100.*0.3)
+        .attr('stroke-width', width/100.*0.25)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
@@ -513,7 +513,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             else { return 0; }})
         .attr('fill', 'transparent')
         .attr('stroke', thecolor)
-        .attr('stroke-width', width/100.*0.3)
+        .attr('stroke-width', width/100.*0.25)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
@@ -542,7 +542,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             else { return 0; }
         })
         .attr('stroke', thecolor)
-        .attr('stroke-width', width/100.*0.3)
+        .attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
@@ -570,7 +570,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         .attr('y1', function(d) { return y(d.y); })
         .attr('y2', function(d) { return y(d.y); })
         .attr('stroke', thecolor)
-        .attr('stroke-width', width/100.*0.3)
+        .attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
