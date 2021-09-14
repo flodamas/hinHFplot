@@ -9,7 +9,7 @@ function clearitems()
     // console.log(document.getElementsByTagName('tr'));
 }
 
-function loaditem()
+function loaditem(nomarkerpicker = 0)
 {
     var datainput = document.getElementById('datainput');
     clearitems();
@@ -29,7 +29,7 @@ function loaditem()
 	    (obs == "RpARAA" && (thisitem.observable == "RpA" || thisitem.observable == "RAA")) ||
 	    (obs == "DsToD" && (thisitem.observable == "DsToD0" || thisitem.observable == "DsToDplusmn" || thisitem.observable == "DsToDstar")) ||
 	    (obs == "Ratio" && thisitem.observable.includes("To")) ||
-      (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||
+            (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||
             false;
 
         if(!ifdrawx || !ifdrawy) { continue; }
@@ -98,10 +98,24 @@ function loaditem()
         icolor.id = "color_" + da;
         icolor.value = "#" + Math.floor(Math.random()*16777215).toString(16);
         icolor.setAttribute('class', 'colorpicker');
-        icolor.setAttribute('onchange', "draw('" + da + "'); relegend('" + da + "'); ");
+        icolor.setAttribute('onchange', "changeone('" + da + "', 0); ");
         itcolor.appendChild(icolor);
+        
+        var itmarker = document.createElement("td");
+        iline.appendChild(itmarker);
+        var imarker = document.createElement("select");
+        for(var key of vorders) {
+            var opt = document.createElement('option');
+            opt.value = key;
+            opt.innerHTML = vopt[key];
+            imarker.appendChild(opt);
+        }
+        imarker.id = "marker_" + da;
+        imarker.setAttribute('class', 'markerpicker');
+        imarker.setAttribute('onchange', "changeone('" + da + "', 1, 0); ");
+        itmarker.appendChild(imarker);
+        if(nomarkerpicker == 1) itmarker.style.display = 'none';
 
-        // iline.setAttribute('onclick', "checkthis('"+da+"')");
         // itcheck.setAttribute('onclick', "checkthis('"+da+"')");
         itparticle.setAttribute('onclick', "checkthis('"+da+"')");
         itcollision.setAttribute('onclick', "checkthis('"+da+"')");

@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="description" content="A compilation tool of heavy flavor measurements in heavy ion collisions.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/general_m.css">
     <link rel="stylesheet" href="css/basis.css">
     <link rel="stylesheet" href="css/checkbox.css">
     <link rel="stylesheet" href="css/input.css">
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/svg.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
@@ -33,7 +33,7 @@
       <div id="setup">
         <div>
           <p>Observable:</p>
-          <select id="observable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
+          <select id="observable" onchange="defaultrange(); loaditem(1); drawallnoleg();" class="custom-select">
             <option value="RAA">RAA</option>
             <option value="RpA">RpA</option>
             <option value="RpARAA">RpA, RAA</option>
@@ -45,7 +45,7 @@
             <option value="DoubleRatio">Double ratio</option>
           </select>
           <p>vs.</p>
-          <select id="xvariable" onchange="defaultrange(); loaditem(); drawallnoleg();" class="custom-select">
+          <select id="xvariable" onchange="defaultrange(); loaditem(1); drawallnoleg();" class="custom-select">
             <option value="pT">pT</option>
             <option value="y">y</option>
             <option value="absy">|y|</option>
@@ -70,7 +70,7 @@
         <div>
           <button type="submit" onclick="clearall()">Clear all</button>
           <button type="submit" onclick="colorall(); ">Random color</button>
-          <button type="submit" id="btncheckedonly" class="btncheck" value="6" onclick="checkedonly()">Checked only</button>
+          <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="checkedonly()">Checked only</button>
           <p><i class="fas fa-filter" style="color: #eee"></i></p>
           <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton">
         </div>
@@ -79,11 +79,12 @@
       <div id="data">
         <table id="datainput"></table>
       </div>
+      <script src="js/markers.js"></script>
       <script src="js/loaditem.js"></script>
       <script src="js/general.js"></script>
       <script src="js/filter.js"></script>
       <script>defaultrange()</script>
-      <script>loaditem()</script>
+      <script>loaditem(1)</script>
     </div>
     <!-- <script>loadtoc()</script> -->
 
@@ -106,7 +107,7 @@
         </div>
         <div id="descholder">
           <div id="desc">
-            <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value="0">Display Style</button>
+            <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value="6">Display Style</button>
             <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Unity/Zero</button>
 	    <button type="submit" id="btngrid" onclick="gridopacity(); " value="0.5">Grid</button>
             <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>

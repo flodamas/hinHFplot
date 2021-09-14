@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="description" content="A compilation tool of heavy flavor measurements in heavy ion collisions.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/basis.css">
     <link rel="stylesheet" href="css/checkbox.css">
     <link rel="stylesheet" href="css/input.css">
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/svg.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
@@ -20,7 +20,6 @@
     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
     <script src="datasets/dataset.js"></script>
     <script>
-      // if(screen.width/screen.height < 1) {
       if(window.innerWidth/window.innerHeight <= 1) {
           window.location = "index_m.html";
       }
@@ -58,13 +57,15 @@
             <option value="cent">Centrality</option>
           </select>
         </div>
-        <div>X-axis range:
+        <div>
+          <p>X-axis range:</p>
           <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawallwleg(0);">
           <p> - </p>
           <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="drawallwleg(0);">
           <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
         </div>
-        <div>Y-axis range:
+        <div>
+          <p>Y-axis range:</p>
           <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="drawallwleg(0);">
           <p> - </p>
           <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="drawallwleg(0);">
@@ -75,13 +76,14 @@
           <button type="submit" class="btnaction" onclick="colorall(); ">Random color</button>
           <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="checkedonly()">Checked only</button>
           <p><i class="fas fa-filter" style="color: #eee"></i></p>
-          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton">
+          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton" value="">
         </div>
       </div>
 
       <div id="data">
         <table id="datainput"></table>
       </div>
+      <script src="js/markers.js"></script>
       <script src="js/loaditem.js"></script>
       <script src="js/general.js"></script>
       <script src="js/filter.js"></script>
@@ -130,6 +132,10 @@
     </div>
 
     <div id="updatelog">
+      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 14): </br>
+      <ul class="myul">
+        <li>Multiple marker styles</li>
+      </ul>
       <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 12): </br>
       <ul class="myul">
         <li>Add observable "RpA, RAA"</li>

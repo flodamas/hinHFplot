@@ -26,6 +26,8 @@ var x0, y0, dy;
 var legs = [];
 // <-- legend
 
+var shadowopacity = 0.12;
+
 var checklogx = function()
 {
     return (document.getElementById('logx').value == 1);
@@ -330,7 +332,7 @@ var binningopacity = function(transt = 400) {
         // rectd3
         if(newtype >= 0 && newtype <= 3)
             d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', function(d) {
-                if(d.x > xmin && d.x < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return 0.2; }
+                if(d.x > xmin && d.x < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return shadowopacity; }
                 else { return 0; }
             }).duration(transt);
         else
@@ -348,7 +350,7 @@ var binningopacity = function(transt = 400) {
         // rectvd3
         if(newtype >= 6 && newtype <= 9)
             d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', function(d) {
-                if(d.xh > xmin && d.xl < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return 0.2; }
+                if(d.xh > xmin && d.xl < xmax && d.y - d.systl < ymax && d.y + d.systh > ymin) { return shadowopacity; }
                 else { return 0; }
             }).duration(transt);
         else
@@ -385,38 +387,7 @@ var gridopacity = function(transt=500) {
 
 var addData = function(da, data, thecolor, kmarker, transt = 500) {
 
-    var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
-        .data(data);
-    rects.enter()
-        .append('rect')
-        .attr('class', 'rectd3' + da)
-        .merge(rects)
-        .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
-        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
-        .attr('height', function(d) {
-            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
-                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
-            else { return 0; }
-        })
-        .attr('width', function(d) {
-            var low = x(d.x) - chartWidth/80.;
-            if(low < 0) { low = 0; }
-            var high = x(d.x) + chartWidth/80.;
-            if(high > chartWidth) { high = chartWidth; }
-            if(high > low) { return (high - low); }
-            else { return 0; }})
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-        .attr('stroke-width', 0)
-        .attr('opacity', 0)
-        .transition()
-        .attr('opacity', function(d) {
-            if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
-               document.getElementById('btnbinning').value >= 0 && document.getElementById('btnbinning').value <= 3) { return 0.2; }
-            else { return 0; }
-        })
-        .duration(transt);
-
+    // Narrow outline
     var rectls = d3.select("svg").select("g").selectAll('.rectld3'+da)
         .data(data);
     rectls.enter()
@@ -449,43 +420,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         })
         .duration(transt);
 
-    var rectvs = d3.select("svg").select("g").selectAll('.rectvd3'+da)
-        .data(data);
-    rectvs.enter()
-        .append('rect')
-        .attr('class', 'rectvd3' + da)
-        .merge(rectvs)
-        .attr('x', function(d) {
-            var xlow = x(d.xl);
-            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
-            return Math.max(0, xlow); })
-        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
-        .attr('height', function(d) {
-            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
-                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
-            else { return 0; }
-        })
-        .attr('width', function(d) {
-            var xlow = x(d.xl);
-            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
-            if(xlow < 0) { xlow = 0; }
-            var xhigh = x(d.xh);
-            if(d.xh == d.x) xhigh = x(d.x) + chartWidth/80.;
-            if(xhigh > chartWidth) { xhigh = chartWidth; }
-            if(xhigh > xlow) { return (xhigh - xlow); }
-            else { return 0; }})
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-        .attr('stroke-width', 0)
-        .attr('opacity', 0)
-        .transition()
-        .attr('opacity', function(d) {
-            if(d.xh > xmin && d.xl < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
-               document.getElementById('btnbinning').value >= 6 && document.getElementById('btnbinning').value <= 9) { return 0.2; }
-            else { return 0; }
-        })
-        .duration(transt);
-
+    // Wide outline
     var rectvls = d3.select("svg").select("g").selectAll('.rectvld3'+da)
         .data(data);
     rectvls.enter()
@@ -523,6 +458,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         })
         .duration(transt);
 
+    // Error line
     var lines = d3.select("svg").select("g").selectAll('.lined3'+da)
         .data(data);
     lines.enter()
@@ -550,7 +486,8 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             else { return 0; }
         })
         .duration(transt);
-    
+
+    // Horizontal line
     var linevs = d3.select("svg").select("g").selectAll('.linevd3'+da)
         .data(data);
     linevs.enter()
@@ -582,22 +519,214 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
             else { return 0; }
         })
         .duration(transt);
-    
+
+    addDataPoints(da, data, thecolor, kmarker, transt);
+}
+
+var addDataPoints = function(da, data, thecolor, kmarker, transt = 500) {
+    // Marker
     var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
         .data(data);
     if(kmarker==20) { m20(da, points, thecolor, transt); }
+    if(kmarker==21) { m21(da, points, thecolor, transt); }
+    if(kmarker==24) { m24(da, points, thecolor, transt); }
+    if(kmarker==25) { m25(da, points, thecolor, transt); }
+    if(kmarker==33) { m33(da, points, thecolor, transt); }
+    if(kmarker==27) { m27(da, points, thecolor, transt); }
+
+    // Narrow shadow
+    var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
+        .data(data);
+    rects.enter()
+        .append('rect')
+        .attr('class', 'rectd3' + da)
+        .merge(rects)
+        .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var low = x(d.x) - chartWidth/80.;
+            if(low < 0) { low = 0; }
+            var high = x(d.x) + chartWidth/80.;
+            if(high > chartWidth) { high = chartWidth; }
+            if(high > low) { return (high - low); }
+            else { return 0; }})
+        .attr('fill', thecolor)
+        .attr('stroke-width', 0)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 0 && document.getElementById('btnbinning').value <= 3) { return shadowopacity; }
+            else { return 0; }
+        })
+        .duration(transt);
+
+    // Wide shadow
+    var rectvs = d3.select("svg").select("g").selectAll('.rectvd3'+da)
+        .data(data);
+    rectvs.enter()
+        .append('rect')
+        .attr('class', 'rectvd3' + da)
+        .merge(rectvs)
+        .attr('x', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            return Math.max(0, xlow); })
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            if(xlow < 0) { xlow = 0; }
+            var xhigh = x(d.xh);
+            if(d.xh == d.x) xhigh = x(d.x) + chartWidth/80.;
+            if(xhigh > chartWidth) { xhigh = chartWidth; }
+            if(xhigh > xlow) { return (xhigh - xlow); }
+            else { return 0; }})
+        .attr('fill', thecolor)
+        .attr('stroke-width', 0)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.xh > xmin && d.xl < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 6 && document.getElementById('btnbinning').value <= 9) { return shadowopacity; }
+            else { return 0; }
+        })
+        .duration(transt);
 };
 
 var m20 = function(da, point, thecolor, transt = 500)
 {
+    var lsize = width/120.;
     point.enter()
         .append('circle')
         .attr('class', 'pointd3' + da)
         .merge( point )
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
-        .attr('r', width/120.)
+        .attr('r', lsize)
         .attr('fill', thecolor)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
+            else { return 0; }
+        })
+        .duration(transt);
+};
+
+var m24 = function(da, point, thecolor, transt = 500)
+{
+    var lsize = width/120./1.1;
+    point.enter()
+        .append('circle')
+        .attr('class', 'pointd3' + da)
+        .merge( point )
+        .attr('cx', function(d) { return x(d.x); })
+        .attr('cy', function(d) { return y(d.y); })
+        .attr('r', lsize)
+        .attr('fill', 'white')
+        .attr('stroke', thecolor)
+        .attr('stroke-width', width/100.*0.27)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
+            else { return 0; }
+        })
+        .duration(transt);
+};
+
+var m21 = function(da, point, thecolor, transt = 500)
+{
+    var lsize = width/70.;
+    point.enter()
+        .append('rect')
+        .attr('class', 'pointd3' + da)
+        .merge( point )
+        .attr('x', function(d) { return x(d.x) - lsize/2.; })
+        .attr('y', function(d) { return y(d.y) - lsize/2.; })
+        .attr('width', lsize)
+        .attr('height', lsize)
+        .attr('fill', thecolor)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
+            else { return 0; }
+        })
+        .duration(transt);
+};
+
+var m25 = function(da, point, thecolor, transt = 500)
+{
+    var lsize = width/70./1.1;
+    point.enter()
+        .append('rect')
+        .attr('class', 'pointd3' + da)
+        .merge( point )
+        .attr('x', function(d) { return x(d.x) - lsize/2.; })
+        .attr('y', function(d) { return y(d.y) - lsize/2.; })
+        .attr('width', lsize)
+        .attr('height', lsize)
+        .attr('fill', 'white')
+        .attr('stroke', thecolor)
+	.attr('stroke-width', width/100.*0.27)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
+            else { return 0; }
+        })
+        .duration(transt);
+};
+
+var m33 = function(da, point, thecolor, transt = 500)
+{
+    var lsize = width/70./1.1;
+    point.enter()
+        .append('rect')
+        .attr('class', 'pointd3' + da)
+        .merge( point )
+        .attr('x', function(d) { return x(d.x) - lsize/2.; })
+        .attr('y', function(d) { return y(d.y) - lsize/2.; })
+        .attr('width', lsize)
+        .attr('height', lsize)
+        .attr('transform', function(d) { return "rotate(45, "+x(d.x)+","+y(d.y)+")"; })
+        .attr('fill', thecolor)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y > ymin && d.y < ymax) { return 1; }
+            else { return 0; }
+        })
+        .duration(transt);
+};
+
+var m27 = function(da, point, thecolor, transt = 500)
+{
+    var lsize = width/70./1.1;
+    point.enter()
+        .append('rect')
+        .attr('class', 'pointd3' + da)
+        .merge( point )
+        .attr('x', function(d) { return x(d.x) - lsize/2.; })
+        .attr('y', function(d) { return y(d.y) - lsize/2.; })
+        .attr('width', lsize)
+        .attr('height', lsize)
+        .attr('transform', function(d) { return "rotate(45, "+x(d.x)+","+y(d.y)+")"; })
+        .attr('fill', 'white')
+        .attr('stroke', thecolor)
+	.attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
         .transition()
         .attr('opacity', function(d) {
@@ -620,7 +749,7 @@ var drawall = function(transt = 500)
             if(!checkb[i].checked) continue;
             var da = checkb[i].id.replace("check_", "");
             var thisitem = dataset[da];
-            addData(da, thisitem.data, document.getElementById('color_'+da).value, 20, transt);
+            addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
         }
     }
 
@@ -653,7 +782,7 @@ var draw = function(da, transt = 500)
         d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
 
         var thisitem = dataset[da];
-        addData(da, thisitem.data, document.getElementById('color_'+da).value, 20);
+        addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value);
     }
     else
     {
@@ -669,6 +798,40 @@ var draw = function(da, transt = 500)
     addref();
 }
 
+function changeone(da, changemarker, transt = 500)
+{
+    if(document.getElementById('check_' + da).checked)
+    {
+        var mmarker = document.getElementById("marker_"+da).value;
+        var cc = document.getElementById("color_"+da).value;
+
+        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('fill', cc).duration(transt);
+        d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('stroke', cc).duration(transt);
+        d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('fill', cc).duration(transt);
+        d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('stroke', cc).duration(transt);
+        d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
+        d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
+
+        if(changemarker==0)
+        {
+            if(mmarker==24 || mmarker==25 || mmarker==27)
+                d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('stroke', cc).duration(transt);
+            else
+                d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(transt);
+        }
+        else
+        {
+            d3.select("svg").select("g").selectAll('.rectd3'+da).remove();
+            d3.select("svg").select("g").selectAll('.rectvd3'+da).remove();
+            d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
+            var thisitem = dataset[da];
+            addDataPoints(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
+        }
+        
+        relegend(da, transt);
+    }
+}
+
 function colorall(transt = 500)
 {
     var colorb = document.getElementsByTagName("input");
@@ -682,20 +845,8 @@ function colorall(transt = 500)
             if(ccl < 6)
             { for(var ic = 0; ic<(6-ccl); ic++) { cc = '0' + cc; } }
             cc = '#' + cc;
-            colorb[i].value = cc;
-
-            d3.select("svg").select("g").selectAll('.rectd3'+da).attr('fill', cc);
-            d3.select("svg").select("g").selectAll('.rectd3'+da).attr('stroke', cc);
-            d3.select("svg").select("g").selectAll('.rectld3'+da).attr('stroke', cc);
-            d3.select("svg").select("g").selectAll('.rectvd3'+da).attr('fill', cc);
-            d3.select("svg").select("g").selectAll('.rectvd3'+da).attr('stroke', cc);
-            d3.select("svg").select("g").selectAll('.rectvld3'+da).attr('stroke', cc);
-            d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
-            d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
-            d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).duration(transt);
-
-            if(!document.getElementById("check_"+da).checked) continue;
-            d3.select("svg").select("#legendmark_"+da).transition().style('fill', cc).duration(transt);
+            document.getElementById('color_'+da).value = cc;
+            changeone(da, 0, transt);
         }
     }
 
@@ -833,6 +984,7 @@ function legend(da, trans = 500)
             .attr("x", x0)
             .attr("y", ynow)
             .attr("class", "legend")
+            .attr("dominant-baseline", "central")
             .attr("id", "legend_" + da)
             .attr('opacity', '0')
 	    .style("text-anchor", "start");
@@ -840,7 +992,7 @@ function legend(da, trans = 500)
             .attr("class", "legendmark")
             .attr("id", "legendmark_" + da)
             .style("fill", document.getElementById('color_'+da).value)
-            .text(decodehtml("&#9679; "));
+            .text(decodehtml(voptlegend[document.getElementById('marker_'+da).value]+" "));
         legenditem(tlegend, thisitem);
         tlegend.transition().attr('opacity', opa_legend).duration(trans);
     }
@@ -849,11 +1001,13 @@ function legend(da, trans = 500)
 function relegend(da, transt = 500) // change color
 {
     var icheck = document.getElementById('check_' + da);
-    var cc = document.getElementById('color_' + da).value;
     // var ileg = d3.select('svg').select('#legend_' + da);
     if(icheck.checked)
     {
-        d3.select("svg").select("#legendmark_"+da).transition().style('fill', cc).duration(transt);
+        d3.select("svg").select("#legendmark_"+da).transition()
+            .style("fill", document.getElementById('color_'+da).value)
+            .text(decodehtml(voptlegend[document.getElementById('marker_'+da).value]+" "))
+            .duration(transt);
     }
 }
 
