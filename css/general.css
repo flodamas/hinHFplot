@@ -3,7 +3,7 @@
     --color-default: black;
     --width-leftrange: 48vw;
     --size-font-header: 1.2vw;
-    --size-font-default: 0.9vw;
+    --size-font-default: 0.90vw;
     --size-font-desc: 1vw;
     --size-font-footer: 1vw;
     --height-footer: 1.1vw;
@@ -21,7 +21,7 @@
     --height-margin-input: 0.3vw;
     --width-input: 5vw;
     --padding-input: 0.8vw;
-    --height-slider: 1.0vw;
+    --height-slider: 0.9vw;
 
     /* reference */
     --ncol-reference: 2;
