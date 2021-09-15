@@ -50,7 +50,7 @@ input[type=range] {
 
 .slider {
     -webkit-appearance: none;
-    width: 30%;
+    width: 25%;
     height: var(--height-slider);
     border-radius: calc(var(--height-slider)*0.33);
     background: #f5f5f5;
@@ -70,14 +70,18 @@ input[type=range] {
     appearance: none;
     width: calc(var(--height-slider)*1.0);
     height: calc(var(--height-slider)*1.0);
-    border-radius: 33%; 
-    background: var(--color-default);
+    border-radius: 15%; 
+    border: 0.14vw dashed var(--color-default);
+    background: white;
+    /* background-image: radial-gradient(var(--color-default) 20%, white 20%); */
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .slider::-webkit-slider-thumb:hover {
-    background: #1f77b4;
-    transition: background .2s;
+    background-image: radial-gradient(white 30%, #1f77b4 30%);
+    border: 0.14vw solid #1f77b4;
+    border-radius: 50%; 
 }
 
 input[type=text] {
