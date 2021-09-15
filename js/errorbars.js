@@ -28,6 +28,29 @@ var legs = [];
 
 var shadowopacity = 0.12;
 
+var xoverflow = function(x)
+{
+    var val = Math.min(x, chartWidth);
+    val = Math.max(val, 0);
+    return val;
+}
+var yoverflow = function(y)
+{
+    var val = Math.min(y, chartHeight);
+    val = Math.max(val, 0);
+    console.log(y, " ==> " , val, " (", chartHeight, ")")
+    return val;
+}
+var xthrow = function(x)
+{
+    if(x >=0 && x <= chartWidth) return x;
+    else return 0-chartWidth*2;
+}
+var ythrow = function(y)
+{
+    if(y >=0 && y <= chartHeight) return y;
+    else return 0-chartHeight*2;
+}
 var checklogx = function()
 {
     return (document.getElementById('logx').value == 1);
@@ -384,8 +407,76 @@ var gridopacity = function(transt=500) {
     document.getElementById('btngrid').value = newopa;
 }
 
-
 var addData = function(da, data, thecolor, kmarker, transt = 500) {
+
+    // Narrow shadow
+    var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
+        .data(data);
+    rects.enter()
+        .append('rect')
+        .attr('class', 'rectd3' + da)
+        .merge(rects)
+        .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var low = x(d.x) - chartWidth/80.;
+            if(low < 0) { low = 0; }
+            var high = x(d.x) + chartWidth/80.;
+            if(high > chartWidth) { high = chartWidth; }
+            if(high > low) { return (high - low); }
+            else { return 0; }})
+        .attr('fill', thecolor)
+        .attr('stroke-width', 0)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 0 && document.getElementById('btnbinning').value <= 3) { return shadowopacity; }
+            else { return 0; }
+        })
+        .duration(transt);
+
+    // Wide shadow
+    var rectvs = d3.select("svg").select("g").selectAll('.rectvd3'+da)
+        .data(data);
+    rectvs.enter()
+        .append('rect')
+        .attr('class', 'rectvd3' + da)
+        .merge(rectvs)
+        .attr('x', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            return Math.max(0, xlow); })
+        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
+        .attr('height', function(d) {
+            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
+                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
+            else { return 0; }
+        })
+        .attr('width', function(d) {
+            var xlow = x(d.xl);
+            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
+            if(xlow < 0) { xlow = 0; }
+            var xhigh = x(d.xh);
+            if(d.xh == d.x) xhigh = x(d.x) + chartWidth/80.;
+            if(xhigh > chartWidth) { xhigh = chartWidth; }
+            if(xhigh > xlow) { return (xhigh - xlow); }
+            else { return 0; }})
+        .attr('fill', thecolor)
+        .attr('stroke-width', 0)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', function(d) {
+            if(d.xh > xmin && d.xl < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
+               document.getElementById('btnbinning').value >= 6 && document.getElementById('btnbinning').value <= 9) { return shadowopacity; }
+            else { return 0; }
+        })
+        .duration(transt);
 
     // Narrow outline
     var rectls = d3.select("svg").select("g").selectAll('.rectld3'+da)
@@ -458,69 +549,91 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
         })
         .duration(transt);
 
+    addDataLines(da, data, thecolor, transt);
+    addDataPoints(da, data, thecolor, kmarker, transt);
+}
+
+var addDataLines = function(da, data, thecolor, transt = 500) {
+    var kmarker = document.getElementById('marker_'+da).value;
+    var delta = width/140.;
+    // var delta = width/120.;
+    // if(kmarker == 21 || kmarker == 25) delta = width/70./2.;
+    // if(kmarker == 33 || kmarker == 27) delta = width/70./2.*1.4142;
+
     // Error line
     var lines = d3.select("svg").select("g").selectAll('.lined3'+da)
         .data(data);
+    // --> error line 1
     lines.enter()
         .append('line')
         .attr('class', 'lined3' + da)
         .merge(lines)
-        .attr('x1', function(d) { return x(d.x); })
-        .attr('x2', function(d) { return x(d.x); })
-        .attr('y1', function(d) {
-            if((d.y - d.statl) < ymax && (d.y + d.stath) > ymin)
-                return y(Math.min(d.y + d.stath, ymax));
-            else { return 0; }
-        })
-        .attr('y2', function(d) {
-            if((d.y - d.statl) < ymax && (d.y + d.stath) > ymin)
-                return y(Math.max(d.y - d.statl, ymin));
-            else { return 0; }
-        })
+        .attr('x1', function(d) { return xthrow(x(d.x)); })
+        .attr('x2', function(d) { return xthrow(x(d.x)); })
+        .attr('y1', function(d) { return yoverflow( y(d.y + d.stath) ); })
+        .attr('y2', function(d) { return yoverflow( Math.max(y(d.y) - delta, y(d.y + d.stath)) ); })
         .attr('stroke', thecolor)
         .attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
         .transition()
-        .attr('opacity', function(d) {
-	    if(d.x > xmin && d.x < xmax && (d.y - d.statl) < ymax && (d.y + d.stath) > ymin) { return 1; }
-            else { return 0; }
-        })
+        .attr('opacity', 1)
+        .duration(transt);
+    // --> error line 2
+    lines.enter()
+        .append('line')
+        .attr('class', 'lined3' + da)
+        .merge(lines)
+        .attr('x1', function(d) { return xthrow(x(d.x)); })
+        .attr('x2', function(d) { return xthrow(x(d.x)); })
+        .attr('y1', function(d) { return yoverflow( Math.min(y(d.y) + delta, y(d.y - d.statl)) ); })
+        .attr('y2', function(d) { return yoverflow( y(d.y - d.statl) ); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', width/100.*0.27)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', 1)
         .duration(transt);
 
     // Horizontal line
+    var drawbinning = function() {
+        if((document.getElementById('btnbinning').value == 0 ||
+            (document.getElementById('btnbinning').value >= 3 && document.getElementById('btnbinning').value <= 4) ||
+            (document.getElementById('btnbinning').value >= 7 && document.getElementById('btnbinning').value <= 8) ||
+            document.getElementById('btnbinning').value == 11)) return 1;
+        else return 0;
+    }
     var linevs = d3.select("svg").select("g").selectAll('.linevd3'+da)
         .data(data);
+    // --> horizontal line 1
     linevs.enter()
         .append('line')
         .attr('class', 'linevd3' + da)
         .merge(linevs)
-        .attr('x1', function(d) {
-            var low = x(d.xl);
-            if(low < 0) { low = 0; }
-            return low;
-        })
-        .attr('x2', function(d) {
-            var high = x(d.xh);
-            if(high > chartWidth) { high = chartWidth; }
-            return high;
-        })
-        .attr('y1', function(d) { return y(d.y); })
-        .attr('y2', function(d) { return y(d.y); })
+        .attr('x1', function(d) { return xoverflow( x(d.xl) ); })
+        .attr('x2', function(d) { return xoverflow( Math.max(x(d.x) - delta, x(d.xl)) ); })
+        .attr('y1', function(d) { return ythrow(y(d.y)); })
+        .attr('y2', function(d) { return ythrow(y(d.y)); })
         .attr('stroke', thecolor)
         .attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
         .transition()
-        .attr('opacity', function(d) {
-            if(d.xh > xmin && d.xl < xmax && d.y < ymax && d.y > ymin &&
-               (document.getElementById('btnbinning').value == 0 ||
-                (document.getElementById('btnbinning').value >= 3 && document.getElementById('btnbinning').value <= 4) ||
-                (document.getElementById('btnbinning').value >= 7 && document.getElementById('btnbinning').value <= 8) ||
-                document.getElementById('btnbinning').value == 11)) { return 1; }
-            else { return 0; }
-        })
+        .attr('opacity', drawbinning())
         .duration(transt);
-
-    addDataPoints(da, data, thecolor, kmarker, transt);
+    // --> horizontal line 2
+    linevs.enter()
+        .append('line')
+        .attr('class', 'linevd3' + da)
+        .merge(linevs)
+        .attr('x1', function(d) { return xoverflow( Math.min(x(d.x) + delta, x(d.xh)) ); })
+        .attr('x2', function(d) { return xoverflow( x(d.xh) ); })
+        .attr('y1', function(d) { return ythrow(y(d.y)); })
+        .attr('y2', function(d) { return ythrow(y(d.y)); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', width/100.*0.27)
+        .attr('opacity', 0)
+        .transition()
+        .attr('opacity', drawbinning())
+        .duration(transt);
 }
 
 var addDataPoints = function(da, data, thecolor, kmarker, transt = 500) {
@@ -534,74 +647,6 @@ var addDataPoints = function(da, data, thecolor, kmarker, transt = 500) {
     if(kmarker==33) { m33(da, points, thecolor, transt); }
     if(kmarker==27) { m27(da, points, thecolor, transt); }
 
-    // Narrow shadow
-    var rects = d3.select("svg").select("g").selectAll('.rectd3'+da)
-        .data(data);
-    rects.enter()
-        .append('rect')
-        .attr('class', 'rectd3' + da)
-        .merge(rects)
-        .attr('x', function(d) { return Math.max(0, x(d.x) - chartWidth/80.); }) // box width = chartwidth/40.
-        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
-        .attr('height', function(d) {
-            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
-                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
-            else { return 0; }
-        })
-        .attr('width', function(d) {
-            var low = x(d.x) - chartWidth/80.;
-            if(low < 0) { low = 0; }
-            var high = x(d.x) + chartWidth/80.;
-            if(high > chartWidth) { high = chartWidth; }
-            if(high > low) { return (high - low); }
-            else { return 0; }})
-        .attr('fill', thecolor)
-        .attr('stroke-width', 0)
-        .attr('opacity', 0)
-        .transition()
-        .attr('opacity', function(d) {
-            if(d.x > xmin && d.x < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
-               document.getElementById('btnbinning').value >= 0 && document.getElementById('btnbinning').value <= 3) { return shadowopacity; }
-            else { return 0; }
-        })
-        .duration(transt);
-
-    // Wide shadow
-    var rectvs = d3.select("svg").select("g").selectAll('.rectvd3'+da)
-        .data(data);
-    rectvs.enter()
-        .append('rect')
-        .attr('class', 'rectvd3' + da)
-        .merge(rectvs)
-        .attr('x', function(d) {
-            var xlow = x(d.xl);
-            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
-            return Math.max(0, xlow); })
-        .attr('y', function(d) { return y(Math.min(d.y + d.systh, ymax)); })
-        .attr('height', function(d) {
-            if((d.y - d.systl) < ymax && (d.y + d.systh) > ymin)
-                return y(Math.max(d.y - d.systl, ymin)) - y(Math.min(d.y + d.systh, ymax));
-            else { return 0; }
-        })
-        .attr('width', function(d) {
-            var xlow = x(d.xl);
-            if(d.xl == d.x) xlow = x(d.x) - chartWidth/80.;
-            if(xlow < 0) { xlow = 0; }
-            var xhigh = x(d.xh);
-            if(d.xh == d.x) xhigh = x(d.x) + chartWidth/80.;
-            if(xhigh > chartWidth) { xhigh = chartWidth; }
-            if(xhigh > xlow) { return (xhigh - xlow); }
-            else { return 0; }})
-        .attr('fill', thecolor)
-        .attr('stroke-width', 0)
-        .attr('opacity', 0)
-        .transition()
-        .attr('opacity', function(d) {
-            if(d.xh > xmin && d.xl < xmax && d.y + d.systh > ymin && d.y - d.systl < ymax &&
-               document.getElementById('btnbinning').value >= 6 && document.getElementById('btnbinning').value <= 9) { return shadowopacity; }
-            else { return 0; }
-        })
-        .duration(transt);
 };
 
 var m20 = function(da, point, thecolor, transt = 500)
@@ -634,7 +679,7 @@ var m24 = function(da, point, thecolor, transt = 500)
         .attr('cx', function(d) { return x(d.x); })
         .attr('cy', function(d) { return y(d.y); })
         .attr('r', lsize)
-        .attr('fill', 'white')
+        .attr('fill', 'transparent')
         .attr('stroke', thecolor)
         .attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
@@ -678,7 +723,7 @@ var m25 = function(da, point, thecolor, transt = 500)
         .attr('y', function(d) { return y(d.y) - lsize/2.; })
         .attr('width', lsize)
         .attr('height', lsize)
-        .attr('fill', 'white')
+        .attr('fill', 'transparent')
         .attr('stroke', thecolor)
 	.attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
@@ -724,7 +769,7 @@ var m27 = function(da, point, thecolor, transt = 500)
         .attr('width', lsize)
         .attr('height', lsize)
         .attr('transform', function(d) { return "rotate(45, "+x(d.x)+","+y(d.y)+")"; })
-        .attr('fill', 'white')
+        .attr('fill', 'transparent')
         .attr('stroke', thecolor)
 	.attr('stroke-width', width/100.*0.27)
         .attr('opacity', 0)
@@ -821,8 +866,6 @@ function changeone(da, changemarker, transt = 500)
         }
         else
         {
-            d3.select("svg").select("g").selectAll('.rectd3'+da).remove();
-            d3.select("svg").select("g").selectAll('.rectvd3'+da).remove();
             d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
             var thisitem = dataset[da];
             addDataPoints(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
