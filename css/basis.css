@@ -22,9 +22,12 @@ body {
 
 p, a {
     font-size: var(--size-font-default);
-    display: inline;
     font-family: Tahoma, sans-serif;
-    line-height: 1.8;
+}
+p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
 }
 
 div {
