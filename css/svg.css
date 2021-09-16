@@ -13,14 +13,9 @@
     stroke-width: 0.08em;
 }
 
-.hline {
-    transition: opacity 0.5s;
-}
-
 .grid path,
 .grid line
 {
-    transition: opacity 0.5s;
     stroke: #e5e5e5;
     stroke-dasharray: 5,3;
 }
@@ -51,9 +46,6 @@
 
 .legendmark {
     font-family: "Arial Unicode MS";
-    font-size: 1.4em;
+    font-size: 1.42em;
     font-weight: bold;
 }
-
-
-

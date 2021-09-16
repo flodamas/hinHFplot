@@ -72,3 +72,11 @@ function decodehtml(str)
     temp.remove();
     return result;
 }
+
+function unityzero()
+{
+    var obs = document.getElementById('observable').value;
+    var vy = 0;
+    if(obs == "RAA" || obs == "RpA" || obs == "RpARAA" || obs == "DoubleRatio") vy = 1;
+    return vy;
+};
