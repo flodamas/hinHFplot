@@ -135,22 +135,33 @@ var vlineopacity = function(transt = 400)
     document.getElementById('btnvline').value = vo;
 }
 
-var binningopacity = function(transt = 400) {
-    function next(i) { return (parseInt(i)+1) % Object.keys(styles_mapping).length; }
-    var newtype = next(document.getElementById('btnbinning').value);
-    document.getElementById('btnbinning').value = newtype;
+var drawdisplay = function(da, transt = 400)
+{
+    d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', shadowopacity*drawornot(da, 'rect')).duration(transt);
+    d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 1.*drawornot(da, 'rectl')).duration(transt);
+    d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', shadowopacity*drawornot(da, 'rectv')).duration(transt);
+    d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 1.*drawornot(da, 'rectvl')).duration(transt);
+    d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 1.*drawornot(da, 'linev')).duration(transt);
+}
+
+var changedisplay = function(da, transt = 400)
+{
+    changetonext('display_'+da);
+    drawdisplay(da, transt);
+}
+
+var binningopacity = function(transt = 400)
+{
+    changetonext('btnbinning');
     var checkb = document.getElementsByTagName("input");
     for(var i=0; i<checkb.length; i++)
     {
         if(checkb[i].type !== 'checkbox') continue;
-     	if(!checkb[i].checked) continue;
         var da = checkb[i].id.replace("check_", "");
+        document.getElementById('display_'+da).value = document.getElementById('btnbinning').value;
 
-        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', shadowopacity*drawornot('rect')).duration(transt);
-        d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 1.*drawornot('rectl')).duration(transt);
-        d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', shadowopacity*drawornot('rectv')).duration(transt);
-        d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 1.*drawornot('rectvl')).duration(transt);
-        d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 1.*drawornot('linev')).duration(transt);
+     	if(!checkb[i].checked) continue;
+        drawdisplay(da, transt);
     }
 }
 
@@ -189,7 +200,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', strokewidth)
         .attr('opacity', 0).transition()
-        .attr('opacity', opac*drawornot(group))
+        .attr('opacity', opac*drawornot(da, group))
         .duration(transt);        
 
     // Wide shadow
@@ -210,7 +221,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', strokewidth)
         .attr('opacity', 0).transition()
-        .attr('opacity', opac*drawornot(group))
+        .attr('opacity', opac*drawornot(da, group))
         .duration(transt);        
 
     // Narrow outline
@@ -231,7 +242,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', strokewidth)
         .attr('opacity', 0).transition()
-        .attr('opacity', opac*drawornot(group))
+        .attr('opacity', opac*drawornot(da, group))
         .duration(transt);        
 
     // Wide outline
@@ -252,7 +263,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', strokewidth)
         .attr('opacity', 0).transition()
-        .attr('opacity', opac*drawornot(group))
+        .attr('opacity', opac*drawornot(da, group))
         .duration(transt);        
 }
 
@@ -274,7 +285,7 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
-        .attr('opacity', 1.0*drawornot('line'))
+        .attr('opacity', 1.0*drawornot(da, 'line'))
         .duration(transt);
     // --> error line 2
     lines.enter().append('line')
@@ -287,7 +298,7 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
-        .attr('opacity', 1.0*drawornot('line'))
+        .attr('opacity', 1.0*drawornot(da, 'line'))
         .duration(transt);
 
     // Horizontal line
@@ -304,7 +315,7 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
-        .attr('opacity', 1.0*drawornot('linev'))
+        .attr('opacity', 1.0*drawornot(da, 'linev'))
         .duration(transt);
     // --> horizontal line 2
     linevs.enter().append('line')
@@ -317,7 +328,7 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
-        .attr('opacity', 1.0*drawornot('linev'))
+        .attr('opacity', 1.0*drawornot(da, 'linev'))
         .duration(transt);
 }
 

@@ -99,7 +99,7 @@
         <p style="margin-bottom: 0.5vw"><i class="far fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a> &nbsp;&nbsp;</p><br>
         <p style="margin-bottom: 0.5vw"><i class="far fa-file-alt"></i> Click <a href="datasets/publication.html" class="link">here</a> to get the full publication list &nbsp;&nbsp;</p>
         <div style="padding-bottom: 0.3vw">
-        <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'>Display Style</button>
+        <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'>Unify Style</button>
         <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'>Unity/Zero</button>
         <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0.5">Grid</button>
         <button type="submit" class="btnaction" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
@@ -134,6 +134,11 @@
     </div>
 
     <div id="updatelog">
+
+      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 16): </br>
+      <ul class="myul">
+        <li>Use <i class="fas fa-paint-roller"></i> to change display style for each dataset separately</li>
+      </ul>
       <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 14): </br>
       <ul class="myul">
         <li>Multiple marker styles</li>
@@ -142,11 +147,7 @@
       <ul class="myul">
         <li>Add observable "RpA, RAA"</li>
       </ul>
-      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 11): </br>
-      <ul class="myul">
-        <li>Multiple display styles</li>
-        <li>"Checked only" option</li>
-      </ul>
+
       <div id="updatelogx" style="font-weight : bold;" onclick="this.style.opacity = 0; this.style.cursor = 'default'; 
                                                                 document.getElementById('updatelog').style.opacity = 0; document.getElementById('updatelog').style.cursor = 'default';">
         &times; 

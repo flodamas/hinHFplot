@@ -120,3 +120,9 @@ td {
     -moz-appearance: none;
     appearance: none;    
 }
+
+.btndisplay {
+    font-size: calc(var(--size-font-default)*0.7);
+    margin: 0 0;
+    padding: calc(var(--padding-input)*0.55) calc(var(--padding-input)*0.6);
+}

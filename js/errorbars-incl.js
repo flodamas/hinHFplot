@@ -25,7 +25,11 @@ var styles_mapping = {
     10 : [0, 0, 1, 0, 0, 1],
     11 : [0, 0, 1, 1, 0, 1]
 };
-var drawornot = function(name) { return styles_mapping[document.getElementById('btnbinning').value][styles[name]]; }
+var changetonext = function(idd) {
+    function next(i) { return (parseInt(i)+1) % Object.keys(styles_mapping).length; }
+    document.getElementById(idd).value = next(document.getElementById(idd).value);
+}
+var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.25; }
 var stroke_width_axis = function() { return width/100.*0.24; }

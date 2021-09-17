@@ -116,7 +116,19 @@ function loaditem(nomarkerpicker = 0)
         itmarker.appendChild(imarker);
         if(nomarkerpicker == 1) itmarker.style.display = 'none';
 
-        // itcheck.setAttribute('onclick', "checkthis('"+da+"')");
+        var itdisplay = document.createElement("td");
+        iline.appendChild(itdisplay);
+        var idisplay = document.createElement("button");
+        idisplay.setAttribute('type', 'submit');
+        idisplay.id = "display_" + da;
+        idisplay.innerHTML = '<i class="fas fa-paint-roller"></i>';
+        idisplay.value = '6';
+        idisplay.setAttribute('class', 'btnaction btndisplay');
+        idisplay.setAttribute('onclick', "changedisplay('" + da + "'); ");
+        itdisplay.appendChild(idisplay);
+        if(nomarkerpicker == 1)
+            itdisplay.style.display = 'none';
+        
         itparticle.setAttribute('onclick', "checkthis('"+da+"')");
         itcollision.setAttribute('onclick', "checkthis('"+da+"')");
         itenergy.setAttribute('onclick', "checkthis('"+da+"')");
