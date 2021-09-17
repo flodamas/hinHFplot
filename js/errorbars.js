@@ -342,6 +342,10 @@ var addDataPoints = function(da, data, thecolor, kmarker, transt = 500) {
     if(kmarker==25) { m25(da, points, thecolor, transt); }
     if(kmarker==33) { m33(da, points, thecolor, transt); }
     if(kmarker==27) { m27(da, points, thecolor, transt); }
+    if(kmarker==29) { m29(da, points, thecolor, transt); }
+    if(kmarker==30) { m30(da, points, thecolor, transt); }
+    if(kmarker==22) { m22(da, points, thecolor, transt); }
+    if(kmarker==26) { m26(da, points, thecolor, transt); }
 
 };
 
@@ -441,6 +445,62 @@ var m27 = function(da, point, thecolor, transt = 500)
         .attr('width', marker_size()/diamondoffset)
         .attr('height', marker_size()/diamondoffset)
         .attr('transform', function(d) { return "rotate(45, "+xthrow(x(d.x))+","+ythrow(y(d.y))+")"; })
+        .attr('fill', 'transparent')
+        .attr('stroke', thecolor)
+	.attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.).duration(transt);
+};
+
+var m29 = function(da, point, thecolor, transt = 500)
+{
+    point.enter()
+        .append('path')
+        .attr("d", d3.symbol().type(d3.symbolStar).size(marker_size()*staroffset)) // http://using-d3js.com/05_10_symbols.html
+        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
+        .attr('class', 'pointd3' + da)
+        .attr('fill', thecolor)
+        .attr('stroke', thecolor)
+	.attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.).duration(transt);
+};
+
+var m30 = function(da, point, thecolor, transt = 500)
+{
+    point.enter()
+        .append('path')
+        .attr("d", d3.symbol().type(d3.symbolStar).size(marker_size()*staroffset))
+        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
+        .attr('class', 'pointd3' + da)
+        .attr('fill', 'transparent')
+        .attr('stroke', thecolor)
+	.attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.).duration(transt);
+};
+
+var m22 = function(da, point, thecolor, transt = 500)
+{
+    point.enter()
+        .append('path')
+        .attr("d", d3.symbol().type(d3.symbolTriangle).size(marker_size()*triangleoffset)) // http://using-d3js.com/05_10_symbols.html
+        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
+        .attr('class', 'pointd3' + da)
+        .attr('fill', thecolor)
+        .attr('stroke', thecolor)
+	.attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.).duration(transt);
+};
+
+var m26 = function(da, point, thecolor, transt = 500)
+{
+    point.enter()
+        .append('path')
+        .attr("d", d3.symbol().type(d3.symbolTriangle).size(marker_size()*triangleoffset))
+        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
+        .attr('class', 'pointd3' + da)
         .attr('fill', 'transparent')
         .attr('stroke', thecolor)
 	.attr('stroke-width', stroke_width())
@@ -702,6 +762,7 @@ function legend(da, trans = 500)
             .attr("class", "legendmark")
             .attr("id", "legendmark_" + da)
             .style("fill", document.getElementById('color_'+da).value)
+            // .attr("textLength", '10em')
             .text(decodehtml(voptlegend[document.getElementById('marker_'+da).value]+" "));
         legenditem(tlegend, thisitem);
         tlegend.transition().attr('opacity', opa_legend).duration(trans);
