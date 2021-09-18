@@ -1,3 +1,19 @@
+var legparts = { "mark":0,  "particle":1,  "collab":2,  "collision":3,  "kinea":4,  "kineb":5 };
+var legparts_mapping = {
+    0 : [0, 0, 0, 0, 0, 0],
+    1 : [1, 1, 1, 1, 1, 1],
+    2 : [1, 1, 1, 1, 1, 0],
+    3 : [1, 1, 1, 1, 0, 1],
+    4 : [1, 1, 1, 0, 1, 1],
+    5 : [1, 1, 1, 1, 0, 0],
+    6 : [1, 1, 1, 0, 0, 0],
+};
+var legdrawornot = function(name) { return legparts_mapping[document.getElementById('btnlegend').value][legparts[name]]==1?'default':'none'; }
+var legchangetonext = function(idd) {
+    function next(i) { return (parseInt(i)+1) % Object.keys(legparts_mapping).length; }
+    document.getElementById(idd).value = next(document.getElementById(idd).value);
+}
+
 function changeyto(id, nexty, transt = 0)
 {
     var original = svg.select('#'+id).attr("transform");
@@ -50,44 +66,39 @@ function legenditem(tlegend, thisitem, type=1)
         tlegend.append('tspan')
             .attr("class", rpa[p].cl)
             .style("font-weight", "bold")
-            .text(type_legend==0?'':decodehtml(rpa[p].content));
+            .attr('display', legdrawornot("particle"))
+            .text(decodehtml(rpa[p].content));
     }
     // collab
-    if(type_legend != 0)
-    {
-        tlegend.append('tspan')
-            .text(' ' + thisitem.collab);
-    }
+    tlegend.append('tspan')
+        .attr('display', legdrawornot("collab"))
+        .text(' ' + thisitem.collab);
     // collision
-    if(type_legend != 4 && type_legend != 0)
+    tlegend.append('tspan')
+        .style("font-style", "italic")
+        .attr('display', legdrawornot("collision"))
+        .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+    // kinea
+    var rpa = parsescript(thisitem.kinea);
+    if(thisitem.kinea != "")
+        rpa[0].content = ", " + rpa[0].content;
+    for(var p in rpa)
     {
         tlegend.append('tspan')
-            .style("font-style", "italic")
-            .text(' ' + thisitem.collision + ' ' + thisitem.energy);
-    }
-    // kinea
-    if(thisitem.kinea != "" && type_legend != 3 && type_legend != 0)
-    {
-        var rpa = parsescript(thisitem.kinea);
-        rpa[0].content = ", " + rpa[0].content;
-        for(var p in rpa)
-        {
-            tlegend.append('tspan')
-                .attr("class", rpa[p].cl)
-                .text(decodehtml(rpa[p].content));
-        }
+            .attr("class", rpa[p].cl)
+            .attr('display', legdrawornot("kinea"))
+            .text(decodehtml(rpa[p].content));
     }
     // kineb
-    if(thisitem.kineb != "" && type_legend != 2 && type_legend != 0)
+    var rpb = parsescript(thisitem.kineb);
+    if(thisitem.kineb != "")
+        rpb[0].content = ", " + rpb[0].content;
+    for(var p in rpb)
     {
-        var rpa = parsescript(thisitem.kineb);
-        rpa[0].content = ", " + rpa[0].content;
-        for(var p in rpa)
-        {
-            tlegend.append('tspan')
-                .attr("class", rpa[p].cl)
-                .text(decodehtml(rpa[p].content));
-        }
+        tlegend.append('tspan')
+            .attr("class", rpb[p].cl)
+            .attr('display', legdrawornot("kineb"))
+            .text(decodehtml(rpb[p].content));
     }
 }
 
@@ -188,9 +199,10 @@ function movelegendy()
 }
 
 function legendopacity() {
-    var next = {1 : 2, 2 : 3, 3 : 4, 4 : 0, 0 : 1};
-    var newtype = next[document.getElementById('btnlegend').value];
-    document.getElementById('btnlegend').value = newtype;
+    legchangetonext('btnlegend');
+    // var next = {1 : 2, 2 : 3, 3 : 4, 4 : 0, 0 : 1};
+    // var newtype = next[document.getElementById('btnlegend').value];
+    // document.getElementById('btnlegend').value = newtype;
     d3.select("svg").selectAll('.legend').remove();
     d3.select("svg").selectAll('.legendmark').remove();
     alllegend(0);
