@@ -25,8 +25,8 @@ function addref()
         iaref.setAttribute('class', 'liref');
         iaref.setAttribute('onmouseover', "changecolor('"+iaref.id+"')");
         iaref.setAttribute('onmouseleave', "changecolorback('"+iaref.id+"')");
+        iaref.setAttribute('onclick', "window.open('"+dataset[da].link+"', '_blank');");
         iaref.innerText = dataset[da].reference;
-        iaref.href = dataset[da].link;
         iaref.style = 'color: ' + cc + ';';
         iref.appendChild(iaref);
         var sp = document.createElement("a");
