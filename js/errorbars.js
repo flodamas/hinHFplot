@@ -25,6 +25,7 @@ function setscale()
     x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
     y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
     dy = chartHeight/17.; // 
+    dxmark = chartWidth/50.; // 
 
     if(checklogx())
         x = d3.scaleLog().range([0, chartWidth]).domain([xmin, xmax]);
@@ -269,7 +270,9 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
 
 var addDataLines = function(da, data, thecolor, transt = 500) {
     var kmarker = document.getElementById('marker_'+da).value;
-    var delta = marker_size()/2.*1.1;
+    var delta_up = Math.sqrt(marker_size())*vopt[kmarker].offset[1],
+        delta_down = Math.sqrt(marker_size())*vopt[kmarker].offset[2],
+        delta_lr = Math.sqrt(marker_size())*vopt[kmarker].offset[3];
 
     // Error line
     var lines = d3.select("svg").select("g").selectAll('.lined3'+da)
@@ -277,11 +280,10 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
     // --> error line 1
     lines.enter().append('line')
         .attr('class', 'lined3' + da)
-    // .merge(lines)
         .attr('x1', function(d) { return xthrow(x(d.x)); })
         .attr('x2', function(d) { return xthrow(x(d.x)); })
         .attr('y1', function(d) { return yoverflow( y(d.y + d.stath) ); })
-        .attr('y2', function(d) { return yoverflow( Math.max(y(d.y) - delta, y(d.y + d.stath)) ); })
+        .attr('y2', function(d) { return yoverflow( Math.max(y(d.y) - delta_up, y(d.y + d.stath)) ); })
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
@@ -290,10 +292,9 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
     // --> error line 2
     lines.enter().append('line')
         .attr('class', 'lined3' + da)
-    // .merge(lines)
         .attr('x1', function(d) { return xthrow(x(d.x)); })
         .attr('x2', function(d) { return xthrow(x(d.x)); })
-        .attr('y1', function(d) { return yoverflow( Math.min(y(d.y) + delta, y(d.y - d.statl)) ); })
+        .attr('y1', function(d) { return yoverflow( Math.min(y(d.y) + delta_down, y(d.y - d.statl)) ); })
         .attr('y2', function(d) { return yoverflow( y(d.y - d.statl) ); })
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
@@ -307,9 +308,8 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
     // --> horizontal line 1
     linevs.enter().append('line')
         .attr('class', 'linevd3' + da)
-    // .merge(linevs)
         .attr('x1', function(d) { return xoverflow( x(d.xl) ); })
-        .attr('x2', function(d) { return xoverflow( Math.max(x(d.x) - delta, x(d.xl)) ); })
+        .attr('x2', function(d) { return xoverflow( Math.max(x(d.x) - delta_lr, x(d.xl)) ); })
         .attr('y1', function(d) { return ythrow(y(d.y)); })
         .attr('y2', function(d) { return ythrow(y(d.y)); })
         .attr('stroke', thecolor)
@@ -320,8 +320,7 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
     // --> horizontal line 2
     linevs.enter().append('line')
         .attr('class', 'linevd3' + da)
-    // .merge(linevs)
-        .attr('x1', function(d) { return xoverflow( Math.min(x(d.x) + delta, x(d.xh)) ); })
+        .attr('x1', function(d) { return xoverflow( Math.min(x(d.x) + delta_lr, x(d.xh)) ); })
         .attr('x2', function(d) { return xoverflow( x(d.xh) ); })
         .attr('y1', function(d) { return ythrow(y(d.y)); })
         .attr('y2', function(d) { return ythrow(y(d.y)); })
@@ -335,173 +334,13 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
 var addDataPoints = function(da, data, thecolor, kmarker, transt = 500) {
     // Marker
     var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
-        .data(data);
-    if(kmarker==20) { m20(da, points, thecolor, transt); }
-    if(kmarker==21) { m21(da, points, thecolor, transt); }
-    if(kmarker==24) { m24(da, points, thecolor, transt); }
-    if(kmarker==25) { m25(da, points, thecolor, transt); }
-    if(kmarker==33) { m33(da, points, thecolor, transt); }
-    if(kmarker==27) { m27(da, points, thecolor, transt); }
-    if(kmarker==29) { m29(da, points, thecolor, transt); }
-    if(kmarker==30) { m30(da, points, thecolor, transt); }
-    if(kmarker==22) { m22(da, points, thecolor, transt); }
-    if(kmarker==26) { m26(da, points, thecolor, transt); }
-
-};
-
-var m20 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('circle')
-        .attr('class', 'pointd3' + da)
-    // .merge( point )
-        .attr('cx', function(d) { return xthrow( x(d.x) ); })
-        .attr('cy', function(d) { return ythrow( y(d.y) ); })
-        .attr('r', marker_size()/2.)
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-        .attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.0)
-        .duration(transt);
-};
-
-var m24 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('circle')
-        .attr('class', 'pointd3' + da)
-    // .merge( point )
-        .attr('cx', function(d) { return xthrow( x(d.x) ); })
-        .attr('cy', function(d) { return ythrow( y(d.y) ); })
-        .attr('r', marker_size()/2.)
-        .attr('fill', 'transparent')
-        .attr('stroke', thecolor)
-        .attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m21 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('rect')
-        .attr('class', 'pointd3' + da)
-    // .merge( point )
-        .attr('x', function(d) { return xthrow(x(d.x)) - marker_size()/2.; })
-        .attr('y', function(d) { return ythrow(y(d.y)) - marker_size()/2.; })
-        .attr('width', marker_size())
-        .attr('height', marker_size())
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m25 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('rect')
-        .attr('class', 'pointd3' + da)
-    // .merge( point )
-        .attr('x', function(d) { return xthrow(x(d.x)) - marker_size()/2.; })
-        .attr('y', function(d) { return ythrow(y(d.y)) - marker_size()/2.; })
-        .attr('width', marker_size())
-        .attr('height', marker_size())
-        .attr('fill', 'transparent')
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m33 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('rect')
-        .attr('class', 'pointd3' + da)
-    // .merge( point )
-        .attr('x', function(d) { return  xthrow(x(d.x)) - marker_size()/diamondoffset/2.; })
-        .attr('y', function(d) { return  ythrow(y(d.y)) - marker_size()/diamondoffset/2.; })
-        .attr('width', marker_size()/diamondoffset)
-        .attr('height', marker_size()/diamondoffset)
-        .attr('transform', function(d) { return "rotate(45, "+ xthrow(x(d.x))+","+ xthrow(y(d.y))+")"; })
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m27 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('rect')
-        .attr('class', 'pointd3' + da)
-    // .merge( point )
-        .attr('x', function(d) { return xthrow(x(d.x)) - marker_size()/diamondoffset/2.; })
-        .attr('y', function(d) { return ythrow(y(d.y)) - marker_size()/diamondoffset/2.; })
-        .attr('width', marker_size()/diamondoffset)
-        .attr('height', marker_size()/diamondoffset)
-        .attr('transform', function(d) { return "rotate(45, "+xthrow(x(d.x))+","+ythrow(y(d.y))+")"; })
-        .attr('fill', 'transparent')
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m29 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
+        .data(data)
+        .enter()
         .append('path')
-        .attr("d", d3.symbol().type(d3.symbolStar).size(marker_size()*staroffset)) // http://using-d3js.com/05_10_symbols.html
+        .attr("d", d3.symbol().type(vopt[kmarker].type).size(marker_size()*vopt[kmarker].offset[0]))
         .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
         .attr('class', 'pointd3' + da)
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m30 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('path')
-        .attr("d", d3.symbol().type(d3.symbolStar).size(marker_size()*staroffset))
-        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
-        .attr('class', 'pointd3' + da)
-        .attr('fill', 'transparent')
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m22 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('path')
-        .attr("d", d3.symbol().type(d3.symbolTriangle).size(marker_size()*triangleoffset)) // http://using-d3js.com/05_10_symbols.html
-        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
-        .attr('class', 'pointd3' + da)
-        .attr('fill', thecolor)
-        .attr('stroke', thecolor)
-	.attr('stroke-width', stroke_width())
-        .attr('opacity', 0).transition()
-        .attr('opacity', 1.).duration(transt);
-};
-
-var m26 = function(da, point, thecolor, transt = 500)
-{
-    point.enter()
-        .append('path')
-        .attr("d", d3.symbol().type(d3.symbolTriangle).size(marker_size()*triangleoffset))
-        .attr("transform", function(d) { return "translate(" + xthrow(x(d.x)) + "," + ythrow(y(d.y)) + ")"; })
-        .attr('class', 'pointd3' + da)
-        .attr('fill', 'transparent')
+        .attr('fill', vopt[kmarker].fill==1?thecolor:'transparent')
         .attr('stroke', thecolor)
 	.attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
@@ -570,11 +409,11 @@ var draw = function(da, transt = 500)
     addref();
 }
 
-function changeone(da, changemarker, transt = 500)
+function changeone(da, transt = 500)
 {
     if(document.getElementById('check_' + da).checked)
     {
-        var mmarker = document.getElementById("marker_"+da).value;
+        var kmarker = document.getElementById("marker_"+da).value;
         var cc = document.getElementById("color_"+da).value;
 
         d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('fill', cc).attr('stroke', cc).duration(transt);
@@ -584,19 +423,11 @@ function changeone(da, changemarker, transt = 500)
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
         d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
 
-        if(changemarker==0)
-        {
-            if(mmarker==24 || mmarker==25 || mmarker==27)
-                d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('stroke', cc).duration(transt);
-            else
-                d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('fill', cc).attr('stroke', cc).duration(transt);                
-        }
-        else
-        {
-            d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
-            var thisitem = dataset[da];
-            addDataPoints(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
-        }
+        d3.select("svg").select("g").selectAll('.pointd3'+da).transition()
+            .attr("d", d3.symbol().type(vopt[kmarker].type).size(marker_size()*vopt[kmarker].offset[0]))
+            .attr('stroke', cc)
+            .attr('fill', vopt[kmarker].fill==1?cc:'transparent')
+            .duration(transt);
         
         relegend(da, transt);
     }
@@ -616,7 +447,7 @@ function colorall(transt = 500)
             { for(var ic = 0; ic<(6-ccl); ic++) { cc = '0' + cc; } }
             cc = '#' + cc;
             document.getElementById('color_'+da).value = cc;
-            changeone(da, 0, transt);
+            changeone(da, transt);
         }
     }
 
@@ -649,170 +480,12 @@ function clearall()
     addref();
 
     d3.select("svg").selectAll('.legend').attr('opacity', 0).transition().duration(500);
+    d3.select("svg").selectAll('.legendmark').attr('opacity', 0).transition().duration(500);
     setTimeout(function() {
         d3.select("svg").selectAll('.legend').remove();
+        d3.select("svg").selectAll('.legendmark').remove();
     }, 500);
     legs = [];
-}
-
-function parsescript(pa)
-{
-    var results = [];
-    while(pa.length > 0)
-    {
-        var i = pa.indexOf("<su"), j = pa.indexOf("</su");
-        var substr = "";
-        if(i > 0) substr = pa.substring(0, i);
-        else if(j > 0) substr = pa.substring(0, j);
-        else substr = pa;
-        pa = pa.replace(substr, "");
-
-        var icl = "";
-        if(substr.indexOf("<sub>") > -1) { icl = icl + " tsub"; substr = substr.replace("<sub>", ""); }
-        if(substr.indexOf("<sup>") > -1) { icl = icl + " tsup"; substr = substr.replace("<sup>", ""); }
-        if(substr.indexOf("</su") > -1) substr = substr.replace(substr.substring(0, 6), "");
-
-        results.push({
-            content : substr,
-            cl : icl
-        });
-    }
-    return results;
-}
-
-function legenditem(tlegend, thisitem, type=1)
-{
-    var type_legend = document.getElementById('btnlegend').value;
-
-    // particle
-    var rpa = parsescript(thisitem.particle);
-    for(var p in rpa)
-    {
-        tlegend.append('tspan')
-            .attr("class", rpa[p].cl)
-            .style("font-weight", "bold")
-            .text(decodehtml(rpa[p].content));
-    }
-    // collab
-    tlegend.append('tspan')
-        .text(' ' + thisitem.collab);
-    // collision
-    if(type_legend != 4)
-    {
-        tlegend.append('tspan')
-            .style("font-style", "italic")
-            .text(' ' + thisitem.collision + ' ' + thisitem.energy);
-    }
-    // kinea
-    if(thisitem.kinea != "" && type_legend != 3)
-    {
-        var rpa = parsescript(thisitem.kinea);
-        rpa[0].content = ", " + rpa[0].content;
-        for(var p in rpa)
-        {
-            tlegend.append('tspan')
-                .attr("class", rpa[p].cl)
-                .text(decodehtml(rpa[p].content));
-        }
-    }
-    // kineb
-    if(thisitem.kineb != "" && type_legend != 2)
-    {
-        var rpa = parsescript(thisitem.kineb);
-        rpa[0].content = ", " + rpa[0].content;
-        for(var p in rpa)
-        {
-            tlegend.append('tspan')
-                .attr("class", rpa[p].cl)
-                .text(decodehtml(rpa[p].content));
-        }
-    }
-}
-
-function legend(da, trans = 500)
-{
-    var opa_legend = document.getElementById('btnlegend').value==0?0:1;
-    var icheck = document.getElementById('check_' + da);
-    if(!icheck.checked) // remove legend
-    {
-        ilegend = svg.select('#legend_'+da);
-        ilegend.remove();
-        var ileg = legs.indexOf(da);
-        legs.splice(ileg, 1);
-        for(var l=ileg; l<legs.length; l++)
-        {
-            var lleg = d3.select('svg').select('#legend_' + legs[l]);
-            lleg.transition().attr("y", y0 + dy*l).duration(trans);
-        }
-    }
-    else  // add legend
-    {
-        var thisitem = dataset[da];
-        var ynow = y0 + legs.length*dy;
-        legs.push(da);
-        var tlegend = svg.append("text")
-            .attr("x", x0)
-            .attr("y", ynow)
-            .attr("class", "legend")
-            .attr("dominant-baseline", "central")
-            .attr("id", "legend_" + da)
-            .attr('opacity', '0')
-	    .style("text-anchor", "start");
-        tlegend.append('tspan')
-            .attr("class", "legendmark")
-            .attr("id", "legendmark_" + da)
-            .style("fill", document.getElementById('color_'+da).value)
-            // .attr("textLength", '10em')
-            .text(decodehtml(voptlegend[document.getElementById('marker_'+da).value]+" "));
-        legenditem(tlegend, thisitem);
-        tlegend.transition().attr('opacity', opa_legend).duration(trans);
-    }
-}
-
-function relegend(da, transt = 500) // change color
-{
-    var icheck = document.getElementById('check_' + da);
-    // var ileg = d3.select('svg').select('#legend_' + da);
-    if(icheck.checked)
-    {
-        d3.select("svg").select("#legendmark_"+da).transition()
-            .style("fill", document.getElementById('color_'+da).value)
-            .text(decodehtml(voptlegend[document.getElementById('marker_'+da).value]+" "))
-            .duration(transt);
-    }
-}
-
-function alllegend(transt = 500)
-{
-    var copy_legs = legs;
-    legs = [];
-    for(var l=0; l<copy_legs.length; l++)
-        legend(copy_legs[l], transt);
-}
-
-function movelegendx()
-{
-    x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
-    d3.select("svg").selectAll(".legend").attr("x", x0);
-    document.getElementById('tx0').innerText = " " + document.getElementById('x0range').value;
-}
-
-function movelegendy()
-{
-    for(var l=0; l<legs.length; l++)
-    {
-        y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
-        d3.select("svg").select("#legend_" + legs[l]).attr("y", y0 + l*dy);;
-    }
-    document.getElementById('ty0').innerText = " " + document.getElementById('y0range').value;
-}
-
-function legendopacity() {
-    var next = {1 : 2, 2 : 3, 3 : 4, 4 : 0, 0 : 1};
-    var newtype = next[document.getElementById('btnlegend').value];
-    document.getElementById('btnlegend').value = newtype;
-    d3.select("svg").selectAll('.legend').remove();
-    alllegend(0);
 }
 
 window.addEventListener("resize", function() { drawallwleg(0); });
@@ -834,4 +507,3 @@ function changescale(id, transt = 500)
     drawall(transt);
     alllegend(transt);
 }
-

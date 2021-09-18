@@ -98,7 +98,7 @@ function loaditem(nomarkerpicker = 0)
         icolor.id = "color_" + da;
         icolor.value = "#" + Math.floor(Math.random()*16777215).toString(16);
         icolor.setAttribute('class', 'colorpicker');
-        icolor.setAttribute('onchange', "changeone('" + da + "', 0); ");
+        icolor.setAttribute('onchange', "changeone('" + da + "'); ");
         itcolor.appendChild(icolor);
         
         var itmarker = document.createElement("td");
@@ -107,12 +107,12 @@ function loaditem(nomarkerpicker = 0)
         for(var key of vorders) {
             var opt = document.createElement('option');
             opt.value = key;
-            opt.innerHTML = vopt[key];
+            opt.innerHTML = vopt[key].option;
             imarker.appendChild(opt);
         }
         imarker.id = "marker_" + da;
         imarker.setAttribute('class', 'markerpicker');
-        imarker.setAttribute('onchange', "changeone('" + da + "', 1, 0); ");
+        imarker.setAttribute('onchange', "changeone('" + da + "'); ");
         itmarker.appendChild(imarker);
         if(nomarkerpicker == 1) itmarker.style.display = 'none';
 

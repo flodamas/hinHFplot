@@ -6,7 +6,7 @@ var xmin, xmax, ymin, ymax;
 var x, y;
 
 // legend -->
-var x0, y0, dy;
+var x0, y0, dy, dxmark;
 var legs = [];
 // <-- legend
 
@@ -33,10 +33,6 @@ var drawornot = function(da, name) { return styles_mapping[document.getElementBy
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.25; }
 var stroke_width_axis = function() { return width/100.*0.24; }
-var marker_size = function() { return width/80.; }
-var diamondoffset = 1.2,
-    staroffset = 3.5,
-    triangleoffset = 3.5;
 
 var xoverflow = function(x)
 {
