@@ -4,9 +4,11 @@ var legparts_mapping = {
     1 : [1, 1, 1, 1, 1, 1],
     2 : [1, 1, 1, 1, 1, 0],
     3 : [1, 1, 1, 1, 0, 1],
-    4 : [1, 1, 1, 0, 1, 1],
-    5 : [1, 1, 1, 1, 0, 0],
-    6 : [1, 1, 1, 0, 0, 0],
+    4 : [1, 1, 1, 1, 0, 0],
+    5 : [1, 1, 1, 0, 1, 1],
+    6 : [1, 1, 1, 0, 1, 0],
+    7 : [1, 1, 1, 0, 0, 1],
+    8 : [1, 1, 1, 0, 0, 0],
 };
 var legdrawornot = function(name) { return legparts_mapping[document.getElementById('btnlegend').value][legparts[name]]==1?'default':'none'; }
 var legchangetonext = function(idd) {
