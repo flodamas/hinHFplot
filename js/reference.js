@@ -3,46 +3,63 @@ function addref()
 {
     var reference = document.getElementById('reference');
     while(reference.firstChild)
-    {
         reference.removeChild(reference.firstChild);
-    }
-
-    var datainput = document.getElementById('datainput');
-    var checkb = datainput.getElementsByTagName('input');
+    var checkb = document.getElementById('datainput').getElementsByTagName('input');
 
     for(var i=0; i<checkb.length; i++)
     {
         if(checkb[i].type != 'checkbox') { continue; }
         if(checkb[i].checked == false) { continue; }
         var da = checkb[i].id.replace("check_", "");
-        var cc = document.getElementById("color_" + da).value;
 
-        var iref = document.createElement("li");
-        iref.style = 'color : ' + cc + ';';
-        reference.appendChild(iref);
-        var iaref = document.createElement("a");
-        iaref.id = "aref_" + da;
-        iaref.setAttribute('class', 'liref');
-        iaref.setAttribute('onmouseover', "changecolor('"+iaref.id+"')");
-        iaref.setAttribute('onmouseleave', "changecolorback('"+iaref.id+"')");
-        iaref.setAttribute('onclick', "window.open('"+dataset[da].link+"', '_blank');");
-        iaref.innerText = dataset[da].reference;
-        iaref.style = 'color: ' + cc + ';';
-        iref.appendChild(iaref);
-        var sp = document.createElement("a");
-        sp.innerHTML = "&nbsp;";
-        iref.appendChild(sp);
-        var iacref = document.createElement("i");
-        iacref.id = "acref_" + da;
-        iacref.setAttribute('class', 'far fa-copy liref');
-        iacref.setAttribute('onmouseover', "showcopy('acref_"+da+"', '" + cc + "')");
-        iacref.setAttribute('onmouseleave', "hidecopy()");
-        iacref.setAttribute("onclick", "copylink('acref_"+da+"', '"+dataset[da].reference+"', '" + cc + "')");
-        iacref.style = 'color: ' + cc + ';';
-        iacref.innerHTML = iacref.innerHTML + "&nbsp";
-        iref.appendChild(iacref);
+        addoneref(da, reference);
     }
-    reference.style = 'opacity : 1;';
+}
+
+function addoneref(da, reference)
+{
+    var cc = document.getElementById("color_" + da).value;
+    var iref = document.createElement("li");
+    iref.id = "liref_" + da;
+    iref.setAttribute('class', 'liref');
+    iref.style.color = cc;
+    iref.style.opacity = '0';
+    setTimeout(function() {
+        iref.style.opacity = '1';
+    }, 1);
+    reference.appendChild(iref);
+    var iaref = document.createElement("a");
+    iaref.id = "aref_" + da;
+    iaref.setAttribute('onmouseover', "changecolor('"+iaref.id+"')");
+    iaref.setAttribute('onmouseleave', "changecolorback('"+iaref.id+"')");
+    iaref.setAttribute('onclick', "window.open('"+dataset[da].link+"', '_blank');");
+    iaref.innerText = dataset[da].reference;
+    iref.appendChild(iaref);
+    var sp = document.createElement("a");
+    sp.innerHTML = "&nbsp;";
+    iref.appendChild(sp);
+    var iacref = document.createElement("i");
+    iacref.id = "acref_" + da;
+    iacref.setAttribute('class', 'far fa-copy');
+    iacref.setAttribute('onmouseover', "showcopy('"+da+"')");
+    iacref.setAttribute('onmouseleave', "hidecopy()");
+    iacref.setAttribute("onclick", "copylink('acref_"+da+"', '"+dataset[da].reference+"', '" + cc + "')");
+    iacref.innerHTML = iacref.innerHTML + "&nbsp";
+    iref.appendChild(iacref);
+}
+
+function rmoneref(da)
+{
+    document.getElementById("liref_" + da).style.opacity = '0';
+    setTimeout(function() {
+        document.getElementById("liref_" + da).remove();
+    }, 400);
+}
+
+function coloroneref(da)
+{
+    var cc = document.getElementById("color_" + da).value;
+    document.getElementById("liref_" + da).style = 'color: ' + cc + ';';
 }
 
 function changecolor(da)
@@ -55,13 +72,13 @@ function changecolorback(da)
     document.getElementById(da).style.textDecoration = "none";
 }
 
-function showcopy(id, cc)
+function showcopy(da)
 {
-    var rect = document.getElementById(id).getBoundingClientRect();
+    var rect = document.getElementById('acref_'+da).getBoundingClientRect();
     var cl = document.getElementById('clipboard');
     var clheight = cl.getBoundingClientRect().top - cl.getBoundingClientRect().bottom;
     cl.innerHTML = "&nbsp;Copy reference&nbsp;";
-    cl.style.backgroundColor = cc;
+    cl.style.backgroundColor = document.getElementById("color_" + da).value;
     cl.style.display = 'block';
     cl.style.left = rect.right + 'px';
     cl.style.top = (rect.top+rect.bottom)/2. - cl.offsetHeight/2. + 'px';

@@ -394,6 +394,7 @@ var draw = function(da, transt = 500)
 
         var thisitem = dataset[da];
         addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value);
+        addoneref(da, document.getElementById('reference'));
     }
     else
     {
@@ -404,9 +405,10 @@ var draw = function(da, transt = 500)
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
+        rmoneref(da);
     }
 
-    addref();
+    // addref();
 }
 
 function changeone(da, transt = 500)
@@ -431,6 +433,7 @@ function changeone(da, transt = 500)
             .duration(transt);
         
         relegend(da, transt);
+        coloroneref(da);
     }
 }
 
@@ -452,7 +455,7 @@ function colorall(transt = 500)
         }
     }
 
-    addref();
+    // addref();
 }
 
 function clearall()
@@ -464,21 +467,21 @@ function clearall()
     var checkb = document.getElementsByTagName("input");
     for(var i=0; i<checkb.length; i++)
     {
-        var da;
         if(checkb[i].type == 'checkbox')
         {
+            if(checkb[i].checked == false) continue;
+            var da = checkb[i].id.replace("check_", "");
+            d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(500);
+            d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(500);
+            d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', 0).duration(500);
+            d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 0).duration(500);
+            d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(500);
+            d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(500);
+            d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(500);
+            rmoneref(da);
             checkb[i].checked = false;
-            da = checkb[i].id.replace("check_", "");
         }
-        d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(500);
-        d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(500);
-        d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', 0).duration(500);
-        d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 0).duration(500);
-        d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(500);
-        d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(500);
-        d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(500);
     }
-    addref();
 
     d3.select("svg").selectAll('.legend').attr('opacity', 0).transition().duration(500);
     d3.select("svg").selectAll('.legendmark').attr('opacity', 0).transition().duration(500);

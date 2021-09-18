@@ -3,13 +3,13 @@
 
 #reference {
     /* padding-right: 2vw; */
+    display: grid;
+    grid-template-columns: repeat(var(--ncol-reference), 1fr);
     width: var(--width-reference);
-    columns: var(--ncol-reference);
-    -webkit-columns: var(--ncol-reference);
-    -moz-columns: var(--ncol-reference);
+    /* columns: var(--ncol-reference); */
+    /* -webkit-columns: var(--ncol-reference); */
+    /* -moz-columns: var(--ncol-reference); */
     overflow: auto;
-    opacity: 0;
-    transition: all 1s;
     list-style-type: square;
     text-align: left;
     margin: 0 auto;
@@ -18,7 +18,7 @@
 
 .liref {
     text-decoration: none;
-    transition: all 1s;
+    transition: all 0.4s;
     cursor: pointer;
     margin-bottom: 0.3vw;
 }
