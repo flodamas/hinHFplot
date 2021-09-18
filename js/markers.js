@@ -1,6 +1,6 @@
 var marker_size = function() { return width*width/1.e+4; }
 
-var vorders = [20, 24, 21, 25, 33, 27, /*22, 26,*/ 29, 30];
+var vorders = [20, 24, 21, 25, 33, 27, 22, 26, 29, 30, 34, 28];
 
 var vopt = {
     // Circle
@@ -9,7 +9,7 @@ var vopt = {
         // option : '&#x29F3;',
         option : '&#x25CF;',
         fill : 1,
-        offset : [1.1, 0.7, 0.7, 0.7],
+        offset : [1.1, 0.6, 0.6, 0.6],
         rotate : 0
     },
     24 : {
@@ -17,7 +17,7 @@ var vopt = {
         // option : '&#x29F2;',
         option : '&#x25CB;',
         fill : 0,
-        offset : [1.1, 0.7, 0.7, 0.7],
+        offset : [1.1, 0.6, 0.6, 0.6],
         rotate : 0
     },
     // Square
@@ -26,7 +26,7 @@ var vopt = {
         // option : '&#x29EF;',
         option : '&#x25A0;',
         fill : 1,
-        offset : [1.1, 0.7, 0.7, 0.7],
+        offset : [1.1, 0.6, 0.6, 0.6],
         rotate : 0
     },
     25 : {
@@ -34,7 +34,7 @@ var vopt = {
         // option : '&#x29EE;',
         option : '&#x25A1;',
         fill : 0,
-        offset : [1.1, 0.7, 0.7, 0.7],
+        offset : [1.1, 0.6, 0.6, 0.6],
         rotate : 0
     },
     // Diamond
@@ -45,7 +45,7 @@ var vopt = {
         // option : '&#x2B27;',
         option : '&#x2666;',
         fill : 1,
-        offset : [1., 1.0, 1.0, 0.5],
+        offset : [1., 0.6, 0.6, 0.5],
         rotate : 0
     },
     27 : {
@@ -55,7 +55,7 @@ var vopt = {
         // option : '&#x2B28;',
         option : '&#x2662;',
         fill : 0,
-        offset : [1., 1.0, 1.0, 0.5],
+        offset : [1., 0.6, 0.6, 0.5],
         rotate : 0
     },
     // Triangle-up
@@ -64,7 +64,7 @@ var vopt = {
         // option : '&#x25B4;',
         option : '&#x25B2;',
         fill : 1,
-        offset : [0.85, 1.0, 0.5, 0.7],
+        offset : [0.85, 0.6, 0.5, 0.6],
         rotate : 0
     },
     26 : {
@@ -72,36 +72,40 @@ var vopt = {
         // option : '&#x25B5;',
         option : '&#x25B3;',
         fill : 0,
-        offset : [0.85, 1.0, 0.5, 0.7],
+        offset : [0.85, 0.6, 0.5, 0.6],
         rotate : 0
     },
     // Star
     29 : {
         type : d3.symbolStar,
-        option : '&#x272D;',
+        // option : '&#x272D;',
+        option : '&#x2605;',
         fill : 1,
-        offset : [0.6, 1.0, 0.6, 0.7],
+        offset : [0.6, 0.6, 0.5, 0.6],
         rotate : 0
     },
     30 : {
         type : d3.symbolStar,
-        option : '&#x272B;',
+        // option : '&#x272B;',
+        option : '&#x2606;',
         fill : 0,
-        offset : [0.6, 1.0, 0.6, 0.7],
+        offset : [0.6, 0.6, 0.5, 0.6],
+        rotate : 0
+    },
+    // Cross
+    34 : {
+        type : d3.symbolCross,
+        option : '&#x271A;',
+        fill : 1,
+        offset : [1.1, 0.6, 0.6, 0.6],
+        rotate : 0
+    },
+    28 : {
+        type : d3.symbolCross,
+        option : '&#x2719;',
+        // option : '&#x271C;',
+        fill : 0,
+        offset : [1.1, 0.6, 0.6, 0.6],
         rotate : 0
     },
 };
-
-var voptlegend = {
-    20 : '&#x25CF;',
-    24 : '&#x25CB;',
-    21 : '&#x25A0;',
-    25 : '&#x25A1;',
-    33 : '&#x25C6;',
-    27 : '&#x25C7;',
-    22 : '&#x25B2;',
-    26 : '&#x25B3;',
-    29 : '&#x2B51;',
-    30 : '&#x2B52;'
-};
-

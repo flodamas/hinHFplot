@@ -25,7 +25,7 @@ function setscale()
     x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
     y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
     dy = chartHeight/17.; // 
-    dxmark = chartWidth/50.; // 
+    dxmark = chartWidth/45.; // 
 
     if(checklogx())
         x = d3.scaleLog().range([0, chartWidth]).domain([xmin, xmax]);
