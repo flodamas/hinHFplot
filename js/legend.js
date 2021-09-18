@@ -64,17 +64,20 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpa)
     {
         tlegend.append('tspan')
-            .attr("class", rpa[p].cl)
+            .attr("class", rpa[p].cl+" middlebaseline")
             .style("font-weight", "bold")
+            .style("dominant-baseline", "middle")
             .attr('display', legdrawornot("particle"))
             .text(decodehtml(rpa[p].content));
     }
     // collab
     tlegend.append('tspan')
+        .attr("class", "middlebaseline")
         .attr('display', legdrawornot("collab"))
         .text(' ' + thisitem.collab);
     // collision
     tlegend.append('tspan')
+        .attr("class", "middlebaseline")
         .style("font-style", "italic")
         .attr('display', legdrawornot("collision"))
         .text(' ' + thisitem.collision + ' ' + thisitem.energy);
@@ -85,7 +88,7 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpa)
     {
         tlegend.append('tspan')
-            .attr("class", rpa[p].cl)
+            .attr("class", rpa[p].cl+" middlebaseline")
             .attr('display', legdrawornot("kinea"))
             .text(decodehtml(rpa[p].content));
     }
@@ -96,7 +99,7 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpb)
     {
         tlegend.append('tspan')
-            .attr("class", rpb[p].cl)
+            .attr("class", rpb[p].cl+" middlebaseline")
             .attr('display', legdrawornot("kineb"))
             .text(decodehtml(rpb[p].content));
     }
@@ -126,8 +129,7 @@ function legend(da, trans = 500)
         var tlegend = svg.append("text")
             .attr("x", x0 + dxmark)
             .attr("y", ynow)
-            .attr("class", "legend")
-            .attr("dominant-baseline", "central")
+            .attr("class", "legend middlebaseline")
             .attr("id", "legend_" + da)
             .attr('opacity', '0')
             .style("text-anchor", "start");

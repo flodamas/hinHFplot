@@ -7,6 +7,9 @@
 .legend {
     font-size: 2.3em;
 }
+.middlebaseline {
+    dominant-baseline: middle;    
+}
 
 .axis path,
 .axis line {
@@ -44,9 +47,3 @@
     fill: #e5e5e5;
 }
 
-.legendmark {
-    font-family: "Arial Unicode MS";
-    /* font-family: "Font Awesome 5 Free"; */
-    font-size: 1.42em;
-    font-weight: bold;
-}
