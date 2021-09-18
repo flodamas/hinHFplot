@@ -55,7 +55,7 @@ function legenditem(tlegend, thisitem, type=1)
     // collab
     if(type_legend != 0)
     {
-    tlegend.append('tspan')
+        tlegend.append('tspan')
             .text(' ' + thisitem.collab);
     }
     // collision
@@ -149,8 +149,9 @@ function relegend(da, transt = 500) // change color
     var thecolor = document.getElementById('color_'+da).value;
     if(icheck.checked)
     {
-        d3.select("svg").select("#legendmark_"+da).transition()
+        d3.select("svg").select("#legendmark_"+da)
             .attr("d", d3.symbol().type(vopt[kmarker].type).size(marker_size()*vopt[kmarker].offset[0]))
+            .transition()
             .attr('stroke', thecolor)
             .attr('fill', vopt[kmarker].fill==1?thecolor:'transparent')
             .duration(transt);

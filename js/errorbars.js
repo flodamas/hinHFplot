@@ -423,8 +423,9 @@ function changeone(da, transt = 500)
         d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
         d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
 
-        d3.select("svg").select("g").selectAll('.pointd3'+da).transition()
+        d3.select("svg").select("g").selectAll('.pointd3'+da)
             .attr("d", d3.symbol().type(vopt[kmarker].type).size(marker_size()*vopt[kmarker].offset[0]))
+            .transition()
             .attr('stroke', cc)
             .attr('fill', vopt[kmarker].fill==1?cc:'transparent')
             .duration(transt);
