@@ -2,7 +2,7 @@
 function setscale()
 {
     width = document.getElementById('rightpad').clientWidth*0.93;
-    height = width * 0.72;
+    height = width * 0.76;
 
     svg = d3.select('svg').attr('width', width).attr('height', height)
         .attr('font-family', 'sans-serif')
@@ -168,7 +168,7 @@ var binningopacity = function(transt = 400)
 
 var gridopacity = function(transt=500) {
     var grid = d3.select("svg").select("g").selectAll('.grid');
-    var next = {0 : 1, 1 : 0.5, 0.5 : 0.3, 0.3 : 0};
+    var next = {0 : 1, 1 : 0.8, 0.8 : 0.4, 0.4 : 0.2, 0.2 : 0};
     var newopa = next[document.getElementById('btngrid').value];
     grid.transition().attr('opacity', newopa).duration(transt);
     document.getElementById('btngrid').value = newopa;
@@ -227,7 +227,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
 
     // Narrow outline
     fill = 'transparent';
-    strokewidth = stroke_width();
+    strokewidth = stroke_width()*0.85;
     group = 'rectl';
     opac = 1.0;
     d3.select("svg").select("g").selectAll('.'+group+'d3'+da)
@@ -248,7 +248,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
 
     // Wide outline
     fill = 'transparent';
-    strokewidth = stroke_width();
+    strokewidth = stroke_width()*0.85;
     group = 'rectvl';
     opac = 1.0;
     d3.select("svg").select("g").selectAll('.'+group+'d3'+da)
@@ -364,7 +364,7 @@ var drawall = function(transt = 500)
         }
     }
 
-    addref();
+    // addref();
 }
 
 var drawallwleg = function(transt = 500)

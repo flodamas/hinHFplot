@@ -13,12 +13,13 @@
 
 .axis path,
 .axis line {
-    stroke-width: 0.08em;
+    stroke-width: 0.09em;
 }
 
 .grid path,
 .grid line
 {
+    /* stroke: black; */
     stroke: #e5e5e5;
     stroke-dasharray: 5,3;
 }

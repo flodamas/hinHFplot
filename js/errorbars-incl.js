@@ -31,7 +31,7 @@ var changetonext = function(idd) {
 }
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
-var stroke_width = function() { return width/100.*0.25; }
+var stroke_width = function() { return width/100.*0.28; }
 var stroke_width_axis = function() { return width/100.*0.24; }
 
 var xoverflow = function(x)
