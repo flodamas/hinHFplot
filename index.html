@@ -120,8 +120,8 @@
       <!-- Bottom-right -->
       <div id="rightpad">
         <div>
-          <input type="range" min="0.5" max="0.9" value="0.74" step="0.02" class="slider verticalslider" id="ratiorange" oninput="drawallwleg(0); document.getElementById('tratio').innerHTML = 'Canvas shape: ('+parseFloat(this.value).toFixed(2)+')';">
-          <div id="tratio">Canvas shape: (0.74)</div>
+          <input type="range" min="0.5" max="0.9" value="0.72" step="0.02" class="slider verticalslider" id="ratiorange" oninput="drawallwleg(0); document.getElementById('tratio').innerHTML = 'Canvas shape: ('+parseFloat(this.value).toFixed(2)+')';">
+          <div id="tratio">Canvas shape: (0.72)</div>
         </div>
         <svg id="svgparent" style="background-color: white;"></svg>
         <ul id="reference"> </ul>
@@ -140,6 +140,10 @@
 
     <div id="updatelog">
 
+      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 20): </br>
+      <ul class="myul">
+        <li>Allow to change the height-width ratio of canvas</li>
+      </ul>
       <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 18): </br>
       <ul class="myul">
         <li>More marker styles</li>
@@ -147,10 +151,6 @@
       <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 16): </br>
       <ul class="myul">
         <li>Use <i class="fas fa-paint-roller"></i> to change display style for each dataset separately</li>
-      </ul>
-      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (Sep 12): </br>
-      <ul class="myul">
-        <li>Add observable "RpA, RAA"</li>
       </ul>
 
       <div id="updatelogx" style="font-weight : bold;" onclick="this.style.opacity = 0; this.style.cursor = 'default'; 
