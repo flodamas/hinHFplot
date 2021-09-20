@@ -1,16 +1,10 @@
 // set scale
 function setscale()
 {
-    width = document.getElementById('rightpad').clientWidth*0.93;
-    height = width * 0.76;
-
+    setbasic();
     svg = d3.select('svg').attr('width', width).attr('height', height)
         .attr('font-family', 'sans-serif')
         .attr('font-size', width/100.);
-
-    margin = { top: height*0.06, right: width*0.05, bottom: height*0.13, left: width*0.14 },
-    chartWidth = width - margin.left - margin.right,
-    chartHeight = height - margin.top - margin.bottom;
 
     xmin = Math.min(document.getElementById('pxmin').value,
                     document.getElementById('pxmax').value);
@@ -21,11 +15,6 @@ function setscale()
     ymax = Math.max(document.getElementById('pymin').value,
                     document.getElementById('pymax').value);
     changerangewlog();
-
-    x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
-    y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
-    dy = chartHeight/17.; // 
-    dxmark = chartWidth/45.; // 
 
     if(checklogx())
         x = d3.scaleLog().range([0, chartWidth]).domain([xmin, xmax]);
@@ -182,7 +171,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 500) {
 
 var addDataRects = function(da, data, thecolor, transt = 500) {
     var fill, strokewidth, group;
-    
+
     // Narrow shadow
     fill = thecolor;
     strokewidth = 0;

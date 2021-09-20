@@ -183,7 +183,7 @@ function alllegend(transt = 500)
 
 function movelegendx()
 {
-    x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
+    setbasic();
     d3.select("svg").selectAll(".legend").attr("x", x0+dxmark);
     d3.select("svg").selectAll(".legendmark").each(function() {
         changexto( d3.select(this).attr('id'), x0 );
@@ -193,9 +193,9 @@ function movelegendx()
 
 function movelegendy()
 {
+    setbasic();
     for(var l=0; l<legs.length; l++)
     {
-        y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
         d3.select("svg").select("#legend_" + legs[l]).attr("y", y0 + l*dy);
         changeyto( "legendmark_" + legs[l], y0 + l*dy );
     }

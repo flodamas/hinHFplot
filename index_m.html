@@ -19,6 +19,14 @@
     <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
     <script src="datasets/dataset.js"></script>
+    <script src="js/markers.js"></script>
+    <script src="js/loaditem.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/errorbars-incl.js"></script>
+    <script src="js/legend.js"></script>
+    <script src="js/errorbars.js"></script>
+    <script src="js/reference.js"></script>
     <script>
       if(window.innerWidth/window.innerHeight > 1) {
           window.location = "index.html";
@@ -79,10 +87,6 @@
       <div id="data">
         <table id="datainput"></table>
       </div>
-      <script src="js/markers.js"></script>
-      <script src="js/loaditem.js"></script>
-      <script src="js/general.js"></script>
-      <script src="js/filter.js"></script>
       <script>defaultrange()</script>
       <script>loaditem(1)</script>
     </div>
@@ -91,6 +95,10 @@
     <!-- Bottom-right -->
     <div id="rightrange">
       <div id="rightpad">
+        <div style="display: none;">
+          <input type="range" min="0.5" max="0.9" value="0.72" step="0.02" class="slider verticalslider" id="ratiorange" oninput="drawallwleg(0); document.getElementById('tratio').innerHTML = 'Canvas shape: ('+parseFloat(this.value).toFixed(2)+')';">
+          <div id="tratio"></div>
+        </div>
         <svg id="svgparent" style="background-color: white;"></svg>
         <div id="divrange">
           <br>
@@ -117,9 +125,6 @@
           </div>
         </div>
         <script src="js/save.js"></script>
-        <script src="js/errorbars-incl.js"></script>
-        <script src="js/errorbars.js"></script>
-        <script src="js/reference.js"></script>
         <script>setsvg()</script>
       </div>
 
