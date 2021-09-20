@@ -363,8 +363,6 @@ var drawall = function(transt = 500)
             addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
         }
     }
-
-    // addref();
 }
 
 var drawallwleg = function(transt = 500)
@@ -377,6 +375,7 @@ var drawallnoleg = function(transt = 500)
 {
     drawall(transt);
     legs = [];
+    addref();
 }
 
 var draw = function(da, transt = 500)
