@@ -125,3 +125,9 @@ td {
     margin: 0 0;
     padding: calc(var(--padding-input)*0.55) calc(var(--padding-input)*0.6);
 }
+
+.btnforward {
+    font-size: calc(var(--size-font-default)*0.9);
+    margin: 0 0;
+    padding: calc(var(--padding-input)*0.38) calc(var(--padding-input)*0.65);
+}

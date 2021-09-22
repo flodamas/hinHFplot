@@ -57,6 +57,7 @@ var changetonext = function(idd) {
     function next(i) { return (parseInt(i)+1) % Object.keys(styles_mapping).length; }
     document.getElementById(idd).value = next(document.getElementById(idd).value);
 }
+function checkandremove(id) { if( document.getElementById(id) ) { document.getElementById(id).remove(); } }
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.28; }

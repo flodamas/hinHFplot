@@ -25,8 +25,9 @@
     <script src="js/filter.js"></script>
     <script src="js/errorbars-incl.js"></script>
     <script src="js/legend.js"></script>
-    <script src="js/errorbars.js"></script>
     <script src="js/reference.js"></script>
+    <script src="js/errorbars.js"></script>
+    <script src="js/control.js"></script>
     <script>
       if(window.innerWidth/window.innerHeight > 1) {
           window.location = "index.html";
@@ -41,7 +42,7 @@
       <div id="setup">
         <div>
           <p>Observable:</p>
-          <select id="observable" onchange="defaultrange(); loaditem(1); drawallnoleg();" class="custom-select">
+          <select id="observable" onchange="defaultrange(); loaditem(1); freshall(0);" class="custom-select">
             <option value="RAA">RAA</option>
             <option value="RpA">RpA</option>
             <option value="RpARAA">RpA, RAA</option>
@@ -53,7 +54,7 @@
             <option value="DoubleRatio">Double ratio</option>
           </select>
           <p>vs.</p>
-          <select id="xvariable" onchange="defaultrange(); loaditem(1); drawallnoleg();" class="custom-select">
+          <select id="xvariable" onchange="defaultrange(); loaditem(1); freshall(0);" class="custom-select">
             <option value="pT">pT</option>
             <option value="y">y</option>
             <option value="absy">|y|</option>
@@ -63,16 +64,16 @@
         </div>
         <div>
           <p>X-axis range:</p>
-          <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
+          <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="freshall(0);" inputmode="decimal">
           <p> - </p>
-          <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
+          <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="freshall(0);" inputmode="decimal">
           <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
         </div>
         <div>
           <p>Y-axis range:</p>
-          <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
+          <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="freshall(0);" inputmode="decimal">
           <p> - </p>
-          <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="drawallwleg();" inputmode="decimal">
+          <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="freshall(0);" inputmode="decimal">
           <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
         </div>
         <div>
@@ -96,7 +97,7 @@
     <div id="rightrange">
       <div id="rightpad">
         <div style="display: none;">
-          <input type="range" min="0.5" max="0.9" value="0.72" step="0.02" class="slider verticalslider" id="ratiorange" oninput="drawallwleg(0); document.getElementById('tratio').innerHTML = 'Canvas shape: ('+parseFloat(this.value).toFixed(2)+')';">
+          <input type="range" min="0.5" max="0.9" value="0.72" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall(0); document.getElementById('tratio').innerHTML = 'Canvas shape: ('+parseFloat(this.value).toFixed(2)+')';">
           <div id="tratio"></div>
         </div>
         <svg id="svgparent" style="background-color: white;"></svg>

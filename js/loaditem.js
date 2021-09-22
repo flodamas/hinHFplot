@@ -6,7 +6,6 @@ function clearitems()
     {
         datainput.removeChild(datainput.firstChild);
     }
-    // console.log(document.getElementsByTagName('tr'));
 }
 
 function loaditem(nomarkerpicker = 0)
@@ -54,7 +53,7 @@ function loaditem(nomarkerpicker = 0)
         icheckmark.setAttribute('class', 'checkmark');
         icheckmark.id = "checkmark_" + da;
         itchecklabel.appendChild(icheckmark);
-        icheck.setAttribute('onchange', "draw('"+da+"'); legend('"+da+"'); document.getElementById('checkmark_' + '"+da+"').style = ''; ");
+        icheck.setAttribute('onchange', "drawone('"+da+"'); legone('"+da+"'); document.getElementById('checkmark_' + '"+da+"').style = ''; ");
 
         if(obs == "vn")
         {
@@ -98,7 +97,7 @@ function loaditem(nomarkerpicker = 0)
         icolor.id = "color_" + da;
         icolor.value = "#" + Math.floor(Math.random()*16777215).toString(16);
         icolor.setAttribute('class', 'colorpicker');
-        icolor.setAttribute('onchange', "changeone('" + da + "'); ");
+        icolor.setAttribute('onchange', "changethis('" + da + "'); ");
         itcolor.appendChild(icolor);
         
         var itmarker = document.createElement("td");
@@ -112,7 +111,7 @@ function loaditem(nomarkerpicker = 0)
         }
         imarker.id = "marker_" + da;
         imarker.setAttribute('class', 'markerpicker');
-        imarker.setAttribute('onchange', "changeone('" + da + "'); ");
+        imarker.setAttribute('onchange', "changethis('" + da + "'); ");
         itmarker.appendChild(imarker);
         if(nomarkerpicker == 1) itmarker.style.display = 'none';
 
@@ -129,6 +128,18 @@ function loaditem(nomarkerpicker = 0)
         if(nomarkerpicker == 1)
             itdisplay.style.display = 'none';
         
+        var itforward = document.createElement("td");
+        iline.appendChild(itforward);
+        var iforward = document.createElement("button");
+        iforward.setAttribute('type', 'submit');
+        iforward.id = "forward_" + da;
+        iforward.innerHTML = '<i class="fas fa-angle-double-up"></i>';
+        iforward.setAttribute('class', 'btnaction btnforward');
+        iforward.setAttribute('onclick', "drawone('" + da + "'); ");
+        itforward.appendChild(iforward);
+        if(nomarkerpicker == 1)
+            itforward.style.display = 'none';
+        
         itparticle.setAttribute('onclick', "checkthis('"+da+"')");
         itcollision.setAttribute('onclick', "checkthis('"+da+"')");
         itenergy.setAttribute('onclick', "checkthis('"+da+"')");
@@ -143,22 +154,10 @@ function loaditem(nomarkerpicker = 0)
     keyfilter();
 }
 
-function selectall()
+var changedisplay = function(da, transt = 400)
 {
-    var checkm = document.getElementsByClassName("checkmark");
-    for(var i=0; i<checkm.length; i++)
-        checkm[i].style = '';
-
-    var checkb = document.getElementsByTagName("input");
-    for(var i=0; i<checkb.length; i++)
-    {
-        if(checkb[i].type == 'checkbox')
-        {
-            checkb[i].checked = true;
-
-        }
-    }
-    drawall();
+    changetonext('display_'+da);
+    drawdisplay(da, transt);
 }
 
 function checkthis(da)
@@ -175,8 +174,19 @@ function checkthis(da)
         document.getElementById('checkmark_' + da).style = '';
     }
 
-    draw(da);
-    legend(da);
+    drawone(da);
+    legone(da);
+    refone(da);
+}
+
+function changethis(da)
+{
+    if(document.getElementById('check_' + da).checked)
+    {
+        changeone(da);
+        changeoneleg(da);
+        changeoneref(da);
+    }
 }
 
 function checkcolor(da)

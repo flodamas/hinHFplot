@@ -1,5 +1,22 @@
+function changeoneref(da)
+{
+    var cc = document.getElementById("color_" + da).value;
+    if( document.getElementById("liref_" + da) )
+        document.getElementById("liref_" + da).style = 'color: ' + cc + ';';
+}
 
-function addref()
+function refone(da)
+{
+    if(document.getElementById('check_' + da).checked)
+    {
+        checkandremove("liref_" + da);
+        addoneref(da, document.getElementById('reference'));
+    }
+    else
+        rmoneref(da);
+}
+
+function refall()
 {
     var reference = document.getElementById('reference');
     while(reference.firstChild)
@@ -12,11 +29,13 @@ function addref()
         if(checkb[i].checked == false) { continue; }
         var da = checkb[i].id.replace("check_", "");
 
-        addoneref(da, reference);
+        addoneref(da, reference, 0);
     }
 }
 
-function addoneref(da, reference)
+// ==> Protected: <==
+
+function addoneref(da, reference, transt = 500)
 {
     var cc = document.getElementById("color_" + da).value;
     var iref = document.createElement("li");
@@ -24,9 +43,12 @@ function addoneref(da, reference)
     iref.setAttribute('class', 'liref');
     iref.style.color = cc;
     iref.style.opacity = '0';
-    setTimeout(function() {
+    if(transt==0)
         iref.style.opacity = '1';
-    }, 1);
+    else
+        setTimeout(function() {
+            iref.style.opacity = '1';
+        }, 1);
     reference.appendChild(iref);
     var iaref = document.createElement("a");
     iaref.id = "aref_" + da;
@@ -48,18 +70,12 @@ function addoneref(da, reference)
     iref.appendChild(iacref);
 }
 
-function rmoneref(da)
+function rmoneref(da, transt = 400)
 {
     document.getElementById("liref_" + da).style.opacity = '0';
     setTimeout(function() {
         document.getElementById("liref_" + da).remove();
-    }, 400);
-}
-
-function coloroneref(da)
-{
-    var cc = document.getElementById("color_" + da).value;
-    document.getElementById("liref_" + da).style = 'color: ' + cc + ';';
+    }, transt);
 }
 
 function changecolor(da)
