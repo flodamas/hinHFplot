@@ -112,13 +112,6 @@ function movelegendy()
     document.getElementById('ty0').innerText = " " + document.getElementById('y0range').value;
 }
 
-function legendopacity() {
-    legchangetonext('btnlegend');
-    d3.select("svg").selectAll('.legend').remove();
-    d3.select("svg").selectAll('.legendmark').remove();
-    alllegend(0);
-}
-
 // ==> Protected: <==
 
 function legendmarker(da, xx, yy, transt = 500)

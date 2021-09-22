@@ -67,6 +67,8 @@ function changescale(id, transt = 500)
     legall(transt);
 }
 
+// Opacity series
+
 function vlineopacity(transt = 400)
 {
     var vline = d3.select("svg").select("g").select('#vline');
@@ -97,4 +99,11 @@ function gridopacity(transt=500)
     var newopa = next[document.getElementById('btngrid').value];
     grid.transition().attr('opacity', newopa).duration(transt);
     document.getElementById('btngrid').value = newopa;
+}
+
+function legendopacity() {
+    legchangetonext('btnlegend');
+    d3.select("svg").selectAll('.legend').remove();
+    d3.select("svg").selectAll('.legendmark').remove();
+    legall(0);
 }
