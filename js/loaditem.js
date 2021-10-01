@@ -114,6 +114,11 @@ function loaditem(nomarkerpicker = 0)
         imarker.setAttribute('onchange', "changethis('" + da + "'); ");
         itmarker.appendChild(imarker);
         if(nomarkerpicker == 1) itmarker.style.display = 'none';
+        else
+        {
+            var rndint = Math.floor(Math.random() * vorders.length);
+            imarker.value = vorders[rndint];
+        }
 
         var itdisplay = document.createElement("td");
         iline.appendChild(itdisplay);
