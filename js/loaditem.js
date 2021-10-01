@@ -112,13 +112,14 @@ function loaditem(nomarkerpicker = 0)
         imarker.id = "marker_" + da;
         imarker.setAttribute('class', 'markerpicker');
         imarker.setAttribute('onchange', "changethis('" + da + "'); ");
+        imarker.title = "marker styles";
         itmarker.appendChild(imarker);
         if(nomarkerpicker == 1) itmarker.style.display = 'none';
-        else
-        {
-            var rndint = Math.floor(Math.random() * vorders.length);
-            imarker.value = vorders[rndint];
-        }
+        // else
+        // {
+            // var rndint = Math.floor(Math.random() * vorders.length);
+            // imarker.value = vorders[rndint];
+        // }
 
         var itdisplay = document.createElement("td");
         iline.appendChild(itdisplay);
@@ -129,6 +130,7 @@ function loaditem(nomarkerpicker = 0)
         idisplay.value = '6';
         idisplay.setAttribute('class', 'btnaction btndisplay');
         idisplay.setAttribute('onclick', "changedisplay('" + da + "'); ");
+        idisplay.title = "display styles";
         itdisplay.appendChild(idisplay);
         if(nomarkerpicker == 1)
             itdisplay.style.display = 'none';
@@ -141,6 +143,7 @@ function loaditem(nomarkerpicker = 0)
         iforward.innerHTML = '<i class="fas fa-angle-double-up"></i>';
         iforward.setAttribute('class', 'btnaction btnforward');
         iforward.setAttribute('onclick', "drawone('" + da + "'); ");
+        iforward.title = "to front";
         itforward.appendChild(iforward);
         if(nomarkerpicker == 1)
             itforward.style.display = 'none';
