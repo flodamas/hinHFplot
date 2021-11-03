@@ -3,6 +3,7 @@ var dataset = {};
 dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
     reference : "PRC 99 (2019) 034908",
     link : "https://arxiv.org/abs/1812.10224",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -29,6 +30,7 @@ dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
 dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
     reference : "PRC 99 (2019) 034908",
     link : "https://arxiv.org/abs/1812.10224",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -55,6 +57,7 @@ dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
 dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1"] = {
     reference : "PRC 99 (2019) 034908",
     link : "https://arxiv.org/abs/1812.10224",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -81,6 +84,7 @@ dataset["aprD0_RAA_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1"] = {
 dataset["aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "PLB 782 (2018) 474",
     link : "https://arxiv.org/abs/1708.04962",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -110,6 +114,7 @@ dataset["aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
     reference : "PLB 782 (2018) 474",
     link : "https://arxiv.org/abs/1708.04962",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -139,6 +144,7 @@ dataset["aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 dataset["aprD0_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -175,6 +181,7 @@ dataset["aprD0_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-3p5"] = {
     reference : "JHEP 1710 (2017) 090",
     link : "https://arxiv.org/abs/1707.02750",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -194,6 +201,7 @@ dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-3p5"] = {
 dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-4"] = {
     reference : "JHEP 1710 (2017) 090",
     link : "https://arxiv.org/abs/1707.02750",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -215,6 +223,7 @@ dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-4"] = {
 dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-M3p5-M2p5"] = {
     reference : "JHEP 1710 (2017) 090",
     link : "https://arxiv.org/abs/1707.02750",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -234,6 +243,7 @@ dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-M3p5-M2p5"] = {
 dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-M4-M2p5"] = {
     reference : "JHEP 1710 (2017) 090",
     link : "https://arxiv.org/abs/1707.02750",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -255,6 +265,7 @@ dataset["aprD0_RpA_pT_pPb_5TeV_LHCb__ycm-M4-M2p5"] = {
 dataset["aprD0_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
     reference : "JHEP 1710 (2017) 090",
     link : "https://arxiv.org/abs/1707.02750",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt D<sup>0</sup>",
@@ -278,6 +289,7 @@ dataset["aprD0_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
 dataset["aprD0_v2_absy_PbPb_5TeV_CMS_cent-20-70_pT-2-8"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "absy",
     particle : "Prompt D<sup>0</sup>",
@@ -296,6 +308,7 @@ dataset["aprD0_v2_absy_PbPb_5TeV_CMS_cent-20-70_pT-2-8"] = {
 dataset["aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Prompt D<sup>0</sup>",
@@ -316,6 +329,7 @@ dataset["aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2"] = {
 dataset["aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Prompt D<sup>0</sup>",
@@ -336,6 +350,7 @@ dataset["aprD0_v2_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1"] = {
 dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -361,6 +376,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-1-2"] = {
 dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -395,6 +411,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -420,6 +437,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-1-2"] = {
 dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -454,6 +472,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
 dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -479,6 +498,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-1-2"] = {
 dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -513,6 +533,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
 dataset["aprD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     reference : "PRL 121 (2018) 082301",
     link : "https://arxiv.org/abs/1804.09767",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -536,6 +557,7 @@ dataset["aprD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
 dataset["aprD0_v2_pT_pp_13TeV_CMS__absy-lt-1"] = {
     reference : "PLB 813 (2021) 136036",
     link : "https://arxiv.org/abs/2009.07065",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -554,6 +576,7 @@ dataset["aprD0_v2_pT_pp_13TeV_CMS__absy-lt-1"] = {
 dataset["aprD0_v3_absy_PbPb_5TeV_CMS_cent-20-70_pT-2-8"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "absy",
     particle : "Prompt D<sup>0</sup>",
@@ -572,6 +595,7 @@ dataset["aprD0_v3_absy_PbPb_5TeV_CMS_cent-20-70_pT-2-8"] = {
 dataset["aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "cent",
     particle : "Prompt D<sup>0</sup>",
@@ -592,6 +616,7 @@ dataset["aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-1-2"] = {
 dataset["aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "cent",
     particle : "Prompt D<sup>0</sup>",
@@ -612,6 +637,7 @@ dataset["aprD0_v3_cent_PbPb_5TeV_CMS_pT-2-8_absy-lt-1"] = {
 dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -637,6 +663,7 @@ dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-1-2"] = {
 dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -662,6 +689,7 @@ dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -687,6 +715,7 @@ dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-1-2"] = {
 dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -712,6 +741,7 @@ dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
 dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-1-2"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -737,6 +767,7 @@ dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-1-2"] = {
 dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
     reference : "PLB 816 (2021) 136253",
     link : "https://arxiv.org/abs/2009.12628",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D<sup>0</sup>",
@@ -762,6 +793,7 @@ dataset["aprD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "DplusmnToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
@@ -797,6 +829,7 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
+    update : "2000-01-01",
     observable : "DplusmnToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
@@ -832,6 +865,7 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 77 (2017) 550",
     link : "https://arxiv.org/abs/1702.00766",
+    update : "2000-01-01",
     observable : "DplusmnToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
@@ -858,6 +892,7 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDplusmn_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>&plusmn;</sup>",
@@ -893,6 +928,7 @@ dataset["aprDplusmn_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprDstarToD0_DstarToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "DstarToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
@@ -927,6 +963,7 @@ dataset["aprDstarToD0_DstarToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprDstarToD0_DstarToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
+    update : "2000-01-01",
     observable : "DstarToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
@@ -961,6 +998,7 @@ dataset["aprDstarToD0_DstarToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDstarToD0_DstarToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 77 (2017) 550",
     link : "https://arxiv.org/abs/1702.00766",
+    update : "2000-01-01",
     observable : "DstarToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
@@ -987,6 +1025,7 @@ dataset["aprDstarToD0_DstarToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDstar_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sup>*</sup>",
@@ -1021,6 +1060,7 @@ dataset["aprDstar_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprDsubsToD0_DsubsToD0_cent_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1"] = {
     reference : "PRL 127 (2021) 092301",
     link : "https://arxiv.org/abs/2101.11793",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "cent",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1041,6 +1081,7 @@ dataset["aprDsubsToD0_DsubsToD0_cent_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_Npart_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1"] = {
     reference : "PRL 127 (2021) 092301",
     link : "https://arxiv.org/abs/2101.11793",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "Npart",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1061,6 +1102,7 @@ dataset["aprDsubsToD0_DsubsToD0_Npart_AuAu_200GeV_STAR_pT-1p5-5_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
     reference : "PRL 127 (2021) 092301",
     link : "https://arxiv.org/abs/2101.11793",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1080,6 +1122,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-10-20_absy-lt-1"] = {
     reference : "PRL 127 (2021) 092301",
     link : "https://arxiv.org/abs/2101.11793",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1099,6 +1142,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-10-20_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1"] = {
     reference : "PRL 127 (2021) 092301",
     link : "https://arxiv.org/abs/2101.11793",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1118,6 +1162,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1"] = {
     reference : "PRL 127 (2021) 092301",
     link : "https://arxiv.org/abs/2101.11793",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1137,6 +1182,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15372",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1162,6 +1208,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15372",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1185,6 +1232,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "CMS-PAS-HIN-18-017",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1204,6 +1252,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1225,6 +1274,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1248,6 +1298,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_CMS__absy-lt-1"] = {
     reference : "CMS-PAS-HIN-18-017",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1271,6 +1322,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_CMS__absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 77 (2017) 550",
     link : "https://arxiv.org/abs/1702.00766",
+    update : "2000-01-01",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -1290,6 +1342,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -1311,6 +1364,7 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = 
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
+    update : "2000-01-01",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -1334,6 +1388,7 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 77 (2017) 550",
     link : "https://arxiv.org/abs/1702.00766",
+    update : "2000-01-01",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -1353,6 +1408,7 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15372",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub>",
@@ -1378,6 +1434,7 @@ dataset["aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15372",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub>",
@@ -1401,6 +1458,7 @@ dataset["aprDsubs_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 dataset["aprDsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "CMS-PAS-HIN-18-017",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-18-017/index.html",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub>",
@@ -1420,6 +1478,7 @@ dataset["aprDsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["aprDsubs_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub>",
@@ -1441,6 +1500,7 @@ dataset["aprDsubs_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15372",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1478,6 +1538,7 @@ dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15372",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1514,6 +1575,7 @@ dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 dataset["aprD_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1550,6 +1612,7 @@ dataset["aprD_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprD_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
     reference : "PLB 813 (2021) 136054",
     link : "https://arxiv.org/abs/2005.11131",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1576,6 +1639,7 @@ dataset["aprD_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
 dataset["aprD_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
     reference : "PLB 813 (2021) 136054",
     link : "https://arxiv.org/abs/2005.11131",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1603,6 +1667,7 @@ dataset["aprD_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
 dataset["aprD_v3_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
     reference : "PLB 813 (2021) 136054",
     link : "https://arxiv.org/abs/2005.11131",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1629,6 +1694,7 @@ dataset["aprD_v3_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
 dataset["aprD_v3_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
     reference : "PLB 813 (2021) 136054",
     link : "https://arxiv.org/abs/2005.11131",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1651,6 +1717,7 @@ dataset["aprD_v3_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
 dataset["aprJpsi_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-6p5-30"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -1672,6 +1739,7 @@ dataset["aprJpsi_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-6p5-30"] = {
 dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-10_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -1690,6 +1758,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-10_pT-9-40"] = {
 dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-80_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -1708,6 +1777,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-80_pT-9-40"] = {
 dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-20-40_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -1726,6 +1796,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-20-40_pT-9-40"] = {
 dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-40-80_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -1744,6 +1815,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-40-80_pT-9-40"] = {
 dataset["aprJpsi_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-6p5-50"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -1765,6 +1837,7 @@ dataset["aprJpsi_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-6p5-50"] = {
 dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1786,6 +1859,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1807,6 +1881,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
 dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1828,6 +1903,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1849,6 +1925,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
 dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1876,6 +1953,7 @@ dataset["aprJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1894,6 +1972,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1915,6 +1994,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
 dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1936,6 +2016,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
 dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1957,6 +2038,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
 dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -1978,6 +2060,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
 dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -2006,6 +2089,7 @@ dataset["aprJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2027,6 +2111,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2048,6 +2133,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2069,6 +2155,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2090,6 +2177,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2117,6 +2205,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2140,6 +2229,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2158,6 +2248,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2179,6 +2270,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2200,6 +2292,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2221,6 +2314,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2242,6 +2336,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2270,6 +2365,7 @@ dataset["aprJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2288,6 +2384,7 @@ dataset["aprJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2309,6 +2406,7 @@ dataset["aprJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2332,6 +2430,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_absy-lt-2"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-80_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2355,6 +2454,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-80_absy-lt-2"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-20-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2378,6 +2478,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-20-40_absy-lt-2"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-40-80_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2401,6 +2502,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-40-80_absy-lt-2"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2419,6 +2521,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2444,6 +2547,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p8-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-0p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2465,6 +2569,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-0p6"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2485,6 +2590,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2512,6 +2618,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2535,6 +2642,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2558,6 +2666,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
 dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2581,6 +2690,7 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2604,6 +2714,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2624,6 +2735,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0p9-1p5"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2644,6 +2756,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0p9-1p5"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-1p5-1p93"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2666,6 +2779,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-1p5-1p93"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M0p9-0"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2686,6 +2800,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M0p9-0"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p5-M0p9"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2706,6 +2821,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p5-M0p9"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p93-M1p5"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2727,6 +2843,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p93-M1p5"] = {
 dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2749,6 +2866,7 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
 dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2778,6 +2896,7 @@ dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
 dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -2807,6 +2926,7 @@ dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
 dataset["aprJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt J/&psi;",
@@ -2827,6 +2947,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
 dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt J/&psi;",
@@ -2849,6 +2970,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
 dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt J/&psi;",
@@ -2871,6 +2993,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
 dataset["aprJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     reference : "JHEP 02 (2014) 072",
     link : "https://arxiv.org/abs/1308.6729",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt J/&psi;",
@@ -2888,6 +3011,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
 dataset["aprJpsi_RpA_ycm_pPb_8TeV_LHCb__pT-lt-14"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt J/&psi;",
@@ -2912,6 +3036,7 @@ dataset["aprJpsi_RpA_ycm_pPb_8TeV_LHCb__pT-lt-14"] = {
 dataset["aprJpsi_v2_absy_PbPb_2p76TeV_CMS_cent-10-60_pT-6p5-30"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "absy",
     particle : "Prompt J/&psi;",
@@ -2930,6 +3055,7 @@ dataset["aprJpsi_v2_absy_PbPb_2p76TeV_CMS_cent-10-60_pT-6p5-30"] = {
 dataset["aprJpsi_v2_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -2948,6 +3074,7 @@ dataset["aprJpsi_v2_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
 dataset["aprJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Prompt J/&psi;",
@@ -2966,6 +3093,7 @@ dataset["aprJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 dataset["aprJpsi_v2_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -2984,6 +3112,7 @@ dataset["aprJpsi_v2_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
 dataset["aprJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "Npart",
     particle : "Prompt J/&psi;",
@@ -3002,6 +3131,7 @@ dataset["aprJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 dataset["aprJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -3018,6 +3148,7 @@ dataset["aprJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 dataset["aprJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -3036,6 +3167,7 @@ dataset["aprJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 dataset["aprJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -3054,6 +3186,7 @@ dataset["aprJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
 dataset["aprJpsi_v2_pT_pPb_8TeV_CMS__absy-lt-2p4"] = {
     reference : "PLB 791 (2019) 172",
     link : "https://arxiv.org/abs/1810.01473",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Prompt J/&psi;",
@@ -3074,6 +3207,7 @@ dataset["aprJpsi_v2_pT_pPb_8TeV_CMS__absy-lt-2p4"] = {
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15527",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3094,6 +3228,7 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15527",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3114,6 +3249,7 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "PLB 803 (2020) 135328",
     link : "https://arxiv.org/abs/1906.03322",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3130,6 +3266,7 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "arXiv:2011.06079",
     link : "https://arxiv.org/abs/2011.06079",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3153,6 +3290,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
     reference : "JHEP 02 (2019) 102",
     link : "https://arxiv.org/abs/1809.01404",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3176,6 +3314,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-2p5-4"] = {
     reference : "JHEP 02 (2019) 102",
     link : "https://arxiv.org/abs/1809.01404",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3199,6 +3338,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-2p5-4"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4-M2p5"] = {
     reference : "JHEP 02 (2019) 102",
     link : "https://arxiv.org/abs/1809.01404",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3222,6 +3362,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4-M2p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4p5-M2p5"] = {
     reference : "JHEP 02 (2019) 102",
     link : "https://arxiv.org/abs/1809.01404",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3245,6 +3386,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4p5-M2p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "arXiv:2011.06079",
     link : "https://arxiv.org/abs/2011.06079",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3267,6 +3409,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1"] = {
     reference : "PLB 803 (2020) 135328",
     link : "https://arxiv.org/abs/1906.03322",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3286,6 +3429,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     reference : "JHEP 04 (2018) 108",
     link : "https://arxiv.org/abs/1712.09581",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3306,6 +3450,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprLambdacToD0_LcToD0_ycm_pPb_5TeV_ALICE__pT-2-12"] = {
     reference : "arXiv:2011.06079",
     link : "https://arxiv.org/abs/2011.06079",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "ycm",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3322,6 +3467,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pPb_5TeV_ALICE__pT-2-12"] = {
 dataset["aprLambdacToD0_LcToD0_ycm_pPb_5TeV_LHCb__pT-2-10"] = {
     reference : "JHEP 02 (2019) 102",
     link : "https://arxiv.org/abs/1809.01404",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "ycm",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3346,6 +3492,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pPb_5TeV_LHCb__pT-2-10"] = {
 dataset["aprLambdacToD0_LcToD0_ycm_pp_7TeV_ALICE__pT-2-8"] = {
     reference : "JHEP 04 (2018) 108",
     link : "https://arxiv.org/abs/1712.09581",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "ycm",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -3362,6 +3509,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pp_7TeV_ALICE__pT-2-8"] = {
 dataset["aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1"] = {
     reference : "PLB 803 (2020) 135328",
     link : "https://arxiv.org/abs/1906.03322",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3379,6 +3527,7 @@ dataset["aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15527",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3399,6 +3548,7 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/15527",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3419,6 +3569,7 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "PLB 803 (2020) 135328",
     link : "https://arxiv.org/abs/1906.03322",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3435,6 +3586,7 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-30_absy-lt-1"] = {
     reference : "PLB 803 (2020) 135328",
     link : "https://arxiv.org/abs/1906.03322",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3451,6 +3603,7 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-30_absy-lt-1"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-1"] = {
     reference : "PLB 803 (2020) 135328",
     link : "https://arxiv.org/abs/1906.03322",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3467,6 +3620,7 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-1"] = {
 dataset["aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "arXiv:2011.06079",
     link : "https://arxiv.org/abs/2011.06079",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -3489,6 +3643,7 @@ dataset["aprLambdac_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 113 (2014) 262301",
     link : "https://arxiv.org/abs/1410.1804",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3507,6 +3662,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"]
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "PRL 113 (2014) 262301",
     link : "https://arxiv.org/abs/1410.1804",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3524,6 +3680,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6"
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3540,6 +3697,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = 
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3560,6 +3718,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] =
 dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3579,6 +3738,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-8-40_ycm-M2-1p5"] = {
 dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 113 (2014) 262301",
     link : "https://arxiv.org/abs/1410.1804",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3597,6 +3757,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-3-30_absy-1p6-2p4"
 dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "PRL 113 (2014) 262301",
     link : "https://arxiv.org/abs/1410.1804",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3614,6 +3775,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p6
 dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3634,6 +3796,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = 
 dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3650,6 +3813,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] =
 dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3670,6 +3834,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] 
 dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3687,6 +3852,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] =
 dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = {
     reference : "PRL 118 (2017) 162301",
     link : "https://arxiv.org/abs/1611.01438",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3707,6 +3873,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = 
 dataset["aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "ycm",
     particle : "Prompt &psi;(2S) / J/&psi;",
@@ -3727,6 +3894,7 @@ dataset["aprpsi2SToJpsi_DoubleRatio_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
 dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt &psi;(2S)",
@@ -3743,6 +3911,7 @@ dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
 dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Prompt &psi;(2S)",
@@ -3763,6 +3932,7 @@ dataset["aprpsi2S_RAA_cent_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
 dataset["aprpsi2S_RAA_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S)",
@@ -3779,6 +3949,7 @@ dataset["aprpsi2S_RAA_Npart_PbPb_5TeV_CMS_pT-3-30_absy-1p6-2p4"] = {
 dataset["aprpsi2S_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Prompt &psi;(2S)",
@@ -3799,6 +3970,7 @@ dataset["aprpsi2S_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-30_absy-lt-1p6"] = {
 dataset["aprpsi2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3816,6 +3988,7 @@ dataset["aprpsi2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
 dataset["aprpsi2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3836,6 +4009,7 @@ dataset["aprpsi2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1p6"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3853,6 +4027,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-0p9-1p5"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3870,6 +4045,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-0p9-1p5"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-1p5-1p93"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3888,6 +4064,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-1p5-1p93"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M0p9-0"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3905,6 +4082,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M0p9-0"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M1p5-M0p9"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3922,6 +4100,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M1p5-M0p9"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M1p93-M1p5"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3940,6 +4119,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M1p93-M1p5"] = {
 dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Prompt &psi;(2S)",
@@ -3958,6 +4138,7 @@ dataset["aprpsi2S_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
 dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt &psi;(2S)",
@@ -3980,6 +4161,7 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
 dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-4-6p5"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt &psi;(2S)",
@@ -3998,6 +4180,7 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-4-6p5"] = {
 dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     reference : "PLB 790 (2019) 509",
     link : "https://arxiv.org/abs/1805.02248",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt &psi;(2S)",
@@ -4017,9 +4200,50 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     ]
 };
 
+dataset["aprXicToD0_XicToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
+    reference : "JHEP 10 (2021) 159",
+    link : "https://arxiv.org/abs/2105.05616",
+    update : "2021-11-03",
+    observable : "XicToD0",
+    xtitle : "pT",
+    particle : "Prompt &Xi;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pp",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.2, "stath": 0.07, "statl": 0.07, "systh": 0.03, "systl": 0.03},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.28, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.17, "stath": 0.03, "statl": 0.03, "systh": 0.03, "systl": 0.03},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.11, "stath": 0.029, "statl": 0.029, "systh": 0.02, "systl": 0.02},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.1, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
+    ]
+};
+
+dataset["aprXicToD0_XicToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
+    reference : "PLB 781 (2018) 8",
+    link : "https://arxiv.org/abs/1712.04242",
+    update : "2021-11-03",
+    observable : "XicToD0",
+    xtitle : "pT",
+    particle : "Prompt &Xi;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pp",
+    energy : "7 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.56, "stath": 0.15, "statl": 0.15, "systh": 0.24, "systl": 0.24},
+        {"x": 4, "xl": 2, "xh": 6, "y": 0.18, "stath": 0.06, "statl": 0.06, "systh": 0.04, "systl": 0.04},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.15, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
 dataset["B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     reference : "PRL 116 (2016) 032301",
     link : "https://arxiv.org/abs/1508.06678",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sup>0</sup>",
@@ -4038,6 +4262,7 @@ dataset["B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 dataset["Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PRL 119 (2017) 152301",
     link : "https://arxiv.org/abs/1705.04727",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "B<sup>&plusmn;</sup>",
@@ -4058,6 +4283,7 @@ dataset["Bplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     reference : "PRL 116 (2016) 032301",
     link : "https://arxiv.org/abs/1508.06678",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sup>&plusmn;</sup>",
@@ -4078,6 +4304,7 @@ dataset["Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sup>&plusmn;</sup>",
@@ -4097,6 +4324,7 @@ dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
 dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sup>&plusmn;</sup>",
@@ -4116,6 +4344,7 @@ dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
 dataset["Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60"] = {
     reference : "PRL 116 (2016) 032301",
     link : "https://arxiv.org/abs/1508.06678",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "B<sup>&plusmn;</sup>",
@@ -4136,6 +4365,7 @@ dataset["Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60"] = {
 dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "B<sup>&plusmn;</sup>",
@@ -4153,6 +4383,7 @@ dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
 dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
     reference : "CMS-PAS-HIN-20-004",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "B<sub>c</sub>",
@@ -4170,6 +4401,7 @@ dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
 dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
     reference : "CMS-PAS-HIN-20-004",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "B<sub>c</sub>",
@@ -4187,6 +4419,7 @@ dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
 dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
     reference : "CMS-PAS-HIN-20-004",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "B<sub>c</sub>",
@@ -4203,6 +4436,7 @@ dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
 dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
     reference : "CMS-PAS-HIN-20-004",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "B<sub>c</sub>",
@@ -4219,6 +4453,7 @@ dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
 dataset["BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"] = {
     reference : "arXiv:2109.01908",
     link : "https://arxiv.org/abs/2109.01908",
+    update : "2000-01-01",
     observable : "BsubsToBplusmn",
     xtitle : "cent",
     particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
@@ -4236,6 +4471,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"]
 dataset["BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"] = {
     reference : "arXiv:2109.01908",
     link : "https://arxiv.org/abs/2109.01908",
+    update : "2000-01-01",
     observable : "BsubsToBplusmn",
     xtitle : "Npart",
     particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
@@ -4253,6 +4489,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"
 dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
     reference : "arXiv:2109.01908",
     link : "https://arxiv.org/abs/2109.01908",
+    update : "2000-01-01",
     observable : "BsubsToBplusmn",
     xtitle : "pT",
     particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
@@ -4272,6 +4509,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] 
 dataset["BsubsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 796 (2019) 168",
     link : "https://arxiv.org/abs/1810.03022",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
@@ -4289,6 +4527,7 @@ dataset["BsubsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = 
 dataset["Bsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 796 (2019) 168",
     link : "https://arxiv.org/abs/1810.03022",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "B<sub>s</sub>",
@@ -4306,6 +4545,7 @@ dataset["Bsubs_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["Bsubs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     reference : "PRL 116 (2016) 032301",
     link : "https://arxiv.org/abs/1508.06678",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sub>s</sub>",
@@ -4322,6 +4562,7 @@ dataset["Bsubs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/16377",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup> / Prompt D<sup>0</sup>",
@@ -4348,6 +4589,7 @@ dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/16377",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup> / Prompt D<sup>0</sup>",
@@ -4374,6 +4616,7 @@ dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = 
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/16377",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -4400,6 +4643,7 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/16377",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -4426,6 +4670,7 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 dataset["bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "PRL 123 (2019) 022001",
     link : "https://arxiv.org/abs/1810.11102",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -4453,6 +4698,7 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["bTOD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     reference : "PLB 813 (2021) 136036",
     link : "https://arxiv.org/abs/2009.07065",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -4470,6 +4716,7 @@ dataset["bTOD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
 dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     reference : "STAR Preliminary",
     link : "https://arxiv.org/abs/2002.09057",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "(b&rarr;) e / (c&rarr;) e",
@@ -4489,6 +4736,7 @@ dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
 dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     reference : "STAR Preliminary",
     link : "https://arxiv.org/abs/2002.09057",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -4508,6 +4756,7 @@ dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
 dataset["bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/13134",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -4536,6 +4785,7 @@ dataset["bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
 dataset["bTOe_RpA_pT_pPb_5TeV_ALICE__ycm-M1p06-0p14"] = {
     reference : "JHEP 07 (2017) 052",
     link : "https://arxiv.org/abs/1609.03898",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -4561,6 +4811,7 @@ dataset["bTOe_RpA_pT_pPb_5TeV_ALICE__ycm-M1p06-0p14"] = {
 dataset["bTOe_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
     reference : "PRL 126 (2021) 162001",
     link : "https://arxiv.org/abs/2005.11130",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -4582,6 +4833,7 @@ dataset["bTOe_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
 dataset["bTOJpsi_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-6p5-30"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "(b&rarr;) J/&psi;",
@@ -4603,6 +4855,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-6p5-30"] = {
 dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-10_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "(b&rarr;) J/&psi;",
@@ -4621,6 +4874,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-10_pT-9-40"] = {
 dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-80_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "(b&rarr;) J/&psi;",
@@ -4639,6 +4893,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-0-80_pT-9-40"] = {
 dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-20-40_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "(b&rarr;) J/&psi;",
@@ -4657,6 +4912,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-20-40_pT-9-40"] = {
 dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-40-80_pT-9-40"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "(b&rarr;) J/&psi;",
@@ -4675,6 +4931,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_ATLAS_cent-40-80_pT-9-40"] = {
 dataset["bTOJpsi_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-6p5-50"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "(b&rarr;) J/&psi;",
@@ -4696,6 +4953,7 @@ dataset["bTOJpsi_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-6p5-50"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4717,6 +4975,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4738,6 +4997,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4759,6 +5019,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4780,6 +5041,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4801,6 +5063,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4822,6 +5085,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4843,6 +5107,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4864,6 +5129,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
 dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -4892,6 +5158,7 @@ dataset["bTOJpsi_RAA_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -4913,6 +5180,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-3-6p5_absy-1p6-2p4"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -4934,6 +5202,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p2-1p6"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -4955,6 +5224,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-1p6-2p4"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -4976,6 +5246,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-1p2"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -4997,6 +5268,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -5020,6 +5292,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -5041,6 +5314,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-3-6p5_absy-1p8-2p4"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -5062,6 +5336,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-1p8-2p4"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -5083,6 +5358,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-0p6"] = {
 dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -5111,6 +5387,7 @@ dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5129,6 +5406,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-1p6-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5150,6 +5428,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5173,6 +5452,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_absy-lt-2"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-80_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5196,6 +5476,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-0-80_absy-lt-2"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-20-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5219,6 +5500,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-20-40_absy-lt-2"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-40-80_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5242,6 +5524,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ATLAS_cent-40-80_absy-lt-2"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p8-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5267,6 +5550,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-1p8-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-0p6"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5288,6 +5572,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-0p6"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5315,6 +5600,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5338,6 +5624,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5361,6 +5648,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     reference : "EPJC 78 (2018) 509",
     link : "https://arxiv.org/abs/1712.08959",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5384,6 +5672,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5407,6 +5696,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5427,6 +5717,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0-0p9"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0p9-1p5"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5447,6 +5738,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-0p9-1p5"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-1p5-1p93"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5469,6 +5761,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-1p5-1p93"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M0p9-0"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5489,6 +5782,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M0p9-0"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p5-M0p9"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5509,6 +5803,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p5-M0p9"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p93-M1p5"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5530,6 +5825,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M1p93-M1p5"] = {
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5552,6 +5848,7 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
 dataset["bTOJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5581,6 +5878,7 @@ dataset["bTOJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
 dataset["bTOJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5610,6 +5908,7 @@ dataset["bTOJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
 dataset["bTOJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "(b&rarr;) J/&psi;",
@@ -5630,6 +5929,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_ATLAS__pT-8-40"] = {
 dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "(b&rarr;) J/&psi;",
@@ -5652,6 +5952,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-10-30"] = {
 dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     reference : "EPJC 77 (2017) 269",
     link : "https://arxiv.org/abs/1702.01462",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "(b&rarr;) J/&psi;",
@@ -5674,6 +5975,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
 dataset["bTOJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     reference : "JHEP 02 (2014) 072",
     link : "https://arxiv.org/abs/1308.6729",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "(b&rarr;) J/&psi;",
@@ -5691,6 +5993,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
 dataset["bTOJpsi_RpA_ycm_pPb_8TeV_LHCb__pT-lt-14"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "(b&rarr;) J/&psi;",
@@ -5715,6 +6018,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_8TeV_LHCb__pT-lt-14"] = {
 dataset["bTOJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "(b&rarr;) J/&psi;",
@@ -5733,6 +6037,7 @@ dataset["bTOJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 dataset["bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "Npart",
     particle : "(b&rarr;) J/&psi;",
@@ -5751,6 +6056,7 @@ dataset["bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 dataset["bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5767,6 +6073,7 @@ dataset["bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 dataset["bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5783,6 +6090,7 @@ dataset["bTOJpsi_v2_pT_PbPb_2p76TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 dataset["bTOJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) J/&psi;",
@@ -5801,6 +6109,7 @@ dataset["bTOJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5828,6 +6137,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5855,6 +6165,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5882,6 +6193,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5909,6 +6221,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5936,6 +6249,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
 dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5962,6 +6276,7 @@ dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -5988,6 +6303,7 @@ dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6014,6 +6330,7 @@ dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6040,6 +6357,7 @@ dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6066,6 +6384,7 @@ dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
 dataset["bTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
     reference : "PRL 124 (2020) 082301",
     link : "https://arxiv.org/abs/1909.01650",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6086,6 +6405,7 @@ dataset["bTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
 dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6108,6 +6428,7 @@ dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6130,6 +6451,7 @@ dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6152,6 +6474,7 @@ dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6174,6 +6497,7 @@ dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) &mu;",
@@ -6196,6 +6520,7 @@ dataset["bTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
 dataset["bTOpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "(b&rarr;) &psi;(2S) / J/&psi;",
@@ -6214,6 +6539,7 @@ dataset["bTOpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = 
 dataset["cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8"] = {
     reference : "PRL 122 (2019) 072301",
     link : "https://arxiv.org/abs/1805.04367",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c,b&rarr;) e",
@@ -6232,6 +6558,7 @@ dataset["cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8"] = {
 dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     reference : "STAR Preliminary",
     link : "https://arxiv.org/abs/2002.09057",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) e",
@@ -6251,6 +6578,7 @@ dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6278,6 +6606,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6305,6 +6634,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6332,6 +6662,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6359,6 +6690,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     reference : "arXiv:2109.00411",
     link : "https://arxiv.org/abs/2109.00411",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6386,6 +6718,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
 dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6412,6 +6745,7 @@ dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6438,6 +6772,7 @@ dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6464,6 +6799,7 @@ dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6490,6 +6826,7 @@ dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6516,6 +6853,7 @@ dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
 dataset["cTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
     reference : "PRL 124 (2020) 082301",
     link : "https://arxiv.org/abs/1909.01650",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6536,6 +6874,7 @@ dataset["cTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
 dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6558,6 +6897,7 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6580,6 +6920,7 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6602,6 +6943,7 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6624,6 +6966,7 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     reference : "PLB 807 (2020) 135595",
     link : "https://arxiv.org/abs/2003.03565",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "(c&rarr;) &mu;",
@@ -6646,6 +6989,7 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
 dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1"] = {
     reference : "PRL 118 (2017) 212301",
     link : "https://arxiv.org/abs/1701.06060",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive D<sup>0</sup>",
@@ -6669,6 +7013,7 @@ dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1"] = {
 dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
     reference : "PRL 118 (2017) 212301",
     link : "https://arxiv.org/abs/1701.06060",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive D<sup>0</sup>",
@@ -6692,6 +7037,7 @@ dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
 dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6714,6 +7060,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6736,6 +7083,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6758,6 +7106,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-8_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6782,6 +7131,7 @@ dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-lt-8_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6804,6 +7154,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6826,6 +7177,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6848,6 +7200,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6870,6 +7223,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-2p5-3"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6892,6 +7246,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-2p5-3"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6914,6 +7269,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
 dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -6936,6 +7292,7 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
 dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-0_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -6959,6 +7316,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-0_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -6981,6 +7339,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7001,6 +7360,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
 dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-1p2-2p2"] = {
     reference : "PRL101 (2008) 122301",
     link : "https://arxiv.org/abs/0801.0220",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7024,6 +7384,7 @@ dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-1p2-2p2"] = {
 dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
     reference : "PRL101 (2008) 122301",
     link : "https://arxiv.org/abs/0801.0220",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7046,6 +7407,7 @@ dataset["incJpsi_RAA_Npart_CuCu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
 dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7068,6 +7430,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7090,6 +7453,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-5-8_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7112,6 +7476,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-lt-2_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-lt-8_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7136,6 +7501,7 @@ dataset["incJpsi_RAA_Npart_PbPb_2p76TeV_ALICE_pT-lt-8_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-10_absy-lt-0p9"] = {
     reference : "PLB 805 (2020) 135434",
     link : "https://arxiv.org/abs/1910.14404",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7156,6 +7522,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-10_absy-lt-0p9"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7178,6 +7545,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7200,6 +7568,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-2-5_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7222,6 +7591,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-5-8_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7244,6 +7614,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-8-12_y-2p5-4"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-10_absy-lt-0p9"] = {
     reference : "PLB 805 (2020) 135434",
     link : "https://arxiv.org/abs/1910.14404",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7264,6 +7635,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-10_absy-lt-0p9"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-2p5-3"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7286,6 +7658,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-2p5-3"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7308,6 +7681,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7330,6 +7704,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
 dataset["incJpsi_RAA_Npart_XeXe_5p44TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     reference : "PLB 785 (2018) 419",
     link : "https://arxiv.org/abs/1805.04383",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
@@ -7347,6 +7722,7 @@ dataset["incJpsi_RAA_Npart_XeXe_5p44TeV_ALICE_pT-gt-0_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7371,6 +7747,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-1"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7391,6 +7768,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-20_absy-lt-1"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-1"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7411,6 +7789,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-1"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7435,6 +7814,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7458,6 +7838,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7478,6 +7859,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-20-40_absy-lt-1"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-40-60_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7501,6 +7883,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-40-60_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-40-60_absy-lt-1"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7521,6 +7904,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-40-60_absy-lt-1"] = {
 dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-60-80_absy-lt-0p5"] = {
     reference : "PLB 797 (2019) 134917",
     link : "https://arxiv.org/abs/1905.13669",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7542,6 +7926,7 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-60-80_absy-lt-0p5"] = {
 dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-1p2-2p2"] = {
     reference : "PRL101 (2008) 122301",
     link : "https://arxiv.org/abs/0801.0220",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7562,6 +7947,7 @@ dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-1p2-2p2"] = {
 dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-lt-0p35"] = {
     reference : "PRL101 (2008) 122301",
     link : "https://arxiv.org/abs/0801.0220",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7582,6 +7968,7 @@ dataset["incJpsi_RAA_pT_CuCu_200GeV_PHENIX_cent-0-20_absy-lt-0p35"] = {
 dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-0-20_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7604,6 +7991,7 @@ dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-0-20_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-0-40_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7626,6 +8014,7 @@ dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-0-40_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-0-90_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7648,6 +8037,7 @@ dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-0-90_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-20-40_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7670,6 +8060,7 @@ dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-20-40_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-40-90_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7692,6 +8083,7 @@ dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-40-90_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_absy-lt-0p9"] = {
     reference : "PLB 805 (2020) 135434",
     link : "https://arxiv.org/abs/1910.14404",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7711,6 +8103,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_absy-lt-0p9"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7737,6 +8130,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7763,6 +8157,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_absy-lt-0p9"] = {
     reference : "PLB 805 (2020) 135434",
     link : "https://arxiv.org/abs/1910.14404",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7782,6 +8177,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_absy-lt-0p9"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7806,6 +8202,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_absy-lt-0p9"] = {
     reference : "PLB 805 (2020) 135434",
     link : "https://arxiv.org/abs/1910.14404",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7825,6 +8222,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_absy-lt-0p9"] = {
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_y-2p5-4"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -7849,6 +8247,7 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_y-2p5-4"] = {
 dataset["incJpsi_RAA_ycm_CuCu_200GeV_PHENIX_cent-0-20_pT-lt-5"] = {
     reference : "PRL101 (2008) 122301",
     link : "https://arxiv.org/abs/0801.0220",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7873,6 +8272,7 @@ dataset["incJpsi_RAA_ycm_CuCu_200GeV_PHENIX_cent-0-20_pT-lt-5"] = {
 dataset["incJpsi_RAA_ycm_PbPb_2p76TeV_ALICE_cent-0-90_pT-lt-8"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7894,6 +8294,7 @@ dataset["incJpsi_RAA_ycm_PbPb_2p76TeV_ALICE_cent-0-90_pT-lt-8"] = {
 dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-20_pT-lt-12"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7915,6 +8316,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-20_pT-lt-12"] = {
 dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-10"] = {
     reference : "PLB 805 (2020) 135434",
     link : "https://arxiv.org/abs/1910.14404",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7931,6 +8333,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-10"] = {
 dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-12"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7952,6 +8355,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-0-90_pT-lt-12"] = {
 dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-20-40_pT-lt-12"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7973,6 +8377,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-20-40_pT-lt-12"] = {
 dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-40-90_pT-lt-12"] = {
     reference : "JHEP 2002 (2020) 041",
     link : "https://arxiv.org/abs/1909.03158",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -7994,6 +8399,7 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-40-90_pT-lt-12"] = {
 dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "JHEP 07 (2018) 160",
     link : "https://arxiv.org/abs/1805.04381",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8021,6 +8427,7 @@ dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
 dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     reference : "JHEP 07 (2018) 160",
     link : "https://arxiv.org/abs/1805.04381",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8048,6 +8455,7 @@ dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
 dataset["incJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     reference : "JHEP 02 (2014) 072",
     link : "https://arxiv.org/abs/1308.6729",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -8065,6 +8473,7 @@ dataset["incJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
 dataset["incJpsi_RpA_ycm_pPb_8TeV_ALICE__pT-lt-20"] = {
     reference : "JHEP 07 (2018) 160",
     link : "https://arxiv.org/abs/1805.04381",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Inclusive J/&psi;",
@@ -8092,6 +8501,7 @@ dataset["incJpsi_RpA_ycm_pPb_8TeV_ALICE__pT-lt-20"] = {
 dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-2-15_y-2p5-4"] = {
     reference : "PRL 123 (2019) 192301",
     link : "https://arxiv.org/abs/1907.03169",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -8110,6 +8520,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-2-15_y-2p5-4"] = {
 dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -8132,6 +8543,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
 dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -8154,6 +8566,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8171,6 +8584,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8196,6 +8610,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_y-2p5-4"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-50_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8215,6 +8630,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-50_y-2p5-4"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-10-30_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8240,6 +8656,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-10-30_y-2p5-4"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8257,6 +8674,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-30-50_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8282,6 +8700,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-30-50_y-2p5-4"] = {
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4"] = {
     reference : "PRL 123 (2019) 192301",
     link : "https://arxiv.org/abs/1907.03169",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8300,6 +8719,7 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4"] = {
 dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -8320,6 +8740,7 @@ dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
 dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "cent",
     particle : "Inclusive J/&psi;",
@@ -8340,6 +8761,7 @@ dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
 dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-0-10_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8364,6 +8786,7 @@ dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-0-10_y-2p5-4"] = {
 dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-0-50_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8383,6 +8806,7 @@ dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-0-50_y-2p5-4"] = {
 dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-10-30_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8407,6 +8831,7 @@ dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-10-30_y-2p5-4"] = {
 dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-30-50_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -8431,6 +8856,7 @@ dataset["incJpsi_v3_pT_PbPb_5TeV_ALICE_cent-30-50_y-2p5-4"] = {
 dataset["incLambdacToD0_LcToD0_Npart_AuAu_200GeV_STAR_pT-3-6_absy-lt-1"] = {
     reference : "PRL 124 (2020) 172301",
     link : "https://arxiv.org/abs/1910.14628",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "Npart",
     particle : "Inclusive &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -8449,6 +8875,7 @@ dataset["incLambdacToD0_LcToD0_Npart_AuAu_200GeV_STAR_pT-3-6_absy-lt-1"] = {
 dataset["incLambdacToD0_LcToD0_pT_AuAu_200GeV_STAR_cent-10-80_absy-lt-1"] = {
     reference : "PRL 124 (2020) 172301",
     link : "https://arxiv.org/abs/1910.14628",
+    update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Inclusive &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -8467,6 +8894,7 @@ dataset["incLambdacToD0_LcToD0_pT_AuAu_200GeV_STAR_cent-10-80_absy-lt-1"] = {
 dataset["incpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "Inclusive &psi;(2S) / J/&psi;",
@@ -8485,6 +8913,7 @@ dataset["incpsi2SToJpsi_DoubleRatio_cent_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] = 
 dataset["incpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "Inclusive &psi;(2S) / J/&psi;",
@@ -8503,6 +8932,7 @@ dataset["incpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] =
 dataset["incpsi2S_RpA_pT_pPb_5TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "JHEP 12 (2014) 073",
     link : "https://arxiv.org/abs/1405.3796",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive &psi;(2S)",
@@ -8522,6 +8952,7 @@ dataset["incpsi2S_RpA_pT_pPb_5TeV_ALICE__ycm-2p03-3p53"] = {
 dataset["incpsi2S_RpA_pT_pPb_5TeV_ALICE__ycm-M4p46-M2p96"] = {
     reference : "JHEP 12 (2014) 073",
     link : "https://arxiv.org/abs/1405.3796",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive &psi;(2S)",
@@ -8542,6 +8973,7 @@ dataset["incpsi2S_RpA_pT_pPb_5TeV_ALICE__ycm-M4p46-M2p96"] = {
 dataset["incpsi2S_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "JHEP 07 (2020) 237",
     link : "https://arxiv.org/abs/2003.06053",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive &psi;(2S)",
@@ -8562,6 +8994,7 @@ dataset["incpsi2S_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
 dataset["incpsi2S_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     reference : "JHEP 07 (2020) 237",
     link : "https://arxiv.org/abs/2003.06053",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive &psi;(2S)",
@@ -8582,6 +9015,7 @@ dataset["incpsi2S_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
 dataset["incpsi2S_RpA_ycm_pPb_5TeV_ALICE__pT-lt-8"] = {
     reference : "JHEP 12 (2014) 073",
     link : "https://arxiv.org/abs/1405.3796",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Inclusive &psi;(2S)",
@@ -8599,6 +9033,7 @@ dataset["incpsi2S_RpA_ycm_pPb_5TeV_ALICE__pT-lt-8"] = {
 dataset["incpsi2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-12"] = {
     reference : "JHEP 07 (2020) 237",
     link : "https://arxiv.org/abs/2003.06053",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Inclusive &psi;(2S)",
@@ -8618,6 +9053,7 @@ dataset["incpsi2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-12"] = {
 dataset["Ksubs0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     reference : "PRL 121 (2018) 082301",
     link : "https://arxiv.org/abs/1804.09767",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "K<sub>s</sub><sup>0</sup>",
@@ -8646,6 +9082,7 @@ dataset["Ksubs0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
 dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
@@ -8665,6 +9102,7 @@ dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
 dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
@@ -8684,6 +9122,7 @@ dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
 dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "ycm",
     particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
@@ -8701,6 +9140,7 @@ dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
 dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "JHEP 04 (2017) 039",
     link : "https://arxiv.org/abs/1611.01664",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -8751,6 +9191,7 @@ dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
     reference : "JHEP 04 (2017) 039",
     link : "https://arxiv.org/abs/1611.01664",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -8801,6 +9242,7 @@ dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
     reference : "JHEP 04 (2017) 039",
     link : "https://arxiv.org/abs/1611.01664",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -8851,6 +9293,7 @@ dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
 dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
     reference : "JHEP 04 (2017) 039",
     link : "https://arxiv.org/abs/1611.01664",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -8901,6 +9344,7 @@ dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
 dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-50-70_absy-lt-1"] = {
     reference : "JHEP 04 (2017) 039",
     link : "https://arxiv.org/abs/1611.01664",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -8951,6 +9395,7 @@ dataset["Lighthplusmn_RAA_pT_PbPb_5TeV_CMS_cent-50-70_absy-lt-1"] = {
 dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -8987,6 +9432,7 @@ dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1"] = {
 dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-10-30_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -9023,6 +9469,7 @@ dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-10-30_abseta-lt-1"] = {
 dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-30-50_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -9059,6 +9506,7 @@ dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-30-50_abseta-lt-1"] = {
 dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -9095,6 +9543,7 @@ dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1"] = {
 dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-10-30_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -9131,6 +9580,7 @@ dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-10-30_abseta-lt-1"] = {
 dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-30-50_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
+    update : "2000-01-01",
     observable : "v3",
     xtitle : "pT",
     particle : "Light h<sup>&plusmn;</sup>",
@@ -9167,6 +9617,7 @@ dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-30-50_abseta-lt-1"] = {
 dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_ALICE_cent-0-90_pT-gt-0"] = {
     reference : "PLB 738 (2014) 361",
     link : "https://arxiv.org/abs/1405.4493",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(1S)",
@@ -9184,6 +9635,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_ALICE_cent-0-90_pT-gt-0"] = {
 dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(1S)",
@@ -9205,6 +9657,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
 dataset["Upsilon1S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(1S)",
@@ -9225,6 +9678,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
 dataset["Upsilon1S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(1S)",
@@ -9246,6 +9700,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
 dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     reference : "PLB 738 (2014) 361",
     link : "https://arxiv.org/abs/1405.4493",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -9263,6 +9718,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
 dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -9286,6 +9742,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 dataset["Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -9310,6 +9767,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
 dataset["Upsilon1S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -9334,6 +9792,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
 dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     reference : "PLB 738 (2014) 361",
     link : "https://arxiv.org/abs/1405.4493",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(1S)",
@@ -9351,6 +9810,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
 dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(1S)",
@@ -9374,6 +9834,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(1S)",
@@ -9398,6 +9859,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
 dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(1S)",
@@ -9422,6 +9884,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
 dataset["Upsilon1S_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9442,6 +9905,7 @@ dataset["Upsilon1S_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9462,6 +9926,7 @@ dataset["Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
 dataset["Upsilon1S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9483,6 +9948,7 @@ dataset["Upsilon1S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9506,6 +9972,7 @@ dataset["Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
 dataset["Upsilon1S_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9526,6 +9993,7 @@ dataset["Upsilon1S_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
 dataset["Upsilon1S_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9546,6 +10014,7 @@ dataset["Upsilon1S_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
 dataset["Upsilon1S_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9568,6 +10037,7 @@ dataset["Upsilon1S_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
 dataset["Upsilon1S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9590,6 +10060,7 @@ dataset["Upsilon1S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
 dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "&Upsilon;(1S)",
@@ -9610,6 +10081,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
 dataset["Upsilon1S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "&Upsilon;(1S)",
@@ -9631,6 +10103,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
 dataset["Upsilon1S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "&Upsilon;(1S)",
@@ -9654,6 +10127,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
 dataset["Upsilon1S_v2_cent_PbPb_5TeV_ALICE_pT-2-15_y-2p5-4"] = {
     reference : "PRL 123 (2019) 192301",
     link : "https://arxiv.org/abs/1907.03169",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -9672,6 +10146,7 @@ dataset["Upsilon1S_v2_cent_PbPb_5TeV_ALICE_pT-2-15_y-2p5-4"] = {
 dataset["Upsilon1S_v2_cent_PbPb_5TeV_CMS_pT-lt-50_absy-lt-2p4"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "cent",
     particle : "&Upsilon;(1S)",
@@ -9690,6 +10165,7 @@ dataset["Upsilon1S_v2_cent_PbPb_5TeV_CMS_pT-lt-50_absy-lt-2p4"] = {
 dataset["Upsilon1S_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4"] = {
     reference : "PRL 123 (2019) 192301",
     link : "https://arxiv.org/abs/1907.03169",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9708,6 +10184,7 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4"] = {
 dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9727,6 +10204,7 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
 dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-2p4"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9746,6 +10224,7 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-2p4"] = {
 dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-5-60_absy-lt-2p4"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9764,6 +10243,7 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-5-60_absy-lt-2p4"] = {
 dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-2p4"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
+    update : "2000-01-01",
     observable : "v2",
     xtitle : "pT",
     particle : "&Upsilon;(1S)",
@@ -9783,6 +10263,7 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-2p4"] = {
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     reference : "PRL 120 (2018) 142301",
     link : "https://arxiv.org/abs/1706.05984",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "absy",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9800,6 +10281,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9817,6 +10299,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PRL 120 (2018) 142301",
     link : "https://arxiv.org/abs/1706.05984",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9841,6 +10324,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9860,6 +10344,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9877,6 +10362,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PRL 120 (2018) 142301",
     link : "https://arxiv.org/abs/1706.05984",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9901,6 +10387,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PRL 120 (2018) 142301",
     link : "https://arxiv.org/abs/1706.05984",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9919,6 +10406,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "ycm",
     particle : "&Upsilon;(2S) / &Upsilon;(1S)",
@@ -9936,6 +10424,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
 dataset["Upsilon2S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(2S)",
@@ -9953,6 +10442,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
 dataset["Upsilon2S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(2S)",
@@ -9970,6 +10460,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
 dataset["Upsilon2S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "absy",
     particle : "&Upsilon;(2S)",
@@ -9988,6 +10479,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
 dataset["Upsilon2S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(2S)",
@@ -10007,6 +10499,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 dataset["Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(2S)",
@@ -10024,6 +10517,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
 dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(2S)",
@@ -10047,6 +10541,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
 dataset["Upsilon2S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(2S)",
@@ -10066,6 +10561,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
     reference : "arXiv:2011.05758",
     link : "https://arxiv.org/abs/2011.05758",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(2S)",
@@ -10083,6 +10579,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
 dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(2S)",
@@ -10106,6 +10603,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
 dataset["Upsilon2S_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 770 (2017) 357",
     link : "https://arxiv.org/abs/1611.01510",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(2S)",
@@ -10124,6 +10622,7 @@ dataset["Upsilon2S_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 790 (2019) 270",
     link : "https://arxiv.org/abs/1805.09215",
+    update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(2S)",
@@ -10142,6 +10641,7 @@ dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(2S)",
@@ -10164,6 +10664,7 @@ dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
 dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "pT",
     particle : "&Upsilon;(2S)",
@@ -10186,6 +10687,7 @@ dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
 dataset["Upsilon2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "&Upsilon;(2S)",
@@ -10203,6 +10705,7 @@ dataset["Upsilon2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
 dataset["Upsilon2S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "&Upsilon;(2S)",
@@ -10226,6 +10729,7 @@ dataset["Upsilon2S_RpA_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
 dataset["Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "&Upsilon;(3S) / &Upsilon;(1S)",
@@ -10245,6 +10749,7 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
 dataset["Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
+    update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "ycm",
     particle : "&Upsilon;(3S) / &Upsilon;(1S)",
@@ -10262,6 +10767,7 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
 dataset["Upsilon3S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-15"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
+    update : "2000-01-01",
     observable : "RpA",
     xtitle : "ycm",
     particle : "&Upsilon;(3S)",
