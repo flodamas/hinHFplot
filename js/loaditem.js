@@ -37,6 +37,18 @@ function loaditem(nomarkerpicker = 0)
         iline.id = "tr_" + da;
         datainput.appendChild(iline);
 
+        var itnew = document.createElement("td");
+        let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
+        if(diffday < 60)
+            itnew.innerHTML = "New!";
+        else
+            itnew.innerHTML = "";
+        itnew.style.color = '#D62828';
+        itnew.style.fontSize = '0.8em';
+        itnew.style.fontWeight = 'bold';
+        iline.appendChild(itnew);
+        if(nomarkerpicker == 1) itnew.style.display = 'none';
+
         var itcheck = document.createElement("td");
         iline.appendChild(itcheck);
         var itchecklabel = document.createElement("label");
@@ -146,6 +158,7 @@ function loaditem(nomarkerpicker = 0)
         itcollab.setAttribute('onclick', "checkthis('"+da+"')");
         itcentrality.setAttribute('onclick', "checkthis('"+da+"')");
         itrapidity.setAttribute('onclick', "checkthis('"+da+"')");
+        itnew.setAttribute('onclick', "checkthis('"+da+"')");
 
         iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
         iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");

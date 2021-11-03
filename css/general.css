@@ -3,7 +3,7 @@
     --color-default: black;
     --width-leftrange: 48vw;
     --size-font-header: 1.2vw;
-    --size-font-default: 0.90vw;
+    --size-font-default: 0.88vw;
     --size-font-desc: 1vw;
     --size-font-footer: 1vw;
     --height-footer: 1.1vw;
@@ -12,9 +12,9 @@
 
     /* checkbox */
     --width-colorpicker: 1.6vw;
-    --padding-td: 0.35vw;
-    --padding-td-tb: 0.28vw;
-    --size-checkmark: 1.2vw;
+    --padding-td: 0.33vw;
+    --padding-td-tb: 0.27vw;
+    --size-checkmark: 0.88vw;
     --opacity-checkafter: 1;
 
     /* input */
