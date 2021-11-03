@@ -39,7 +39,7 @@ function loaditem(nomarkerpicker = 0)
 
         var itnew = document.createElement("td");
         let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
-        if(diffday < 60)
+        if(diffday < 180)
             itnew.innerHTML = "New!";
         else
             itnew.innerHTML = "";
