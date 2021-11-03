@@ -42,11 +42,11 @@ var drange =
         "v2+pT"             : { pxmin : 0    , pxmin_log : 1   , pxmax : 40  , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
         "v2+y"              : { pxmin : -4   , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
 
-        "v3+absy"           : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.1 }  ,
-        "v3+cent"           : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.1 }  ,
-        "v3+Npart"          : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.1 }  ,
-        "v3+pT"             : { pxmin : 0    , pxmin_log : 1   , pxmax : 40  , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.1 }  ,
-        "v3+y"              : { pxmin : -4   , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.1 }  ,
+        "v3+absy"           : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
+        "v3+cent"           : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
+        "v3+Npart"          : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
+        "v3+pT"             : { pxmin : 0    , pxmin_log : 1   , pxmax : 40  , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
+        "v3+y"              : { pxmin : -4   , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
 
         "vn+absy"           : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
         "vn+cent"           : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
