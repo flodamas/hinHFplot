@@ -9655,7 +9655,7 @@ dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
 };
 
 dataset["Upsilon1S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
@@ -9740,7 +9740,7 @@ dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon1S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
@@ -9832,7 +9832,7 @@ dataset["Upsilon1S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
@@ -9903,7 +9903,7 @@ dataset["Upsilon1S_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon1S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
@@ -10279,7 +10279,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30
 };
 
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "DoubleRatio",
@@ -10342,7 +10342,7 @@ dataset["Upsilon2SToUpsilon1S_DoubleRatio_cent_pPb_5TeV_ATLAS_pT-lt-40_ycm-M2-1p
 };
 
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "DoubleRatio",
@@ -10440,7 +10440,7 @@ dataset["Upsilon2S_RAA_absy_PbPb_2p76TeV_CMS_cent-0-100_pT-lt-20"] = {
 };
 
 dataset["Upsilon2S_RAA_absy_PbPb_5TeV_ALICE_cent-0-90_pT-lt-15"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
@@ -10497,7 +10497,7 @@ dataset["Upsilon2S_RAA_cent_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
@@ -10559,7 +10559,7 @@ dataset["Upsilon2S_RAA_Npart_PbPb_2p76TeV_CMS_pT-lt-20_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
-    reference : "arXiv:2011.05758",
+    reference : "PLB 822 (2021) 136579",
     link : "https://arxiv.org/abs/2011.05758",
     update : "2000-01-01",
     observable : "RAA",
