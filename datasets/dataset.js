@@ -2991,9 +2991,9 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
 };
 
 dataset["aprJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
-    reference : "JHEP 02 (2014) 072",
-    link : "https://arxiv.org/abs/1308.6729",
-    update : "2000-01-01",
+    reference : "arxiv:2109.00220",
+    link : "https://arxiv.org/abs/2109.00220",
+    update : "2021-11-05",
     observable : "RpA",
     xtitle : "ycm",
     particle : "Prompt J/&psi;",
@@ -3003,8 +3003,14 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     kinea : "",
     kineb : "p<sub>T</sub> < 14 GeV",
     data : [
-        {"x": -3.25, "xl": -4, "xh": -2.5, "y": 0.93, "stath": 0.03, "statl": 0.03, "systh": 0.0707107, "systl": 0.0707107},
-        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.62, "stath": 0.01, "statl": 0.01, "systh": 0.0360555, "systl": 0.0360555},
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 0.897, "stath": 0.060, "statl": 0.060, "systh": 0.061, "systl": 0.061},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.888, "stath": 0.044, "statl": 0.044, "systh": 0.056, "systl": 0.056},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.918, "stath": 0.041, "statl": 0.041, "systh": 0.058, "systl": 0.058},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.846, "stath": 0.052, "statl": 0.052, "systh": 0.082, "systl": 0.082},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.624, "stath": 0.014, "statl": 0.014, "systh": 0.039, "systl": 0.039},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.611, "stath": 0.012, "statl": 0.012, "systh": 0.035, "systl": 0.035},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.571, "stath": 0.012, "statl": 0.012, "systh": 0.033, "systl": 0.033},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.568, "stath": 0.015, "statl": 0.015, "systh": 0.035, "systl": 0.035},
     ]
 };
 
@@ -5973,9 +5979,9 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
 };
 
 dataset["bTOJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
-    reference : "JHEP 02 (2014) 072",
-    link : "https://arxiv.org/abs/1308.6729",
-    update : "2000-01-01",
+    reference : "arxiv:2109.00220",
+    link : "https://arxiv.org/abs/2109.00220",
+    update : "2021-11-05",
     observable : "RpA",
     xtitle : "ycm",
     particle : "(b&rarr;) J/&psi;",
@@ -5985,8 +5991,14 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     kinea : "",
     kineb : "p<sub>T</sub> < 14 GeV",
     data : [
-        {"x": -3.25, "xl": -4, "xh": -2.5, "y": 0.98, "stath": 0.06, "statl": 0.06, "systh": 0.106301, "systl": 0.106301},
-        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.83, "stath": 0.02, "statl": 0.02, "systh": 0.0806226, "systl": 0.0806226},
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 1.445, "stath": 0.189, "statl": 0.189, "systh": 0.201, "systl": 0.201},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.955, "stath": 0.099, "statl": 0.099, "systh": 0.064, "systl": 0.064},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.974, "stath": 0.084, "statl": 0.084, "systh": 0.097, "systl": 0.097},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.860, "stath": 0.099, "statl": 0.099, "systh": 0.097, "systl": 0.097},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.797, "stath": 0.033, "statl": 0.033, "systh": 0.068, "systl": 0.068},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.791, "stath": 0.032, "statl": 0.032, "systh": 0.058, "systl": 0.058},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.821, "stath": 0.038, "statl": 0.038, "systh": 0.064, "systl": 0.064},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.686, "stath": 0.054, "statl": 0.054, "systh": 0.065, "systl": 0.065},
     ]
 };
 
