@@ -10353,6 +10353,26 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-2p4"] = {
     ]
 };
 
+dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-10-90_absy-lt-2p4"] = {
+    reference : "PLB 819 (2021) 136385",
+    link : "https://arxiv.org/abs/2006.07707",
+    update : "2021-11-06",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-90%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 1.5, "xl": 0, "xh": 3, "y": 0.004, "stath": 0.019, "statl": 0.019, "systh": 0.012, "systl": 0.012},
+        {"x": 4.5, "xl": 3, "xh": 6, "y": -0.018, "stath": 0.019, "statl": 0.019, "systh": 0.005, "systl": 0.005},
+        {"x": 8, "xl": 6, "xh": 10, "y": 0.058, "stath": 0.023, "statl": 0.023, "systh": 0.004, "systl": 0.004},
+        {"x": 30, "xl": 10, "xh": 50, "y": 0.018, "stath": 0.021, "statl": 0.021, "systh": 0.007, "systl": 0.007},
+    ]
+};
+
 dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-2p4"] = {
     reference : "PLB 819 (2021) 136385",
     link : "https://arxiv.org/abs/2006.07707",
