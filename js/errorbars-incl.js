@@ -54,8 +54,20 @@ var styles_mapping = {
     11 : [0, 0, 1, 1, 0, 1]
 };
 var changetonext = function(idd) {
-    function next(i) { return (parseInt(i)+1) % Object.keys(styles_mapping).length; }
+    function next(i) {
+        if(document.getElementById('xvariable').value != "Npart")
+            return (parseInt(i)+1) % Object.keys(styles_mapping).length; 
+        else
+        {
+            if(parseInt(i) >= 6)
+                return 0;
+            else
+                return (parseInt(i)+2) % Object.keys(styles_mapping).length;
+        }
+    }
+    // console.log(document.getElementById(idd).value, ', ', next(document.getElementById(idd).value))
     document.getElementById(idd).value = next(document.getElementById(idd).value);
+    
 }
 function checkandremove(id) { if( document.getElementById(id) ) { document.getElementById(id).remove(); } }
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
