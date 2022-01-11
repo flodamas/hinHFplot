@@ -7139,6 +7139,86 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     ]
 };
 
+dataset["D0_v1_y_AuAu_200GeV_STAR_cent-10-80_pT-gt-1p5"] = {
+    reference : "PRL 123 (2019) 162301",
+    link : "https://arxiv.org/abs/1905.02052",
+    update : "2022-01-11",
+    observable : "v1",
+    xtitle : "y",
+    particle : "D<sup>0</sup>",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "10-80%",
+    kineb : "p<sub>T</sub> > 1.5 GeV",
+    data : [
+        {"x": -0.6, "xl": -0.8, "xh": -0.4, "y": 0.067, "stath": 0.024, "statl": 0.024, "systh": 0.018, "systl": 0.018},
+        {"x": -0.2, "xl": -0.4, "xh": 0, "y": 0.029, "stath": 0.02, "statl": 0.02, "systh": 0.013, "systl": 0.013},
+        {"x": 0.2, "xl": 0, "xh": 0.4, "y": -0.032, "stath": 0.018, "statl": 0.018, "systh": 0.012, "systl": 0.012},
+        {"x": 0.6, "xl": 0.4, "xh": 0.8, "y": -0.029, "stath": 0.021, "statl": 0.021, "systh": 0.018, "systl": 0.018},
+    ]
+};
+
+dataset["D0_v1_y_PbPb_5TeV_ALICE_cent-10-40_pT-3-6"] = {
+    reference : "PRL 125 (2020) 022301",
+    link : "https://arxiv.org/abs/1910.14406",
+    update : "2022-01-11",
+    observable : "v1",
+    xtitle : "y",
+    particle : "D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "10-40%",
+    kineb : "3 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.6, "xl": -0.8, "xh": -0.4, "y": -0.05, "stath": 0.12, "statl": 0.12, "systh": 0.04, "systl": 0.04},
+        {"x": -0.2, "xl": -0.4, "xh": 0, "y": -0.26, "stath": 0.1, "statl": 0.1, "systh": 0.04, "systl": 0.04},
+        {"x": 0.2, "xl": 0, "xh": 0.4, "y": -0.01, "stath": 0.09, "statl": 0.09, "systh": 0.04, "systl": 0.04},
+        {"x": 0.6, "xl": 0.4, "xh": 0.8, "y": 0.21, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["Dbar0_v1_y_AuAu_200GeV_STAR_cent-10-80_pT-gt-1p5"] = {
+    reference : "PRL 123 (2019) 162301",
+    link : "https://arxiv.org/abs/1905.02052",
+    update : "2022-01-11",
+    observable : "v1",
+    xtitle : "y",
+    particle : "D&#772;<sup>0</sup>",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "10-80%",
+    kineb : "p<sub>T</sub> > 1.5 GeV",
+    data : [
+        {"x": -0.6, "xl": -0.8, "xh": -0.4, "y": 0.07, "stath": 0.024, "statl": 0.024, "systh": 0.02, "systl": 0.02},
+        {"x": -0.2, "xl": -0.4, "xh": 0, "y": 0.008, "stath": 0.019, "statl": 0.019, "systh": 0.017, "systl": 0.017},
+        {"x": 0.2, "xl": 0, "xh": 0.4, "y": -0.029, "stath": 0.018, "statl": 0.018, "systh": 0.016, "systl": 0.016},
+        {"x": 0.6, "xl": 0.4, "xh": 0.8, "y": -0.022, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+    ]
+};
+
+dataset["Dbar0_v1_y_PbPb_5TeV_ALICE_cent-10-40_pT-3-6"] = {
+    reference : "PRL 125 (2020) 022301",
+    link : "https://arxiv.org/abs/1910.14406",
+    update : "2022-01-11",
+    observable : "v1",
+    xtitle : "y",
+    particle : "D&#772;<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "10-40%",
+    kineb : "3 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.6, "xl": -0.8, "xh": -0.4, "y": 0.19, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
+        {"x": -0.2, "xl": -0.4, "xh": 0, "y": 0.07, "stath": 0.09, "statl": 0.09, "systh": 0.04, "systl": 0.04},
+        {"x": 0.2, "xl": 0, "xh": 0.4, "y": -0.02, "stath": 0.09, "statl": 0.09, "systh": 0.04, "systl": 0.04},
+        {"x": 0.6, "xl": 0.4, "xh": 0.8, "y": -0.07, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
 dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1"] = {
     reference : "PRL 118 (2017) 212301",
     link : "https://arxiv.org/abs/1701.06060",

@@ -24,7 +24,7 @@ function loaditem(nomarkerpicker = 0)
             (xvar == "absy" && (thisitem.xtitle == "absycm")) ||
             false;
         var ifdrawy = thisitem.observable == obs ||
-	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3")) ||
+	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3" || thisitem.observable == "v1" || thisitem.observable == "Deltav1")) ||
 	    (obs == "RpARAA" && (thisitem.observable == "RpA" || thisitem.observable == "RAA")) ||
 	    (obs == "DsToD" && (thisitem.observable == "DsToD0" || thisitem.observable == "DsToDplusmn" || thisitem.observable == "DsToDstar")) ||
 	    (obs == "Ratio" && thisitem.observable.includes("To")) ||
