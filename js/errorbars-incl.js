@@ -20,7 +20,7 @@ function setbasic()
     chartHeight = height - margin.top - margin.bottom;
     x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
     y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
-    dy = chartWidth*0.72/17.; //
+    dy = chartWidth*0.72/15.; //
     dxmark = chartWidth/45.; //
 }
 
