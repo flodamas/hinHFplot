@@ -4388,9 +4388,9 @@ dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
 };
 
 dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    update : "2000-01-01",
+    reference : "arXiv:2201.02659",
+    link : "https://arxiv.org/abs/2201.02659",
+    update : "2022-02-16",
     observable : "RAA",
     xtitle : "cent",
     particle : "B<sub>c</sub>",
@@ -4400,15 +4400,15 @@ dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
     kinea : "6 < p<sub>T</sub> < 35 GeV",
     kineb : "(1.3 <) |y| < 2.3",
     data : [
-        {"x": 10, "xl": 0, "xh": 20, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
-        {"x": 55, "xl": 20, "xh": 90, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
+        {"x": 10, "xl": 0, "xh": 20, "y": 1.555, "stath": 0.358, "statl": 0.313, "systh": 0.407, "systl": 0.357},
+        {"x": 55, "xl": 20, "xh": 90, "y": 1.276, "stath": 0.304, "statl": 0.275, "systh": 0.345, "systl": 0.313},
     ]
 };
 
 dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    update : "2000-01-01",
+    reference : "arXiv:2201.02659",
+    link : "https://arxiv.org/abs/2201.02659",
+    update : "2022-02-16",
     observable : "RAA",
     xtitle : "Npart",
     particle : "B<sub>c</sub>",
@@ -4418,15 +4418,15 @@ dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
     kinea : "6 < p<sub>T</sub> < 35 GeV",
     kineb : "(1.3 <) |y| < 2.3",
     data : [
-        {"x": 309.9, "xl": 308.9, "xh": 310.9, "y": 1.557, "stath": 0.36, "statl": 0.332, "systh": 0.403, "systl": 0.373},
-        {"x": 73.5, "xl": 72.5, "xh": 74.5, "y": 1.277, "stath": 0.305, "statl": 0.289, "systh": 0.341, "systl": 0.325},
+        {"x": 309.6, "xl": 308.6, "xh": 310.6, "y": 1.555, "stath": 0.358, "statl": 0.313, "systh": 0.407, "systl": 0.357},
+        {"x": 73.6, "xl": 72.7, "xh": 74.5, "y": 1.276, "stath": 0.304, "statl": 0.275, "systh": 0.345, "systl": 0.313},
     ]
 };
 
 dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    update : "2000-01-01",
+    reference : "arXiv:2201.02659",
+    link : "https://arxiv.org/abs/2201.02659",
+    update : "2022-02-16",
     observable : "RAA",
     xtitle : "pT",
     particle : "B<sub>c</sub>",
@@ -4436,14 +4436,14 @@ dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
     kinea : "0-90%",
     kineb : "1.3 < |y| < 2.3",
     data : [
-        {"x": 8.059, "xl": 6, "xh": 11, "y": 1.665, "stath": 0.79, "statl": 0.586, "systh": 0.302, "systl": 0.258},
+        {"x": 8.059, "xl": 6, "xh": 11, "y": 1.666, "stath": 0.851, "statl": 0.526, "systh": 0.327, "systl": 0.24},
     ]
 };
 
 dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
-    reference : "CMS-PAS-HIN-20-004",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-20-004/index.html",
-    update : "2000-01-01",
+    reference : "arXiv:2201.02659",
+    link : "https://arxiv.org/abs/2201.02659",
+    update : "2022-02-16",
     observable : "RAA",
     xtitle : "pT",
     particle : "B<sub>c</sub>",
@@ -4453,7 +4453,7 @@ dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
     kinea : "0-90%",
     kineb : "|y| < 2.3",
     data : [
-        {"x": 17.165, "xl": 11, "xh": 35, "y": 0.696, "stath": 0.123, "statl": 0.119, "systh": 0.047, "systl": 0.052},
+        {"x": 17.165, "xl": 11, "xh": 35, "y": 0.696, "stath": 0.131, "statl": 0.11, "systh": 0.05, "systl": 0.05},
     ]
 };
 
