@@ -8796,6 +8796,83 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
     ]
 };
 
+dataset["incJpsi_v2_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
+    reference : "PRL 111 (2013) 052301",
+    link : "https://arxiv.org/abs/1212.3304",
+    update : "2022-02-21",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-10%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 1.03, "xl": 0, "xh": 2, "y": 0.07, "stath": 0.05, "statl": 0.05, "systh": 0.01, "systl": 0.01},
+        {"x": 3.2, "xl": 2, "xh": 5, "y": -0.05, "stath": 0.06, "statl": 0.06, "systh": 0.01, "systl": 0.01},
+        {"x": 6.49, "xl": 5, "xh": 10, "y": -0.1, "stath": 0.11, "statl": 0.11, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["incJpsi_v2_pT_AuAu_200GeV_STAR_cent-0-80_absy-lt-1"] = {
+    reference : "PRL 111 (2013) 052301",
+    link : "https://arxiv.org/abs/1212.3304",
+    update : "2022-02-21",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-80%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 1.01, "xl": 0, "xh": 2, "y": 0.05, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+        {"x": 2.91, "xl": 2, "xh": 4, "y": 0.01, "stath": 0.04, "statl": 0.04, "systh": 0.01, "systl": 0.01},
+        {"x": 4.98, "xl": 4, "xh": 6, "y": 0.05, "stath": 0.04, "statl": 0.04, "systh": 0.02, "systl": 0.02},
+        {"x": 7.16, "xl": 6, "xh": 10, "y": 0.08, "stath": 0.05, "statl": 0.05, "systh": 0.01, "systl": 0.01},
+    ]
+};
+
+dataset["incJpsi_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
+    reference : "PRL 111 (2013) 052301",
+    link : "https://arxiv.org/abs/1212.3304",
+    update : "2022-02-21",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "10-40%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 1.03, "xl": 0, "xh": 2, "y": 0.08, "stath": 0.04, "statl": 0.04, "systh": 0, "systl": 0},
+        {"x": 3.2, "xl": 2, "xh": 5, "y": 0.03, "stath": 0.04, "statl": 0.04, "systh": 0.01, "systl": 0.01},
+        {"x": 6.49, "xl": 5, "xh": 10, "y": 0.02, "stath": 0.04, "statl": 0.04, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["incJpsi_v2_pT_AuAu_200GeV_STAR_cent-40-80_absy-lt-1"] = {
+    reference : "PRL 111 (2013) 052301",
+    link : "https://arxiv.org/abs/1212.3304",
+    update : "2022-02-21",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "40-80%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 1.03, "xl": 0, "xh": 2, "y": 0.01, "stath": 0.06, "statl": 0.06, "systh": 0.02, "systl": 0.02},
+        {"x": 3.2, "xl": 2, "xh": 5, "y": 0, "stath": 0.07, "statl": 0.07, "systh": 0.01, "systl": 0.01},
+        {"x": 6.49, "xl": 5, "xh": 10, "y": 0.21, "stath": 0.09, "statl": 0.09, "systh": 0.02, "systl": 0.02},
+    ]
+};
+
 dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
