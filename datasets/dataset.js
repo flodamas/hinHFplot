@@ -10687,6 +10687,26 @@ dataset["Upsilon1S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
     ]
 };
 
+dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ALICE__pT-gt-0"] = {
+    reference : "PLB 740 (2015) 105",
+    link : "https://arxiv.org/abs/1410.2234",
+    update : "2022-02-24",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": -3.995, "xl": -4.46, "xh": -3.53, "y": 0.78, "stath": 0.15, "statl": 0.15, "systh": 0.13, "systl": 0.13},
+        {"x": -3.245, "xl": -3.53, "xh": -2.96, "y": 0.91, "stath": 0.15, "statl": 0.15, "systh": 0.15, "systl": 0.15},
+        {"x": 2.495, "xl": 2.03, "xh": 2.96, "y": 0.66, "stath": 0.09, "statl": 0.09, "systh": 0.08, "systl": 0.08},
+        {"x": 3.245, "xl": 2.96, "xh": 3.53, "y": 0.86, "stath": 0.17, "statl": 0.17, "systh": 0.13, "systl": 0.13},
+    ]
+};
+
 dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
@@ -10705,6 +10725,24 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
         {"x": -0.375, "xl": -0.75, "xh": 0, "y": 0.70485, "stath": 0.04808, "statl": 0.04808, "systh": 0.0908739, "systl": 0.0908739},
         {"x": 0.375, "xl": 0, "xh": 0.75, "y": 0.83138, "stath": 0.05479, "statl": 0.05479, "systh": 0.116579, "systl": 0.116579},
         {"x": 1.125, "xl": 0.75, "xh": 1.5, "y": 0.87859, "stath": 0.06035, "statl": 0.06035, "systh": 0.0956191, "systl": 0.0956191},
+    ]
+};
+
+dataset["Upsilon1S_RpA_ycm_pPb_5TeV_LHCb__pT-lt-15"] = {
+    reference : "JHEP 07 (2014) 094",
+    link : "https://arxiv.org/abs/1405.5152",
+    update : "2022-02-24",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 15 GeV",
+    data : [
+        {"x": -3.25, "xl": -4, "xh": -2.5, "y": 1.21, "stath": 0.23, "statl": 0.23, "systh": 0.1, "systl": 0.1},
+        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.9, "stath": 0.1, "statl": 0.1, "systh": 0.08, "systl": 0.08},
     ]
 };
 
