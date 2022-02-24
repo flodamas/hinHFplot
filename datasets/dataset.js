@@ -4207,13 +4207,36 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     ]
 };
 
-dataset["aprXicToD0_XicToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
+dataset["aprXic0ToD0_Xic0ToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
+    reference : "PRL 127 (2021) 272001",
+    link : "https://arxiv.org/abs/2105.05187",
+    update : "2022-02-24",
+    observable : "Xic0ToD0",
+    xtitle : "pT",
+    particle : "Prompt &Xi;<sub>c</sub><sup>0</sup> / D<sup>0</sup>",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.357, "stath": 0.085, "statl": 0.085, "systh": 0.058, "systl": 0.057},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.226, "stath": 0.045, "statl": 0.045, "systh": 0.024, "systl": 0.025},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.216, "stath": 0.034, "statl": 0.034, "systh": 0.021, "systl": 0.022},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.208, "stath": 0.03, "statl": 0.03, "systh": 0.021, "systl": 0.022},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.166, "stath": 0.028, "statl": 0.028, "systh": 0.018, "systl": 0.019},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.115, "stath": 0.019, "statl": 0.019, "systh": 0.014, "systl": 0.015},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.086, "stath": 0.016, "statl": 0.016, "systh": 0.012, "systl": 0.012},
+    ]
+};
+
+dataset["aprXic0ToD0_Xic0ToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "JHEP 10 (2021) 159",
     link : "https://arxiv.org/abs/2105.05616",
     update : "2021-11-03",
-    observable : "XicToD0",
+    observable : "Xic0ToD0",
     xtitle : "pT",
-    particle : "Prompt &Xi;<sub>c</sub> / D<sup>0</sup>",
+    particle : "Prompt &Xi;<sub>c</sub><sup>0</sup> / D<sup>0</sup>",
     collision : "pp",
     energy : "5.02 TeV",
     collab : "ALICE",
@@ -4228,13 +4251,13 @@ dataset["aprXicToD0_XicToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     ]
 };
 
-dataset["aprXicToD0_XicToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
+dataset["aprXic0ToD0_Xic0ToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     reference : "PLB 781 (2018) 8",
     link : "https://arxiv.org/abs/1712.04242",
     update : "2021-11-03",
-    observable : "XicToD0",
+    observable : "Xic0ToD0",
     xtitle : "pT",
-    particle : "Prompt &Xi;<sub>c</sub> / D<sup>0</sup>",
+    particle : "Prompt &Xi;<sub>c</sub><sup>0</sup> / D<sup>0</sup>",
     collision : "pp",
     energy : "7 TeV",
     collab : "ALICE",
@@ -4244,6 +4267,46 @@ dataset["aprXicToD0_XicToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
         {"x": 1.5, "xl": 1, "xh": 2, "y": 0.56, "stath": 0.15, "statl": 0.15, "systh": 0.24, "systl": 0.24},
         {"x": 4, "xl": 2, "xh": 6, "y": 0.18, "stath": 0.06, "statl": 0.06, "systh": 0.04, "systl": 0.04},
         {"x": 7, "xl": 6, "xh": 8, "y": 0.15, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["aprXic0ToLambdac_Xic0ToLambdac_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
+    reference : "PRL 127 (2021) 272001",
+    link : "https://arxiv.org/abs/2105.05187",
+    update : "2022-02-24",
+    observable : "Xic0ToLambdac",
+    xtitle : "pT",
+    particle : "Prompt &Xi;<sub>c</sub><sup>0</sup> / &Lambda;<sub>c</sub>",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.71, "stath": 0.178, "statl": 0.178, "systh": 0.11, "systl": 0.11},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.499, "stath": 0.074, "statl": 0.074, "systh": 0.053, "systl": 0.053},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.495, "stath": 0.059, "statl": 0.059, "systh": 0.05, "systl": 0.051},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.362, "stath": 0.062, "statl": 0.062, "systh": 0.049, "systl": 0.051},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.334, "stath": 0.066, "statl": 0.066, "systh": 0.052, "systl": 0.053},
+    ]
+};
+
+dataset["aprXicplusToD0_XicplusToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
+    reference : "PRL 127 (2021) 272001",
+    link : "https://arxiv.org/abs/2105.05187",
+    update : "2022-02-24",
+    observable : "XicplusToD0",
+    xtitle : "pT",
+    particle : "Prompt &Xi;<sub>c</sub><sup>&plus;</sup> / D<sup>0</sup>",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.197, "stath": 0.035, "statl": 0.035, "systh": 0.032, "systl": 0.032},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.161, "stath": 0.021, "statl": 0.021, "systh": 0.023, "systl": 0.023},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.096, "stath": 0.016, "statl": 0.016, "systh": 0.014, "systl": 0.014},
     ]
 };
 
