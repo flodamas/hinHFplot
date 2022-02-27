@@ -10662,6 +10662,28 @@ dataset["Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     ]
 };
 
+dataset["Upsilon1S_RpA_pT_pPb_5TeV_CMS__absy-lt-1p93"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "|y| < 1.93",
+    data : [
+        {"x": 1, "xl": 0, "xh": 2, "y": 0.789, "stath": 0.047, "statl": 0.047, "systh": 0.054, "systl": 0.054},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.815, "stath": 0.072, "statl": 0.072, "systh": 0.073, "systl": 0.073},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.814, "stath": 0.041, "statl": 0.041, "systh": 0.050, "systl": 0.050},
+        {"x": 7.5, "xl": 6, "xh": 9, "y": 0.92, "stath": 0.072, "statl": 0.072, "systh": 0.046, "systl": 0.046},
+        {"x": 10.5, "xl": 9, "xh": 12, "y": 0.828, "stath": 0.045, "statl": 0.045, "systh": 0.039, "systl": 0.039},
+        {"x": 21, "xl": 12, "xh": 30, "y": 0.904, "stath": 0.041, "statl": 0.041, "systh": 0.039, "systl": 0.039},
+    ]
+};
+
 dataset["Upsilon1S_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     reference : "PLB 806 (2020) 135486",
     link : "https://arxiv.org/abs/1910.14405",
@@ -10788,6 +10810,66 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
         {"x": -0.375, "xl": -0.75, "xh": 0, "y": 0.70485, "stath": 0.04808, "statl": 0.04808, "systh": 0.0908739, "systl": 0.0908739},
         {"x": 0.375, "xl": 0, "xh": 0.75, "y": 0.83138, "stath": 0.05479, "statl": 0.05479, "systh": 0.116579, "systl": 0.116579},
         {"x": 1.125, "xl": 0.75, "xh": 1.5, "y": 0.87859, "stath": 0.06035, "statl": 0.06035, "systh": 0.0956191, "systl": 0.0956191},
+    ]
+};
+
+dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-lt-6"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.846, "stath": 0.044, "statl": 0.044, "systh": 0.078, "systl": 0.078},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.771, "stath": 0.057, "statl": 0.057, "systh": 0.063, "systl": 0.063},
+    ]
+};
+
+dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "6 < p<sub>T</sub> < 30 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.82, "stath": 0.031, "statl": 0.031, "systh": 0.059, "systl": 0.059},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.823, "stath": 0.040, "statl": 0.040, "systh": 0.050, "systl": 0.050},
+    ]
+};
+
+dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 30 GeV",
+    data : [
+        {"x": -1.565, "xl": -1.93, "xh": -1.2, "y": 0.858, "stath": 0.056, "statl": 0.056, "systh": 0.089, "systl": 0.089},
+        {"x": -1, "xl": -1.2, "xh": -0.8, "y": 0.851, "stath": 0.046, "statl": 0.046, "systh": 0.063, "systl": 0.063},
+        {"x": -0.6, "xl": -0.8, "xh": -0.4, "y": 0.754, "stath": 0.047, "statl": 0.047, "systh": 0.065, "systl": 0.065},
+        {"x": -0.2, "xl": -0.4, "xh": 0, "y": 0.831, "stath": 0.046, "statl": 0.046, "systh": 0.063, "systl": 0.063},
+        {"x": 0.2, "xl": 0, "xh": 0.4, "y": 0.879, "stath": 0.048, "statl": 0.048, "systh": 0.069, "systl": 0.069},
+        {"x": 0.6, "xl": 0.4, "xh": 0.8, "y": 0.784, "stath": 0.048, "statl": 0.048, "systh": 0.061, "systl": 0.061},
+        {"x": 1, "xl": 0.8, "xh": 1.2, "y": 0.752, "stath": 0.056, "statl": 0.056, "systh": 0.073, "systl": 0.073},
+        {"x": 1.565, "xl": 1.2, "xh": 1.93, "y": 0.87, "stath": 0.06, "statl": 0.06, "systh": 0.13, "systl": 0.13},
     ]
 };
 
@@ -11389,6 +11471,25 @@ dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     ]
 };
 
+dataset["Upsilon2S_RpA_pT_pPb_5TeV_CMS__absy-lt-1p93"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "&Upsilon;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "|y| < 1.93",
+    data : [
+        {"x": 2, "xl": 0, "xh": 4, "y": 0.673, "stath": 0.077, "statl": 0.077, "systh": 0.078, "systl": 0.078},
+        {"x": 6.5, "xl": 4, "xh": 9, "y": 0.658, "stath": 0.055, "statl": 0.055, "systh": 0.050, "systl": 0.050},
+        {"x": 19.5, "xl": 9, "xh": 30, "y": 0.779, "stath": 0.053, "statl": 0.053, "systh": 0.036, "systl": 0.036},
+    ]
+};
+
 dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
     reference : "JHEP 11 (2018) 194",
     link : "https://arxiv.org/abs/1810.07655",
@@ -11432,6 +11533,62 @@ dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
         {"x": 9, "xl": 8, "xh": 10, "y": 0.48, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
         {"x": 12.5, "xl": 10, "xh": 15, "y": 0.78, "stath": 0.18, "statl": 0.18, "systh": 0, "systl": 0},
         {"x": 20, "xl": 15, "xh": 25, "y": 0.86, "stath": 0.35, "statl": 0.35, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-lt-6"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.63, "stath": 0.070, "statl": 0.070, "systh": 0.073, "systl": 0.073},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.658, "stath": 0.094, "statl": 0.094, "systh": 0.064, "systl": 0.064},
+    ]
+};
+
+dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "6 < p<sub>T</sub> < 30 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.722, "stath": 0.054, "statl": 0.054, "systh": 0.065, "systl": 0.065},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.739, "stath": 0.070, "statl": 0.070, "systh": 0.052, "systl": 0.052},
+    ]
+};
+
+dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 30 GeV",
+    data : [
+        {"x": -1.365, "xl": -1.93, "xh": -0.8, "y": 0.775, "stath": 0.072, "statl": 0.072, "systh": 0.051, "systl": 0.051},
+        {"x": -0.4, "xl": -0.8, "xh": 0, "y": 0.67, "stath": 0.062, "statl": 0.062, "systh": 0.047, "systl": 0.047},
+        {"x": 0.4, "xl": 0, "xh": 0.8, "y": 0.716, "stath": 0.069, "statl": 0.069, "systh": 0.051, "systl": 0.051},
+        {"x": 1.365, "xl": 0.8, "xh": 1.93, "y": 0.762, "stath": 0.097, "statl": 0.097, "systh": 0.098, "systl": 0.098},
     ]
 };
 
@@ -11512,6 +11669,78 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
     data : [
         {"x": -3.5, "xl": -4.5, "xh": -2.5, "y": 0.44, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
         {"x": 3, "xl": 2, "xh": 4, "y": 0.81, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["Upsilon3S_RpA_pT_pPb_5TeV_CMS__absy-lt-1p93"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "&Upsilon;(3S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "|y| < 1.93",
+    data : [
+        {"x": 3, "xl": 0, "xh": 6, "y": 0.473, "stath": 0.093, "statl": 0.093, "systh": 0.052, "systl": 0.052},
+        {"x": 18, "xl": 6, "xh": 30, "y": 0.588, "stath": 0.063, "statl": 0.063, "systh": 0.031, "systl": 0.031},
+    ]
+};
+
+dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-lt-6"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(3S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.328, "stath": 0.100, "statl": 0.100, "systh": 0.053, "systl": 0.053},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.58, "stath": 0.14, "statl": 0.14, "systh": 0.06, "systl": 0.06},
+    ]
+};
+
+dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(3S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "6 < p<sub>T</sub> < 30 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.573, "stath": 0.079, "statl": 0.079, "systh": 0.052, "systl": 0.052},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.59, "stath": 0.10, "statl": 0.10, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
+    reference : "arXiv:2202.11807",
+    link : "https://arxiv.org/abs/2202.11807",
+    update : "2022-02-27",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "&Upsilon;(3S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 30 GeV",
+    data : [
+        {"x": -0.965, "xl": -1.93, "xh": 0, "y": 0.47, "stath": 0.073, "statl": 0.073, "systh": 0.039, "systl": 0.039},
+        {"x": 0.965, "xl": 0, "xh": 1.93, "y": 0.609, "stath": 0.086, "statl": 0.086, "systh": 0.049, "systl": 0.049},
     ]
 };
 
