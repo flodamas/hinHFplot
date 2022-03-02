@@ -11,8 +11,8 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: var(--size-font-default);
+    font-family: inherit;
     cursor: pointer;
-    font-family: Tahoma, sans-serif;
     -webkit-appearance: none;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -25,6 +25,7 @@ input[type=number] {
     border: 0px solid white;
     background-color: #f5f5f5;
     font-size: var(--size-font-default);
+    font-family: inherit;
     -moz-appearance: textfield;
 }
 
@@ -44,7 +45,7 @@ input[type=range] {
     background-color: #f5f5f5;
     cursor: pointer;
     font-size: var(--size-font-default);
-    font-family: Tahoma, sans-serif;
+    font-family: inherit;
 }
 
 .slider {

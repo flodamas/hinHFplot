@@ -4,7 +4,11 @@ html{
     overflow-y: scroll;
     height: 100%;
     width: 100%;
-    font-family: Tahoma, sans-serif;
+    /* font-family: Tahoma, sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-weight: 400;
     transition-timing-function: linear;
     -webkit-tap-highlight-color: transparent;
 }
@@ -22,7 +26,6 @@ body {
 
 p, a {
     font-size: var(--size-font-default);
-    font-family: Tahoma, sans-serif;
 }
 p {
     display: inline-block;
