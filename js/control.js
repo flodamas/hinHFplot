@@ -48,7 +48,7 @@ function changescale(id, transt = 500)
     btnlog.value = 1 - btnlog.value;
     if(btnlog.value == 1)
     {
-        btnlog.style.backgroundColor = "#1f77b4";
+        btnlog.style.backgroundColor = "#0072D0";
         btnlog.style.color = "white";
     }
     else

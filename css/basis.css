@@ -4,10 +4,7 @@ html{
     overflow-y: scroll;
     height: 100%;
     width: 100%;
-    /* font-family: Tahoma, sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Noto Sans', sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
     font-weight: 400;
     transition-timing-function: linear;
     -webkit-tap-highlight-color: transparent;
@@ -38,7 +35,8 @@ div {
 }
 
 .link {
-    color: #1f77b4;
+    /* color: #1f77b4; */
+    color: #0072D0;
     /* color: var(--color-default); */
     text-decoration: none;
     cursor: pointer;

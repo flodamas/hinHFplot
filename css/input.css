@@ -108,9 +108,9 @@ input[type=range] {
 
 .slider::-webkit-slider-thumb:hover {
     opacity: 1.0;
-    background: #1f77b4;
-    background-image: radial-gradient(white 30%, #1f77b4 30%);
-    border: 0.14vw solid #1f77b4;
+    background: #0F56BD;;
+    background-image: radial-gradient(white 30%, #0F56BD; 30%);
+    border: 0.14vw solid #0F56BD;;
     border-radius: 50%; 
 }
 

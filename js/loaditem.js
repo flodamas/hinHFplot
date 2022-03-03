@@ -38,14 +38,12 @@ function loaditem(nomarkerpicker = 0)
         datainput.appendChild(iline);
 
         var itnew = document.createElement("td");
+        itnew.setAttribute('class', 'new');
         let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
         if(diffday < 180)
             itnew.innerHTML = "New!";
         else
             itnew.innerHTML = "";
-        itnew.style.color = '#D62828';
-        itnew.style.fontSize = '0.8rem';
-        itnew.style.fontWeight = '500';
         iline.appendChild(itnew);
         if(nomarkerpicker == 1) itnew.style.display = 'none';
 

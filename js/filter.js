@@ -55,7 +55,7 @@ function checkedonly()
     var btncheck = document.getElementById('btncheckedonly');
     btncheck.value = 1 - btncheck.value;
 
-    btncheck.style.backgroundColor = (btncheck.value == 1?"#1f77b4":"#f5f5f5");
+    btncheck.style.backgroundColor = (btncheck.value == 1?"#0072D0":"#f5f5f5");
     btncheck.style.color = (btncheck.value == 1?"white":"black");
     
     for(var i=0; i<lines.length; i++)
