@@ -7,7 +7,9 @@ var x, y;
 
 // legend -->
 var x0, y0, dy, dxmark;
+var legsize;
 var legs = [];
+
 // <-- legend
 
 // set basic
@@ -22,6 +24,7 @@ function setbasic()
     y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
     dy = chartWidth*0.72/15.; //
     dxmark = chartWidth/45.; //
+    legsize = (0.8+(document.getElementById('legsizerange').value)/200)*2.75;
 }
 
 // var width = function() { return document.getElementById('rightpad').clientWidth*0.92; }

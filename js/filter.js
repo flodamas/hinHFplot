@@ -40,8 +40,9 @@ function keyfilter()
     var btncheck = document.getElementById('btncheckedonly');
     for(var i=0; i<lines.length; i++)
     {
+        var da = lines[i].id.replace('tr_', '');
         if(filtermatch( lines[i].id.toLowerCase() ) &&
-           (btncheck.value == 0 || document.getElementById(lines[i].id.replace('tr_', 'check_')).checked))
+           (btncheck.value == 0 || checkb(da)))
             lines[i].style.display = "";
         else
             lines[i].style.display = "none";        
@@ -59,8 +60,9 @@ function checkedonly()
     
     for(var i=0; i<lines.length; i++)
     {
+        var da = lines[i].id.replace('tr_', '');
         if(filtermatch( lines[i].id.toLowerCase() ) &&
-           (btncheck.value == 0 || document.getElementById(lines[i].id.replace('tr_', 'check_')).checked))
+           (btncheck.value == 0 || checkb(da)))
             lines[i].style.display = "";
 	else
             lines[i].style.display = "none";

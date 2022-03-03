@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="description" content="A compilation tool of heavy flavor measurements in heavy ion collisions.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/basis.css">
@@ -13,6 +12,7 @@
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/svg.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1b7d79a1ac.js" crossorigin="anonymous"></script>
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
@@ -82,10 +82,10 @@
           <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
         </div>
         <div>
-          <button type="submit" class="btnaction" onclick="clearall()">Clear all</button>
+          <button type="submit" class="btnaction" onclick="clearall();">Clear all</button>
           <button type="submit" class="btnaction" onclick="colorall(); ">Random color</button>
           <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="checkedonly()">Checked only</button>
-          <p><i class="fas fa-filter" style="color: #eee"></i></p>
+          <p><i class="fa-solid fa-filter" style="color: #eee"></i></p>
           <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton" value="">
         </div>
       </div>
@@ -102,20 +102,23 @@
       <!-- Top-right -->
       <div id="descholder">
         <br>
-        <p style="margin-bottom: 0.5vw"><i class="far fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a> &nbsp;&nbsp;</p><br>
-        <p style="margin-bottom: 0.5vw"><i class="far fa-file-alt"></i> Click <a onclick="window.open('datasets/publication.html', '_blank');" class="link">here</a> to get the full publication list &nbsp;&nbsp;</p>
+        <p style="margin-bottom: 0.5vw"><i class="fa-regular fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a> &nbsp;&nbsp;</p><br>
+        <p style="margin-bottom: 0.5vw"><i class="fa-regular fa-file-lines"></i> Click <a onclick="window.open('datasets/publication.html', '_blank');" class="link">here</a> to get the full publication list &nbsp;&nbsp;</p>
         <div style="padding-bottom: 0.3vw">
-          <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'>Unify Style</button>
-          <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'>Unity/Zero</button>
-          <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0.4">Grid</button>
-          <button type="submit" class="btnaction" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
-          <button type="submit" class="btnaction" id='saveButton'>Save as PNG</button>&nbsp;</div>
-        <div><p>Legend x: </p>
+          <button type="submit" class="btnaction" id="btnlegend" onclick="legendopacity(); " value="1">Leg</button>
+          <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'><i class="fa-solid fa-brush"></i></button>
+          <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
+          <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0.2"><i class="fa-solid fa-table-cells"></i></button>
+          <button type="submit" class="btnaction" id='saveButton'><i class="fa-solid fa-floppy-disk"></i></button>
+          &nbsp;
+        </div>
+        <div>
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          <input type="range" min="0" max="70" value="40" class="slider" id="legsizerange" oninput="resizelegend()">
+          <i class="fa-solid fa-arrows-left-right"></i> <p id="tx0"> 25 </p>
           <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
-          <p id="tx0"> 25 </p>
-          <p>  y: </p>
+          <i class="fa-solid fa-arrows-up-down"></i> <p id="ty0"> 20 </p>
           <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
-          <p id="ty0"> 20 </p>
           <p>&nbsp;</p></div>
         <p>&nbsp;</p><br>          
       </div>
@@ -123,7 +126,7 @@
       <div id="rightpad">
         <div>
           <input type="range" min="0.5" max="0.9" value="0.72" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall(0); document.getElementById('tratio').innerHTML = 'Canvas shape: ('+parseFloat(this.value).toFixed(2)+')';">
-          <div id="tratio">Canvas shape: (0.72)</div>
+          <div id="tratio">Canvas <i class="fa-solid fa-crop-simple"></i> (0.72)</div>
         </div>
         <svg id="svgparent" style="background-color: white;"></svg>
         <ul id="reference"> </ul>
@@ -142,19 +145,11 @@
 
     <div id="updatelog">
 
-      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (2/10/22): </br>
+      <i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;Update (3/2/22): </br>
       <ul class="myul">
-        <li>Increase marker and legend text sizes</li>
+        <li>Fixed a bug of checkboxes.</li>
+        <li>Legend text size can be changed now.</li>
       </ul>
-      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (9/20/21): </br>
-      <ul class="myul">
-        <li>Use <i class="fas fa-angle-double-up"></i> to move to front</li>
-      </ul>
-      <i class="fas fa-wrench"></i>&nbsp;&nbsp;Update (9/16/21): </br>
-      <ul class="myul">
-        <li>Use <i class="fas fa-paint-roller"></i> to change display style for each dataset separately</li>
-      </ul>
-
       <div id="updatelogx" style="font-weight : bold;" onclick="this.style.opacity = 0; this.style.cursor = 'default'; 
                                                                 document.getElementById('updatelog').style.opacity = 0; document.getElementById('updatelog').style.cursor = 'default';">
         &times; 

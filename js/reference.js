@@ -7,7 +7,7 @@ function changeoneref(da)
 
 function refone(da)
 {
-    if(document.getElementById('check_' + da).checked)
+    if(checkb(da))
     {
         checkandremove("liref_" + da);
         addoneref(da, document.getElementById('reference'));
@@ -21,14 +21,12 @@ function refall()
     var reference = document.getElementById('reference');
     while(reference.firstChild)
         reference.removeChild(reference.firstChild);
-    var checkb = document.getElementById('datainput').getElementsByTagName('input');
+    var checkbs = document.getElementById('datainput').getElementsByClassName('checkb');
 
-    for(var i=0; i<checkb.length; i++)
+    for(var i=0; i<checkbs.length; i++)
     {
-        if(checkb[i].type != 'checkbox') { continue; }
-        if(checkb[i].checked == false) { continue; }
-        var da = checkb[i].id.replace("check_", "");
-
+        var da = checkbs[i].id.replace("check_", "");
+        if(!checkb(da)) continue;
         addoneref(da, reference, 0);
     }
 }

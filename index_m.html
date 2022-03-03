@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="A compilation tool of heavy flavor measurements in heavy ion collisions.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general_m.css">
     <link rel="stylesheet" href="css/basis.css">
     <link rel="stylesheet" href="css/checkbox.css">
@@ -13,6 +12,7 @@
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/svg.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1b7d79a1ac.js" crossorigin="anonymous"></script>
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
@@ -104,12 +104,12 @@
         <svg id="svgparent" style="background-color: white;"></svg>
         <div id="divrange">
           <br>
-          <p>Legend x: </p>
+          <p> <i class="fa-solid fa-text-height"></i> </p>
+          <input type="range" min="0" max="60" value="40" class="slider" id="legsizerange" oninput="resizelegend()">
+          <p> <i class="fa-solid fa-arrows-left-right"></i> </p> <p id="tx0"> 25 </p>
           <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
-          <p id="tx0"> 25 </p>
-          <p>  y: </p>
+          <p> <i class="fa-solid fa-arrows-up-down"></i> </p> <p id="ty0"> 20 </p>
           <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
-          <p id="ty0"> 20 </p>
         </div>
         <div id="divreference">
           <br>
@@ -117,11 +117,11 @@
         </div>
         <div id="descholder">
           <div id="desc">
-            <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value="6">Display Style</button>
-            <button type="submit" id="btnvline" onclick="vlineopacity(); " value="0">Unity/Zero</button>
-	    <button type="submit" id="btngrid" onclick="gridopacity(); " value="0.4">Grid</button>
-            <button type="submit" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
-            <button type="submit" id='saveButton'>Save as PNG</button><br>
+            <button type="submit" class="btnaction" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
+            <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'><i class="fa-solid fa-brush"></i></button>
+            <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
+            <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0.2"><i class="fa-solid fa-table-cells"></i></button>
+            <button type="submit" class="btnaction" id='saveButton'><i class="fa-solid fa-floppy-disk"></i></button>
             <p><i class="far fa-file-alt"></i> Click <a href="datasets/publication.html" class="link">here</a> to get the full publication list &nbsp;&nbsp;</p> <br>
             <p><i class="far fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a> &nbsp;&nbsp;</p><br>
           </div>

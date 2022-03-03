@@ -44,28 +44,17 @@ function loaditem(nomarkerpicker = 0)
         else
             itnew.innerHTML = "";
         itnew.style.color = '#D62828';
-        itnew.style.fontSize = '0.8em';
-        itnew.style.fontWeight = 'bold';
+        itnew.style.fontSize = '0.8rem';
+        itnew.style.fontWeight = '500';
         iline.appendChild(itnew);
         if(nomarkerpicker == 1) itnew.style.display = 'none';
 
         var itcheck = document.createElement("td");
+        itcheck.innerHTML = '<i class="far fa-square fa-fade" style="--fa-animation-iteration-count: 1; --fa-fade-opacity: 0.5;"></i>';
+        itcheck.setAttribute('class', 'checkb');
+        itcheck.id = "check_" + da;
+        itcheck.alt = 'false';
         iline.appendChild(itcheck);
-        var itchecklabel = document.createElement("label");
-        itchecklabel.setAttribute('class', 'container');
-        itcheck.appendChild(itchecklabel);
-        var icheck = document.createElement("input");
-        icheck.setAttribute('type', 'checkbox');
-        icheck.id = "check_" + da;
-
-        // icheck.checked = true;
-
-        itchecklabel.appendChild(icheck);
-        var icheckmark = document.createElement("span");
-        icheckmark.setAttribute('class', 'checkmark');
-        icheckmark.id = "checkmark_" + da;
-        itchecklabel.appendChild(icheckmark);
-        icheck.setAttribute('onchange', "drawone('"+da+"'); legone('"+da+"'); document.getElementById('checkmark_' + '"+da+"').style = ''; ");
 
         if(obs == "vn")
         {
@@ -127,21 +116,16 @@ function loaditem(nomarkerpicker = 0)
         imarker.title = "marker styles";
         itmarker.appendChild(imarker);
         if(nomarkerpicker == 1) itmarker.style.display = 'none';
-        // else
-        // {
-            // var rndint = Math.floor(Math.random() * vorders.length);
-            // imarker.value = vorders[rndint];
-        // }
 
         var itdisplay = document.createElement("td");
         iline.appendChild(itdisplay);
         var idisplay = document.createElement("button");
         idisplay.setAttribute('type', 'submit');
         idisplay.id = "display_" + da;
-        idisplay.innerHTML = '<i class="fas fa-paint-roller"></i>';
+        idisplay.innerHTML = '<i class="fa-solid fa-brush"></i>';
         idisplay.value = '6';
         idisplay.setAttribute('class', 'btnaction btndisplay');
-        idisplay.setAttribute('onclick', "changedisplay('" + da + "'); ");
+        idisplay.setAttribute('onclick', "changedisplay('" + da + "');");
         idisplay.title = "display styles";
         itdisplay.appendChild(idisplay);
         if(nomarkerpicker == 1)
@@ -152,14 +136,15 @@ function loaditem(nomarkerpicker = 0)
         var iforward = document.createElement("button");
         iforward.setAttribute('type', 'submit');
         iforward.id = "forward_" + da;
-        iforward.innerHTML = '<i class="fas fa-angle-double-up"></i>';
+        iforward.innerHTML = '<i class="fa-solid fa-angles-up"></i>';
         iforward.setAttribute('class', 'btnaction btnforward');
-        iforward.setAttribute('onclick', "drawone('" + da + "'); ");
+        iforward.setAttribute('onclick', "drawone('" + da + "');");
         iforward.title = "to front";
         itforward.appendChild(iforward);
         if(nomarkerpicker == 1)
             itforward.style.display = 'none';
         
+        itcheck.setAttribute('onclick', "checkthis('"+da+"')");
         itparticle.setAttribute('onclick', "checkthis('"+da+"')");
         itcollision.setAttribute('onclick', "checkthis('"+da+"')");
         itenergy.setAttribute('onclick', "checkthis('"+da+"')");
@@ -167,9 +152,6 @@ function loaditem(nomarkerpicker = 0)
         itcentrality.setAttribute('onclick', "checkthis('"+da+"')");
         itrapidity.setAttribute('onclick', "checkthis('"+da+"')");
         itnew.setAttribute('onclick', "checkthis('"+da+"')");
-
-        iline.setAttribute('onmouseover', "checkcolor('"+da+"')");
-        iline.setAttribute('onmouseout', "checkcolorback('"+da+"')");
     }
     
     keyfilter();
@@ -181,20 +163,29 @@ var changedisplay = function(da, transt = 400)
     drawdisplay(da, transt);
 }
 
-function checkthis(da)
+function checkb(da)
+{
+    return document.getElementById('check_' + da).alt=='true';
+}
+
+function swapcheckb(da)
 {
     var icheck = document.getElementById('check_' + da);
-    if(icheck.checked == true)
+    if(icheck.alt == 'true')
     {
-        icheck.checked = false;
-        document.getElementById('checkmark_' + da).style = '';
+        icheck.alt = 'false';
+        icheck.innerHTML = '<i class="fa-regular fa-square fa-fade" style="--fa-animation-iteration-count: 1; --fa-fade-opacity: 0.5;"></i>';
     }
     else
     {
-        icheck.checked = 'checked';
-        document.getElementById('checkmark_' + da).style = '';
+        icheck.alt = 'true';
+        icheck.innerHTML = '<i class="fa-solid fa-square-check fa-beat" style="--fa-animation-iteration-count: 1; --fa-beat-scale: 1.5;"></i>';
     }
+}
 
+function checkthis(da)
+{
+    swapcheckb(da);
     drawone(da);
     legone(da);
     refone(da);
@@ -202,7 +193,7 @@ function checkthis(da)
 
 function changethis(da)
 {
-    if(document.getElementById('check_' + da).checked)
+    if(checkb(da))
     {
         changeone(da);
         changeoneleg(da);
@@ -210,16 +201,3 @@ function changethis(da)
     }
 }
 
-function checkcolor(da)
-{
-    var icheck = document.getElementById('check_' + da);
-    if(icheck.checked == false)
-        document.getElementById('checkmark_' + da).style.backgroundColor = '#ccc';
-}
-
-function checkcolorback(da)
-{
-    var icheck = document.getElementById('check_' + da);
-    if(icheck.checked == false)
-        document.getElementById('checkmark_' + da).style.backgroundColor = '#eee';
-}

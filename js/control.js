@@ -28,22 +28,15 @@ function colorall(transt = 500)
 
 function clearall()
 {
-    var checkm = document.getElementsByClassName("checkmark");
-    for(var i=0; i<checkm.length; i++)
-        checkm[i].style = '';
-
-    var checkb = document.getElementsByTagName("input");
-    for(var i=0; i<checkb.length; i++)
+    var checkbs = document.getElementsByClassName("checkb");
+    for(var i=0; i<checkbs.length; i++)
     {
-        if(checkb[i].type == 'checkbox')
-        {
-            if(checkb[i].checked == false) continue;
-            checkb[i].checked = false;
-            var da = checkb[i].id.replace("check_", "");
-            clearone(da);
-            refone(da);
-            legone(da);
-        }
+        var da = checkbs[i].id.replace("check_", "");
+        if(!checkb(da)) continue;
+        swapcheckb(da);
+        clearone(da);
+        refone(da);
+        legone(da);
     }
 }
 
@@ -80,14 +73,13 @@ function vlineopacity(transt = 400)
 function binningopacity(transt = 400)
 {
     changetonext('btnbinning');
-    var checkb = document.getElementsByTagName("input");
-    for(var i=0; i<checkb.length; i++)
+    var checkbs = document.getElementsByClassName("checkb");
+    for(var i=0; i<checkbs.length; i++)
     {
-        if(checkb[i].type !== 'checkbox') continue;
-        var da = checkb[i].id.replace("check_", "");
+        var da = checkbs[i].id.replace("check_", "");
         document.getElementById('display_'+da).value = document.getElementById('btnbinning').value;
 
-        if(!checkb[i].checked) continue;
+        if(!checkb(da)) continue;
         drawdisplay(da, transt);
     }
 }

@@ -6,7 +6,7 @@
     --size-font-header: 3vw;
     --size-font-default: 2.6vw;
     --size-font-desc: 5vw;
-    --size-font-footer: 3vw;
+    --size-font-footer: 2.7vw;
     --height-footer: 3.2vw;
     --height-header-left: 0;
     --height-rightrange: 59vw;
@@ -16,8 +16,6 @@
     --padding-td: 0.4vw;
     --padding-td-tb: 1.2vw;
     --height-tr: 2.2vw;
-    --size-checkmark: 3vw;
-    --opacity-checkafter: 0;
 
     /* input */
     --height-margin-input: 0.8vw;
@@ -126,6 +124,7 @@
     bottom: calc(var(--height-footer)*0.2);
     font-size: var(--size-font-footer);
     text-align: center;
+    color: #ddd;
 }
 
 #clipboard {

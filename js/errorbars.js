@@ -324,8 +324,7 @@ var clearone = function(da, transt = 500)
 
 var drawone = function(da, transt = 500)
 {
-    var ichecked = document.getElementById('check_'+da).checked;
-    if(ichecked)
+    if(checkb(da))
     {
         rmone(da);
         var thisitem = dataset[da];
@@ -364,16 +363,13 @@ var drawall = function(transt = 500)
     d3.selectAll("svg > *").remove();
     setsvg();
 
-    var checkb = document.getElementsByTagName("input");
-    for(var i=0; i<checkb.length; i++)
+    var checkbs = document.getElementsByClassName("checkb");
+    for(var i=0; i<checkbs.length; i++)
     {
-        if(checkb[i].type == 'checkbox')
-        {
-            if(!checkb[i].checked) continue;
-            var da = checkb[i].id.replace("check_", "");
-            var thisitem = dataset[da];
-            addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
-        }
+        var da = checkbs[i].id.replace("check_", "");
+        if(!checkb(da)) continue;
+        var thisitem = dataset[da];
+        addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
     }
 }
 

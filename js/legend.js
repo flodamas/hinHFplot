@@ -30,7 +30,7 @@ function changeoneleg(da, transt = 500) // change color
 
 function legone(da, transt = 500)
 {
-    if(!document.getElementById('check_' + da).checked && legs.includes(da)) // remove legend
+    if(!checkb(da) && legs.includes(da)) // remove legend
     {
         d3.select("svg").select('#legend_'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select('#legendmark_'+da).transition().attr('opacity', 0).duration(transt);
@@ -112,6 +112,12 @@ function movelegendy()
     document.getElementById('ty0').innerText = " " + document.getElementById('y0range').value;
 }
 
+function resizelegend()
+{
+    setbasic();
+    d3.select("svg").selectAll(".legend").style("font-size", legsize+"em");
+}
+
 // ==> Protected: <==
 
 function legendmarker(da, xx, yy, transt = 500)
@@ -174,7 +180,8 @@ function parsescript(pa)
 function legenditem(tlegend, thisitem, type=1)
 {
     var type_legend = document.getElementById('btnlegend').value;
-
+    tlegend.style('font-size', legsize + "em");
+    
     // particle
     var rpa = parsescript(thisitem.particle);
     for(var p in rpa)
