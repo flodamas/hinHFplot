@@ -33,6 +33,14 @@
 }
 
 /* transition */
+@keyframes bottomIn {
+  0% {
+      transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .btnaction:hover {
     background-color: #0072D0;
@@ -42,9 +50,9 @@
 .btncheck {
     transition: opacity 0.3s ease;
 }
+
 .btncheck:hover {
-    text-decoration: underline;
-    /* opacity: 0.5; */
+    animation: 1s ease 0s 1 bottomIn;
 }
 
 tr:hover {
