@@ -60,7 +60,7 @@ function addoneref(da, reference, transt = 500)
     iref.appendChild(sp);
     var iacref = document.createElement("i");
     iacref.id = "acref_" + da;
-    iacref.setAttribute('class', 'far fa-copy');
+    iacref.setAttribute('class', 'fa-regular fa-copy');
     iacref.setAttribute('onmouseover', "showcopy('"+da+"')");
     iacref.setAttribute('onmouseleave', "hidecopy()");
     iacref.setAttribute("onclick", "copylink('acref_"+da+"', '"+dataset[da].reference+"', '" + cc + "')");
