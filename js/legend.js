@@ -98,7 +98,6 @@ function movelegendx()
     d3.select("svg").selectAll(".legendmark").each(function() {
         changexto( d3.select(this).attr('id'), x0 );
     })
-    document.getElementById('tx0').innerText = " " + document.getElementById('x0range').value;
 }
 
 function movelegendy()
@@ -109,12 +108,16 @@ function movelegendy()
         d3.select("svg").select("#legend_" + legs[l]).attr("y", y0 + l*dy);
         changeyto( "legendmark_" + legs[l], y0 + l*dy );
     }
-    document.getElementById('ty0').innerText = " " + document.getElementById('y0range').value;
 }
 
 function resizelegend()
 {
     setbasic();
+    for(var l=0; l<legs.length; l++)
+    {
+        d3.select("svg").select("#legend_" + legs[l]).attr("y", y0 + l*dy);
+        changeyto( "legendmark_" + legs[l], y0 + l*dy );
+    }
     d3.select("svg").selectAll(".legend").style("font-size", legsize+"em");
 }
 

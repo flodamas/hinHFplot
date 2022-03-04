@@ -15,31 +15,22 @@ var legs = [];
 // set basic
 function setbasic()
 {
-    width = document.getElementById('rightpad').clientWidth*0.92;
+    width = document.getElementById('rightpad').clientWidth*0.9;
     height = width * document.getElementById('ratiorange').value;
-    margin = { top: width*0.72*0.06, right: width*0.05, bottom: width*0.72*0.13, left: width*0.14 },
+    margin = { top: width*0.72*0.06, right: width*0.05, bottom: width*0.72*0.145, left: width*0.13 },
     chartWidth = width - margin.left - margin.right,
     chartHeight = height - margin.top - margin.bottom;
     x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
     y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
-    dy = chartWidth*0.72/15.; //
     dxmark = chartWidth/45.; //
     legsize = (0.8+(document.getElementById('legsizerange').value)/200)*2.75;
+    dy = legsize*chartWidth*0.017; //
+
+    document.getElementById('tx0').innerText = " " + document.getElementById('x0range').value;
+    document.getElementById('ty0').innerText = " " + document.getElementById('y0range').value;
+    document.getElementById('tfsize').innerText = " " + document.getElementById('legsizerange').value;
+    document.getElementById('tratio').innerText = parseFloat(document.getElementById('ratiorange').value).toFixed(2);
 }
-
-// var width = function() { return document.getElementById('rightpad').clientWidth*0.92; }
-// var height = function() { return width() * document.getElementById('ratiorange').value; }
-// var margin = function() { var mm = { top: width()*0.72*0.06, right: width()*0.05, bottom: width()*0.72*0.13, left: width()*0.14 }; return mm; }
-// var chartWidth = function() { return width() - margin().left - margin().right; }
-// var chartHeight = function() { return height() - margin().top - margin().bottom; }
-
-// legend -->
-// var dxmark;
-// var x0 = function() { return margin().left + chartWidth()/89.*(document.getElementById('x0range').value-10); }
-// var y0 = function() { return margin().top + chartWidth()*0.72/89.*(document.getElementById('y0range').value-10); }
-// var dy = function() { return chartWidth()*0.72/17.; }
-// var legs = [];
-// <-- legend
 
 var styles = { "rect":0,  "rectl":1,  "line":2,  "linev":3,  "rectv":4,  "rectvl":5 };
 var styles_mapping = {
@@ -76,7 +67,7 @@ function checkandremove(id) { if( document.getElementById(id) ) { document.getEl
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.28; }
-var stroke_width_axis = function() { return width/100.*0.24; }
+var stroke_width_axis = function() { return width/100.*0.2; }
 
 var xoverflow = function(x)
 {

@@ -1,12 +1,10 @@
-.axis,
-.watermark,
-.axistitle {
+.axis {
     font-size: 3.2em;
 }
 
-/* .legend { */
-/*     font-size: 2.75em; */
-/* } */
+.axistitle {
+    font-size: 4em;
+}
 
 .middlebaseline {
     dominant-baseline: middle;    
@@ -14,7 +12,7 @@
 
 .axis path,
 .axis line {
-    stroke-width: 0.055em;
+    /* stroke-width: 0.055em; */
 }
 
 .grid path,
@@ -46,6 +44,9 @@
 }
 
 .watermark {
-    fill: #e5e5e5;
+    fill: #eeeeee;
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    font-size: 2.4em;
 }
 

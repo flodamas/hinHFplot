@@ -78,11 +78,11 @@ input[type=range] {
     width: 7vw;
     z-index: 1;
 }
-#tratio {
+#divratio {
     transform: rotate(90deg);
     position: fixed;
     top: 22vw;
-    right: 4.5vw;
+    right: 5.5vw;
     /* height: 2vw; */
     z-index: 1;
     
