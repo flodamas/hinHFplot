@@ -1498,9 +1498,9 @@ dataset["aprDsubs_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
 };
 
 dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "arXiv:2110.09420",
+    reference : "JHEP 01 (2022) 174",
     link : "https://arxiv.org/abs/2110.09420",
-    update : "2021-11-13",
+    update : "2022-03-04",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D",
@@ -1536,9 +1536,9 @@ dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 };
 
 dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "arXiv:2110.09420",
+    reference : "JHEP 01 (2022) 174",
     link : "https://arxiv.org/abs/2110.09420",
-    update : "2021-11-13",
+    update : "2022-03-04",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt D",
