@@ -1,15 +1,3 @@
-// var legparts = { "mark":0, "particle":1, "collab":2, "collision1":3, "collision2":4, "kinea":5, "kineb":6 };
-// var legdrawornot = function(name) {
-//     var n = parseInt(legparts[name]);
-//     var x = parseInt(document.getElementById('btnlegend').value);
-//     var b = (x>>n) & 1;
-//     return b==1?'default':'none';
-// }
-// var legchangetonext = function(idd) {
-//     function next(i) { return ((i==127 || i==0)?(parseInt(i)+1):(parseInt(i)+2)) % 128; }
-//     document.getElementById(idd).value = next(document.getElementById(idd).value);
-// }
-
 var legdrawornot = function(name) {
     return document.getElementById('sw_'+name).classList.contains("active")?'default':'none';
 }
@@ -184,17 +172,26 @@ function legenditem(tlegend, thisitem, type=1)
     var type_legend = document.getElementById('btnlegend').value;
     tlegend.style('font-size', legsize + "em");
     
-    // particle
-    var rpa = parsescript(thisitem.particle);
-    for(var p in rpa)
+    // observable
+    var rpc = parsescript(styleobs(thisitem.observable));
+    for(var p in rpc)
     {
         tlegend.append('tspan')
-            .attr("class", rpa[p].cl+" middlebaseline")
-        // .style("font-weight", "bold")
-        // .style("font-style", "italic")
+            .attr("class", rpc[p].cl+" middlebaseline")
+            .style("dominant-baseline", "middle")
+            .attr('display', legdrawornot("observable"))
+            .text(decodehtml(rpc[p].content));
+    }
+    // particle
+    var rpp = parsescript(thisitem.particle);
+    rpp[0].content = " " + rpp[0].content;
+    for(var p in rpp)
+    {
+        tlegend.append('tspan')
+            .attr("class", rpp[p].cl+" middlebaseline")
             .style("dominant-baseline", "middle")
             .attr('display', legdrawornot("particle"))
-            .text(decodehtml(rpa[p].content));
+            .text(decodehtml(rpp[p].content));
     }
     // collab
     tlegend.append('tspan')
@@ -237,3 +234,12 @@ function legenditem(tlegend, thisitem, type=1)
     }
 }
 
+
+function styleobs(tobs)
+{
+    if(tobs=="RAA") return "R<sub>AA</sub>";
+    if(tobs=="RpA") return "R<sub>pA</sub>";
+    if(tobs=="v2") return "v<sub>2</sub>";
+    if(tobs=="v3") return "v<sub>3</sub>";
+    return "";
+}
