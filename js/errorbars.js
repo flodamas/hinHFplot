@@ -39,14 +39,16 @@ function setsvg()
 var drawaxisgrid = function()
 {
     // ==> Grid <==
-    var ticksx = checklogx()?5:8, ticksy = checklogy()?5:5;
-    var ticksize = -5;
+    var ticksx = checklogx()?8:5, ticksy = 5;
+    var ticksize = -8;
+    var ismajortick = function (i) { return i%10==0; }
+
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "grid")
         .attr('opacity', document.getElementById('btngrid').value)
         .attr('stroke-width', stroke_width_axis())
-        .call( d3.axisBottom(x).tickSize(-chartHeight).ticks(ticksx).tickFormat("").tickSizeOuter(0) );
+        .call( d3.axisBottom(x).tickSize(-chartHeight).tickFormat("").ticks(ticksx).tickSizeOuter(0) );
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr("class", "grid")
@@ -55,27 +57,42 @@ var drawaxisgrid = function()
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
 
     // ==> Axis <==
-    var xaxis = d3.axisBottom(x).tickSize(ticksize).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.3));
-    if(checklogx()) xaxis.ticks(ticksx, "");
-    else xaxis.ticks(ticksx);
-    var yaxis = d3.axisLeft(y).tickSize(ticksize).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.6));
-    if(checklogy()) yaxis.ticks(ticksy, "");
-    else yaxis.ticks(ticksy);
-    d3.select("svg").select("g").append('g')
+    var addminor = function (theaxis, ticksn) {        
+        var ntickval = theaxis.scale().ticks(ticksn, "");
+        theaxis.tickFormat(function (d, i) { return ntickval.includes(d)?d:""; }).ticks(ticksn*5);
+        return ntickval;
+    }
+    var xaxis = d3.axisBottom(x).tickSize(ticksize).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.3)).ticks(ticksx, "");
+    var xaxismajor = checklogx()?[]:addminor(xaxis, ticksx);
+    var yaxis = d3.axisLeft(y).tickSize(ticksize).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.6)).ticks(ticksy, "");
+    var yaxismajor = checklogy()?[]:addminor(yaxis, ticksy);
+    var shortenminor = function(the_axis, naxismajor)
+    {
+        the_axis.selectAll("g")
+            .filter(function (d, i) { return !naxismajor.includes(d); })
+            .style("stroke-dasharray", '4,6');
+    }
+    // xaxis
+    var x_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( xaxis );
-    d3.select("svg").select("g").append('g')
+    if(!checklogx()) shortenminor(x_axis, xaxismajor);
+    // yaxis
+    var y_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( yaxis );
+    if(!checklogy()) shortenminor(y_axis, yaxismajor);
+    // xframe
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( d3.axisBottom(x).tickFormat("").tickSize(0).ticks(ticksx).tickSizeOuter(0) );
+    // yframe
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(' + chartWidth + ',0)')
         .attr('stroke-width', stroke_width_axis())
