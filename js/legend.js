@@ -128,7 +128,7 @@ function legendmarker(da, xx, yy, transt = 500)
     var dsize = marker_size()*vopt[kmarker].offset[0];
     svg.append('path')
         .attr("d", d3.symbol().type(vopt[kmarker].type).size(dsize))
-	.attr("transform", "translate(" + xx + "," + (yy-legsize) + ")")
+	.attr("transform", "translate(" + xx + "," + (yy-legsize*0.8) + ")")
         .attr('id', 'legendmark_' + da)
         .attr('class', 'legendmark')
         .attr('fill', vopt[kmarker].fill==1?thecolor:'transparent')
@@ -143,7 +143,7 @@ function changeyto(id, nexty, transt = 0)
     var original = svg.select('#'+id).attr("transform");
     var thisx = original.replace('translate(', '');
     thisx = thisx.replace(/,.+/, '');
-    svg.select('#'+id).transition().attr("transform", 'translate(' + thisx + ',' + (nexty-legsize) + ')').duration(transt);
+    svg.select('#'+id).transition().attr("transform", 'translate(' + thisx + ',' + (nexty-legsize*0.8) + ')').duration(transt);
 }
 
 function changexto(id, nextx, transt = 0)
