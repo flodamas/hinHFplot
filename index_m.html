@@ -117,7 +117,18 @@
         </div>
         <div id="descholder">
           <div id="desc">
-            <button type="submit" class="btnaction" id="btnlegend" onclick="legendopacity(); " value="1">Legend</button>
+            <div class="dropdown" display="none">
+              <button type="submit" id="btnlegend" value="127">Legend <i class="fa-solid fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a id="sw_mark" alt="1" onclick="legendopacity(this);" class="active">Marker</a>
+                <a id="sw_particle" alt="1" onclick="legendopacity(this);" class="active">Particle</a>
+                <a id="sw_collab" alt="1" onclick="legendopacity(this);" class="active">Collaboration</a>
+                <a id="sw_collision1" alt="1" onclick="legendopacity(this);" class="active">Collision</a>
+                <a id="sw_collision2" alt="1" onclick="legendopacity(this);" class="active">Energy</a>
+                <a id="sw_kinea" alt="1" onclick="legendopacity(this);" class="active">Kinematics 1</a>
+                <a id="sw_kineb" alt="1" onclick="legendopacity(this);" class="active">Kinematics 2</a>
+              </div>
+            </div>
             <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'><i class="fa-solid fa-brush"></i></button>
             <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
             <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0.2"><i class="fa-solid fa-table-cells"></i></button>

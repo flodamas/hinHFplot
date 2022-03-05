@@ -93,8 +93,17 @@ function gridopacity(transt=500)
     document.getElementById('btngrid').value = newopa;
 }
 
-function legendopacity() {
-    legchangetonext('btnlegend');
+function legendopacity(sw) {
+    if(sw.classList.contains("active"))
+    {
+        sw.classList.remove("active");
+        sw.querySelector('i').className = 'fa-regular fa-square';
+    }
+    else
+    {
+        sw.classList.add("active");
+        sw.querySelector('i').className = 'fa-solid fa-square-check';
+    }
     d3.select("svg").selectAll('.legend').remove();
     d3.select("svg").selectAll('.legendmark').remove();
     legall(0);

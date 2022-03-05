@@ -1,14 +1,17 @@
-var legparts = { "mark":0, "particle":1, "collab":2, "collision1":3, "collision2":4, "kinea":5, "kineb":6 };
+// var legparts = { "mark":0, "particle":1, "collab":2, "collision1":3, "collision2":4, "kinea":5, "kineb":6 };
+// var legdrawornot = function(name) {
+//     var n = parseInt(legparts[name]);
+//     var x = parseInt(document.getElementById('btnlegend').value);
+//     var b = (x>>n) & 1;
+//     return b==1?'default':'none';
+// }
+// var legchangetonext = function(idd) {
+//     function next(i) { return ((i==127 || i==0)?(parseInt(i)+1):(parseInt(i)+2)) % 128; }
+//     document.getElementById(idd).value = next(document.getElementById(idd).value);
+// }
 
 var legdrawornot = function(name) {
-    var n = parseInt(legparts[name]);
-    var x = parseInt(document.getElementById('btnlegend').value);
-    var b = (x>>n) & 1;
-    return b==1?'default':'none';
-}
-var legchangetonext = function(idd) {
-    function next(i) { return ((i==127 || i==0)?(parseInt(i)+1):(parseInt(i)+2)) % 128; }
-    document.getElementById(idd).value = next(document.getElementById(idd).value);
+    return document.getElementById('sw_'+name).classList.contains("active")?'default':'none';
 }
 
 function changeoneleg(da, transt = 500) // change color
@@ -122,16 +125,17 @@ function legendmarker(da, xx, yy, transt = 500)
 {
     var kmarker = document.getElementById('marker_'+da).value;
     var thecolor = document.getElementById('color_'+da).value;
+    var dsize = marker_size()*vopt[kmarker].offset[0];
     svg.append('path')
-        .attr("d", d3.symbol().type(vopt[kmarker].type).size(marker_size()*vopt[kmarker].offset[0]))
-	.attr("transform", function(d) { return "translate(" + xx + "," + yy + ")"; })
+        .attr("d", d3.symbol().type(vopt[kmarker].type).size(dsize))
+	.attr("transform", "translate(" + xx + "," + (yy-legsize) + ")")
         .attr('id', 'legendmark_' + da)
         .attr('class', 'legendmark')
         .attr('fill', vopt[kmarker].fill==1?thecolor:'transparent')
         .attr('stroke', thecolor)
         .attr('stroke-width', stroke_width())
         .attr('opacity', 0).transition()
-        .attr('opacity', document.getElementById('btnlegend').value==0?0:1).duration(transt);
+        .attr('opacity', legdrawornot("mark")=='none'?0:1).duration(transt);
 }
 
 function changeyto(id, nexty, transt = 0)
@@ -139,7 +143,7 @@ function changeyto(id, nexty, transt = 0)
     var original = svg.select('#'+id).attr("transform");
     var thisx = original.replace('translate(', '');
     thisx = thisx.replace(/,.+/, '');
-    svg.select('#'+id).transition().attr("transform", 'translate(' + thisx + ',' + nexty + ')').duration(transt);
+    svg.select('#'+id).transition().attr("transform", 'translate(' + thisx + ',' + (nexty-legsize) + ')').duration(transt);
 }
 
 function changexto(id, nextx, transt = 0)
@@ -186,7 +190,8 @@ function legenditem(tlegend, thisitem, type=1)
     {
         tlegend.append('tspan')
             .attr("class", rpa[p].cl+" middlebaseline")
-            .style("font-weight", "bold")
+        // .style("font-weight", "bold")
+        // .style("font-style", "italic")
             .style("dominant-baseline", "middle")
             .attr('display', legdrawornot("particle"))
             .text(decodehtml(rpa[p].content));
@@ -195,7 +200,7 @@ function legenditem(tlegend, thisitem, type=1)
     tlegend.append('tspan')
         .attr("class", "middlebaseline")
         .attr('display', legdrawornot("collab"))
-        .text(' ' + thisitem.collab);
+        .text(' (' + thisitem.collab + ')');
     // collision1
     tlegend.append('tspan')
         .attr("class", "middlebaseline")
@@ -211,7 +216,7 @@ function legenditem(tlegend, thisitem, type=1)
     // kinea
     var rpa = parsescript(thisitem.kinea);
     if(thisitem.kinea != "")
-        rpa[0].content = ", " + rpa[0].content;
+        rpa[0].content = " " + rpa[0].content;
     for(var p in rpa)
     {
         tlegend.append('tspan')
@@ -222,7 +227,7 @@ function legenditem(tlegend, thisitem, type=1)
     // kineb
     var rpb = parsescript(thisitem.kineb);
     if(thisitem.kineb != "")
-        rpb[0].content = ", " + rpb[0].content;
+        rpb[0].content = " " + rpb[0].content;
     for(var p in rpb)
     {
         tlegend.append('tspan')

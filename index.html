@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="A compilation tool of heavy flavor measurements in heavy ion collisions.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/basis.css">
     <link rel="stylesheet" href="css/checkbox.css">
@@ -105,7 +105,18 @@
         <p style="margin-bottom: 0.5vw"><i class="fa-regular fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a> &nbsp;&nbsp;</p><br>
         <p style="margin-bottom: 0.5vw"><i class="fa-regular fa-file-lines"></i> Click <a onclick="window.open('datasets/publication.html', '_blank');" class="link">here</a> to get the full publication list &nbsp;&nbsp;</p>
         <div style="padding-bottom: 0.3vw">
-          <button type="submit" class="btnaction" id="btnlegend" onclick="legendopacity(); " value="127">Leg</button>
+          <div class="dropdown">
+            <button type="submit" id="btnlegend" value="127">Legend <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a id="sw_mark" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Marker</a>
+              <a id="sw_particle" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Particle</a>
+              <a id="sw_collab" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Collaboration</a>
+              <a id="sw_collision1" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Collision</a>
+              <a id="sw_collision2" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Energy</a>
+              <a id="sw_kinea" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Kinematics 1</a>
+              <a id="sw_kineb" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Kinematics 2</a>
+            </div>
+          </div>
           <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'><i class="fa-solid fa-brush"></i></button>
           <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
           <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0.2"><i class="fa-solid fa-table-cells"></i></button>
