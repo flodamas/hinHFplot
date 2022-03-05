@@ -1,18 +1,13 @@
-var legparts = { "mark":0,  "particle":1,  "collab":2,  "collision":3,  "kinea":4,  "kineb":5 };
-var legparts_mapping = {
-    0 : [0, 0, 0, 0, 0, 0],
-    1 : [1, 1, 1, 1, 1, 1],
-    2 : [1, 1, 1, 1, 1, 0],
-    3 : [1, 1, 1, 1, 0, 1],
-    4 : [1, 1, 1, 1, 0, 0],
-    5 : [1, 1, 1, 0, 1, 1],
-    6 : [1, 1, 1, 0, 1, 0],
-    7 : [1, 1, 1, 0, 0, 1],
-    8 : [1, 1, 1, 0, 0, 0],
-};
-var legdrawornot = function(name) { return legparts_mapping[document.getElementById('btnlegend').value][legparts[name]]==1?'default':'none'; }
+var legparts = { "mark":0, "particle":1, "collab":2, "collision1":3, "collision2":4, "kinea":5, "kineb":6 };
+
+var legdrawornot = function(name) {
+    var n = parseInt(legparts[name]);
+    var x = parseInt(document.getElementById('btnlegend').value);
+    var b = (x>>n) & 1;
+    return b==1?'default':'none';
+}
 var legchangetonext = function(idd) {
-    function next(i) { return (parseInt(i)+1) % Object.keys(legparts_mapping).length; }
+    function next(i) { return ((i==127 || i==0)?(parseInt(i)+1):(parseInt(i)+2)) % 128; }
     document.getElementById(idd).value = next(document.getElementById(idd).value);
 }
 
@@ -201,12 +196,18 @@ function legenditem(tlegend, thisitem, type=1)
         .attr("class", "middlebaseline")
         .attr('display', legdrawornot("collab"))
         .text(' ' + thisitem.collab);
-    // collision
+    // collision1
     tlegend.append('tspan')
         .attr("class", "middlebaseline")
         .style("font-style", "italic")
-        .attr('display', legdrawornot("collision"))
-        .text(' ' + thisitem.collision + ' ' + thisitem.energy);
+        .attr('display', legdrawornot("collision1"))
+        .text(' ' + thisitem.collision);
+    // collision2
+    tlegend.append('tspan')
+        .attr("class", "middlebaseline")
+        .style("font-style", "italic")
+        .attr('display', legdrawornot("collision2"))
+        .text(' ' + thisitem.energy);
     // kinea
     var rpa = parsescript(thisitem.kinea);
     if(thisitem.kinea != "")
