@@ -105,7 +105,7 @@
         <div id="divrange">
           <br>
           <p> <i class="fa-solid fa-text-height"></i> </p> <p id="tfsize"></p>
-          <input type="range" min="10" max="70" value="35" class="slider" id="legsizerange" oninput="resizelegend()">
+          <input type="range" min="10" max="80" value="50" class="slider" id="legsizerange" oninput="resizelegend()">
           <p> <i class="fa-solid fa-arrows-left-right"></i> </p> <p id="tx0"></p>
           <input type="range" min="10" max="99" value="25" class="slider" id="x0range" oninput="movelegendx()">
           <p> <i class="fa-solid fa-arrows-up-down"></i> </p> <p id="ty0"></p>
@@ -117,16 +117,16 @@
         </div>
         <div id="descholder">
           <div id="desc">
-            <div class="dropdown" display="none">
+            <div class="dropdown">
               <button type="submit" id="btnlegend" value="127">Legend <i class="fa-solid fa-caret-down"></i></button>
               <div class="dropdown-content">
-                <a id="sw_mark" alt="1" onclick="legendopacity(this);" class="active">Marker</a>
-                <a id="sw_particle" alt="1" onclick="legendopacity(this);" class="active">Particle</a>
-                <a id="sw_collab" alt="1" onclick="legendopacity(this);" class="active">Collaboration</a>
-                <a id="sw_collision1" alt="1" onclick="legendopacity(this);" class="active">Collision</a>
-                <a id="sw_collision2" alt="1" onclick="legendopacity(this);" class="active">Energy</a>
-                <a id="sw_kinea" alt="1" onclick="legendopacity(this);" class="active">Kinematics 1</a>
-                <a id="sw_kineb" alt="1" onclick="legendopacity(this);" class="active">Kinematics 2</a>
+                <a id="sw_mark" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Marker</a>
+                <a id="sw_particle" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Particle</a>
+                <a id="sw_collab" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Collaboration</a>
+                <a id="sw_collision1" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Collision</a>
+                <a id="sw_collision2" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Energy</a>
+                <a id="sw_kinea" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Kinematics 1</a>
+                <a id="sw_kineb" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Kinematics 2</a>
               </div>
             </div>
             <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='6'><i class="fa-solid fa-brush"></i></button>
