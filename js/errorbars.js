@@ -70,7 +70,7 @@ var drawaxisgrid = function()
     {
         the_axis.selectAll("g")
             .filter(function (d, i) { return !naxismajor.includes(d); })
-            .style("stroke-dasharray", '4,6');
+            .style("stroke-dasharray", '5,5');
     }
     // xaxis
     var x_axis = d3.select("svg").select("g").append('g')
