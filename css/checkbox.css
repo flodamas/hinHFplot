@@ -21,28 +21,24 @@ td {
 
 .colorpicker {
     border-width: 0;
-    width: var(--width-colorpicker);
     cursor: pointer;
-    background-color: #f5f5f5;
-    height: calc(var(--size-font-header)*1.3);
+    background-color: var(--gray);
+    width: calc(var(--size-font-header)*1.7);
+    height: calc(var(--size-font-header)*1.45);
 }
 
 .markerpicker {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: calc(var(--size-font-header)*1.3);
-    height: calc(var(--size-font-header)*1.3);
-    /* text-align: -webkit-center; */
+    width: calc(var(--size-font-header)*1.7);
+    height: calc(var(--size-font-header)*1.45);
     text-align: center;
-    padding: 0 0.4vw 0 0.4vw;
-    border: 0vw solid #f5f5f5;
-    background-color: #f5f5f5;
+    border: 0 solid var(--gray);
+    background-color: var(--gray);
     cursor: pointer;
-    /* font-family: system-ui; */
     font-family: "Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 0.82rem;
-    opacity: 0.8;
 }
 
 .markeropt {
@@ -51,20 +47,13 @@ td {
     appearance: none;    
 }
 
-.btndisplay {
-    font-size: calc(var(--size-font-default)*0.7);
+.btntr {
     margin: 0 0;
-    padding: calc(var(--padding-input)*0.55) calc(var(--padding-input)*0.6);
-}
-
-.btnforward {
-    font-size: calc(var(--size-font-default)*0.9);
-    margin: 0 0;
-    padding: calc(var(--padding-input)*0.38) calc(var(--padding-input)*0.65);
+    padding: calc(var(--padding-input)*0.4) calc(var(--padding-input)*0.7);
 }
 
 .new {
-    color: #D62828;
+    color: var(--red);
     font-size: 0.9rem;
     font-weight: 500;
 }

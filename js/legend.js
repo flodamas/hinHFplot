@@ -203,17 +203,17 @@ function legenditem(tlegend, thisitem, type=1)
         .attr("class", "middlebaseline")
         .style("font-style", "italic")
         .attr('display', legdrawornot("collision1"))
-        .text(' ' + thisitem.collision);
+        .text('  ' + thisitem.collision);
     // collision2
     tlegend.append('tspan')
         .attr("class", "middlebaseline")
         .style("font-style", "italic")
         .attr('display', legdrawornot("collision2"))
-        .text(' ' + thisitem.energy);
+        .text('  ' + thisitem.energy);
     // kinea
     var rpa = parsescript(thisitem.kinea);
     if(thisitem.kinea != "")
-        rpa[0].content = " " + rpa[0].content;
+        rpa[0].content = '  ' + rpa[0].content;
     for(var p in rpa)
     {
         tlegend.append('tspan')
@@ -224,7 +224,7 @@ function legenditem(tlegend, thisitem, type=1)
     // kineb
     var rpb = parsescript(thisitem.kineb);
     if(thisitem.kineb != "")
-        rpb[0].content = " " + rpb[0].content;
+        rpb[0].content = '  ' + rpb[0].content;
     for(var p in rpb)
     {
         tlegend.append('tspan')

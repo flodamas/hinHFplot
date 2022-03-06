@@ -15,7 +15,7 @@ var legs = [];
 // set basic
 function setbasic()
 {
-    width = document.getElementById('rightpad').clientWidth*0.9;
+    width = document.getElementById('rightpad').clientWidth*0.95;
     height = width * document.getElementById('ratiorange').value;
     margin = { top: width*0.72*0.06, right: width*0.05, bottom: width*0.72*0.145, left: width*0.13 },
     chartWidth = width - margin.left - margin.right,

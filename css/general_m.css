@@ -124,7 +124,7 @@
     bottom: calc(var(--height-footer)*0.2);
     font-size: var(--size-font-footer);
     text-align: center;
-    color: #ddd;
+    color: var(--darkgray);
 }
 
 #clipboard {

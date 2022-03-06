@@ -2,13 +2,9 @@
 }
 
 #reference {
-    /* padding-right: 2vw; */
     display: grid;
     grid-template-columns: repeat(var(--ncol-reference), 1fr);
     width: var(--width-reference);
-    /* columns: var(--ncol-reference); */
-    /* -webkit-columns: var(--ncol-reference); */
-    /* -moz-columns: var(--ncol-reference); */
     overflow: auto;
     list-style-type: square;
     text-align: left;

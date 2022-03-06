@@ -122,7 +122,7 @@ function loaditem(nomarkerpicker = 0)
         idisplay.id = "display_" + da;
         idisplay.innerHTML = '<i class="fa-solid fa-brush"></i>';
         idisplay.value = '6';
-        idisplay.setAttribute('class', 'btnaction btndisplay');
+        idisplay.setAttribute('class', 'btnaction btntr');
         idisplay.setAttribute('onclick', "changedisplay('" + da + "');");
         idisplay.title = "display styles";
         itdisplay.appendChild(idisplay);
@@ -135,7 +135,7 @@ function loaditem(nomarkerpicker = 0)
         iforward.setAttribute('type', 'submit');
         iforward.id = "forward_" + da;
         iforward.innerHTML = '<i class="fa-solid fa-angles-up"></i>';
-        iforward.setAttribute('class', 'btnaction btnforward');
+        iforward.setAttribute('class', 'btnaction btntr');
         iforward.setAttribute('onclick', "drawone('" + da + "');");
         iforward.title = "to front";
         itforward.appendChild(iforward);

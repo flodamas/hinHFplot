@@ -1,9 +1,9 @@
 /* colors */
 :root {
     --color-default: black;
-    --width-leftrange: 48vw;
-    --size-font-header: 1.1vw;
-    --size-font-default: 0.88vw;
+    --width-leftrange: 53vw;
+    --size-font-header: 1.3vw;
+    --size-font-default: 0.95vw;
     --size-font-desc: 1vw;
     --size-font-footer: 1rem;
     --height-footer: 1.1vw;
@@ -19,12 +19,12 @@
     --height-margin-input: 0.3vw;
     --width-input: 5vw;
     --padding-input: 0.8vw;
-    --height-slider: 0.9vw;
+    --height-slider: 1.1vw;
 
     /* reference */
     --ncol-reference: 2;
     --width-reference: 70%;
-    --margin-reference: 22%;
+    --margin-reference: 20%;
 
     /* updatelog */
     --width-log: 10vw;
@@ -34,7 +34,7 @@
 
 /* transition */
 .btnaction:hover {
-    background-color: #0072D0;
+    background-color: var(--blue);
     color: white;
 }
 
@@ -47,7 +47,7 @@
 }
 
 tr:hover {
-    background-color: #eee;
+    background-color: var(--gray);
     transition: background-color 0.2s;
 }
 
@@ -72,9 +72,8 @@ tr:hover {
     top: 0;
     font-size: var(--size-font-header);
     color: var(--color-default);
-    font-weight: 600;
     position: absolute;
-    padding-top: 1vw;
+    padding-top: 0.6vw;
 }
 
 /* Bottom left */
@@ -95,7 +94,6 @@ tr:hover {
     width: calc(var(--width-leftrange)*0.96);
     background-color: white;
     z-index: 1;
-    /* padding-bottom: 0.2vw; */
     position: sticky;
     top: 0;
 }
@@ -184,7 +182,7 @@ tr:hover {
     position: fixed;
     padding: 0.6vw 0.1vw 0vw 0.5vw;
     color: black;
-    background-color: #f9f9f9;
+    background-color: var(--gray);
     opacity: 0.8;
     font-size: 0.8vw;
     border-radius: calc(var(--size-font-default)*0.5);

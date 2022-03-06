@@ -40,7 +40,7 @@ var drawaxisgrid = function()
 {
     // ==> Grid <==
     var ticksx = checklogx()?8:5, ticksy = 5;
-    var ticksize = -8;
+    var ticksize = -7;
     var ismajortick = function (i) { return i%10==0; }
 
     d3.select("svg").select("g").append('g')
@@ -70,7 +70,7 @@ var drawaxisgrid = function()
     {
         the_axis.selectAll("g")
             .filter(function (d, i) { return !naxismajor.includes(d); })
-            .style("stroke-dasharray", '5,5');
+            .style("stroke-dasharray", '4,6');
     }
     // xaxis
     var x_axis = d3.select("svg").select("g").append('g')
