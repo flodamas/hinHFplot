@@ -87,7 +87,7 @@ function binningopacity(transt = 400)
 function gridopacity(transt=500)
 {
     var grid = d3.select("svg").select("g").selectAll('.grid');
-    var next = {0 : 1, 1 : 0.8, 0.8 : 0.4, 0.4 : 0.2, 0.2 : 0};
+    var next = {0 : 1, 1 : 0.5, 0.5 : 0.25, 0.25 : 0};
     var newopa = next[document.getElementById('btngrid').value];
     grid.transition().attr('opacity', newopa).duration(transt);
     document.getElementById('btngrid').value = newopa;

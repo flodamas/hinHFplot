@@ -68,7 +68,7 @@ var drawaxisgrid = function()
     {
         the_axis.selectAll("g")
             .filter(function (d, i) { return !naxismajor.includes(d); })
-            .style("stroke-dasharray", (0-ticksizen*0.5) + ", " + (0-ticksizen*0.5));
+            .style("stroke-dasharray", (0-ticksizen*0.5) + ", " + (0-ticksizen));
     }
     // xaxis
     var x_axis = d3.select("svg").select("g").append('g')
