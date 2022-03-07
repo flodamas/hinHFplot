@@ -8,7 +8,7 @@ function clearitems()
     }
 }
 
-function loaditem(nomarkerpicker = 0)
+function loaditem()
 {
     var datainput = document.getElementById('datainput');
     clearitems();
@@ -38,14 +38,13 @@ function loaditem(nomarkerpicker = 0)
         datainput.appendChild(iline);
 
         var itnew = document.createElement("td");
-        itnew.setAttribute('class', 'new');
+        itnew.setAttribute('class', 'new hideinmobile');
         let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
         if(diffday < 180)
             itnew.innerHTML = "New!";
         else
             itnew.innerHTML = "";
         iline.appendChild(itnew);
-        if(nomarkerpicker == 1) itnew.style.display = 'none';
 
         var itcheck = document.createElement("td");
         itcheck.innerHTML = '<i class="far fa-square fa-fade" style="--fa-animation-iteration-count: 1; --fa-fade-opacity: 0.5;"></i>';
@@ -100,6 +99,7 @@ function loaditem(nomarkerpicker = 0)
         itcolor.appendChild(icolor);
         
         var itmarker = document.createElement("td");
+        itmarker.setAttribute('class', 'hideinmobile');
         iline.appendChild(itmarker);
         var imarker = document.createElement("select");
         for(var key of vorders) {
@@ -113,34 +113,31 @@ function loaditem(nomarkerpicker = 0)
         imarker.setAttribute('onchange', "changethis('" + da + "'); ");
         imarker.title = "marker styles";
         itmarker.appendChild(imarker);
-        if(nomarkerpicker == 1) itmarker.style.display = 'none';
 
         var itdisplay = document.createElement("td");
+        itdisplay.setAttribute('class', 'hideinmobile');
         iline.appendChild(itdisplay);
         var idisplay = document.createElement("button");
         idisplay.setAttribute('type', 'submit');
         idisplay.id = "display_" + da;
         idisplay.innerHTML = '<i class="fa-solid fa-brush"></i>';
         idisplay.value = '6';
-        idisplay.setAttribute('class', 'btnaction btntr');
+        idisplay.setAttribute('class', 'btnaction');
         idisplay.setAttribute('onclick', "changedisplay('" + da + "');");
         idisplay.title = "display styles";
         itdisplay.appendChild(idisplay);
-        if(nomarkerpicker == 1)
-            itdisplay.style.display = 'none';
         
         var itforward = document.createElement("td");
+        itforward.setAttribute('class', 'hideinmobile');
         iline.appendChild(itforward);
         var iforward = document.createElement("button");
         iforward.setAttribute('type', 'submit');
         iforward.id = "forward_" + da;
         iforward.innerHTML = '<i class="fa-solid fa-angles-up"></i>';
-        iforward.setAttribute('class', 'btnaction btntr');
+        iforward.setAttribute('class', 'btnaction');
         iforward.setAttribute('onclick', "drawone('" + da + "');");
         iforward.title = "to front";
         itforward.appendChild(iforward);
-        if(nomarkerpicker == 1)
-            itforward.style.display = 'none';
         
         itcheck.setAttribute('onclick', "checkthis('"+da+"')");
         itparticle.setAttribute('onclick', "checkthis('"+da+"')");

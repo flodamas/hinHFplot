@@ -17,7 +17,7 @@ function setbasic()
 {
     width = document.getElementById('rightpad').clientWidth*0.95;
     height = width * document.getElementById('ratiorange').value;
-    margin = { top: width*0.72*0.06, right: width*0.05, bottom: width*0.72*0.145, left: width*0.13 },
+    margin = { top: width*0.72*0.06, right: width*0.07, bottom: width*0.72*0.15, left: width*0.13 },
     chartWidth = width - margin.left - margin.right,
     chartHeight = height - margin.top - margin.bottom;
     x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);

@@ -29,82 +29,83 @@
     <script src="js/reference.js"></script>
     <script src="js/errorbars.js"></script>
     <script src="js/control.js"></script>
-    <script>
-      if(window.innerWidth/window.innerHeight <= 1) {
-          window.location = "index_m.html";
-      }
-    </script>
 
-    <!-- Top-left -->
-    <div id="header">
-      <div id="title">
-        Heavy Flavor Measurement Compilation Tool
-      </div>
-    </div>
-
-    <!-- Bottom-left -->
-    <div id="leftrange">
-      <div id="setup">
-        <div>
-          Observable:
-          <select id="observable" name="observable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select">
-            <option value="RAA" selected="selected">RAA</option>
-            <option value="RpA">RpA</option>
-            <option value="RpARAA">RpA, RAA</option>
-            <option value="v2">v2</option>
-            <option value="v3">v3</option>
-            <option value="vn">vn</option>
-            <option value="LcToD0">&Lambda;c/D0</option>
-            <option value="Ratio">Particle ratio</option>
-            <option value="DoubleRatio">Double ratio</option>
-          </select>
-          vs.
-          <select id="xvariable" name="xvariable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select">
-            <option value="pT">pT</option>
-            <option value="y">y</option>
-            <option value="absy">|y|</option>
-            <option value="Npart">Npart</option>
-            <option value="cent">Centrality</option>
-          </select>
-        </div>
-        <div>
-          <p>X-axis range:</p>
-          <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="freshall(0);">
-          <p> - </p>
-          <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="freshall(0);">
-          <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
-        </div>
-        <div>
-          <p>Y-axis range:</p>
-          <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="freshall(0);">
-          <p> - </p>
-          <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="freshall(0);">
-          <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
-        </div>
-        <div>
-          <button type="submit" class="btnaction" onclick="clearall();">Clear all</button>
-          <button type="submit" class="btnaction" onclick="colorall(); ">Random color</button>
-          <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="checkedonly()">Checked only</button>
-          <p><i class="fa-solid fa-filter" style="color: #eee"></i></p>
-          <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton" value="">
+    <div class="leftpanel">
+      <!-- header -->
+      <div class="header">
+        <h1>Heavy Flavor Measurement Compilation Tool</h1>
+        <div class="setup">
+          <div>
+            Observable:
+            <select id="observable" name="observable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select">
+              <option value="RAA" selected="selected">RAA</option>
+              <option value="RpA">RpA</option>
+              <option value="RpARAA">RpA, RAA</option>
+              <option value="v2">v2</option>
+              <option value="v3">v3</option>
+              <option value="vn">vn</option>
+              <option value="LcToD0">&Lambda;c/D0</option>
+              <option value="Ratio">Particle ratio</option>
+              <option value="DoubleRatio">Double ratio</option>
+            </select>
+            vs.
+            <select id="xvariable" name="xvariable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select">
+              <option value="pT">pT</option>
+              <option value="y">y</option>
+              <option value="absy">|y|</option>
+              <option value="Npart">Npart</option>
+              <option value="cent">Centrality</option>
+            </select>
+          </div>
+          <div>
+            <p>X-axis range:</p>
+            <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <p> - </p>
+            <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
+          </div>
+          <div>
+            <p>Y-axis range:</p>
+            <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <p> - </p>
+            <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
+          </div>
+          <div>
+            <button type="submit" class="btnaction" onclick="clearall();">Clear all</button>
+            <button type="submit" class="btnaction" onclick="colorall(); ">Random color</button>
+            <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="checkedonly()">Checked only</button>
+            <p><i class="fa-solid fa-filter" style="color: #eee"></i></p>
+            <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton" value="">
+          </div>
         </div>
       </div>
 
-      <div id="data">
+      <!-- data -->
+      <div class="data">
         <table id="datainput"></table>
       </div>
       <script>defaultrange()</script>
       <script>loaditem()</script>      
     </div>
-    <!-- <script>loadtoc()</script> -->
 
-    <div id="rightrange">
-      <!-- Top-right -->
-      <div id="descholder">
-        <br>
-        <p style="margin-bottom: 0.5vw"><i class="fa-regular fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a> &nbsp;&nbsp;</p><br>
-        <p style="margin-bottom: 0.5vw"><i class="fa-regular fa-file-lines"></i> Click <a onclick="window.open('datasets/publication.html', '_blank');" class="link">here</a> to get the full publication list &nbsp;&nbsp;</p>
-        <div style="padding-bottom: 0.3vw">
+    <div class="rightpanel">
+
+      <!-- rightpad -->
+      <div id="rightpad">
+        <div class="hideinmobile">
+          <input type="range" min="0.5" max="0.98" value="0.78" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall(0);">
+          <div id="divratio">Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
+        </div>
+        <svg id="svgparent" style="background-color: white;"></svg>
+        <ul id="reference"> </ul>
+      </div>
+
+      <!-- descholder -->
+      <div class="descholder">
+        <div class="pl"><p><i class="fa-regular fa-paper-plane"></i> Jing Wang <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a></p></div>
+        <div class="pl"><p><i class="fa-regular fa-file-lines"></i> Click <a onclick="window.open('datasets/publication.html', '_blank');" class="link">here</a> to get the full publication list</p></div>
+        <div>
           <div class="dropdown">
             <button type="submit" id="btnlegend" value="127">Legend <i class="fa-solid fa-caret-down"></i></button>
             <div class="dropdown-content">
@@ -134,39 +135,26 @@
           <p>&nbsp;</p></div>
         <p>&nbsp;</p><br>          
       </div>
-      <!-- Bottom-right -->
-      <div id="rightpad">
-        <div>
-          <input type="range" min="0.5" max="0.98" value="0.80" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall(0);">
-          <div id="divratio">Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
-        </div>
-        <svg id="svgparent" style="background-color: white;"></svg>
-        <ul id="reference"> </ul>
-        <script>setsvg()</script>
-        <script src="js/save.js"></script>
-      </div>
 
-      <div id="footercontainerright">
-        <div id="footerright">
-          Copyright &copy; 2022 boundin
-        </div>
-      </div>
+      <script>setsvg()</script>
+      <script src="js/save.js"></script>
 
-      <div id="clipboard"> </div>
+      <div id="clipboard"></div>
     </div>
 
-    <div id="updatelog">
+    <div class="footer">
+      Copyright &copy; 2022 boundin
+    </div>
 
+
+    <!-- ulog -->
+    <div class="ulog hideinmobile" id="ulog">
       <i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;Update (3/2/22): </br>
-      <ul class="myul">
+      <ul>
         <li>Fixed a bug of checkboxes.</li>
         <li>Legend text size can be changed now.</li>
       </ul>
-      <div id="updatelogx" style="font-weight : bold; font-size: 1.5rem;"
-           onmouseover="this.style.opacity = 0.5;"
-           onmouseout="this.style.opacity = 1;"
-           onclick="this.style.opacity = 0; this.style.cursor = 'default'; 
-                    document.getElementById('updatelog').style.opacity = 0; document.getElementById('updatelog').style.cursor = 'default';">
+      <div class="ulogx" onclick="document.getElementById('ulog').style.display = 'none';">
         &times; 
       </div>      
     </div>

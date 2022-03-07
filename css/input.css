@@ -1,16 +1,14 @@
-:root {
-}
-
 button {
     border: none;
-    margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
+    /* margin: var(--margin-input) calc(var(--margin-input)*0.5); */
+    margin: calc(var(--margin-input) * 2) var(--margin-input);
     background-color: var(--gray);
     color: black;
-    padding: calc(var(--padding-input)*0.5) var(--padding-input);
+    padding: var(--padding-input) calc(var(--padding-input) * 2);
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: var(--size-font-default);
+    font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
     cursor: pointer;
@@ -20,13 +18,12 @@ button {
 
 input[type=number] {
     width: var(--width-input);
-    padding: calc(var(--padding-input)*0.5) var(--padding-input);
-    /* padding: 0.4vw 0.5vw; /\*tb lr*\/ */
-    margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
+    padding: var(--padding-input) calc(var(--padding-input) * 2);
+    margin: calc(var(--margin-input) * 2) var(--margin-input);
     border: 0px solid white;
     background-color: var(--gray);
     color: inherit;
-    font-size: var(--size-font-default);
+    font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
     -moz-appearance: textfield;
@@ -41,13 +38,13 @@ input[type=range] {
     -moz-appearance: none; 
     -webkit-appearance: none; 
     appearance: none;
-    width: calc(var(--width-input)*1.6);
-    padding: calc(var(--padding-input)*0.5) var(--padding-input);
-    margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
+    width: var(--width-input);
+    padding: var(--padding-input) calc(var(--padding-input) * 2);
+    margin: calc(var(--margin-input) * 2) var(--margin-input);
     border: 0px solid white;
     background-color: var(--gray);
     cursor: pointer;
-    font-size: var(--size-font-default);
+    font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
     color: inherit;
@@ -63,7 +60,7 @@ input[type=range] {
     opacity: 0.9;
     -webkit-transition: .2s;  
     cursor: pointer;
-    margin-right: 0.5vw;
+    margin-right: var(--margin-input);
     display: inline-block;
     vertical-align: middle;
 }
@@ -73,31 +70,27 @@ input[type=range] {
 }
 
 #ratiorange {
-    position: fixed;
-    top: 22vw;
-    right: 6.5vw;
-    width: 7vw;
+    position: absolute;
+    top: 13rem;
+    right: -0.5rem;
+    width: 7rem;
     z-index: 1;
 }
 
 #divratio {
     transform: rotate(90deg);
-    position: fixed;
-    top: 22vw;
-    right: 5.5vw;
+    position: absolute;
+    top: 13rem;
+    right: -2rem;
     z-index: 1;
     
-}
-.slider:hover {
-    opacity: 1;
-    transition: opacity .2s;
 }
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: calc(var(--height-slider)*1.0);
-    height: calc(var(--height-slider)*1.0);
+    width: var(--height-slider);
+    height: var(--height-slider);
     border-radius: 10%;
     border: 0vw none transparent;
     background: repeating-linear-gradient(-45deg, transparent, transparent 0.08vw, black 0.08vw, black 0.16vw);
@@ -117,15 +110,13 @@ input[type=range] {
 input[type=text] {
     outline: none;
     width: 23%;
-    color: var(--darkgray);
+    color: inherit;
     opacity: 0.7;
-    border: 0.1vw solid var(--darkgray);
-    border-radius: 0.3vw;
-    font-size: calc(var(--size-font-default));
-    padding-left: 0.3vw;
-    padding-top: 0.3vw;
-    padding-bottom: 0.3vw;
-    margin: var(--height-margin-input) calc(var(--height-margin-input)*0.5);
+    border: 0.1rem solid var(--darkgray);
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    padding: calc(var(--padding-input) - 0.1rem) var(--padding-input);
+    /* margin: var(--margin-input); */
     ::placeholder {
         color: var(--darkgray);
     }
@@ -166,6 +157,10 @@ input[type=text]:hover {
     color: var(--blue);
 }
 
+.btncheck:active {
+    transform: translateY(15%);
+}
+
 .dropdown {
     display: inline-block;
     position: relative;
@@ -173,3 +168,4 @@ input[type=text]:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+

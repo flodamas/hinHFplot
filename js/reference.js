@@ -48,6 +48,11 @@ function addoneref(da, reference, transt = 500)
             iref.style.opacity = '1';
         }, 1);
     reference.appendChild(iref);
+    var ialref = document.createElement("i");
+    ialref.setAttribute('class', 'fa-solid fa-caret-right');
+    ialref.innerHTML = ialref.innerHTML + "&nbsp;&nbsp;";
+    ialref.style.cursor = 'auto';
+    iref.appendChild(ialref);
     var iaref = document.createElement("a");
     iaref.id = "aref_" + da;
     iaref.setAttribute('onmouseover', "changecolor('"+iaref.id+"')");
@@ -64,7 +69,7 @@ function addoneref(da, reference, transt = 500)
     iacref.setAttribute('onmouseover', "showcopy('"+da+"')");
     iacref.setAttribute('onmouseleave', "hidecopy()");
     iacref.setAttribute("onclick", "copylink('acref_"+da+"', '"+dataset[da].reference+"', '" + cc + "')");
-    iacref.innerHTML = iacref.innerHTML + "&nbsp";
+    iacref.innerHTML = iacref.innerHTML + "&nbsp;";
     iref.appendChild(iacref);
 }
 
