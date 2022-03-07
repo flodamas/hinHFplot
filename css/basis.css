@@ -155,3 +155,17 @@ ul {
     opacity: 0.5;
 }
 
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; } }
+@keyframes fadeinb {
+    from { opacity: 0; transform: translateY(5%); }
+    to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeinl {
+    from { opacity: 0; transform: translateX(-5%); }
+    to { opacity: 1; transform: translateY(0); } }
+
+.header, .data { animation: fadeinb 1.5s ease 0s 1; }
+#rightpad, .ulog { animation: fadein 1.5s ease 0s 1; }
+.descholder { animation: fadeinl 1.5s ease 0s 1; }
