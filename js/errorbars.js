@@ -3,7 +3,8 @@ function setscale()
 {
     setbasic();
     svg = d3.select('svg').attr('width', width).attr('height', height)
-        .attr('font-family', 'sans-serif')
+        // .attr('font-family', 'sans-serif')
+        .attr('font-family', 'inherit')
         .attr('font-size', width/100.);
 
     xmin = Math.min(document.getElementById('pxmin').value,
