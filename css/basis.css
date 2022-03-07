@@ -14,7 +14,7 @@
     --width-input: 7rem;
     --margin-input: 0.12rem;
     --padding-input: 0.4rem;
-    --height-slider: 1.1rem;
+    --height-slider: 1.2rem;
 
     /*reference*/
     --ncol-reference: 2;
@@ -27,7 +27,7 @@
 
 html{
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
     overflow-y: scroll;
     height: 100%;
@@ -54,6 +54,7 @@ p {
 h1 {
     margin-block-start: 0;
     margin-block-end: 0.5rem;
+    font-weight: inherit;
 }
 
 .link {

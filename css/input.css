@@ -81,7 +81,7 @@ input[type=range] {
     transform: rotate(90deg);
     position: absolute;
     top: 13rem;
-    right: -2rem;
+    right: -2.5rem;
     z-index: 1;
     
 }
@@ -115,6 +115,8 @@ input[type=text] {
     border: 0.1rem solid var(--darkgray);
     border-radius: 0.3rem;
     font-size: 0.9rem;
+    font-family: inherit;
+    font-weight: inherit;
     padding: calc(var(--padding-input) - 0.1rem) var(--padding-input);
     /* margin: var(--margin-input); */
     ::placeholder {
