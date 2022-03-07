@@ -58,7 +58,7 @@ input[type=range] {
     background: var(--gray);
     outline: none;
     opacity: 0.9;
-    -webkit-transition: .2s;  
+    /* -webkit-transition: .2s;   */
     cursor: pointer;
     margin-right: var(--margin-input);
     display: inline-block;
@@ -95,7 +95,7 @@ input[type=range] {
     border: 0vw none transparent;
     background: repeating-linear-gradient(-45deg, transparent, transparent 0.08vw, black 0.08vw, black 0.16vw);
     cursor: pointer;
-    transition: all 0.2s;
+    /* transition: all 0.1s; */
     opacity: 0.2;
 }
 
@@ -147,7 +147,7 @@ input[type=text]:hover {
     padding: 6px 12px;
     display: block;
     text-align: left;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     white-space: nowrap;
 }
 

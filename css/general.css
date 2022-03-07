@@ -5,6 +5,7 @@
         --height-header-left: 13vw;
         --height-header-right: 12vw;
         --width-rightpad: 80%;
+        --padding-td: 0.3rem;
     }
 
     html {
@@ -82,6 +83,7 @@
     :root {
         --height-right: 63vw;
         --width-rightpad: 85%;
+        --padding-td: 0.18rem;
     }
 
     html {
