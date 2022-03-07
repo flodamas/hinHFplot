@@ -3,8 +3,6 @@ function setscale()
 {
     setbasic();
     svg = d3.select('svg').attr('width', width).attr('height', height)
-        .attr('font-family', 'sans-serif')
-        // .attr('font-family', "'Noto Sans', sans-serif")
         .attr('font-size', width/100.);
 
     xmin = Math.min(document.getElementById('pxmin').value,
@@ -39,11 +37,10 @@ function setsvg()
 // axes and grid
 var drawaxisgrid = function()
 {
-    // ==> Grid <==
     var ticksx = checklogx()?8:5, ticksy = 5;
-    var ticksize = -7;
-    var ismajortick = function (i) { return i%10==0; }
+    var ticksizex = -chartHeight/30., ticksizey = -chartWidth/30.;
 
+    // ==> Grid <==
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr("class", "grid")
@@ -63,15 +60,15 @@ var drawaxisgrid = function()
         theaxis.tickFormat(function (d, i) { return ntickval.includes(d)?d:""; }).ticks(ticksn*5);
         return ntickval;
     }
-    var xaxis = d3.axisBottom(x).tickSize(ticksize).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.3)).ticks(ticksx, "");
+    var xaxis = d3.axisBottom(x).tickSize(ticksizex).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.3)).ticks(ticksx, "");
     var xaxismajor = checklogx()?[]:addminor(xaxis, ticksx);
-    var yaxis = d3.axisLeft(y).tickSize(ticksize).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.6)).ticks(ticksy, "");
+    var yaxis = d3.axisLeft(y).tickSize(ticksizey).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.6)).ticks(ticksy, "");
     var yaxismajor = checklogy()?[]:addminor(yaxis, ticksy);
-    var shortenminor = function(the_axis, naxismajor)
+    var shortenminor = function(the_axis, naxismajor, ticksizen)
     {
         the_axis.selectAll("g")
             .filter(function (d, i) { return !naxismajor.includes(d); })
-            .style("stroke-dasharray", '4,6');
+            .style("stroke-dasharray", (0-ticksizen*0.5) + ", " + (0-ticksizen*0.5));
     }
     // xaxis
     var x_axis = d3.select("svg").select("g").append('g')
@@ -79,14 +76,14 @@ var drawaxisgrid = function()
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( xaxis );
-    if(!checklogx()) shortenminor(x_axis, xaxismajor);
+    if(!checklogx()) shortenminor(x_axis, xaxismajor, ticksizex);
     // yaxis
     var y_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( yaxis );
-    if(!checklogy()) shortenminor(y_axis, yaxismajor);
+    if(!checklogy()) shortenminor(y_axis, yaxismajor, ticksizey);
     // xframe
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
