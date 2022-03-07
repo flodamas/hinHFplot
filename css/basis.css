@@ -98,11 +98,12 @@ ul {
     /* line-height: 2; */
 }
 
-.descholder div {
-    margin-top: 0.3rem;
+.descholder .dl {
+    margin-top: 0.4rem;
 }
 .descholder .pl {
     margin-top: 0.4rem;
+    padding-right: 0.8rem;
 }
 
 .setup {
