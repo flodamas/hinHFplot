@@ -10072,7 +10072,7 @@ dataset["incpsi2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-12"] = {
     ]
 };
 
-dataset["Ksubs0_v2_pT_pPb_8TeV_CMS_Mtrk-184-250_absy-lt-1"] = {
+dataset["Ksubs0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1"] = {
     reference : "PRL 121 (2018) 082301",
     link : "https://arxiv.org/abs/1804.09767",
     update : "2000-01-01",
@@ -10082,7 +10082,7 @@ dataset["Ksubs0_v2_pT_pPb_8TeV_CMS_Mtrk-184-250_absy-lt-1"] = {
     collision : "pPb",
     energy : "8.16 TeV",
     collab : "CMS",
-    kinea : "184 < Mtrk < 250",
+    kinea : "184 < N<sub>trk</sub> < 250",
     kineb : "|y| < 1",
     data : [
         {"x": 0.329, "xl": 0.2, "xh": 0.4, "y": 0.0131, "stath": 0.002, "statl": 0.002, "systh": 0.0008, "systl": 0.0008},
