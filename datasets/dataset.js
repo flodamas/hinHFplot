@@ -652,7 +652,7 @@ dataset["aprD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
     ]
 };
 
-dataset["aprD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
+dataset["aprD0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1"] = {
     reference : "PRL 121 (2018) 082301",
     link : "https://arxiv.org/abs/1804.09767",
     update : "2000-01-01",
@@ -662,7 +662,7 @@ dataset["aprD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     collision : "pPb",
     energy : "8.16 TeV",
     collab : "CMS",
-    kinea : "",
+    kinea : "184 < N<sub>trk</sub> < 250",
     kineb : "|y| < 1",
     data : [
         {"x": 1.98, "xl": 1.5, "xh": 2.4, "y": 0.007, "stath": 0.032, "statl": 0.032, "systh": 0.002, "systl": 0.002},
@@ -676,7 +676,7 @@ dataset["aprD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     ]
 };
 
-dataset["aprD0_v2_pT_pp_13TeV_CMS__absy-lt-1"] = {
+dataset["aprD0_v2_pT_pp_13TeV_CMS_Ntrk-gt-99_absy-lt-1"] = {
     reference : "PLB 813 (2021) 136036",
     link : "https://arxiv.org/abs/2009.07065",
     update : "2000-01-01",
@@ -686,7 +686,7 @@ dataset["aprD0_v2_pT_pp_13TeV_CMS__absy-lt-1"] = {
     collision : "pp",
     energy : "13 TeV",
     collab : "CMS",
-    kinea : "",
+    kinea : "N<sub>trk</sub> > 99",
     kineb : "|y| < 1",
     data : [
         {"x": 3, "xl": 2, "xh": 4, "y": 0.061, "stath": 0.018, "statl": 0.018, "systh": 0.013, "systl": 0.013},
@@ -3838,7 +3838,7 @@ dataset["aprJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
     ]
 };
 
-dataset["aprJpsi_v2_pT_pPb_8TeV_CMS__absy-lt-2p4"] = {
+dataset["aprJpsi_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-1p2-2p4"] = {
     reference : "PLB 791 (2019) 172",
     link : "https://arxiv.org/abs/1810.01473",
     update : "2000-01-01",
@@ -3848,14 +3848,15 @@ dataset["aprJpsi_v2_pT_pPb_8TeV_CMS__absy-lt-2p4"] = {
     collision : "pPb",
     energy : "8.16 TeV",
     collab : "CMS",
-    kinea : "",
-    kineb : "|y| < 2.4",
+    kinea : "184 < N<sub>trk</sub> < 250",
+    kineb : "1.2 < |y| < 2.4",
     data : [
-        {"x": 1.08415, "xl": 0, "xh": 1.8, "y": 0.00862069, "stath": 0.0350575, "statl": 0.0350575, "systh": 0.0143678, "systl": 0.0126437},
-        {"x": 2.33443, "xl": 1.8, "xh": 3, "y": 0.058046, "stath": 0.0321839, "statl": 0.0321839, "systh": 0.0143678, "systl": 0.0149425},
-        {"x": 3.61093, "xl": 3, "xh": 4.5, "y": 0.0902299, "stath": 0.0241379, "statl": 0.0241379, "systh": 0.0149425, "systl": 0.0143678},
-        {"x": 5.09727, "xl": 4.5, "xh": 6, "y": 0.0678161, "stath": 0.0218391, "statl": 0.0218391, "systh": 0.0149425, "systl": 0.0143678},
-        {"x": 6.77596, "xl": 6, "xh": 8, "y": 0.033908, "stath": 0.0224138, "statl": 0.0224138, "systh": 0.0166667, "systl": 0.0172414},
+        {"x": 1.073, "xl": 0, "xh": 1.8, "y": 0.009, "stath": 0.035, "statl": 0.035, "systh": 0.013, "systl": 0.013},
+        {"x": 2.328, "xl": 1.8, "xh": 3, "y": 0.058, "stath": 0.034, "statl": 0.034, "systh": 0.015, "systl": 0.015},
+        {"x": 3.603, "xl": 3, "xh": 4.5, "y": 0.09, "stath": 0.024, "statl": 0.024, "systh": 0.015, "systl": 0.015},
+        {"x": 5.094, "xl": 4.5, "xh": 6, "y": 0.068, "stath": 0.022, "statl": 0.022, "systh": 0.015, "systl": 0.015},
+        {"x": 6.774, "xl": 6, "xh": 8, "y": 0.034, "stath": 0.023, "statl": 0.023, "systh": 0.017, "systl": 0.017},
+        {"x": 8.849, "xl": 8, "xh": 10, "y": -0.034, "stath": 0.033, "statl": 0.033, "systh": 0.019, "systl": 0.019},
     ]
 };
 
@@ -5413,7 +5414,7 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     ]
 };
 
-dataset["bTOD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
+dataset["bTOD0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1"] = {
     reference : "PLB 813 (2021) 136036",
     link : "https://arxiv.org/abs/2009.07065",
     update : "2000-01-01",
@@ -5423,7 +5424,7 @@ dataset["bTOD0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     collision : "pPb",
     energy : "8.16 TeV",
     collab : "CMS",
-    kinea : "",
+    kinea : "184 < N<sub>trk</sub> < 250",
     kineb : "|y| < 1",
     data : [
         {"x": 3.5, "xl": 2, "xh": 5, "y": -0.008, "stath": 0.028, "statl": 0.028, "systh": 0.016, "systl": 0.016},
@@ -7105,7 +7106,7 @@ dataset["bTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     ]
 };
 
-dataset["bTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
+dataset["bTOmu_v2_pT_pp_13TeV_ATLAS_Ntrk-59-120_abseta-lt-2p4"] = {
     reference : "PRL 124 (2020) 082301",
     link : "https://arxiv.org/abs/1909.01650",
     update : "2000-01-01",
@@ -7115,7 +7116,7 @@ dataset["bTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
     collision : "pp",
     energy : "13 TeV",
     collab : "ATLAS",
-    kinea : "",
+    kinea : "59 < N<sub>trk</sub> < 120",
     kineb : "|&eta;| < 2.4",
     data : [
         {"x": 4.3, "xl": 4, "xh": 4.5, "y": -0.0179, "stath": 0.02234, "statl": 0.02234, "systh": 0.00687, "systl": 0.00687},
@@ -7714,7 +7715,7 @@ dataset["cTOmu_v2_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     ]
 };
 
-dataset["cTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
+dataset["cTOmu_v2_pT_pp_13TeV_ATLAS_Ntrk-59-120_abseta-lt-2p4"] = {
     reference : "PRL 124 (2020) 082301",
     link : "https://arxiv.org/abs/1909.01650",
     update : "2000-01-01",
@@ -7724,7 +7725,7 @@ dataset["cTOmu_v2_pT_pp_13TeV_ATLAS__abseta-lt-2p4"] = {
     collision : "pp",
     energy : "13 TeV",
     collab : "ATLAS",
-    kinea : "",
+    kinea : "59 < N<sub>trk</sub> < 120",
     kineb : "|&eta;| < 2.4",
     data : [
         {"x": 4.3, "xl": 4, "xh": 4.5, "y": 0.0761, "stath": 0.02225, "statl": 0.02225, "systh": 0.00758, "systl": 0.00758},
@@ -10071,7 +10072,7 @@ dataset["incpsi2S_RpA_ycm_pPb_8TeV_ALICE__pT-lt-12"] = {
     ]
 };
 
-dataset["Ksubs0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
+dataset["Ksubs0_v2_pT_pPb_8TeV_CMS_Mtrk-184-250_absy-lt-1"] = {
     reference : "PRL 121 (2018) 082301",
     link : "https://arxiv.org/abs/1804.09767",
     update : "2000-01-01",
@@ -10081,7 +10082,7 @@ dataset["Ksubs0_v2_pT_pPb_8TeV_CMS__absy-lt-1"] = {
     collision : "pPb",
     energy : "8.16 TeV",
     collab : "CMS",
-    kinea : "",
+    kinea : "184 < Mtrk < 250",
     kineb : "|y| < 1",
     data : [
         {"x": 0.329, "xl": 0.2, "xh": 0.4, "y": 0.0131, "stath": 0.002, "statl": 0.002, "systh": 0.0008, "systl": 0.0008},
