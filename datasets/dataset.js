@@ -175,6 +175,34 @@ dataset["aprD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     ]
 };
 
+dataset["aprD0_RAA_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2022-03-09",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.955, "stath": 0.219, "statl": 0.219, "systh": 0.216, "systl": 0.263},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.783, "stath": 0.081, "statl": 0.081, "systh": 0.108, "systl": 0.124},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.773, "stath": 0.066, "statl": 0.066, "systh": 0.102, "systl": 0.11},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.691, "stath": 0.067, "statl": 0.067, "systh": 0.095, "systl": 0.099},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.592, "stath": 0.066, "statl": 0.066, "systh": 0.083, "systl": 0.084},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.73, "stath": 0.08, "statl": 0.08, "systh": 0.1, "systl": 0.102},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.727, "stath": 0.113, "statl": 0.113, "systh": 0.099, "systl": 0.099},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.572, "stath": 0.079, "statl": 0.079, "systh": 0.071, "systl": 0.072},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.675, "stath": 0.134, "statl": 0.134, "systh": 0.083, "systl": 0.083},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.623, "stath": 0.141, "statl": 0.141, "systh": 0.076, "systl": 0.076},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.598, "stath": 0.226, "statl": 0.226, "systh": 0.094, "systl": 0.093},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.809, "stath": 0.376, "statl": 0.376, "systh": 0.122, "systl": 0.122},
+    ]
+};
+
 dataset["aprD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     reference : "PLB 782 (2018) 474",
     link : "https://arxiv.org/abs/1708.04962",
@@ -954,6 +982,34 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] 
     ]
 };
 
+dataset["aprDplusmnToD0_DplusmnToD0_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2022-03-09",
+    observable : "DplusmnToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0, "xl": 0, "xh": 0, "y": -1.3244e-32, "stath": 4.38092e-18, "statl": 1.14938e-15, "systh": 0, "systl": 0},
+        {"x": 0, "xl": 0, "xh": 0, "y": -1.3244e-32, "stath": 4.38092e-18, "statl": 1.14938e-15, "systh": 0, "systl": 0},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.416, "stath": 0.058, "statl": 0.058, "systh": 0.054, "systl": 0.054},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.484, "stath": 0.046, "statl": 0.046, "systh": 0.054, "systl": 0.053},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.498, "stath": 0.054, "statl": 0.054, "systh": 0.054, "systl": 0.054},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.464, "stath": 0.058, "statl": 0.058, "systh": 0.049, "systl": 0.049},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.4, "stath": 0.049, "statl": 0.049, "systh": 0.042, "systl": 0.042},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.502, "stath": 0.079, "statl": 0.079, "systh": 0.054, "systl": 0.053},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.633, "stath": 0.093, "statl": 0.093, "systh": 0.067, "systl": 0.067},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.498, "stath": 0.103, "statl": 0.103, "systh": 0.053, "systl": 0.052},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.534, "stath": 0.122, "statl": 0.122, "systh": 0.055, "systl": 0.055},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.905, "stath": 0.303, "statl": 0.303, "systh": 0.131, "systl": 0.131},
+    ]
+};
+
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
@@ -1123,6 +1179,32 @@ dataset["aprDplusmn_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     ]
 };
 
+dataset["aprDplusmn_RAA_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2022-03-09",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt D<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.764, "stath": 0.1, "statl": 0.1, "systh": 0.136, "systl": 0.149},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.785, "stath": 0.066, "statl": 0.066, "systh": 0.114, "systl": 0.121},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.74, "stath": 0.065, "statl": 0.065, "systh": 0.109, "systl": 0.113},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.724, "stath": 0.07, "statl": 0.07, "systh": 0.109, "systl": 0.111},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.721, "stath": 0.078, "statl": 0.078, "systh": 0.112, "systl": 0.114},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.683, "stath": 0.083, "statl": 0.083, "systh": 0.107, "systl": 0.108},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.745, "stath": 0.085, "statl": 0.085, "systh": 0.117, "systl": 0.118},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.817, "stath": 0.137, "statl": 0.137, "systh": 0.127, "systl": 0.127},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.747, "stath": 0.137, "statl": 0.137, "systh": 0.115, "systl": 0.115},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.822, "stath": 0.188, "statl": 0.188, "systh": 0.125, "systl": 0.125},
+    ]
+};
+
 dataset["aprDplusmn_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
@@ -1189,6 +1271,69 @@ dataset["aprDstarToD0_DstarToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
         {"x": 20, "xl": 16, "xh": 24, "y": 0.576417, "stath": 0.0459531, "statl": 0.0459531, "systh": 0.0544868, "systl": 0.0526618},
         {"x": 30, "xl": 24, "xh": 36, "y": 0.645934, "stath": 0.0751542, "statl": 0.0751542, "systh": 0.0645655, "systl": 0.0645407},
         {"x": 43, "xl": 36, "xh": 50, "y": 0.890027, "stath": 0.198652, "statl": 0.198652, "systh": 0.107709, "systl": 0.107958},
+    ]
+};
+
+dataset["aprDstarToD0_DstarToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
+    reference : "JHEP 01 (2022) 174",
+    link : "https://arxiv.org/abs/2110.09420",
+    update : "2022-03-09",
+    observable : "DstarToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "30-50%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.424937, "stath": 0.12647, "statl": 0.12647, "systh": 0.0733792, "systl": 0.073404},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.668412, "stath": 0.0911637, "statl": 0.0911637, "systh": 0.0947533, "systl": 0.0947466},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.467326, "stath": 0.0587243, "statl": 0.0587243, "systh": 0.0507816, "systl": 0.0507887},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.585825, "stath": 0.0654269, "statl": 0.0654269, "systh": 0.0479675, "systl": 0.04713},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.572829, "stath": 0.0523219, "statl": 0.0523219, "systh": 0.0396238, "systl": 0.0392661},
+        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.547734, "stath": 0.0491608, "statl": 0.0491608, "systh": 0.0373302, "systl": 0.0371789},
+        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.591129, "stath": 0.0532484, "statl": 0.0532484, "systh": 0.0412779, "systl": 0.0415956},
+        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.652473, "stath": 0.0517208, "statl": 0.0517208, "systh": 0.0450284, "systl": 0.0450426},
+        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.616816, "stath": 0.0564036, "statl": 0.0564036, "systh": 0.0430814, "systl": 0.0424653},
+        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.568351, "stath": 0.0505869, "statl": 0.0505869, "systh": 0.038519, "systl": 0.0385234},
+        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.620436, "stath": 0.0591347, "statl": 0.0591347, "systh": 0.04249, "systl": 0.0423801},
+        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.554148, "stath": 0.0540348, "statl": 0.0540348, "systh": 0.0378631, "systl": 0.0378333},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.613785, "stath": 0.045261, "statl": 0.045261, "systh": 0.0422109, "systl": 0.0422081},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.552074, "stath": 0.0476594, "statl": 0.0476594, "systh": 0.0361522, "systl": 0.0359333},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.576044, "stath": 0.0431949, "statl": 0.0431949, "systh": 0.0448882, "systl": 0.0442575},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.647346, "stath": 0.050488, "statl": 0.050488, "systh": 0.0570518, "systl": 0.0555662},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.636243, "stath": 0.063161, "statl": 0.063161, "systh": 0.0662937, "systl": 0.0614569},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.561653, "stath": 0.0833842, "statl": 0.0833842, "systh": 0.0484137, "systl": 0.0484291},
+    ]
+};
+
+dataset["aprDstarToD0_DstarToD0_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2022-03-09",
+    observable : "DstarToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 0, "xl": 0, "xh": 0, "y": 1.52943e+16, "stath": 5.86395e+13, "statl": 2.24749e+11, "systh": 0, "systl": 0},
+        {"x": 0, "xl": 0, "xh": 0, "y": 1.52943e+16, "stath": 5.86395e+13, "statl": 2.24749e+11, "systh": 0, "systl": 0},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.74, "stath": 0.362, "statl": 0.362, "systh": 0.215, "systl": 0.213},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.51, "stath": 0.124, "statl": 0.124, "systh": 0.082, "systl": 0.082},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.496, "stath": 0.09, "statl": 0.09, "systh": 0.058, "systl": 0.058},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.568, "stath": 0.086, "statl": 0.086, "systh": 0.069, "systl": 0.069},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.475, "stath": 0.097, "statl": 0.097, "systh": 0.058, "systl": 0.059},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.419, "stath": 0.075, "statl": 0.075, "systh": 0.051, "systl": 0.051},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.615, "stath": 0.122, "statl": 0.122, "systh": 0.073, "systl": 0.073},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.578, "stath": 0.112, "statl": 0.112, "systh": 0.066, "systl": 0.067},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.56, "stath": 0.134, "statl": 0.134, "systh": 0.064, "systl": 0.064},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.725, "stath": 0.176, "statl": 0.176, "systh": 0.084, "systl": 0.083},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.495, "stath": 0.211, "statl": 0.211, "systh": 0.082, "systl": 0.082},
     ]
 };
 
@@ -1353,6 +1498,33 @@ dataset["aprDstar_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
         {"x": 14, "xl": 12, "xh": 16, "y": 0.502503, "stath": 0.0511938, "statl": 0.0511938, "systh": 0.0832745, "systl": 0.0758738},
         {"x": 20, "xl": 16, "xh": 24, "y": 0.589306, "stath": 0.09346, "statl": 0.09346, "systh": 0.0985242, "systl": 0.0874705},
         {"x": 30, "xl": 24, "xh": 36, "y": 0.429793, "stath": 0.094739, "statl": 0.094739, "systh": 0.0411414, "systl": 0.0410956},
+    ]
+};
+
+dataset["aprDstar_RAA_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2022-03-09",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt D<sup>*</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.183, "stath": 0.588, "statl": 0.588, "systh": 0.31, "systl": 0.368},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.769, "stath": 0.195, "statl": 0.195, "systh": 0.145, "systl": 0.16},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.705, "stath": 0.133, "statl": 0.133, "systh": 0.116, "systl": 0.124},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.781, "stath": 0.119, "statl": 0.119, "systh": 0.129, "systl": 0.134},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.619, "stath": 0.121, "statl": 0.121, "systh": 0.103, "systl": 0.107},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.686, "stath": 0.119, "statl": 0.119, "systh": 0.111, "systl": 0.113},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.852, "stath": 0.157, "statl": 0.157, "systh": 0.133, "systl": 0.136},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.705, "stath": 0.129, "statl": 0.129, "systh": 0.107, "systl": 0.108},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.621, "stath": 0.135, "statl": 0.135, "systh": 0.088, "systl": 0.088},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.66, "stath": 0.137, "statl": 0.137, "systh": 0.091, "systl": 0.092},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.414, "stath": 0.153, "statl": 0.153, "systh": 0.066, "systl": 0.065},
     ]
 };
 
@@ -1904,6 +2076,34 @@ dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
         {"x": 20, "xl": 16, "xh": 24, "y": 0.556495, "stath": 0.0432442, "statl": 0.0432442, "systh": 0.0721099, "systl": 0.0676929},
         {"x": 30, "xl": 24, "xh": 36, "y": 0.500158, "stath": 0.0655033, "statl": 0.0655033, "systh": 0.0517687, "systl": 0.0516181},
         {"x": 43, "xl": 36, "xh": 50, "y": 0.728858, "stath": 0.10601, "statl": 0.10601, "systh": 0.200364, "systl": 0.247389},
+    ]
+};
+
+dataset["aprD_RAA_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2022-03-09",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt D",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.002, "stath": 0.212, "statl": 0.212, "systh": 0.193, "systl": 0.251},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.776, "stath": 0.061, "statl": 0.061, "systh": 0.096, "systl": 0.114},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.768, "stath": 0.044, "statl": 0.044, "systh": 0.093, "systl": 0.102},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.729, "stath": 0.044, "statl": 0.044, "systh": 0.092, "systl": 0.097},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.658, "stath": 0.045, "statl": 0.045, "systh": 0.086, "systl": 0.088},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.718, "stath": 0.05, "statl": 0.05, "systh": 0.093, "systl": 0.095},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.735, "stath": 0.063, "statl": 0.063, "systh": 0.095, "systl": 0.096},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.677, "stath": 0.054, "statl": 0.054, "systh": 0.084, "systl": 0.085},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.72, "stath": 0.08, "statl": 0.08, "systh": 0.086, "systl": 0.086},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.684, "stath": 0.08, "statl": 0.08, "systh": 0.078, "systl": 0.078},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.678, "stath": 0.12, "statl": 0.12, "systh": 0.085, "systl": 0.085},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.809, "stath": 0.376, "statl": 0.376, "systh": 0.122, "systl": 0.122},
     ]
 };
 
