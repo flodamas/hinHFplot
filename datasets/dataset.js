@@ -3860,8 +3860,8 @@ dataset["aprJpsi_v2_pT_pPb_8TeV_CMS__absy-lt-2p4"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/15527",
+    reference : "arXiv:2112.08156",
+    link : "https://arxiv.org/abs/2112.08156",
     update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
@@ -3881,8 +3881,8 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/15527",
+    reference : "arXiv:2112.08156",
+    link : "https://arxiv.org/abs/2112.08156",
     update : "2000-01-01",
     observable : "LcToD0",
     xtitle : "pT",
@@ -4180,8 +4180,8 @@ dataset["aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/15527",
+    reference : "arXiv:2112.08156",
+    link : "https://arxiv.org/abs/2112.08156",
     update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
@@ -4201,8 +4201,8 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/15527",
+    reference : "arXiv:2112.08156",
+    link : "https://arxiv.org/abs/2112.08156",
     update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
@@ -5278,8 +5278,8 @@ dataset["Bsubs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 };
 
 dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/16377",
+    reference : "arXiv:2202.00815",
+    link : "https://arxiv.org/abs/2202.00815",
     update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
@@ -5305,8 +5305,8 @@ dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 };
 
 dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/16377",
+    reference : "arXiv:2202.00815",
+    link : "https://arxiv.org/abs/2202.00815",
     update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
@@ -5332,8 +5332,8 @@ dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = 
 };
 
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/16377",
+    reference : "arXiv:2202.00815",
+    link : "https://arxiv.org/abs/2202.00815",
     update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
@@ -5359,8 +5359,8 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 };
 
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/16377",
+    reference : "arXiv:2202.00815",
+    link : "https://arxiv.org/abs/2202.00815",
     update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
