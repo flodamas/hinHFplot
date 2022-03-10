@@ -37,7 +37,7 @@ function setsvg()
 // axes and grid
 var drawaxisgrid = function()
 {
-    var ticksx = checklogx()?8:5, ticksy = 5;
+    var ticksx = checklogx()?10:5, ticksy = checklogy()?10:5;
     var ticksizex = -chartHeight/30., ticksizey = -chartWidth/30.;
 
     // ==> Grid <==
@@ -55,15 +55,26 @@ var drawaxisgrid = function()
         .call( d3.axisLeft(y).tickSize(-chartWidth).ticks(ticksy).tickFormat("").tickSizeOuter(0) );
 
     // ==> Axis <==
-    var addminor = function (theaxis, ticksn) {        
-        var ntickval = theaxis.scale().ticks(ticksn, "");
-        theaxis.tickFormat(function (d, i) { return ntickval.includes(d)?d:""; }).ticks(ticksn*5);
+    var addminor = function (theaxis, ticksn, islog) {
+        var orgticks = theaxis.scale().ticks(ticksn, "");
+        var nticks = islog?ticksn:ticksn*5;
+        var ntickval = [];
+        if(!islog) ntickval = orgticks;
+        else
+        {
+            for(var i=0; i<orgticks.length; i++)
+            {
+                var log = Math.log(orgticks[i]) / Math.LN10;
+                if(Math.abs(Math.round(log) - log) < 1e-6) ntickval.push(orgticks[i]); 
+            }
+        }
+        theaxis.tickFormat(function (d, i) { return ntickval.includes(d)?d:""; }).ticks(nticks);
         return ntickval;
     }
     var xaxis = d3.axisBottom(x).tickSize(ticksizex).tickSizeOuter(0).tickPadding(6*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.3)).ticks(ticksx, "");
-    var xaxismajor = checklogx()?[]:addminor(xaxis, ticksx);
+    var xaxismajor = addminor(xaxis, ticksx, checklogx());
     var yaxis = d3.axisLeft(y).tickSize(ticksizey).tickSizeOuter(0).tickPadding(5*Math.pow(document.documentElement.clientWidth/document.documentElement.clientHeight, 0.6)).ticks(ticksy, "");
-    var yaxismajor = checklogy()?[]:addminor(yaxis, ticksy);
+    var yaxismajor = addminor(yaxis, ticksy, checklogy());
     var shortenminor = function(the_axis, naxismajor, ticksizen)
     {
         the_axis.selectAll("g")
@@ -76,14 +87,14 @@ var drawaxisgrid = function()
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( xaxis );
-    if(!checklogx()) shortenminor(x_axis, xaxismajor, ticksizex);
+    shortenminor(x_axis, xaxismajor, ticksizex);
     // yaxis
     var y_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( yaxis );
-    if(!checklogy()) shortenminor(y_axis, yaxismajor, ticksizey);
+    shortenminor(y_axis, yaxismajor, ticksizey);
     // xframe
     d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
