@@ -16,6 +16,10 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
+button:active {
+    filter: brightness(50%);
+}
+
 input[type=number] {
     width: var(--width-input);
     padding: var(--padding-input) calc(var(--padding-input) * 2);
@@ -157,10 +161,6 @@ input[type=text]:hover {
 
 .active {
     color: var(--blue);
-}
-
-.btncheck:active {
-    transform: translateY(15%);
 }
 
 .dropdown {
