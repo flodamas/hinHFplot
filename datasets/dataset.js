@@ -9464,6 +9464,34 @@ dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     ]
 };
 
+dataset["incJpsi_RpA_ycm_pPb_5TeV_ALICE__pT-lt-15"] = {
+    reference : "JHEP 02 (2014) 073",
+    link : "https://arxiv.org/abs/1308.6726",
+    update : "2022-03-14",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 15 GeV",
+    data : [
+        {"x": 2.155, "xl": 2.03, "xh": 2.28, "y": 0.74, "stath": 0.02, "statl": 0.02, "systh": 0.06, "systl": 0.06},
+        {"x": 2.405, "xl": 2.28, "xh": 2.53, "y": 0.74, "stath": 0.01, "statl": 0.01, "systh": 0.06, "systl": 0.06},
+        {"x": 2.655, "xl": 2.53, "xh": 2.78, "y": 0.7, "stath": 0.01, "statl": 0.01, "systh": 0.05, "systl": 0.05},
+        {"x": 2.905, "xl": 2.78, "xh": 3.03, "y": 0.67, "stath": 0.01, "statl": 0.01, "systh": 0.05, "systl": 0.05},
+        {"x": 3.155, "xl": 3.03, "xh": 3.28, "y": 0.65, "stath": 0.01, "statl": 0.01, "systh": 0.05, "systl": 0.05},
+        {"x": 3.405, "xl": 3.28, "xh": 3.53, "y": 0.64, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
+        {"x": -3.085, "xl": -3.21, "xh": -2.96, "y": 1.08, "stath": 0.03, "statl": 0.03, "systh": 0.1, "systl": 0.1},
+        {"x": -3.335, "xl": -3.46, "xh": -3.21, "y": 1.06, "stath": 0.02, "statl": 0.02, "systh": 0.09, "systl": 0.09},
+        {"x": -3.585, "xl": -3.71, "xh": -3.46, "y": 1.05, "stath": 0.02, "statl": 0.02, "systh": 0.09, "systl": 0.09},
+        {"x": -3.835, "xl": -3.96, "xh": -3.71, "y": 1.06, "stath": 0.02, "statl": 0.02, "systh": 0.1, "systl": 0.1},
+        {"x": -4.085, "xl": -4.21, "xh": -3.96, "y": 1.05, "stath": 0.02, "statl": 0.02, "systh": 0.12, "systl": 0.12},
+        {"x": -4.335, "xl": -4.46, "xh": -4.21, "y": 1.12, "stath": 0.03, "statl": 0.03, "systh": 0.18, "systl": 0.18},
+    ]
+};
+
 dataset["incJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     reference : "JHEP 02 (2014) 072",
     link : "https://arxiv.org/abs/1308.6729",
