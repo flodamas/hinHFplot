@@ -38,7 +38,7 @@ function setsvg()
 var drawaxisgrid = function()
 {
     var ticksx = checklogx()?10:5, ticksy = checklogy()?10:5;
-    var ticksizex = -chartHeight/30., ticksizey = -chartWidth/30.;
+    var ticksizex = -chartWidth/40., ticksizey = -chartWidth/40.;
 
     // ==> Grid <==
     d3.select("svg").select("g").append('g')
