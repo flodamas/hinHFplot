@@ -7,11 +7,11 @@
 
     /* checkbox */
     --width-picker: 1.7rem;
-    --padding-td-tb: 0.4rem;
+    --padding-td-tb: 0.5rem;
 
     /* input */
     --width-input: 7rem;
-    --margin-input: 0.12rem;
+    --margin-input: 0.18rem;
     --padding-input: 0.4rem;
     --height-slider: 1.2rem;
 
@@ -132,7 +132,7 @@ ul {
     padding: 0.5rem;
     background-color: var(--gray);
     opacity: 0.8;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-radius: 0.25rem;
     z-index: 2;
     top: 1.5rem;
@@ -146,7 +146,7 @@ ul {
     right: 1rem;
     color: black;
     z-index: 1;
-    font-size: 2em;
+    font-size: 1.5em;
     cursor: pointer;
     opacity: 1;
 }
@@ -159,12 +159,16 @@ ul {
     from { opacity: 0; }
     to { opacity: 1; } }
 @keyframes fadeinb {
-    from { opacity: 0; transform: translateY(5%); }
+    from { opacity: 0; transform: translateY(3%); }
+    to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeint {
+    from { opacity: 0; transform: translateY(-3%); }
     to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeinl {
-    from { opacity: 0; transform: translateX(-5%); }
+    from { opacity: 0; transform: translateX(-3%); }
     to { opacity: 1; transform: translateY(0); } }
 
 .header, .data { animation: fadeinb 1.5s ease 0s 1; }
-#rightpad, .ulog { animation: fadein 1.5s ease 0s 1; }
+#rightpad { animation: fadeint 1.5s ease 0s 1; }
+.ulog { animation: fadein 1.5s ease 0s 1; }
 .descholder { animation: fadeinl 1.5s ease 0s 1; }
