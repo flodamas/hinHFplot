@@ -2,14 +2,14 @@
     :root {
         --width-left: 53%;
         --width-right: 47%;
-        --height-header-left: 13vw;
-        --height-header-right: 12vw;
+        --height-header-left: 14.5vw;
+        --height-header-right: 13vw;
         --width-rightpad: 80%;
         --padding-td: 0.3rem;
     }
 
     html {
-        font-size: 0.95vw;
+        font-size: 1vw;
     }
 
     h1 {
@@ -40,7 +40,7 @@
         width: 100%;
         height: var(--height-header-right);
         position: relative;
-        padding: 3% 27% 0 0;
+        padding: 5% 27% 0 0;
         top: 0;
         right: 0;
         background-color: white;
