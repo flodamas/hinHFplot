@@ -241,5 +241,6 @@ function styleobs(tobs)
     if(tobs=="RpA") return "R<sub>pA</sub>";
     if(tobs=="v2") return "v<sub>2</sub>";
     if(tobs=="v3") return "v<sub>3</sub>";
+    if(tobs=="v1") return "v<sub>1</sub>";
     return "";
 }
