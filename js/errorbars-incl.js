@@ -222,10 +222,11 @@ var checklogy = function()
 
 function changerangewlog()
 {
-    var varkey = document.getElementById('observable').value + "+" + document.getElementById('xvariable').value;
+    var iiobs = iobs(document.getElementById('observable').value),
+        iivar = ivar(document.getElementById('xvariable').value);
     if(checklogx() && xmin <= 0)
     {
-        xmin = drange[varkey].pxmin_log;
+        xmin = iivar.pxmin_log;
         document.getElementById('pxmin').value = xmin;
     }
     if(checklogx() && xmax <= 0)
@@ -235,7 +236,7 @@ function changerangewlog()
     }
     if(checklogy() && ymin <= 0)
     {
-        ymin = drange[varkey].pymin_log;
+        ymin = iiobs.pymin_log;
         document.getElementById('pymin').value = ymin;
     }
     if(checklogy() && ymax <= 0)

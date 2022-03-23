@@ -1,67 +1,49 @@
-var drange =
-    {
-        "LcToD0+absy"       : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : 0     , pymin_log : 0.1  , pymax : 0.9 }  ,
-        "LcToD0+cent"       : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : 0     , pymin_log : 0.1  , pymax : 0.9 }  ,
-        "LcToD0+Npart"      : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : 0     , pymin_log : 0.1  , pymax : 0.9 }  ,
-        "LcToD0+pT"         : { pxmin : 0    , pxmin_log : 1   , pxmax : 22  , pymin : 0     , pymin_log : 0.1  , pymax : 0.9 }  ,
-        "LcToD0+y"          : { pxmin : -4.5 , pxmin_log : 0.1 , pxmax : 4.5 , pymin : 0     , pymin_log : 0.1  , pymax : 0.9 }  ,
+var obss = [
+    { name: "RAA",         title: "RAA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.5 },
+    { name: "RpA",         title: "RpA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.8 },
+    { name: "RpARAA",      title: "RpA, RAA",       pymin: 0,     pymin_log: 0.1,  pymax: 1.5 },
+    { name: "v2",          title: "v2",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24 },
+    { name: "v3",          title: "v3",             pymin: -0.03, pymin_log: 0.02, pymax: 0.2 },
+    { name: "vn",          title: "vn",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24 },
+    { name: "LcToD0",      title: "&Lambda;c/D0",   pymin: 0,     pymin_log: 0.1,  pymax: 0.9 },
+    { name: "Ratio",       title: "Particle ratio", pymin: 0,     pymin_log: 0.15, pymax: 0.9 },
+    { name: "DoubleRatio", title: "Double ratio",   pymin: 0,     pymin_log: 0.1,  pymax: 2 },
+];
 
-        "RAA+absy"          : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RAA+cent"          : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RAA+Npart"         : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RAA+pT"            : { pxmin : 0    , pxmin_log : 0.5 , pxmax : 50  , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RAA+y"             : { pxmin : -4.5 , pxmin_log : 0.1 , pxmax : 4.5 , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-
-        "Ratio+absy"        : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : 0     , pymin_log : 0.15 , pymax : 0.9 }  ,
-        "Ratio+cent"        : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : 0     , pymin_log : 0.15 , pymax : 0.9 }  ,
-        "Ratio+Npart"       : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : 0     , pymin_log : 0.15 , pymax : 0.9 }  ,
-        "Ratio+pT"          : { pxmin : 0    , pxmin_log : 1   , pxmax : 22  , pymin : 0     , pymin_log : 0.15 , pymax : 0.9 }  ,
-        "Ratio+y"           : { pxmin : -4.5 , pxmin_log : 0.1 , pxmax : 4.5 , pymin : 0     , pymin_log : 0.15 , pymax : 0.9 }  ,
-
-        "DoubleRatio+absy"  : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : 0     , pymin_log : 0.1  , pymax : 2 }    ,
-        "DoubleRatio+cent"  : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : 0     , pymin_log : 0.1  , pymax : 2 }    ,
-        "DoubleRatio+Npart" : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : 0     , pymin_log : 0.1  , pymax : 2 }    ,
-        "DoubleRatio+pT"    : { pxmin : 0    , pxmin_log : 1   , pxmax : 30  , pymin : 0     , pymin_log : 0.1  , pymax : 2 }    ,
-        "DoubleRatio+y"     : { pxmin : -4.5 , pxmin_log : 0.1 , pxmax : 4.5 , pymin : 0     , pymin_log : 0.1  , pymax : 2 }    ,
-
-        "RpA+absy"          : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : 0     , pymin_log : 0.1  , pymax : 1.8 }  ,
-        "RpA+cent"          : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : 0     , pymin_log : 0.1  , pymax : 1.8 }  ,
-        "RpA+Npart"         : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : 0     , pymin_log : 0.1  , pymax : 1.8 }  ,
-        "RpA+pT"            : { pxmin : 0    , pxmin_log : 0.4 , pxmax : 30  , pymin : 0     , pymin_log : 0.1  , pymax : 1.8 }  ,
-        "RpA+y"             : { pxmin : -4.5 , pxmin_log : 0.1 , pxmax : 4.5 , pymin : 0     , pymin_log : 0.1  , pymax : 1.8 }  ,
-
-        "RpARAA+absy"       : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RpARAA+cent"       : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RpARAA+Npart"      : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RpARAA+pT"         : { pxmin : 0    , pxmin_log : 0.4 , pxmax : 50  , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-        "RpARAA+y"          : { pxmin : -4.5 , pxmin_log : 0.1 , pxmax : 4.5 , pymin : 0     , pymin_log : 0.1  , pymax : 1.5 }  ,
-
-        "v2+absy"           : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "v2+cent"           : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "v2+Npart"          : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "v2+pT"             : { pxmin : 0    , pxmin_log : 1   , pxmax : 40  , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "v2+y"              : { pxmin : -4   , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-
-        "v3+absy"           : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
-        "v3+cent"           : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
-        "v3+Npart"          : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
-        "v3+pT"             : { pxmin : 0    , pxmin_log : 1   , pxmax : 40  , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
-        "v3+y"              : { pxmin : -4   , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.2 }  ,
-
-        "vn+absy"           : { pxmin : 0    , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "vn+cent"           : { pxmin : 0    , pxmin_log : 4   , pxmax : 100 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "vn+Npart"          : { pxmin : 0    , pxmin_log : 7   , pxmax : 450 , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "vn+pT"             : { pxmin : 0    , pxmin_log : 1   , pxmax : 40  , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-        "vn+y"              : { pxmin : -4   , pxmin_log : 0.1 , pxmax : 4   , pymin : -0.03 , pymin_log : 0.02 , pymax : 0.24 } ,
-    }
+var vars = [
+    { name: "pT",    title: "pT",         pxmin: 0,    pxmin_log: 1,   pxmax: 40 },
+    { name: "y",     title: "y",          pxmin: -4.5, pxmin_log: 0.1, pxmax: 4.5 },
+    { name: "absy",  title: "|y|",        pxmin: 0,    pxmin_log: 0.1, pxmax: 4 },
+    { name: "Npart", title: "Npart",      pxmin: 0,    pxmin_log: 7,   pxmax: 450 },
+    { name: "cent",  title: "Centrality", pxmin: 0,    pxmin_log: 4,   pxmax: 100 },
+];
 
 function defaultrange()
 {
-    var varkey = document.getElementById('observable').value + "+" + document.getElementById('xvariable').value;
-    document.getElementById('pxmin').value = drange[varkey].pxmin;
-    document.getElementById('pxmax').value = drange[varkey].pxmax;
-    document.getElementById('pymin').value = drange[varkey].pymin;
-    document.getElementById('pymax').value = drange[varkey].pymax;
+    var iiobs = iobs(document.getElementById('observable').value),
+        iivar = ivar(document.getElementById('xvariable').value);
+    document.getElementById('pxmin').value = iivar.pxmin;
+    document.getElementById('pxmax').value = iivar.pxmax;
+    document.getElementById('pymin').value = iiobs.pymin;
+    document.getElementById('pymax').value = iiobs.pymax;
+}
+
+function loadoptions()
+{
+    for(var i=0; i<obss.length; i++)
+    {
+        var opt = document.createElement('option');
+        opt.value = obss[i].name;
+        opt.innerHTML = obss[i].title;
+        document.getElementById('observable').appendChild(opt);
+    }
+    for(var i=0; i<vars.length; i++)
+    {
+        var opt = document.createElement('option');
+        opt.value = vars[i].name;
+        opt.innerHTML = vars[i].title;
+        document.getElementById('xvariable').appendChild(opt);
+    }
 }
 
 function decodehtml(str)
@@ -80,3 +62,22 @@ function unityzero()
     if(obs == "RAA" || obs == "RpA" || obs == "RpARAA" || obs == "DoubleRatio") vy = 1;
     return vy;
 };
+
+function iobs(name)
+{
+    var i=0;
+    for(; i<obss.length; i++)
+        if(obss[i].name === name)
+            break;
+    return obss[i];
+}
+
+function ivar(name)
+{
+    var i=0;
+    for(; i<vars.length; i++)
+        if(vars[i].name === name)
+            break;
+    return vars[i];
+}
+

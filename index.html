@@ -36,38 +36,22 @@
         <div class="setup">
           <div>
             Observable:
-            <select id="observable" name="observable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select">
-              <option value="RAA" selected="selected">RAA</option>
-              <option value="RpA">RpA</option>
-              <option value="RpARAA">RpA, RAA</option>
-              <option value="v2">v2</option>
-              <option value="v3">v3</option>
-              <option value="vn">vn</option>
-              <option value="LcToD0">&Lambda;c/D0</option>
-              <option value="Ratio">Particle ratio</option>
-              <option value="DoubleRatio">Double ratio</option>
-            </select>
+            <select id="observable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select"></select>
             vs.
-            <select id="xvariable" name="xvariable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select">
-              <option value="pT">pT</option>
-              <option value="y">y</option>
-              <option value="absy">|y|</option>
-              <option value="Npart">Npart</option>
-              <option value="cent">Centrality</option>
-            </select>
+            <select id="xvariable" onchange="defaultrange(); loaditem(); freshall(0);" class="custom-select"></select>
           </div>
           <div>
             <p>X-axis range:</p>
-            <input type="number" id="pxmin" name="pxmin" min="0" max="200" step="1" value="0" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <input type="number" id="pxmin" min="0" max="200" step="1" class="numberinput" onchange="freshall(0);" inputmode="decimal">
             <p> - </p>
-            <input type="number" id="pxmax" name="pxmax" min="0" max="200" step="1" value="40" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <input type="number" id="pxmax" min="0" max="200" step="1" class="numberinput" onchange="freshall(0);" inputmode="decimal">
             <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
           </div>
           <div>
             <p>Y-axis range:</p>
-            <input type="number" id="pymin" name="pymin" min="-1" max="3" step="0.1" value="-0.03" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <input type="number" id="pymin" min="-1" max="3" step="0.1" class="numberinput" onchange="freshall(0);" inputmode="decimal">
             <p> - </p>
-            <input type="number" id="pymax" name="pymax" min="-1" max="3" step="0.1" value="0.27" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <input type="number" id="pymax" min="-1" max="3" step="0.1" class="numberinput" onchange="freshall(0);" inputmode="decimal">
             <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
           </div>
           <div>
@@ -79,12 +63,12 @@
           </div>
         </div>
       </div>
+      <script>loadoptions(); defaultrange();</script>
 
       <!-- data -->
       <div class="data">
         <table id="datainput"></table>
       </div>
-      <script>defaultrange()</script>
       <script>loaditem()</script>      
     </div>
 
