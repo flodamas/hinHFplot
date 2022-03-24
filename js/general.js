@@ -1,21 +1,21 @@
 var obss = [
-    { name: "RAA",         title: "RAA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.5 },
-    { name: "RpA",         title: "RpA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.8 },
-    { name: "RpARAA",      title: "RpA, RAA",       pymin: 0,     pymin_log: 0.1,  pymax: 1.5 },
-    { name: "v2",          title: "v2",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24 },
-    { name: "v3",          title: "v3",             pymin: -0.03, pymin_log: 0.02, pymax: 0.2 },
-    { name: "vn",          title: "vn",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24 },
-    { name: "LcToD0",      title: "&Lambda;c/D0",   pymin: 0,     pymin_log: 0.1,  pymax: 0.9 },
-    { name: "Ratio",       title: "Particle ratio", pymin: 0,     pymin_log: 0.15, pymax: 0.9 },
-    { name: "DoubleRatio", title: "Double ratio",   pymin: 0,     pymin_log: 0.1,  pymax: 2 },
+    { name: "RAA",         title: "RAA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.5,  step: 0.05 },
+    { name: "RpA",         title: "RpA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.8,  step: 0.05 },
+    { name: "RpARAA",      title: "RpA, RAA",       pymin: 0,     pymin_log: 0.1,  pymax: 1.5,  step: 0.05 },
+    { name: "v2",          title: "v2",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24, step: 0.01 },
+    { name: "v3",          title: "v3",             pymin: -0.03, pymin_log: 0.02, pymax: 0.2,  step: 0.01 },
+    { name: "vn",          title: "vn",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24, step: 0.01 },
+    { name: "LcToD0",      title: "&Lambda;c/D0",   pymin: 0,     pymin_log: 0.1,  pymax: 0.9,  step: 0.05 },
+    { name: "Ratio",       title: "Particle ratio", pymin: 0,     pymin_log: 0.15, pymax: 0.9,  step: 0.05 },
+    { name: "DoubleRatio", title: "Double ratio",   pymin: 0,     pymin_log: 0.1,  pymax: 2,    step: 0.1 },
 ];
 
 var vars = [
-    { name: "pT",    title: "pT",         pxmin: 0,    pxmin_log: 1,   pxmax: 40 },
-    { name: "y",     title: "y",          pxmin: -4.5, pxmin_log: 0.1, pxmax: 4.5 },
-    { name: "absy",  title: "|y|",        pxmin: 0,    pxmin_log: 0.1, pxmax: 4 },
-    { name: "Npart", title: "Npart",      pxmin: 0,    pxmin_log: 7,   pxmax: 450 },
-    { name: "cent",  title: "Centrality", pxmin: 0,    pxmin_log: 4,   pxmax: 100 },
+    { name: "pT",    title: "pT",         pxmin: 0,    pxmin_log: 1,   pxmax: 40,  step: 1 },
+    { name: "y",     title: "y",          pxmin: -4.5, pxmin_log: 0.1, pxmax: 4.5, step: 0.1 },
+    { name: "absy",  title: "|y|",        pxmin: 0,    pxmin_log: 0.1, pxmax: 4,   step: 0.1 },
+    { name: "Npart", title: "Npart",      pxmin: 0,    pxmin_log: 7,   pxmax: 450, step: 10 },
+    { name: "cent",  title: "Centrality", pxmin: 0,    pxmin_log: 4,   pxmax: 100, step: 5 },
 ];
 
 function defaultrange()
@@ -26,6 +26,10 @@ function defaultrange()
     document.getElementById('pxmax').value = iivar.pxmax;
     document.getElementById('pymin').value = iiobs.pymin;
     document.getElementById('pymax').value = iiobs.pymax;
+    document.getElementById('pxmin').step = iivar.step;
+    document.getElementById('pxmax').step = iivar.step;
+    document.getElementById('pymin').step = iiobs.step;
+    document.getElementById('pymax').step = iiobs.step;
 }
 
 function loadoptions()
