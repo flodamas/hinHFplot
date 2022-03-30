@@ -5182,8 +5182,8 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"]
     kinea : "10 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 60, "xl": 30, "xh": 90, "y": 0.217044, "stath": 0.0450058, "statl": 0.0450058, "systh": 0.0261324, "systl": 0.0261324},
-        {"x": 15, "xl": 0, "xh": 30, "y": 0.365128, "stath": 0.079849, "statl": 0.079849, "systh": 0.0631533, "systl": 0.0624274},
+        {"x": 60, "xl": 30, "xh": 90, "y": 0.217, "stath": 0.045, "statl": 0.046, "systh": 0.026, "systl": 0.026},
+        {"x": 15, "xl": 0, "xh": 30, "y": 0.365, "stath": 0.08, "statl": 0.084, "systh": 0.063, "systl": 0.063},
     ]
 };
 
@@ -5200,8 +5200,25 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"
     kinea : "10 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 54.5169, "xl": 54.5169, "xh": 54.5169, "y": 0.217044, "stath": 0.0450058, "statl": 0.0450058, "systh": 0.0261324, "systl": 0.0261324},
-        {"x": 269.367, "xl": 269.367, "xh": 269.367, "y": 0.365128, "stath": 0.079849, "statl": 0.079849, "systh": 0.0631533, "systl": 0.0624274},
+        {"x": 54.45, "xl": 54.45, "xh": 54.45, "y": 0.217, "stath": 0.045, "statl": 0.046, "systh": 0.026, "systl": 0.026},
+        {"x": 269.1, "xl": 269.1, "xh": 269.1, "y": 0.365, "stath": 0.08, "statl": 0.084, "systh": 0.063, "systl": 0.063},
+    ]
+};
+
+dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p5-2p4"] = {
+    reference : "arXiv:2109.01908",
+    link : "https://arxiv.org/abs/2109.01908",
+    update : "2021-11-13",
+    observable : "BsubsToBplusmn",
+    xtitle : "pT",
+    particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "0-90%",
+    kineb : "1.5 < |y| < 2.4",
+    data : [
+        {"x": 8.75, "xl": 7, "xh": 10, "y": 0.51, "stath": 0.28, "statl": 0.26, "systh": 0.24, "systl": 0.24},
     ]
 };
 
@@ -5218,10 +5235,9 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] 
     kinea : "0-90%",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 8.8, "xl": 7, "xh": 10, "y": 0.514756, "stath": 0.276279, "statl": 0.276279, "systh": 0.237059, "systl": 0.237059},
-        {"x": 12.616, "xl": 10, "xh": 15, "y": 0.27944, "stath": 0.0637678, "statl": 0.0637678, "systh": 0.0535998, "systl": 0.0538903},
-        {"x": 17.415, "xl": 15, "xh": 20, "y": 0.394048, "stath": 0.0886067, "statl": 0.0886067, "systh": 0.035588, "systl": 0.0363142},
-        {"x": 27.33, "xl": 20, "xh": 50, "y": 0.295273, "stath": 0.0660919, "statl": 0.0660919, "systh": 0.040672, "systl": 0.0406719},
+        {"x": 12.6, "xl": 10, "xh": 15, "y": 0.28, "stath": 0.064, "statl": 0.075, "systh": 0.054, "systl": 0.054},
+        {"x": 17.4, "xl": 15, "xh": 20, "y": 0.394, "stath": 0.089, "statl": 0.085, "systh": 0.036, "systl": 0.036},
+        {"x": 27.3, "xl": 20, "xh": 50, "y": 0.295, "stath": 0.067, "statl": 0.051, "systh": 0.041, "systl": 0.041},
     ]
 };
 
