@@ -3745,6 +3745,28 @@ dataset["aprJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     ]
 };
 
+dataset["aprJpsi_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 70, "xl": 50, "xh": 90, "y": 0.0546767, "stath": 0.01808, "statl": 0.01808, "systh": 0.00125787, "systl": 0.00125787},
+        {"x": 45, "xl": 40, "xh": 50, "y": 0.0695023, "stath": 0.0155852, "statl": 0.0155852, "systh": 0.00136369, "systl": 0.00136369},
+        {"x": 35, "xl": 30, "xh": 40, "y": 0.0712306, "stath": 0.011837, "statl": 0.011837, "systh": 0.00297954, "systl": 0.00297954},
+        {"x": 25, "xl": 20, "xh": 30, "y": 0.0794547, "stath": 0.0108981, "statl": 0.0108981, "systh": 0.00200194, "systl": 0.00200194},
+        {"x": 15, "xl": 10, "xh": 20, "y": 0.0596833, "stath": 0.0106503, "statl": 0.0106503, "systh": 0.0015335, "systl": 0.0015335},
+        {"x": 5, "xl": 0, "xh": 10, "y": 0.0313782, "stath": 0.0126162, "statl": 0.0126162, "systh": 0.00318092, "systl": 0.00318092},
+    ]
+};
+
 dataset["aprJpsi_v2_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     reference : "EPJC 77 (2017) 252",
     link : "https://arxiv.org/abs/1610.00613",
@@ -3780,6 +3802,28 @@ dataset["aprJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
         {"x": 70.42, "xl": 70.42, "xh": 70.42, "y": 0.04371, "stath": 0.02867, "statl": 0.02867, "systh": 0.00979, "systl": 0.00979},
         {"x": 160.27, "xl": 160.27, "xh": 160.27, "y": 0.06084, "stath": 0.01783, "statl": 0.01783, "systh": 0.01469, "systl": 0.01469},
         {"x": 311.39, "xl": 311.39, "xh": 311.39, "y": 0.06259, "stath": 0.01643, "statl": 0.01643, "systh": 0.01434, "systl": 0.01434},
+    ]
+};
+
+dataset["aprJpsi_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "Npart",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 13.56, "xl": 0, "xh": 27.12, "y": 0.0546767, "stath": 0.01808, "statl": 0.01808, "systh": 0.00125787, "systl": 0.00125787},
+        {"x": 57.155, "xl": 27.12, "xh": 87.19, "y": 0.0695023, "stath": 0.0155852, "statl": 0.0155852, "systh": 0.00136369, "systl": 0.00136369},
+        {"x": 109.095, "xl": 87.19, "xh": 131, "y": 0.0712306, "stath": 0.011837, "statl": 0.011837, "systh": 0.00297954, "systl": 0.00297954},
+        {"x": 159.6, "xl": 131, "xh": 188.2, "y": 0.0794547, "stath": 0.0108981, "statl": 0.0108981, "systh": 0.00200194, "systl": 0.00200194},
+        {"x": 225.25, "xl": 188.2, "xh": 262.3, "y": 0.0596833, "stath": 0.0106503, "statl": 0.0106503, "systh": 0.0015335, "systl": 0.0015335},
+        {"x": 309.6, "xl": 262.3, "xh": 356.9, "y": 0.0313782, "stath": 0.0126162, "statl": 0.0126162, "systh": 0.00318092, "systl": 0.00318092},
     ]
 };
 
@@ -3838,6 +3882,47 @@ dataset["aprJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
     ]
 };
 
+dataset["aprJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 3.75, "xl": 3, "xh": 4.5, "y": 0.0724526, "stath": 0.0134178, "statl": 0.0134178, "systh": 0.00318092, "systl": 0.00318092},
+        {"x": 5.5, "xl": 4.5, "xh": 6.5, "y": 0.0815845, "stath": 0.00656941, "statl": 0.00656941, "systh": 0.0015335, "systl": 0.0015335},
+    ]
+};
+
+dataset["aprJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 7, "xl": 6.5, "xh": 7.5, "y": 0.0670409, "stath": 0.00964492, "statl": 0.00964492, "systh": 0.00200194, "systl": 0.00200194},
+        {"x": 8.25, "xl": 7.5, "xh": 9, "y": 0.0632062, "stath": 0.0066554, "statl": 0.0066554, "systh": 0.00297954, "systl": 0.00297954},
+        {"x": 10.5, "xl": 9, "xh": 12, "y": 0.0591576, "stath": 0.00525259, "statl": 0.00525259, "systh": 0.00136369, "systl": 0.00136369},
+        {"x": 13.5, "xl": 12, "xh": 15, "y": 0.058119, "stath": 0.00821875, "statl": 0.00821875, "systh": 0.00125787, "systl": 0.00125787},
+        {"x": 17.5, "xl": 15, "xh": 20, "y": 0.0635163, "stath": 0.0112445, "statl": 0.0112445, "systh": 0.00207881, "systl": 0.00207881},
+        {"x": 22.5, "xl": 20, "xh": 25, "y": 0.053373, "stath": 0.0207217, "statl": 0.0207217, "systh": 0.00449931, "systl": 0.00449931},
+        {"x": 37.5, "xl": 25, "xh": 50, "y": 0.044288, "stath": 0.0257171, "statl": 0.0257171, "systh": 0.00331351, "systl": 0.00331351},
+    ]
+};
+
 dataset["aprJpsi_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-1p2-2p4"] = {
     reference : "PLB 791 (2019) 172",
     link : "https://arxiv.org/abs/1810.01473",
@@ -3857,6 +3942,81 @@ dataset["aprJpsi_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-1p2-2p4"] = {
         {"x": 5.094, "xl": 4.5, "xh": 6, "y": 0.068, "stath": 0.022, "statl": 0.022, "systh": 0.015, "systl": 0.015},
         {"x": 6.774, "xl": 6, "xh": 8, "y": 0.034, "stath": 0.023, "statl": 0.023, "systh": 0.017, "systl": 0.017},
         {"x": 8.849, "xl": 8, "xh": 10, "y": -0.034, "stath": 0.033, "statl": 0.033, "systh": 0.019, "systl": 0.019},
+    ]
+};
+
+dataset["aprJpsi_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 65, "xl": 40, "xh": 90, "y": -0.0116318, "stath": 0.016559, "statl": 0.016559, "systh": 0.00200194, "systl": 0.00200194},
+        {"x": 30, "xl": 20, "xh": 40, "y": 0.0208258, "stath": 0.00834952, "statl": 0.00834952, "systh": 0.0015335, "systl": 0.0015335},
+        {"x": 10, "xl": 0, "xh": 20, "y": 0.0138209, "stath": 0.00789087, "statl": 0.00789087, "systh": 0.00318092, "systl": 0.00318092},
+    ]
+};
+
+dataset["aprJpsi_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "Npart",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 19.57, "xl": 0, "xh": 39.14, "y": -0.0116318, "stath": 0.016559, "statl": 0.016559, "systh": 0.00200194, "systl": 0.00200194},
+        {"x": 99.37, "xl": 39.14, "xh": 159.6, "y": 0.0208258, "stath": 0.00834952, "statl": 0.00834952, "systh": 0.0015335, "systl": 0.0015335},
+        {"x": 234.6, "xl": 159.6, "xh": 309.6, "y": 0.0138209, "stath": 0.00789087, "statl": 0.00789087, "systh": 0.00318092, "systl": 0.00318092},
+    ]
+};
+
+dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 4.75, "xl": 3, "xh": 6.5, "y": -0.0135675, "stath": 0.0123225, "statl": 0.0123225, "systh": 0.00408565, "systl": 0.00408565},
+    ]
+};
+
+dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 7.75, "xl": 6.5, "xh": 9, "y": 0.00371229, "stath": 0.0070051, "statl": 0.0070051, "systh": 0.00256501, "systl": 0.00256501},
+        {"x": 10.5, "xl": 9, "xh": 12, "y": 0.0137452, "stath": 0.00553443, "statl": 0.00553443, "systh": 0.00218695, "systl": 0.00218695},
+        {"x": 13.5, "xl": 12, "xh": 15, "y": 0.0249376, "stath": 0.0108249, "statl": 0.0108249, "systh": 0.00361097, "systl": 0.00361097},
+        {"x": 32.5, "xl": 15, "xh": 50, "y": 0.00419365, "stath": 0.0124112, "statl": 0.0124112, "systh": 0.00533169, "systl": 0.00533169},
     ]
 };
 
@@ -4853,6 +5013,148 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
         {"x": 0.45, "xl": 0, "xh": 0.9, "y": 0.84, "stath": 0.1, "statl": 0.1, "systh": 0.06, "systl": 0.06},
         {"x": 1.2, "xl": 0.9, "xh": 1.5, "y": 0.94, "stath": 0.11, "statl": 0.11, "systh": 0.06, "systl": 0.06},
         {"x": 1.715, "xl": 1.5, "xh": 1.93, "y": 0.93, "stath": 0.17, "statl": 0.17, "systh": 0.12, "systl": 0.12},
+    ]
+};
+
+dataset["aprPsi2S_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 35, "xl": 10, "xh": 60, "y": 0.00228, "stath": 0.10409, "statl": 0.10409, "systh": 0.05993, "systl": 0.05993},
+        {"x": 5, "xl": 0, "xh": 10, "y": 0.18029, "stath": 0.08497, "statl": 0.08497, "systh": 0.05993, "systl": 0.05993},
+    ]
+};
+
+dataset["aprPsi2S_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "Npart",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 356.9, "xl": 356.9, "xh": 356.9, "y": 0.00228, "stath": 0.10409, "statl": 0.10409, "systh": 0.05993, "systl": 0.05993},
+        {"x": 144.6, "xl": 144.6, "xh": 144.6, "y": 0.18029, "stath": 0.08497, "statl": 0.08497, "systh": 0.05993, "systl": 0.05993},
+    ]
+};
+
+dataset["aprPsi2S_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 5.25, "xl": 4, "xh": 6.5, "y": 0.14446, "stath": 0.11085, "statl": 0.11085, "systh": 0.05621, "systl": 0.05621},
+    ]
+};
+
+dataset["aprPsi2S_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 8.25, "xl": 6.5, "xh": 10, "y": 0.22409, "stath": 0.10989, "statl": 0.10989, "systh": 0.06321, "systl": 0.06321},
+        {"x": 30, "xl": 10, "xh": 50, "y": 0.14342, "stath": 0.10989, "statl": 0.10989, "systh": 0.06092, "systl": 0.06092},
+    ]
+};
+
+dataset["aprPsi2S_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 35, "xl": 10, "xh": 60, "y": -0.05436, "stath": 0.13797, "statl": 0.13797, "systh": 0.05252, "systl": 0.05252},
+        {"x": 5, "xl": 0, "xh": 10, "y": -0.01063, "stath": 0.1569, "statl": 0.1569, "systh": 0.04545, "systl": 0.04545},
+    ]
+};
+
+dataset["aprPsi2S_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "Npart",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 356.9, "xl": 356.9, "xh": 356.9, "y": -0.05436, "stath": 0.13797, "statl": 0.13797, "systh": 0.05252, "systl": 0.05252},
+        {"x": 144.6, "xl": 144.6, "xh": 144.6, "y": -0.01063, "stath": 0.1569, "statl": 0.1569, "systh": 0.04545, "systl": 0.04545},
+    ]
+};
+
+dataset["aprPsi2S_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 5.25, "xl": 4, "xh": 6.5, "y": 0.117, "stath": 0.1121, "statl": 0.1121, "systh": 0.06886, "systl": 0.06886},
+    ]
+};
+
+dataset["aprPsi2S_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "Prompt Psi(2S)",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 8.25, "xl": 6.5, "xh": 10, "y": 0.05405, "stath": 0.17726, "statl": 0.17726, "systh": 0.08668, "systl": 0.08668},
+        {"x": 30, "xl": 10, "xh": 50, "y": -0.005405, "stath": 0.10448, "statl": 0.10448, "systh": 0.03012, "systl": 0.03012},
     ]
 };
 
@@ -6775,6 +7077,28 @@ dataset["bTOJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     ]
 };
 
+dataset["bTOJpsi_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "cent",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 70, "xl": 50, "xh": 90, "y": 0.0221046, "stath": 0.0259246, "statl": 0.0259246, "systh": 0.00187703, "systl": 0.00187703},
+        {"x": 45, "xl": 40, "xh": 50, "y": 0.0791496, "stath": 0.0196462, "statl": 0.0196462, "systh": 0.00247414, "systl": 0.00247414},
+        {"x": 35, "xl": 30, "xh": 40, "y": 0.034391, "stath": 0.0152031, "statl": 0.0152031, "systh": 0.00434707, "systl": 0.00434707},
+        {"x": 25, "xl": 20, "xh": 30, "y": 0.0408384, "stath": 0.0137388, "statl": 0.0137388, "systh": 0.00468654, "systl": 0.00468654},
+        {"x": 15, "xl": 10, "xh": 20, "y": 0.0391965, "stath": 0.0128302, "statl": 0.0128302, "systh": 0.0027902, "systl": 0.0027902},
+        {"x": 5, "xl": 0, "xh": 10, "y": -0.00490347, "stath": 0.0151376, "statl": 0.0151376, "systh": 0.00814592, "systl": 0.00814592},
+    ]
+};
+
 dataset["bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 784",
     link : "https://arxiv.org/abs/1807.05198",
@@ -6791,6 +7115,28 @@ dataset["bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
         {"x": 70.42, "xl": 70.42, "xh": 70.42, "y": 0.07993, "stath": 0.03732, "statl": 0.03732, "systh": 0.01972, "systl": 0.01972},
         {"x": 160.27, "xl": 160.27, "xh": 160.27, "y": 0.04155, "stath": 0.02113, "statl": 0.02113, "systh": 0.00986, "systl": 0.00986},
         {"x": 311.39, "xl": 311.39, "xh": 311.39, "y": 0.03662, "stath": 0.01937, "statl": 0.01937, "systh": 0.0088, "systl": 0.0088},
+    ]
+};
+
+dataset["bTOJpsi_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "Npart",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 13.56, "xl": 0, "xh": 27.12, "y": 0.0221046, "stath": 0.0259246, "statl": 0.0259246, "systh": 0.00187703, "systl": 0.00187703},
+        {"x": 57.155, "xl": 27.12, "xh": 87.19, "y": 0.0791496, "stath": 0.0196462, "statl": 0.0196462, "systh": 0.00247414, "systl": 0.00247414},
+        {"x": 109.095, "xl": 87.19, "xh": 131, "y": 0.034391, "stath": 0.0152031, "statl": 0.0152031, "systh": 0.00434707, "systl": 0.00434707},
+        {"x": 159.6, "xl": 131, "xh": 188.2, "y": 0.0408384, "stath": 0.0137388, "statl": 0.0137388, "systh": 0.00468654, "systl": 0.00468654},
+        {"x": 225.25, "xl": 188.2, "xh": 262.3, "y": 0.0391965, "stath": 0.0128302, "statl": 0.0128302, "systh": 0.0027902, "systl": 0.0027902},
+        {"x": 309.6, "xl": 262.3, "xh": 356.9, "y": -0.00490347, "stath": 0.0151376, "statl": 0.0151376, "systh": 0.00814592, "systl": 0.00814592},
     ]
 };
 
@@ -6844,6 +7190,122 @@ dataset["bTOJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
         {"x": 9.809, "xl": 9, "xh": 11, "y": 0.03299, "stath": 0.03711, "statl": 0.03711, "systh": 0.0055, "systl": 0.0055},
         {"x": 12.177, "xl": 11, "xh": 14, "y": 0.03574, "stath": 0.03024, "statl": 0.03024, "systh": 0.00584, "systl": 0.00584},
         {"x": 17.584, "xl": 14, "xh": 30, "y": 0.03299, "stath": 0.02268, "statl": 0.02268, "systh": 0.0055, "systl": 0.0055},
+    ]
+};
+
+dataset["bTOJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 3.75, "xl": 3, "xh": 4.5, "y": 0.0661501, "stath": 0.0183476, "statl": 0.0183476, "systh": 0.00814592, "systl": 0.00814592},
+        {"x": 5.5, "xl": 4.5, "xh": 6.5, "y": 0.0387875, "stath": 0.0106395, "statl": 0.0106395, "systh": 0.0027902, "systl": 0.0027902},
+    ]
+};
+
+dataset["bTOJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 7, "xl": 6.5, "xh": 7.5, "y": 0.0358462, "stath": 0.0171071, "statl": 0.0171071, "systh": 0.00468654, "systl": 0.00468654},
+        {"x": 8.25, "xl": 7.5, "xh": 9, "y": 0.0345284, "stath": 0.00992224, "statl": 0.00992224, "systh": 0.00434707, "systl": 0.00434707},
+        {"x": 10.5, "xl": 9, "xh": 12, "y": 0.0425852, "stath": 0.0070604, "statl": 0.0070604, "systh": 0.00247414, "systl": 0.00247414},
+        {"x": 13.5, "xl": 12, "xh": 15, "y": 0.0217582, "stath": 0.00981065, "statl": 0.00981065, "systh": 0.00187703, "systl": 0.00187703},
+        {"x": 17.5, "xl": 15, "xh": 20, "y": 0.0263886, "stath": 0.0119072, "statl": 0.0119072, "systh": 0.00218581, "systl": 0.00218581},
+        {"x": 22.5, "xl": 20, "xh": 25, "y": -0.0137089, "stath": 0.0197251, "statl": 0.0197251, "systh": 0.00396487, "systl": 0.00396487},
+        {"x": 37.5, "xl": 25, "xh": 50, "y": 0.0358223, "stath": 0.0218469, "statl": 0.0218469, "systh": 0.00504652, "systl": 0.00504652},
+    ]
+};
+
+dataset["bTOJpsi_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "cent",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 65, "xl": 40, "xh": 90, "y": -0.0140679, "stath": 0.0214082, "statl": 0.0214082, "systh": 0.00326411, "systl": 0.00326411},
+        {"x": 30, "xl": 20, "xh": 40, "y": -0.000579787, "stath": 0.00837548, "statl": 0.00837548, "systh": 0.00601445, "systl": 0.00601445},
+        {"x": 10, "xl": 0, "xh": 20, "y": 0.0255912, "stath": 0.00788254, "statl": 0.00788254, "systh": 0.00586803, "systl": 0.00586803},
+    ]
+};
+
+dataset["bTOJpsi_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "Npart",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "6.5 < p<sub>T</sub> < 50 GeV",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 19.57, "xl": 0, "xh": 39.14, "y": -0.0140679, "stath": 0.0214082, "statl": 0.0214082, "systh": 0.00326411, "systl": 0.00326411},
+        {"x": 99.37, "xl": 39.14, "xh": 159.6, "y": -0.000579787, "stath": 0.00837548, "statl": 0.00837548, "systh": 0.00601445, "systl": 0.00601445},
+        {"x": 234.6, "xl": 159.6, "xh": 309.6, "y": 0.0255912, "stath": 0.00788254, "statl": 0.00788254, "systh": 0.00586803, "systl": 0.00586803},
+    ]
+};
+
+dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "1.6 < |y| < 2.4",
+    data : [
+        {"x": 4.75, "xl": 3, "xh": 6.5, "y": 0.00937922, "stath": 0.0168594, "statl": 0.0168594, "systh": 0.00586803, "systl": 0.00586803},
+    ]
+};
+
+dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-008",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008/index.html",
+    update : "2022-04-03",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "CMS",
+    kinea : "10-60%",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 7.75, "xl": 6.5, "xh": 9, "y": -0.00355717, "stath": 0.00694043, "statl": 0.00694043, "systh": 0.00601445, "systl": 0.00601445},
+        {"x": 10.5, "xl": 9, "xh": 12, "y": 0.00117664, "stath": 0.00553049, "statl": 0.00553049, "systh": 0.00326411, "systl": 0.00326411},
+        {"x": 13.5, "xl": 12, "xh": 15, "y": -0.016171, "stath": 0.0126023, "statl": 0.0126023, "systh": 0.00418923, "systl": 0.00418923},
+        {"x": 32.5, "xl": 15, "xh": 50, "y": 0.011388, "stath": 0.0124528, "statl": 0.0124528, "systh": 0.0052506, "systl": 0.0052506},
     ]
 };
 
