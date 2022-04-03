@@ -11853,6 +11853,26 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-2p4"] = {
     ]
 };
 
+dataset["Upsilon1S_v2_pT_pPb_8TeV_CMS_Ntrk-69-300_absy-lt-2p4"] = {
+    reference : "CMS-PAS-HIN-21-001",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-001/index.html",
+    update : "2022-04-03",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "CMS",
+    kinea : "69 < N<sub>trk</sub> < 300",
+    kineb : "|y| < 2.4",
+    data : [
+        {"x": 1.5, "xl": 0, "xh": 3, "y": 0.0319998, "stath": 0.02842, "statl": 0.02842, "systh": 0.0284841, "systl": 0.0284841},
+        {"x": 4.5, "xl": 3, "xh": 6, "y": -0.0063431, "stath": 0.0305302, "statl": 0.0305302, "systh": 0.00424858, "systl": 0.00424858},
+        {"x": 8, "xl": 6, "xh": 10, "y": 0.0147669, "stath": 0.033223, "statl": 0.033223, "systh": 0.0145865, "systl": 0.0145865},
+        {"x": 20, "xl": 10, "xh": 30, "y": -0.0129662, "stath": 0.0375717, "statl": 0.0375717, "systh": 0.0255005, "systl": 0.0255005},
+    ]
+};
+
 dataset["Upsilon2SToUpsilon1S_DoubleRatio_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     reference : "PRL 120 (2018) 142301",
     link : "https://arxiv.org/abs/1706.05984",
