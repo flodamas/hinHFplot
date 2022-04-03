@@ -32,20 +32,21 @@ function setbasic()
     document.getElementById('tratio').innerText = parseFloat(document.getElementById('ratiorange').value).toFixed(2);
 }
 
+//
 var styles = { "rect":0,  "rectl":1,  "line":2,  "linev":3,  "rectv":4,  "rectvl":5 };
 var styles_mapping = {
-    0 : [1, 0, 1, 1, 0, 0],
-    1 : [1, 0, 1, 0, 0, 0],
-    2 : [1, 1, 1, 0, 0, 0],
-    3 : [1, 1, 1, 1, 0, 0],
-    4 : [0, 1, 1, 1, 0, 0],
-    5 : [0, 1, 1, 0, 0, 0],
-    6 : [0, 0, 1, 0, 1, 0],
-    7 : [0, 0, 1, 1, 1, 0],
-    8 : [0, 0, 1, 1, 1, 1],
-    9 : [0, 0, 1, 0, 1, 1],
-    10 : [0, 0, 1, 0, 0, 1],
-    11 : [0, 0, 1, 1, 0, 1]
+    0 : [1, 0, 1, 1, 0, 0],  // |-- (.) --|
+    1 : [1, 0, 1, 0, 0, 0],  // |   (.)   |
+    2 : [1, 1, 1, 0, 0, 0],  // |  [(.)]  |
+    3 : [1, 1, 1, 1, 0, 0],  // |--[(.)]--|
+    4 : [0, 1, 1, 1, 0, 0],  // |--[ . ]--|
+    5 : [0, 1, 1, 0, 0, 0],  // |  [ . ]  |
+    6 : [0, 0, 1, 0, 1, 0],  // | (  .  ) |
+    7 : [0, 0, 1, 1, 1, 0],  // | (--.--) |
+    8 : [0, 0, 1, 1, 1, 1],  // |[(--.--)]|
+    9 : [0, 0, 1, 0, 1, 1],  // |[(  .  )]|
+    10 : [0, 0, 1, 0, 0, 1], // |[   .   ]|
+    11 : [0, 0, 1, 1, 0, 1]  // |[ --.-- ]|
 };
 var changetonext = function(idd) {
     function next(i) {
@@ -53,10 +54,10 @@ var changetonext = function(idd) {
             return (parseInt(i)+1) % Object.keys(styles_mapping).length; 
         else
         {
-            if(parseInt(i) >= 6)
-                return 0;
-            else
-                return (parseInt(i)+2) % Object.keys(styles_mapping).length;
+            if(parseInt(i) == 1) return 2;
+            else if(parseInt(i) == 2) return 5;
+            else if(parseInt(i) == 5) return 6;
+            else return 1;
         }
     }
     // console.log(document.getElementById(idd).value, ', ', next(document.getElementById(idd).value))
