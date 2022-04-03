@@ -40,7 +40,7 @@ function loaditem()
         var itnew = document.createElement("td");
         itnew.setAttribute('class', 'new hideinmobile');
         let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
-        if(diffday < 180)
+        if(diffday < 60)
             itnew.innerHTML = "New!";
         else
             itnew.innerHTML = "";
