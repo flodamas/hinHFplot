@@ -4023,7 +4023,7 @@ dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "arXiv:2112.08156",
     link : "https://arxiv.org/abs/2112.08156",
-    update : "2022-04-04",
+    update : "2022-03-04",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -4045,7 +4045,7 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "arXiv:2112.08156",
     link : "https://arxiv.org/abs/2112.08156",
-    update : "2022-04-04",
+    update : "2022-03-04",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -4204,7 +4204,7 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4p5-M2p5"] = {
 dataset["aprLambdacToD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
     reference : "PRL 128 (2022) 012001",
     link : "https://arxiv.org/abs/2106.08278",
-    update : "2022-04-04",
+    update : "2022-03-04",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -4371,7 +4371,7 @@ dataset["aprLambdac_RAA_cent_PbPb_5TeV_CMS_pT-10-20_absy-lt-1"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "arXiv:2112.08156",
     link : "https://arxiv.org/abs/2112.08156",
-    update : "2022-04-04",
+    update : "2022-03-04",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -4393,7 +4393,7 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     reference : "arXiv:2112.08156",
     link : "https://arxiv.org/abs/2112.08156",
-    update : "2022-04-04",
+    update : "2022-03-04",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
