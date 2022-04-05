@@ -51,6 +51,11 @@ p {
     margin: 0;
 }
 
+.blockp {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 h1 {
     margin-block-start: 0;
     margin-block-end: 0.5rem;
@@ -130,15 +135,15 @@ ul {
 
 .ulog {
     position: fixed;
-    padding: 0.5rem;
+    padding: 0.7rem;
     background-color: var(--gray);
     opacity: 0.8;
     font-size: 0.9rem;
     border-radius: 0.25rem;
     z-index: 2;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 11rem;
+    top: 1rem;
+    right: 0.2rem;
+    width: 12rem;
 }
 
 .ulogx {
