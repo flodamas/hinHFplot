@@ -38,10 +38,14 @@ function loaditem()
         datainput.appendChild(iline);
 
         var itnew = document.createElement("td");
-        itnew.setAttribute('class', 'new hideinmobile');
+        itnew.setAttribute('class', 'hideinmobile new');
         let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
-        if(diffday < 60)
-            itnew.innerHTML = "New!";
+        let qmday = (new Date(thisitem.update).getTime() - new Date('2022-04-04').getTime())/(1000 * 3600 * 24);
+        console.log(qmday);
+        if(qmday > 0)
+            itnew.innerHTML = "QM'22!";
+        // else if(diffday < 60)
+        //     itnew.innerHTML = "New!";
         else
             itnew.innerHTML = "";
         iline.appendChild(itnew);
