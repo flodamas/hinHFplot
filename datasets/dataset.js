@@ -6632,7 +6632,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
     reference : "ALICE Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314623/attachments/2421008/4143988/220405-mpuccio-qm.pdf",
+    link : "https://indico.cern.ch/event/895086/contributions/4314623/attachments/2421008/4143988/220405-mpuccio-qm.pdf#page=9",
     update : "2022-04-05",
     observable : "RAA",
     xtitle : "pT",
@@ -8970,7 +8970,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
 
 dataset["incJpsi_RAA_Npart_AuAu_54p5GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
     reference : "STAR Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314628/attachments/2420979/4143947/qm2022_star_highlight_ptribedy.pdf",
+    link : "https://indico.cern.ch/event/895086/contributions/4314628/attachments/2420979/4143947/qm2022_star_highlight_ptribedy.pdf#page=29",
     update : "2022-04-05",
     observable : "RAA",
     xtitle : "Npart",
@@ -9333,7 +9333,7 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-lt-12_y-3p5-4"] = {
 
 dataset["incJpsi_RAA_Npart_RuRu+ZrZr_200GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
     reference : "STAR Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314628/attachments/2420979/4143947/qm2022_star_highlight_ptribedy.pdf",
+    link : "https://indico.cern.ch/event/895086/contributions/4314628/attachments/2420979/4143947/qm2022_star_highlight_ptribedy.pdf#page=29",
     update : "2022-04-05",
     observable : "RAA",
     xtitle : "Npart",
@@ -10783,7 +10783,7 @@ dataset["incpsi2SToJpsi_DoubleRatio_Npart_PbPb_2p76TeV_ALICE_pT-lt-3_y-2p5-4"] =
 
 dataset["incpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ALICE_pT-0p3-12_y-2p5-4"] = {
     reference : "ALICE Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314623/attachments/2421008/4143988/220405-mpuccio-qm.pdf",
+    link : "https://indico.cern.ch/event/895086/contributions/4314623/attachments/2421008/4143988/220405-mpuccio-qm.pdf#page=8",
     update : "2022-04-05",
     observable : "DoubleRatio",
     xtitle : "Npart",
