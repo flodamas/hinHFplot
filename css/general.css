@@ -72,6 +72,7 @@
         top: 1rem;
         right: 0.2rem;
         width: 12rem;
+        height: 23rem;
     }
     
     .btnaction:hover {
@@ -140,9 +141,10 @@
     .ulog {
         opacity: 1;
         padding: 2rem;
-        top: 10%;
-        right: 5%;
-        width: 90%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
     
     .hideinmobile {

@@ -142,7 +142,7 @@ ul {
     background-color: var(--gray);
     font-size: 0.9rem;
     border-radius: 0.25rem;
-    z-index: 2;
+    z-index: 10;
 }
 
 .ulogx {
@@ -153,7 +153,7 @@ ul {
     z-index: 1;
     font-size: 1.5em;
     cursor: pointer;
-    opacity: 1;
+    opacity: 11;
 }
 .ulogx:hover {
     opacity: 0.3;
