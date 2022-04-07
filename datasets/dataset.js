@@ -2851,6 +2851,26 @@ dataset["aprJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     ]
 };
 
+dataset["aprJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-1p5-10_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "1.5 < p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 27.07, "xl": 27.07, "xh": 27.07, "y": 0.966038, "stath": 0.0760754, "statl": 0.0760754, "systh": 0.0760754, "systl": 0.0736604},
+        {"x": 109.05, "xl": 109.05, "xh": 109.05, "y": 0.769208, "stath": 0.0470943, "statl": 0.0470943, "systh": 0.0470943, "systl": 0.0458868},
+        {"x": 224.97, "xl": 224.97, "xh": 224.97, "y": 0.853736, "stath": 0.0652075, "statl": 0.0652075, "systh": 0.0652075, "systl": 0.064},
+        {"x": 357.35, "xl": 357.35, "xh": 357.35, "y": 0.990189, "stath": 0.0495095, "statl": 0.0495095, "systh": 0.0495095, "systl": 0.0483019},
+    ]
+};
+
 dataset["aprJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
@@ -3049,6 +3069,64 @@ dataset["aprJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
         {"x": 12, "xl": 11, "xh": 13, "y": 0.371, "stath": 0.017, "statl": 0.017, "systh": 0.035, "systl": 0.035},
         {"x": 14.5, "xl": 13, "xh": 16, "y": 0.446, "stath": 0.025, "statl": 0.025, "systh": 0.042, "systl": 0.042},
         {"x": 23, "xl": 16, "xh": 30, "y": 0.389, "stath": 0.03, "statl": 0.03, "systh": 0.066, "systl": 0.066},
+    ]
+};
+
+dataset["aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-10%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 2.25, "xl": 1.5, "xh": 3, "y": 1.25064, "stath": 0.15414, "statl": 0.15414, "systh": 0.150637, "systl": 0.152389},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.679618, "stath": 0.0753185, "statl": 0.0753185, "systh": 0.0753185, "systl": 0.0770701},
+        {"x": 6, "xl": 5, "xh": 7, "y": 0.292516, "stath": 0.0455414, "statl": 0.0455414, "systh": 0.0420382, "systl": 0.038535},
+        {"x": 8.5, "xl": 7, "xh": 10, "y": 0.267994, "stath": 0.0507962, "statl": 0.0507962, "systh": 0.0192675, "systl": 0.0210191},
+    ]
+};
+
+dataset["aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-10-30_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "10-30%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 2.25, "xl": 1.5, "xh": 3, "y": 1.04745, "stath": 0.129618, "statl": 0.129618, "systh": 0.126115, "systl": 0.126115},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.590287, "stath": 0.0753185, "statl": 0.0753185, "systh": 0.0718153, "systl": 0.0718153},
+        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.415127, "stath": 0.0490446, "statl": 0.0490446, "systh": 0.0262739, "systl": 0.0262739},
+    ]
+};
+
+dataset["aprJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "30-50%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 2.25, "xl": 1.5, "xh": 3, "y": 0.765446, "stath": 0.0928344, "statl": 0.0928344, "systh": 0.0788216, "systl": 0.0753185},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.70414, "stath": 0.0718153, "statl": 0.0718153, "systh": 0.0700637, "systl": 0.0718153},
+        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.457166, "stath": 0.056051, "statl": 0.056051, "systh": 0.0297771, "systl": 0.0350319},
     ]
 };
 
@@ -6470,6 +6548,26 @@ dataset["bTOJpsi_RAA_Npart_PbPb_2p76TeV_CMS_pT-6p5-30_absy-lt-2p4"] = {
     ]
 };
 
+dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-1p5-10_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "1.5 < p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 27.07, "xl": 27.07, "xh": 27.07, "y": 1.03205, "stath": 0.14675, "statl": 0.14675, "systh": 0.115723, "systl": 0.114046},
+        {"x": 109.05, "xl": 109.05, "xh": 109.05, "y": 0.744419, "stath": 0.0696017, "statl": 0.0696017, "systh": 0.078826, "systl": 0.0746331},
+        {"x": 224.97, "xl": 224.97, "xh": 224.97, "y": 0.798927, "stath": 0.0930817, "statl": 0.0930817, "systh": 0.0955974, "systl": 0.0955975},
+        {"x": 357.35, "xl": 357.35, "xh": 357.35, "y": 0.599346, "stath": 0.0553459, "statl": 0.0553459, "systh": 0.0704402, "systl": 0.0687631},
+    ]
+};
+
 dataset["bTOJpsi_RAA_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = {
     reference : "EPJC 78 (2018) 762",
     link : "https://arxiv.org/abs/1805.04077",
@@ -6632,7 +6730,7 @@ dataset["bTOJpsi_RAA_pT_PbPb_2p76TeV_CMS_cent-0-100_absy-lt-2p4"] = {
 
 dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
     reference : "ALICE Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314623/attachments/2421008/4143988/220405-mpuccio-qm.pdf#page=9",
+    link : "https://alice-figure.web.cern.ch/node/22314",
     update : "2022-04-05",
     observable : "RAA",
     xtitle : "pT",
@@ -6647,6 +6745,44 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
         {"x": 4, "xl": 3, "xh": 5, "y": 0.556762, "stath": 0.0776668, "statl": 0.0776668, "systh": 0.0762013, "systl": 0.0776667},
         {"x": 6, "xl": 5, "xh": 7, "y": 0.416083, "stath": 0.0659434, "statl": 0.0659434, "systh": 0.064478, "systl": 0.064478},
         {"x": 8.5, "xl": 7, "xh": 10, "y": 0.221183, "stath": 0.0468931, "statl": 0.0468931, "systh": 0.0190503, "systl": 0.0234465},
+    ]
+};
+
+dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-10-30_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "10-30%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 2.25, "xl": 1.5, "xh": 3, "y": 0.874483, "stath": 0.320063, "statl": 0.320063, "systh": 0.17945, "systl": 0.178111},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.70039, "stath": 0.1299, "statl": 0.1299, "systh": 0.104456, "systl": 0.103117},
+        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.389701, "stath": 0.0642805, "statl": 0.0642805, "systh": 0.0361578, "systl": 0.037497},
+    ]
+};
+
+dataset["bTOJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22314",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "30-50%",
+    kineb : "|y| < 0.9",
+    data : [
+        {"x": 2.25, "xl": 1.5, "xh": 3, "y": 0.699487, "stath": 0.20057, "statl": 0.20057, "systh": 0.104046, "systl": 0.105299},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.881254, "stath": 0.117835, "statl": 0.117835, "systh": 0.0977778, "systl": 0.0977778},
+        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.591681, "stath": 0.0739601, "statl": 0.0739601, "systh": 0.0501425, "systl": 0.0476353},
     ]
 };
 
