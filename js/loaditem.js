@@ -124,7 +124,7 @@ function loaditem()
         idisplay.setAttribute('type', 'submit');
         idisplay.id = "display_" + da;
         idisplay.innerHTML = '<i class="fa-solid fa-brush"></i>';
-        idisplay.value = '6';
+        idisplay.value = '3';
         idisplay.setAttribute('class', 'btnaction');
         idisplay.setAttribute('onclick', "changedisplay('" + da + "');");
         idisplay.title = "display styles";
