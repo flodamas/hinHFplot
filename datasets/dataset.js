@@ -4098,6 +4098,25 @@ dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
     ]
 };
 
+dataset["aprLambdacToD0_LcToD0_Npart_PbPb_5TeV_LHCb_pT-2-8_y-2-4p5"] = {
+    reference : "LHCB-PAPER-2021-046",
+    link : "https://indico.cern.ch/event/895086/contributions/4729900/attachments/2423515/4148554/HF_audurier_qm2022_v6.pdf#page=32",
+    update : "2022-04-05",
+    observable : "LcToD0",
+    xtitle : "Npart",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "2 < p<sub>T</sub> < 8 GeV",
+    kineb : "2 < y < 4.5",
+    data : [
+        {"x": 6.49, "xl": 6.49, "xh": 6.49, "y": 0.28691, "stath": 0.034413, "statl": 0.034413, "systh": 0.034413, "systl": 0.0330634},
+        {"x": 12.39, "xl": 12.39, "xh": 12.39, "y": 0.251822, "stath": 0.0303644, "statl": 0.0303644, "systh": 0.0222672, "systl": 0.0209177},
+        {"x": 26.58, "xl": 26.58, "xh": 26.58, "y": 0.226856, "stath": 0.0695007, "statl": 0.0695007, "systh": 0.0242915, "systl": 0.0242915},
+    ]
+};
+
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     reference : "arXiv:2112.08156",
     link : "https://arxiv.org/abs/2112.08156",
@@ -4156,6 +4175,27 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
     kineb : "|y| < 1",
     data : [
         {"x": 15, "xl": 10, "xh": 20, "y": 0.195, "stath": 0.036, "statl": 0.034, "systh": 0.046, "systl": 0.046},
+    ]
+};
+
+dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_LHCb_Npart-eq-15p75_y-2-4p5"] = {
+    reference : "LHCB-PAPER-2021-046",
+    link : "https://indico.cern.ch/event/895086/contributions/4729900/attachments/2423515/4148554/HF_audurier_qm2022_v6.pdf#page=32",
+    update : "2022-04-05",
+    observable : "LcToD0",
+    xtitle : "pT",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "&langle;N<sub>part</sub>&rangle; = 15.75",
+    kineb : "2 < y < 4.5",
+    data : [
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.187711, "stath": 0.0958812, "statl": 0.0958812, "systh": 0.0256583, "systl": 0.0249831},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.388926, "stath": 0.0715733, "statl": 0.0715733, "systh": 0.0290344, "systl": 0.0290344},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.349088, "stath": 0.0506414, "statl": 0.0506414, "systh": 0.0398379, "systl": 0.039838},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.272113, "stath": 0.0486158, "statl": 0.0486158, "systh": 0.0357866, "systl": 0.0364619},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.234301, "stath": 0.0357866, "statl": 0.0357866, "systh": 0.0330858, "systl": 0.0317353},
     ]
 };
 
@@ -4425,6 +4465,26 @@ dataset["aprLambdacToD0_LcToD0_ycm_pp_7TeV_ALICE__pT-2-8"] = {
     kineb : "2 < p<sub>T</sub> < 8 GeV",
     data : [
         {"x": 0, "xl": -0.5, "xh": 0.5, "y": 0.543, "stath": 0.061, "statl": 0.061, "systh": 0.16, "systl": 0.16},
+    ]
+};
+
+dataset["aprLambdacToD0_LcToD0_y_PbPb_5TeV_LHCb_Npart-eq-15p75_pT-2-8"] = {
+    reference : "LHCB-PAPER-2021-046",
+    link : "https://indico.cern.ch/event/895086/contributions/4729900/attachments/2423515/4148554/HF_audurier_qm2022_v6.pdf#page=32",
+    update : "2022-04-05",
+    observable : "LcToD0",
+    xtitle : "y",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "&langle;N<sub>part</sub>&rangle; = 15.75",
+    kineb : "2 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.288124, "stath": 0.0438597, "statl": 0.0438597, "systh": 0.0296896, "systl": 0.0303644},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.292848, "stath": 0.0479082, "statl": 0.0479082, "systh": 0.0276653, "systl": 0.0276653},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.246289, "stath": 0.0553306, "statl": 0.0553306, "systh": 0.0202429, "systl": 0.0209177},
+        {"x": 4, "xl": 3.5, "xh": 4.5, "y": 0.120783, "stath": 0.0661269, "statl": 0.0661269, "systh": 0.0107962, "systl": 0.0121458},
     ]
 };
 
