@@ -6091,6 +6091,25 @@ dataset["bTOe_RpA_pT_pPb_5TeV_ALICE__ycm-M1p06-0p14"] = {
     ]
 };
 
+dataset["bTOe_v2_pT_AuAu_200GeV_PHENIX_cent-0-100_absy-lt-0p35"] = {
+    reference : "PHENIX Preliminary",
+    link : "https://indico.cern.ch/event/895086/contributions/4744010/attachments/2422241/4146117/QM2022_hf_hachiya_v4.pdf#page=13",
+    update : "2022-04-05",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(b&rarr;) e",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-100%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.0533967, "stath": 0.0260808, "statl": 0.0260808, "systh": 0.0444656, "systl": 0.0444656},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.0401425, "stath": 0.0307839, "statl": 0.0307839, "systh": 0.0299287, "systl": 0.0299287},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.0796912, "stath": 0.0643468, "statl": 0.0643468, "systh": 0.051734, "systl": 0.0515202},
+    ]
+};
+
 dataset["bTOe_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
     reference : "PRL 126 (2021) 162001",
     link : "https://arxiv.org/abs/2005.11130",
@@ -8099,6 +8118,27 @@ dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
         {"x": 4.00221, "xl": 3.5, "xh": 4.5, "y": 0.147099, "stath": 0.00337382, "statl": 0.00337382, "systh": 0.0269906, "systl": 0.0269905},
         {"x": 5.00202, "xl": 4.5, "xh": 5.5, "y": 0.20108, "stath": 0.0573549, "statl": 0.0573549, "systh": 0.0472335, "systl": 0.0472335},
         {"x": 7.00195, "xl": 5.5, "xh": 8.5, "y": 0.221323, "stath": 0.107962, "statl": 0.107962, "systh": 0.0910931, "systl": 0.0944669},
+    ]
+};
+
+dataset["cTOe_v2_pT_AuAu_200GeV_PHENIX_cent-0-100_absy-lt-0p35"] = {
+    reference : "PHENIX Preliminary",
+    link : "https://indico.cern.ch/event/895086/contributions/4744010/attachments/2422241/4146117/QM2022_hf_hachiya_v4.pdf#page=13",
+    update : "2022-04-05",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "(c&rarr;) e",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-100%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 1.125, "xl": 1, "xh": 1.25, "y": 0.0473934, "stath": 0.0056872, "statl": 0.0056872, "systh": 0.0332346, "systl": 0.0334123},
+        {"x": 1.375, "xl": 1.25, "xh": 1.5, "y": 0.0521919, "stath": 0.00977488, "statl": 0.00977488, "systh": 0.0200829, "systl": 0.0200829},
+        {"x": 1.625, "xl": 1.5, "xh": 1.74, "y": 0.0712085, "stath": 0.0151066, "statl": 0.0151066, "systh": 0.0163507, "systl": 0.0163507},
+        {"x": 1.875, "xl": 1.75, "xh": 2, "y": 0.0904028, "stath": 0.0248815, "statl": 0.0248815, "systh": 0.016173, "systl": 0.0154621},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.11795, "stath": 0.0364336, "statl": 0.0364336, "systh": 0.0462085, "systl": 0.0462085},
     ]
 };
 
