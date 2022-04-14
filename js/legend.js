@@ -171,7 +171,7 @@ function legenditem(tlegend, thisitem, type=1)
 {
     var type_legend = document.getElementById('btnlegend').value;
     tlegend.style('font-size', legsize + "em");
-    
+
     // observable
     var rpc = parsescript(styleobs(thisitem.observable));
     for(var p in rpc)
@@ -224,7 +224,7 @@ function legenditem(tlegend, thisitem, type=1)
     // kineb
     var rpb = parsescript(thisitem.kineb);
     if(thisitem.kineb != "")
-        rpb[0].content = '  ' + rpb[0].content;
+        rpb[0].content = ',  ' + rpb[0].content;
     for(var p in rpb)
     {
         tlegend.append('tspan')
