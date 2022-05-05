@@ -41,7 +41,7 @@ function loaditem()
         itnew.setAttribute('class', 'hideinmobile new');
         let diffday = (new Date().getTime() - new Date(thisitem.update).getTime())/(1000 * 3600 * 24);
         let qmday = (new Date(thisitem.update).getTime() - new Date('2022-04-04').getTime())/(1000 * 3600 * 24);
-        if(qmday > 0)
+        if(qmday > 0 && qmday < 10)
             itnew.innerHTML = "QM'22!";
         // else if(diffday < 60)
         //     itnew.innerHTML = "New!";
