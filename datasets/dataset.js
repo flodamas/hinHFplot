@@ -9226,7 +9226,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
     ]
 };
 
-dataset["incJpsi_RAA_Npart_AuAu_54p5GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
+dataset["incJpsi_RAA_Npart_AuAu_54p4GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
     reference : "STAR Preliminary",
     link : "https://indico.cern.ch/event/895086/contributions/4314628/attachments/2420979/4143947/qm2022_star_highlight_ptribedy.pdf#page=29",
     update : "2022-04-05",
@@ -9234,7 +9234,7 @@ dataset["incJpsi_RAA_Npart_AuAu_54p5GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
     xtitle : "Npart",
     particle : "Inclusive J/&psi;",
     collision : "AuAu",
-    energy : "54.5 GeV",
+    energy : "54.4 GeV",
     collab : "STAR",
     kinea : "p<sub>T</sub> > 0.2 GeV",
     kineb : "|y| < 1",
@@ -9830,6 +9830,66 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_STAR_cent-60-80_absy-lt-0p5"] = {
         {"x": 3.5, "xl": 3, "xh": 4, "y": 0.87328, "stath": 0.10896, "statl": 0.10896, "systh": 0.15598, "systl": 0.15598},
         {"x": 4.5, "xl": 4, "xh": 5, "y": 0.67149, "stath": 0.13133, "statl": 0.13133, "systh": 0.13383, "systl": 0.13383},
         {"x": 5.5, "xl": 5, "xh": 6, "y": 0.70246, "stath": 0.18799, "statl": 0.18799, "systh": 0.13223, "systl": 0.13223},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_54p4GeV_STAR_cent-0-20_absy-lt-1"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/895086/contributions/4724888/attachments/2423105/4147724/qm2022_zyzhang.pdf#page=6",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "54.4 GeV",
+    collab : "STAR",
+    kinea : "0-20%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 0.6, "xl": 0.2, "xh": 1, "y": 0.212361, "stath": 0.022695, "statl": 0.022695, "systh": 0.0291793, "systl": 0.0291793},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.296657, "stath": 0.0275582, "statl": 0.0275582, "systh": 0.0316109, "systl": 0.0324215},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.493617, "stath": 0.0583586, "statl": 0.0583586, "systh": 0.0688956, "systl": 0.0697062},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.484701, "stath": 0.0948328, "statl": 0.0948328, "systh": 0.089159, "systl": 0.0851064},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_54p4GeV_STAR_cent-20-40_absy-lt-1"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/895086/contributions/4724888/attachments/2423105/4147724/qm2022_zyzhang.pdf#page=6",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "54.4 GeV",
+    collab : "STAR",
+    kinea : "20-40%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 0.6, "xl": 0.2, "xh": 1, "y": 0.274066, "stath": 0.0217822, "statl": 0.0217822, "systh": 0.0338835, "systl": 0.0338835},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.353935, "stath": 0.0314632, "statl": 0.0314632, "systh": 0.0314632, "systl": 0.0314633},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.591119, "stath": 0.058086, "statl": 0.058086, "systh": 0.0943897, "systl": 0.09681},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.574177, "stath": 0.104071, "statl": 0.104071, "systh": 0.0822885, "systl": 0.0798683},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_54p4GeV_STAR_cent-40-60_absy-lt-1"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/895086/contributions/4724888/attachments/2423105/4147724/qm2022_zyzhang.pdf#page=6",
+    update : "2022-04-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "54.4 GeV",
+    collab : "STAR",
+    kinea : "40-60%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 0.6, "xl": 0.2, "xh": 1, "y": 0.367076, "stath": 0.0280122, "statl": 0.0280122, "systh": 0.0396839, "systl": 0.0408511},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.469787, "stath": 0.033848, "statl": 0.033848, "systh": 0.0431854, "systl": 0.0431854},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.674043, "stath": 0.0758662, "statl": 0.0758662, "systh": 0.0875379, "systl": 0.087538},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.59234, "stath": 0.130723, "statl": 0.130723, "systh": 0.0957083, "systl": 0.0933738},
     ]
 };
 
