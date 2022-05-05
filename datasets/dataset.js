@@ -8881,6 +8881,30 @@ dataset["incD0_v2_pT_AuAu_200GeV_STAR_cent-10-40_absy-lt-1"] = {
     ]
 };
 
+dataset["incJpsi_RAA_cent_AuAu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> < 5 GeV",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 2.5, "xl": 0, "xh": 5, "y": 0.26, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
+        {"x": 5, "xl": 5, "xh": 10, "y": 0.34, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": 12.5, "xl": 10, "xh": 15, "y": 0.36, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": 17.5, "xl": 15, "xh": 20, "y": 0.45, "stath": 0.07, "statl": 0.07, "systh": 0.07, "systl": 0.07},
+        {"x": 25, "xl": 20, "xh": 30, "y": 0.58, "stath": 0.07, "statl": 0.07, "systh": 0.08, "systl": 0.08},
+        {"x": 35, "xl": 30, "xh": 40, "y": 0.58, "stath": 0.08, "statl": 0.08, "systh": 0.08, "systl": 0.08},
+        {"x": 50, "xl": 40, "xh": 60, "y": 0.65, "stath": 0.07, "statl": 0.07, "systh": 0.1, "systl": 0.1},
+        {"x": 76, "xl": 60, "xh": 92, "y": 0.74, "stath": 0.12, "statl": 0.12, "systh": 0.21, "systl": 0.21},
+    ]
+};
+
 dataset["incJpsi_RAA_cent_PbPb_2p76TeV_ALICE_pT-2-5_y-2p5-4"] = {
     reference : "JHEP 05 (2016) 179",
     link : "https://arxiv.org/abs/1506.08804",
@@ -9188,6 +9212,30 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_PHENIX_pT-gt-0_absy-1p2-2p2"] = {
         {"x": 255.7, "xl": 255.7, "xh": 255.7, "y": 0.2, "stath": 0.04, "statl": 0.04, "systh": 0.03, "systl": 0.03},
         {"x": 301.7, "xl": 301.7, "xh": 301.7, "y": 0.16, "stath": 0.04, "statl": 0.04, "systh": 0.02, "systl": 0.02},
         {"x": 350.8, "xl": 350.8, "xh": 350.8, "y": 0.17, "stath": 0.04, "statl": 0.04, "systh": 0.04, "systl": 0.02},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_AuAu_200GeV_PHENIX_pT-lt-5_absy-lt-0p35"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> < 5 GeV",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 351.4, "xl": 351.4, "xh": 351.4, "y": 0.26, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
+        {"x": 299, "xl": 299, "xh": 299, "y": 0.34, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": 253.9, "xl": 253.9, "xh": 253.9, "y": 0.36, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": 215.3, "xl": 215.3, "xh": 215.3, "y": 0.45, "stath": 0.07, "statl": 0.07, "systh": 0.07, "systl": 0.07},
+        {"x": 166.6, "xl": 166.6, "xh": 166.6, "y": 0.58, "stath": 0.07, "statl": 0.07, "systh": 0.08, "systl": 0.08},
+        {"x": 114.2, "xl": 114.2, "xh": 114.2, "y": 0.58, "stath": 0.08, "statl": 0.08, "systh": 0.08, "systl": 0.08},
+        {"x": 58.4, "xl": 58.4, "xh": 58.4, "y": 0.65, "stath": 0.07, "statl": 0.07, "systh": 0.1, "systl": 0.1},
+        {"x": 14.5, "xl": 14.5, "xh": 14.5, "y": 0.74, "stath": 0.12, "statl": 0.12, "systh": 0.21, "systl": 0.21},
     ]
 };
 
@@ -9683,6 +9731,27 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-0-20_absy-1p2-2p2"] = {
     ]
 };
 
+dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-0-20_absy-lt-0p35"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-20%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.365, "stath": 0.057, "statl": 0.057, "systh": 0.056, "systl": 0.056},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.379, "stath": 0.054, "statl": 0.054, "systh": 0.058, "systl": 0.058},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.318, "stath": 0.067, "statl": 0.067, "systh": 0.049, "systl": 0.049},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.134, "stath": 0.107, "statl": 0.107, "systh": 0.021, "systl": 0.021},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.636, "stath": 0.339, "statl": 0.339, "systh": 0.098, "systl": 0.098},
+    ]
+};
+
 dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-20-40_absy-1p2-2p2"] = {
     reference : "PRC 84 (2011) 054912",
     link : "https://arxiv.org/abs/1103.6269",
@@ -9702,6 +9771,27 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-20-40_absy-1p2-2p2"] = {
         {"x": 3.5, "xl": 3, "xh": 4, "y": 0.41, "stath": 0.07, "statl": 0.07, "systh": 0.06, "systl": 0.06},
         {"x": 4.5, "xl": 4, "xh": 5, "y": 0.57, "stath": 0.15, "statl": 0.15, "systh": 0.12, "systl": 0.12},
         {"x": 5.5, "xl": 5, "xh": 6, "y": 0.56, "stath": 0.21, "statl": 0.21, "systh": 0.08, "systl": 0.08},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-20-40_absy-lt-0p35"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "20-40%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.487, "stath": 0.073, "statl": 0.073, "systh": 0.072, "systl": 0.072},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.554, "stath": 0.074, "statl": 0.074, "systh": 0.081, "systl": 0.081},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.56, "stath": 0.101, "statl": 0.101, "systh": 0.082, "systl": 0.082},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.649, "stath": 0.203, "statl": 0.203, "systh": 0.095, "systl": 0.095},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.977, "stath": 0.486, "statl": 0.486, "systh": 0.144, "systl": 0.144},
     ]
 };
 
@@ -9727,6 +9817,27 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-40-60_absy-1p2-2p2"] = {
     ]
 };
 
+dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-40-60_absy-lt-0p35"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "40-60%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.738, "stath": 0.111, "statl": 0.111, "systh": 0.107, "systl": 0.107},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.566, "stath": 0.091, "statl": 0.091, "systh": 0.082, "systl": 0.082},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.54, "stath": 0.125, "statl": 0.125, "systh": 0.078, "systl": 0.078},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.694, "stath": 0.258, "statl": 0.258, "systh": 0.101, "systl": 0.101},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 1.61, "stath": 0.848, "statl": 0.848, "systh": 0.234, "systl": 0.234},
+    ]
+};
+
 dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-60-92_absy-1p2-2p2"] = {
     reference : "PRC 84 (2011) 054912",
     link : "https://arxiv.org/abs/1103.6269",
@@ -9746,6 +9857,27 @@ dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-60-92_absy-1p2-2p2"] = {
         {"x": 3.5, "xl": 3, "xh": 4, "y": 0.69, "stath": 0.13, "statl": 0.13, "systh": 0.09, "systl": 0.09},
         {"x": 4.5, "xl": 4, "xh": 5, "y": 1.29, "stath": 0.32, "statl": 0.32, "systh": 0.17, "systl": 0.17},
         {"x": 5.5, "xl": 5, "xh": 6, "y": 0.99, "stath": 0.38, "statl": 0.38, "systh": 0.2, "systl": 0.2},
+    ]
+};
+
+dataset["incJpsi_RAA_pT_AuAu_200GeV_PHENIX_cent-60-92_absy-lt-0p35"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "60-92%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 1.13, "stath": 0.237, "statl": 0.237, "systh": 0.163, "systl": 0.163},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.586, "stath": 0.151, "statl": 0.151, "systh": 0.084, "systl": 0.084},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.431, "stath": 0.183, "statl": 0.183, "systh": 0.062, "systl": 0.062},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.818, "stath": 0.485, "statl": 0.485, "systh": 0.118, "systl": 0.118},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.792, "stath": 0.833, "statl": 0.833, "systh": 0.114, "systl": 0.114},
     ]
 };
 
@@ -10633,6 +10765,90 @@ dataset["incJpsi_RAA_ycm_PbPb_5TeV_ALICE_cent-40-90_pT-lt-12"] = {
         {"x": 3.375, "xl": 3.25, "xh": 3.5, "y": 0.69, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
         {"x": 3.625, "xl": 3.5, "xh": 3.75, "y": 0.7, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
         {"x": 3.875, "xl": 3.75, "xh": 4, "y": 0.68, "stath": 0.03, "statl": 0.03, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
+dataset["incJpsi_RAA_y_AuAu_200GeV_PHENIX_cent-0-20_pT-lt-5"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-20%",
+    kineb : "p<sub>T</sub> < 5 GeV",
+    data : [
+        {"x": -1.95, "xl": -2.2, "xh": -1.7, "y": 0.24, "stath": 0.071, "statl": 0.071, "systh": 0.04, "systl": 0.03},
+        {"x": -1.45, "xl": -1.7, "xh": -1.2, "y": 0.29, "stath": 0.057, "statl": 0.057, "systh": 0.05, "systl": 0.03},
+        {"x": 0, "xl": -0.35, "xh": 0.35, "y": 0.37, "stath": 0.04, "statl": 0.04, "systh": 0.06, "systl": 0.06},
+        {"x": 1.45, "xl": 1.2, "xh": 1.7, "y": 0.18, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.02},
+        {"x": 1.95, "xl": 1.7, "xh": 2.2, "y": 0.26, "stath": 0.099, "statl": 0.099, "systh": 0.04, "systl": 0.03},
+    ]
+};
+
+dataset["incJpsi_RAA_y_AuAu_200GeV_PHENIX_cent-20-40_pT-lt-5"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "20-40%",
+    kineb : "p<sub>T</sub> < 5 GeV",
+    data : [
+        {"x": -1.95, "xl": -2.2, "xh": -1.7, "y": 0.39, "stath": 0.085, "statl": 0.085, "systh": 0.05, "systl": 0.05},
+        {"x": -1.45, "xl": -1.7, "xh": -1.2, "y": 0.47, "stath": 0.057, "statl": 0.057, "systh": 0.06, "systl": 0.06},
+        {"x": 0, "xl": -0.35, "xh": 0.35, "y": 0.57, "stath": 0.06, "statl": 0.06, "systh": 0.08, "systl": 0.08},
+        {"x": 1.45, "xl": 1.2, "xh": 1.7, "y": 0.38, "stath": 0.05, "statl": 0.05, "systh": 0.05, "systl": 0.05},
+        {"x": 1.95, "xl": 1.7, "xh": 2.2, "y": 0.29, "stath": 0.078, "statl": 0.078, "systh": 0.04, "systl": 0.03},
+    ]
+};
+
+dataset["incJpsi_RAA_y_AuAu_200GeV_PHENIX_cent-40-60_pT-lt-5"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "40-60%",
+    kineb : "p<sub>T</sub> < 5 GeV",
+    data : [
+        {"x": -1.95, "xl": -2.2, "xh": -1.7, "y": 0.71, "stath": 0.106, "statl": 0.106, "systh": 0.09, "systl": 0.09},
+        {"x": -1.45, "xl": -1.7, "xh": -1.2, "y": 0.65, "stath": 0.072, "statl": 0.072, "systh": 0.08, "systl": 0.08},
+        {"x": 0, "xl": -0.35, "xh": 0.35, "y": 0.66, "stath": 0.07, "statl": 0.07, "systh": 0.1, "systl": 0.1},
+        {"x": 1.45, "xl": 1.2, "xh": 1.7, "y": 0.56, "stath": 0.064, "statl": 0.064, "systh": 0.07, "systl": 0.07},
+        {"x": 1.95, "xl": 1.7, "xh": 2.2, "y": 0.57, "stath": 0.081, "statl": 0.081, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
+dataset["incJpsi_RAA_y_AuAu_200GeV_PHENIX_cent-60-92_pT-lt-5"] = {
+    reference : "PRL 98 (2007) 232301",
+    link : "https://arxiv.org/abs/nucl-ex/0611020",
+    update : "2022-05-05",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "60-92%",
+    kineb : "p<sub>T</sub> < 5 GeV",
+    data : [
+        {"x": -1.95, "xl": -2.2, "xh": -1.7, "y": 0.91, "stath": 0.149, "statl": 0.149, "systh": 0.11, "systl": 0.11},
+        {"x": -1.45, "xl": -1.7, "xh": -1.2, "y": 0.8, "stath": 0.117, "statl": 0.117, "systh": 0.1, "systl": 0.1},
+        {"x": 0, "xl": -0.35, "xh": 0.35, "y": 0.74, "stath": 0.12, "statl": 0.12, "systh": 0.11, "systl": 0.11},
+        {"x": 1.45, "xl": 1.2, "xh": 1.7, "y": 0.63, "stath": 0.1, "statl": 0.1, "systh": 0.08, "systl": 0.08},
+        {"x": 1.95, "xl": 1.7, "xh": 2.2, "y": 0.75, "stath": 0.112, "statl": 0.112, "systh": 0.09, "systl": 0.09},
     ]
 };
 
