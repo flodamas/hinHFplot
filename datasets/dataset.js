@@ -9103,13 +9103,13 @@ dataset["incJpsi_RAA_cent_PbPb_5TeV_ALICE_pT-lt-12_y-3-3p5"] = {
     kinea : "p<sub>T</sub> < 12 GeV",
     kineb : "3 < y < 3.5",
     data : [
-        {"x": 357.3, "xl": 0.609985, "xh": 0.0100098, "y": -0.01, "stath": 0.01, "statl": 0.01, "systh": 0.04, "systl": 0.04},
-        {"x": 262, "xl": 0.630005, "xh": 0.019989, "y": -0.02, "stath": 0.01, "statl": 0.01, "systh": 0.04, "systl": 0.04},
-        {"x": 187.9, "xl": 0.619995, "xh": 0.0200043, "y": -0.02, "stath": 0.01, "statl": 0.01, "systh": 0.04, "systl": 0.04},
-        {"x": 130.8, "xl": 0.580002, "xh": 0.0200043, "y": -0.02, "stath": 0.01, "statl": 0.01, "systh": 0.04, "systl": 0.04},
-        {"x": 87.14, "xl": 0.639999, "xh": 0.0199966, "y": -0.02, "stath": 0.02, "statl": 0.02, "systh": 0.04, "systl": 0.04},
-        {"x": 54.34, "xl": 0.669998, "xh": 0.0200005, "y": -0.02, "stath": 0.02, "statl": 0.02, "systh": 0.04, "systl": 0.04},
-        {"x": 17.89, "xl": 0.889999, "xh": 0.0200005, "y": -0.02, "stath": 0.04, "statl": 0.04, "systh": 0.06, "systl": 0.06},
+        {"x": 5, "xl": 0, "xh": 10, "y": 0.61, "stath": 0.01, "statl": 0.01, "systh": 0.01, "systl": 0.01},
+        {"x": 15, "xl": 10, "xh": 20, "y": 0.63, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 25, "xl": 20, "xh": 30, "y": 0.62, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 35, "xl": 30, "xh": 40, "y": 0.58, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 45, "xl": 40, "xh": 50, "y": 0.64, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": 55, "xl": 50, "xh": 60, "y": 0.67, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": 75, "xl": 60, "xh": 90, "y": 0.89, "stath": 0.02, "statl": 0.02, "systh": 0.04, "systl": 0.04},
     ]
 };
 
@@ -9228,7 +9228,7 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
 
 dataset["incJpsi_RAA_Npart_AuAu_54p4GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
     reference : "STAR Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314628/attachments/2420979/4143947/qm2022_star_highlight_ptribedy.pdf#page=29",
+    link : "https://indico.cern.ch/event/895086/contributions/4724888/attachments/2423105/4147724/qm2022_zyzhang.pdf#page=9",
     update : "2022-04-05",
     observable : "RAA",
     xtitle : "Npart",
