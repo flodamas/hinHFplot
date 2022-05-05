@@ -5640,7 +5640,7 @@ dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
 };
 
 dataset["BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"] = {
-    reference : "arXiv:2109.01908",
+    reference : "PLB 829 (2022) 137062",
     link : "https://arxiv.org/abs/2109.01908",
     update : "2021-11-13",
     observable : "BsubsToBplusmn",
@@ -5658,7 +5658,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_cent_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"]
 };
 
 dataset["BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"] = {
-    reference : "arXiv:2109.01908",
+    reference : "PLB 829 (2022) 137062",
     link : "https://arxiv.org/abs/2109.01908",
     update : "2021-11-13",
     observable : "BsubsToBplusmn",
@@ -5676,7 +5676,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_Npart_PbPb_5TeV_CMS_pT-10-50_absy-lt-2p4"
 };
 
 dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p5-2p4"] = {
-    reference : "arXiv:2109.01908",
+    reference : "PLB 829 (2022) 137062",
     link : "https://arxiv.org/abs/2109.01908",
     update : "2021-11-13",
     observable : "BsubsToBplusmn",
@@ -5693,7 +5693,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p5-2p4"]
 };
 
 dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
-    reference : "arXiv:2109.01908",
+    reference : "PLB 829 (2022) 137062",
     link : "https://arxiv.org/abs/2109.01908",
     update : "2021-11-13",
     observable : "BsubsToBplusmn",
@@ -6057,8 +6057,8 @@ dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
 };
 
 dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
-    reference : "STAR Preliminary",
-    link : "https://arxiv.org/abs/2002.09057",
+    reference : "arXiv:2111.14615",
+    link : "https://arxiv.org/abs/2111.14615",
     update : "2000-01-01",
     observable : "DoubleRatio",
     xtitle : "pT",
@@ -6077,8 +6077,8 @@ dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
 };
 
 dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
-    reference : "STAR Preliminary",
-    link : "https://arxiv.org/abs/2002.09057",
+    reference : "arXiv:2111.14615",
+    link : "https://arxiv.org/abs/2111.14615",
     update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
@@ -7713,7 +7713,7 @@ dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 };
 
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -7741,7 +7741,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 };
 
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -7769,7 +7769,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 };
 
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -7797,7 +7797,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 };
 
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -7825,7 +7825,7 @@ dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 };
 
 dataset["bTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -8162,8 +8162,8 @@ dataset["cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8"] = {
 };
 
 dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
-    reference : "STAR Preliminary",
-    link : "https://arxiv.org/abs/2002.09057",
+    reference : "arXiv:2111.14615",
+    link : "https://arxiv.org/abs/2111.14615",
     update : "2000-01-01",
     observable : "RAA",
     xtitle : "pT",
@@ -8203,7 +8203,7 @@ dataset["cTOe_v2_pT_AuAu_200GeV_PHENIX_cent-0-100_absy-lt-0p35"] = {
 };
 
 dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "DoubleRatio",
@@ -8231,7 +8231,7 @@ dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 };
 
 dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "DoubleRatio",
@@ -8259,7 +8259,7 @@ dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = 
 };
 
 dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "DoubleRatio",
@@ -8287,7 +8287,7 @@ dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = 
 };
 
 dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "DoubleRatio",
@@ -8315,7 +8315,7 @@ dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = 
 };
 
 dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "DoubleRatio",
@@ -8343,7 +8343,7 @@ dataset["cTOmuTobTOmu_DoubleRatio_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = 
 };
 
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -8371,7 +8371,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-0-10_abseta-lt-2"] = {
 };
 
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -8399,7 +8399,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-10-20_abseta-lt-2"] = {
 };
 
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -8427,7 +8427,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-20-30_abseta-lt-2"] = {
 };
 
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
@@ -8455,7 +8455,7 @@ dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-30-40_abseta-lt-2"] = {
 };
 
 dataset["cTOmu_RAA_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
-    reference : "arXiv:2109.00411",
+    reference : "PLB 829 (2022) 137077",
     link : "https://arxiv.org/abs/2109.00411",
     update : "2021-11-05",
     observable : "RAA",
