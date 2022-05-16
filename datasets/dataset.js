@@ -11144,7 +11144,7 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
 
 dataset["incJpsi_v2_pT_AuAu_200GeV_PHENIX_cent-10-60_absy-1p2-2p2"] = {
     reference : "PHENIX Preliminary",
-    link : "https://indico.cern.ch/event/895086/contributions/4314629/attachments/2421002/4143980/QM22_shlim_PHENIX_overview.pdf#page=26",
+    link : "https://indico.cern.ch/event/895086/contributions/4314629/attachments/2421002/4143980/QM22_shlim_PHENIX_overview.pdf#page=42",
     update : "2022-04-05",
     observable : "v2",
     xtitle : "pT",
