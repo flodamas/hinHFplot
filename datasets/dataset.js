@@ -11142,6 +11142,26 @@ dataset["incJpsi_v2_cent_PbPb_5TeV_ALICE_pT-lt-5_y-2p5-4"] = {
     ]
 };
 
+dataset["incJpsi_v2_pT_AuAu_200GeV_PHENIX_cent-10-60_absy-1p2-2p2"] = {
+    reference : "PHENIX Preliminary",
+    link : "https://indico.cern.ch/event/895086/contributions/4314629/attachments/2421002/4143980/QM22_shlim_PHENIX_overview.pdf#page=26",
+    update : "2022-04-05",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "10-60%",
+    kineb : "1.2 < |y| < 2.2",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.0195419, "stath": 0.0442377, "statl": 0.0442377, "systh": 0.0519685, "systl": 0.051539},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.00880458, "stath": 0.0399427, "statl": 0.0399427, "systh": 0.051539, "systl": 0.0519685},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.0195419, "stath": 0.0438082, "statl": 0.0438082, "systh": 0.0519685, "systl": 0.051539},
+        {"x": 4, "xl": 3, "xh": 5, "y": -0.0350036, "stath": 0.0562634, "statl": 0.0562634, "systh": 0.051539, "systl": 0.051539},
+    ]
+};
+
 dataset["incJpsi_v2_pT_AuAu_200GeV_STAR_cent-0-10_absy-lt-1"] = {
     reference : "PRL 111 (2013) 052301",
     link : "https://arxiv.org/abs/1212.3304",
