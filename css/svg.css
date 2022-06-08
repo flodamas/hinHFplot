@@ -50,9 +50,10 @@ svg {
 }
 
 .watermark {
-    fill: #eeeeee;
+    fill: #bbbbbb;
     font-family: 'Courier New', monospace;
-    font-weight: lighter;
-    font-size: 2.4em;
+    /* font-weight: lighter; */
+    font-weight: 400;
+    font-size: 2.2em;
 }
 

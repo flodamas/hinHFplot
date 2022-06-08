@@ -68,7 +68,7 @@ function checkandremove(id) { if( document.getElementById(id) ) { document.getEl
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.28; }
-var stroke_width_axis = function() { return width/100.*0.17; }
+var stroke_width_axis = function() { return width/100.*0.2; }
 
 var xoverflow = function(x)
 {
