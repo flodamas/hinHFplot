@@ -11003,6 +11003,42 @@ dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     ]
 };
 
+dataset["incJpsi_RpA_ycm_pAl_200GeV_PHENIX__pT-gt-0"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive J/&psi;",
+    collision : "pAl",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": 1.7, "xl": 1.2, "xh": 2.2, "y": 1.03, "stath": 0.01, "statl": 0.01, "systh": 0.06, "systl": 0.06},
+        {"x": -1.7, "xl": -2.2, "xh": -1.2, "y": 1.11, "stath": 0.02, "statl": 0.02, "systh": 0.09, "systl": 0.09},
+    ]
+};
+
+dataset["incJpsi_RpA_ycm_pAu_200GeV_PHENIX__pT-gt-0"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive J/&psi;",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": 1.7, "xl": 1.2, "xh": 2.2, "y": 0.74, "stath": 0.01, "statl": 0.01, "systh": 0.06, "systl": 0.06},
+        {"x": -1.7, "xl": -2.2, "xh": -1.2, "y": 0.91, "stath": 0.01, "statl": 0.01, "systh": 0.05, "systl": 0.05},
+    ]
+};
+
 dataset["incJpsi_RpA_ycm_pPb_5TeV_ALICE__pT-lt-15"] = {
     reference : "JHEP 02 (2014) 073",
     link : "https://arxiv.org/abs/1308.6726",
@@ -11787,6 +11823,42 @@ dataset["incpsi2S_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
         {"x": 4, "xl": 3, "xh": 5, "y": 0.86, "stath": 0.114, "statl": 0.114, "systh": 0.127534, "systl": 0.127534},
         {"x": 6.5, "xl": 5, "xh": 8, "y": 0.79, "stath": 0.128, "statl": 0.128, "systh": 0.177088, "systl": 0.177088},
         {"x": 10, "xl": 8, "xh": 12, "y": 0.74, "stath": 0.226, "statl": 0.226, "systh": 0.213677, "systl": 0.213677},
+    ]
+};
+
+dataset["incpsi2S_RpA_ycm_pAl_200GeV_PHENIX__pT-gt-0"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pAl",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": 1.7, "xl": 1.2, "xh": 2.2, "y": 1.02, "stath": 0.18, "statl": 0.18, "systh": 0.14, "systl": 0.14},
+        {"x": -1.7, "xl": -2.2, "xh": -1.2, "y": 0.59, "stath": 0.21, "statl": 0.21, "systh": 0.08, "systl": 0.08},
+    ]
+};
+
+dataset["incpsi2S_RpA_ycm_pAu_200GeV_PHENIX__pT-gt-0"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": 1.7, "xl": 1.2, "xh": 2.2, "y": 0.66, "stath": 0.09, "statl": 0.09, "systh": 0.1, "systl": 0.1},
+        {"x": -1.7, "xl": -2.2, "xh": -1.2, "y": 0.51, "stath": 0.12, "statl": 0.12, "systh": 0.08, "systl": 0.08},
     ]
 };
 
