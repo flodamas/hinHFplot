@@ -10936,6 +10936,46 @@ dataset["incJpsi_RAA_y_AuAu_200GeV_PHENIX_cent-60-92_pT-lt-5"] = {
     ]
 };
 
+dataset["incJpsi_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive J/&psi;",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "1.2 < y<sub>cm</sub> < 2.2",
+    data : [
+        {"x": 8.2, "xl": 8.2, "xh": 8.2, "y": 0.63, "stath": 0.01, "statl": 0.01, "systh": 0.05, "systl": 0.05},
+        {"x": 6.1, "xl": 6.1, "xh": 6.1, "y": 0.76, "stath": 0.03, "statl": 0.03, "systh": 0.07, "systl": 0.07},
+        {"x": 4.4, "xl": 4.4, "xh": 4.4, "y": 0.85, "stath": 0.04, "statl": 0.04, "systh": 0.07, "systl": 0.07},
+        {"x": 2.6, "xl": 2.6, "xh": 2.6, "y": 0.91, "stath": 0.04, "statl": 0.04, "systh": 0.08, "systl": 0.08},
+    ]
+};
+
+dataset["incJpsi_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-M2p2-M1p2"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive J/&psi;",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "-2.2 < y<sub>cm</sub> < -1.2",
+    data : [
+        {"x": 8.2, "xl": 8.2, "xh": 8.2, "y": 0.86, "stath": 0.02, "statl": 0.02, "systh": 0.09, "systl": 0.09},
+        {"x": 6.1, "xl": 6.1, "xh": 6.1, "y": 0.88, "stath": 0.04, "statl": 0.04, "systh": 0.09, "systl": 0.09},
+        {"x": 4.4, "xl": 4.4, "xh": 4.4, "y": 0.87, "stath": 0.05, "statl": 0.05, "systh": 0.09, "systl": 0.09},
+        {"x": 2.6, "xl": 2.6, "xh": 2.6, "y": 0.81, "stath": 0.04, "statl": 0.04, "systh": 0.08, "systl": 0.08},
+    ]
+};
+
 dataset["incJpsi_RpA_pT_pAu_200GeV_STAR__absy-lt-0p5"] = {
     reference : "PLB 825 (2022) 136865",
     link : "https://arxiv.org/abs/2110.09666",
@@ -11824,6 +11864,43 @@ dataset["incpsi2S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_absy-2p5-4"] = {
         {"x": 3, "xl": 2, "xh": 4, "y": 0.347676, "stath": 0.060425, "statl": 0.060425, "systh": 0.0901726, "systl": 0.0901726},
         {"x": 5, "xl": 4, "xh": 6, "y": 0.2166, "stath": 0.0641434, "statl": 0.0641434, "systh": 0.0641434, "systl": 0.0641434},
         {"x": 9, "xl": 6, "xh": 12, "y": 0.149668, "stath": 0.04834, "statl": 0.04834, "systh": 0.0325365, "systl": 0.0325365},
+    ]
+};
+
+dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "1.2 < y<sub>cm</sub> < 2.2",
+    data : [
+        {"x": 8.2, "xl": 8.2, "xh": 8.2, "y": 0.52, "stath": 0.12, "statl": 0.12, "systh": 0.08, "systl": 0.08},
+        {"x": 6.1, "xl": 6.1, "xh": 6.1, "y": 0.55, "stath": 0.14, "statl": 0.14, "systh": 0.09, "systl": 0.09},
+        {"x": 3.4, "xl": 3.4, "xh": 3.4, "y": 0.96, "stath": 0.16, "statl": 0.16, "systh": 0.16, "systl": 0.16},
+    ]
+};
+
+dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-M2p2-M1p2"] = {
+    reference : "arXiv:2202.03863",
+    link : "https://arxiv.org/abs/2202.03863",
+    update : "2022-04-05",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "-2.2 < y<sub>cm</sub> < -1.2",
+    data : [
+        {"x": 8.2, "xl": 8.2, "xh": 8.2, "y": 0.38, "stath": 0.2, "statl": 0.2, "systh": 0.07, "systl": 0.07},
+        {"x": 4.3, "xl": 4.3, "xh": 4.3, "y": 0.61, "stath": 0.15, "statl": 0.15, "systh": 0.11, "systl": 0.11},
     ]
 };
 
