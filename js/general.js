@@ -15,6 +15,7 @@ var vars = [
     { name: "y",     title: "y",          pxmin: -4.5, pxmin_log: 0.1, pxmax: 4.5, step: 0.1 },
     { name: "absy",  title: "|y|",        pxmin: 0,    pxmin_log: 0.1, pxmax: 4,   step: 0.1 },
     { name: "Npart", title: "Npart",      pxmin: 0,    pxmin_log: 7,   pxmax: 450, step: 10 },
+    { name: "Ncoll", title: "Ncoll",      pxmin: 0,    pxmin_log: 1,   pxmax: 20, step: 10 },
     { name: "cent",  title: "Centrality", pxmin: 0,    pxmin_log: 4,   pxmax: 100, step: 5 },
 ];
 

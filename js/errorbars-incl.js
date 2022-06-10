@@ -134,6 +134,15 @@ var addaxistitle = function(xtitle, ytitle) {
         xtitle.append('tspan').attr('class', 'axistitle')
             .text(decodehtml('&#10217;'));
     }
+    else if(document.getElementById('xvariable').value === "Ncoll")
+    {
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text(decodehtml('&#10216;N'))
+            .append('tspan').attr('class', 'tsub')
+            .text('coll');
+        xtitle.append('tspan').attr('class', 'axistitle')
+            .text(decodehtml('&#10217;'));
+    }
 
     // ytitle
     if(document.getElementById('observable').value === "RAA")
