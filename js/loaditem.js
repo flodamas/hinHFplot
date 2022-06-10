@@ -25,7 +25,7 @@ function loaditem()
             false;
         var ifdrawy = thisitem.observable == obs ||
 	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3" || thisitem.observable == "v1" || thisitem.observable == "Deltav1")) ||
-	    (obs == "RpARAA" && (thisitem.observable == "RpA" || thisitem.observable == "RAA")) ||
+	    (obs == "RAB" && (thisitem.observable == "RpA" || thisitem.observable == "RAA" || thisitem.observable == "RAB")) ||
 	    (obs == "DsToD" && (thisitem.observable == "DsToD0" || thisitem.observable == "DsToDplusmn" || thisitem.observable == "DsToDstar")) ||
 	    (obs == "Ratio" && thisitem.observable.includes("To")) ||
             (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||

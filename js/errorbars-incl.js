@@ -159,16 +159,12 @@ var addaxistitle = function(xtitle, ytitle) {
             .append('tspan').attr('class', 'tsub')
             .text('pA');
     }
-    else if(document.getElementById('observable').value === "RpARAA")
+    else if(document.getElementById('observable').value === "RAB")
     {
         ytitle.append('tspan').attr('class', 'axistitle')
             .text('R')
             .append('tspan').attr('class', 'tsub')
-            .text('pA');
-        ytitle.append('tspan').attr('class', 'axistitle')
-            .text(', R')
-            .append('tspan').attr('class', 'tsub')
-            .text('AA');
+            .text('AB');
     }
     else if(document.getElementById('observable').value === "v2")
     {
