@@ -11132,6 +11132,56 @@ dataset["incJpsi_RpA_Ncoll_pAu_200GeV_PHENIX_pT-lt-7_ycm-M2p2-M1p2"] = {
     ]
 };
 
+dataset["incJpsi_RpA_Ncoll_pPb_8TeV_ALICE_pT-lt-20_ycm-2p03-3p53"] = {
+    reference : "JHEP 02 (2021) 002",
+    link : "https://arxiv.org/abs/2008.04806",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "p<sub>T</sub> < 20 GeV",
+    kineb : "2.03 < y<sub>cm</sub> < 3.53",
+    data : [
+        {"x": 12.7, "xl": 12.7, "xh": 12.7, "y": 0.692, "stath": 0.009, "statl": 0.009, "systh": 0.044, "systl": 0.044},
+        {"x": 11.5, "xl": 11.5, "xh": 11.5, "y": 0.693, "stath": 0.009, "statl": 0.009, "systh": 0.035, "systl": 0.035},
+        {"x": 10.4, "xl": 10.4, "xh": 10.4, "y": 0.728, "stath": 0.009, "statl": 0.009, "systh": 0.033, "systl": 0.033},
+        {"x": 9.21, "xl": 9.21, "xh": 9.21, "y": 0.714, "stath": 0.01, "statl": 0.01, "systh": 0.033, "systl": 0.033},
+        {"x": 7.82, "xl": 7.82, "xh": 7.82, "y": 0.712, "stath": 0.01, "statl": 0.01, "systh": 0.039, "systl": 0.039},
+        {"x": 6.37, "xl": 6.37, "xh": 6.37, "y": 0.715, "stath": 0.011, "statl": 0.011, "systh": 0.044, "systl": 0.044},
+        {"x": 4.93, "xl": 4.93, "xh": 4.93, "y": 0.75, "stath": 0.013, "statl": 0.013, "systh": 0.049, "systl": 0.049},
+        {"x": 3.63, "xl": 3.63, "xh": 3.63, "y": 0.771, "stath": 0.014, "statl": 0.014, "systh": 0.047, "systl": 0.047},
+        {"x": 2.53, "xl": 2.53, "xh": 2.53, "y": 0.845, "stath": 0.018, "statl": 0.018, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["incJpsi_RpA_Ncoll_pPb_8TeV_ALICE_pT-lt-20_ycm-M4p46-M2p96"] = {
+    reference : "JHEP 02 (2021) 002",
+    link : "https://arxiv.org/abs/2008.04806",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "p<sub>T</sub> < 20 GeV",
+    kineb : "-4.46 < y<sub>cm</sub> < -2.96",
+    data : [
+        {"x": 12.7, "xl": 12.7, "xh": 12.7, "y": 1.156, "stath": 0.014, "statl": 0.014, "systh": 0.069, "systl": 0.069},
+        {"x": 11.5, "xl": 11.5, "xh": 11.5, "y": 1.121, "stath": 0.011, "statl": 0.011, "systh": 0.054, "systl": 0.054},
+        {"x": 10.4, "xl": 10.4, "xh": 10.4, "y": 1.088, "stath": 0.012, "statl": 0.012, "systh": 0.047, "systl": 0.047},
+        {"x": 9.21, "xl": 9.21, "xh": 9.21, "y": 1.024, "stath": 0.011, "statl": 0.011, "systh": 0.044, "systl": 0.044},
+        {"x": 7.82, "xl": 7.82, "xh": 7.82, "y": 0.952, "stath": 0.011, "statl": 0.011, "systh": 0.049, "systl": 0.049},
+        {"x": 6.37, "xl": 6.37, "xh": 6.37, "y": 0.904, "stath": 0.011, "statl": 0.011, "systh": 0.054, "systl": 0.054},
+        {"x": 4.93, "xl": 4.93, "xh": 4.93, "y": 0.862, "stath": 0.013, "statl": 0.013, "systh": 0.055, "systl": 0.055},
+        {"x": 3.63, "xl": 3.63, "xh": 3.63, "y": 0.836, "stath": 0.014, "statl": 0.014, "systh": 0.048, "systl": 0.048},
+        {"x": 2.53, "xl": 2.53, "xh": 2.53, "y": 0.803, "stath": 0.016, "statl": 0.016, "systh": 0.033, "systl": 0.033},
+    ]
+};
+
 dataset["incJpsi_RpA_pT_HeAu_200GeV_PHENIX_cent-0-100_ycm-1p2-2p2"] = {
     reference : "PRC 102 (2020) 014902",
     link : "https://arxiv.org/abs/1910.14487",
@@ -13523,6 +13573,50 @@ dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-M2p2-M1p2"] = {
     data : [
         {"x": 8.2, "xl": 8.2, "xh": 8.2, "y": 0.38, "stath": 0.2, "statl": 0.2, "systh": 0.07, "systl": 0.07},
         {"x": 4.3, "xl": 4.3, "xh": 4.3, "y": 0.61, "stath": 0.15, "statl": 0.15, "systh": 0.11, "systl": 0.11},
+    ]
+};
+
+dataset["incpsi2S_RpA_Ncoll_pPb_8TeV_ALICE_pT-lt-20_ycm-2p03-3p53"] = {
+    reference : "JHEP 02 (2021) 002",
+    link : "https://arxiv.org/abs/2008.04806",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "p<sub>T</sub> < 20 GeV",
+    kineb : "2.03 < y<sub>cm</sub> < 3.53",
+    data : [
+        {"x": 2.53, "xl": 2.53, "xh": 2.53, "y": 1.065, "stath": 0.271, "statl": 0.271, "systh": 0.095, "systl": 0.095},
+        {"x": 4.28, "xl": 4.28, "xh": 4.28, "y": 0.697, "stath": 0.146, "statl": 0.146, "systh": 0.082, "systl": 0.082},
+        {"x": 7.09, "xl": 7.09, "xh": 7.09, "y": 0.619, "stath": 0.119, "statl": 0.119, "systh": 0.06, "systl": 0.06},
+        {"x": 9.81, "xl": 9.81, "xh": 9.81, "y": 0.471, "stath": 0.107, "statl": 0.107, "systh": 0.044, "systl": 0.044},
+        {"x": 11.5, "xl": 11.5, "xh": 11.5, "y": 0.514, "stath": 0.144, "statl": 0.144, "systh": 0.053, "systl": 0.053},
+        {"x": 12.7, "xl": 12.7, "xh": 12.7, "y": 0.858, "stath": 0.159, "statl": 0.159, "systh": 0.096, "systl": 0.096},
+    ]
+};
+
+dataset["incpsi2S_RpA_Ncoll_pPb_8TeV_ALICE_pT-lt-20_ycm-M4p46-M2p96"] = {
+    reference : "JHEP 02 (2021) 002",
+    link : "https://arxiv.org/abs/2008.04806",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "p<sub>T</sub> < 20 GeV",
+    kineb : "-4.46 < y<sub>cm</sub> < -2.96",
+    data : [
+        {"x": 2.53, "xl": 2.53, "xh": 2.53, "y": 0.652, "stath": 0.226, "statl": 0.226, "systh": 0.064, "systl": 0.064},
+        {"x": 4.28, "xl": 4.28, "xh": 4.28, "y": 0.45, "stath": 0.131, "statl": 0.131, "systh": 0.055, "systl": 0.055},
+        {"x": 7.09, "xl": 7.09, "xh": 7.09, "y": 0.516, "stath": 0.126, "statl": 0.126, "systh": 0.05, "systl": 0.05},
+        {"x": 9.81, "xl": 9.81, "xh": 9.81, "y": 0.742, "stath": 0.123, "statl": 0.123, "systh": 0.077, "systl": 0.077},
+        {"x": 11.5, "xl": 11.5, "xh": 11.5, "y": 0.58, "stath": 0.173, "statl": 0.173, "systh": 0.053, "systl": 0.053},
+        {"x": 12.7, "xl": 12.7, "xh": 12.7, "y": 1.017, "stath": 0.197, "statl": 0.197, "systh": 0.092, "systl": 0.092},
     ]
 };
 
