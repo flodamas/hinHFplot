@@ -5184,6 +5184,24 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
     ]
 };
 
+dataset["aprpsi2S_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
+    reference : "JHEP 03 (2016) 133",
+    link : "https://arxiv.org/abs/1601.07878",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Prompt &psi;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 14 GeV",
+    data : [
+        {"x": -3.25, "xl": -4, "xh": -2.5, "y": 0.499012, "stath": 0.165499, "statl": 0.165499, "systh": 0.15261, "systl": 0.15261},
+        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.42644, "stath": 0.0807069, "statl": 0.0807069, "systh": 0.063353, "systl": 0.063353},
+    ]
+};
+
 dataset["aprPsi2S_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     reference : "CMS-PAS-HIN-21-008",
     link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-008",
@@ -8139,6 +8157,24 @@ dataset["bTOpsi2SToJpsi_DoubleRatio_Npart_PbPb_5TeV_ATLAS_pT-9-40_absy-lt-2"] = 
         {"x": 46.7345, "xl": 45.4639, "xh": 48.0051, "y": 1.07585, "stath": 0.304207, "statl": 0.304207, "systh": 0.0866481, "systl": 0.0866481},
         {"x": 160.327, "xl": 158.332, "xh": 162.322, "y": 1.14177, "stath": 0.262048, "statl": 0.262048, "systh": 0.091957, "systl": 0.091957},
         {"x": 311.443, "xl": 309.057, "xh": 313.829, "y": 0.808783, "stath": 0.251761, "statl": 0.251761, "systh": 0.0651385, "systl": 0.0651385},
+    ]
+};
+
+dataset["bTOpsi2S_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
+    reference : "JHEP 03 (2016) 133",
+    link : "https://arxiv.org/abs/1601.07878",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "(b&rarr;) &psi;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 14 GeV",
+    data : [
+        {"x": -3.25, "xl": -4, "xh": -2.5, "y": 0.644134, "stath": 0.347301, "statl": 0.347301, "systh": 0.325758, "systl": 0.325758},
+        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.995288, "stath": 0.296863, "statl": 0.296863, "systh": 0.218237, "systl": 0.218237},
     ]
 };
 
@@ -13624,6 +13660,24 @@ dataset["incpsi2S_RpA_ycm_pPb_5TeV_ALICE__pT-lt-8"] = {
     data : [
         {"x": -3.71, "xl": -4.46, "xh": -2.96, "y": 0.56, "stath": 0.1, "statl": 0.1, "systh": 0.0848528, "systl": 0.0848528},
         {"x": 2.78, "xl": 2.03, "xh": 3.53, "y": 0.48, "stath": 0.06, "statl": 0.06, "systh": 0.0781025, "systl": 0.0781025},
+    ]
+};
+
+dataset["incpsi2S_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
+    reference : "JHEP 03 (2016) 133",
+    link : "https://arxiv.org/abs/1601.07878",
+    update : "2022-06-10",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive &psi;(2S)",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 14 GeV",
+    data : [
+        {"x": -3.25, "xl": -4, "xh": -2.5, "y": 0.510656, "stath": 0.159232, "statl": 0.159232, "systh": 0.14579, "systl": 0.14579},
+        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.472878, "stath": 0.0875008, "statl": 0.0875008, "systh": 0.0667562, "systl": 0.0667562},
     ]
 };
 
