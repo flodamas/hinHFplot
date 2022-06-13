@@ -15190,6 +15190,23 @@ dataset["piplusmn_v2_pT_PbPb_5TeV_ALICE_cent-60-70_absy-lt-0p5"] = {
     ]
 };
 
+dataset["Upsilon1SAnd2SAnd3S_RpA_Npart_pAu_200GeV_STAR_pT-lt-10_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RpA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(1S+2S+3S)",
+    collision : "pAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 4.6, "xl": 4.6, "xh": 4.6, "y": 0.82, "stath": 0.1, "statl": 0.1, "systh": 0.08, "systl": 0.07},
+    ]
+};
+
 dataset["Upsilon1S_RAA_absy_PbPb_2p76TeV_ALICE_cent-0-90_pT-gt-0"] = {
     reference : "PLB 738 (2014) 361",
     link : "https://arxiv.org/abs/1405.4493",
@@ -15293,6 +15310,25 @@ dataset["Upsilon1S_RAA_absy_PbPb_5TeV_CMS_cent-0-100_pT-lt-30"] = {
     ]
 };
 
+dataset["Upsilon1S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "&Upsilon;(1S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 45, "xl": 30, "xh": 60, "y": 0.7185, "stath": 0.0950135, "statl": 0.0950135, "systh": 0.106193, "systl": 0.108795},
+        {"x": 20, "xl": 10, "xh": 30, "y": 0.362, "stath": 0.0559361, "statl": 0.0559361, "systh": 0.0559361, "systl": 0.0558575},
+        {"x": 5, "xl": 0, "xh": 10, "y": 0.5031, "stath": 0.0601678, "statl": 0.0601678, "systh": 0.0498484, "systl": 0.0507658},
+    ]
+};
+
 dataset["Upsilon1S_RAA_cent_PbPb_2p76TeV_ALICE_pT-gt-0_y-2p5-4"] = {
     reference : "PLB 738 (2014) 361",
     link : "https://arxiv.org/abs/1405.4493",
@@ -15382,6 +15418,25 @@ dataset["Upsilon1S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
         {"x": 15, "xl": 10, "xh": 20, "y": 0.324, "stath": 0.017, "statl": 0.017, "systh": 0.02, "systl": 0.021},
         {"x": 7.5, "xl": 5, "xh": 10, "y": 0.321, "stath": 0.021, "statl": 0.021, "systh": 0.019, "systl": 0.02},
         {"x": 2.5, "xl": 0, "xh": 5, "y": 0.319, "stath": 0.019, "statl": 0.019, "systh": 0.019, "systl": 0.02},
+    ]
+};
+
+dataset["Upsilon1S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(1S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 80.4, "xl": 80.4, "xh": 80.4, "y": 0.7185, "stath": 0.0950135, "statl": 0.0950135, "systh": 0.106193, "systl": 0.108795},
+        {"x": 203.1, "xl": 203.1, "xh": 203.1, "y": 0.362, "stath": 0.0559361, "statl": 0.0559361, "systh": 0.0559361, "systl": 0.0558575},
+        {"x": 325.4, "xl": 325.4, "xh": 325.4, "y": 0.5031, "stath": 0.0601678, "statl": 0.0601678, "systh": 0.0498484, "systl": 0.0507658},
     ]
 };
 
@@ -15498,6 +15553,25 @@ dataset["Upsilon1S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
         {"x": 264.2, "xl": 264.2, "xh": 264.2, "y": 0.324, "stath": 0.017, "statl": 0.017, "systh": 0.02, "systl": 0.021},
         {"x": 333.3, "xl": 333.3, "xh": 333.3, "y": 0.321, "stath": 0.021, "statl": 0.021, "systh": 0.019, "systl": 0.02},
         {"x": 384.3, "xl": 384.3, "xh": 384.3, "y": 0.319, "stath": 0.019, "statl": 0.019, "systh": 0.019, "systl": 0.02},
+    ]
+};
+
+dataset["Upsilon1S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "&Upsilon;(1S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-60%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1, "xl": 0, "xh": 2, "y": 0.412251, "stath": 0.0609594, "statl": 0.0609594, "systh": 0.0671587, "systl": 0.0681919},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.562066, "stath": 0.0702583, "statl": 0.0702583, "systh": 0.0867897, "systl": 0.0857565},
+        {"x": 7, "xl": 4, "xh": 10, "y": 0.579631, "stath": 0.116753, "statl": 0.116753, "systh": 0.114686, "systl": 0.11262},
     ]
 };
 
@@ -16059,6 +16133,63 @@ dataset["Upsilon1S_v2_pT_pPb_8TeV_CMS_Ntrk-69-300_absy-lt-2p4"] = {
         {"x": 4.5, "xl": 3, "xh": 6, "y": -0.0063431, "stath": 0.0305302, "statl": 0.0305302, "systh": 0.00424858, "systl": 0.00424858},
         {"x": 8, "xl": 6, "xh": 10, "y": 0.0147669, "stath": 0.033223, "statl": 0.033223, "systh": 0.0145865, "systl": 0.0145865},
         {"x": 20, "xl": 10, "xh": 30, "y": -0.0129662, "stath": 0.0375717, "statl": 0.0375717, "systh": 0.0255005, "systl": 0.0255005},
+    ]
+};
+
+dataset["Upsilon2SAnd3S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RAA",
+    xtitle : "cent",
+    particle : "&Upsilon;(2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 45, "xl": 30, "xh": 90, "y": 0.744, "stath": 0.174135, "statl": 0.174135, "systh": 0.144083, "systl": 0.137782},
+        {"x": 20, "xl": 10, "xh": 30, "y": 0.1933, "stath": 0.101001, "statl": 0.101001, "systh": 0.0833839, "systl": 0.0876005},
+        {"x": 5, "xl": 0, "xh": 10, "y": 0.1725, "stath": 0.0876036, "statl": 0.0876036, "systh": 0.0616969, "systl": 0.0605829},
+    ]
+};
+
+dataset["Upsilon2SAnd3S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "&Upsilon;(2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "p<sub>T</sub> < 10 GeV",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 80.4, "xl": 80.4, "xh": 80.4, "y": 0.744, "stath": 0.174135, "statl": 0.174135, "systh": 0.144083, "systl": 0.137782},
+        {"x": 203.1, "xl": 203.1, "xh": 203.1, "y": 0.1933, "stath": 0.101001, "statl": 0.101001, "systh": 0.0833839, "systl": 0.0876005},
+        {"x": 325.4, "xl": 325.4, "xh": 325.4, "y": 0.1725, "stath": 0.0876036, "statl": 0.0876036, "systh": 0.0616969, "systl": 0.0605829},
+    ]
+};
+
+dataset["Upsilon2SAnd3S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-0p5"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/656452/contributions/2870011/attachments/1649058/2636575/Upsilon_draft_QM2018v13.pdf#page=7",
+    update : "2022-06-13",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "&Upsilon;(2S+3S)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-60%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 1, "xl": 0, "xh": 2, "y": 0.383212, "stath": 0.146131, "statl": 0.146131, "systh": 0.129781, "systl": 0.128759},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.252409, "stath": 0.115474, "statl": 0.115474, "systh": 0.0858394, "systl": 0.0868613},
+        {"x": 7, "xl": 4, "xh": 10, "y": 0.451679, "stath": 0.164526, "statl": 0.164526, "systh": 0.127737, "systl": 0.127737},
     ]
 };
 
