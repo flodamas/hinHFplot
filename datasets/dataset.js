@@ -13246,6 +13246,26 @@ dataset["incJpsi_v2_pT_pp_13TeV_ALICE_cent-0-5_absy-2p5-4"] = {
     ]
 };
 
+dataset["incJpsi_v2_pT_RuRuZrZr_200GeV_STAR_cent-0-80_absy-lt-1"] = {
+    reference : "STAR Preliminary",
+    link : "https://indico.cern.ch/event/1037821/contributions/4853847/attachments/2460525/4218533/STAROverview_BTrzeciak_final.pdf#page=13",
+    update : "2022-06-13",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "RuRu+ZrZr",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "0-80%",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 0.65, "xl": 0.3, "xh": 1, "y": -0.0504753, "stath": 0.0321987, "statl": 0.0321987, "systh": 0.00114995, "systl": 0.000766635},
+        {"x": 1.75, "xl": 1, "xh": 2.5, "y": 0.0223551, "stath": 0.0210825, "statl": 0.0210825, "systh": 0.00919963, "systl": 0.0103496},
+        {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.0116222, "stath": 0.0379485, "statl": 0.0379485, "systh": 0.0229991, "systl": 0.0229991},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.0817694, "stath": 0.0885464, "statl": 0.0885464, "systh": 0.0532812, "systl": 0.0525146},
+    ]
+};
+
 dataset["incJpsi_v3_cent_PbPb_5TeV_ALICE_pT-5-20_y-2p5-4"] = {
     reference : "JHEP 10 (2020) 141",
     link : "https://arxiv.org/abs/2005.14518",
