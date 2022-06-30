@@ -1,7 +1,8 @@
 var obss = [
     { name: "RAA",         title: "RAA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.5,  step: 0.05 },
     { name: "RpA",         title: "RpA",            pymin: 0,     pymin_log: 0.1,  pymax: 1.8,  step: 0.05 },
-    { name: "RAB",      title: "RAB",       pymin: 0,     pymin_log: 0.1,  pymax: 1.5,  step: 0.05 },
+    { name: "RAB",         title: "RAB",            pymin: 0,     pymin_log: 0.1,  pymax: 1.5,  step: 0.05 },
+    { name: "v1",          title: "v1",             pymin: -0.5,  pymin_log: 0.02, pymax: 0.5,  step: 0.05 },
     { name: "v2",          title: "v2",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24, step: 0.01 },
     { name: "v3",          title: "v3",             pymin: -0.03, pymin_log: 0.02, pymax: 0.2,  step: 0.01 },
     { name: "vn",          title: "vn",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24, step: 0.01 },

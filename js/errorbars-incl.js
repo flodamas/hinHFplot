@@ -150,47 +150,24 @@ var addaxistitle = function(xtitle, ytitle) {
     }
 
     // ytitle
-    if(document.getElementById('observable').value === "RAA")
+    if(document.getElementById('observable').value === "Ratio")
+    {
+        ytitle.append('tspan').style('font-size', titlesize)
+            .text('Yield ratio');
+    }
+    else if(document.getElementById('observable').value.startsWith("R"))
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
             .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('AA');
+            .text(document.getElementById('observable').value.substring(1));
     }
-    else if(document.getElementById('observable').value === "RpA")
-    {
-        ytitle.append('tspan').style('font-size', titlesize)
-            .text('R')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('pA');
-    }
-    else if(document.getElementById('observable').value === "RAB")
-    {
-        ytitle.append('tspan').style('font-size', titlesize)
-            .text('R')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('AB');
-    }
-    else if(document.getElementById('observable').value === "v2")
+    else if(document.getElementById('observable').value.startsWith("v"))
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
             .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('2');
-    }
-    else if(document.getElementById('observable').value === "v3")
-    {
-        ytitle.append('tspan').style('font-size', titlesize)
-            .text('v')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('3');
-    }
-    else if(document.getElementById('observable').value === "vn")
-    {
-        ytitle.append('tspan').style('font-size', titlesize)
-            .text('v')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('n');
+            .text(document.getElementById('observable').value.substring(1));
     }
     else if(document.getElementById('observable').value === "LcToD0")
     {
@@ -202,11 +179,6 @@ var addaxistitle = function(xtitle, ytitle) {
             .text(' / D')
             .append('tspan').style('font-size', subsize).attr('baseline-shift', supshift)
             .text('0');
-    }
-    else if(document.getElementById('observable').value === "Ratio")
-    {
-        ytitle.append('tspan').style('font-size', titlesize)
-            .text('Yield ratio');
     }
     else if(document.getElementById('observable').value === "DoubleRatio") // improvable if one can access the yield ratio name
     {
