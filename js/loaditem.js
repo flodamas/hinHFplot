@@ -8,7 +8,7 @@ function clearitems()
     }
 }
 
-function loaditem()
+function loaditem(ifsPHENIX = false)
 {
     var datainput = document.getElementById('datainput');
     clearitems();
@@ -31,7 +31,7 @@ function loaditem()
             (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||
             false;
 
-        if(!ifdrawx || !ifdrawy) { continue; }
+        if(!ifdrawx || !ifdrawy || (thisitem.collab === "sPHENIX" && !ifsPHENIX)) { continue; }
 
         var iline = document.createElement("tr");
         iline.id = "tr_" + da;

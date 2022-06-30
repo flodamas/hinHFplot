@@ -8789,6 +8789,30 @@ dataset["cTOmu_v3_pT_PbPb_5TeV_ATLAS_cent-40-60_abseta-lt-2"] = {
     ]
 };
 
+dataset["D0_v1_y_AuAu_200GeV_sPHENIX_cent-0-80_pT-gt-1p5"] = {
+    reference : "sPH-TRG-2020-001",
+    link : "https://indico.bnl.gov/event/7881/attachments/30176/47160/sPH-TRG-2020-001.pdf",
+    update : "2022-06-30",
+    observable : "v1",
+    xtitle : "y",
+    particle : "D<sup>0</sup>",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "sPHENIX",
+    kinea : "0-80%",
+    kineb : "p<sub>T</sub> > 1.5 GeV",
+    data : [
+        {"x": -0.875, "xl": -0.875, "xh": -0.875, "y": 0.0392142, "stath": 0.00370645, "statl": 0.00370645, "systh": 0.000444777, "systl": 0.000444777},
+        {"x": -0.625, "xl": -0.625, "xh": -0.625, "y": 0.0307635, "stath": 0.00340993, "statl": 0.00340993, "systh": 0.000148257, "systl": 0.000148257},
+        {"x": -0.375, "xl": -0.375, "xh": -0.375, "y": 0.0199407, "stath": 0.00340993, "statl": 0.00340993, "systh": 0.000296516, "systl": 0.000296516},
+        {"x": -0.125, "xl": -0.125, "xh": -0.125, "y": 0.00822832, "stath": 0.00355819, "statl": 0.00355819, "systh": 0.000148257, "systl": 0.000148257},
+        {"x": 0.125, "xl": 0.125, "xh": 0.125, "y": -0.00481838, "stath": 0.00370645, "statl": 0.00370645, "systh": 0, "systl": 0},
+        {"x": 0.375, "xl": 0.375, "xh": 0.375, "y": -0.0172721, "stath": 0.00400297, "statl": 0.00400297, "systh": 0.000296516, "systl": 0.000296516},
+        {"x": 0.625, "xl": 0.625, "xh": 0.625, "y": -0.0301705, "stath": 0.00340993, "statl": 0.00340993, "systh": 0.000296516, "systl": 0.000296516},
+        {"x": 0.875, "xl": 0.875, "xh": 0.875, "y": -0.0387695, "stath": 0.00311342, "statl": 0.00311342, "systh": 0.000296518, "systl": 0.000296518},
+    ]
+};
+
 dataset["D0_v1_y_AuAu_200GeV_STAR_cent-10-80_pT-gt-1p5"] = {
     reference : "PRL 123 (2019) 162301",
     link : "https://arxiv.org/abs/1905.02052",
