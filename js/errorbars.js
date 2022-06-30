@@ -41,6 +41,7 @@ var drawaxisgrid = function()
 {
     var ticksx = checklogx()?10:5, ticksy = checklogy()?10:5;
     var ticksizex = -chartWidth/40., ticksizey = -chartWidth/40.;
+    var labelsize = width/26.;
 
     // ==> Grid <==
     d3.select("svg").select("g").append('g')
@@ -87,13 +88,13 @@ var drawaxisgrid = function()
     var x_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr('stroke-width', stroke_width_axis())
-        .style('font-size', width/30.)
+        .style('font-size', labelsize)
         .call( xaxis );
     // yaxis
     var y_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
-        .style('font-size', width/30.)
+        .style('font-size', labelsize)
         .call( yaxis );
     // xframe
     var x_frame = d3.select("svg").select("g").append('g')

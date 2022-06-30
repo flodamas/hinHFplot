@@ -22,8 +22,8 @@ function setbasic()
     chartHeight = height - margin.top - margin.bottom;
     x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
     y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
-    dxmark = chartWidth/45.; //
-    legsize = (0.8+(document.getElementById('legsizerange').value)/200)*2.75;
+    dxmark = chartWidth/40.; //
+    legsize = (0.8+(document.getElementById('legsizerange').value)/200)*3.;
     dy = legsize*chartWidth*0.017; //
 
     document.getElementById('tx0').innerText = " " + document.getElementById('x0range').value;
@@ -68,7 +68,7 @@ function checkandremove(id) { if( document.getElementById(id) ) { document.getEl
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.28; }
-var stroke_width_axis = function() { return width/100.*0.2; }
+var stroke_width_axis = function() { return width/100.*0.23; }
 
 var xoverflow = function(x)
 {
@@ -94,7 +94,7 @@ var ythrow = function(y)
 }
 
 var addaxistitle = function(xtitle, ytitle) {
-    var titlesize = width/24.,
+    var titlesize = width/23.,
         subsize = titlesize*0.6,
         subshift = "-40%",
         supshift = "60%";
