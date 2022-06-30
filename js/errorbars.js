@@ -87,26 +87,32 @@ var drawaxisgrid = function()
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( xaxis );
-    shortenminor(x_axis, xaxismajor, ticksizex);
     // yaxis
     var y_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
         .call( yaxis );
-    shortenminor(y_axis, yaxismajor, ticksizey);
     // xframe
-    d3.select("svg").select("g").append('g')
+    var x_frame = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
-        .call( d3.axisBottom(x).tickFormat("").tickSize(0).ticks(ticksx).tickSizeOuter(0) );
+    // .call( d3.axisBottom(x).tickFormat("").tickSize(0).ticks(ticksx).tickSizeOuter(0) );
+        .call( xaxis.tickFormat("").tickSize(0-ticksizex) );
     // yframe
-    d3.select("svg").select("g").append('g')
+    var y_frame = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(' + chartWidth + ',0)')
         .attr('stroke-width', stroke_width_axis())
         .attr("class", "axis")
-        .call( d3.axisLeft(y).tickFormat("").tickSize(0).ticks(ticksy).tickSizeOuter(0) );
+    // .call( d3.axisLeft(y).tickFormat("").tickSize(0).ticks(ticksy).tickSizeOuter(0) );
+        .call( yaxis.tickFormat("").tickSize(0-ticksizey) );
+
+    shortenminor(x_axis, xaxismajor, ticksizex);
+    shortenminor(y_axis, yaxismajor, ticksizey);
+    shortenminor(x_frame, xaxismajor, ticksizex);
+    shortenminor(y_frame, yaxismajor, ticksizey);
+
     var xtitle = svg.append("text")
         .attr("transform",
               "translate(" + (chartWidth/2. + margin.left) + " ," +
