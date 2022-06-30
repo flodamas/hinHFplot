@@ -141,7 +141,7 @@ var drawaxisgrid = function()
     var tmark = svg.append("text")
         .attr("transform",
               "translate(" + (margin.left*0.1) + " ," +
-              (height*0.97) + ")")
+              (height-width*0.022) + ")")
         .style("text-anchor", "start")
         .style("fill", "#bbbbbb")
         .style("font-family", "'Courier New', monospace")
