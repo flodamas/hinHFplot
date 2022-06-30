@@ -3,6 +3,8 @@ function setscale()
 {
     setbasic();
     svg = d3.select('svg').attr('width', width).attr('height', height)
+        .attr('font-family', 'sans-serif')
+        .attr('font-weight', '400')
         .attr('font-size', width/100.);
 
     xmin = Math.min(document.getElementById('pxmin').value,
@@ -85,27 +87,23 @@ var drawaxisgrid = function()
     var x_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,' + chartHeight + ')')
         .attr('stroke-width', stroke_width_axis())
-        .attr("class", "axis")
+        .style('font-size', width/30.)
         .call( xaxis );
     // yaxis
     var y_axis = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
-        .attr("class", "axis")
+        .style('font-size', width/30.)
         .call( yaxis );
     // xframe
     var x_frame = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(0,0)')
         .attr('stroke-width', stroke_width_axis())
-        .attr("class", "axis")
-    // .call( d3.axisBottom(x).tickFormat("").tickSize(0).ticks(ticksx).tickSizeOuter(0) );
         .call( xaxis.tickFormat("").tickSize(0-ticksizex) );
     // yframe
     var y_frame = d3.select("svg").select("g").append('g')
         .attr('transform', 'translate(' + chartWidth + ',0)')
         .attr('stroke-width', stroke_width_axis())
-        .attr("class", "axis")
-    // .call( d3.axisLeft(y).tickFormat("").tickSize(0).ticks(ticksy).tickSizeOuter(0) );
         .call( yaxis.tickFormat("").tickSize(0-ticksizey) );
 
     shortenminor(x_axis, xaxismajor, ticksizex);
@@ -122,7 +120,6 @@ var drawaxisgrid = function()
         .attr("transform", "rotate(-90)")
         .attr("y", margin.left / 3.8)
         .attr("x", 0 - (margin.top + chartHeight / 2.))
-        .attr("class", "ytitle")
         .style("text-anchor", "middle")
     addaxistitle(xtitle, ytitle);
 
@@ -145,8 +142,11 @@ var drawaxisgrid = function()
         .attr("transform",
               "translate(" + (margin.left*0.1) + " ," +
               (height*0.97) + ")")
-        .attr("class", "watermark")
         .style("text-anchor", "start")
+        .style("fill", "#bbbbbb")
+        .style("font-family", "'Courier New', monospace")
+        .style("font-weight", "400")
+        .style("font-size", "2.2em")    
         .text("boundino.github.io/hinHFplot");
 }
 

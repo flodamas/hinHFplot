@@ -41,7 +41,7 @@ function legone(da, transt = 500)
         var tlegend = svg.append("text")
             .attr("x", x0 + dxmark)
             .attr("y", ynow)
-            .attr("class", "legend middlebaseline")
+            .attr("class", "legend")
             .attr("id", "legend_" + da)
             .attr('opacity', '0')
             .style("text-anchor", "start");
@@ -177,8 +177,8 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpc)
     {
         tlegend.append('tspan')
-            .attr("class", rpc[p].cl+" middlebaseline")
-            .style("dominant-baseline", "middle")
+            .attr("class", rpc[p].cl)
+            .attr("dominant-baseline", "middle")
             .attr('display', legdrawornot("observable"))
             .text(decodehtml(rpc[p].content));
     }
@@ -188,25 +188,25 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpp)
     {
         tlegend.append('tspan')
-            .attr("class", rpp[p].cl+" middlebaseline")
-            .style("dominant-baseline", "middle")
+            .attr("class", rpp[p].cl)
+            .attr("dominant-baseline", "middle")
             .attr('display', legdrawornot("particle"))
             .text(decodehtml(rpp[p].content));
     }
     // collab
     tlegend.append('tspan')
-        .attr("class", "middlebaseline")
+        .attr("dominant-baseline", "middle")
         .attr('display', legdrawornot("collab"))
         .text(' (' + thisitem.collab + ')');
     // collision1
     tlegend.append('tspan')
-        .attr("class", "middlebaseline")
+        .attr("dominant-baseline", "middle")
         .style("font-style", "italic")
         .attr('display', legdrawornot("collision1"))
         .text('  ' + thisitem.collision);
     // collision2
     tlegend.append('tspan')
-        .attr("class", "middlebaseline")
+        .attr("dominant-baseline", "middle")
         .style("font-style", "italic")
         .attr('display', legdrawornot("collision2"))
         .text('  ' + thisitem.energy);
@@ -217,7 +217,8 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpa)
     {
         tlegend.append('tspan')
-            .attr("class", rpa[p].cl+" middlebaseline")
+            .attr("class", rpa[p].cl)
+            .attr("dominant-baseline", "middle")
             .attr('display', legdrawornot("kinea"))
             .text(decodehtml(rpa[p].content));
     }
@@ -228,7 +229,8 @@ function legenditem(tlegend, thisitem, type=1)
     for(var p in rpb)
     {
         tlegend.append('tspan')
-            .attr("class", rpb[p].cl+" middlebaseline")
+            .attr("class", rpb[p].cl)
+            .attr("dominant-baseline", "middle")
             .attr('display', legdrawornot("kineb"))
             .text(decodehtml(rpb[p].content));
     }

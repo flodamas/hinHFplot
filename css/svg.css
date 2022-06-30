@@ -1,38 +1,11 @@
 svg {
-    font-family: sans-serif;
-    font-weight: 400;
-    /* font-family: 'Noto Sans', sans-serif; */
-}
-
-.axis {
-    font-size: 3.2em;
-}
-
-.axistitle {
-    font-size: 4.1em;
-}
-
-.middlebaseline {
-    dominant-baseline: middle;    
-}
-
-.axis path,
-.axis line {
-    /* stroke-width: 0.055em; */
 }
 
 .grid path,
 .grid line
 {
-    /* stroke: black; */
-    stroke: #e5e5e5;
-    stroke-dasharray: 5,3;
-}
-
-.axis path,
-.axis line {
     stroke: black;
-    stroke-opacity: 1;
+    stroke-dasharray: 2,4;
 }
 
 .tsub,
@@ -41,19 +14,8 @@ svg {
 }
 
 .tsub {
-    /* baseline-shift: sub; */
     baseline-shift: -20%;
 }
 .tsup {
-    /* baseline-shift: super; */
     baseline-shift: 70%;
 }
-
-.watermark {
-    fill: #bbbbbb;
-    font-family: 'Courier New', monospace;
-    /* font-weight: lighter; */
-    font-weight: 400;
-    font-size: 2.2em;
-}
-

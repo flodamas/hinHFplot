@@ -94,122 +94,123 @@ var ythrow = function(y)
 }
 
 var addaxistitle = function(xtitle, ytitle) {
+    var titlesize = width/24.;
     // xtitle
     if(document.getElementById('xvariable').value === "pT")
     {
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text('p')
             .append('tspan').attr('class', 'tsub')
             .text('T');
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text(' (GeV/c)');
     }
     else if(document.getElementById('xvariable').value === "y")
     {
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text('y')
             .append('tspan').attr('class', 'tsub')
             .text('CM');
     }
     else if(document.getElementById('xvariable').value === "absy")
     {
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text('|y')
             .append('tspan').attr('class', 'tsub')
             .text('CM');
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text('|');
     }
     else if(document.getElementById('xvariable').value === "cent")
     {
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text('Centrality');
     }
     else if(document.getElementById('xvariable').value === "Npart")
     {
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10216;N'))
             .append('tspan').attr('class', 'tsub')
             .text('part');
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10217;'));
     }
     else if(document.getElementById('xvariable').value === "Ncoll")
     {
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10216;N'))
             .append('tspan').attr('class', 'tsub')
             .text('coll');
-        xtitle.append('tspan').attr('class', 'axistitle')
+        xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10217;'));
     }
 
     // ytitle
     if(document.getElementById('observable').value === "RAA")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
             .append('tspan').attr('class', 'tsub')
             .text('AA');
     }
     else if(document.getElementById('observable').value === "RpA")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
             .append('tspan').attr('class', 'tsub')
             .text('pA');
     }
     else if(document.getElementById('observable').value === "RAB")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
             .append('tspan').attr('class', 'tsub')
             .text('AB');
     }
     else if(document.getElementById('observable').value === "v2")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
             .append('tspan').attr('class', 'tsub')
             .text('2');
     }
     else if(document.getElementById('observable').value === "v3")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
             .append('tspan').attr('class', 'tsub')
             .text('3');
     }
     else if(document.getElementById('observable').value === "vn")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
             .append('tspan').attr('class', 'tsub')
             .text('n');
     }
     else if(document.getElementById('observable').value === "LcToD0")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&Lambda;'))
             .append('tspan').attr('class', 'tsub')
             .text('c');
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text(' / D')
             .append('tspan').attr('class', 'tsup')
             .text('0');
     }
     else if(document.getElementById('observable').value === "Ratio")
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('Yield ratio');
     }
     else if(document.getElementById('observable').value === "DoubleRatio") // improvable if one can access the yield ratio name
     {
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text('(Yield ratio)')
             .append('tspan').attr('class', 'tsub')
             .text('AA');
-        ytitle.append('tspan').attr('class', 'axistitle')
+        ytitle.append('tspan').style('font-size', titlesize)
             .text(' / (Yield ratio)')
             .append('tspan').attr('class', 'tsub')
             .text('pp');
