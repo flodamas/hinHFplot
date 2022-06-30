@@ -45,7 +45,7 @@ function legone(da, transt = 500)
             .attr("id", "legend_" + da)
             .attr('opacity', '0')
             .style("text-anchor", "start");
-        legenditem(tlegend, thisitem);
+        legenditem(tlegend, thisitem, "legend_" + da);
         legendmarker(da, x0, ynow, transt);
         tlegend.transition().attr('opacity', 1.).duration(transt);
     }
@@ -167,7 +167,7 @@ function parsescript(pa)
     return results;
 }
 
-function legenditem(tlegend, thisitem, type=1)
+function legenditem(tlegend, thisitem, tlegendid)
 {
     var type_legend = document.getElementById('btnlegend').value;
     tlegend.style('font-size', legsize + "em");
@@ -233,6 +233,21 @@ function legenditem(tlegend, thisitem, type=1)
             .attr("dominant-baseline", "middle")
             .attr('display', legdrawornot("kineb"))
             .text(decodehtml(rpb[p].content));
+    }
+
+    var childtspan = document.querySelectorAll('#'+tlegendid+' > tspan');
+    for (var i = 0; i < childtspan.length; i++) {
+        var itspan = childtspan[i];
+        if(itspan.classList.contains("tsup"))
+        {
+            itspan.style.fontSize = "0.6em";
+            itspan.style.baselineShift = "60%";
+        }
+        if(itspan.classList.contains("tsub"))
+        {
+            itspan.style.fontSize = "0.6em";
+            itspan.style.baselineShift = "-50%";
+        }
     }
 }
 

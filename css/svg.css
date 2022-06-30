@@ -7,15 +7,3 @@ svg {
     stroke: black;
     stroke-dasharray: 2,4;
 }
-
-.tsub,
-.tsup {
-    font-size: 0.6em;
-}
-
-.tsub {
-    baseline-shift: -20%;
-}
-.tsup {
-    baseline-shift: 70%;
-}

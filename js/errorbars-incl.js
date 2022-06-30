@@ -94,13 +94,17 @@ var ythrow = function(y)
 }
 
 var addaxistitle = function(xtitle, ytitle) {
-    var titlesize = width/24.;
+    var titlesize = width/24.,
+        subsize = titlesize*0.6,
+        subshift = "-40%",
+        supshift = "60%";
     // xtitle
     if(document.getElementById('xvariable').value === "pT")
     {
         xtitle.append('tspan').style('font-size', titlesize)
             .text('p')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+            .style('font-size', subsize).attr('baseline-shift', subshift)
             .text('T');
         xtitle.append('tspan').style('font-size', titlesize)
             .text(' (GeV/c)');
@@ -109,14 +113,14 @@ var addaxistitle = function(xtitle, ytitle) {
     {
         xtitle.append('tspan').style('font-size', titlesize)
             .text('y')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('CM');
     }
     else if(document.getElementById('xvariable').value === "absy")
     {
         xtitle.append('tspan').style('font-size', titlesize)
             .text('|y')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('CM');
         xtitle.append('tspan').style('font-size', titlesize)
             .text('|');
@@ -130,7 +134,7 @@ var addaxistitle = function(xtitle, ytitle) {
     {
         xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10216;N'))
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('part');
         xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10217;'));
@@ -139,7 +143,7 @@ var addaxistitle = function(xtitle, ytitle) {
     {
         xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10216;N'))
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('coll');
         xtitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&#10217;'));
@@ -150,53 +154,53 @@ var addaxistitle = function(xtitle, ytitle) {
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('AA');
     }
     else if(document.getElementById('observable').value === "RpA")
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('pA');
     }
     else if(document.getElementById('observable').value === "RAB")
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('R')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('AB');
     }
     else if(document.getElementById('observable').value === "v2")
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('2');
     }
     else if(document.getElementById('observable').value === "v3")
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('3');
     }
     else if(document.getElementById('observable').value === "vn")
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('v')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('n');
     }
     else if(document.getElementById('observable').value === "LcToD0")
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text(decodehtml('&Lambda;'))
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('c');
         ytitle.append('tspan').style('font-size', titlesize)
             .text(' / D')
-            .append('tspan').attr('class', 'tsup')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', supshift)
             .text('0');
     }
     else if(document.getElementById('observable').value === "Ratio")
@@ -208,11 +212,11 @@ var addaxistitle = function(xtitle, ytitle) {
     {
         ytitle.append('tspan').style('font-size', titlesize)
             .text('(Yield ratio)')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('AA');
         ytitle.append('tspan').style('font-size', titlesize)
             .text(' / (Yield ratio)')
-            .append('tspan').attr('class', 'tsub')
+            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
             .text('pp');
     }
 }
