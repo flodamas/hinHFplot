@@ -8197,6 +8197,35 @@ dataset["cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8"] = {
     ]
 };
 
+dataset["chadTOe_RAA_pT_AuAu_200GeV_PHENIX_cent-0-10_absy-lt-0p35"] = {
+    reference : "arXiv:2203.17058",
+    link : "https://arxiv.org/abs/2203.17058",
+    update : "2022-06-30",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "c hadron (&rarr;e)",
+    collision : "AuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-10%",
+    kineb : "|y| < 0.35",
+    data : [
+        {"x": 1.25, "xl": 1, "xh": 1.5, "y": 0.909485, "stath": 0, "statl": 0, "systh": 0.388717, "systl": 0.262244},
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 1.00806, "stath": 0, "statl": 0, "systh": 0.238066, "systl": 0.197148},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.950403, "stath": 0, "statl": 0, "systh": 0.191568, "systl": 0.197148},
+        {"x": 2.74, "xl": 2.5, "xh": 3, "y": 0.784873, "stath": 0, "statl": 0, "systh": 0.146931, "systl": 0.132052},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.576565, "stath": 0, "statl": 0, "systh": 0.122753, "systl": 0.0929944},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.407316, "stath": 0, "statl": 0, "systh": 0.158091, "systl": 0.0892746},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.290143, "stath": 0, "statl": 0, "systh": 0.141352, "systl": 0.0743955},
+        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.226906, "stath": 0, "statl": 0, "systh": 0.0762554, "systl": 0.0650961},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.197148, "stath": 0, "statl": 0, "systh": 0.0688159, "systl": 0.0781153},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.17111, "stath": 0, "statl": 0, "systh": 0.0855549, "systl": 0.0892746},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.152511, "stath": 0, "statl": 0, "systh": 0.0874148, "systl": 0.0855549},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.132052, "stath": 0, "statl": 0, "systh": 0.0929944, "systl": 0.0762554},
+        {"x": 10.5, "xl": 9, "xh": 12, "y": 0.111593, "stath": 0, "statl": 0, "systh": 0.100434, "systl": 0.0595164},
+    ]
+};
+
 dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     reference : "arXiv:2111.14615",
     link : "https://arxiv.org/abs/2111.14615",
