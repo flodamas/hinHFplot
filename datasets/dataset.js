@@ -13277,6 +13277,90 @@ dataset["incJpsi_v2_pT_PbPb_5TeV_ALICE_cent-5-60_y-2p5-4"] = {
     ]
 };
 
+dataset["incJpsi_v2_pT_pPb_5TeV_ALICE_cent-0-20_y-2p03-3p53"] = {
+    reference : "PLB 780 (2018) 7",
+    link : "https://arxiv.org/abs/1709.06807",
+    update : "2022-07-09",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-20%",
+    kineb : "2.03 < y < 3.53",
+    data : [
+        {"x": 1.23, "xl": 0, "xh": 2, "y": 0.016, "stath": 0.029, "statl": 0.029, "systh": 0.009, "systl": 0.009},
+        {"x": 2.48, "xl": 2, "xh": 3, "y": -0.045, "stath": 0.035, "statl": 0.035, "systh": 0.016, "systl": 0.016},
+        {"x": 3.46, "xl": 3, "xh": 4, "y": 0.018, "stath": 0.042, "statl": 0.042, "systh": 0.024, "systl": 0.024},
+        {"x": 4.86, "xl": 4, "xh": 6, "y": 0.064, "stath": 0.037, "statl": 0.037, "systh": 0.018, "systl": 0.018},
+        {"x": 6.85, "xl": 6, "xh": 8, "y": 0.035, "stath": 0.059, "statl": 0.059, "systh": 0.024, "systl": 0.024},
+    ]
+};
+
+dataset["incJpsi_v2_pT_pPb_5TeV_ALICE_cent-0-20_y-M4p46-M2p96"] = {
+    reference : "PLB 780 (2018) 7",
+    link : "https://arxiv.org/abs/1709.06807",
+    update : "2022-07-09",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-20%",
+    kineb : "-4.46 < y < -2.96",
+    data : [
+        {"x": 1.22, "xl": 0, "xh": 2, "y": 0.014, "stath": 0.033, "statl": 0.033, "systh": 0.025, "systl": 0.025},
+        {"x": 2.47, "xl": 2, "xh": 3, "y": 0.027, "stath": 0.042, "statl": 0.042, "systh": 0.024, "systl": 0.024},
+        {"x": 3.46, "xl": 3, "xh": 4, "y": 0.136, "stath": 0.051, "statl": 0.051, "systh": 0.028, "systl": 0.028},
+        {"x": 4.84, "xl": 4, "xh": 6, "y": 0.137, "stath": 0.055, "statl": 0.055, "systh": 0.062, "systl": 0.062},
+        {"x": 6.81, "xl": 6, "xh": 8, "y": 0.037, "stath": 0.091, "statl": 0.091, "systh": 0.085, "systl": 0.09},
+    ]
+};
+
+dataset["incJpsi_v2_pT_pPb_8TeV_ALICE_cent-0-20_y-2p03-3p53"] = {
+    reference : "PLB 780 (2018) 7",
+    link : "https://arxiv.org/abs/1709.06807",
+    update : "2022-07-09",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "0-20%",
+    kineb : "2.03 < y < 3.53",
+    data : [
+        {"x": 1.24, "xl": 0, "xh": 2, "y": -0.014, "stath": 0.023, "statl": 0.023, "systh": 0.015, "systl": 0.015},
+        {"x": 2.48, "xl": 2, "xh": 3, "y": 0.004, "stath": 0.026, "statl": 0.026, "systh": 0.016, "systl": 0.016},
+        {"x": 3.48, "xl": 3, "xh": 4, "y": 0.038, "stath": 0.029, "statl": 0.029, "systh": 0.016, "systl": 0.016},
+        {"x": 4.87, "xl": 4, "xh": 6, "y": 0.092, "stath": 0.026, "statl": 0.026, "systh": 0.013, "systl": 0.015},
+        {"x": 6.83, "xl": 6, "xh": 8, "y": 0.033, "stath": 0.039, "statl": 0.039, "systh": 0.019, "systl": 0.026},
+    ]
+};
+
+dataset["incJpsi_v2_pT_pPb_8TeV_ALICE_cent-0-20_y-M4p46-M2p96"] = {
+    reference : "PLB 780 (2018) 7",
+    link : "https://arxiv.org/abs/1709.06807",
+    update : "2022-07-09",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "0-20%",
+    kineb : "-4.46 < y < -2.96",
+    data : [
+        {"x": 1.23, "xl": 0, "xh": 2, "y": 0.026, "stath": 0.017, "statl": 0.017, "systh": 0.017, "systl": 0.017},
+        {"x": 2.48, "xl": 2, "xh": 3, "y": 0.013, "stath": 0.02, "statl": 0.02, "systh": 0.017, "systl": 0.017},
+        {"x": 3.46, "xl": 3, "xh": 4, "y": 0.058, "stath": 0.024, "statl": 0.024, "systh": 0.017, "systl": 0.017},
+        {"x": 4.84, "xl": 4, "xh": 6, "y": 0.062, "stath": 0.022, "statl": 0.022, "systh": 0.015, "systl": 0.015},
+        {"x": 6.81, "xl": 6, "xh": 8, "y": 0.083, "stath": 0.037, "statl": 0.037, "systh": 0.022, "systl": 0.022},
+    ]
+};
+
 dataset["incJpsi_v2_pT_pp_13TeV_ALICE_cent-0-5_absy-2p5-4"] = {
     reference : "ALICE Preliminary",
     link : "https://alice-figure.web.cern.ch/node/22601",
