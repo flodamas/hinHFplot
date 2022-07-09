@@ -3414,6 +3414,27 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     ]
 };
 
+dataset["aprJpsi_RpA_pT_pPb_5TeV_ALICE__ycm-M1p37-0p43"] = {
+    reference : "JHEP 06 (2022) 011",
+    link : "https://arxiv.org/abs/2105.04957",
+    update : "2022-07-09",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "-1.37 < y<sub>cm</sub> < 0.43",
+    data : [
+        {"x": 2, "xl": 1, "xh": 3, "y": 0.763, "stath": 0.05, "statl": 0.05, "systh": 0.079, "systl": 0.079},
+        {"x": 4, "xl": 3, "xh": 5, "y": 1.084, "stath": 0.056, "statl": 0.056, "systh": 0.117, "systl": 0.117},
+        {"x": 6, "xl": 5, "xh": 7, "y": 1.018, "stath": 0.071, "statl": 0.071, "systh": 0.144, "systl": 0.144},
+        {"x": 8.5, "xl": 7, "xh": 10, "y": 0.84, "stath": 0.092, "statl": 0.092, "systh": 0.167, "systl": 0.167},
+        {"x": 12, "xl": 10, "xh": 14, "y": 1.111, "stath": 0.261, "statl": 0.261, "systh": 0.271, "systl": 0.271},
+    ]
+};
+
 dataset["aprJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
@@ -3647,6 +3668,23 @@ dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
         {"x": 11.5, "xl": 11, "xh": 12, "y": 0.97, "stath": 0.14, "statl": 0.14, "systh": 0, "systl": 0},
         {"x": 12.5, "xl": 12, "xh": 13, "y": 1.07, "stath": 0.17, "statl": 0.17, "systh": 0, "systl": 0},
         {"x": 13.5, "xl": 13, "xh": 14, "y": 0.89, "stath": 0.15, "statl": 0.15, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["aprJpsi_RpA_ycm_pPb_5TeV_ALICE__pT-gt-0"] = {
+    reference : "JHEP 06 (2022) 011",
+    link : "https://arxiv.org/abs/2105.04957",
+    update : "2022-07-09",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Prompt J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": -0.47, "xl": -1.37, "xh": 0.43, "y": 0.86, "stath": 0.033, "statl": 0.033, "systh": 0.081, "systl": 0.081},
     ]
 };
 
@@ -7127,6 +7165,27 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     ]
 };
 
+dataset["bTOJpsi_RpA_pT_pPb_5TeV_ALICE__ycm-M1p37-0p43"] = {
+    reference : "JHEP 06 (2022) 011",
+    link : "https://arxiv.org/abs/2105.04957",
+    update : "2022-07-09",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "-1.37 < y<sub>cm</sub> < 0.43",
+    data : [
+        {"x": 2.15, "xl": 1.3, "xh": 3, "y": 0.903, "stath": 0.209, "statl": 0.209, "systh": 0.183, "systl": 0.183},
+        {"x": 4, "xl": 3, "xh": 5, "y": 0.857, "stath": 0.151, "statl": 0.151, "systh": 0.129, "systl": 0.129},
+        {"x": 6, "xl": 5, "xh": 7, "y": 0.819, "stath": 0.154, "statl": 0.154, "systh": 0.135, "systl": 0.135},
+        {"x": 8.5, "xl": 7, "xh": 10, "y": 0.854, "stath": 0.176, "statl": 0.176, "systh": 0.184, "systl": 0.184},
+        {"x": 12, "xl": 10, "xh": 14, "y": 0.973, "stath": 0.371, "statl": 0.371, "systh": 0.257, "systl": 0.257},
+    ]
+};
+
 dataset["bTOJpsi_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
     reference : "EPJC 78 (2018) 171",
     link : "https://arxiv.org/abs/1709.03089",
@@ -7360,6 +7419,23 @@ dataset["bTOJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
         {"x": 11.5, "xl": 11, "xh": 12, "y": 1.11, "stath": 0.18, "statl": 0.18, "systh": 0, "systl": 0},
         {"x": 12.5, "xl": 12, "xh": 13, "y": 0.97, "stath": 0.18, "statl": 0.18, "systh": 0, "systl": 0},
         {"x": 13.5, "xl": 13, "xh": 14, "y": 0.94, "stath": 0.19, "statl": 0.19, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["bTOJpsi_RpA_ycm_pPb_5TeV_ALICE__pT-gt-0"] = {
+    reference : "JHEP 06 (2022) 011",
+    link : "https://arxiv.org/abs/2105.04957",
+    update : "2022-07-09",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": -0.47, "xl": -1.37, "xh": 0.43, "y": 0.793, "stath": 0.111, "statl": 0.111, "systh": 0.127, "systl": 0.127},
     ]
 };
 
@@ -12393,9 +12469,9 @@ dataset["incJpsi_RpA_pT_pPb_5TeV_ALICE__ycm-2p03-3p53"] = {
 };
 
 dataset["incJpsi_RpA_pT_pPb_5TeV_ALICE__ycm-M1p37-0p43"] = {
-    reference : "JHEP 06 (2015) 55",
-    link : "https://arxiv.org/abs/1503.07179",
-    update : "2022-03-14",
+    reference : "JHEP 06 (2022) 011",
+    link : "https://arxiv.org/abs/2105.04957",
+    update : "2022-07-09",
     observable : "RpA",
     xtitle : "pT",
     particle : "Inclusive J/&psi;",
@@ -12405,11 +12481,14 @@ dataset["incJpsi_RpA_pT_pPb_5TeV_ALICE__ycm-M1p37-0p43"] = {
     kinea : "",
     kineb : "-1.37 < y<sub>cm</sub> < 0.43",
     data : [
-        {"x": 0.65, "xl": 0, "xh": 1.3, "y": 0.81, "stath": 0.17, "statl": 0.17, "systh": 0.1, "systl": 0.1},
-        {"x": 2.15, "xl": 1.3, "xh": 3, "y": 0.64, "stath": 0.1, "statl": 0.1, "systh": 0.09, "systl": 0.09},
-        {"x": 4, "xl": 3, "xh": 5, "y": 0.77, "stath": 0.09, "statl": 0.09, "systh": 0.07, "systl": 0.07},
-        {"x": 6, "xl": 5, "xh": 7, "y": 0.89, "stath": 0.13, "statl": 0.13, "systh": 0.13, "systl": 0.13},
-        {"x": 8.5, "xl": 7, "xh": 10, "y": 0.89, "stath": 0.21, "statl": 0.21, "systh": 0.16, "systl": 0.16},
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.635, "stath": 0.074, "statl": 0.074, "systh": 0.078, "systl": 0.078},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.662, "stath": 0.059, "statl": 0.059, "systh": 0.072, "systl": 0.072},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.928, "stath": 0.065, "statl": 0.065, "systh": 0.105, "systl": 0.105},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 1.022, "stath": 0.066, "statl": 0.066, "systh": 0.121, "systl": 0.121},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 1.1, "stath": 0.07, "statl": 0.07, "systh": 0.142, "systl": 0.142},
+        {"x": 6, "xl": 5, "xh": 7, "y": 0.981, "stath": 0.06, "statl": 0.06, "systh": 0.132, "systl": 0.132},
+        {"x": 8.5, "xl": 7, "xh": 10, "y": 0.843, "stath": 0.077, "statl": 0.077, "systh": 0.163, "systl": 0.163},
+        {"x": 12, "xl": 10, "xh": 14, "y": 1.065, "stath": 0.195, "statl": 0.195, "systh": 0.249, "systl": 0.249},
     ]
 };
 
