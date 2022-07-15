@@ -20,10 +20,18 @@ function addtext()
     iinput.setAttribute('onkeyup', 'changecontent("'+textsvgid+'", this.value)');
     itextgroup.appendChild(iinput);
 
-    var ifa1 = document.createElement("i");
-    ifa1.setAttribute("class", "fa-solid fa-text-height");
-    ifa1.setAttribute("style", "margin: 0 0.3rem;");
-    itextgroup.appendChild(ifa1);
+    var ibold = document.createElement("i");
+    ibold.setAttribute("class", "fa-solid fa-bold");
+    ibold.setAttribute("style", "margin: 0 0.3rem; cursor: pointer;");
+    ibold.setAttribute('onclick', 'switchbold("'+textsvgid+'")');
+    itextgroup.appendChild(ibold);
+
+    var iitalic = document.createElement("i");
+    iitalic.setAttribute("class", "fa-solid fa-italic");
+    iitalic.setAttribute("style", "cursor: pointer;");
+    iitalic.setAttribute("style", "margin: 0 0.3rem 0 0; cursor: pointer;");
+    iitalic.setAttribute('onclick', 'switchitalic("'+textsvgid+'")');
+    itextgroup.appendChild(iitalic);
 
     var itsize = document.createElement("input");
     itsize.setAttribute('type', 'number');
@@ -127,4 +135,16 @@ function changetxx(name, xx)
 function changetyy(name, yy)
 {
     svg.select('#' + name).attr("y", gety0(yy));
+}
+
+function switchbold(name)
+{
+    console.log(document.getElementById(name));
+    document.getElementById(name).style.fontWeight = (document.getElementById(name).style.fontWeight=="bold"?"normal":"bold");
+}
+
+function switchitalic(name)
+{
+    console.log(document.getElementById(name));
+    document.getElementById(name).style.fontStyle = (document.getElementById(name).style.fontStyle=="italic"?"normal":"italic");
 }
