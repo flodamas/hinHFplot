@@ -12,6 +12,10 @@ var legs = [];
 
 // <-- legend
 
+var getx0 = function(x0value) { return margin.left + chartWidth/89.*(x0value-10); }
+var gety0 = function(y0value) { return margin.top + chartWidth/89.*(y0value-10); }
+var gettsize = function(t0value) { return 2. + t0value/30.; }
+
 // set basic
 function setbasic()
 {
@@ -20,10 +24,10 @@ function setbasic()
     margin = { top: width*0.72*0.06, right: width*0.07, bottom: width*0.72*0.15, left: width*0.13 },
     chartWidth = width - margin.left - margin.right,
     chartHeight = height - margin.top - margin.bottom;
-    x0 = margin.left + chartWidth/89.*(document.getElementById('x0range').value-10);
-    y0 = margin.top + chartHeight/89.*(document.getElementById('y0range').value-10);
+    x0 = getx0(document.getElementById('x0range').value);
+    y0 = gety0(document.getElementById('y0range').value);
     dxmark = chartWidth/40.; //
-    legsize = (0.8+(document.getElementById('legsizerange').value)/200)*3.;
+    legsize = gettsize(document.getElementById('legsizerange').value);
     dy = legsize*chartWidth*0.017; //
 
     document.getElementById('tx0').innerText = " " + document.getElementById('x0range').value;
@@ -230,3 +234,20 @@ function changerangewlog()
 }
 
 
+function settsuptsub(textid)
+{
+    var childtspan = document.querySelectorAll('#'+textid+' > tspan');
+    for (var i = 0; i < childtspan.length; i++) {
+        var itspan = childtspan[i];
+        if(itspan.classList.contains("tsup"))
+        {
+            itspan.style.fontSize = "0.6em";
+            itspan.style.baselineShift = "60%";
+        }
+        if(itspan.classList.contains("tsub"))
+        {
+            itspan.style.fontSize = "0.6em";
+            itspan.style.baselineShift = "-50%";
+        }
+    }
+}

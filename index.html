@@ -22,6 +22,7 @@
     <script src="js/filter.js"></script>
     <script src="js/errorbars-incl.js"></script>
     <script src="js/legend.js"></script>
+    <script src="js/addtext.js"></script>    
     <script src="js/reference.js"></script>
     <script src="js/errorbars.js"></script>
     <script src="js/control.js"></script>
@@ -80,6 +81,7 @@
           <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall(0);">
           <div id="divratio">Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
         </div>
+        <div id="textfarm"></div>
         <svg id="svgparent" style="background-color: white;"></svg>
         <ul id="reference"> </ul>
       </div>
@@ -89,6 +91,7 @@
         <div class="pl"><p><i class="fa-regular fa-paper-plane"></i> <a href="mailto:jing.wang@cern.ch?subject=hinHFplot%20website" class="link">jing.wang@cern.ch</a></p></div>
         <div class="pl"><p><i class="fa-regular fa-file-lines"></i> Click <a onclick="window.open('datasets/publication.html', '_blank');" class="link">here</a> to get the full publication list</p></div>
         <div class="dl">
+          <button type="submit" class="btnaction hideinmobile" id="btnaddtext" onclick="addtext();" value='0'><i class="fa-solid fa-font"></i> <i class="fa-solid fa-square-plus"></i></button>
           <div class="dropdown">
             <button type="submit" id="btnlegend" value="127">Legend <i class="fa-solid fa-caret-down"></i></button>
             <div class="dropdown-content">
@@ -133,15 +136,15 @@
 
     <!-- ulog -->
     <!-- <div class="ulog" id="ulog" style="display: none;"> -->
-    <div class="ulog" id="ulog">
-      <div style="position: absolute; height:94%;">
-        <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (6/13/22): </p>
-        <p class="blockp">No news</p>
+      <div class="ulog" id="ulog">
+        <div style="position: absolute; height:94%;">
+          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (7/15/22): </p>
+          <p class="blockp">New feature: Use <i class="fa-solid fa-font"></i> <i class="fa-solid fa-square-plus"></i> to add text on the plot. This can be used to shorten the legend by removing the repeated common parts. </p>
+        </div>
+        <div class="ulogx" onclick="document.getElementById('ulog').style.display = 'none';">
+          &times; 
+        </div>      
       </div>
-      <div class="ulogx" onclick="document.getElementById('ulog').style.display = 'none';">
-        &times; 
-      </div>      
-    </div>
 
   </body>
 </html>

@@ -235,20 +235,7 @@ function legenditem(tlegend, thisitem, tlegendid)
             .text(decodehtml(rpb[p].content));
     }
 
-    var childtspan = document.querySelectorAll('#'+tlegendid+' > tspan');
-    for (var i = 0; i < childtspan.length; i++) {
-        var itspan = childtspan[i];
-        if(itspan.classList.contains("tsup"))
-        {
-            itspan.style.fontSize = "0.6em";
-            itspan.style.baselineShift = "60%";
-        }
-        if(itspan.classList.contains("tsub"))
-        {
-            itspan.style.fontSize = "0.6em";
-            itspan.style.baselineShift = "-50%";
-        }
-    }
+    settsuptsub(tlegendid);
 }
 
 

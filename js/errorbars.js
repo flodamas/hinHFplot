@@ -405,5 +405,7 @@ var drawall = function(transt = 500)
         var thisitem = dataset[da];
         addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
     }
+
+    drawalltext();
 }
 
