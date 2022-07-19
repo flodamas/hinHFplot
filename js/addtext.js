@@ -139,12 +139,10 @@ function changetyy(name, yy)
 
 function switchbold(name)
 {
-    console.log(document.getElementById(name));
     document.getElementById(name).style.fontWeight = (document.getElementById(name).style.fontWeight=="bold"?"normal":"bold");
 }
 
 function switchitalic(name)
 {
-    console.log(document.getElementById(name));
     document.getElementById(name).style.fontStyle = (document.getElementById(name).style.fontStyle=="italic"?"normal":"italic");
 }
