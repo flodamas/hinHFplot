@@ -5626,7 +5626,7 @@ dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
 };
 
 dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
-    reference : "arXiv:2201.02659",
+    reference : "PRL 128 (2022) 252301",
     link : "https://arxiv.org/abs/2201.02659",
     update : "2022-02-16",
     observable : "RAA",
@@ -5644,7 +5644,7 @@ dataset["Bsubc_RAA_cent_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
 };
 
 dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
-    reference : "arXiv:2201.02659",
+    reference : "PRL 128 (2022) 252301",
     link : "https://arxiv.org/abs/2201.02659",
     update : "2022-02-16",
     observable : "RAA",
@@ -5662,7 +5662,7 @@ dataset["Bsubc_RAA_Npart_PbPb_5TeV_CMS_pT-6-35_Rabsy-L1p3-2p3"] = {
 };
 
 dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
-    reference : "arXiv:2201.02659",
+    reference : "PRL 128 (2022) 252301",
     link : "https://arxiv.org/abs/2201.02659",
     update : "2022-02-16",
     observable : "RAA",
@@ -5679,7 +5679,7 @@ dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-1p3-2p3"] = {
 };
 
 dataset["Bsubc_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p3"] = {
-    reference : "arXiv:2201.02659",
+    reference : "PRL 128 (2022) 252301",
     link : "https://arxiv.org/abs/2201.02659",
     update : "2022-02-16",
     observable : "RAA",
@@ -5821,9 +5821,9 @@ dataset["Bsubs_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 };
 
 dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "arXiv:2202.00815",
+    reference : "JHEP 12 (2022) 126",
     link : "https://arxiv.org/abs/2202.00815",
-    update : "2000-01-01",
+    update : "2023-02-14",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup> / Prompt D<sup>0</sup>",
@@ -5833,51 +5833,24 @@ dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     kinea : "0-10%",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.34758, "stath": 0.330909, "statl": 0.330909, "systh": 0.358182, "systl": 0.358182},
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 1.05667, "stath": 0.158182, "statl": 0.158182, "systh": 0.209091, "systl": 0.210909},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 1.2003, "stath": 0.152727, "statl": 0.152727, "systh": 0.24, "systl": 0.24},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 1.24758, "stath": 0.134545, "statl": 0.134545, "systh": 0.247273, "systl": 0.252727},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 1.50758, "stath": 0.174545, "statl": 0.174545, "systh": 0.241818, "systl": 0.249091},
-        {"x": 6.5, "xl": 6, "xh": 7, "y": 1.72212, "stath": 0.245455, "statl": 0.245455, "systh": 0.292727, "systl": 0.305455},
-        {"x": 7.5, "xl": 7, "xh": 8, "y": 1.72394, "stath": 0.289091, "statl": 0.289091, "systh": 0.289091, "systl": 0.303636},
-        {"x": 9, "xl": 8, "xh": 10, "y": 1.59485, "stath": 0.234545, "statl": 0.234545, "systh": 0.256364, "systl": 0.272727},
-        {"x": 11, "xl": 10, "xh": 12, "y": 1.14758, "stath": 0.22, "statl": 0.22, "systh": 0.181818, "systl": 0.185455},
-        {"x": 14, "xl": 12, "xh": 16, "y": 1.30394, "stath": 0.285455, "statl": 0.285455, "systh": 0.261818, "systl": 0.272727},
-        {"x": 20, "xl": 16, "xh": 24, "y": 1.4203, "stath": 0.529091, "statl": 0.529091, "systh": 0.296364, "systl": 0.305454},
-    ]
-};
-
-dataset["bTOD0ToaprD0_DoubleRatio_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "arXiv:2202.00815",
-    link : "https://arxiv.org/abs/2202.00815",
-    update : "2000-01-01",
-    observable : "DoubleRatio",
-    xtitle : "pT",
-    particle : "(b&rarr;) D<sup>0</sup> / Prompt D<sup>0</sup>",
-    collision : "PbPb",
-    energy : "5.02 TeV",
-    collab : "ALICE",
-    kinea : "30-50%",
-    kineb : "|y| < 0.5",
-    data : [
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.3251, "stath": 0.334641, "statl": 0.334641, "systh": 0.394771, "systl": 0.383007},
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 1.22575, "stath": 0.177778, "statl": 0.177778, "systh": 0.219608, "systl": 0.216993},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 1.39046, "stath": 0.180392, "statl": 0.180392, "systh": 0.230065, "systl": 0.233987},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 1.24013, "stath": 0.135948, "statl": 0.135948, "systh": 0.196079, "systl": 0.201307},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 1.27412, "stath": 0.151634, "statl": 0.151634, "systh": 0.201307, "systl": 0.20915},
-        {"x": 6.5, "xl": 6, "xh": 7, "y": 1.4532, "stath": 0.211765, "statl": 0.211765, "systh": 0.228758, "systl": 0.24183},
-        {"x": 7.5, "xl": 7, "xh": 8, "y": 1.16431, "stath": 0.205229, "statl": 0.205229, "systh": 0.189543, "systl": 0.197386},
-        {"x": 9, "xl": 8, "xh": 10, "y": 1.35124, "stath": 0.206536, "statl": 0.206536, "systh": 0.231373, "systl": 0.239216},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.968235, "stath": 0.19085, "statl": 0.19085, "systh": 0.152941, "systl": 0.155556},
-        {"x": 14, "xl": 12, "xh": 16, "y": 1.29242, "stath": 0.292811, "statl": 0.292811, "systh": 0.252288, "systl": 0.256209},
-        {"x": 20, "xl": 16, "xh": 24, "y": 1.09373, "stath": 0.415686, "statl": 0.415686, "systh": 0.227451, "systl": 0.228758},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.7993, "stath": 0.51397, "statl": 0.51397, "systh": 0.37182, "systl": 0.45186},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 1.0642, "stath": 0.20759, "statl": 0.20759, "systh": 0.16968, "systl": 0.19583},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 1.4859, "stath": 0.23038, "statl": 0.23038, "systh": 0.20332, "systl": 0.26034},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 1.5586, "stath": 0.22755, "statl": 0.22755, "systh": 0.18977, "systl": 0.2688},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 1.7988, "stath": 0.32808, "statl": 0.32808, "systh": 0.21225, "systl": 0.28442},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 2.0482, "stath": 0.40785, "statl": 0.40785, "systh": 0.21699, "systl": 0.32041},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 1.8497, "stath": 0.40915, "statl": 0.40915, "systh": 0.22892, "systl": 0.31633},
+        {"x": 9, "xl": 8, "xh": 10, "y": 1.8151, "stath": 0.38929, "statl": 0.38929, "systh": 0.21869, "systl": 0.28906},
+        {"x": 11, "xl": 10, "xh": 12, "y": 1.2389, "stath": 0.29918, "statl": 0.29918, "systh": 0.14927, "systl": 0.19575},
+        {"x": 14, "xl": 12, "xh": 16, "y": 2.06738, "stath": 0.89916, "statl": 0.89916, "systh": 0.32127, "systl": 0.42143},
+        {"x": 20, "xl": 16, "xh": 24, "y": 2.0235, "stath": 1.5174, "statl": 1.5174, "systh": 0.34637, "systl": 0.42592},
     ]
 };
 
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
-    reference : "arXiv:2202.00815",
+    reference : "JHEP 12 (2022) 126",
     link : "https://arxiv.org/abs/2202.00815",
-    update : "2000-01-01",
+    update : "2023-02-14",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -5887,24 +5860,25 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
     kinea : "0-10%",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.11321, "stath": 0.229125, "statl": 0.229125, "systh": 0.252957, "systl": 0.252957},
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.806961, "stath": 0.113643, "statl": 0.113643, "systh": 0.155805, "systl": 0.155805},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.619855, "stath": 0.0733199, "statl": 0.0733199, "systh": 0.115479, "systl": 0.115479},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.421755, "stath": 0.042159, "statl": 0.042159, "systh": 0.0751529, "systl": 0.0751529},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.3373, "stath": 0.034827, "statl": 0.034827, "systh": 0.049491, "systl": 0.049491},
-        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.317, "stath": 0.042159, "statl": 0.042159, "systh": 0.043992, "systl": 0.043992},
-        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.307695, "stath": 0.043992, "statl": 0.043992, "systh": 0.043992, "systl": 0.043992},
-        {"x": 9, "xl": 8, "xh": 10, "y": 0.27816, "stath": 0.0421623, "statl": 0.0421623, "systh": 0.0421623, "systl": 0.0421623},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.204566, "stath": 0.032994, "statl": 0.032994, "systh": 0.027495, "systl": 0.027495},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.275639, "stath": 0.0531569, "statl": 0.0531569, "systh": 0.0476579, "systl": 0.0476579},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.30048, "stath": 0.104481, "statl": 0.104481, "systh": 0.0549833, "systl": 0.0549833},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.3917, "stath": 0.36308, "statl": 0.36308, "systh": 0.31659, "systl": 0.31659},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.88416, "stath": 0.16783, "statl": 0.16783, "systh": 0.15306, "systl": 0.15306},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.83308, "stath": 0.12617, "statl": 0.12617, "systh": 0.1438, "systl": 0.1438},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.57676, "stath": 0.081524, "statl": 0.081524, "systh": 0.092817, "systl": 0.092817},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.427365, "stath": 0.076086, "statl": 0.076086, "systh": 0.0674, "systl": 0.0674},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.41753, "stath": 0.080504, "statl": 0.080504, "systh": 0.06079, "systl": 0.06079},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.3598, "stath": 0.076596, "statl": 0.076596, "systh": 0.056162, "systl": 0.056162},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.35328, "stath": 0.073255, "statl": 0.073255, "systh": 0.053215, "systl": 0.053215},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.23125, "stath": 0.05288, "statl": 0.05288, "systh": 0.034195, "systl": 0.034195},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.47223, "stath": 0.19993, "statl": 0.19993, "systh": 0.081791, "systl": 0.081791},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.48159, "stath": 0.35596, "statl": 0.35596, "systh": 0.088604, "systl": 0.088604},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.35721, "stath": 0.12594, "statl": 0.12594, "systh": 0.077261, "systl": 0.12449},
     ]
 };
 
 dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
-    reference : "arXiv:2202.00815",
+    reference : "JHEP 12 (2022) 126",
     link : "https://arxiv.org/abs/2202.00815",
-    update : "2000-01-01",
+    update : "2023-02-14",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -5914,17 +5888,18 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
     kinea : "30-50%",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.10346, "stath": 0.228972, "statl": 0.228972, "systh": 0.243364, "systl": 0.242056},
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.907196, "stath": 0.125607, "statl": 0.125607, "systh": 0.150467, "systl": 0.151776},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.775047, "stath": 0.0955141, "statl": 0.0955141, "systh": 0.116449, "systl": 0.116449},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.594486, "stath": 0.0601869, "statl": 0.0601869, "systh": 0.088972, "systl": 0.0915888},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.502897, "stath": 0.0562617, "statl": 0.0562617, "systh": 0.0758879, "systl": 0.0758879},
-        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.527757, "stath": 0.0719627, "statl": 0.0719627, "systh": 0.0745795, "systl": 0.0745794},
-        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.442208, "stath": 0.0730678, "statl": 0.0730678, "systh": 0.0681497, "systl": 0.0687331},
-        {"x": 9, "xl": 8, "xh": 10, "y": 0.51729, "stath": 0.073271, "statl": 0.073271, "systh": 0.0758879, "systl": 0.0771962},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.368131, "stath": 0.0654206, "statl": 0.0654206, "systh": 0.0536449, "systl": 0.0549533},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.559159, "stath": 0.111215, "statl": 0.111215, "systh": 0.0968224, "systl": 0.0994392},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.459502, "stath": 0.163551, "statl": 0.163551, "systh": 0.0861371, "systl": 0.0872274},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 1.56202, "stath": 0.41573, "statl": 0.41573, "systh": 0.32308, "systl": 0.32308},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 1.07825, "stath": 0.19659, "statl": 0.19659, "systh": 0.19099, "systl": 0.19099},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.97785, "stath": 0.14366, "statl": 0.14366, "systh": 0.15362, "systl": 0.15362},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.6762, "stath": 0.096161, "statl": 0.096161, "systh": 0.090923, "systl": 0.090923},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.6081, "stath": 0.10745, "statl": 0.10745, "systh": 0.080628, "systl": 0.080628},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.56586, "stath": 0.11564, "statl": 0.11564, "systh": 0.071755, "systl": 0.071755},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.53922, "stath": 0.12054, "statl": 0.12054, "systh": 0.075293, "systl": 0.075293},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.56232, "stath": 0.12438, "statl": 0.12438, "systh": 0.075437, "systl": 0.075437},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.40501, "stath": 0.099608, "statl": 0.099608, "systh": 0.053535, "systl": 0.053535},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.63325, "stath": 0.27476, "statl": 0.27476, "systh": 0.10468, "systl": 0.10468},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.73189, "stath": 0.55307, "statl": 0.55307, "systh": 0.13347, "systl": 0.13347},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.95365, "stath": 0.34116, "statl": 0.34116, "systh": 0.21199, "systl": 0.33593},
     ]
 };
 
