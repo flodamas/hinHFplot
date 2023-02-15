@@ -15897,7 +15897,7 @@ dataset["Upsilon1S_RpA_pT_pPb_5TeV_ATLAS__ycm-M2-1p5"] = {
 };
 
 dataset["Upsilon1S_RpA_pT_pPb_5TeV_CMS__absycm-lt-1p93"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -16048,7 +16048,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_ATLAS__pT-lt-40"] = {
 };
 
 dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -16066,7 +16066,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
 };
 
 dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -16090,7 +16090,7 @@ dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
 };
 
 dataset["Upsilon1S_RpA_ycm_pPb_5TeV_CMS__pT-lt-6"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -16899,7 +16899,7 @@ dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon2S_RpA_pT_pPb_5TeV_CMS__absycm-lt-1p93"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -16964,7 +16964,7 @@ dataset["Upsilon2S_RpA_pT_pPb_8TeV_LHCb__ycm-M5-M2p5"] = {
 };
 
 dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -16982,7 +16982,7 @@ dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
 };
 
 dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -17002,7 +17002,7 @@ dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
 };
 
 dataset["Upsilon2S_RpA_ycm_pPb_5TeV_CMS__pT-lt-6"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -17220,7 +17220,7 @@ dataset["Upsilon3S_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
 };
 
 dataset["Upsilon3S_RpA_pT_pPb_5TeV_CMS__absycm-lt-1p93"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -17238,7 +17238,7 @@ dataset["Upsilon3S_RpA_pT_pPb_5TeV_CMS__absycm-lt-1p93"] = {
 };
 
 dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -17256,7 +17256,7 @@ dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-6-30"] = {
 };
 
 dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
@@ -17274,7 +17274,7 @@ dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-lt-30"] = {
 };
 
 dataset["Upsilon3S_RpA_ycm_pPb_5TeV_CMS__pT-lt-6"] = {
-    reference : "arXiv:2202.11807",
+    reference : "PLB 835 (2022) 137397",
     link : "https://arxiv.org/abs/2202.11807",
     update : "2022-02-27",
     observable : "RpA",
