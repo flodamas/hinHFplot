@@ -5488,6 +5488,66 @@ dataset["aprXicplusToD0_XicplusToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
     ]
 };
 
+dataset["B0ToBplusmn_B0ToBplusmn_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
+    reference : "PRD 99 (2019) 052011",
+    link : "https://arxiv.org/abs/1902.05599",
+    update : "2023-03-25",
+    observable : "B0ToBplusmn",
+    xtitle : "pT",
+    particle : "B<sup>0</sup> / B<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2.5 < y<sub>cm</sub> < 3.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 1.13, "stath": 0.13786, "statl": 0.13786, "systh": 0.172665, "systl": 0.172665},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 1.14, "stath": 0.09576, "statl": 0.09576, "systh": 0.131456, "systl": 0.131456},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 1.24, "stath": 0.11284, "statl": 0.11284, "systh": 0.147017, "systl": 0.147017},
+        {"x": 16, "xl": 12, "xh": 20, "y": 1.56, "stath": 0.25272, "statl": 0.25272, "systh": 0.281168, "systl": 0.281168},
+    ]
+};
+
+dataset["B0ToBplusmn_B0ToBplusmn_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
+    reference : "PRD 99 (2019) 052011",
+    link : "https://arxiv.org/abs/1902.05599",
+    update : "2023-03-25",
+    observable : "B0ToBplusmn",
+    xtitle : "pT",
+    particle : "B<sup>0</sup> / B<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-3.5 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 1.39, "stath": 0.20572, "statl": 0.20572, "systh": 0.268382, "systl": 0.268382},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 1.08, "stath": 0.10692, "statl": 0.10692, "systh": 0.155857, "systl": 0.155857},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 1.22, "stath": 0.11956, "statl": 0.11956, "systh": 0.164826, "systl": 0.164826},
+        {"x": 16, "xl": 12, "xh": 20, "y": 1.49, "stath": 0.23542, "statl": 0.23542, "systh": 0.2702, "systl": 0.2702},
+    ]
+};
+
+dataset["B0ToBplusmn_B0ToBplusmn_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
+    reference : "PRD 99 (2019) 052011",
+    link : "https://arxiv.org/abs/1902.05599",
+    update : "2023-03-25",
+    observable : "B0ToBplusmn",
+    xtitle : "ycm",
+    particle : "B<sup>0</sup> / B<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < p<sub>T</sub> < 20 GeV",
+    data : [
+        {"x": -4, "xl": -4.5, "xh": -3.5, "y": 1.06, "stath": 0.08056, "statl": 0.08056, "systh": 0.122452, "systl": 0.122452},
+        {"x": -3, "xl": -3.5, "xh": -2.5, "y": 1.23, "stath": 0.08979, "statl": 0.08979, "systh": 0.159322, "systl": 0.159322},
+        {"x": 2, "xl": 1.5, "xh": 2.5, "y": 1.16, "stath": 0.08816, "statl": 0.08816, "systh": 0.139321, "systl": 0.139321},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 1.18, "stath": 0.06844, "statl": 0.06844, "systh": 0.116599, "systl": 0.116599},
+    ]
+};
+
 dataset["B0_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
     reference : "PRL 116 (2016) 032301",
     link : "https://arxiv.org/abs/1508.06678",
@@ -14109,6 +14169,66 @@ dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     data : [
         {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.92, "stath": 0.09, "statl": 0.09, "systh": 0.03, "systl": 0.03},
         {"x": -3, "xl": -3.5, "xh": -2.5, "y": 0.78, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["LambdabToB0_LambdabToB0_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
+    reference : "PRD 99 (2019) 052011",
+    link : "https://arxiv.org/abs/1902.05599",
+    update : "2023-03-25",
+    observable : "LambdabToB0",
+    xtitle : "pT",
+    particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2.5 < y<sub>cm</sub> < 3.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.43, "stath": 0.08256, "statl": 0.08256, "systh": 0.0992248, "systl": 0.0992248},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 0.48, "stath": 0.05712, "statl": 0.05712, "systh": 0.0801039, "systl": 0.0801039},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.31, "stath": 0.04247, "statl": 0.04247, "systh": 0.0558499, "systl": 0.0558499},
+        {"x": 16, "xl": 12, "xh": 20, "y": 0.2, "stath": 0.0512, "statl": 0.0512, "systh": 0.0565459, "systl": 0.0565459},
+    ]
+};
+
+dataset["LambdabToB0_LambdabToB0_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
+    reference : "PRD 99 (2019) 052011",
+    link : "https://arxiv.org/abs/1902.05599",
+    update : "2023-03-25",
+    observable : "LambdabToB0",
+    xtitle : "pT",
+    particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-3.5 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.24, "stath": 0.08928, "statl": 0.08928, "systh": 0.0963548, "systl": 0.0963548},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 0.42, "stath": 0.06888, "statl": 0.06888, "systh": 0.0861, "systl": 0.0861},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.49, "stath": 0.06615, "statl": 0.06615, "systh": 0.0894891, "systl": 0.0894891},
+        {"x": 16, "xl": 12, "xh": 20, "y": 0.22, "stath": 0.05434, "statl": 0.05434, "systh": 0.062139, "systl": 0.062139},
+    ]
+};
+
+dataset["LambdabToB0_LambdabToB0_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
+    reference : "PRD 99 (2019) 052011",
+    link : "https://arxiv.org/abs/1902.05599",
+    update : "2023-03-25",
+    observable : "LambdabToB0",
+    xtitle : "ycm",
+    particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < p<sub>T</sub> < 20 GeV",
+    data : [
+        {"x": -4, "xl": -4.5, "xh": -3.5, "y": 0.45, "stath": 0.0531, "statl": 0.0531, "systh": 0.0750947, "systl": 0.0750947},
+        {"x": -3, "xl": -3.5, "xh": -2.5, "y": 0.34, "stath": 0.04556, "statl": 0.04556, "systh": 0.0625378, "systl": 0.0625378},
+        {"x": 2, "xl": 1.5, "xh": 2.5, "y": 0.43, "stath": 0.05418, "statl": 0.05418, "systh": 0.0794058, "systl": 0.0794058},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.4, "stath": 0.036, "statl": 0.036, "systh": 0.0593619, "systl": 0.0593619},
     ]
 };
 
