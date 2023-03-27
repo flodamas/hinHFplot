@@ -11172,7 +11172,7 @@ dataset["incJpsi_RpA_Ncoll_pAl_200GeV_PHENIX_pT-lt-7_ycm-M2p2-M1p2"] = {
 };
 
 dataset["incJpsi_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -11192,7 +11192,7 @@ dataset["incJpsi_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
 };
 
 dataset["incJpsi_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-M2p2-M1p2"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -12758,7 +12758,7 @@ dataset["incJpsi_RpA_ycm_pAl_200GeV_PHENIX_cent-40-72_pT-lt-7"] = {
 };
 
 dataset["incJpsi_RpA_ycm_pAl_200GeV_PHENIX__pT-gt-0"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -12944,7 +12944,7 @@ dataset["incJpsi_RpA_ycm_pAu_200GeV_PHENIX_cent-60-84_pT-lt-7"] = {
 };
 
 dataset["incJpsi_RpA_ycm_pAu_200GeV_PHENIX__pT-gt-0"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -13770,7 +13770,7 @@ dataset["incpsi2S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_absy-2p5-4"] = {
 };
 
 dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -13789,7 +13789,7 @@ dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
 };
 
 dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-M2p2-M1p2"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -13934,7 +13934,7 @@ dataset["incpsi2S_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
 };
 
 dataset["incpsi2S_RpA_ycm_pAl_200GeV_PHENIX__pT-gt-0"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
@@ -13952,7 +13952,7 @@ dataset["incpsi2S_RpA_ycm_pAl_200GeV_PHENIX__pT-gt-0"] = {
 };
 
 dataset["incpsi2S_RpA_ycm_pAu_200GeV_PHENIX__pT-gt-0"] = {
-    reference : "arXiv:2202.03863",
+    reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
     update : "2022-04-05",
     observable : "RpA",
