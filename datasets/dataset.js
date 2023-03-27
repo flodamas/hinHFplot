@@ -5612,7 +5612,7 @@ dataset["Bplusmn_RpA_pT_pPb_5TeV_CMS__absy-lt-2p4"] = {
 dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
-    update : "2000-01-01",
+    update : "2023-03-25",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sup>&plusmn;</sup>",
@@ -5622,17 +5622,17 @@ dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     kinea : "",
     kineb : "2.5 < y<sub>cm</sub> < 3.5",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.75, "stath": 0.04, "statl": 0.04, "systh": 0.05, "systl": 0.05},
-        {"x": 5.5, "xl": 4, "xh": 7, "y": 0.77, "stath": 0.03, "statl": 0.03, "systh": 0.04, "systl": 0.04},
-        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.83, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
-        {"x": 16, "xl": 12, "xh": 20, "y": 1.01, "stath": 0.12, "statl": 0.12, "systh": 0.07, "systl": 0.07},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.75, "stath": 0.04, "statl": 0.04, "systh": 0.0640312, "systl": 0.0640312},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 0.77, "stath": 0.03, "statl": 0.03, "systh": 0.05, "systl": 0.05},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.83, "stath": 0.05, "statl": 0.05, "systh": 0.0640312, "systl": 0.0640312},
+        {"x": 16, "xl": 12, "xh": 20, "y": 1.01, "stath": 0.12, "statl": 0.12, "systh": 0.138924, "systl": 0.138924},
     ]
 };
 
 dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
-    update : "2000-01-01",
+    update : "2023-03-25",
     observable : "RpA",
     xtitle : "pT",
     particle : "B<sup>&plusmn;</sup>",
@@ -5642,10 +5642,10 @@ dataset["Bplusmn_RpA_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     kinea : "",
     kineb : "-3.5 < y<sub>cm</sub> < -2.5",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.96, "stath": 0.06, "statl": 0.06, "systh": 0.11, "systl": 0.11},
-        {"x": 5.5, "xl": 4, "xh": 7, "y": 1.03, "stath": 0.05, "statl": 0.05, "systh": 0.1, "systl": 0.1},
-        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.96, "stath": 0.05, "statl": 0.05, "systh": 0.08, "systl": 0.08},
-        {"x": 16, "xl": 12, "xh": 20, "y": 1.13, "stath": 0.12, "statl": 0.12, "systh": 0.09, "systl": 0.09},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.96, "stath": 0.06, "statl": 0.06, "systh": 0.1253, "systl": 0.1253},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 1.03, "stath": 0.05, "statl": 0.05, "systh": 0.111803, "systl": 0.111803},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.96, "stath": 0.05, "statl": 0.05, "systh": 0.0943398, "systl": 0.0943398},
+        {"x": 16, "xl": 12, "xh": 20, "y": 1.13, "stath": 0.12, "statl": 0.12, "systh": 0.15, "systl": 0.15},
     ]
 };
 
@@ -5673,7 +5673,7 @@ dataset["Bplusmn_RpA_ycm_pPb_5TeV_CMS__pT-10-60"] = {
 dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
-    update : "2000-01-01",
+    update : "2023-03-25",
     observable : "RpA",
     xtitle : "ycm",
     particle : "B<sup>&plusmn;</sup>",
@@ -5683,8 +5683,8 @@ dataset["Bplusmn_RpA_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     kinea : "",
     kineb : "2 < p<sub>T</sub> < 20 GeV",
     data : [
-        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.78, "stath": 0.02, "statl": 0.02, "systh": 0.05, "systl": 0.05},
-        {"x": -3, "xl": -3.5, "xh": -2.5, "y": 1, "stath": 0.03, "statl": 0.03, "systh": 0.1, "systl": 0.1},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.78, "stath": 0.02, "statl": 0.02, "systh": 0.0538516, "systl": 0.0538516},
+        {"x": -3, "xl": -3.5, "xh": -2.5, "y": 1, "stath": 0.03, "statl": 0.03, "systh": 0.104403, "systl": 0.104403},
     ]
 };
 
@@ -14117,7 +14117,7 @@ dataset["Ksubs0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1"] = {
 dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
-    update : "2000-01-01",
+    update : "2023-03-25",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
@@ -14127,17 +14127,17 @@ dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-2p5-3p5"] = {
     kinea : "",
     kineb : "2.5 < y<sub>cm</sub> < 3.5",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.84, "stath": 0.17, "statl": 0.17, "systh": 0.05, "systl": 0.05},
-        {"x": 5.5, "xl": 4, "xh": 7, "y": 1.11, "stath": 0.14, "statl": 0.14, "systh": 0.03, "systl": 0.03},
-        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.91, "stath": 0.13, "statl": 0.13, "systh": 0.03, "systl": 0.03},
-        {"x": 16, "xl": 12, "xh": 20, "y": 0.81, "stath": 0.21, "statl": 0.21, "systh": 0.03, "systl": 0.03},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.84, "stath": 0.17, "statl": 0.17, "systh": 0.1772, "systl": 0.1772},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 1.11, "stath": 0.14, "statl": 0.14, "systh": 0.143178, "systl": 0.143178},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 0.91, "stath": 0.13, "statl": 0.13, "systh": 0.133417, "systl": 0.133417},
+        {"x": 16, "xl": 12, "xh": 20, "y": 0.81, "stath": 0.21, "statl": 0.21, "systh": 0.212132, "systl": 0.212132},
     ]
 };
 
 dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
-    update : "2000-01-01",
+    update : "2023-03-25",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
@@ -14147,17 +14147,17 @@ dataset["LambdabToB0_DoubleRatio_pT_pPb_8TeV_LHCb__ycm-M3p5-M2p5"] = {
     kinea : "",
     kineb : "-3.5 < y<sub>cm</sub> < -2.5",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.47, "stath": 0.18, "statl": 0.18, "systh": 0.05, "systl": 0.05},
-        {"x": 5.5, "xl": 4, "xh": 7, "y": 0.97, "stath": 0.17, "statl": 0.17, "systh": 0.05, "systl": 0.05},
-        {"x": 9.5, "xl": 7, "xh": 12, "y": 1.44, "stath": 0.21, "statl": 0.21, "systh": 0.07, "systl": 0.07},
-        {"x": 16, "xl": 12, "xh": 20, "y": 0.89, "stath": 0.22, "statl": 0.22, "systh": 0.07, "systl": 0.07},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.47, "stath": 0.18, "statl": 0.18, "systh": 0.186815, "systl": 0.186815},
+        {"x": 5.5, "xl": 4, "xh": 7, "y": 0.97, "stath": 0.17, "statl": 0.17, "systh": 0.1772, "systl": 0.1772},
+        {"x": 9.5, "xl": 7, "xh": 12, "y": 1.44, "stath": 0.21, "statl": 0.21, "systh": 0.221359, "systl": 0.221359},
+        {"x": 16, "xl": 12, "xh": 20, "y": 0.89, "stath": 0.22, "statl": 0.22, "systh": 0.230868, "systl": 0.230868},
     ]
 };
 
 dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     reference : "PRD 99 (2019) 052011",
     link : "https://arxiv.org/abs/1902.05599",
-    update : "2000-01-01",
+    update : "2023-03-25",
     observable : "DoubleRatio",
     xtitle : "ycm",
     particle : "&Lambda;<sub>b</sub> / B<sup>0</sup>",
@@ -14167,8 +14167,8 @@ dataset["LambdabToB0_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-2-20"] = {
     kinea : "",
     kineb : "2 < p<sub>T</sub> < 20 GeV",
     data : [
-        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.92, "stath": 0.09, "statl": 0.09, "systh": 0.03, "systl": 0.03},
-        {"x": -3, "xl": -3.5, "xh": -2.5, "y": 0.78, "stath": 0.11, "statl": 0.11, "systh": 0.04, "systl": 0.04},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.92, "stath": 0.09, "statl": 0.09, "systh": 0.0948683, "systl": 0.0948683},
+        {"x": -3, "xl": -3.5, "xh": -2.5, "y": 0.78, "stath": 0.11, "statl": 0.11, "systh": 0.117047, "systl": 0.117047},
     ]
 };
 
