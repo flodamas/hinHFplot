@@ -1937,6 +1937,61 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = 
     ]
 };
 
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
+    reference : "LHCb-PAPER-2023-006",
+    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2398/attachments/812/1698/lhcb_hp23_sun_v3.pdf#page=12",
+    update : "2023-03-27",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "1.5 < y<sub>cm</sub> < 4",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.39481, "stath": 0.0451807, "statl": 0.0451807, "systh": 0.0405468, "systl": 0.0428638},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.437674, "stath": 0.0150602, "statl": 0.0150602, "systh": 0.0359129, "systl": 0.0347544},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.451576, "stath": 0.0150602, "statl": 0.0150602, "systh": 0.0254866, "systl": 0.0254866},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.449259, "stath": 0, "statl": 0, "systh": 0.0185357, "systl": 0.0185357},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.474745, "stath": 0.00115848, "statl": 0.00115848, "systh": 0.0162187, "systl": 0.0162187},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.480538, "stath": 0, "statl": 0, "systh": 0.0139018, "systl": 0.0139018},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.475711, "stath": 0.019308, "statl": 0.019308, "systh": 0.0173772, "systl": 0.0173772},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.451576, "stath": 0.0222042, "statl": 0.0222042, "systh": 0.0125502, "systl": 0.0125502},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.419717, "stath": 0.0251004, "statl": 0.0251004, "systh": 0.014481, "systl": 0.014481},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.454472, "stath": 0.0347544, "statl": 0.0347544, "systh": 0.019308, "systl": 0.019308},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.48633, "stath": 0.0395814, "statl": 0.0395814, "systh": 0.0183426, "systl": 0.0183426},
+        {"x": 13, "xl": 12, "xh": 14, "y": 0.468953, "stath": 0.0656472, "statl": 0.0656472, "systh": 0.0318582, "systl": 0.0308928},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-M5-M2p5"] = {
+    reference : "LHCb-PAPER-2023-006",
+    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2398/attachments/812/1698/lhcb_hp23_sun_v3.pdf#page=12",
+    update : "2023-03-27",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-5 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.532437, "stath": 0.0834106, "statl": 0.0834106, "systh": 0.0834106, "systl": 0.0834106},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.46316, "stath": 0.0243281, "statl": 0.0243281, "systh": 0.0567655, "systl": 0.057924},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.531511, "stath": 0.0162187, "statl": 0.0162187, "systh": 0.0498146, "systl": 0.0509731},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.52456, "stath": 0.0162187, "statl": 0.0162187, "systh": 0.0382298, "systl": 0.0382299},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.566265, "stath": 0.0196941, "statl": 0.0196941, "systh": 0.0335959, "systl": 0.0335959},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.547729, "stath": 0.0231696, "statl": 0.0231696, "systh": 0.028962, "systl": 0.0278035},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.604495, "stath": 0.0324374, "statl": 0.0324374, "systh": 0.0301204, "systl": 0.0301205},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.5095, "stath": 0.0428637, "statl": 0.0428637, "systh": 0.0301205, "systl": 0.0301205},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.523401, "stath": 0.0567655, "statl": 0.0567655, "systh": 0.0417053, "systl": 0.0405468},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.598702, "stath": 0.0973123, "statl": 0.0973123, "systh": 0.0556071, "systl": 0.0544485},
+        {"x": 12, "xl": 10, "xh": 14, "y": 0.426089, "stath": 0.0706673, "statl": 0.0706673, "systh": 0.0266451, "systl": 0.026645},
+    ]
+};
+
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
