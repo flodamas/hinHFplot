@@ -6130,10 +6130,33 @@ dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     ]
 };
 
+dataset["bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p6"] = {
+    reference : "arXiv:2211.13985",
+    link : "https://arxiv.org/abs/2211.13985",
+    update : "2023-03-25",
+    observable : "RAA",
+    xtitle : "pT",
+    particle : "(b&rarr;) e",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-10%",
+    kineb : "|y| < 0.6",
+    data : [
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.187402, "stath": 0.0671387, "statl": 0.0671387, "systh": 0.090332, "systl": 0.0695801},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.330225, "stath": 0.124512, "statl": 0.124512, "systh": 0.148926, "systl": 0.12207},
+        {"x": 13, "xl": 12, "xh": 14, "y": 0.226465, "stath": 0.0512695, "statl": 0.0512695, "systh": 0.098877, "systl": 0.0830078},
+        {"x": 15, "xl": 14, "xh": 16, "y": 0.377832, "stath": 0.0744629, "statl": 0.0744629, "systh": 0.161133, "systl": 0.136719},
+        {"x": 17, "xl": 16, "xh": 18, "y": 0.326562, "stath": 0.0976562, "statl": 0.0976562, "systh": 0.136719, "systl": 0.117188},
+        {"x": 19, "xl": 18, "xh": 20, "y": 0.363184, "stath": 0.121257, "statl": 0.121257, "systh": 0.148722, "systl": 0.130005},
+        {"x": 23, "xl": 20, "xh": 26, "y": 0.131453, "stath": 0.0752767, "statl": 0.0752767, "systh": 0.0539144, "systl": 0.0467936},
+    ]
+};
+
 dataset["bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
-    reference : "ALICE Preliminary",
-    link : "https://alice-figure.web.cern.ch/node/13134",
-    update : "2000-01-01",
+    reference : "arXiv:2211.13985",
+    link : "https://arxiv.org/abs/2211.13985",
+    update : "2023-03-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -6143,19 +6166,12 @@ dataset["bTOe_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p8"] = {
     kinea : "0-10%",
     kineb : "|y| < 0.8",
     data : [
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.707785, "stath": 0.0396397, "statl": 0.0396397, "systh": 0.169369, "systl": 0.169369},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.639247, "stath": 0.0360297, "statl": 0.0360297, "systh": 0.154955, "systl": 0.154955},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.617511, "stath": 0.0288289, "statl": 0.0288289, "systh": 0.136937, "systl": 0.136937},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.494843, "stath": 0.0252252, "statl": 0.0252252, "systh": 0.111712, "systl": 0.111712},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.433443, "stath": 0.0252252, "statl": 0.0252252, "systh": 0.0900964, "systl": 0.0900964},
-        {"x": 7, "xl": 6, "xh": 8, "y": 0.408002, "stath": 0.0288288, "statl": 0.0288288, "systh": 0.0864865, "systl": 0.0864865},
-        {"x": 9, "xl": 8, "xh": 10, "y": 0.245555, "stath": 0.0396397, "statl": 0.0396397, "systh": 0.0900901, "systl": 0.0900901},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.411023, "stath": 0.0864928, "statl": 0.0864928, "systh": 0.147754, "systl": 0.147754},
-        {"x": 13, "xl": 12, "xh": 14, "y": 0.374702, "stath": 0.0360424, "statl": 0.0360424, "systh": 0.126132, "systl": 0.126132},
-        {"x": 15, "xl": 14, "xh": 16, "y": 0.489732, "stath": 0.0504504, "statl": 0.0504504, "systh": 0.158559, "systl": 0.158559},
-        {"x": 17, "xl": 16, "xh": 18, "y": 0.341693, "stath": 0.0684685, "statl": 0.0684685, "systh": 0.108108, "systl": 0.108108},
-        {"x": 19, "xl": 18, "xh": 20, "y": 0.445913, "stath": 0.0828829, "statl": 0.0828829, "systh": 0.140541, "systl": 0.140541},
-        {"x": 23, "xl": 20, "xh": 26, "y": 0.189474, "stath": 0.0720784, "statl": 0.0720784, "systh": 0.057664, "systl": 0.057664},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.575098, "stath": 0.0307617, "statl": 0.0307617, "systh": 0.21167, "systl": 0.211914},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.541406, "stath": 0.0317383, "statl": 0.0317383, "systh": 0.17334, "systl": 0.174561},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.585352, "stath": 0.032959, "statl": 0.032959, "systh": 0.180664, "systl": 0.179443},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.470605, "stath": 0.0427246, "statl": 0.0427246, "systh": 0.144043, "systl": 0.144043},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.386377, "stath": 0.057373, "statl": 0.057373, "systh": 0.118408, "systl": 0.117188},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.416895, "stath": 0.0720215, "statl": 0.0720215, "systh": 0.125732, "systl": 0.123291},
     ]
 };
 
