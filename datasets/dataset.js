@@ -15884,7 +15884,7 @@ dataset["Upsilon1S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-1"] = {
     kinea : "p<sub>T</sub> < 10 GeV",
     kineb : "|y| < 1",
     data : [
-        {"x": 45, "xl": 30, "xh": 60, "y": 0.56, "stath": 0.07, "statl": 0.07, "systh": 0.10, "systl": 0.10},
+        {"x": 45, "xl": 30, "xh": 60, "y": 0.56, "stath": 0.07, "statl": 0.07, "systh": 0.1, "systl": 0.1},
         {"x": 20, "xl": 10, "xh": 30, "y": 0.36, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
         {"x": 5, "xl": 0, "xh": 10, "y": 0.36, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
     ]
@@ -15995,7 +15995,7 @@ dataset["Upsilon1S_RAA_Npart_AuAu_200GeV_STAR_pT-lt-10_absy-lt-1"] = {
     kinea : "p<sub>T</sub> < 10 GeV",
     kineb : "|y| < 1",
     data : [
-        {"x": 81, "xl": 81, "xh": 81, "y": 0.56, "stath": 0.07, "statl": 0.07, "systh": 0.10, "systl": 0.10},
+        {"x": 81, "xl": 81, "xh": 81, "y": 0.56, "stath": 0.07, "statl": 0.07, "systh": 0.1, "systl": 0.1},
         {"x": 203, "xl": 203, "xh": 203, "y": 0.36, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
         {"x": 325, "xl": 325, "xh": 325, "y": 0.36, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
     ]
@@ -16131,8 +16131,8 @@ dataset["Upsilon1S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-1"] = {
     kineb : "|y| < 1",
     data : [
         {"x": 1, "xl": 0, "xh": 2, "y": 0.37, "stath": 0.05, "statl": 0.05, "systh": 0.08, "systl": 0.08},
-        {"x": 3.5, "xl": 2, "xh": 5, "y": 0.40, "stath": 0.04, "statl": 0.04, "systh": 0.09, "systl": 0.09},
-        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.50, "stath": 0.11, "statl": 0.11, "systh": 0.15, "systl": 0.15},
+        {"x": 3.5, "xl": 2, "xh": 5, "y": 0.4, "stath": 0.04, "statl": 0.04, "systh": 0.09, "systl": 0.09},
+        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.5, "stath": 0.11, "statl": 0.11, "systh": 0.15, "systl": 0.15},
     ]
 };
 
@@ -17000,7 +17000,7 @@ dataset["Upsilon2S_RAA_cent_AuAu_200GeV_STAR_pT-lt-10_absy-lt-1"] = {
     kinea : "p<sub>T</sub> < 10 GeV",
     kineb : "|y| < 1",
     data : [
-        {"x": 45, "xl": 30, "xh": 90, "y": 0.48, "stath": 0.16, "statl": 0.16, "systh": 0.09, "systl": 0.09},
+        {"x": 45, "xl": 30, "xh": 60, "y": 0.48, "stath": 0.16, "statl": 0.16, "systh": 0.09, "systl": 0.09},
         {"x": 20, "xl": 10, "xh": 30, "y": 0.26, "stath": 0.11, "statl": 0.11, "systh": 0.03, "systl": 0.03},
         {"x": 5, "xl": 0, "xh": 10, "y": 0.09, "stath": 0.14, "statl": 0.14, "systh": 0.02, "systl": 0.02},
     ]
@@ -17184,7 +17184,7 @@ dataset["Upsilon2S_RAA_pT_AuAu_200GeV_STAR_cent-0-60_absy-lt-1"] = {
     kineb : "|y| < 1",
     data : [
         {"x": 1, "xl": 0, "xh": 2, "y": 0.45, "stath": 0.13, "statl": 0.13, "systh": 0.11, "systl": 0.11},
-        {"x": 2.5, "xl": 2, "xh": 5, "y": 0.18, "stath": 0.10, "statl": 0.10, "systh": 0.04, "systl": 0.04},
+        {"x": 3.5, "xl": 2, "xh": 5, "y": 0.18, "stath": 0.1, "statl": 0.1, "systh": 0.04, "systl": 0.04},
         {"x": 7.5, "xl": 5, "xh": 10, "y": 0.19, "stath": 0.25, "statl": 0.25, "systh": 0.07, "systl": 0.07},
     ]
 };
