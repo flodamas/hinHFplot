@@ -4440,6 +4440,49 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4p5-M2p5"] = {
     ]
 };
 
+dataset["aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-1-35_absycm-lt-1"] = {
+    reference : "CMS-PAS-HIN-21-016",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-21-016",
+    update : "2023-03-27",
+    observable : "LcToD0",
+    xtitle : "pT",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "CMS",
+    kinea : "1 < N<sub>trk</sub> < 35",
+    kineb : "|y<sub>cm</sub>| < 1",
+    data : [
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.500552, "stath": 0.0642726, "statl": 0.0642726, "systh": 0.0955801, "systl": 0.0968692},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.521547, "stath": 0.0552486, "statl": 0.0552486, "systh": 0.0626151, "systl": 0.0644567},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.600737, "stath": 0.0607734, "statl": 0.0607734, "systh": 0.0773481, "systl": 0.0791897},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.413812, "stath": 0.0561694, "statl": 0.0561694, "systh": 0.0441989, "systl": 0.0441989},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.356722, "stath": 0.0423573, "statl": 0.0423573, "systh": 0.0423573, "systl": 0.0432781},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.210313, "stath": 0.0478821, "statl": 0.0478821, "systh": 0.0257827, "systl": 0.0257827},
+    ]
+};
+
+dataset["aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-185-250_absycm-lt-1"] = {
+    reference : "CMS-PAS-HIN-21-016",
+    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-21-016",
+    update : "2023-03-27",
+    observable : "LcToD0",
+    xtitle : "pT",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "CMS",
+    kinea : "185 < N<sub>trk</sub> < 250",
+    kineb : "|y<sub>cm</sub>| < 1",
+    data : [
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.444199, "stath": 0.0460405, "statl": 0.0460405, "systh": 0.0801105, "systl": 0.0782689},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.482873, "stath": 0.053407, "statl": 0.053407, "systh": 0.0607735, "systl": 0.0589319},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.444199, "stath": 0.0616943, "statl": 0.0616943, "systh": 0.072744, "systl": 0.0718232},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.45709, "stath": 0.0524862, "statl": 0.0524862, "systh": 0.0524862, "systl": 0.0524862},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.315285, "stath": 0.0478821, "statl": 0.0478821, "systh": 0.0395949, "systl": 0.0377532},
+    ]
+};
+
 dataset["aprLambdacToD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
     reference : "PRL 128 (2022) 012001",
     link : "https://arxiv.org/abs/2106.08278",
