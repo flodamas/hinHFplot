@@ -1939,7 +1939,7 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = 
 
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
     reference : "LHCb-PAPER-2023-006",
-    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2398/attachments/812/1698/lhcb_hp23_sun_v3.pdf#page=12",
+    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
     update : "2023-03-27",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
@@ -1967,7 +1967,7 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
 
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-M5-M2p5"] = {
     reference : "LHCb-PAPER-2023-006",
-    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2398/attachments/812/1698/lhcb_hp23_sun_v3.pdf#page=12",
+    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
     update : "2023-03-27",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
@@ -2033,6 +2033,53 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
         {"x": 5, "xl": 4, "xh": 6, "y": 0.486, "stath": 0.081, "statl": 0.081, "systh": 0.0660739, "systl": 0.0660739},
         {"x": 7, "xl": 6, "xh": 8, "y": 0.497, "stath": 0.088, "statl": 0.088, "systh": 0.0671911, "systl": 0.0681296},
         {"x": 10, "xl": 8, "xh": 12, "y": 0.508, "stath": 0.082, "statl": 0.082, "systh": 0.0692464, "systl": 0.0692464},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
+    reference : "LHCb-PAPER-2023-006",
+    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
+    update : "2023-03-27",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 10 GeV",
+    data : [
+        {"x": -4.75, "xl": -5, "xh": -4.5, "y": 0.291139, "stath": 0.0722363, "statl": 0.0722363, "systh": 0.051308, "systl": 0.0519831},
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 0.578734, "stath": 0.0594093, "statl": 0.0594093, "systh": 0.070211, "systl": 0.0702109},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.505823, "stath": 0.0270042, "statl": 0.0270042, "systh": 0.0344304, "systl": 0.0330802},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.497046, "stath": 0.0249789, "statl": 0.0249789, "systh": 0.0540084, "systl": 0.0540084},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.534852, "stath": 0.038481, "statl": 0.038481, "systh": 0.0870886, "systl": 0.0837131},
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.460603, "stath": 0.0285579, "statl": 0.0285579, "systh": 0.0453567, "systl": 0.0452442},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.443713, "stath": 0.0141772, "statl": 0.0141772, "systh": 0.0398312, "systl": 0.0391561},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.457215, "stath": 0.012827, "statl": 0.012827, "systh": 0.0236287, "systl": 0.0236287},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.434937, "stath": 0.018903, "statl": 0.018903, "systh": 0.0168777, "systl": 0.018903},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.374177, "stath": 0.0479325, "statl": 0.0479325, "systh": 0.0249789, "systl": 0.025654},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_y_pp_5TeV_LHCb__pT-1-10"] = {
+    reference : "LHCb-PAPER-2023-006",
+    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
+    update : "2023-03-27",
+    observable : "DsubsToDplusmn",
+    xtitle : "y",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pp",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "1 < p<sub>T</sub> < 10 GeV",
+    data : [
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.419409, "stath": 0.0249789, "statl": 0.0249789, "systh": 0.0425316, "systl": 0.032405},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.486245, "stath": 0.0135021, "statl": 0.0135021, "systh": 0.0243038, "systl": 0.0270042},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.455865, "stath": 0.0141772, "statl": 0.0141772, "systh": 0.0249789, "systl": 0.0236287},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.407932, "stath": 0.018903, "statl": 0.018903, "systh": 0.0243038, "systl": 0.0195781},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.425485, "stath": 0.03173, "statl": 0.03173, "systh": 0.0499578, "systl": 0.0452321},
     ]
 };
 
