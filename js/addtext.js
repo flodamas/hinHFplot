@@ -18,7 +18,7 @@ function addtext()
     iinput.setAttribute('type', 'text');
     iinput.id = iname + "content";
     iinput.value = "eg. D<sup>0</sup>, J/&psi;, p<sub>T</sub>";
-    iinput.setAttribute('onkeyup', 'changecontent("'+iname+'svg", this.value)');
+    iinput.setAttribute('onkeyup', 'changecontent("'+iname+'")');
     itextgroup.appendChild(iinput);
 
     var iboldval = document.createElement("input");
@@ -50,12 +50,12 @@ function addtext()
 
     var itsize = document.createElement("input");
     itsize.setAttribute('type', 'number');
+    itsize.id = iname + "tsize";
     itsize.setAttribute('min', '0');
-    itsize.setAttribute('onchange', 'changetsize("'+iname+'svg", this.value)');
+    itsize.setAttribute('onchange', 'changetsize("'+iname+'")');
     itsize.setAttribute('style', 'width: 4vw;');
     itsize.setAttribute('value', '50');
     itsize.setAttribute('step', '5');
-    itsize.id = iname + "tsize";
     itextgroup.appendChild(itsize);
 
     var ifa2 = document.createElement("i");
@@ -65,12 +65,12 @@ function addtext()
 
     var itx = document.createElement("input");
     itx.setAttribute('type', 'range');
+    itx.id = iname + "itx";
     itx.setAttribute('class', 'slider');
     itx.setAttribute('min', '10');
     itx.setAttribute('max', '99');
     itx.setAttribute('value', '15');
-    itx.setAttribute('oninput', 'changetxx("'+iname+'svg", this.value)');
-    itx.id = iname + "itx";
+    itx.setAttribute('oninput', 'changetxx("'+iname+'")');
     itextgroup.appendChild(itx);
 
     var ifa3 = document.createElement("i");
@@ -80,12 +80,12 @@ function addtext()
 
     var ity = document.createElement("input");
     ity.setAttribute('type', 'range');
+    ity.id = iname + "ity";
     ity.setAttribute('class', 'slider');
     ity.setAttribute('min', '10');
     ity.setAttribute('max', '99');
     ity.setAttribute('value', '15');
-    ity.setAttribute('oninput', 'changetyy("'+iname+'svg", this.value)');
-    ity.id = iname + "ity";
+    ity.setAttribute('oninput', 'changetyy("'+iname+'")');
     itextgroup.appendChild(ity);
 
     addtexttosvg(iname);
@@ -94,19 +94,14 @@ function addtext()
 
 function addtexttosvg(name)
 {
-    var xx = document.getElementById(name + "itx").value,
-        yy = document.getElementById(name + "ity").value,
-        tsize = document.getElementById(name + "tsize").value,
-        content = document.getElementById(name + "content").value;
-
     var ttext = svg.append("text")
-        .attr("x", getx0(xx))
-        .attr("y", gety0(yy))
         .attr("id", name+"svg")
         .style("text-anchor", "start");
 
-    changecontent(name+"svg", content);
-    changetsize(name+"svg", tsize);
+    changecontent(name);
+    changetsize(name);
+    changetxx(name);
+    changetyy(name);
     changebold(name);
     changeitalic(name);
 }
@@ -121,8 +116,10 @@ function drawalltext()
     }
 }
 
-function changecontent(tname, content)
+function changecontent(name)
 {
+    var tname = name + "svg",
+        content = document.getElementById(name+"content").value;
     document.getElementById(tname).innerHTML = '';
     var contents = parsescript(content);
     for(var p in contents)
@@ -135,18 +132,24 @@ function changecontent(tname, content)
     settsuptsub(tname);
 }
 
-function changetsize(tname, tsize)
+function changetsize(name)
 {
+    var tname = name + "svg",
+        tsize = document.getElementById(name+"tsize").value;
     svg.select('#' + tname).style("font-size", gettsize(tsize)+"em");
 }
 
-function changetxx(tname, xx)
+function changetxx(name)
 {
+    var tname = name + "svg",
+        xx = document.getElementById(name+"itx").value;
     svg.select('#' + tname).attr("x", getx0(xx));
 }
 
-function changetyy(tname, yy)
+function changetyy(name)
 {
+    var tname = name + "svg",
+        yy = document.getElementById(name+"ity").value;
     svg.select('#' + tname).attr("y", gety0(yy));
 }
 
