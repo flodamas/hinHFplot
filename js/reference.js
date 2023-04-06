@@ -49,7 +49,7 @@ function addoneref(da, reference, transt = 500)
         }, 1);
     reference.appendChild(iref);
     var ialref = document.createElement("i");
-    ialref.setAttribute('class', 'fa-solid fa-caret-right');
+    ialref.setAttribute('class', 'fa-solid fa-arrow-right');
     ialref.innerHTML = ialref.innerHTML + "&nbsp;&nbsp;";
     ialref.style.cursor = 'auto';
     iref.appendChild(ialref);
@@ -65,7 +65,7 @@ function addoneref(da, reference, transt = 500)
     iref.appendChild(sp);
     var iacref = document.createElement("i");
     iacref.id = "acref_" + da;
-    iacref.setAttribute('class', 'fa-regular fa-copy');
+    iacref.setAttribute('class', 'fa-regular fa-clipboard');
     iacref.setAttribute('onmouseover', "showcopy('"+da+"')");
     iacref.setAttribute('onmouseleave', "hidecopy()");
     iacref.setAttribute("onclick", "copylink('acref_"+da+"', '"+dataset[da].reference+"', '" + cc + "')");
