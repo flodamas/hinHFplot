@@ -62,7 +62,7 @@ function exportsetup()
     var blob = new Blob([prettifyXml(xmltext)], {
         type: "text/plain;charset=utf-8",
     });
-    saveAs(blob, "hinHFplot.xml");
+    saveAs(blob, savename()+".xml");
 
     // console.log(prettifyXml(xmltext));
 }

@@ -109,7 +109,7 @@ function svgString2Image( svgString, width, height, format)
 
 	canvas.toBlob( function(blob) {
 	    var filesize = Math.round( blob.length/1024 ) + ' KB';
-            saveAs(blob, 'hinHFplot.png' );
+            saveAs(blob, savename()+'.png' );
 	});	
     };
 

@@ -112,3 +112,10 @@ function colorbtn(id)
         btnlog.style.color = "black";
     }
 }
+
+function savename()
+{
+    var savename = document.getElementById('savenameinput').value;
+    savename = savename==""?"hinHFplot":savename;
+    return savename;
+}
