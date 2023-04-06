@@ -113,9 +113,10 @@
           <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='3'><i class="fa-solid fa-brush"></i></button>
           <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
           <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0"><i class="fa-solid fa-table-cells"></i></button>
-          <input type="text" id="savenameinput" style="width:6em;" placeholder="hinHFplot" value="">
-          <button type="submit" class="btnaction" id='btnsave' onclick="savepng(); exportsetup();"><i class="fa-solid fa-floppy-disk"></i></button>
-          <label><input type='file' accept='.xml' onchange='onChooseFile(event, onFileLoad.bind())' onclick="this.value=null;"></input>
+          <label style="padding-top: 0.33rem; padding-bottom: 0.33rem; cursor: auto;">
+            <input type="text" id="savenameinput" style="width:6em; padding-top: 0.15rem; padding-bottom: 0.15rem; border: none;" placeholder="hinHFplot" value="" />
+            &nbsp;&nbsp;<i class="fa-solid fa-floppy-disk" onclick="savepng(); exportsetup();" style="cursor: pointer;"></i></label>
+          <label><input type='file' accept='.xml' onchange='onChooseFile(event, onFileLoad.bind())' onclick="this.value=null;" />
             <i class="fa-solid fa-upload"></i></label>
           &nbsp;
         </div>
