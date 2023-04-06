@@ -24,14 +24,20 @@ function defaultrange()
 {
     var iiobs = iobs(document.getElementById('observable').value),
         iivar = ivar(document.getElementById('xvariable').value);
-    document.getElementById('pxmin').value = iivar.pxmin;
-    document.getElementById('pxmax').value = iivar.pxmax;
-    document.getElementById('pymin').value = iiobs.pymin;
-    document.getElementById('pymax').value = iiobs.pymax;
     document.getElementById('pxmin').step = iivar.step;
     document.getElementById('pxmax').step = iivar.step;
     document.getElementById('pymin').step = iiobs.step;
     document.getElementById('pymax').step = iiobs.step;
+}
+
+function defaultvalue()
+{
+   var iiobs = iobs(document.getElementById('observable').value),
+        iivar = ivar(document.getElementById('xvariable').value);
+    document.getElementById('pxmin').value = iivar.pxmin;
+    document.getElementById('pxmax').value = iivar.pxmax;
+    document.getElementById('pymin').value = iiobs.pymin;
+    document.getElementById('pymax').value = iiobs.pymax;
 }
 
 function loadoptions()
