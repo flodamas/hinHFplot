@@ -8,7 +8,7 @@ function exportsetup()
                   "ratiorange"
                  ];
     // var xmlDoc = document.implementation.createDocument(null, "setup");
-    var xmlDoc = new DOMParser().parseFromString('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><hinHFplot><setup></setup><data></data><legopacity></legopacity></hinHFplot>',
+    var xmlDoc = new DOMParser().parseFromString('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><hinHFplot><setup></setup><data></data><text></text><legopacity></legopacity></hinHFplot>',
                                                  "application/xml");
     var setup = xmlDoc.getElementsByTagName("setup")[0];
     for(let i in setups)
@@ -39,11 +39,31 @@ function exportsetup()
         xmladdnode(xmlDoc, newda, "display", document.getElementById('display_'+da).value);
     }
 
+    var texts = document.getElementById("textfarm").getElementsByTagName("div");
+    var textnode = xmlDoc.getElementsByTagName("text")[0];
+    for(let i=0; i<texts.length; i++)
+    {
+        var iname = texts[i].id;
+        var newt = xmladdnode(xmlDoc, textnode, "line");
+        xmladdnode(xmlDoc, newt, "item", iname);
+        var content = document.getElementById(iname+"content").value;
+        content = content.replaceAll("&", "&amp;");
+        content = content.replaceAll("<", "&lt;");
+        content = content.replaceAll(">", "&gt;");
+        xmladdnode(xmlDoc, newt, "content", content);
+        xmladdnode(xmlDoc, newt, "tbold", document.getElementById(iname+"tbold").value);
+        xmladdnode(xmlDoc, newt, "titalic", document.getElementById(iname+"titalic").value);
+        xmladdnode(xmlDoc, newt, "tsize", document.getElementById(iname+"tsize").value);
+        xmladdnode(xmlDoc, newt, "itx", document.getElementById(iname+"itx").value);
+        xmladdnode(xmlDoc, newt, "ity", document.getElementById(iname+"ity").value);
+    }
+
     var xmltext = new XMLSerializer().serializeToString(xmlDoc.documentElement);
     var blob = new Blob([prettifyXml(xmltext)], {
         type: "text/plain;charset=utf-8",
     });
     saveAs(blob, "hinHFplot.xml");
+
     // console.log(prettifyXml(xmltext));
 }
 

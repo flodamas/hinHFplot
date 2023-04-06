@@ -37,6 +37,7 @@ function onFileLoad() {
     }
     
     clearall(0);
+    removealltext();
     defaultrange();
     loaditem();
     freshall(0);
@@ -51,6 +52,24 @@ function onFileLoad() {
         document.getElementById('marker_'+da).value = marker;
         document.getElementById('display_'+da).value = display;
         checkthis(da, 0);
+    }
+
+    var texts = xmlDoc.getElementsByTagName("line");
+    for(let i=0; i<texts.length; i++)
+    {
+        var tt = texts[i].getElementsByTagName("item")[0].innerHTML,
+            content = texts[i].getElementsByTagName("content")[0].innerHTML;
+        content = content.replaceAll("&gt;", ">");
+        content = content.replaceAll("&lt;", "<");
+        content = content.replaceAll("&amp;", "&");
+        var iname = addtext();
+        document.getElementById(iname+"content").value = content;
+        document.getElementById(iname+"tbold").value = texts[i].getElementsByTagName("tbold")[0].innerHTML;
+        document.getElementById(iname+"titalic").value = texts[i].getElementsByTagName("titalic")[0].innerHTML;
+        document.getElementById(iname+"tsize").value = texts[i].getElementsByTagName("tsize")[0].innerHTML;
+        document.getElementById(iname+"itx").value = texts[i].getElementsByTagName("itx")[0].innerHTML;
+        document.getElementById(iname+"ity").value = texts[i].getElementsByTagName("ity")[0].innerHTML;
+        refreshtext(iname);
     }
 }
 

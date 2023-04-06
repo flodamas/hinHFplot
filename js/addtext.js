@@ -3,6 +3,17 @@ function addtext()
     var textfarm = document.getElementById("textfarm");
     var ntext = document.getElementById("btnaddtext").value;
     var iname = "text" + ntext;
+
+    addtextgroup(iname);
+    addtexttosvg(iname);
+
+    document.getElementById("btnaddtext").value = parseInt(ntext) + 1;
+
+    return iname;
+}
+
+function addtextgroup(iname)
+{
     var itextgroup = document.createElement("div");
     itextgroup.id = iname;
     textfarm.appendChild(itextgroup);
@@ -87,9 +98,6 @@ function addtext()
     ity.setAttribute('value', '15');
     ity.setAttribute('oninput', 'changetyy("'+iname+'")');
     itextgroup.appendChild(ity);
-
-    addtexttosvg(iname);
-    document.getElementById("btnaddtext").value = parseInt(ntext) + 1;
 }
 
 function addtexttosvg(name)
@@ -97,7 +105,11 @@ function addtexttosvg(name)
     var ttext = svg.append("text")
         .attr("id", name+"svg")
         .style("text-anchor", "start");
+    refreshtext(name);
+}
 
+function refreshtext(name)
+{
     changecontent(name);
     changetsize(name);
     changetxx(name);
@@ -169,4 +181,16 @@ function switchitalic(name)
 function changeitalic(name)
 {
     document.getElementById(name+"svg").style.fontStyle = document.getElementById(name+"titalic").value>0?"italic":"normal";
+}
+
+function removealltext()
+{
+    var texts = document.getElementById("textfarm").getElementsByTagName("div");
+    for(let i=0; i<texts.length; i++)
+    {
+        var iname = texts[i].id;
+        document.getElementById(iname).remove();
+        document.getElementById(iname+'svg').remove();
+    }
+    document.getElementById("btnaddtext").value = 0;
 }
