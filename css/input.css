@@ -1,4 +1,4 @@
-button {
+button, label {
     border: none;
     /* margin: var(--margin-input) calc(var(--margin-input)*0.5); */
     margin: calc(var(--margin-input) * 2) var(--margin-input);
@@ -176,3 +176,6 @@ input[type=text]:hover {
     display: block;
 }
 
+input[type=file] {
+    display: none;
+}

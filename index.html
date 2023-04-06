@@ -28,6 +28,9 @@
     <script src="js/reference.js"></script>
     <script src="js/errorbars.js"></script>
     <script src="js/control.js"></script>
+    <script src="js/export.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/upload.js"></script>
   </head>
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
@@ -48,19 +51,19 @@
             <input type="number" id="pxmin" min="-5" max="450" class="numberinput" onchange="freshall(0);" inputmode="decimal">
             <p> - </p>
             <input type="number" id="pxmax" min="-5" max="450" class="numberinput" onchange="freshall(0);" inputmode="decimal">
-            <button type="submit" id="logx" class="btncheck" value="0" onclick="changescale('logx', 0)">Log x</button>
+            <button type="submit" id="logx" class="btncheck" value="0" onclick="switchbtn(this.id); freshall(0);">Log x</button>
           </div>
           <div>
             <p>Y-axis range:</p>
             <input type="number" id="pymin" min="-5" max="5" class="numberinput" onchange="freshall(0);" inputmode="decimal">
             <p> - </p>
             <input type="number" id="pymax" min="-5" max="5" class="numberinput" onchange="freshall(0);" inputmode="decimal">
-            <button type="submit" id="logy" class="btncheck" value="0" onclick="changescale('logy', 0)">Log y</button>
+            <button type="submit" id="logy" class="btncheck" value="0" onclick="switchbtn(this.id); freshall(0);">Log y</button>
           </div>
           <div>
             <button type="submit" class="btnaction" onclick="clearall();">Clear all</button>
             <button type="submit" class="btnaction" onclick="colorall(); ">Random color</button>
-            <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="checkedonly()">Checked only</button>
+            <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="switchbtn(this.id); colorbtn(this.id); checkedonly();">Checked only</button>
             <p><i class="fa-solid fa-filter" style="color: #eee"></i></p>
             <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton" value="">
           </div>
@@ -96,7 +99,7 @@
           <button type="submit" class="btnaction hideinmobile" id="btnaddtext" onclick="addtext();" value='0'><i class="fa-solid fa-font"></i> <i class="fa-solid fa-square-plus"></i></button>
           <div class="dropdown">
             <button type="submit" id="btnlegend" value="127">Legend <i class="fa-solid fa-caret-down"></i></button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="dropdown-content">
               <a id="sw_mark" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Marker</a>
               <a id="sw_particle" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Particle</a>
               <a id="sw_collab" onclick="legendopacity(this);" class="active"><i class="fa-solid fa-square-check"></i> Collaboration</a>
@@ -110,7 +113,9 @@
           <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='3'><i class="fa-solid fa-brush"></i></button>
           <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
           <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0"><i class="fa-solid fa-table-cells"></i></button>
-          <button type="submit" class="btnaction" id='saveButton'><i class="fa-solid fa-floppy-disk"></i></button>
+          <button type="submit" class="btnaction" id='btnsave' onclick="savepng(); exportsetup();"><i class="fa-solid fa-floppy-disk"></i></button>
+          <label><input type='file' accept='.xml' onchange='onChooseFile(event, onFileLoad.bind())' onclick="this.value=null;"></input>
+            <i class="fa-solid fa-upload"></i></label>
           &nbsp;
         </div>
         <div class="dl">
@@ -126,7 +131,6 @@
       </div>
 
       <script>setsvg()</script>
-      <script src="js/save.js"></script>
 
       <div id="clipboard"></div>
     </div>
@@ -140,6 +144,10 @@
     <!-- <div class="ulog" id="ulog" style="display: none;"> -->
       <div class="ulog" id="ulog">
         <div style="position: absolute; height:94%;">
+          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/5/23): </p>
+          <p class="blockp">
+            <i class="fa-solid fa-floppy-disk"></i> will save an XML along with PNG, and you can use <i class="fa-solid fa-upload"></i> to upload an XML to reproduce the plot. (Adding text is under construction)
+          </p>
           <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (3/27/23): </p>
           <p class="blockp">
             Update database with HP'23 new results.

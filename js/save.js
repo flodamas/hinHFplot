@@ -2,16 +2,11 @@
 // https://gist.github.com/Rokotyan/0556f8facbaf344507cdc45dc3622177
 // https://stackoverflow.com/questions/36303964/save-d3-chart-as-image
 
-d3.select('#saveButton').on('click', function()
-                            {
-                                var svgString = getSVGString(svg.node());
-                                svgString2Image( svgString, 2*width, 2*height, 'png', save );
-
-                                function save( dataBlob, filesize )
-                                {
-	                            saveAs( dataBlob, 'hinHFplot.png' );
-                                }
-                            });
+function savepng()
+{
+    var svgString = getSVGString(svg.node());
+    svgString2Image( svgString, 3*width, 3*height, 'png');
+}
 
 function getSVGString( svgNode )
 {
@@ -94,7 +89,7 @@ function getSVGString( svgNode )
 }
 
 
-function svgString2Image( svgString, width, height, format, callback )
+function svgString2Image( svgString, width, height, format)
 {
     var format = format ? format : 'png';
 
@@ -114,10 +109,8 @@ function svgString2Image( svgString, width, height, format, callback )
 
 	canvas.toBlob( function(blob) {
 	    var filesize = Math.round( blob.length/1024 ) + ' KB';
-	    if ( callback ) callback( blob, filesize );
-	});
-
-	
+            saveAs(blob, 'hinHFplot.png' );
+	});	
     };
 
     image.src = imgsrc;

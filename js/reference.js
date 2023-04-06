@@ -5,15 +5,15 @@ function changeoneref(da)
         document.getElementById("liref_" + da).style = 'color: ' + cc + ';';
 }
 
-function refone(da)
+function refone(da, transt=400)
 {
     if(checkb(da))
     {
         checkandremove("liref_" + da);
-        addoneref(da, document.getElementById('reference'));
+        addoneref(da, document.getElementById('reference'), transt);
     }
     else
-        rmoneref(da);
+        rmoneref(da, transt);
 }
 
 function refall()
@@ -76,9 +76,12 @@ function addoneref(da, reference, transt = 500)
 function rmoneref(da, transt = 400)
 {
     document.getElementById("liref_" + da).style.opacity = '0';
-    setTimeout(function() {
+    if(transt==0)
         document.getElementById("liref_" + da).remove();
-    }, transt);
+    else
+        setTimeout(function() {
+            document.getElementById("liref_" + da).remove();
+        }, transt);
 }
 
 function changecolor(da)

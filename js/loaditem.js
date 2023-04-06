@@ -181,12 +181,12 @@ function swapcheckb(da)
     }
 }
 
-function checkthis(da)
+function checkthis(da, transt=400)
 {
     swapcheckb(da);
-    drawone(da);
-    legone(da);
-    refone(da);
+    drawone(da, transt);
+    legone(da, transt);
+    refone(da, transt);
 }
 
 function changethis(da)

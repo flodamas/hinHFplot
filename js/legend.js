@@ -20,10 +20,16 @@ function legone(da, transt = 500)
     {
         d3.select("svg").select('#legend_'+da).transition().attr('opacity', 0).duration(transt);
         d3.select("svg").select('#legendmark_'+da).transition().attr('opacity', 0).duration(transt);
-        setTimeout(function() {
+        if(transt==0)
+        {
             svg.select('#legend_'+da).remove();
             svg.select('#legendmark_'+da).remove();
-        }, transt);
+        }
+        else
+            setTimeout(function() {
+                svg.select('#legend_'+da).remove();
+                svg.select('#legendmark_'+da).remove();
+            }, transt);
         var ileg = legs.indexOf(da);
         legs.splice(ileg, 1);
         for(var l=ileg; l<legs.length; l++)
@@ -51,9 +57,8 @@ function legone(da, transt = 500)
     }
 }
 
-function legall(transt = 500)
+function removelegall(transt = 500)
 {
-    var copy_legs = legs;
     d3.select("svg").selectAll('.legend').transition().attr('opacity', 0).duration(transt);
     d3.select("svg").selectAll('.legendmark').transition().attr('opacity', 0).duration(transt);
     if(transt)
@@ -68,7 +73,13 @@ function legall(transt = 500)
         d3.select("svg").selectAll('.legend').remove();
         d3.select("svg").selectAll('.legendmark').remove();
     }
-    legs = [];
+    legs = [];    
+}
+
+function legall(transt = 500)
+{
+    var copy_legs = legs;
+    removelegall(transt);
     for(var l in copy_legs)
     {
         var da = copy_legs[l];

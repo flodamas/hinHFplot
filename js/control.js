@@ -2,7 +2,9 @@ function freshall(transt = 500)
 {
     drawall(transt);
     legall(transt);
-    refall();
+    refall(transt);
+    colorbtn("logx");
+    colorbtn("logy");
 }
 
 function colorall(transt = 500)
@@ -26,7 +28,7 @@ function colorall(transt = 500)
     }
 }
 
-function clearall()
+function clearall(transt = 500)
 {
     var checkbs = document.getElementsByClassName("checkb");
     for(var i=0; i<checkbs.length; i++)
@@ -34,31 +36,13 @@ function clearall()
         var da = checkbs[i].id.replace("check_", "");
         if(!checkb(da)) continue;
         swapcheckb(da);
-        clearone(da);
-        refone(da);
-        legone(da);
+        clearone(da, transt);
+        refone(da, transt);
+        legone(da, transt);
     }
 }
 
 window.addEventListener("resize", function() { freshall(0); });
-
-function changescale(id, transt = 500)
-{
-    var btnlog = document.getElementById(id);
-    btnlog.value = 1 - btnlog.value;
-    if(btnlog.value == 1)
-    {
-        btnlog.style.backgroundColor = "#0072D0";
-        btnlog.style.color = "white";
-    }
-    else
-    {
-        btnlog.style.backgroundColor = "#f5f5f5";
-        btnlog.style.color = "black";
-    }
-    drawall(transt);
-    legall(transt);
-}
 
 // Opacity series
 

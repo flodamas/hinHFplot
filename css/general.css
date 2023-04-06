@@ -68,11 +68,11 @@
 
     .ulog {
         opacity: 1.;
-        padding: 0.7rem;
+        padding: 1rem;
         top: 1rem;
         right: 0.2rem;
         width: 12rem;
-        height: 10rem;
+        height: 13rem;
     }
     
     .btnaction:hover {

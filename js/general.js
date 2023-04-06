@@ -87,3 +87,22 @@ function ivar(name)
     return vars[i];
 }
 
+function switchbtn(id)
+{
+    document.getElementById(id).value = 1 - document.getElementById(id).value;
+}
+
+function colorbtn(id)
+{
+    var btnlog = document.getElementById(id);
+    if(btnlog.value == 1)
+    {
+        btnlog.style.backgroundColor = "#0072D0";
+	btnlog.style.color = "white";
+    }
+    else
+    {
+        btnlog.style.backgroundColor = "#f5f5f5";
+        btnlog.style.color = "black";
+    }
+}
