@@ -31,16 +31,17 @@ function onFileLoad() {
         else if(value==0 && sw.classList.contains("active"))
         {
             sw.classList.remove("active");
-	    sw.querySelector('i').className = 'fa-regular fa-square';
+            sw.querySelector('i').className = 'fa-regular fa-square';
         }
         // console.log(xmlDoc.getElementsByTagName("set")[0].getElementsByTagName("item")[0].innerHTML);
     }
-    
+
     clearall(0);
     removealltext();
     defaultrange();
     loaditem();
     freshall(0);
+
     var das = xmlDoc.getElementsByTagName("da");
     for(let i=0; i<das.length; i++)
     {
