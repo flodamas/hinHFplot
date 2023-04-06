@@ -1,4 +1,4 @@
-function freshall(transt = 500)
+function freshall(transt = 0)
 {
     drawall(transt);
     legall(transt);
@@ -7,7 +7,7 @@ function freshall(transt = 500)
     colorbtn("logy");
 }
 
-function colorall(transt = 500)
+function colorall(transt = 200)
 {
     var colorb = document.getElementsByTagName("input");
     for(var i=0; i<colorb.length; i++)
@@ -28,7 +28,7 @@ function colorall(transt = 500)
     }
 }
 
-function clearall(transt = 500)
+function clearall(transt = 100)
 {
     var checkbs = document.getElementsByClassName("checkb");
     for(var i=0; i<checkbs.length; i++)
@@ -42,19 +42,19 @@ function clearall(transt = 500)
     }
 }
 
-window.addEventListener("resize", function() { freshall(0); });
+window.addEventListener("resize", function() { freshall(); });
 
 // Opacity series
 
-function vlineopacity(transt = 400)
+function vlineopacity()
 {
     var vline = d3.select("svg").select("g").select('#vline');
     var vo = 1 - document.getElementById('btnvline').value;
-    vline.transition().attr('opacity', vo).duration(transt);
+    vline.transition().attr('opacity', vo);
     document.getElementById('btnvline').value = vo;
 }
 
-function binningopacity(transt = 400)
+function binningopacity(transt = 200)
 {
     changetonext('btnbinning');
     var checkbs = document.getElementsByClassName("checkb");
@@ -68,10 +68,10 @@ function binningopacity(transt = 400)
     }
 }
 
-function gridopacity(transt=500)
+function gridopacity(transt = 0)
 {
     var grid = d3.select("svg").select("g").selectAll('.grid');
-    var next = {0 : 1, 1 : 0.6, 0.6 : 0.4, 0.4 : 0};
+    var next = {0 : 1, 1 : 0.4, 0.4 : 0.2, 0.2 : 0};
     var newopa = next[document.getElementById('btngrid').value];
     grid.transition().attr('opacity', newopa).duration(transt);
     document.getElementById('btngrid').value = newopa;

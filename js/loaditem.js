@@ -155,7 +155,7 @@ function loaditem(ifsPHENIX = false)
     keyfilter();
 }
 
-var changedisplay = function(da, transt = 400)
+var changedisplay = function(da, transt = 200)
 {
     changetonext('display_'+da);
     drawdisplay(da, transt);
@@ -181,7 +181,7 @@ function swapcheckb(da)
     }
 }
 
-function checkthis(da, transt=400)
+function checkthis(da, transt = 200)
 {
     swapcheckb(da);
     drawone(da, transt);
@@ -189,12 +189,12 @@ function checkthis(da, transt=400)
     refone(da, transt);
 }
 
-function changethis(da)
+function changethis(da, transt = 200)
 {
     if(checkb(da))
     {
-        changeone(da);
-        changeoneleg(da);
+        changeone(da, transt);
+        changeoneleg(da, transt);
         changeoneref(da);
     }
 }

@@ -151,7 +151,7 @@ var drawaxisgrid = function()
         .text("boundino.github.io/hinHFplot");
 }
 
-var drawdisplay = function(da, transt = 400)
+var drawdisplay = function(da, transt = 0)
 {
     d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', shadowopacity*drawornot(da, 'rect')).duration(transt);
     d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 1.*drawornot(da, 'rectl')).duration(transt);
@@ -160,13 +160,13 @@ var drawdisplay = function(da, transt = 400)
     d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 1.*drawornot(da, 'linev')).duration(transt);
 }
 
-var addData = function(da, data, thecolor, kmarker, transt = 500) {
+var addData = function(da, data, thecolor, kmarker, transt = 0) {
     addDataRects(da, data, thecolor, transt);
     addDataLines(da, data, thecolor, transt);
     addDataPoints(da, data, thecolor, kmarker, transt);
 }
 
-var addDataRects = function(da, data, thecolor, transt = 500) {
+var addDataRects = function(da, data, thecolor, transt = 0) {
     var fill, strokewidth, group;
 
     // Narrow shadow
@@ -254,7 +254,7 @@ var addDataRects = function(da, data, thecolor, transt = 500) {
         .duration(transt);        
 }
 
-var addDataLines = function(da, data, thecolor, transt = 500) {
+var addDataLines = function(da, data, thecolor, transt = 0) {
     var kmarker = document.getElementById('marker_'+da).value;
     var delta_up = Math.sqrt(marker_size())*vopt[kmarker].offset[1],
         delta_down = Math.sqrt(marker_size())*vopt[kmarker].offset[2],
@@ -317,7 +317,7 @@ var addDataLines = function(da, data, thecolor, transt = 500) {
         .duration(transt);
 }
 
-var addDataPoints = function(da, data, thecolor, kmarker, transt = 500) {
+var addDataPoints = function(da, data, thecolor, kmarker, transt = 0) {
     // Marker
     var points = d3.select("svg").select("g").selectAll('.pointd3'+da)
         .data(data)
@@ -345,7 +345,7 @@ var rmone = function(da)
     d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
 }
 
-var clearone = function(da, transt = 500)
+var clearone = function(da, transt = 0)
 {
     d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(transt);
     d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(transt);
@@ -356,21 +356,21 @@ var clearone = function(da, transt = 500)
     d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
 }
 
-var drawone = function(da, transt = 500)
+var drawone = function(da, transt = 0)
 {
     if(checkb(da))
     {
         rmone(da);
         var thisitem = dataset[da];
-        addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value);
+        addData(da, thisitem.data, document.getElementById('color_'+da).value, document.getElementById('marker_'+da).value, transt);
     }
     else
     {
-        clearone(da);
+        clearone(da, transt);
     }
 }
 
-function changeone(da, transt = 500)
+function changeone(da, transt = 0)
 {
     var kmarker = document.getElementById("marker_"+da).value;
     var cc = document.getElementById("color_"+da).value;
@@ -392,7 +392,7 @@ function changeone(da, transt = 500)
 
 // ONE functions <==
 
-var drawall = function(transt = 500)
+var drawall = function(transt = 0)
 {
     d3.selectAll("svg > *").remove();
     setsvg();

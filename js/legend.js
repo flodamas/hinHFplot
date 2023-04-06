@@ -2,7 +2,7 @@ var legdrawornot = function(name) {
     return document.getElementById('sw_'+name).classList.contains("active")?'default':'none';
 }
 
-function changeoneleg(da, transt = 500) // change color
+function changeoneleg(da, transt = 0) // change color
 {
     var kmarker = document.getElementById('marker_'+da).value;
     var thecolor = document.getElementById('color_'+da).value;
@@ -14,7 +14,7 @@ function changeoneleg(da, transt = 500) // change color
         .duration(transt);
 }
 
-function legone(da, transt = 500)
+function legone(da, transt = 0)
 {
     if(!checkb(da) && legs.includes(da)) // remove legend
     {
@@ -57,7 +57,7 @@ function legone(da, transt = 500)
     }
 }
 
-function removelegall(transt = 500)
+function removelegall(transt = 0)
 {
     d3.select("svg").selectAll('.legend').transition().attr('opacity', 0).duration(transt);
     d3.select("svg").selectAll('.legendmark').transition().attr('opacity', 0).duration(transt);
@@ -76,7 +76,7 @@ function removelegall(transt = 500)
     legs = [];    
 }
 
-function legall(transt = 500)
+function legall(transt = 0)
 {
     var copy_legs = legs;
     removelegall(transt);
@@ -120,7 +120,7 @@ function resizelegend()
 
 // ==> Protected: <==
 
-function legendmarker(da, xx, yy, transt = 500)
+function legendmarker(da, xx, yy, transt = 0)
 {
     var kmarker = document.getElementById('marker_'+da).value;
     var thecolor = document.getElementById('color_'+da).value;

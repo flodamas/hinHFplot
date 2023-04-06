@@ -42,23 +42,23 @@
         <div class="setup">
           <div>
             Observable:
-            <select id="observable" onchange="defaultrange(); defaultvalue(); loaditem(); freshall(0);" class="custom-select"></select>
+            <select id="observable" onchange="defaultrange(); defaultvalue(); loaditem(); freshall();" class="custom-select"></select>
             vs.
-            <select id="xvariable" onchange="defaultrange(); defaultvalue(); loaditem(); freshall(0);" class="custom-select"></select>
+            <select id="xvariable" onchange="defaultrange(); defaultvalue(); loaditem(); freshall();" class="custom-select"></select>
           </div>
           <div>
             <p>X-axis range:</p>
-            <input type="number" id="pxmin" min="-5" max="450" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <input type="number" id="pxmin" min="-5" max="450" class="numberinput" onchange="freshall();" inputmode="decimal">
             <p> - </p>
-            <input type="number" id="pxmax" min="-5" max="450" class="numberinput" onchange="freshall(0);" inputmode="decimal">
-            <button type="submit" id="logx" class="btncheck" value="0" onclick="switchbtn(this.id); freshall(0);">Log x</button>
+            <input type="number" id="pxmax" min="-5" max="450" class="numberinput" onchange="freshall();" inputmode="decimal">
+            <button type="submit" id="logx" class="btncheck" value="0" onclick="switchbtn(this.id); freshall();">Log x</button>
           </div>
           <div>
             <p>Y-axis range:</p>
-            <input type="number" id="pymin" min="-5" max="5" class="numberinput" onchange="freshall(0);" inputmode="decimal">
+            <input type="number" id="pymin" min="-5" max="5" class="numberinput" onchange="freshall();" inputmode="decimal">
             <p> - </p>
-            <input type="number" id="pymax" min="-5" max="5" class="numberinput" onchange="freshall(0);" inputmode="decimal">
-            <button type="submit" id="logy" class="btncheck" value="0" onclick="switchbtn(this.id); freshall(0);">Log y</button>
+            <input type="number" id="pymax" min="-5" max="5" class="numberinput" onchange="freshall();" inputmode="decimal">
+            <button type="submit" id="logy" class="btncheck" value="0" onclick="switchbtn(this.id); freshall();">Log y</button>
           </div>
           <div>
             <button type="submit" class="btnaction" onclick="clearall();">Clear all</button>
@@ -83,7 +83,7 @@
       <!-- rightpad -->
       <div id="rightpad">
         <div class="hideinmobile">
-          <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall(0);">
+          <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall();">
           <div id="divratio">Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
         </div>
         <div id="textfarm"></div>
@@ -112,7 +112,7 @@
           </div>
           <button type="submit" class="btnaction" id="btnbinning" onclick="binningopacity(); " value='3'><i class="fa-solid fa-brush"></i></button>
           <button type="submit" class="btnaction" id="btnvline" onclick="vlineopacity(); " value='0'><i class="fa-solid fa-ruler-horizontal"></i></button>
-          <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(0); " value="0"><i class="fa-solid fa-table-cells"></i></button>
+          <button type="submit" class="btnaction" id="btngrid" onclick="gridopacity(); " value="0"><i class="fa-solid fa-table-cells"></i></button>
           <label style="padding-top: 0.33rem; padding-bottom: 0.33rem; cursor: auto;">
             <input type="text" id="savenameinput" style="width:6em; padding-top: 0.15rem; padding-bottom: 0.15rem; border: none;" placeholder="hinHFplot" value="" />
             &nbsp;&nbsp;<i class="fa-solid fa-floppy-disk" onclick="savepng(); exportsetup();" style="cursor: pointer;"></i></label>

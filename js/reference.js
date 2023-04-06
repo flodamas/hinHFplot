@@ -5,7 +5,7 @@ function changeoneref(da)
         document.getElementById("liref_" + da).style = 'color: ' + cc + ';';
 }
 
-function refone(da, transt=400)
+function refone(da, transt = 0)
 {
     if(checkb(da))
     {
@@ -33,7 +33,7 @@ function refall()
 
 // ==> Protected: <==
 
-function addoneref(da, reference, transt = 500)
+function addoneref(da, reference, transt = 0)
 {
     var cc = document.getElementById("color_" + da).value;
     var iref = document.createElement("li");
@@ -73,7 +73,7 @@ function addoneref(da, reference, transt = 500)
     iref.appendChild(iacref);
 }
 
-function rmoneref(da, transt = 400)
+function rmoneref(da, transt = 0)
 {
     document.getElementById("liref_" + da).style.opacity = '0';
     if(transt==0)
