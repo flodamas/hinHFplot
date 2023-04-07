@@ -9942,8 +9942,8 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-10_absy-lt-0p9"] = {
 };
 
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p15-15_absy-lt-0p9"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "Npart",
@@ -9989,8 +9989,8 @@ dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-2_y-2p5-4"] = {
 };
 
 dataset["incJpsi_RAA_Npart_PbPb_5TeV_ALICE_pT-0p3-8_absy-2p5-4"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "Npart",
@@ -10805,8 +10805,8 @@ dataset["incJpsi_RAA_pT_PbPb_2p76TeV_ALICE_cent-40-90_y-2p5-4"] = {
 };
 
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p9"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "pT",
@@ -10849,8 +10849,8 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_absy-lt-0p9"] = {
 };
 
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-0-20_y-2p5-4"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "pT",
@@ -10926,8 +10926,8 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_absy-lt-0p9"] = {
 };
 
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "pT",
@@ -10956,8 +10956,8 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-20-40_y-2p5-4"] = {
 };
 
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p9"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "pT",
@@ -10998,8 +10998,8 @@ dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_absy-lt-0p9"] = {
 };
 
 dataset["incJpsi_RAA_pT_PbPb_5TeV_ALICE_cent-40-90_y-2p5-4"] = {
-    reference : "arXiv:2303.13349",
-    link : "https://arxiv.org/abs/2303.13349",
+    reference : "arXiv:2303.13361",
+    link : "https://arxiv.org/abs/2303.13361",
     update : "2023-03-27",
     observable : "RAA",
     xtitle : "pT",
