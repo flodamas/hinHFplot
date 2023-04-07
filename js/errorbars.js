@@ -153,11 +153,10 @@ var drawaxisgrid = function()
 
 var drawdisplay = function(da, transt = 0)
 {
-    d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', shadowopacity*drawornot(da, 'rect')).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 1.*drawornot(da, 'rectl')).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', shadowopacity*drawornot(da, 'rectv')).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 1.*drawornot(da, 'rectvl')).duration(transt);
-    d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 1.*drawornot(da, 'linev')).duration(transt);
+    for (const [key, value] of Object.entries(styles)) {
+        var opac = (key=="rect" || key=="rectv")?shadowopacity:1;
+        d3.select("svg").select("g").selectAll('.'+key+'d3'+da).transition().attr('opacity', opac*drawornot(da, key)).duration(transt);
+    }
 }
 
 var addData = function(da, data, thecolor, kmarker, transt = 0) {
@@ -287,6 +286,32 @@ var addDataLines = function(da, data, thecolor, transt = 0) {
         .attr('opacity', 0).transition()
         .attr('opacity', 1.0*drawornot(da, 'line'))
         .duration(transt);
+    var endbars = d3.select("svg").select("g").selectAll('.endbard3'+da)
+        .data(data);
+    // --> error line 1 endbar
+    endbars.enter().append('line')
+        .attr('class', 'endbard3' + da)
+        .attr('x1', function(d) { return xoverflow(x(d.x) - chartWidth/120.); })
+        .attr('x2', function(d) { return xoverflow(x(d.x) + chartWidth/120.); })
+        .attr('y1', function(d) { return ythrow( y(d.y + d.stath) ); })
+        .attr('y2', function(d) { return ythrow( y(d.y + d.stath) ); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.0*drawornot(da, 'endbar'))
+        .duration(transt);
+    // --> error line 2 endbar
+    endbars.enter().append('line')
+        .attr('class', 'endbard3' + da)
+        .attr('x1', function(d) { return xoverflow(x(d.x) - chartWidth/120.); })
+        .attr('x2', function(d) { return xoverflow(x(d.x) + chartWidth/120.); })
+        .attr('y1', function(d) { return ythrow( y(d.y - d.statl) ); })
+        .attr('y2', function(d) { return ythrow( y(d.y - d.statl) ); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.0*drawornot(da, 'endbar'))
+        .duration(transt);
 
     // Horizontal line
     var linevs = d3.select("svg").select("g").selectAll('.linevd3'+da)
@@ -315,6 +340,32 @@ var addDataLines = function(da, data, thecolor, transt = 0) {
         .attr('opacity', 0).transition()
         .attr('opacity', 1.0*drawornot(da, 'linev'))
         .duration(transt);
+    var endbarvs = d3.select("svg").select("g").selectAll('.endbarvd3'+da)
+        .data(data);
+    // // --> horizontal line 1 endbar
+    endbarvs.enter().append('line')
+        .attr('class', 'endbarvd3' + da)
+        .attr('x1', function(d) { return xthrow( x(d.xl) ); })
+        .attr('x2', function(d) { return xthrow( x(d.xl) ); })
+        .attr('y1', function(d) { return yoverflow(y(d.y) - chartWidth/120.); })
+        .attr('y2', function(d) { return yoverflow(y(d.y) + chartWidth/120.); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.0*drawornot(da, 'endbarv'))
+        .duration(transt);
+    // --> horizontal line 2 endbar
+    endbarvs.enter().append('line')
+        .attr('class', 'endbarvd3' + da)
+        .attr('x1', function(d) { return xthrow( x(d.xh) ); })
+        .attr('x2', function(d) { return xthrow( x(d.xh) ); })
+        .attr('y1', function(d) { return yoverflow(y(d.y) - chartWidth/120.); })
+        .attr('y2', function(d) { return yoverflow(y(d.y) + chartWidth/120.); })
+        .attr('stroke', thecolor)
+        .attr('stroke-width', stroke_width())
+        .attr('opacity', 0).transition()
+        .attr('opacity', 1.0*drawornot(da, 'endbarv'))
+        .duration(transt);
 }
 
 var addDataPoints = function(da, data, thecolor, kmarker, transt = 0) {
@@ -336,23 +387,17 @@ var addDataPoints = function(da, data, thecolor, kmarker, transt = 0) {
 // ==> ONE functions
 var rmone = function(da)
 {
-    d3.select("svg").select("g").selectAll('.rectd3'+da).remove();
-    d3.select("svg").select("g").selectAll('.rectld3'+da).remove();
-    d3.select("svg").select("g").selectAll('.rectvd3'+da).remove();
-    d3.select("svg").select("g").selectAll('.rectvld3'+da).remove();
-    d3.select("svg").select("g").selectAll('.lined3'+da).remove();
-    d3.select("svg").select("g").selectAll('.linevd3'+da).remove();
+    for (const [key, value] of Object.entries(styles)) {
+        d3.select("svg").select("g").selectAll('.'+key+'d3'+da).remove();
+    }
     d3.select("svg").select("g").selectAll('.pointd3'+da).remove();
 }
 
 var clearone = function(da, transt = 0)
 {
-    d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('opacity', 0).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('opacity', 0).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('opacity', 0).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('opacity', 0).duration(transt);
-    d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('opacity', 0).duration(transt);
-    d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('opacity', 0).duration(transt);
+    for (const [key, value] of Object.entries(styles)) {
+        d3.select("svg").select("g").selectAll('.'+key+'d3'+da).transition().attr('opacity', 0).duration(transt);
+    }
     d3.select("svg").select("g").selectAll('.pointd3'+da).transition().attr('opacity', 0).duration(transt);
 }
 
@@ -375,12 +420,12 @@ function changeone(da, transt = 0)
     var kmarker = document.getElementById("marker_"+da).value;
     var cc = document.getElementById("color_"+da).value;
 
-    d3.select("svg").select("g").selectAll('.rectd3'+da).transition().attr('fill', cc).attr('stroke', cc).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectld3'+da).transition().attr('stroke', cc).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectvd3'+da).transition().attr('fill', cc).attr('stroke', cc).duration(transt);
-    d3.select("svg").select("g").selectAll('.rectvld3'+da).transition().attr('stroke', cc).duration(transt);
-    d3.select("svg").select("g").selectAll('.lined3'+da).transition().attr('stroke', cc).duration(transt);
-    d3.select("svg").select("g").selectAll('.linevd3'+da).transition().attr('stroke', cc).duration(transt);
+    for (const [key, value] of Object.entries(styles)) {
+        if(key=="rect" || key=="rectv")
+            d3.select("svg").select("g").selectAll('.'+key+'d3'+da).transition().attr('fill', cc).attr('stroke', cc).duration(transt);
+        else
+            d3.select("svg").select("g").selectAll('.'+key+'d3'+da).transition().attr('stroke', cc).duration(transt);
+    }
 
     d3.select("svg").select("g").selectAll('.pointd3'+da)
         .attr("d", d3.symbol().type(vopt[kmarker].type).size(marker_size()*vopt[kmarker].offset[0]))
