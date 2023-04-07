@@ -1,4 +1,4 @@
-var marker_size = function() { return width*width/4.e+3; }
+var marker_size = function() { return width*width/5.e+3; }
 
 var vorders = [20, 24, 21, 25, 33, 27, 22, 26, 29, 30, 34, 28];
 
