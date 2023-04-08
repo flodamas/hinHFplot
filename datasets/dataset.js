@@ -4345,7 +4345,7 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1"] = {
     ]
 };
 
-dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_LHCb_Npart-eq-15p75_y-2-4p5"] = {
+dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_LHCb_cent-65-90_y-2-4p5"] = {
     reference : "arXiv:2210.06939",
     link : "https://arxiv.org/abs/2210.06939",
     update : "2022-11-14",
@@ -4355,7 +4355,7 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_LHCb_Npart-eq-15p75_y-2-4p5"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "LHCb",
-    kinea : "&langle;N<sub>part</sub>&rangle; = 15.75",
+    kinea : "65-90%",
     kineb : "2 < y < 4.5",
     data : [
         {"x": 2.5, "xl": 2, "xh": 3, "y": 0.188, "stath": 0.095, "statl": 0.095, "systh": 0.025, "systl": 0.025},
@@ -4685,7 +4685,7 @@ dataset["aprLambdacToD0_LcToD0_ycm_pp_7TeV_ALICE__pT-2-8"] = {
     ]
 };
 
-dataset["aprLambdacToD0_LcToD0_y_PbPb_5TeV_LHCb_Npart-eq-15p75_pT-2-8"] = {
+dataset["aprLambdacToD0_LcToD0_y_PbPb_5TeV_LHCb_cent-65-90_pT-2-8"] = {
     reference : "arXiv:2210.06939",
     link : "https://arxiv.org/abs/2210.06939",
     update : "2022-11-14",
@@ -4695,7 +4695,7 @@ dataset["aprLambdacToD0_LcToD0_y_PbPb_5TeV_LHCb_Npart-eq-15p75_pT-2-8"] = {
     collision : "PbPb",
     energy : "5.02 TeV",
     collab : "LHCb",
-    kinea : "&langle;N<sub>part</sub>&rangle; = 15.75",
+    kinea : "65-90%",
     kineb : "2 < p<sub>T</sub> < 8 GeV",
     data : [
         {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.288, "stath": 0.044, "statl": 0.044, "systh": 0.029, "systl": 0.029},
