@@ -6064,6 +6064,90 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] 
     ]
 };
 
+dataset["BsubsToBplusmn_BsubsToBplusmn_pT_pp_13TeV_LHCb__y-2-4p5"] = {
+    reference : "PRL 124 (2020) 122002",
+    link : "https://arxiv.org/abs/1910.09934",
+    update : "2023-04-08",
+    observable : "BsubsToBplusmn",
+    xtitle : "pT",
+    particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
+    collision : "pp",
+    energy : "13 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < y < 4.5",
+    data : [
+        {"x": 1.25, "xl": 0.5, "xh": 2, "y": 0.266, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.264, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.268, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.264, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.268, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.258, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.262, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.258, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.256, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.256, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 13, "xl": 12, "xh": 14, "y": 0.236, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 27, "xl": 14, "xh": 40, "y": 0.242, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["BsubsToBplusmn_BsubsToBplusmn_pT_pp_7TeV_LHCb__y-2-4p5"] = {
+    reference : "PRL 124 (2020) 122002",
+    link : "https://arxiv.org/abs/1910.09934",
+    update : "2023-04-08",
+    observable : "BsubsToBplusmn",
+    xtitle : "pT",
+    particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
+    collision : "pp",
+    energy : "7 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < y < 4.5",
+    data : [
+        {"x": 1.25, "xl": 0.5, "xh": 2, "y": 0.238, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.254, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.24, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.244, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.244, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.256, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.258, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.258, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.23, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.232, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 13, "xl": 12, "xh": 14, "y": 0.236, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+        {"x": 27, "xl": 14, "xh": 40, "y": 0.234, "stath": 0.006, "statl": 0.006, "systh": 0, "systl": 0},
+    ]
+};
+
+dataset["BsubsToBplusmn_BsubsToBplusmn_pT_pp_8TeV_LHCb__y-2-4p5"] = {
+    reference : "PRL 124 (2020) 122002",
+    link : "https://arxiv.org/abs/1910.09934",
+    update : "2023-04-08",
+    observable : "BsubsToBplusmn",
+    xtitle : "pT",
+    particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
+    collision : "pp",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2 < y < 4.5",
+    data : [
+        {"x": 1.25, "xl": 0.5, "xh": 2, "y": 0.242, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.242, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.24, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.254, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.25, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.25, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.242, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.244, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.25, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.25, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 13, "xl": 12, "xh": 14, "y": 0.238, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+        {"x": 27, "xl": 14, "xh": 40, "y": 0.238, "stath": 0.004, "statl": 0.004, "systh": 0, "systl": 0},
+    ]
+};
+
 dataset["BsubsToBplusmn_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-2p4"] = {
     reference : "PLB 796 (2019) 168",
     link : "https://arxiv.org/abs/1810.03022",
