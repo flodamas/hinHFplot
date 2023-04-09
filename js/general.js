@@ -70,8 +70,8 @@ function decodehtml(str)
 function unityzero()
 {
     var obs = document.getElementById('observable').value;
-    var vy = 0;
-    if(obs == "RAA" || obs == "RpA" || obs == "RAB" || obs == "DoubleRatio") vy = 1;
+    var vy = 0.0;
+    if(obs == "RAA" || obs == "RpA" || obs == "RAB" || obs == "DoubleRatio") vy = 1.0;
     if(obs == "LcToD0") vy = 0.11;
     return vy;
 };
