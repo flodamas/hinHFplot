@@ -17410,9 +17410,9 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_ALICE_pT-lt-15_y-2p5-4"] = {
 };
 
 dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(2S)",
@@ -17422,15 +17422,17 @@ dataset["Upsilon2S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 80, "xl": 70, "xh": 90, "y": 0.594154, "stath": 0.0970582, "statl": 0.0970582, "systh": 0.0821934, "systl": 0.0818325},
-        {"x": 65, "xl": 60, "xh": 70, "y": 0.437997, "stath": 0.0615097, "statl": 0.0615097, "systh": 0.0512581, "systl": 0.0517707},
-        {"x": 55, "xl": 50, "xh": 60, "y": 0.249368, "stath": 0.037931, "statl": 0.037931, "systh": 0.0215284, "systl": 0.0210158},
-        {"x": 45, "xl": 40, "xh": 50, "y": 0.177094, "stath": 0.0271668, "statl": 0.0271668, "systh": 0.0102516, "systl": 0.0112768},
-        {"x": 35, "xl": 30, "xh": 40, "y": 0.130449, "stath": 0.0210158, "statl": 0.0210158, "systh": 0.0107642, "systl": 0.0102516},
-        {"x": 25, "xl": 20, "xh": 30, "y": 0.0950809, "stath": 0.0174277, "statl": 0.0174277, "systh": 0.0133271, "systl": 0.0128145},
-        {"x": 15, "xl": 10, "xh": 20, "y": 0.0991815, "stath": 0.0153774, "statl": 0.0153774, "systh": 0.0112768, "systl": 0.0102516},
-        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.0725273, "stath": 0.0189655, "statl": 0.0189655, "systh": 0.00871387, "systl": 0.00768872},
         {"x": 2.5, "xl": 0, "xh": 5, "y": 0.0761154, "stath": 0.0169152, "statl": 0.0169152, "systh": 0.00461323, "systl": 0.00461323},
+        
+        {"x": 80, "xl": 70, "xh": 90, "y": 0.6, "stath": 0.1, "statl": 0.1, "systh": 0.08, "systl": 0.08},
+        {"x": 65, "xl": 60, "xh": 70, "y": 0.44, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": 55, "xl": 50, "xh": 60, "y": 0.25, "stath": 0.04, "statl": 0.04, "systh": 0.02, "systl": 0.02},
+        {"x": 45, "xl": 40, "xh": 50, "y": 0.18, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
+        {"x": 35, "xl": 30, "xh": 40, "y": 0.13, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 25, "xl": 20, "xh": 30, "y": 0.1, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 15, "xl": 10, "xh": 20, "y": 0.1, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 7.5, "xl": 5, "xh": 10, "y": 0.07, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 2.5, "xl": 0, "xh": 5, "y": 0.08, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
     ]
 };
 
@@ -17511,9 +17513,9 @@ dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_ATLAS_pT-lt-30_absy-lt-1p5"] = {
 };
 
 dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(2S)",
@@ -17523,15 +17525,15 @@ dataset["Upsilon2S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 11.3, "xl": 11.3, "xh": 11.3, "y": 0.594154, "stath": 0.0970582, "statl": 0.0970582, "systh": 0.0821934, "systl": 0.0818325},
-        {"x": 31.2, "xl": 31.2, "xh": 31.2, "y": 0.437997, "stath": 0.0615097, "statl": 0.0615097, "systh": 0.0512581, "systl": 0.0517707},
-        {"x": 54.4, "xl": 54.4, "xh": 54.4, "y": 0.249368, "stath": 0.037931, "statl": 0.037931, "systh": 0.0215284, "systl": 0.0210158},
-        {"x": 87.1, "xl": 87.1, "xh": 87.1, "y": 0.177094, "stath": 0.0271668, "statl": 0.0271668, "systh": 0.0102516, "systl": 0.0112768},
-        {"x": 130.9, "xl": 130.9, "xh": 130.9, "y": 0.130449, "stath": 0.0210158, "statl": 0.0210158, "systh": 0.0107642, "systl": 0.0102516},
-        {"x": 188.2, "xl": 188.2, "xh": 188.2, "y": 0.0950809, "stath": 0.0174277, "statl": 0.0174277, "systh": 0.0133271, "systl": 0.0128145},
-        {"x": 262.2, "xl": 262.2, "xh": 262.2, "y": 0.0991815, "stath": 0.0153774, "statl": 0.0153774, "systh": 0.0112768, "systl": 0.0102516},
-        {"x": 331.4, "xl": 331.4, "xh": 331.4, "y": 0.0725273, "stath": 0.0189655, "statl": 0.0189655, "systh": 0.00871387, "systl": 0.00768872},
-        {"x": 382.3, "xl": 382.3, "xh": 382.3, "y": 0.0761154, "stath": 0.0169152, "statl": 0.0169152, "systh": 0.00461323, "systl": 0.00461323},
+        {"x": 11.43, "xl": 11.43, "xh": 11.43, "y": 0.6, "stath": 0.1, "statl": 0.1, "systh": 0.08, "systl": 0.08},
+        {"x": 31.21, "xl": 31.21, "xh": 31.21, "y": 0.44, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": 54.42, "xl": 54.42, "xh": 54.42, "y": 0.25, "stath": 0.04, "statl": 0.04, "systh": 0.02, "systl": 0.02},
+        {"x": 87.19, "xl": 87.19, "xh": 87.19, "y": 0.18, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
+        {"x": 131, "xl": 131, "xh": 131, "y": 0.13, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 188.2, "xl": 188.2, "xh": 188.2, "y": 0.1, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 262.3, "xl": 262.3, "xh": 262.3, "y": 0.1, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 331.5, "xl": 331.5, "xh": 331.5, "y": 0.07, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 382.3, "xl": 382.3, "xh": 382.3, "y": 0.08, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
     ]
 };
 
@@ -17593,9 +17595,9 @@ dataset["Upsilon2S_RAA_pT_PbPb_5TeV_ATLAS_cent-0-80_absy-lt-1p5"] = {
 };
 
 dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(2S)",
@@ -17605,11 +17607,11 @@ dataset["Upsilon2S_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
     kinea : "0-90%",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 1.5, "xl": 0, "xh": 3, "y": 0.0987304, "stath": 0.0147623, "statl": 0.0147623, "systh": 0.0110717, "systl": 0.0103336},
-        {"x": 4.5, "xl": 3, "xh": 6, "y": 0.123088, "stath": 0.0147623, "statl": 0.0147623, "systh": 0.012548, "systl": 0.0118099},
-        {"x": 7.5, "xl": 6, "xh": 9, "y": 0.103159, "stath": 0.0177148, "statl": 0.0177148, "systh": 0.012548, "systl": 0.0103336},
-        {"x": 12, "xl": 9, "xh": 15, "y": 0.114231, "stath": 0.0140242, "statl": 0.0140242, "systh": 0.0110717, "systl": 0.0103336},
-        {"x": 22.5, "xl": 15, "xh": 30, "y": 0.139327, "stath": 0.0155004, "statl": 0.0155004, "systh": 0.00664304, "systl": 0.00516681},
+        {"x": 1.5, "xl": 0, "xh": 3, "y": 0.09, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 4.5, "xl": 3, "xh": 6, "y": 0.12, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 7.5, "xl": 6, "xh": 9, "y": 0.1, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 12, "xl": 9, "xh": 15, "y": 0.13, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
+        {"x": 22.5, "xl": 15, "xh": 30, "y": 0.14, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
     ]
 };
 
@@ -17815,9 +17817,9 @@ dataset["Upsilon3SToUpsilon1S_DoubleRatio_ycm_pPb_8TeV_LHCb__pT-lt-25"] = {
 };
 
 dataset["Upsilon3SToUpsilon2S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "DoubleRatio",
     xtitle : "cent",
     particle : "&Upsilon;(3S) / &Upsilon;(2S)",
@@ -17827,17 +17829,17 @@ dataset["Upsilon3SToUpsilon2S_DoubleRatio_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p
     kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 80, "xl": 70, "xh": 90, "y": 0.901394, "stath": 0.310266, "statl": 0.310266, "systh": 0.148035, "systl": 0.148036},
-        {"x": 60, "xl": 50, "xh": 70, "y": 0.94398, "stath": 0.203802, "statl": 0.203802, "systh": 0.0993663, "systl": 0.10038},
-        {"x": 40, "xl": 30, "xh": 50, "y": 0.739164, "stath": 0.213942, "statl": 0.213942, "systh": 0.103422, "systl": 0.104436},
-        {"x": 15, "xl": 0, "xh": 30, "y": 0.565779, "stath": 0.180482, "statl": 0.180482, "systh": 0.103422, "systl": 0.103422},
+        {"x": 80, "xl": 70, "xh": 90,"y": 0.9, "stath": 0.31, "statl": 0.31, "systh": 0.15, "systl": 0.15},
+        {"x": 60, "xl": 50, "xh": 70, "y": 0.94, "stath": 0.21, "statl": 0.21, "systh": 0.1, "systl": 0.1},
+        {"x": 40, "xl": 30, "xh": 50, "y": 0.74, "stath": 0.22, "statl": 0.22, "systh": 0.1, "systl": 0.1},
+        {"x": 15, "xl": 0, "xh": 30, "y": 0.57, "stath": 0.19, "statl": 0.19, "systh": 0.1, "systl": 0.1},
     ]
 };
 
 dataset["Upsilon3SToUpsilon2S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "DoubleRatio",
     xtitle : "Npart",
     particle : "&Upsilon;(3S) / &Upsilon;(2S)",
@@ -17847,17 +17849,17 @@ dataset["Upsilon3SToUpsilon2S_DoubleRatio_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2
     kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 11.4, "xl": 11.4, "xh": 11.4, "y": 0.901394, "stath": 0.310266, "statl": 0.310266, "systh": 0.148035, "systl": 0.148036},
-        {"x": 42.8, "xl": 42.8, "xh": 42.8, "y": 0.94398, "stath": 0.203802, "statl": 0.203802, "systh": 0.0993663, "systl": 0.10038},
-        {"x": 109, "xl": 109, "xh": 109, "y": 0.739164, "stath": 0.213942, "statl": 0.213942, "systh": 0.103422, "systl": 0.104436},
-        {"x": 269, "xl": 269, "xh": 269, "y": 0.565779, "stath": 0.180482, "statl": 0.180482, "systh": 0.103422, "systl": 0.103422},
+        {"x": 11.43, "xl": 11.43, "xh": 11.43, "y": 0.9, "stath": 0.31, "statl": 0.31, "systh": 0.15, "systl": 0.15},
+        {"x": 42.81, "xl": 42.81, "xh": 42.81, "y": 0.94, "stath": 0.21, "statl": 0.21, "systh": 0.1, "systl": 0.1},
+        {"x": 109.1, "xl": 109.1, "xh": 109.1, "y": 0.74, "stath": 0.22, "statl": 0.22, "systh": 0.1, "systl": 0.1},
+        {"x": 269.1, "xl": 269.1, "xh": 269.1, "y": 0.57, "stath": 0.19, "statl": 0.19, "systh": 0.1, "systl": 0.1},
     ]
 };
 
 dataset["Upsilon3SToUpsilon2S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "&Upsilon;(3S) / &Upsilon;(2S)",
@@ -17867,17 +17869,17 @@ dataset["Upsilon3SToUpsilon2S_DoubleRatio_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4
     kinea : "0-90%",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 2, "xl": 0, "xh": 4, "y": 0.422205, "stath": 0.214144, "statl": 0.214144, "systh": 0.0997719, "systl": 0.100989},
-        {"x": 6.5, "xl": 4, "xh": 9, "y": 0.528061, "stath": 0.254297, "statl": 0.254297, "systh": 0.0596198, "systl": 0.0608365},
-        {"x": 11.9, "xl": 9, "xh": 15, "y": 0.512243, "stath": 0.178859, "statl": 0.178859, "systh": 0.0559696, "systl": 0.0555302},
-        {"x": 22.5, "xl": 15, "xh": 30, "y": 0.631618, "stath": 0.158006, "statl": 0.158006, "systh": 0.0253485, "systl": 0.0253485},
+        {"x": 2, "xl": 0, "xh": 4, "y": 0.6, "stath": 0.24, "statl": 0.24, "systh": 0.12, "systl": 0.12},
+        {"x": 6.5, "xl": 4, "xh": 9, "y": 0.72, "stath": 0.28, "statl": 0.28, "systh": 0.12, "systl": 0.12},
+        {"x": 11.9, "xl": 9, "xh": 15, "y": 0.54, "stath": 0.2, "statl": 0.2, "systh": 0.11, "systl": 0.11},
+        {"x": 22.5, "xl": 15, "xh": 30, "y": 0.73, "stath": 0.19, "statl": 0.19, "systh": 0.03, "systl": 0.03},
     ]
 };
 
 dataset["Upsilon3S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "RAA",
     xtitle : "cent",
     particle : "&Upsilon;(3S)",
@@ -17887,17 +17889,17 @@ dataset["Upsilon3S_RAA_cent_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 80, "xl": 70, "xh": 90, "y": 0.533337, "stath": 0.1589, "statl": 0.1589, "systh": 0.105079, "systl": 0.104566},
-        {"x": 60, "xl": 50, "xh": 70, "y": 0.289862, "stath": 0.0548461, "statl": 0.0548461, "systh": 0.0322926, "systl": 0.0322926},
-        {"x": 40, "xl": 30, "xh": 50, "y": 0.108408, "stath": 0.0302423, "statl": 0.0302423, "systh": 0.0179403, "systl": 0.0169152},
-        {"x": 15, "xl": 0, "xh": 30, "y": 0.0499738, "stath": 0.01589, "statl": 0.01589, "systh": 0.0117894, "systl": 0.0107642},
+        {"x": 80, "xl": 70, "xh": 90, "y": 0.53, "stath": 0.16, "statl": 0.16, "systh": 0.10, "systl": 0.10},
+        {"x": 60, "xl": 50, "xh": 70, "y": 0.29, "stath": 0.06, "statl": 0.06, "systh": 0.03, "systl": 0.03},
+        {"x": 40, "xl": 30, "xh": 50, "y": 0.11, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+        {"x": 15, "xl": 0, "xh": 30, "y": 0.05, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
     ]
 };
 
 dataset["Upsilon3S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "RAA",
     xtitle : "Npart",
     particle : "&Upsilon;(3S)",
@@ -17907,17 +17909,17 @@ dataset["Upsilon3S_RAA_Npart_PbPb_5TeV_CMS_pT-lt-30_absy-lt-2p4"] = {
     kinea : "p<sub>T</sub> < 30 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 11.3, "xl": 11.3, "xh": 11.3, "y": 0.533337, "stath": 0.1589, "statl": 0.1589, "systh": 0.105079, "systl": 0.104566},
-        {"x": 42.8, "xl": 42.8, "xh": 42.8, "y": 0.289862, "stath": 0.0548461, "statl": 0.0548461, "systh": 0.0322926, "systl": 0.0322926},
-        {"x": 109.1, "xl": 109.1, "xh": 109.1, "y": 0.108408, "stath": 0.0302423, "statl": 0.0302423, "systh": 0.0179403, "systl": 0.0169152},
-        {"x": 269, "xl": 269, "xh": 269, "y": 0.0499738, "stath": 0.01589, "statl": 0.01589, "systh": 0.0117894, "systl": 0.0107642},
+        {"x": 11.43, "xl": 11.43, "xh": 11.43, "y": 0.53, "stath": 0.16, "statl": 0.16, "systh": 0.10, "systl": 0.10},
+        {"x": 42.81, "xl": 42.81, "xh": 42.81, "y": 0.29, "stath": 0.06, "statl": 0.06, "systh": 0.03, "systl": 0.03},
+        {"x": 109.1, "xl": 109.1, "xh": 109.1, "y": 0.11, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+        {"x": 269.1, "xl": 269.1, "xh": 269.1, "y": 0.05, "stath": 0.02, "statl": 0.02, "systh": 0.01, "systl": 0.01},
     ]
 };
 
 dataset["Upsilon3S_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
-    reference : "CMS-PAS-HIN-21-007",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results//HIN-21-007",
-    update : "2022-04-05",
+    reference : "arXiv:2303.17026",
+    link : "https://arxiv.org/abs/2303.17026",
+    update : "2023-03-29",
     observable : "RAA",
     xtitle : "pT",
     particle : "&Upsilon;(3S)",
@@ -17927,10 +17929,10 @@ dataset["Upsilon3S_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-2p4"] = {
     kinea : "0-90%",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 2, "xl": 0, "xh": 4, "y": 0.0457042, "stath": 0.0212578, "statl": 0.0212578, "systh": 0.0085031, "systl": 0.00956599},
-        {"x": 6.5, "xl": 4, "xh": 9, "y": 0.0531444, "stath": 0.0233835, "statl": 0.0233835, "systh": 0.00744021, "systl": 0.00744021},
-        {"x": 12, "xl": 9, "xh": 15, "y": 0.0584588, "stath": 0.0196044, "statl": 0.0196044, "systh": 0.010747, "systl": 0.00992028},
-        {"x": 22.5, "xl": 15, "xh": 30, "y": 0.0861825, "stath": 0.0199291, "statl": 0.0199291, "systh": 0.00590494, "systl": 0.00516681},
+        {"x": 2, "xl": 0, "xh": 4, "y": 0.07, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
+        {"x": 6.5, "xl": 4, "xh": 9, "y": 0.07, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+        {"x": 12, "xl": 9, "xh": 15, "y": 0.07, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+        {"x": 22.5, "xl": 15, "xh": 30, "y": 0.1, "stath": 0.03, "statl": 0.03, "systh": 0.01, "systl": 0.01},
     ]
 };
 
