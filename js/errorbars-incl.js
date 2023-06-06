@@ -17,8 +17,7 @@ var gety0 = function(y0value) { return margin.top + chartWidth/89.*(y0value-10);
 var gettsize = function(t0value) { return 2. + t0value/30.; }
 
 // set basic
-function setbasic()
-{
+function setbasic() {
     width = document.getElementById('rightpad').clientWidth*0.95;
     height = width * document.getElementById('ratiorange').value;
     margin = { top: width*0.72*0.06, right: width*0.07, bottom: width*0.72*0.15, left: width*0.13 },
@@ -66,47 +65,42 @@ var styles_mapping = {
 };
 var changetonext = function(idd) {
     function next(i) {
-        if(document.getElementById('xvariable').value != "Npart")
+        if (document.getElementById('xvariable').value != "Npart")
             return (parseInt(i)+1) % Object.keys(styles_mapping).length; 
-        else
-        {
-            if(parseInt(i) == 1) return 2;
-            else if(parseInt(i) == 2) return 5;
-            else if(parseInt(i) == 5) return 13;
-            else if(parseInt(i) == 13) return 14;
-            else if(parseInt(i) == 14) return 17;
+        else {
+            if (parseInt(i) == 1) return 2;
+            else if (parseInt(i) == 2) return 5;
+            else if (parseInt(i) == 5) return 13;
+            else if (parseInt(i) == 13) return 14;
+            else if (parseInt(i) == 14) return 17;
             else return 1;
         }
     }
     document.getElementById(idd).value = next(document.getElementById(idd).value);
     
 }
-function checkandremove(id) { if( document.getElementById(id) ) { document.getElementById(id).remove(); } }
+function checkandremove(id) { if ( document.getElementById(id) ) { document.getElementById(id).remove(); } }
 var drawornot = function(da, name) { return styles_mapping[document.getElementById('display_'+da).value][styles[name]]; }
 var shadowopacity = 0.12;
 var stroke_width = function() { return width/100.*0.28; }
 var stroke_width_axis = function() { return width/100.*0.23; }
 
-var xoverflow = function(x)
-{
+var xoverflow = function(x) {
     var val = Math.min(x, chartWidth);
     val = Math.max(val, 0);
     return val;
 }
-var yoverflow = function(y)
-{
+var yoverflow = function(y) {
     var val = Math.min(y, chartHeight);
     val = Math.max(val, 0);
     return val;
 }
-var xthrow = function(x)
-{
-    if(x >=0 && x <= chartWidth) return x;
+var xthrow = function(x) {
+    if (x >=0 && x <= chartWidth) return x;
     else return 0-chartWidth*2;
 }
-var ythrow = function(y)
-{
-    if(y >=0 && y <= chartHeight) return y;
+var ythrow = function(y) {
+    if (y >=0 && y <= chartHeight) return y;
     else return 0-chartHeight*2;
 }
 
@@ -116,149 +110,128 @@ var addaxistitle = function(xtitle, ytitle) {
         subshift = "-40%",
         supshift = "60%";
     // xtitle
-    if(document.getElementById('xvariable').value === "pT")
-    {
+    if (document.getElementById('xvariable').value === "pT") {
         xtitle.append('tspan').style('font-size', titlesize)
-            .text('p')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('T');
+              .text('p')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('T');
         xtitle.append('tspan').style('font-size', titlesize)
-            .text(' (GeV/c)');
+              .text(' (GeV/c)');
     }
-    else if(document.getElementById('xvariable').value === "y")
-    {
+    else if (document.getElementById('xvariable').value === "y") {
         xtitle.append('tspan').style('font-size', titlesize)
-            .text('y')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('CM');
+              .text('y')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('CM');
     }
-    else if(document.getElementById('xvariable').value === "absy")
-    {
+    else if (document.getElementById('xvariable').value === "absy") {
         xtitle.append('tspan').style('font-size', titlesize)
-            .text('|y')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('CM');
+              .text('|y')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('CM');
         xtitle.append('tspan').style('font-size', titlesize)
-            .text('|');
+              .text('|');
     }
-    else if(document.getElementById('xvariable').value === "cent")
-    {
+    else if (document.getElementById('xvariable').value === "cent") {
         xtitle.append('tspan').style('font-size', titlesize)
-            .text('Centrality');
+              .text('Centrality');
     }
-    else if(document.getElementById('xvariable').value === "Npart")
-    {
+    else if (document.getElementById('xvariable').value === "Npart") {
         xtitle.append('tspan').style('font-size', titlesize)
-            .text(decodehtml('&#10216;N'))
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('part');
+              .text(decodehtml('&#10216;N'))
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('part');
         xtitle.append('tspan').style('font-size', titlesize)
-            .text(decodehtml('&#10217;'));
+              .text(decodehtml('&#10217;'));
     }
-    else if(document.getElementById('xvariable').value === "Ncoll")
-    {
+    else if (document.getElementById('xvariable').value === "Ncoll") {
         xtitle.append('tspan').style('font-size', titlesize)
-            .text(decodehtml('&#10216;N'))
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('coll');
+              .text(decodehtml('&#10216;N'))
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('coll');
         xtitle.append('tspan').style('font-size', titlesize)
-            .text(decodehtml('&#10217;'));
+              .text(decodehtml('&#10217;'));
     }
 
     // ytitle
-    if(document.getElementById('observable').value === "Ratio")
-    {
+    if (document.getElementById('observable').value === "Ratio") {
         ytitle.append('tspan').style('font-size', titlesize)
-            .text('Yield ratio');
+              .text('Yield ratio');
     }
-    else if(document.getElementById('observable').value.startsWith("R"))
-    {
+    else if (document.getElementById('observable').value.startsWith("R")) {
         ytitle.append('tspan').style('font-size', titlesize)
-            .text('R')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text(document.getElementById('observable').value.substring(1));
+              .text('R')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text(document.getElementById('observable').value.substring(1));
     }
-    else if(document.getElementById('observable').value.startsWith("v"))
-    {
+    else if (document.getElementById('observable').value.startsWith("v")) {
         ytitle.append('tspan').style('font-size', titlesize)
-            .text('v')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text(document.getElementById('observable').value.substring(1));
+              .text('v')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text(document.getElementById('observable').value.substring(1));
     }
-    else if(document.getElementById('observable').value === "LcToD0")
-    {
+    else if (document.getElementById('observable').value === "LcToD0") {
         ytitle.append('tspan').style('font-size', titlesize)
-            .text(decodehtml('&Lambda;'))
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('c');
+              .text(decodehtml('&Lambda;'))
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('c');
         ytitle.append('tspan').style('font-size', titlesize)
-            .text(' / D')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', supshift)
-            .text('0');
+              .text(' / D')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', supshift)
+              .text('0');
     }
-    else if(document.getElementById('observable').value === "DoubleRatio") // improvable if one can access the yield ratio name
-    {
+    else if (document.getElementById('observable').value === "DoubleRatio") { // improvable if one can access the yield ratio name
         ytitle.append('tspan').style('font-size', titlesize)
-            .text('(Yield ratio)')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('AA');
+              .text('(Yield ratio)')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('AA');
         ytitle.append('tspan').style('font-size', titlesize)
-            .text(' / (Yield ratio)')
-            .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
-            .text('pp');
+              .text(' / (Yield ratio)')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('pp');
     }
 }
 
-var checklogx = function()
-{
+var checklogx = function() {
     return (document.getElementById('logx').value == 1);
 }
 
-var checklogy = function()
-{
+var checklogy = function() {
     return (document.getElementById('logy').value == 1);
 }
 
-function changerangewlog()
-{
+function changerangewlog() {
     var iiobs = iobs(document.getElementById('observable').value),
         iivar = ivar(document.getElementById('xvariable').value);
-    if(checklogx() && xmin <= 0)
-    {
+    if (checklogx() && xmin <= 0) {
         xmin = iivar.pxmin_log;
         document.getElementById('pxmin').value = xmin;
     }
-    if(checklogx() && xmax <= 0)
-    {
+    if (checklogx() && xmax <= 0) {
         xmax = 1;
         document.getElementById('pxmax').value = xmax;
     }
-    if(checklogy() && ymin <= 0)
-    {
+    if (checklogy() && ymin <= 0) {
         ymin = iiobs.pymin_log;
         document.getElementById('pymin').value = ymin;
     }
-    if(checklogy() && ymax <= 0)
-    {
+    if (checklogy() && ymax <= 0) {
         ymax = 1;
         document.getElementById('pymax').value = ymax;
     }
 }
 
 
-function settsuptsub(textid)
-{
+function settsuptsub(textid) {
     var childtspan = document.querySelectorAll('#'+textid+' > tspan');
     for (var i = 0; i < childtspan.length; i++) {
         var itspan = childtspan[i];
-        if(itspan.classList.contains("tsup"))
-        {
+        if (itspan.classList.contains("tsup")) {
             itspan.style.fontSize = "0.6em";
             itspan.style.baselineShift = "60%";
         }
-        if(itspan.classList.contains("tsub"))
-        {
+        if (itspan.classList.contains("tsub")) {
             itspan.style.fontSize = "0.6em";
             itspan.style.baselineShift = "-50%";
         }

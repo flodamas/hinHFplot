@@ -78,7 +78,7 @@ function getSVGString( svgNode )
 
     }
 
-    function appendCSS( cssText, element )
+    function appendCSS( cssText, element ) // css extraction doesn't work locally - permission issue
     {
 	var styleElement = document.createElement("style");
 	styleElement.setAttribute("type","text/css"); 
@@ -110,7 +110,7 @@ function svgString2Image( svgString, width, height, format)
 	canvas.toBlob( function(blob) {
 	    var filesize = Math.round( blob.length/1024 ) + ' KB';
             saveAs(blob, savename()+'.png' );
-	});	
+	});
     };
 
     image.src = imgsrc;
