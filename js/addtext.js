@@ -170,8 +170,12 @@ function changeitalic(name) {
 
 function removealltext() {
     var texts = document.getElementById("textfarm").getElementsByTagName("div");
+    var names = [];
     for (let i=0; i<texts.length; i++) {
-        var iname = texts[i].id;
+        names.push(texts[i].id);
+    }
+    for(let i in names) {
+        var iname = names[i];
         document.getElementById(iname).remove();
         document.getElementById(iname+'svg').remove();
     }
