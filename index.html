@@ -79,14 +79,16 @@
       </div>
     </div>
 
+    <!-- ratio slider -->
+    <div id="ratiomark" class="hideinmobile" style="position: absolute; transform: rotate(90deg); z-index: 1; top: 50%; right: 2%;">
+      <div>Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
+      <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider" style="width:7rem" id="ratiorange" oninput="freshall();">
+    </div>
+
     <div class="rightpanel">
 
       <!-- rightpad -->
       <div id="rightpad">
-        <div class="hideinmobile">
-          <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider verticalslider" id="ratiorange" oninput="freshall();">
-          <div id="divratio">Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
-        </div>
         <div id="textfarm"></div>
         <svg id="svgparent" style="background-color: white;"></svg>
         <ul id="reference"> </ul>
@@ -146,25 +148,25 @@
 
     <!-- ulog -->
     <!-- <div class="ulog" id="ulog" style="display: none;"> -->
-      <div class="ulog" id="ulog">
-        <div style="position: absolute; height:94%;">
-          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (6/28/23): </p>
-          <p class="blockp">
-            Add some example presets.</i>.
-          </p>
-          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/6/23): </p>
-          <p class="blockp">
-            Enable small lines at the end of error bars. Turn it off using <i class="fa-solid fa-brush"></i>.
-          </p>
-          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/5/23): </p>
-          <p class="blockp">
-            <i class="fa-solid fa-floppy-disk"></i> will save an XML along with PNG, and you can use <i class="fa-solid fa-upload"></i> to upload an XML to reproduce the plot.
-          </p>
-        </div>
-        <div class="ulogx" onclick="document.getElementById('ulog').style.display = 'none';">
-          &times; 
-        </div>      
+    <div class="ulog" id="ulog">
+      <div style="position: absolute; height:94%;">
+        <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (6/28/23): </p>
+        <p class="blockp">
+          Add some example presets.</i>.
+        </p>
+        <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/6/23): </p>
+        <p class="blockp">
+          Enable small lines at the end of error bars. Turn it off using <i class="fa-solid fa-brush"></i>.
+        </p>
+        <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/5/23): </p>
+        <p class="blockp">
+          <i class="fa-solid fa-floppy-disk"></i> will save an XML along with PNG, and you can use <i class="fa-solid fa-upload"></i> to upload an XML to reproduce the plot.
+        </p>
       </div>
+      <div class="ulogx" onclick="document.getElementById('ulog').style.display = 'none';">
+        &times;
+      </div>
+    </div>
 
   </body>
 </html>

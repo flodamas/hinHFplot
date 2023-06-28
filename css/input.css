@@ -75,27 +75,6 @@ input[type=range] {
     vertical-align: middle;
 }
 
-.verticalslider {
-    transform: rotate(90deg);
-}
-
-#ratiorange {
-    position: absolute;
-    top: 13rem;
-    right: -0.5rem;
-    width: 7rem;
-    z-index: 1;
-}
-
-#divratio {
-    transform: rotate(90deg);
-    position: absolute;
-    top: 13rem;
-    right: -2.5rem;
-    z-index: 1;
-    
-}
-
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
