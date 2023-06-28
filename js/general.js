@@ -32,7 +32,7 @@ function defaultrange()
 
 function defaultvalue()
 {
-   var iiobs = iobs(document.getElementById('observable').value),
+    var iiobs = iobs(document.getElementById('observable').value),
         iivar = ivar(document.getElementById('xvariable').value);
     document.getElementById('pxmin').value = iivar.pxmin;
     document.getElementById('pxmax').value = iivar.pxmax;
@@ -42,19 +42,27 @@ function defaultvalue()
 
 function loadoptions()
 {
-    for(var i=0; i<obss.length; i++)
-    {
+    for(var i=0; i<obss.length; i++) {
         var opt = document.createElement('option');
         opt.value = obss[i].name;
         opt.innerHTML = obss[i].title;
         document.getElementById('observable').appendChild(opt);
     }
-    for(var i=0; i<vars.length; i++)
-    {
+    for(var i=0; i<vars.length; i++) {
         var opt = document.createElement('option');
         opt.value = vars[i].name;
         opt.innerHTML = vars[i].title;
         document.getElementById('xvariable').appendChild(opt);
+    }
+    for(var i in plotpreset) {
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.innerHTML = plotpreset[i].title;
+        if(i == " ") {
+            opt.disabled = true;
+            opt.selected = true;
+        }
+        document.getElementById('plotpreset').appendChild(opt);
     }
 }
 
@@ -120,3 +128,4 @@ function savename()
     savename = savename==""?"hinHFplot":savename;
     return savename;
 }
+

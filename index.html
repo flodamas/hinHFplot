@@ -18,6 +18,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/2.0.4/dist/FileSaver.min.js"></script>
     <script src="datasets/dataset.js"></script>
+    <script src="presets/plotpreset.js"></script>
     <script src="js/markers.js"></script>
     <script src="js/loaditem.js"></script>
     <script src="js/general.js"></script>
@@ -64,6 +65,7 @@
             <button type="submit" class="btnaction" onclick="clearall();">Clear all</button>
             <button type="submit" class="btnaction" onclick="colorall(); ">Random color</button>
             <button type="submit" id="btncheckedonly" class="btncheck" value="0" onclick="switchbtn(this.id); colorbtn(this.id); checkedonly();">Checked only</button>
+            <select id="plotpreset" onchange="switchpreset();" class="custom-select"></select>
             <p><i class="fa-solid fa-filter" style="color: #eee"></i></p>
             <input type="text" id="filterinput" onkeyup="keyfilter()" placeholder="e.g. open, baryon, lepton" value="">
           </div>
@@ -146,6 +148,10 @@
     <!-- <div class="ulog" id="ulog" style="display: none;"> -->
       <div class="ulog" id="ulog">
         <div style="position: absolute; height:94%;">
+          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (6/28/23): </p>
+          <p class="blockp">
+            Add some example presets.</i>.
+          </p>
           <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/6/23): </p>
           <p class="blockp">
             Enable small lines at the end of error bars. Turn it off using <i class="fa-solid fa-brush"></i>.
@@ -153,10 +159,6 @@
           <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (4/5/23): </p>
           <p class="blockp">
             <i class="fa-solid fa-floppy-disk"></i> will save an XML along with PNG, and you can use <i class="fa-solid fa-upload"></i> to upload an XML to reproduce the plot.
-          </p>
-          <p class="blockp"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;News (3/27/23): </p>
-          <p class="blockp">
-            Update database with HP'23 new results.
           </p>
         </div>
         <div class="ulogx" onclick="document.getElementById('ulog').style.display = 'none';">

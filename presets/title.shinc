@@ -1,0 +1,29 @@
+TITLES=(
+    "raa-charm-lhc:Open charm RAA at LHC"
+    "raa-d:D RAA"
+    "raa-hf:Flavor dependent RAA"
+    "raa-charmonia-npart-lhc-highpt:High pT prompt charmonium RAA"
+    "v2-beauty-lhc:Open beauty v2"
+    "v2-charm-lhc:Open charm v2 at LHC"
+    "v2-d-lhcrhic:D v2 LHC vs RHIC"
+    "raa-jpsi-npart-lhcrhic:Jpsi RAA LHC vs RHIC"
+    "raa-jpsi-npart-ptdep:Jpsi RAA high- vs low-pT"
+    "raa-jpsi-pt-lhcrhic:Jpsi RAA vs pT"
+    "raa-upsilon-npart-lhc:Upsilon RAA at LHC"
+    "raa-upsilon-npart-lhcrhic:Upsilon RAA LHC vs RHIC"
+    "raa-upsilon-npart:Upsilon RAA compilation"
+    "rpa-charmonia-y-lhc:Charmonium RpA vs y at LHC"
+    "v2-charm-lhc-dvsjpsi:Open vs. hidden charm v2"
+    "v2-charm-small:Charm v2 in small syst"
+    "v2-jpsi-lhcrhic:Jpsi v2 LHC vs RHIC"
+    "v3-charm-lhc:Open charm v3 at LHC"
+    "v3-hf-lhc:Flavor dependent v3 at LHC"
+)
+
+gettitle() {
+    for tt in "${TITLES[@]}" ; do
+        IFS=':' ; tts=($tt) ; unset IFS;
+        [[ ${tts[0]} == $1 ]] && echo ${tts[1]}
+    done
+} ; export -f gettitle
+
