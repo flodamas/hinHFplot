@@ -1,6 +1,7 @@
 function freshall(transt = 0) {
     drawall(transt);
     legall(transt);
+    freshalltext();
     refall(transt);
     colorbtn("logx");
     colorbtn("logy");
@@ -34,6 +35,7 @@ function clearall(transt = 100) {
         refone(da, transt);
         legone(da, transt);
     }
+    removealltext();
 }
 
 window.addEventListener("resize", function() { freshall(); });

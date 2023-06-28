@@ -181,3 +181,14 @@ function removealltext() {
     }
     document.getElementById("btnaddtext").value = 0;
 }
+
+function freshalltext() {
+    var texts = document.getElementById("textfarm").getElementsByTagName("div");
+    var names = [];
+    for (let i=0; i<texts.length; i++) {
+        names.push(texts[i].id);
+    }
+    for(let i in names) {
+        refreshtext(names[i]);
+    }
+}
