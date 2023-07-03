@@ -98,4 +98,5 @@ function applyset(text) {
         document.getElementById(iname+"ity").value = texts[i].getElementsByTagName("ity")[0].innerHTML;
         refreshtext(iname);
     }
+    hidealltextset();
 }

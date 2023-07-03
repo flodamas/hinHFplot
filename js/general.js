@@ -111,7 +111,7 @@ function colorbtn(id)
 {
     var btnlog = document.getElementById(id);
     if(btnlog.classList.contains("btncheck")) {
-        if(btnlog.classList.contains("whitebtn")) {
+        if(btnlog.classList.contains("whitebkg")) {
             if(btnlog.value == 1) {
                 btnlog.style.color = "#0072D0";
                 /* 	        btnlog.style.backgroundColor = "white"; */

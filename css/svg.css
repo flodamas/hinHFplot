@@ -7,3 +7,7 @@ svg {
     stroke: black;
     stroke-dasharray: 2,4;
 }
+
+.dragmove {
+    cursor: move;
+}

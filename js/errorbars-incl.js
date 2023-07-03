@@ -13,7 +13,9 @@ var legs = [];
 // <-- legend
 
 var getx0 = function(x0value) { return margin.left + chartWidth/89.*(x0value-10); }
+var getx0value = function(x0) { return (10 + (x0-margin.left)*89./chartWidth); }
 var gety0 = function(y0value) { return margin.top + chartWidth/89.*(y0value-10); }
+var gety0value = function(y0) { return (10 + (y0-margin.top)*89/chartWidth); }
 var gettsize = function(t0value) { return 2. + t0value/30.; }
 
 // set basic

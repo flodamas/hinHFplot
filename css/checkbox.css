@@ -31,7 +31,7 @@ tr button, tr select, tr input, .smallbtn {
     font-size: 0.75rem;
 }
 
-.smallbtn.whitebtn {
+.smallbtn.whitebkg {
     width: calc(var(--width-picker) * 0.8);
 }
 

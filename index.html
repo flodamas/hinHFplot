@@ -36,6 +36,10 @@
   <title>Heavy Flavor Measurement Compilation Tool</title>
   <body>
 
+    <input type="number" id="mousexsave" style="display: none;"></input>
+    <input type="number" id="mouseysave" style="display: none;"></input>
+    <input type="text" id="focussave" style="display: none;"></input>
+
     <div class="leftpanel">
       <!-- header -->
       <div class="header">
@@ -85,7 +89,6 @@
       <div id="rightpad">
         <svg id="svgparent" style="background-color: white;"></svg>
         <ul id="reference"> </ul>
-        <div id="textfarm" style="text-align: center"></div>
       </div>
       <!-- ratio slider -->
       <div id="ratiomark" class="hideinmobile" style="position: absolute; transform: rotate(90deg); z-index: 1; top: 28rem; right: 5%;">
@@ -131,11 +134,13 @@
           <input type="range" min="10" max="99" value="20" class="slider" id="y0range" oninput="movelegendy()">
           <p>&nbsp;</p></div>
         <p>&nbsp;</p><br>
-        <div style="color: var(--red); width: 98%;"><i class="fa-solid fa-circle-exclamation"></i> Preliminary results are not from hepdata but extracted from the figures, so they are not accurate or official numerical values.</div>
+        <div style="color: var(--red); width: 98%; font-size: 0.9rem;"><i class="fa-solid fa-circle-exclamation"></i> Preliminary results are not from hepdata but extracted from the figures, so they are not accurate or official numerical values.</div>
+        <div id="textfarm" style="position: absolute; bottom: 0; left: 25%;"></div>
       </div>
 
       <script>setsvg()</script>
-      <script>loaditem()</script>      
+      <script>loaditem()</script>
+      <script>handleclick()</script>
 
       <div id="clipboard"></div>
     </div>

@@ -17,7 +17,8 @@ button, label, select {
     transition: background-color 0.2s, color 0.2s;
 }
 
-button.whitebtn {
+button.whitebkg,
+input[type=number].whitebkg {
     background-color: white;
 }
 
@@ -38,15 +39,16 @@ button:active {
     background-color: var(--blue);
     color: white;
 }
-.btnaction.whitebtn:hover {
+.btnaction.whitebkg:hover {
     background-color: white;
     color: var(--blue);
 }
 
 input[type=number] {
     width: var(--width-input);
-    padding: var(--padding-input) calc(var(--padding-input) * 2);
+    padding: var(--padding-input) 0 var(--padding-input) calc(var(--padding-input) * 2);
     margin: calc(var(--margin-input) * 2) var(--margin-input);
+    vertical-align: middle;
     border: 0px solid white;
     background-color: var(--gray);
     color: inherit;
@@ -55,12 +57,15 @@ input[type=number] {
     font-weight: inherit;
     -moz-appearance: textfield;
 }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-    /*     appearance: none; */
-    width: 0.2rem;
-    height: 0.8rem;
-    margin: 0;
+    height: calc(1rem + var(--padding-input)*2)
+}
+
+input[type=number].wborder {
+    border: 0.1rem solid var(--darkgray);
+    border-radius: 0.3rem;
 }
 
 input[type=range] {
@@ -73,6 +78,18 @@ input[type=number].shorter {
     height: var(--width-picker);
     padding: 0 0 0 0.3rem;
     font-size: 0.85rem;
+}
+
+input[type=number].shorter::-webkit-inner-spin-button,
+input[type=number].shorter::-webkit-outer-spin-button {
+    /* appearance: none;
+       -webkit-appearance: none; */
+    opacity: 1;
+    color: black;
+    background-color: white;
+    width: 1rem;
+    height: var(--width-picker);
+    margin: 0;
 }
 
 button.leftgap, input[type=number].leftgap {
@@ -147,6 +164,10 @@ input[type=text] {
 
 input[type=text]:hover {
     opacity: 1;
+}
+
+input[type=text].textset {
+    width: 10rem;
 }
 
 .dropdown-content {
