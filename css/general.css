@@ -80,6 +80,13 @@
         background-color: var(--gray);
         transition: background-color 0.2s;
     }
+
+    #textfarm {
+        background-color: white;
+        position: absolute;
+        bottom: -1rem;
+        left: 25%;
+    }
 }
 
 @media (orientation:portrait) {
@@ -142,6 +149,12 @@
         height: 100%;
     }
     
+    #textfarm {
+        position: absolute;
+        top: 15rem;
+        left: 35%;
+    }
+
     .hideinmobile {
         display: none;
     }
