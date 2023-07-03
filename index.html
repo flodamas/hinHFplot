@@ -79,12 +79,6 @@
       </div>
     </div>
 
-    <!-- ratio slider -->
-    <div id="ratiomark" class="hideinmobile" style="position: absolute; transform: rotate(90deg); z-index: 1; top: 50%; right: 2%;">
-      <div>Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
-      <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider" style="width:7rem" id="ratiorange" oninput="freshall();">
-    </div>
-
     <div class="rightpanel">
 
       <!-- rightpad -->
@@ -92,6 +86,11 @@
         <div id="textfarm"></div>
         <svg id="svgparent" style="background-color: white;"></svg>
         <ul id="reference"> </ul>
+      </div>
+      <!-- ratio slider -->
+      <div id="ratiomark" class="hideinmobile" style="position: absolute; transform: rotate(90deg); z-index: 1; top: 28rem; right: 5%;">
+        <div>Canvas <i class="fa-solid fa-crop-simple"></i> (<p id="tratio"></p>)</div>
+        <input type="range" min="0.5" max="0.98" value="0.90" step="0.02" class="slider" style="width:7rem" id="ratiorange" oninput="freshall();">
       </div>
 
       <!-- descholder -->
@@ -125,7 +124,7 @@
         </div>
         <div class="dl">
           <i class="fa-solid fa-up-right-and-down-left-from-center"></i> <p id="tfsize"></p>
-          <input type="range" min="10" max="90" value="40" class="slider" id="legsizerange" oninput="resizelegend()">
+          <input type="range" min="10" max="90" value="30" class="slider" id="legsizerange" oninput="resizelegend()">
           <i class="fa-solid fa-arrows-left-right"></i> <p id="tx0"></p>
           <input type="range" min="10" max="99" value="15" class="slider" id="x0range" oninput="movelegendx()">
           <i class="fa-solid fa-arrows-up-down"></i> <p id="ty0"></p>

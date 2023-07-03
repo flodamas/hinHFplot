@@ -30,40 +30,31 @@ function addtextgroup(iname) {
     iinput.setAttribute('onkeyup', 'changecontent("'+iname+'")');
     itextgroup.appendChild(iinput);
 
-    var iboldval = document.createElement("input");
-    iboldval.setAttribute('type', 'number');
-    iboldval.id = iname + "tbold";
-    iboldval.value = 0;
-    iboldval.style.display = "none";
-    itextgroup.appendChild(iboldval);
-
-    var ibold = document.createElement("i");
-    ibold.setAttribute("class", "fa-solid fa-bold");
-    ibold.setAttribute("style", "margin: 0 0.3rem; cursor: pointer;");
-    ibold.setAttribute('onclick', 'switchbold("'+iname+'"); changebold("'+iname+'");');
+    var ibold = document.createElement("button");
+    ibold.setAttribute('type', 'submit');
+    ibold.setAttribute('class', 'btncheck smallbtn leftgap');
+    ibold.id = iname + "tbold";
+    ibold.value = 0;
+    ibold.innerHTML = '<i class="fa-solid fa-bold"></i>';
+    ibold.setAttribute('onclick', 'switchbtn(this.id); colorbtn(this.id); changebold("'+iname+'");');
     itextgroup.appendChild(ibold);
 
-    var iitalicval = document.createElement("input");
-    iitalicval.setAttribute('type', 'number');
-    iitalicval.id = iname + "titalic";
-    iitalicval.value = 0;
-    iitalicval.style.display = "none";
-    itextgroup.appendChild(iitalicval);
-    
-    var iitalic = document.createElement("i");
-    iitalic.setAttribute("class", "fa-solid fa-italic");
-    iitalic.setAttribute("style", "cursor: pointer;");
-    iitalic.setAttribute("style", "margin: 0 0.3rem 0 0; cursor: pointer;");
-    iitalic.setAttribute('onclick', 'switchitalic("'+iname+'"); changeitalic("'+iname+'");');
+    var iitalic = document.createElement("button");
+    iitalic.setAttribute('type', 'submit');
+    iitalic.setAttribute('class', 'btncheck smallbtn leftgap');
+    iitalic.id = iname + "titalic";
+    iitalic.value = 0;
+    iitalic.innerHTML = '<i class="fa-solid fa-italic"></i>';
+    iitalic.setAttribute('onclick', 'switchbtn(this.id); colorbtn(this.id); changeitalic("'+iname+'");');
     itextgroup.appendChild(iitalic);
-
+    
     var itsize = document.createElement("input");
     itsize.setAttribute('type', 'number');
+    itsize.setAttribute('class', 'shorter leftgap');
     itsize.id = iname + "tsize";
     itsize.setAttribute('min', '0');
     itsize.setAttribute('onchange', 'changetsize("'+iname+'")');
-    itsize.setAttribute('style', 'width: 4vw;');
-    itsize.setAttribute('value', '50');
+    itsize.setAttribute('value', '30');
     itsize.setAttribute('step', '5');
     itextgroup.appendChild(itsize);
 
@@ -154,16 +145,10 @@ function changetyy(name) {
     svg.select('#' + tname).attr("y", gety0(yy));
 }
 
-function switchbold(name) {
-    document.getElementById(name+"tbold").value = 1 - document.getElementById(name+"tbold").value;
-}
 function changebold(name) {
     document.getElementById(name+"svg").style.fontWeight = document.getElementById(name+"tbold").value>0?"bold":"normal";
 }
 
-function switchitalic(name) {
-    document.getElementById(name+"titalic").value = 1 - document.getElementById(name+"titalic").value;
-}
 function changeitalic(name) {
     document.getElementById(name+"svg").style.fontStyle = document.getElementById(name+"titalic").value>0?"italic":"normal";
 }

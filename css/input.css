@@ -1,11 +1,9 @@
-button, label {
+button, label, select {
     border: none;
-    /* margin: var(--margin-input) calc(var(--margin-input)*0.5); */
     margin: calc(var(--margin-input) * 2) var(--margin-input);
     background-color: var(--gray);
-    color: black;
+    color: inherit;
     padding: var(--padding-input) calc(var(--padding-input) * 2);
-    text-align: center;
     vertical-align: middle;
     text-decoration: none;
     display: inline-block;
@@ -13,8 +11,18 @@ button, label {
     font-family: inherit;
     font-weight: inherit;
     cursor: pointer;
-    -webkit-appearance: none;
-    transition: background-color 0.3s, color 0.3s;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    appearance: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button, label {
+    text-align: center;
+}
+
+button:focus, label:focus, select:focus, input:focus {
+    outline: none;
 }
 
 button:active {
@@ -33,31 +41,35 @@ input[type=number] {
     font-weight: inherit;
     -moz-appearance: textfield;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    /*     appearance: none; */
+    width: 0.2rem;
+    height: 0.8rem;
+    margin: 0;
+}
 
 input[type=range] {
     display: inline-block;    
 }
 
-.shorter {
-    /* width: calc(var(--width-input) * 0.3); */
-    width: 4vw;
+input[type=number].shorter {
+    margin: 0;
+    width: 2.7rem;
+    height: var(--width-picker);
+    padding: 0 0 0 0.3rem;
+    font-size: 0.85rem;
 }
+
+button.leftgap, input[type=number].leftgap {
+    margin: 0 0 0 0.2rem;
+}
+
 
 .custom-select {
     background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEuNDEgNC42NyAyLjQ4IDMuMTggMy41NCA0LjY3IDEuNDEgNC42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzLjU0IDUuMzMgMi40OCA2LjgyIDEuNDEgNS4zMyAzLjU0IDUuMzMiLz48L3N2Zz4=) no-repeat 95% 50%;
-    -moz-appearance: none; 
-    -webkit-appearance: none; 
-    appearance: none;
-    width: var(--width-input);
-    padding: var(--padding-input) calc(var(--padding-input) * 2);
-    margin: calc(var(--margin-input) * 2) var(--margin-input);
-    border: 0px solid white;
     background-color: var(--gray);
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    color: inherit;
+    width: var(--width-input);
 }
 
 .slider {
@@ -103,7 +115,7 @@ input[type=text] {
     opacity: 0.7;
     border: 0.1rem solid var(--darkgray);
     border-radius: 0.3rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-family: inherit;
     font-weight: inherit;
     padding: calc(var(--padding-input) - 0.1rem) var(--padding-input);

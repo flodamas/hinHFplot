@@ -2,14 +2,15 @@
     :root {
         --width-left: 53%;
         --width-right: 47%;
-        --height-header-left: 14.5vw;
-        --height-header-right: 14.5vw;
+        --height-header-left: 13vw;
+        --height-header-right: 13vw;
         --width-rightpad: 80%;
-        --padding-td: 0.3rem;
+        --padding-td: 0.25rem;
+        --padding-td-tb: 0.45rem;
     }
 
     html {
-        font-size: 1vw;
+        font-size: 0.9vw;
     }
 
     h1 {
@@ -90,13 +91,14 @@
 
 @media (orientation:portrait) {
     :root {
-        --height-right: 63vw;
-        --width-rightpad: 85%;
-        --padding-td: 0.18rem;
+        --height-right: 70vw;
+        --width-rightpad: 77vw;
+        --padding-td: 0.12rem;
+        --padding-td-tb: 0.7rem;
     }
 
     html {
-        font-size: 2.7vw;
+        font-size: 2.2vw;
     }
 
     h1 {
