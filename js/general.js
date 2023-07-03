@@ -110,15 +110,27 @@ function switchbtn(id)
 function colorbtn(id)
 {
     var btnlog = document.getElementById(id);
-    if(btnlog.value == 1)
-    {
-        btnlog.style.backgroundColor = "#0072D0";
-	btnlog.style.color = "white";
-    }
-    else
-    {
-        btnlog.style.backgroundColor = "#f5f5f5";
-        btnlog.style.color = "black";
+    if(btnlog.classList.contains("btncheck")) {
+        if(btnlog.classList.contains("whitebtn")) {
+            if(btnlog.value == 1) {
+                btnlog.style.color = "#0072D0";
+                /* 	        btnlog.style.backgroundColor = "white"; */
+            }
+            else {
+                btnlog.style.color = "black";
+                /* 	        btnlog.style.backgroundColor = "white"; */
+            }
+        }
+        else {
+            if(btnlog.value == 1) {
+                btnlog.style.backgroundColor = "#0072D0";
+	        btnlog.style.color = "white";
+            }
+            else {
+                btnlog.style.backgroundColor = "#f5f5f5";
+                btnlog.style.color = "black";
+            }
+        }
     }
 }
 

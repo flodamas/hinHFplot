@@ -90,7 +90,9 @@ function applyset(text) {
         var iname = addtext();
         document.getElementById(iname+"content").value = content;
         document.getElementById(iname+"tbold").value = texts[i].getElementsByTagName("tbold")[0].innerHTML;
+        colorbtn(iname+"tbold");
         document.getElementById(iname+"titalic").value = texts[i].getElementsByTagName("titalic")[0].innerHTML;
+        colorbtn(iname+"titalic");
         document.getElementById(iname+"tsize").value = texts[i].getElementsByTagName("tsize")[0].innerHTML;
         document.getElementById(iname+"itx").value = texts[i].getElementsByTagName("itx")[0].innerHTML;
         document.getElementById(iname+"ity").value = texts[i].getElementsByTagName("ity")[0].innerHTML;

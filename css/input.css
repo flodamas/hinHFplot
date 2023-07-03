@@ -17,6 +17,10 @@ button, label, select {
     transition: background-color 0.2s, color 0.2s;
 }
 
+button.whitebtn {
+    background-color: white;
+}
+
 button, label {
     text-align: center;
 }
@@ -26,7 +30,17 @@ button:focus, label:focus, select:focus, input:focus {
 }
 
 button:active {
-    filter: brightness(50%);
+    /*     filter: brightness(50%); */
+    filter: opacity(50%);
+}
+
+.btnaction:hover {
+    background-color: var(--blue);
+    color: white;
+}
+.btnaction.whitebtn:hover {
+    background-color: white;
+    color: var(--blue);
 }
 
 input[type=number] {
@@ -65,6 +79,9 @@ button.leftgap, input[type=number].leftgap {
     margin: 0 0 0 0.2rem;
 }
 
+button.rihtgap, input[type=number].rihtgap {
+    margin: 0 0.2rem 0 0;
+}
 
 .custom-select {
     background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEuNDEgNC42NyAyLjQ4IDMuMTggMy41NCA0LjY3IDEuNDEgNC42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzLjU0IDUuMzMgMi40OCA2LjgyIDEuNDEgNS4zMyAzLjU0IDUuMzMiLz48L3N2Zz4=) no-repeat 95% 50%;

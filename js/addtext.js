@@ -14,12 +14,14 @@ function addtext() {
 function addtextgroup(iname) {
     var itextgroup = document.createElement("div");
     itextgroup.id = iname;
+    itextgroup.setAttribute("style", "padding: 0.1rem 0;");
     textfarm.appendChild(itextgroup);
     var textsvgid = iname + "svg";
 
-    var iminus = document.createElement("i");
-    iminus.setAttribute("class", "fa-solid fa-trash-can");
-    iminus.setAttribute("style", "margin: 0 0.3rem; cursor: pointer;");
+    var iminus = document.createElement("button");
+    iminus.setAttribute('type', 'submit');
+    iminus.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+    iminus.setAttribute("class", "btnaction smallbtn whitebtn");
     iminus.setAttribute('onclick', 'document.getElementById("'+iname+'").remove(); document.getElementById("'+iname+'svg").remove();');
     itextgroup.appendChild(iminus);
 
@@ -32,7 +34,7 @@ function addtextgroup(iname) {
 
     var ibold = document.createElement("button");
     ibold.setAttribute('type', 'submit');
-    ibold.setAttribute('class', 'btncheck smallbtn leftgap');
+    ibold.setAttribute('class', 'btncheck whitebtn smallbtn');
     ibold.id = iname + "tbold";
     ibold.value = 0;
     ibold.innerHTML = '<i class="fa-solid fa-bold"></i>';
@@ -41,7 +43,7 @@ function addtextgroup(iname) {
 
     var iitalic = document.createElement("button");
     iitalic.setAttribute('type', 'submit');
-    iitalic.setAttribute('class', 'btncheck smallbtn leftgap');
+    iitalic.setAttribute('class', 'btncheck whitebtn smallbtn');
     iitalic.id = iname + "titalic";
     iitalic.value = 0;
     iitalic.innerHTML = '<i class="fa-solid fa-italic"></i>';
