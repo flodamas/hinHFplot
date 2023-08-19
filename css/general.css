@@ -2,15 +2,15 @@
     :root {
         --width-left: 53%;
         --width-right: 47%;
-        --height-header-left: 13vw;
-        --height-header-right: 13vw;
+        --height-header-left: 14vw;
+        --height-header-right: 14vw;
         --width-rightpad: 80%;
         --padding-td: 0.25rem;
         --padding-td-tb: 0.45rem;
     }
 
     html {
-        font-size: 0.9vw;
+        font-size: 1vw;
     }
 
     h1 {
