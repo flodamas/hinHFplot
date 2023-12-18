@@ -15249,6 +15249,62 @@ dataset["Lighthplusmn_v2_pT_PbPb_5TeV_CMS_cent-50-60_abseta-lt-1"] = {
     ]
 };
 
+dataset["Lighthplusmn_v2_pT_PbPb_5TeV_LHCb_cent-65-75_abseta-2-4p9"] = {
+    reference : "arXiv:2311.09985",
+    link : "https://arxiv.org/abs/2311.09985",
+    update : "2023-12-18",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Light h<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "65-75%",
+    kineb : "2 < |&eta;| < 4.9",
+    data : [
+        {"x": 0.3, "xl": 0.2, "xh": 0.4, "y": 0.01293, "stath": 0.00027, "statl": 0.00027, "systh": 0.003, "systl": 0.0027},
+        {"x": 0.5, "xl": 0.4, "xh": 0.6, "y": 0.04328, "stath": 0.00027, "statl": 0.00027, "systh": 0.003, "systl": 0.0023},
+        {"x": 0.7, "xl": 0.6, "xh": 0.8, "y": 0.06885, "stath": 0.00031, "statl": 0.00031, "systh": 0.0034, "systl": 0.0029},
+        {"x": 0.9, "xl": 0.8, "xh": 1, "y": 0.0906, "stath": 0.00038, "statl": 0.00038, "systh": 0.0032, "systl": 0.0036},
+        {"x": 1.2, "xl": 1, "xh": 1.5, "y": 0.11708, "stath": 0.00035, "statl": 0.00035, "systh": 0.0015, "systl": 0.00094},
+        {"x": 1.7, "xl": 1.5, "xh": 2, "y": 0.14232, "stath": 0.00056, "statl": 0.00056, "systh": 0.0021, "systl": 0.00083},
+        {"x": 2.2, "xl": 2, "xh": 2.5, "y": 0.15375, "stath": 0.0009, "statl": 0.0009, "systh": 0.0018, "systl": 0.0016},
+        {"x": 2.7, "xl": 2.5, "xh": 3, "y": 0.1522, "stath": 0.0014, "statl": 0.0014, "systh": 0.0018, "systl": 0.0019},
+        {"x": 3.4, "xl": 3, "xh": 4, "y": 0.1433, "stath": 0.0017, "statl": 0.0017, "systh": 0.0016, "systl": 0.0016},
+        {"x": 4.4, "xl": 4, "xh": 5, "y": 0.1312, "stath": 0.0034, "statl": 0.0034, "systh": 0.0047, "systl": 0.0047},
+        {"x": 5.7, "xl": 5, "xh": 7, "y": 0.103, "stath": 0.005, "statl": 0.005, "systh": 0.006, "systl": 0.004},
+        {"x": 8, "xl": 7, "xh": 10, "y": 0.103, "stath": 0.01, "statl": 0.01, "systh": 0.011, "systl": 0.012},
+    ]
+};
+
+dataset["Lighthplusmn_v2_pT_PbPb_5TeV_LHCb_cent-75-84_abseta-2-4p9"] = {
+    reference : "arXiv:2311.09985",
+    link : "https://arxiv.org/abs/2311.09985",
+    update : "2023-12-18",
+    observable : "v2",
+    xtitle : "pT",
+    particle : "Light h<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "75-84%",
+    kineb : "2 < |&eta;| < 4.9",
+    data : [
+        {"x": 0.3, "xl": 0.2, "xh": 0.4, "y": 0.0185, "stath": 0.00027, "statl": 0.00027, "systh": 0.0059, "systl": 0.006},
+        {"x": 0.5, "xl": 0.4, "xh": 0.6, "y": 0.05187, "stath": 0.0003, "statl": 0.0003, "systh": 0.0036, "systl": 0.0036},
+        {"x": 0.7, "xl": 0.6, "xh": 0.8, "y": 0.07568, "stath": 0.00036, "statl": 0.00036, "systh": 0.0026, "systl": 0.0024},
+        {"x": 0.9, "xl": 0.8, "xh": 1, "y": 0.09459, "stath": 0.00045, "statl": 0.00045, "systh": 0.0018, "systl": 0.0019},
+        {"x": 1.2, "xl": 1, "xh": 1.5, "y": 0.11582, "stath": 0.00042, "statl": 0.00042, "systh": 0.0023, "systl": 0.0022},
+        {"x": 1.7, "xl": 1.5, "xh": 2, "y": 0.13994, "stath": 0.00069, "statl": 0.00069, "systh": 0.0024, "systl": 0.0033},
+        {"x": 2.2, "xl": 2, "xh": 2.5, "y": 0.1496, "stath": 0.0011, "statl": 0.0011, "systh": 0.002, "systl": 0.0033},
+        {"x": 2.7, "xl": 2.5, "xh": 3, "y": 0.1522, "stath": 0.0017, "statl": 0.0017, "systh": 0.0032, "systl": 0.0038},
+        {"x": 3.4, "xl": 3, "xh": 4, "y": 0.1515, "stath": 0.0021, "statl": 0.0021, "systh": 0.0024, "systl": 0.0049},
+        {"x": 4.4, "xl": 4, "xh": 5, "y": 0.149, "stath": 0.004, "statl": 0.004, "systh": 0.006, "systl": 0.005},
+        {"x": 5.7, "xl": 5, "xh": 7, "y": 0.1536, "stath": 0.006, "statl": 0.006, "systh": 0.012, "systl": 0.012},
+        {"x": 8, "xl": 7, "xh": 10, "y": 0.161, "stath": 0.012, "statl": 0.012, "systh": 0.028, "systl": 0.028},
+    ]
+};
+
 dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-0-10_abseta-lt-1"] = {
     reference : "PLB 776 (2017) 195",
     link : "https://arxiv.org/abs/1702.00630",
@@ -15609,6 +15665,62 @@ dataset["Lighthplusmn_v3_pT_PbPb_5TeV_CMS_cent-50-60_abseta-lt-1"] = {
         {"x": 8.8, "xl": 8, "xh": 10, "y": 0.0015, "stath": 0.01, "statl": 0.01, "systh": 0.0068, "systl": 0.0068},
         {"x": 10.9, "xl": 10, "xh": 12, "y": 0.0044, "stath": 0.0164, "statl": 0.0164, "systh": 0.0124, "systl": 0.0124},
         {"x": 12.9, "xl": 12, "xh": 14, "y": -0.0021, "stath": 0.0251, "statl": 0.0251, "systh": 0.0204, "systl": 0.0204},
+    ]
+};
+
+dataset["Lighthplusmn_v3_pT_PbPb_5TeV_LHCb_cent-65-75_abseta-2-4p9"] = {
+    reference : "arXiv:2311.09985",
+    link : "https://arxiv.org/abs/2311.09985",
+    update : "2023-12-18",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "Light h<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "65-75%",
+    kineb : "2 < |&eta;| < 4.9",
+    data : [
+        {"x": 0.3, "xl": 0.2, "xh": 0.4, "y": -0.0031, "stath": 0.001, "statl": 0.001, "systh": 0.0022, "systl": 0.0023},
+        {"x": 0.5, "xl": 0.4, "xh": 0.6, "y": 0.0101, "stath": 0.001, "statl": 0.001, "systh": 0.0011, "systl": 0.0021},
+        {"x": 0.7, "xl": 0.6, "xh": 0.8, "y": 0.0212, "stath": 0.0012, "statl": 0.0012, "systh": 0.0021, "systl": 0.0021},
+        {"x": 0.9, "xl": 0.8, "xh": 1, "y": 0.0249, "stath": 0.0014, "statl": 0.0014, "systh": 0.0008, "systl": 0.002},
+        {"x": 1.2, "xl": 1, "xh": 1.5, "y": 0.0334, "stath": 0.0013, "statl": 0.0013, "systh": 0.0017, "systl": 0.0017},
+        {"x": 1.7, "xl": 1.5, "xh": 2, "y": 0.0463, "stath": 0.0022, "statl": 0.0022, "systh": 0.0036, "systl": 0.0036},
+        {"x": 2.2, "xl": 2, "xh": 2.5, "y": 0.05, "stath": 0.0035, "statl": 0.0035, "systh": 0.0048, "systl": 0.0048},
+        {"x": 2.7, "xl": 2.5, "xh": 3, "y": 0.046, "stath": 0.005, "statl": 0.005, "systh": 0.004, "systl": 0.007},
+        {"x": 3.4, "xl": 3, "xh": 4, "y": 0.0273, "stath": 0.0066, "statl": 0.0066, "systh": 0.006, "systl": 0.003},
+        {"x": 4.4, "xl": 4, "xh": 5, "y": 0.0272, "stath": 0.013, "statl": 0.013, "systh": 0.0045, "systl": 0.0077},
+        {"x": 5.7, "xl": 5, "xh": 7, "y": -0.013, "stath": 0.019, "statl": 0.019, "systh": 0.027, "systl": 0.027},
+        {"x": 8, "xl": 7, "xh": 10, "y": -0.056, "stath": 0.038, "statl": 0.038, "systh": 0.015, "systl": 0.015},
+    ]
+};
+
+dataset["Lighthplusmn_v3_pT_PbPb_5TeV_LHCb_cent-75-84_abseta-2-4p9"] = {
+    reference : "arXiv:2311.09985",
+    link : "https://arxiv.org/abs/2311.09985",
+    update : "2023-12-18",
+    observable : "v3",
+    xtitle : "pT",
+    particle : "Light h<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "75-84%",
+    kineb : "2 < |&eta;| < 4.9",
+    data : [
+        {"x": 0.3, "xl": 0.2, "xh": 0.4, "y": -0.009, "stath": 0.0014, "statl": 0.0014, "systh": 0.003, "systl": 0.0026},
+        {"x": 0.5, "xl": 0.4, "xh": 0.6, "y": 0.0113, "stath": 0.0015, "statl": 0.0015, "systh": 0.0028, "systl": 0.0028},
+        {"x": 0.7, "xl": 0.6, "xh": 0.8, "y": 0.0214, "stath": 0.0019, "statl": 0.0019, "systh": 0.0012, "systl": 0.0024},
+        {"x": 0.9, "xl": 0.8, "xh": 1, "y": 0.022, "stath": 0.0023, "statl": 0.0023, "systh": 0.0028, "systl": 0.0028},
+        {"x": 1.2, "xl": 1, "xh": 1.5, "y": 0.0332, "stath": 0.0022, "statl": 0.0022, "systh": 0.0015, "systl": 0.0016},
+        {"x": 1.7, "xl": 1.5, "xh": 2, "y": 0.0415, "stath": 0.0036, "statl": 0.0036, "systh": 0.002, "systl": 0.0024},
+        {"x": 2.2, "xl": 2, "xh": 2.5, "y": 0.031, "stath": 0.0056, "statl": 0.0056, "systh": 0.013, "systl": 0.013},
+        {"x": 2.7, "xl": 2.5, "xh": 3, "y": 0.03, "stath": 0.009, "statl": 0.009, "systh": 0.006, "systl": 0.006},
+        {"x": 3.4, "xl": 3, "xh": 4, "y": 0.0167, "stath": 0.011, "statl": 0.011, "systh": 0.012, "systl": 0.0074},
+        {"x": 4.4, "xl": 4, "xh": 5, "y": -0.01, "stath": 0.021, "statl": 0.021, "systh": 0.016, "systl": 0.022},
+        {"x": 5.7, "xl": 5, "xh": 7, "y": -0.087, "stath": 0.03, "statl": 0.03, "systh": 0.032, "systl": 0.026},
+        {"x": 8, "xl": 7, "xh": 10, "y": -0.14, "stath": 0.06, "statl": 0.06, "systh": 0.09, "systl": 0.08},
     ]
 };
 
