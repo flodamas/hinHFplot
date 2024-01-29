@@ -3964,7 +3964,7 @@ dataset["aprJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 };
 
 dataset["aprJpsi_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -4024,7 +4024,7 @@ dataset["aprJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 };
 
 dataset["aprJpsi_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -4101,7 +4101,7 @@ dataset["aprJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
 };
 
 dataset["aprJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -4119,7 +4119,7 @@ dataset["aprJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 };
 
 dataset["aprJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -4164,7 +4164,7 @@ dataset["aprJpsi_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-1p2-2p4"] = {
 };
 
 dataset["aprJpsi_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -4183,7 +4183,7 @@ dataset["aprJpsi_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["aprJpsi_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -4202,7 +4202,7 @@ dataset["aprJpsi_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -4219,7 +4219,7 @@ dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 };
 
 dataset["aprJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -5478,7 +5478,7 @@ dataset["aprpsi2S_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
 };
 
 dataset["aprPsi2S_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -5502,7 +5502,7 @@ dataset["aprPsi2S_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["aprPsi2S_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -5520,7 +5520,7 @@ dataset["aprPsi2S_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["aprPsi2S_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -5537,7 +5537,7 @@ dataset["aprPsi2S_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 };
 
 dataset["aprPsi2S_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -5555,7 +5555,7 @@ dataset["aprPsi2S_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 };
 
 dataset["aprPsi2S_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -5573,7 +5573,7 @@ dataset["aprPsi2S_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["aprPsi2S_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -5591,7 +5591,7 @@ dataset["aprPsi2S_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["aprPsi2S_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -5608,7 +5608,7 @@ dataset["aprPsi2S_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 };
 
 dataset["aprPsi2S_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -7976,7 +7976,7 @@ dataset["bTOJpsi_v2_cent_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 };
 
 dataset["bTOJpsi_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -8017,7 +8017,7 @@ dataset["bTOJpsi_v2_Npart_PbPb_5TeV_ATLAS_pT-9-30_absy-lt-2"] = {
 };
 
 dataset["bTOJpsi_v2_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -8092,7 +8092,7 @@ dataset["bTOJpsi_v2_pT_PbPb_5TeV_ATLAS_cent-0-60_absy-lt-2"] = {
 };
 
 dataset["bTOJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -8110,7 +8110,7 @@ dataset["bTOJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 };
 
 dataset["bTOJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v2",
@@ -8133,7 +8133,7 @@ dataset["bTOJpsi_v2_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 };
 
 dataset["bTOJpsi_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -8152,7 +8152,7 @@ dataset["bTOJpsi_v3_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["bTOJpsi_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -8171,7 +8171,7 @@ dataset["bTOJpsi_v3_Npart_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
 };
 
 dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
@@ -8188,7 +8188,7 @@ dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-1p6-2p4"] = {
 };
 
 dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
-    reference : "arXiv:2305.16928",
+    reference : "JHEP 10 (2023) 115",
     link : "https://arxiv.org/abs/2305.16928",
     update : "2023-08-18",
     observable : "v3",
