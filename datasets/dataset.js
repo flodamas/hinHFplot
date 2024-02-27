@@ -5490,14 +5490,8 @@ dataset["aprPsi2S_v2_cent_PbPb_5TeV_CMS_pT-6p5-50_absy-lt-2p4"] = {
     kinea : "6.5 < p<sub>T</sub> < 50 GeV",
     kineb : "|y| < 2.4",
     data : [
-        {"x": 0, "xl": 0, "xh": 0, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 5, "xl": 0, "xh": 5, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 15, "xl": 0, "xh": 15, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 25, "xl": 0, "xh": 25, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 35, "xl": 0, "xh": 35, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 35, "xl": 0, "xh": 35, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 45, "xl": 0, "xh": 45, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
-        {"x": 70, "xl": 0, "xh": 70, "y": 1.35767e-36, "stath": 0, "statl": 0, "systh": 0, "systl": 0},
+        {"x": 5, "xl": 0, "xh": 10, "y": 0.002, "stath": 0.104, "statl": 0.104, "systh": 0.06, "systl": 0.06},
+        {"x": 35, "xl": 10, "xh": 60, "y": 0.18, "stath": 0.085, "statl": 0.085, "systh": 0.033, "systl": 0.033},
     ]
 };
 
