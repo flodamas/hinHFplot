@@ -6336,9 +6336,9 @@ dataset["bTOD0_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
 };
 
 dataset["bTOD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
-    reference : "arXiv:2212.01636",
+    reference : "PLB 850 (2024) 138389",
     link : "https://arxiv.org/abs/2212.01636",
-    update : "2023-02-14",
+    update : "2024-02-12",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -6362,9 +6362,9 @@ dataset["bTOD0_v2_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 };
 
 dataset["bTOD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
-    reference : "arXiv:2212.01636",
+    reference : "PLB 850 (2024) 138389",
     link : "https://arxiv.org/abs/2212.01636",
-    update : "2023-02-14",
+    update : "2024-02-12",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -6388,9 +6388,9 @@ dataset["bTOD0_v2_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
 };
 
 dataset["bTOD0_v2_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
-    reference : "arXiv:2212.01636",
+    reference : "PLB 850 (2024) 138389",
     link : "https://arxiv.org/abs/2212.01636",
-    update : "2023-02-14",
+    update : "2024-02-12",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -6432,9 +6432,9 @@ dataset["bTOD0_v2_pT_pPb_8TeV_CMS_Ntrk-184-250_absy-lt-1"] = {
 };
 
 dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
-    reference : "arXiv:2212.01636",
+    reference : "PLB 850 (2024) 138389",
     link : "https://arxiv.org/abs/2212.01636",
-    update : "2023-02-14",
+    update : "2024-02-12",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -6452,9 +6452,9 @@ dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 };
 
 dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
-    reference : "arXiv:2212.01636",
+    reference : "PLB 850 (2024) 138389",
     link : "https://arxiv.org/abs/2212.01636",
-    update : "2023-02-14",
+    update : "2024-02-12",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -6472,9 +6472,9 @@ dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
 };
 
 dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
-    reference : "arXiv:2212.01636",
+    reference : "PLB 850 (2024) 138389",
     link : "https://arxiv.org/abs/2212.01636",
-    update : "2023-02-14",
+    update : "2024-02-12",
     observable : "v3",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
