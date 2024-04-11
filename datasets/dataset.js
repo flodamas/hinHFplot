@@ -6129,7 +6129,7 @@ dataset["BsubsToBplusmn_BsubsToBplusmn_pT_pp_8TeV_LHCb__y-2-4p5"] = {
     xtitle : "pT",
     particle : "B<sub>s</sub> / B<sup>&plusmn;</sup>",
     collision : "pp",
-    energy : "8.16 TeV",
+    energy : "8 TeV",
     collab : "LHCb",
     kinea : "",
     kineb : "2 < y < 4.5",
