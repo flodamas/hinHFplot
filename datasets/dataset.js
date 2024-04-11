@@ -6314,9 +6314,9 @@ dataset["bTOD0_RAA_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 };
 
 dataset["bTOD0_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
-    reference : "arXiv:2307.14084",
+    reference : "EPJC 83 (2023) 1123",
     link : "https://arxiv.org/abs/2307.14084",
-    update : "2023-08-23",
+    update : "2023-12-11",
     observable : "v2",
     xtitle : "pT",
     particle : "(b&rarr;) D<sup>0</sup>",
@@ -6326,12 +6326,12 @@ dataset["bTOD0_v2_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p8"] = {
     kinea : "30-50%",
     kineb : "|y| < 0.8",
     data : [
-        {"x": 2.45, "xl": 2, "xh": 3, "y": 0.0656613, "stath": 0.0644047, "statl": 0.0644047, "systh": 0.0122526, "systl": 0.0128809},
-        {"x": 3.47, "xl": 3, "xh": 4, "y": 0.0769714, "stath": 0.0505812, "statl": 0.0505812, "systh": 0.0125668, "systl": 0.0119384},
-        {"x": 4.45, "xl": 4, "xh": 5, "y": 0.0904807, "stath": 0.0518379, "statl": 0.0518379, "systh": 0.0109959, "systl": 0.0113101},
-        {"x": 5.48, "xl": 5, "xh": 6, "y": 0.0675463, "stath": 0.0634621, "statl": 0.0634621, "systh": 0.0113101, "systl": 0.0113101},
-        {"x": 6.87, "xl": 6, "xh": 8, "y": 0.0618913, "stath": 0.0603204, "statl": 0.0603204, "systh": 0.0119384, "systl": 0.0116243},
-        {"x": 9.54, "xl": 8, "xh": 12, "y": 0.0606346, "stath": 0.065033, "statl": 0.065033, "systh": 0.0125668, "systl": 0.0128809},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.065261, "stath": 0.065368, "statl": 0.065368, "systh": 0.012568, "systl": 0.012568},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.076954, "stath": 0.050803, "statl": 0.050803, "systh": 0.01242, "systl": 0.01242},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.090223, "stath": 0.052382, "statl": 0.052382, "systh": 0.011133, "systl": 0.011133},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.067308, "stath": 0.063752, "statl": 0.063752, "systh": 0.011487, "systl": 0.011487},
+        {"x": 7.0, "xl": 6, "xh": 8, "y": 0.061714, "stath": 0.060776, "statl": 0.060776, "systh": 0.011762, "systl": 0.011762},
+        {"x": 10.0, "xl": 8, "xh": 12, "y": 0.060345, "stath": 0.065585, "statl": 0.065585, "systh": 0.012705, "systl": 0.012705},
     ]
 };
 
