@@ -17238,7 +17238,7 @@ dataset["Upsilon1S_v2_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-2p4"] = {
     ]
 };
 
-dataset["Upsilon1S_v2_pT_pPb_8TeV_CMS_Ntrk-70-300_absy-lt-2p4"] = {
+dataset["Upsilon1S_v2_pT_pPb_8TeV_CMS_Ntrk-69-300_absy-lt-2p4"] = {
     reference : "PLB 850 (2024) 138518",
     link : "https://arxiv.org/abs/2310.03233",
     update : "2024-02-09",
@@ -17248,7 +17248,7 @@ dataset["Upsilon1S_v2_pT_pPb_8TeV_CMS_Ntrk-70-300_absy-lt-2p4"] = {
     collision : "pPb",
     energy : "8.16 TeV",
     collab : "CMS",
-    kinea : "70 < N<sub>trk</sub> < 300",
+    kinea : "69 < N<sub>trk</sub> < 300",
     kineb : "|y| < 2.4",
     data : [
         {"x": 1.5, "xl": 0, "xh": 3, "y": 0.0202, "stath": 0.0276, "statl": 0.0276, "systh": 0.0081, "systl": 0.0081},
