@@ -6492,9 +6492,9 @@ dataset["bTOD0_v3_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
 };
 
 dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
-    reference : "arXiv:2111.14615",
+    reference : "EPJC 82 (2022) 1150",
     link : "https://arxiv.org/abs/2111.14615",
-    update : "2000-01-01",
+    update : "2024-06-25",
     observable : "DoubleRatio",
     xtitle : "pT",
     particle : "(b&rarr;) e / (c&rarr;) e",
@@ -6504,17 +6504,17 @@ dataset["bTOeTocTOe_DoubleRatio_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     kinea : "0-80%",
     kineb : "|&eta;| < 1",
     data : [
-        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 2.11325, "stath": 0.528624, "statl": 0.528624, "systh": 0.352416, "systl": 0.306045},
-        {"x": 4, "xl": 3.5, "xh": 4.5, "y": 2.17817, "stath": 0.510075, "statl": 0.510075, "systh": 0.36169, "systl": 0.324594},
-        {"x": 5, "xl": 4.5, "xh": 5.5, "y": 1.67737, "stath": 0.380238, "statl": 0.380238, "systh": 0.296771, "systl": 0.278223},
-        {"x": 7, "xl": 5.5, "xh": 8.5, "y": 1.72374, "stath": 0.649187, "statl": 0.649187, "systh": 0.537898, "systl": 0.51935},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 1.77, "stath": 0.5, "statl": 0.5, "systh": 0.35, "systl": 0.31},
+        {"x": 4, "xl": 3.5, "xh": 4.5, "y": 1.84, "stath": 0.51, "statl": 0.51, "systh": 0.47, "systl": 0.33},
+        {"x": 5, "xl": 4.5, "xh": 5.5, "y": 1.91, "stath": 0.77, "statl": 0.77, "systh": 0.86, "systl": 0.67},
+        {"x": 7, "xl": 5.5, "xh": 8.5, "y": 1.75, "stath": 0.73, "statl": 0.73, "systh": 0.93, "systl": 0.78},
     ]
 };
 
 dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
-    reference : "arXiv:2111.14615",
+    reference : "EPJC 82 (2022) 1150",
     link : "https://arxiv.org/abs/2111.14615",
-    update : "2000-01-01",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "(b&rarr;) e",
@@ -6524,10 +6524,10 @@ dataset["bTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     kinea : "0-80%",
     kineb : "|&eta;| < 1",
     data : [
-        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 1.01215, "stath": 0.214575, "statl": 0.214575, "systh": 0.117409, "systl": 0.117409},
-        {"x": 4, "xl": 3.5, "xh": 4.5, "y": 0.587045, "stath": 0.11336, "statl": 0.11336, "systh": 0.0688259, "systl": 0.0688259},
-        {"x": 5, "xl": 4.5, "xh": 5.5, "y": 0.48583, "stath": 0.0769231, "statl": 0.0769231, "systh": 0.0526316, "systl": 0.0457715},
-        {"x": 7, "xl": 5.5, "xh": 8.5, "y": 0.544085, "stath": 0.0927801, "statl": 0.0927801, "systh": 0.0759109, "systl": 0.0759109},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 1.01, "stath": 0.19, "statl": 0.19, "systh": 0.12, "systl": 0.11},
+        {"x": 4, "xl": 3.5, "xh": 4.5, "y": 0.54, "stath": 0.09, "statl": 0.09, "systh": 0.08, "systl": 0.05},
+        {"x": 5, "xl": 4.5, "xh": 5.5, "y": 0.59, "stath": 0.12, "statl": 0.12, "systh": 0.13, "systl": 0.1},
+        {"x": 7, "xl": 5.5, "xh": 8.5, "y": 0.47, "stath": 0.07, "statl": 0.07, "systh": 0.09, "systl": 0.07},
     ]
 };
 
@@ -8719,9 +8719,9 @@ dataset["chadTOe_RAA_pT_AuAu_200GeV_PHENIX_cent-0-10_absy-lt-0p35"] = {
 };
 
 dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
-    reference : "arXiv:2111.14615",
+    reference : "EPJC 82 (2022) 1150",
     link : "https://arxiv.org/abs/2111.14615",
-    update : "2000-01-01",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "(c&rarr;) e",
@@ -8731,10 +8731,10 @@ dataset["cTOe_RAA_pT_AuAu_200GeV_STAR_cent-0-80_abseta-lt-1"] = {
     kinea : "0-80%",
     kineb : "|&eta;| < 1",
     data : [
-        {"x": 3.00148, "xl": 2.5, "xh": 3.5, "y": 0.356275, "stath": 0.00674766, "statl": 0.00674766, "systh": 0.037112, "systl": 0.037112},
-        {"x": 4.00221, "xl": 3.5, "xh": 4.5, "y": 0.147099, "stath": 0.00337382, "statl": 0.00337382, "systh": 0.0269906, "systl": 0.0269905},
-        {"x": 5.00202, "xl": 4.5, "xh": 5.5, "y": 0.20108, "stath": 0.0573549, "statl": 0.0573549, "systh": 0.0472335, "systl": 0.0472335},
-        {"x": 7.00195, "xl": 5.5, "xh": 8.5, "y": 0.221323, "stath": 0.107962, "statl": 0.107962, "systh": 0.0910931, "systl": 0.0944669},
+        {"x": 3, "xl": 2.5, "xh": 3.5, "y": 0.57, "stath": 0.05, "statl": 0.05, "systh": 0.04, "systl": 0.04},
+        {"x": 4, "xl": 3.5, "xh": 4.5, "y": 0.29, "stath": 0.04, "statl": 0.04, "systh": 0.03, "systl": 0.02},
+        {"x": 5, "xl": 4.5, "xh": 5.5, "y": 0.31, "stath": 0.06, "statl": 0.06, "systh": 0.07, "systl": 0.06},
+        {"x": 7, "xl": 5.5, "xh": 8.5, "y": 0.27, "stath": 0.07, "statl": 0.07, "systh": 0.09, "systl": 0.08},
     ]
 };
 
