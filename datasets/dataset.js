@@ -3516,6 +3516,24 @@ dataset["aprJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
     ]
 };
 
+dataset["aprJpsi_RAA_y_CuAu_200GeV_PHENIX_cent-0-100_pT-gt-0"] = {
+    reference : "PRC 96 (2017) 064901",
+    link : "https://arxiv.org/abs/1702.01085",
+    update : "2024-06-25",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "Prompt J/&psi;",
+    collision : "CuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-100%",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": -1.7, "xl": -2.2, "xh": -1.2, "y": 0.339, "stath": 0.021, "statl": 0.021, "systh": 0.026, "systl": 0.026},
+        {"x": 1.7, "xl": 1.2, "xh": 2.2, "y": 0.276, "stath": 0.026, "statl": 0.026, "systh": 0.023, "systl": 0.023},
+    ]
+};
+
 dataset["aprJpsi_RpA_pT_pPb_5TeV_ALICE__ycm-M1p37-0p43"] = {
     reference : "JHEP 06 (2022) 011",
     link : "https://arxiv.org/abs/2105.04957",
@@ -7688,6 +7706,24 @@ dataset["bTOJpsi_RAA_pT_PbPb_5TeV_CMS_cent-30-100_absy-lt-2p4"] = {
         {"x": 14, "xl": 13, "xh": 15, "y": 0.643, "stath": 0.032, "statl": 0.032, "systh": 0.038, "systl": 0.038},
         {"x": 17.5, "xl": 15, "xh": 20, "y": 0.578, "stath": 0.028, "statl": 0.028, "systh": 0.025, "systl": 0.025},
         {"x": 25, "xl": 20, "xh": 30, "y": 0.551, "stath": 0.04, "statl": 0.04, "systh": 0.023, "systl": 0.023},
+    ]
+};
+
+dataset["bTOJpsi_RAA_y_CuAu_200GeV_PHENIX_cent-0-100_pT-gt-0"] = {
+    reference : "PRC 96 (2017) 064901",
+    link : "https://arxiv.org/abs/1702.01085",
+    update : "2024-06-25",
+    observable : "RAA",
+    xtitle : "y",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "CuAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "0-100%",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": -1.7, "xl": -2.2, "xh": -1.2, "y": 1.37, "stath": 0.41, "statl": 0.41, "systh": 0.33, "systl": 0.33},
+        {"x": 1.7, "xl": 1.2, "xh": 2.2, "y": 1.05, "stath": 0.31, "statl": 0.31, "systh": 0.28, "systl": 0.28},
     ]
 };
 
