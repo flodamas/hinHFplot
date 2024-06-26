@@ -12651,6 +12651,43 @@ dataset["incJpsi_RpA_Ncoll_pPb_8TeV_ALICE_pT-lt-20_ycm-M4p46-M2p96"] = {
     ]
 };
 
+dataset["incJpsi_RpA_Npart_dAu_200GeV_STAR__pT-lt-3"] = {
+    reference : "PRC 93 (2016) 064904",
+    link : "https://arxiv.org/abs/1602.02212",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "dAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 3 GeV",
+    data : [
+        {"x": 5.7, "xl": 5.7, "xh": 5.7, "y": 1.06, "stath": 0.27, "statl": 0.27, "systh": 0.39, "systl": 0.3},
+        {"x": 13.3, "xl": 13.3, "xh": 13.3, "y": 1.15, "stath": 0.21, "statl": 0.21, "systh": 0.41, "systl": 0.33},
+    ]
+};
+
+dataset["incJpsi_RpA_pT_dAu_200GeV_STAR__absy-lt-1"] = {
+    reference : "PRC 93 (2016) 064904",
+    link : "https://arxiv.org/abs/1602.02212",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "dAu",
+    energy : "200 GeV",
+    collab : "STAR",
+    kinea : "",
+    kineb : "|y| < 1",
+    data : [
+        {"x": 0.63, "xl": 0, "xh": 1, "y": 1.1, "stath": 0.26, "statl": 0.26, "systh": 0.37, "systl": 0.31},
+        {"x": 1.45, "xl": 1, "xh": 2, "y": 1.27, "stath": 0.26, "statl": 0.26, "systh": 0.39, "systl": 0.35},
+        {"x": 2.4, "xl": 2, "xh": 3, "y": 0.66, "stath": 0.35, "statl": 0.35, "systh": 0.27, "systl": 0.17},
+    ]
+};
+
 dataset["incJpsi_RpA_pT_HeAu_200GeV_PHENIX_cent-0-100_ycm-1p2-2p2"] = {
     reference : "PRC 102 (2020) 014902",
     link : "https://arxiv.org/abs/1910.14487",
