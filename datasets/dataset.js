@@ -4268,6 +4268,27 @@ dataset["aprJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
     ]
 };
 
+dataset["aprJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M1p37-0p43"] = {
+    reference : "JHEP 07 (2023) 137",
+    link : "https://arxiv.org/abs/2211.14153",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "-1.37 < y<sub>cm</sub> < 0.43",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.955, "stath": 0.119, "statl": 0.119, "systh": 0.064, "systl": 0.064},
+        {"x": 5, "xl": 4, "xh": 6, "y": 1.005, "stath": 0.102, "statl": 0.102, "systh": 0.066, "systl": 0.066},
+        {"x": 7, "xl": 6, "xh": 8, "y": 1.079, "stath": 0.135, "statl": 0.135, "systh": 0.071, "systl": 0.071},
+        {"x": 9, "xl": 8, "xh": 10, "y": 0.973, "stath": 0.206, "statl": 0.206, "systh": 0.066, "systl": 0.066},
+        {"x": 12, "xl": 10, "xh": 14, "y": 1.315, "stath": 0.308, "statl": 0.308, "systh": 0.092, "systl": 0.092},
+    ]
+};
+
 dataset["aprJpsi_RpA_pT_pPb_8TeV_LHCb__ycm-1p5-4"] = {
     reference : "PLB 774 (2017) 159",
     link : "https://arxiv.org/abs/1706.07122",
@@ -8458,6 +8479,27 @@ dataset["bTOJpsi_RpA_pT_pPb_5TeV_CMS__ycm-M2p4-M1p93"] = {
         {"x": 9.25, "xl": 8.5, "xh": 10, "y": 0.94, "stath": 0.07, "statl": 0.07, "systh": 0.08, "systl": 0.08},
         {"x": 12, "xl": 10, "xh": 14, "y": 1.12, "stath": 0.07, "statl": 0.07, "systh": 0.08, "systl": 0.08},
         {"x": 22, "xl": 14, "xh": 30, "y": 0.99, "stath": 0.09, "statl": 0.09, "systh": 0.08, "systl": 0.08},
+    ]
+};
+
+dataset["bTOJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M1p37-0p43"] = {
+    reference : "JHEP 07 (2023) 137",
+    link : "https://arxiv.org/abs/2211.14153",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "(b&rarr;) J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "-1.37 < y<sub>cm</sub> < 0.43",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.926, "stath": 0.362, "statl": 0.362, "systh": 0.122, "systl": 0.122},
+        {"x": 5, "xl": 4, "xh": 6, "y": 1.341, "stath": 0.285, "statl": 0.285, "systh": 0.118, "systl": 0.118},
+        {"x": 7, "xl": 6, "xh": 8, "y": 1.367, "stath": 0.296, "statl": 0.296, "systh": 0.1, "systl": 0.1},
+        {"x": 9, "xl": 8, "xh": 10, "y": 1.133, "stath": 0.354, "statl": 0.354, "systh": 0.088, "systl": 0.088},
+        {"x": 12, "xl": 10, "xh": 14, "y": 1.124, "stath": 0.407, "statl": 0.407, "systh": 0.095, "systl": 0.095},
     ]
 };
 
@@ -13737,6 +13779,30 @@ dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-2p03-3p53"] = {
     ]
 };
 
+dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M1p37-0p43"] = {
+    reference : "JHEP 07 (2023) 137",
+    link : "https://arxiv.org/abs/2211.14153",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "-1.37 < y<sub>cm</sub> < 0.43",
+    data : [
+        {"x": 1, "xl": 0, "xh": 2, "y": 1.205, "stath": 0.211, "statl": 0.211, "systh": 0.065, "systl": 0.065},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.951, "stath": 0.108, "statl": 0.108, "systh": 0.062, "systl": 0.062},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 1.13, "stath": 0.134, "statl": 0.134, "systh": 0.073, "systl": 0.073},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.993, "stath": 0.128, "statl": 0.128, "systh": 0.064, "systl": 0.064},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 1.124, "stath": 0.159, "statl": 0.159, "systh": 0.073, "systl": 0.073},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 1.166, "stath": 0.173, "statl": 0.173, "systh": 0.075, "systl": 0.075},
+        {"x": 9, "xl": 8, "xh": 10, "y": 1.02, "stath": 0.173, "statl": 0.173, "systh": 0.066, "systl": 0.066},
+        {"x": 12, "xl": 10, "xh": 14, "y": 1.245, "stath": 0.218, "statl": 0.218, "systh": 0.08, "systl": 0.08},
+    ]
+};
+
 dataset["incJpsi_RpA_pT_pPb_8TeV_ALICE__ycm-M4p46-M2p96"] = {
     reference : "JHEP 07 (2018) 160",
     link : "https://arxiv.org/abs/1805.04381",
@@ -14204,6 +14270,23 @@ dataset["incJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
     data : [
         {"x": -3.25, "xl": -4, "xh": -2.5, "y": 0.93, "stath": 0.03, "statl": 0.03, "systh": 0.0707107, "systl": 0.0707107},
         {"x": 3.25, "xl": 2.5, "xh": 4, "y": 0.63, "stath": 0.01, "statl": 0.01, "systh": 0.0424264, "systl": 0.0424264},
+    ]
+};
+
+dataset["incJpsi_RpA_ycm_pPb_8TeV_ALICE__pT-gt-0"] = {
+    reference : "JHEP 07 (2023) 137",
+    link : "https://arxiv.org/abs/2211.14153",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Inclusive J/&psi;",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "ALICE",
+    kinea : "",
+    kineb : "p<sub>T</sub> > 0 GeV",
+    data : [
+        {"x": -0.47, "xl": -1.37, "xh": 0.43, "y": 0.895, "stath": 0.057, "statl": 0.057, "systh": 0.062, "systl": 0.062},
     ]
 };
 
