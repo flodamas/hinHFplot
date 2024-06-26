@@ -13202,7 +13202,7 @@ dataset["incJpsi_RpA_pT_dAu_200GeV_PHENIX_cent-60-88_ycm-M2p2-M1p2"] = {
     ]
 };
 
-dataset["incJpsi_RpA_pT_dAu_200GeV_STAR__absy-lt-1"] = {
+dataset["incJpsi_RpA_pT_dAu_200GeV_STAR_cent-0-100_absy-lt-1"] = {
     reference : "PRC 93 (2016) 064904",
     link : "https://arxiv.org/abs/1602.02212",
     update : "2024-06-25",
@@ -13212,7 +13212,7 @@ dataset["incJpsi_RpA_pT_dAu_200GeV_STAR__absy-lt-1"] = {
     collision : "dAu",
     energy : "200 GeV",
     collab : "STAR",
-    kinea : "",
+    kinea : "0-100%",
     kineb : "|y| < 1",
     data : [
         {"x": 0.63, "xl": 0, "xh": 1, "y": 1.1, "stath": 0.26, "statl": 0.26, "systh": 0.37, "systl": 0.31},
