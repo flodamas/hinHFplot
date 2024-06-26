@@ -1298,6 +1298,58 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     ]
 };
 
+dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "DplusmnToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "1.5 < y<sub>cm</sub> < 4",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.337, "stath": 0.011, "statl": 0.011, "systh": 0.031, "systl": 0.031},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.334, "stath": 0.004, "statl": 0.004, "systh": 0.023, "systl": 0.023},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.351, "stath": 0.002, "statl": 0.002, "systh": 0.017, "systl": 0.017},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.373, "stath": 0.002, "statl": 0.002, "systh": 0.016, "systl": 0.016},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.378, "stath": 0.003, "statl": 0.003, "systh": 0.017, "systl": 0.017},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.391, "stath": 0.005, "statl": 0.005, "systh": 0.026, "systl": 0.026},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.406, "stath": 0.009, "statl": 0.009, "systh": 0.035, "systl": 0.035},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.402, "stath": 0.01, "statl": 0.01, "systh": 0.028, "systl": 0.028},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.418, "stath": 0.01, "statl": 0.01, "systh": 0.039, "systl": 0.039},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.418, "stath": 0.015, "statl": 0.015, "systh": 0.046, "systl": 0.046},
+    ]
+};
+
+dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_LHCb__ycm-M5-M2p5"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "DplusmnToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-5 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.302, "stath": 0.012, "statl": 0.012, "systh": 0.036, "systl": 0.036},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.302, "stath": 0.005, "statl": 0.005, "systh": 0.029, "systl": 0.029},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.311, "stath": 0.003, "statl": 0.003, "systh": 0.024, "systl": 0.024},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.325, "stath": 0.004, "statl": 0.004, "systh": 0.024, "systl": 0.024},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.33, "stath": 0.005, "statl": 0.005, "systh": 0.024, "systl": 0.024},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.339, "stath": 0.009, "statl": 0.009, "systh": 0.03, "systl": 0.03},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.36, "stath": 0.009, "statl": 0.009, "systh": 0.027, "systl": 0.027},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.332, "stath": 0.012, "statl": 0.012, "systh": 0.035, "systl": 0.035},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.35, "stath": 0.02, "statl": 0.02, "systh": 0.06, "systl": 0.06},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.339, "stath": 0.023, "statl": 0.023, "systh": 0.038, "systl": 0.038},
+    ]
+};
+
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
@@ -1358,6 +1410,32 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
         {"x": 11, "xl": 10, "xh": 12, "y": 0.412, "stath": 0.065, "statl": 0.065, "systh": 0.0384818, "systl": 0.0384818},
         {"x": 14, "xl": 12, "xh": 16, "y": 0.446, "stath": 0.08, "statl": 0.08, "systh": 0.0492506, "systl": 0.0482972},
         {"x": 20, "xl": 16, "xh": 24, "y": 0.659, "stath": 0.19, "statl": 0.19, "systh": 0.0761704, "systl": 0.0752126},
+    ]
+};
+
+dataset["aprDplusmnToD0_DplusmnToD0_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "DplusmnToD0",
+    xtitle : "ycm",
+    particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 10 GeV",
+    data : [
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.311, "stath": 0.011, "statl": 0.011, "systh": 0.03, "systl": 0.03},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.34, "stath": 0.003, "statl": 0.003, "systh": 0.024, "systl": 0.024},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.371, "stath": 0.003, "statl": 0.003, "systh": 0.017, "systl": 0.017},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.368, "stath": 0.003, "statl": 0.003, "systh": 0.014, "systl": 0.014},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.362, "stath": 0.006, "statl": 0.006, "systh": 0.028, "systl": 0.028},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.283, "stath": 0.011, "statl": 0.011, "systh": 0.041, "systl": 0.041},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.301, "stath": 0.004, "statl": 0.004, "systh": 0.027, "systl": 0.027},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.328, "stath": 0.004, "statl": 0.004, "systh": 0.022, "systl": 0.022},
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 0.317, "stath": 0.007, "statl": 0.007, "systh": 0.023, "systl": 0.023},
+        {"x": -4.75, "xl": -5, "xh": -4.5, "y": 0.325, "stath": 0.016, "statl": 0.016, "systh": 0.039, "systl": 0.039},
     ]
 };
 
@@ -1490,6 +1568,82 @@ dataset["aprDplusmn_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
         {"x": 14, "xl": 12, "xh": 16, "y": 0.952, "stath": 0.07, "statl": 0.07, "systh": 0.107348, "systl": 0.109213},
         {"x": 20, "xl": 16, "xh": 24, "y": 1.241, "stath": 0.167, "statl": 0.167, "systh": 0.153668, "systl": 0.159342},
         {"x": 30, "xl": 24, "xh": 36, "y": 1.222, "stath": 0.253, "statl": 0.253, "systh": 0.17627, "systl": 0.178189},
+    ]
+};
+
+dataset["aprDplusmn_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-4"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2.5 < y<sub>cm</sub> < 4",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.585, "stath": 0.029, "statl": 0.029, "systh": 0.052, "systl": 0.048},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.606, "stath": 0.006, "statl": 0.006, "systh": 0.033, "systl": 0.032},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.634, "stath": 0.005, "statl": 0.005, "systh": 0.028, "systl": 0.028},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.678, "stath": 0.005, "statl": 0.005, "systh": 0.024, "systl": 0.029},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.684, "stath": 0.007, "statl": 0.007, "systh": 0.025, "systl": 0.027},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.698, "stath": 0.01, "statl": 0.01, "systh": 0.026, "systl": 0.028},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.723, "stath": 0.015, "statl": 0.015, "systh": 0.031, "systl": 0.032},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.715, "stath": 0.028, "statl": 0.028, "systh": 0.036, "systl": 0.037},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.806, "stath": 0.03, "statl": 0.03, "systh": 0.052, "systl": 0.05},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.847, "stath": 0.045, "statl": 0.045, "systh": 0.065, "systl": 0.06},
+    ]
+};
+
+dataset["aprDplusmn_RpA_pT_pPb_5TeV_LHCb__ycm-M4-M2p5"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-4 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.61, "stath": 0.042, "statl": 0.042, "systh": 0.07, "systl": 0.066},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.779, "stath": 0.015, "statl": 0.015, "systh": 0.069, "systl": 0.067},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.822, "stath": 0.009, "statl": 0.009, "systh": 0.06, "systl": 0.061},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.839, "stath": 0.009, "statl": 0.009, "systh": 0.053, "systl": 0.057},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.831, "stath": 0.011, "statl": 0.011, "systh": 0.051, "systl": 0.053},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.814, "stath": 0.013, "statl": 0.013, "systh": 0.048, "systl": 0.05},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.825, "stath": 0.018, "statl": 0.018, "systh": 0.05, "systl": 0.05},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.778, "stath": 0.023, "statl": 0.023, "systh": 0.048, "systl": 0.048},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.975, "stath": 0.043, "statl": 0.043, "systh": 0.066, "systl": 0.065},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 1.002, "stath": 0.056, "statl": 0.056, "systh": 0.077, "systl": 0.073},
+    ]
+};
+
+dataset["aprDplusmn_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Prompt D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 10 GeV",
+    data : [
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 1.018, "stath": 0.031, "statl": 0.031, "systh": 0.074, "systl": 0.071},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.875, "stath": 0.022, "statl": 0.022, "systh": 0.062, "systl": 0.059},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.765, "stath": 0.015, "statl": 0.015, "systh": 0.066, "systl": 0.062},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.649, "stath": 0.029, "statl": 0.029, "systh": 0.065, "systl": 0.065},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.71, "stath": 0.013, "statl": 0.013, "systh": 0.062, "systl": 0.056},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.632, "stath": 0.017, "statl": 0.017, "systh": 0.038, "systl": 0.039},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.626, "stath": 0.011, "statl": 0.011, "systh": 0.032, "systl": 0.027},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.594, "stath": 0.016, "statl": 0.016, "systh": 0.036, "systl": 0.033},
     ]
 };
 
@@ -2099,6 +2253,58 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     ]
 };
 
+dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "DsubsToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "1.5 < y<sub>cm</sub> < 4",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.139, "stath": 0.015, "statl": 0.015, "systh": 0.014, "systl": 0.014},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.146, "stath": 0.005, "statl": 0.005, "systh": 0.012, "systl": 0.012},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.159, "stath": 0.003, "statl": 0.003, "systh": 0.01, "systl": 0.01},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.167, "stath": 0.003, "statl": 0.003, "systh": 0.008, "systl": 0.008},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.179, "stath": 0.004, "statl": 0.004, "systh": 0.009, "systl": 0.009},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.188, "stath": 0.006, "statl": 0.006, "systh": 0.013, "systl": 0.013},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.193, "stath": 0.008, "statl": 0.008, "systh": 0.017, "systl": 0.017},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.181, "stath": 0.008, "statl": 0.008, "systh": 0.013, "systl": 0.013},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.175, "stath": 0.011, "statl": 0.011, "systh": 0.017, "systl": 0.017},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.19, "stath": 0.015, "statl": 0.015, "systh": 0.022, "systl": 0.022},
+    ]
+};
+
+dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_LHCb__ycm-M5-M2p5"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "DsubsToD0",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-5 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.162, "stath": 0.023, "statl": 0.023, "systh": 0.025, "systl": 0.025},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.14, "stath": 0.007, "statl": 0.007, "systh": 0.018, "systl": 0.018},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.165, "stath": 0.005, "statl": 0.005, "systh": 0.016, "systl": 0.016},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.17, "stath": 0.005, "statl": 0.005, "systh": 0.014, "systl": 0.014},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.186, "stath": 0.007, "statl": 0.007, "systh": 0.015, "systl": 0.015},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.193, "stath": 0.009, "statl": 0.009, "systh": 0.013, "systl": 0.013},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.217, "stath": 0.012, "statl": 0.012, "systh": 0.017, "systl": 0.017},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.169, "stath": 0.015, "statl": 0.015, "systh": 0.018, "systl": 0.018},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.193, "stath": 0.022, "statl": 0.022, "systh": 0.019, "systl": 0.019},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.198, "stath": 0.031, "statl": 0.031, "systh": 0.019, "systl": 0.019},
+    ]
+};
+
 dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
@@ -2167,6 +2373,32 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
     ]
 };
 
+dataset["aprDsubsToD0_DsubsToD0_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "DsubsToD0",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 10 GeV",
+    data : [
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.147, "stath": 0.006, "statl": 0.006, "systh": 0.016, "systl": 0.016},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.151, "stath": 0.005, "statl": 0.005, "systh": 0.012, "systl": 0.012},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.169, "stath": 0.005, "statl": 0.005, "systh": 0.008, "systl": 0.008},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.159, "stath": 0.007, "statl": 0.007, "systh": 0.008, "systl": 0.008},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.135, "stath": 0.018, "statl": 0.018, "systh": 0.012, "systl": 0.012},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.159, "stath": 0.009, "statl": 0.009, "systh": 0.027, "systl": 0.027},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.149, "stath": 0.008, "statl": 0.008, "systh": 0.016, "systl": 0.016},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.166, "stath": 0.009, "statl": 0.009, "systh": 0.013, "systl": 0.013},
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 0.183, "stath": 0.019, "statl": 0.019, "systh": 0.024, "systl": 0.024},
+        {"x": -4.75, "xl": -5, "xh": -4.5, "y": 0.086, "stath": 0.021, "statl": 0.021, "systh": 0.013, "systl": 0.013},
+    ]
+};
+
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
@@ -2190,9 +2422,9 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = 
 };
 
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
-    reference : "LHCb-PAPER-2023-006",
-    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
-    update : "2023-03-27",
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -2202,25 +2434,25 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-1p5-4"] = {
     kinea : "",
     kineb : "1.5 < y<sub>cm</sub> < 4",
     data : [
-        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.39481, "stath": 0.0451807, "statl": 0.0451807, "systh": 0.0405468, "systl": 0.0428638},
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.437674, "stath": 0.0150602, "statl": 0.0150602, "systh": 0.0359129, "systl": 0.0347544},
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.451576, "stath": 0.0150602, "statl": 0.0150602, "systh": 0.0254866, "systl": 0.0254866},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.449259, "stath": 0, "statl": 0, "systh": 0.0185357, "systl": 0.0185357},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.474745, "stath": 0.00115848, "statl": 0.00115848, "systh": 0.0162187, "systl": 0.0162187},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.480538, "stath": 0, "statl": 0, "systh": 0.0139018, "systl": 0.0139018},
-        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.475711, "stath": 0.019308, "statl": 0.019308, "systh": 0.0173772, "systl": 0.0173772},
-        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.451576, "stath": 0.0222042, "statl": 0.0222042, "systh": 0.0125502, "systl": 0.0125502},
-        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.419717, "stath": 0.0251004, "statl": 0.0251004, "systh": 0.014481, "systl": 0.014481},
-        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.454472, "stath": 0.0347544, "statl": 0.0347544, "systh": 0.019308, "systl": 0.019308},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.48633, "stath": 0.0395814, "statl": 0.0395814, "systh": 0.0183426, "systl": 0.0183426},
-        {"x": 13, "xl": 12, "xh": 14, "y": 0.468953, "stath": 0.0656472, "statl": 0.0656472, "systh": 0.0318582, "systl": 0.0308928},
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.393, "stath": 0.046, "statl": 0.046, "systh": 0.041, "systl": 0.041},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.438, "stath": 0.015, "statl": 0.015, "systh": 0.036, "systl": 0.036},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.451, "stath": 0.009, "statl": 0.009, "systh": 0.025, "systl": 0.025},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.449, "stath": 0.009, "statl": 0.009, "systh": 0.018, "systl": 0.018},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.474, "stath": 0.01, "statl": 0.01, "systh": 0.014, "systl": 0.014},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.48, "stath": 0.014, "statl": 0.014, "systh": 0.013, "systl": 0.013},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.475, "stath": 0.019, "statl": 0.019, "systh": 0.015, "systl": 0.015},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.451, "stath": 0.022, "statl": 0.022, "systh": 0.012, "systl": 0.012},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.419, "stath": 0.025, "statl": 0.025, "systh": 0.014, "systl": 0.014},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.454, "stath": 0.036, "statl": 0.036, "systh": 0.018, "systl": 0.018},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.486, "stath": 0.04, "statl": 0.04, "systh": 0.018, "systl": 0.018},
+        {"x": 13, "xl": 12, "xh": 14, "y": 0.469, "stath": 0.065, "statl": 0.065, "systh": 0.028, "systl": 0.028},
     ]
 };
 
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-M5-M2p5"] = {
-    reference : "LHCb-PAPER-2023-006",
-    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
-    update : "2023-03-27",
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -2230,17 +2462,17 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_LHCb__ycm-M5-M2p5"] = {
     kinea : "",
     kineb : "-5 < y<sub>cm</sub> < -2.5",
     data : [
-        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.532437, "stath": 0.0834106, "statl": 0.0834106, "systh": 0.0834106, "systl": 0.0834106},
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.46316, "stath": 0.0243281, "statl": 0.0243281, "systh": 0.0567655, "systl": 0.057924},
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.531511, "stath": 0.0162187, "statl": 0.0162187, "systh": 0.0498146, "systl": 0.0509731},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.52456, "stath": 0.0162187, "statl": 0.0162187, "systh": 0.0382298, "systl": 0.0382299},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.566265, "stath": 0.0196941, "statl": 0.0196941, "systh": 0.0335959, "systl": 0.0335959},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.547729, "stath": 0.0231696, "statl": 0.0231696, "systh": 0.028962, "systl": 0.0278035},
-        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.604495, "stath": 0.0324374, "statl": 0.0324374, "systh": 0.0301204, "systl": 0.0301205},
-        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.5095, "stath": 0.0428637, "statl": 0.0428637, "systh": 0.0301205, "systl": 0.0301205},
-        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.523401, "stath": 0.0567655, "statl": 0.0567655, "systh": 0.0417053, "systl": 0.0405468},
-        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.598702, "stath": 0.0973123, "statl": 0.0973123, "systh": 0.0556071, "systl": 0.0544485},
-        {"x": 12, "xl": 10, "xh": 14, "y": 0.426089, "stath": 0.0706673, "statl": 0.0706673, "systh": 0.0266451, "systl": 0.026645},
+        {"x": 0.5, "xl": 0, "xh": 1, "y": 0.532, "stath": 0.082, "statl": 0.082, "systh": 0.081, "systl": 0.081},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.462, "stath": 0.026, "statl": 0.026, "systh": 0.057, "systl": 0.057},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.531, "stath": 0.016, "statl": 0.016, "systh": 0.05, "systl": 0.05},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.524, "stath": 0.016, "statl": 0.016, "systh": 0.038, "systl": 0.038},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.565, "stath": 0.02, "statl": 0.02, "systh": 0.033, "systl": 0.033},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.547, "stath": 0.025, "statl": 0.025, "systh": 0.027, "systl": 0.027},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.603, "stath": 0.034, "statl": 0.034, "systh": 0.029, "systl": 0.029},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.509, "stath": 0.044, "statl": 0.044, "systh": 0.024, "systl": 0.024},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.523, "stath": 0.056, "statl": 0.056, "systh": 0.028, "systl": 0.028},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.598, "stath": 0.098, "statl": 0.098, "systh": 0.037, "systl": 0.037},
+        {"x": 12, "xl": 10, "xh": 14, "y": 0.426, "stath": 0.07, "statl": 0.07, "systh": 0.026, "systl": 0.026},
     ]
 };
 
@@ -2289,9 +2521,9 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
 };
 
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
-    reference : "LHCb-PAPER-2023-006",
-    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
-    update : "2023-03-27",
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
     observable : "DsubsToDplusmn",
     xtitle : "ycm",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -2301,37 +2533,16 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
     kinea : "",
     kineb : "p<sub>T</sub> < 10 GeV",
     data : [
-        {"x": -4.75, "xl": -5, "xh": -4.5, "y": 0.291139, "stath": 0.0722363, "statl": 0.0722363, "systh": 0.051308, "systl": 0.0519831},
-        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 0.578734, "stath": 0.0594093, "statl": 0.0594093, "systh": 0.070211, "systl": 0.0702109},
-        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.505823, "stath": 0.0270042, "statl": 0.0270042, "systh": 0.0344304, "systl": 0.0330802},
-        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.497046, "stath": 0.0249789, "statl": 0.0249789, "systh": 0.0540084, "systl": 0.0540084},
-        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.534852, "stath": 0.038481, "statl": 0.038481, "systh": 0.0870886, "systl": 0.0837131},
-        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.460603, "stath": 0.0285579, "statl": 0.0285579, "systh": 0.0453567, "systl": 0.0452442},
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.443713, "stath": 0.0141772, "statl": 0.0141772, "systh": 0.0398312, "systl": 0.0391561},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.457215, "stath": 0.012827, "statl": 0.012827, "systh": 0.0236287, "systl": 0.0236287},
-        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.434937, "stath": 0.018903, "statl": 0.018903, "systh": 0.0168777, "systl": 0.018903},
-        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.374177, "stath": 0.0479325, "statl": 0.0479325, "systh": 0.0249789, "systl": 0.025654},
-    ]
-};
-
-dataset["aprDsubsToDplusmn_DsubsToDplusmn_y_pp_5TeV_LHCb__pT-1-10"] = {
-    reference : "LHCb-PAPER-2023-006",
-    link : "https://wwuindico.uni-muenster.de/event/1409/contributions/2033/attachments/867/1819/ChenxiGu_HP2023.pdf#page=10",
-    update : "2023-03-27",
-    observable : "DsubsToDplusmn",
-    xtitle : "y",
-    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
-    collision : "pp",
-    energy : "5.02 TeV",
-    collab : "LHCb",
-    kinea : "",
-    kineb : "1 < p<sub>T</sub> < 10 GeV",
-    data : [
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.419409, "stath": 0.0249789, "statl": 0.0249789, "systh": 0.0425316, "systl": 0.032405},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.486245, "stath": 0.0135021, "statl": 0.0135021, "systh": 0.0243038, "systl": 0.0270042},
-        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.455865, "stath": 0.0141772, "statl": 0.0141772, "systh": 0.0249789, "systl": 0.0236287},
-        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.407932, "stath": 0.018903, "statl": 0.018903, "systh": 0.0243038, "systl": 0.0195781},
-        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.425485, "stath": 0.03173, "statl": 0.03173, "systh": 0.0499578, "systl": 0.0452321},
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.46, "stath": 0.028, "statl": 0.028, "systh": 0.045, "systl": 0.045},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.444, "stath": 0.014, "statl": 0.014, "systh": 0.039, "systl": 0.039},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.457, "stath": 0.013, "statl": 0.013, "systh": 0.024, "systl": 0.024},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.433, "stath": 0.02, "statl": 0.02, "systh": 0.018, "systl": 0.018},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.373, "stath": 0.049, "statl": 0.049, "systh": 0.026, "systl": 0.026},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.535, "stath": 0.039, "statl": 0.039, "systh": 0.084, "systl": 0.084},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.496, "stath": 0.026, "statl": 0.026, "systh": 0.053, "systl": 0.053},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 0.506, "stath": 0.027, "statl": 0.027, "systh": 0.034, "systl": 0.034},
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 0.578, "stath": 0.061, "statl": 0.061, "systh": 0.069, "systl": 0.069},
+        {"x": -4.75, "xl": -5, "xh": -4.5, "y": 0.29, "stath": 0.074, "statl": 0.074, "systh": 0.037, "systl": 0.037},
     ]
 };
 
@@ -2446,6 +2657,80 @@ dataset["aprDsubs_RpA_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
         {"x": 10, "xl": 8, "xh": 12, "y": 1.306, "stath": 0.2, "statl": 0.2, "systh": 0.159271, "systl": 0.164934},
         {"x": 14, "xl": 12, "xh": 16, "y": 0.864, "stath": 0.201, "statl": 0.201, "systh": 0.119377, "systl": 0.121288},
         {"x": 20, "xl": 16, "xh": 24, "y": 0.857, "stath": 0.322, "statl": 0.322, "systh": 0.130808, "systl": 0.132735},
+    ]
+};
+
+dataset["aprDsubs_RpA_pT_pPb_5TeV_LHCb__ycm-2p5-4"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "2.5 < y<sub>cm</sub> < 4",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.665, "stath": 0.036, "statl": 0.036, "systh": 0.047, "systl": 0.044},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.592, "stath": 0.019, "statl": 0.019, "systh": 0.028, "systl": 0.027},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.587, "stath": 0.019, "statl": 0.019, "systh": 0.026, "systl": 0.024},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.614, "stath": 0.022, "statl": 0.022, "systh": 0.027, "systl": 0.025},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.621, "stath": 0.036, "statl": 0.036, "systh": 0.03, "systl": 0.025},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 0.72, "stath": 0.057, "statl": 0.057, "systh": 0.043, "systl": 0.034},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 0.748, "stath": 0.076, "statl": 0.076, "systh": 0.062, "systl": 0.039},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.687, "stath": 0.092, "statl": 0.092, "systh": 0.058, "systl": 0.039},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.709, "stath": 0.123, "statl": 0.123, "systh": 0.07, "systl": 0.048},
+    ]
+};
+
+dataset["aprDsubs_RpA_pT_pPb_5TeV_LHCb__ycm-M4-M2p5"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "-4 < y<sub>cm</sub> < -2.5",
+    data : [
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.944, "stath": 0.06, "statl": 0.06, "systh": 0.121, "systl": 0.119},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.96, "stath": 0.034, "statl": 0.034, "systh": 0.097, "systl": 0.096},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.964, "stath": 0.034, "statl": 0.034, "systh": 0.077, "systl": 0.075},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.971, "stath": 0.038, "statl": 0.038, "systh": 0.068, "systl": 0.066},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.92, "stath": 0.051, "statl": 0.051, "systh": 0.064, "systl": 0.059},
+        {"x": 6.5, "xl": 6, "xh": 7, "y": 1.101, "stath": 0.078, "statl": 0.078, "systh": 0.08, "systl": 0.069},
+        {"x": 7.5, "xl": 7, "xh": 8, "y": 1.03, "stath": 0.116, "statl": 0.116, "systh": 0.083, "systl": 0.066},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.981, "stath": 0.145, "statl": 0.145, "systh": 0.093, "systl": 0.07},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.931, "stath": 0.17, "statl": 0.17, "systh": 0.099, "systl": 0.075},
+    ]
+};
+
+dataset["aprDsubs_RpA_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
+    reference : "JHEP 01 (2024) 070",
+    link : "https://arxiv.org/abs/2309.14206",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "LHCb",
+    kinea : "",
+    kineb : "p<sub>T</sub> < 10 GeV",
+    data : [
+        {"x": -4.25, "xl": -4.5, "xh": -4, "y": 1.264, "stath": 0.191, "statl": 0.191, "systh": 0.134, "systl": 0.111},
+        {"x": -3.75, "xl": -4, "xh": -3.5, "y": 1.275, "stath": 0.073, "statl": 0.073, "systh": 0.104, "systl": 0.093},
+        {"x": -3.25, "xl": -3.5, "xh": -3, "y": 0.895, "stath": 0.039, "statl": 0.039, "systh": 0.089, "systl": 0.084},
+        {"x": -2.75, "xl": -3, "xh": -2.5, "y": 0.821, "stath": 0.052, "statl": 0.052, "systh": 0.123, "systl": 0.124},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.76, "stath": 0.048, "statl": 0.048, "systh": 0.093, "systl": 0.073},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.68, "stath": 0.024, "statl": 0.024, "systh": 0.036, "systl": 0.038},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.591, "stath": 0.024, "statl": 0.024, "systh": 0.036, "systl": 0.03},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.601, "stath": 0.05, "statl": 0.05, "systh": 0.044, "systl": 0.038},
     ]
 };
 
