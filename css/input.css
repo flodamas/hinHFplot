@@ -25,9 +25,6 @@ button.bactive {
     color: white;
     background-color: var(--blue);
 }
-button.bwactive {
-    color: var(--blue);
-}
 
 button, label {
     text-align: center;
@@ -92,7 +89,7 @@ input[type=number].shorter::-webkit-outer-spin-button {
     /* appearance: none;
        -webkit-appearance: none; */
     opacity: 1;
-    color: black;
+    color: var(--color-front);
     background-color: var(--color-back);
     width: 1rem;
     height: var(--width-picker);
