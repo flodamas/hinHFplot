@@ -9127,9 +9127,9 @@ dataset["bTOJpsi_v3_pT_PbPb_5TeV_CMS_cent-10-60_absy-lt-2p4"] = {
 };
 
 dataset["bTOLambdacTobTOD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
-    reference : "arXiv:2308.04873",
+    reference : "PRD 108 (2023) 112003",
     link : "https://arxiv.org/abs/2308.04873",
-    update : "2023-08-23",
+    update : "2024-06-25",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "(b&rarr;) &Lambda;<sub>c</sub> / (b&rarr;) D<sup>0</sup>",
@@ -9139,11 +9139,11 @@ dataset["bTOLambdacTobTOD0_LcToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
     kinea : "",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.663256, "stath": 0.104651, "statl": 0.104651, "systh": 0.0655814, "systl": 0.0669767},
-        {"x": 5, "xl": 4, "xh": 6, "y": 0.371628, "stath": 0.0544186, "statl": 0.0544186, "systh": 0.032093, "systl": 0.032093},
-        {"x": 7, "xl": 6, "xh": 8, "y": 0.289302, "stath": 0.0502326, "statl": 0.0502326, "systh": 0.0265116, "systl": 0.0251163},
-        {"x": 10, "xl": 8, "xh": 12, "y": 0.324186, "stath": 0.0432558, "statl": 0.0432558, "systh": 0.0316279, "systl": 0.03},
-        {"x": 18, "xl": 12, "xh": 24, "y": 0.332558, "stath": 0.12093, "statl": 0.12093, "systh": 0.0534884, "systl": 0.0523256},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.662, "stath": 0.107, "statl": 0.107, "systh": 0.066, "systl": 0.066},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.372, "stath": 0.055, "statl": 0.055, "systh": 0.031, "systl": 0.031},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.289, "stath": 0.052, "statl": 0.052, "systh": 0.025, "systl": 0.025},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.324, "stath": 0.044, "statl": 0.044, "systh": 0.031, "systl": 0.031},
+        {"x": 18, "xl": 12, "xh": 24, "y": 0.332, "stath": 0.122, "statl": 0.122, "systh": 0.052, "systl": 0.052},
     ]
 };
 
