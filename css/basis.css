@@ -1,9 +1,11 @@
 :root {
     /* color */
-    --gray: #f5f5f5;
-    --blue: #0072D0;
+    --color-back: white;
+    --color-front: #4b5461;
+    --blue: #417FA6;
+    --color-obj: #F5F5F5;
     --darkgray: #ddd;
-    --red: #D62828;
+    --red: #D96459;
 
     /* checkbox */
     --width-picker: 1.6rem;
@@ -25,8 +27,8 @@
 
 html{
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: black;
+    font-weight: 400;
+    color: var(--color-front);
     overflow-y: scroll;
     height: 100%;
     width: 100%;
@@ -38,7 +40,7 @@ html{
 body {
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: var(--color-back);
     border: none;
     margin: 0;
     padding: 0;
@@ -85,7 +87,7 @@ ul {
 .leftpanel {
     position: absolute;
     left: 0;
-    background-color: white;
+    background-color: var(--color-back);
 }
 
 .header {
@@ -98,7 +100,7 @@ ul {
 .rightpanel {
     position: absolute;
     overflow: auto;
-    background-color: white;
+    background-color: var(--color-back);
 }
 
 .descholder {
@@ -131,14 +133,14 @@ ul {
 .footer {
     position: fixed;
     bottom: 0;
-    background-color: white;
+    background-color: var(--color-back);
     text-align: center;
     z-index: 10;
 }
 
 .ulog {
     position: fixed;
-    background-color: var(--gray);
+    background-color: var(--color-obj);
     font-size: 0.9rem;
     border-radius: 0.25rem;
     z-index: 10;
@@ -148,7 +150,7 @@ ul {
     position: absolute;
     top: 0;
     right: 1rem;
-    color: black;
+    color: var(--color-front);
     z-index: 1;
     font-size: 1.5em;
     cursor: pointer;

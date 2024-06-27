@@ -1,7 +1,7 @@
 button, label, select {
     border: none;
     margin: calc(var(--margin-input) * 2) var(--margin-input);
-    background-color: var(--gray);
+    background-color: var(--color-obj);
     color: inherit;
     padding: var(--padding-input) calc(var(--padding-input) * 2);
     vertical-align: middle;
@@ -19,7 +19,14 @@ button, label, select {
 
 button.whitebkg,
 input[type=number].whitebkg {
-    background-color: white;
+    background-color: var(--color-back);
+}
+button.bactive {
+    color: white;
+    background-color: var(--blue);
+}
+button.bwactive {
+    color: var(--blue);
 }
 
 button, label {
@@ -40,7 +47,7 @@ button:active {
     color: white;
 }
 .btnaction.whitebkg:hover {
-    background-color: white;
+    background-color: var(--color-back);
     color: var(--blue);
 }
 
@@ -49,8 +56,8 @@ input[type=number] {
     padding: var(--padding-input) 0 var(--padding-input) calc(var(--padding-input) * 2);
     margin: calc(var(--margin-input) * 2) var(--margin-input);
     vertical-align: middle;
-    border: 0px solid white;
-    background-color: var(--gray);
+    border: 0px solid var(--color-back);
+    background-color: var(--color-obj);
     color: inherit;
     font-size: inherit;
     font-family: inherit;
@@ -86,7 +93,7 @@ input[type=number].shorter::-webkit-outer-spin-button {
        -webkit-appearance: none; */
     opacity: 1;
     color: black;
-    background-color: white;
+    background-color: var(--color-back);
     width: 1rem;
     height: var(--width-picker);
     margin: 0;
@@ -102,7 +109,7 @@ button.rihtgap, input[type=number].rihtgap {
 
 .custom-select {
     background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEuNDEgNC42NyAyLjQ4IDMuMTggMy41NCA0LjY3IDEuNDEgNC42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzLjU0IDUuMzMgMi40OCA2LjgyIDEuNDEgNS4zMyAzLjU0IDUuMzMiLz48L3N2Zz4=) no-repeat 95% 50%;
-    background-color: var(--gray);
+    background-color: var(--color-obj);
     width: var(--width-input);
 }
 
@@ -111,7 +118,7 @@ button.rihtgap, input[type=number].rihtgap {
     width: 18%;
     height: var(--height-slider);
     border-radius: calc(var(--height-slider)*0.33);
-    background: var(--gray);
+    background: var(--color-obj);
     outline: none;
     opacity: 0.9;
     /* -webkit-transition: .2s;   */
@@ -173,7 +180,7 @@ input[type=text].textset {
 .dropdown-content {
     display: block;
     position: absolute;
-    background-color: var(--gray);
+    background-color: var(--color-obj);
     z-index: 2;
     display: none;
     top: 100%;
