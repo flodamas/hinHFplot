@@ -4709,7 +4709,7 @@ dataset["aprJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
 };
 
 dataset["aprJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
-    reference : "arxiv:2109.00220",
+    reference : "JHEP 11 (2021) 181",
     link : "https://arxiv.org/abs/2109.00220",
     update : "2021-11-05",
     observable : "RpA",
@@ -8975,7 +8975,7 @@ dataset["bTOJpsi_RpA_ycm_pPb_5TeV_CMS__pT-6p5-10"] = {
 };
 
 dataset["bTOJpsi_RpA_ycm_pPb_5TeV_LHCb__pT-lt-14"] = {
-    reference : "arxiv:2109.00220",
+    reference : "JHEP 11 (2021) 181",
     link : "https://arxiv.org/abs/2109.00220",
     update : "2021-11-05",
     observable : "RpA",
@@ -9815,7 +9815,7 @@ dataset["cbTOe_v2_pT_pPb_5TeV_ALICE__abseta-lt-0p8"] = {
 };
 
 dataset["chadTOe_RAA_pT_AuAu_200GeV_PHENIX_cent-0-10_absy-lt-0p35"] = {
-    reference : "arXiv:2203.17058",
+    reference : "PRC 109 (2024) 044907",
     link : "https://arxiv.org/abs/2203.17058",
     update : "2022-06-30",
     observable : "RAA",
