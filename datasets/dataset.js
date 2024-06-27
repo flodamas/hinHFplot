@@ -15866,6 +15866,26 @@ dataset["incpsi2S_RAA_pT_PbPb_5TeV_ALICE_cent-0-90_absy-2p5-4"] = {
     ]
 };
 
+dataset["incpsi2S_RpA_Ncoll_dAu_200GeV_PHENIX_pT-gt-0_absycm-lt-0p35"] = {
+    reference : "PRL 111 (2013) 202301",
+    link : "https://arxiv.org/abs/1305.5516",
+    update : "2024-06-25",
+    observable : "RpA",
+    xtitle : "Ncoll",
+    particle : "Inclusive &psi;(2S)",
+    collision : "dAu",
+    energy : "200 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "|y<sub>cm</sub>| < 0.35",
+    data : [
+        {"x": 15.061, "xl": 15.061, "xh": 15.061, "y": 0.18, "stath": 0.15, "statl": 0.15, "systh": 0.11, "systl": 0.02},
+        {"x": 10.248, "xl": 10.248, "xh": 10.248, "y": 0.58, "stath": 0.22, "statl": 0.22, "systh": 0.1, "systl": 0.07},
+        {"x": 6.579, "xl": 6.579, "xh": 6.579, "y": 0.8, "stath": 0.27, "statl": 0.27, "systh": 0.12, "systl": 0.1},
+        {"x": 3.198, "xl": 3.198, "xh": 3.198, "y": 1.05, "stath": 0.32, "statl": 0.32, "systh": 0.14, "systl": 0.16},
+    ]
+};
+
 dataset["incpsi2S_RpA_Ncoll_pAu_200GeV_PHENIX_pT-gt-0_ycm-1p2-2p2"] = {
     reference : "PRC 105 (2022) 064912",
     link : "https://arxiv.org/abs/2202.03863",
