@@ -11013,6 +11013,24 @@ dataset["incJpsi_RAA_Npart_AuAu_200GeV_STAR_pT-gt-5_absy-lt-1"] = {
     ]
 };
 
+dataset["incJpsi_RAA_Npart_AuAu_39GeV_PHENIX_pT-gt-0_absy-1p2-2p2"] = {
+    reference : "PRC 86 (2012) 064901",
+    link : "https://arxiv.org/abs/1208.2251",
+    update : "2024-06-25",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "39 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "1.2 < |y| < 2.2",
+    data : [
+        {"x": 204.4, "xl": 204.4, "xh": 204.4, "y": 0.439, "stath": 0.043, "statl": 0.043, "systh": 0.079555, "systl": 0.079555},
+        {"x": 34.1, "xl": 34.1, "xh": 34.1, "y": 0.793, "stath": 0.157, "statl": 0.157, "systh": 0.139435, "systl": 0.139435},
+    ]
+};
+
 dataset["incJpsi_RAA_Npart_AuAu_54p4GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
     reference : "STAR Preliminary",
     link : "https://indico.cern.ch/event/895086/contributions/4724888/attachments/2423105/4147724/qm2022_zyzhang.pdf#page=9",
@@ -11029,6 +11047,26 @@ dataset["incJpsi_RAA_Npart_AuAu_54p4GeV_STAR_pT-gt-0p2_absy-lt-1"] = {
         {"x": 59.8, "xl": 59.8, "xh": 59.8, "y": 0.467089, "stath": 0.001228, "statl": 0.001228, "systh": 0.0466647, "systl": 0.0466647},
         {"x": 137.9, "xl": 137.9, "xh": 137.9, "y": 0.37376, "stath": 0, "statl": 0, "systh": 0.0380686, "systl": 0.0380686},
         {"x": 275, "xl": 275, "xh": 275, "y": 0.304991, "stath": 0, "statl": 0, "systh": 0.0343845, "systl": 0.0331565},
+    ]
+};
+
+dataset["incJpsi_RAA_Npart_AuAu_62p4GeV_PHENIX_pT-gt-0_absy-1p2-2p2"] = {
+    reference : "PRC 86 (2012) 064901",
+    link : "https://arxiv.org/abs/1208.2251",
+    update : "2024-06-25",
+    observable : "RAA",
+    xtitle : "Npart",
+    particle : "Inclusive J/&psi;",
+    collision : "AuAu",
+    energy : "62.4 GeV",
+    collab : "PHENIX",
+    kinea : "p<sub>T</sub> > 0 GeV",
+    kineb : "1.2 < |y| < 2.2",
+    data : [
+        {"x": 274.8, "xl": 274.8, "xh": 274.8, "y": 0.292, "stath": 0.039, "statl": 0.039, "systh": 0.04219, "systl": 0.04219},
+        {"x": 138.7, "xl": 138.7, "xh": 138.7, "y": 0.388, "stath": 0.047, "statl": 0.047, "systh": 0.0565685, "systl": 0.0565685},
+        {"x": 59.7, "xl": 59.7, "xh": 59.7, "y": 0.519, "stath": 0.067, "statl": 0.067, "systh": 0.0743303, "systl": 0.0743303},
+        {"x": 14.7, "xl": 14.7, "xh": 14.7, "y": 1.1, "stath": 0.15, "statl": 0.15, "systh": 0.155322, "systl": 0.155322},
     ]
 };
 
