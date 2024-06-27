@@ -4878,9 +4878,9 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -4899,9 +4899,9 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -5158,9 +5158,9 @@ dataset["aprLambdacToD0_LcToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_pp_5TeV_CMS__absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -5345,9 +5345,9 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -5365,9 +5365,9 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-10_absy-lt-1"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -5387,9 +5387,9 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-0-90_absy-lt-1"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -5408,9 +5408,9 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-10-30_absy-lt-1"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
@@ -5430,9 +5430,9 @@ dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-30-50_absy-lt-1"] = {
 };
 
 dataset["aprLambdac_RAA_pT_PbPb_5TeV_CMS_cent-50-90_absy-lt-1"] = {
-    reference : "arXiv:2307.11186",
+    reference : "JHEP 01 (2024) 128",
     link : "https://arxiv.org/abs/2307.11186",
-    update : "2023-08-18",
+    update : "2024-06-25",
     observable : "RAA",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub>",
