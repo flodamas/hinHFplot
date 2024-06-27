@@ -174,7 +174,4 @@ ul {
     from { opacity: 0; transform: translateX(-4px); }
     to { opacity: 1; transform: translateY(0); } }
 
-.header, .data, .ulog { animation: fadeinb 1s ease 0s 1; }
-#rightpad { animation: fadeint 1s ease 0s 1; }
-/* .ulog { animation: fadein 1s ease 0s 1; } */
-.descholder { animation: fadeinl 1s ease 0s 1; }
+.header, .data, .ulog, #rightpad, .descholder { animation: fadein 0.8s ease 0s 1; }
