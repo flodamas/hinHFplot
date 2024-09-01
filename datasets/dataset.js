@@ -6558,9 +6558,9 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_LHCb__ycm-M4p5-M2p5"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-1-35_absycm-lt-1"] = {
-    reference : "CMS-PAS-HIN-21-016",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-21-016",
-    update : "2023-03-27",
+    reference : "arXiv:2407.13615",
+    link : "https://arxiv.org/abs/2407.13615",
+    update : "2024-09-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
@@ -6580,9 +6580,9 @@ dataset["aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-1-35_absycm-lt-1"] = {
 };
 
 dataset["aprLambdacToD0_LcToD0_pT_pPb_8TeV_CMS_Ntrk-185-250_absycm-lt-1"] = {
-    reference : "CMS-PAS-HIN-21-016",
-    link : "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIN-21-016",
-    update : "2023-03-27",
+    reference : "arXiv:2407.13615",
+    link : "https://arxiv.org/abs/2407.13615",
+    update : "2024-09-01",
     observable : "LcToD0",
     xtitle : "pT",
     particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
