@@ -6521,6 +6521,68 @@ dataset["aprLambdacToD0_LcToD0_pT_PbPb_5TeV_LHCb_cent-65-90_y-2-4p5"] = {
     ]
 };
 
+dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE_avgdNchdeta-eq-21_absycm-lt-0p5"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22068",
+    update : "2024-09-01",
+    observable : "LcToD0",
+    xtitle : "pT",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 21",
+    kineb : "|y<sub>cm</sub>| < 0.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.485056, "stath": 0.056787, "statl": 0.056787, "systh": 0.094147, "systl": 0.0936488},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.523412, "stath": 0.0418431, "statl": 0.0418431, "systh": 0.0821918, "systl": 0.0816937},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.451681, "stath": 0.0408468, "statl": 0.0408468, "systh": 0.0702366, "systl": 0.0697385},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.267372, "stath": 0.0343711, "statl": 0.0343711, "systh": 0.041345, "systl": 0.0418431},
+        {"x": 18, "xl": 12, "xh": 24, "y": 0.124408, "stath": 0.052802, "statl": 0.052802, "systh": 0.0199253, "systl": 0.0204234},
+    ]
+};
+
+dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE_avgdNchdeta-eq-41p5_absycm-lt-0p5"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22068",
+    update : "2024-09-01",
+    observable : "LcToD0",
+    xtitle : "pT",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 41.5",
+    kineb : "|y<sub>cm</sub>| < 0.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.589336, "stath": 0.145124, "statl": 0.145124, "systh": 0.154679, "systl": 0.153485},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.586947, "stath": 0.106902, "statl": 0.106902, "systh": 0.0985409, "systl": 0.0979436},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.466309, "stath": 0.0937631, "statl": 0.0937631, "systh": 0.0722633, "systl": 0.0728605},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.251908, "stath": 0.0698744, "statl": 0.0698744, "systh": 0.0388191, "systl": 0.0394164},
+    ]
+};
+
+dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE_avgdNchdeta-eq-6p8_absycm-lt-0p5"] = {
+    reference : "ALICE Preliminary",
+    link : "https://alice-figure.web.cern.ch/node/22068",
+    update : "2024-09-01",
+    observable : "LcToD0",
+    xtitle : "pT",
+    particle : "Prompt &Lambda;<sub>c</sub> / D<sup>0</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 6.8",
+    kineb : "|y<sub>cm</sub>| < 0.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.538453, "stath": 0.0730994, "statl": 0.0730994, "systh": 0.131866, "systl": 0.132582},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.507637, "stath": 0.0666495, "statl": 0.0666495, "systh": 0.0795494, "systl": 0.0788327},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.288338, "stath": 0.0630662, "statl": 0.0630662, "systh": 0.0451497, "systl": 0.0451496},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.300522, "stath": 0.0558996, "statl": 0.0558996, "systh": 0.046583, "systl": 0.0472996},
+        {"x": 18, "xl": 12, "xh": 24, "y": 0.165789, "stath": 0.111082, "statl": 0.111082, "systh": 0.0279498, "systl": 0.0286664},
+    ]
+};
+
 dataset["aprLambdacToD0_LcToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "PRC 107 (2023) 064901",
     link : "https://arxiv.org/abs/2211.14032",
