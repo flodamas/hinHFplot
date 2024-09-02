@@ -4254,6 +4254,234 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-120-140_pT-8-12
     ]
 };
 
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-180_pT-2-4"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 180",
+    kineb : "2 < p<sub>T</sub> < 4 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.61, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.61, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.68, "stath": 0.02, "statl": 0.02, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-180_pT-4-6"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 180",
+    kineb : "4 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.68, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.62, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.64, "stath": 0.03, "statl": 0.03, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-180_pT-6-8"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 180",
+    kineb : "6 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.68, "stath": 0.03, "statl": 0.03, "systh": 0.03, "systl": 0.03},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.64, "stath": 0.03, "statl": 0.03, "systh": 0.03, "systl": 0.03},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.59, "stath": 0.04, "statl": 0.04, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-180_pT-8-12"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 180",
+    kineb : "8 < p<sub>T</sub> < 12 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.51, "stath": 0.03, "statl": 0.03, "systh": 0.03, "systl": 0.03},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.59, "stath": 0.04, "statl": 0.04, "systh": 0.04, "systl": 0.04},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.58, "stath": 0.08, "statl": 0.08, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-200_pT-2-4"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 200",
+    kineb : "2 < p<sub>T</sub> < 4 GeV",
+    data : [
+        {"x": 2.05, "xl": 1.8, "xh": 2.3, "y": 0.57, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": 2.55, "xl": 2.3, "xh": 2.8, "y": 0.57, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": 3.05, "xl": 2.8, "xh": 3.3, "y": 0.63, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-200_pT-4-6"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 200",
+    kineb : "4 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": 2.05, "xl": 1.8, "xh": 2.3, "y": 0.59, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": 2.55, "xl": 2.3, "xh": 2.8, "y": 0.62, "stath": 0.02, "statl": 0.02, "systh": 0.02, "systl": 0.02},
+        {"x": 3.05, "xl": 2.8, "xh": 3.3, "y": 0.59, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-200_pT-6-8"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 200",
+    kineb : "6 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": 2.05, "xl": 1.8, "xh": 2.3, "y": 0.59, "stath": 0.05, "statl": 0.05, "systh": 0.02, "systl": 0.02},
+        {"x": 2.55, "xl": 2.3, "xh": 2.8, "y": 0.52, "stath": 0.07, "statl": 0.07, "systh": 0.04, "systl": 0.04},
+        {"x": 3.05, "xl": 2.8, "xh": 3.3, "y": 0.61, "stath": 0.05, "statl": 0.05, "systh": 0.06, "systl": 0.06},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-140-200_pT-8-12"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "140 < N<sub>trk</sub> < 200",
+    kineb : "8 < p<sub>T</sub> < 12 GeV",
+    data : [
+        {"x": 2.05, "xl": 1.8, "xh": 2.3, "y": 0.56, "stath": 0.04, "statl": 0.04, "systh": 0.03, "systl": 0.03},
+        {"x": 2.55, "xl": 2.3, "xh": 2.8, "y": 0.61, "stath": 0.04, "statl": 0.04, "systh": 0.03, "systl": 0.03},
+        {"x": 3.05, "xl": 2.8, "xh": 3.3, "y": 0.59, "stath": 0.08, "statl": 0.08, "systh": 0.04, "systl": 0.04},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-180-250_pT-2-4"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "180 < N<sub>trk</sub> < 250",
+    kineb : "2 < p<sub>T</sub> < 4 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.72, "stath": 0.02, "statl": 0.02, "systh": 0.04, "systl": 0.04},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.9, "stath": 0.06, "statl": 0.06, "systh": 0.03, "systl": 0.03},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.76, "stath": 0.08, "statl": 0.08, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-180-250_pT-4-6"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "180 < N<sub>trk</sub> < 250",
+    kineb : "4 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.74, "stath": 0.03, "statl": 0.03, "systh": 0.02, "systl": 0.02},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.76, "stath": 0.04, "statl": 0.04, "systh": 0.02, "systl": 0.02},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.82, "stath": 0.05, "statl": 0.05, "systh": 0.03, "systl": 0.03},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-180-250_pT-6-8"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "180 < N<sub>trk</sub> < 250",
+    kineb : "6 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.81, "stath": 0.05, "statl": 0.05, "systh": 0.06, "systl": 0.06},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.6, "stath": 0.06, "statl": 0.06, "systh": 0.11, "systl": 0.11},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.71, "stath": 0.09, "statl": 0.09, "systh": 0.05, "systl": 0.05},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-180-250_pT-8-12"] = {
+    reference : "arXiv:2311.08490",
+    link : "https://arxiv.org/abs/2311.08490",
+    update : "2024-07-11",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "8.16 TeV",
+    collab : "LHCb",
+    kinea : "180 < N<sub>trk</sub> < 250",
+    kineb : "8 < p<sub>T</sub> < 12 GeV",
+    data : [
+        {"x": -3.05, "xl": -3.3, "xh": -2.8, "y": 0.74, "stath": 0.06, "statl": 0.06, "systh": 0.05, "systl": 0.05},
+        {"x": -3.55, "xl": -3.8, "xh": -3.3, "y": 0.66, "stath": 0.08, "statl": 0.08, "systh": 0.07, "systl": 0.07},
+        {"x": -4.05, "xl": -4.3, "xh": -3.8, "y": 0.66, "stath": 0.15, "statl": 0.15, "systh": 0.07, "systl": 0.07},
+    ]
+};
+
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_8TeV_LHCb_Ntrk-60-80_pT-2-4"] = {
     reference : "arXiv:2311.08490",
     link : "https://arxiv.org/abs/2311.08490",
