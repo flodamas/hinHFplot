@@ -2659,6 +2659,67 @@ dataset["aprDsubsToD0_DsubsToD0_ycm_pPb_5TeV_LHCb__pT-lt-10"] = {
     ]
 };
 
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_PbPb_5TeV_ALICE_cent-0-10_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "0-10%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.774, "stath": 0.195, "statl": 0.195, "systh": 0.185, "systl": 0.197},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.811, "stath": 0.208, "statl": 0.208, "systh": 0.151, "systl": 0.184},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.71, "stath": 0.167, "statl": 0.167, "systh": 0.12, "systl": 0.149},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.63, "stath": 0.141, "statl": 0.141, "systh": 0.105, "systl": 0.134},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_PbPb_5TeV_ALICE_cent-30-50_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "30-50%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.771, "stath": 0.138, "statl": 0.138, "systh": 0.157, "systl": 0.157},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.782, "stath": 0.16, "statl": 0.16, "systh": 0.109, "systl": 0.109},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.627, "stath": 0.095, "statl": 0.095, "systh": 0.084, "systl": 0.084},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.643, "stath": 0.138, "statl": 0.138, "systh": 0.085, "systl": 0.084},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
+    reference : "JHEP 10 (2018) 174",
+    link : "https://arxiv.org/abs/1804.09083",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "PbPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "60-80%",
+    kineb : "|y| < 0.5",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.606, "stath": 0.205, "statl": 0.205, "systh": 0.135, "systl": 0.135},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.807, "stath": 0.148, "statl": 0.148, "systh": 0.152, "systl": 0.152},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.771, "stath": 0.192, "statl": 0.192, "systh": 0.127, "systl": 0.128},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.735, "stath": 0.181, "statl": 0.181, "systh": 0.117, "systl": 0.117},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.769, "stath": 0.296, "statl": 0.296, "systh": 0.112, "systl": 0.113},
+    ]
+};
+
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
