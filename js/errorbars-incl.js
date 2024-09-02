@@ -183,6 +183,24 @@ var addaxistitle = function(xtitle, ytitle) {
               .append('tspan').style('font-size', subsize).attr('baseline-shift', supshift)
               .text('0');
     }
+    else if (document.getElementById('observable').value === "DsubsToDplusmn") {
+        ytitle.append('tspan').style('font-size', titlesize)
+              .text('D')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('s');
+        ytitle.append('tspan').style('font-size', titlesize)
+              .text(' / D')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', supshift)
+              .text(decodehtml('&plusmn;'));
+    }
+    else if (document.getElementById('observable').value.startsWith("DsubsToD")) {
+        ytitle.append('tspan').style('font-size', titlesize)
+              .text('D')
+              .append('tspan').style('font-size', subsize).attr('baseline-shift', subshift)
+              .text('s');
+        ytitle.append('tspan').style('font-size', titlesize)
+              .text(' / D')
+    }
     else if (document.getElementById('observable').value === "DoubleRatio") { // improvable if one can access the yield ratio name
         ytitle.append('tspan').style('font-size', titlesize)
               .text('(Yield ratio)')

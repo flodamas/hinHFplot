@@ -24,12 +24,12 @@ function loaditem(ifsPHENIX = false)
             (xvar == "absy" && (thisitem.xtitle == "absycm")) ||
             false;
         var ifdrawy = thisitem.observable == obs ||
-	    (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3" || thisitem.observable == "v1" || thisitem.observable == "Deltav1")) ||
-	    (obs == "RAB" && (thisitem.observable == "RpA" || thisitem.observable == "RAA" || thisitem.observable == "RAB")) ||
-	    (obs == "DsToD" && (thisitem.observable == "DsToD0" || thisitem.observable == "DsToDplusmn" || thisitem.observable == "DsToDstar")) ||
-	    (obs == "Ratio" && thisitem.observable.includes("To")) ||
-            (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||
-            false;
+	              (obs == "vn" && (thisitem.observable == "v2" || thisitem.observable == "v3" || thisitem.observable == "v1" || thisitem.observable == "Deltav1")) ||
+	              (obs == "RAB" && (thisitem.observable == "RpA" || thisitem.observable == "RAA" || thisitem.observable == "RAB")) ||
+                      (obs == "DsubsToD" && thisitem.observable.startsWith("DsubsToD")) ||
+	              (obs == "Ratio" && thisitem.observable.includes("To")) ||
+                      (obs == "DoubleRatio" && thisitem.observable == "DoubleRatio") ||
+                      false;
 
         if(!ifdrawx || !ifdrawy || (thisitem.collab === "sPHENIX" && !ifsPHENIX)) { continue; }
 

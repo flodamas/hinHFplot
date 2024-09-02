@@ -156,6 +156,7 @@ var addData = function(da, data, thecolor, kmarker, transt = 0) {
     addDataRects(da, data, thecolor, transt);
     addDataLines(da, data, thecolor, transt);
     addDataPoints(da, data, thecolor, kmarker, transt);
+    exportroot(da, thecolor);
 }
 
 var addDataRects = function(da, data, thecolor, transt = 0) {
@@ -439,3 +440,37 @@ var drawall = function(transt = 0) {
     drawalltext();
 }
 
+// Output ROOT
+
+var exportroot = function(da, thecolor) {
+    var thisitem = dataset[da];
+    var safeda = da.replaceAll('-', '_');
+    let str = `
+auto g_${safeda}_stat = new TGraphAsymmErrors(${thisitem.data.length});
+g_${safeda}_stat->SetName("${da}_stat");
+g_${safeda}_stat->SetLineColor(TColor::GetColor("${thecolor}"));
+g_${safeda}_stat->SetMarkerColor(TColor::GetColor("${thecolor}"));
+auto g_${safeda}_syst = new TGraphAsymmErrors(${thisitem.data.length});
+g_${safeda}_syst->SetLineColor(TColor::GetColor("${thecolor}"));
+g_${safeda}_syst->SetMarkerColor(TColor::GetColor("${thecolor}"));
+g_${safeda}_syst->SetFillColorAlpha(TColor::GetColor("${thecolor}"), 0.5);
+g_${safeda}_syst->SetName("${da}_syst");
+    `;
+    for (var i=0; i<thisitem.data.length; i++) {
+        let x = thisitem.data[i].x;
+        let y = thisitem.data[i].y;
+        let xl = x - thisitem.data[i].xl;
+        let xh = thisitem.data[i].xh - x;
+        let statl = thisitem.data[i].statl;
+        let stath = thisitem.data[i].stath;
+        let systl = thisitem.data[i].systl;
+        let systh = thisitem.data[i].systh;
+        str = str + `
+g_${safeda}_stat->SetPoint(${i}, ${x}, ${y});
+g_${safeda}_stat->SetPointError(${i}, ${xl}, ${xh}, ${statl}, ${stath});
+g_${safeda}_syst->SetPoint(${i}, ${x}, ${y});
+g_${safeda}_syst->SetPointError(${i}, ${xl}, ${xh}, ${systl}, ${systh});
+        `;
+    }
+    console.log(str);
+}

@@ -7,6 +7,8 @@ var obss = [
     { name: "v3",          title: "v3",             pymin: -0.03, pymin_log: 0.02, pymax: 0.2,  step: 0.01 },
     { name: "vn",          title: "vn",             pymin: -0.03, pymin_log: 0.02, pymax: 0.24, step: 0.01 },
     { name: "LcToD0",      title: "&Lambda;c/D0",   pymin: 0,     pymin_log: 0.1,  pymax: 0.9,  step: 0.05 },
+    { name: "DsubsToDplusmn",      title: "Ds/D+",   pymin: 0,     pymin_log: 0.2,  pymax: 1.1,  step: 0.05 },
+    { name: "DsubsToD",      title: "Ds/D",   pymin: 0,     pymin_log: 0.1,  pymax: 1.1,  step: 0.05 },
     { name: "Ratio",       title: "Particle ratio", pymin: 0,     pymin_log: 0.15, pymax: 0.9,  step: 0.05 },
     { name: "DoubleRatio", title: "Double ratio",   pymin: 0,     pymin_log: 0.1,  pymax: 2,    step: 0.1 },
 ];
@@ -81,6 +83,7 @@ function unityzero()
     var vy = 0.0;
     if(obs == "RAA" || obs == "RpA" || obs == "RAB" || obs == "DoubleRatio") vy = 1.0;
     if(obs == "LcToD0") vy = 0.11;
+    if(obs == "DsubsToDplusmn") vy = 0.5;
     return vy;
 };
 
