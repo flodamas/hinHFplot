@@ -1265,7 +1265,7 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] 
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DplusmnToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
@@ -1275,26 +1275,26 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     kinea : "",
     kineb : "-0.96 < y<sub>cm</sub> < 0.04",
     data : [
-        {"x": 1.25, "xl": 1, "xh": 1.5, "y": 0.505, "stath": 0.122, "statl": 0.122, "systh": 0.104339, "systl": 0.103352},
-        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.424, "stath": 0.037, "statl": 0.037, "systh": 0.0625842, "systl": 0.0616099},
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.417, "stath": 0.022, "statl": 0.022, "systh": 0.0404149, "systl": 0.0394761},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.451, "stath": 0.018, "statl": 0.018, "systh": 0.044559, "systl": 0.0426791},
-        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.508, "stath": 0.019, "statl": 0.019, "systh": 0.0370139, "systl": 0.0352425},
-        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.497, "stath": 0.017, "statl": 0.017, "systh": 0.0377491, "systl": 0.0350713},
-        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.499, "stath": 0.018, "statl": 0.018, "systh": 0.0386803, "systl": 0.0351022},
-        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.472, "stath": 0.017, "statl": 0.017, "systh": 0.037398, "systl": 0.0338025},
-        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.52, "stath": 0.02, "statl": 0.02, "systh": 0.0416949, "systl": 0.037195},
-        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.506, "stath": 0.021, "statl": 0.021, "systh": 0.039684, "systl": 0.0360946},
-        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.539, "stath": 0.025, "statl": 0.025, "systh": 0.044692, "systl": 0.0392604},
-        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.521, "stath": 0.026, "statl": 0.026, "systh": 0.0426216, "systl": 0.0380999},
-        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.529, "stath": 0.03, "statl": 0.03, "systh": 0.0464085, "systl": 0.0400093},
-        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.509, "stath": 0.031, "statl": 0.031, "systh": 0.0433836, "systl": 0.0388219},
-        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.482, "stath": 0.025, "statl": 0.025, "systh": 0.0402741, "systl": 0.0366333},
-        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.474, "stath": 0.028, "statl": 0.028, "systh": 0.0410935, "systl": 0.0374256},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.43, "stath": 0.024, "statl": 0.024, "systh": 0.0359215, "systl": 0.0340933},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.434, "stath": 0.027, "statl": 0.027, "systh": 0.0359739, "systl": 0.0341485},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.352, "stath": 0.034, "statl": 0.034, "systh": 0.0349847, "systl": 0.0349847},
-        {"x": 30, "xl": 24, "xh": 36, "y": 0.493, "stath": 0.083, "statl": 0.083, "systh": 0.0894912, "systl": 0.0894912},
+        {"x": 1.25, "xl": 1, "xh": 1.5, "y": 0.505, "stath": 0.122, "statl": 0.122, "systh": 0.103, "systl": 0.102},
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.424, "stath": 0.037, "statl": 0.037, "systh": 0.061, "systl": 0.06},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.417, "stath": 0.022, "statl": 0.022, "systh": 0.038, "systl": 0.037},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.451, "stath": 0.018, "statl": 0.018, "systh": 0.042, "systl": 0.04},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.508, "stath": 0.019, "statl": 0.019, "systh": 0.033, "systl": 0.031},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.497, "stath": 0.017, "statl": 0.017, "systh": 0.034, "systl": 0.031},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.499, "stath": 0.018, "statl": 0.018, "systh": 0.035, "systl": 0.031},
+        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.472, "stath": 0.017, "statl": 0.017, "systh": 0.034, "systl": 0.03},
+        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.52, "stath": 0.02, "statl": 0.02, "systh": 0.038, "systl": 0.033},
+        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.506, "stath": 0.021, "statl": 0.021, "systh": 0.036, "systl": 0.032},
+        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.539, "stath": 0.025, "statl": 0.025, "systh": 0.041, "systl": 0.035},
+        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.521, "stath": 0.026, "statl": 0.026, "systh": 0.039, "systl": 0.034},
+        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.529, "stath": 0.03, "statl": 0.03, "systh": 0.043, "systl": 0.036},
+        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.509, "stath": 0.031, "statl": 0.031, "systh": 0.04, "systl": 0.035},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.482, "stath": 0.025, "statl": 0.025, "systh": 0.037, "systl": 0.033},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.474, "stath": 0.028, "statl": 0.028, "systh": 0.038, "systl": 0.034},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.43, "stath": 0.024, "statl": 0.024, "systh": 0.033, "systl": 0.031},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.434, "stath": 0.027, "statl": 0.027, "systh": 0.033, "systl": 0.031},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.352, "stath": 0.034, "statl": 0.034, "systh": 0.033, "systl": 0.033},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.493, "stath": 0.083, "statl": 0.083, "systh": 0.088, "systl": 0.088},
     ]
 };
 
@@ -1391,7 +1391,7 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DplusmnToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>&plusmn;</sup> / D<sup>0</sup>",
@@ -1401,26 +1401,26 @@ dataset["aprDplusmnToD0_DplusmnToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     kinea : "",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 1.25, "xl": 1, "xh": 1.5, "y": 0.466, "stath": 0.119, "statl": 0.119, "systh": 0.0580731, "systl": 0.0580731},
-        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.389, "stath": 0.051, "statl": 0.051, "systh": 0.0382203, "systl": 0.0382203},
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.393, "stath": 0.037, "statl": 0.037, "systh": 0.0336035, "systl": 0.0336035},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.441, "stath": 0.029, "statl": 0.029, "systh": 0.037905, "systl": 0.037905},
-        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.438, "stath": 0.024, "statl": 0.024, "systh": 0.0271646, "systl": 0.0271646},
-        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.442, "stath": 0.024, "statl": 0.024, "systh": 0.0280847, "systl": 0.0272351},
-        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.464, "stath": 0.026, "statl": 0.026, "systh": 0.0301738, "systl": 0.0301738},
-        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.487, "stath": 0.028, "statl": 0.028, "systh": 0.031421, "systl": 0.031421},
-        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.469, "stath": 0.028, "statl": 0.028, "systh": 0.0302579, "systl": 0.0302579},
-        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.432, "stath": 0.027, "statl": 0.027, "systh": 0.0279148, "systl": 0.0279148},
-        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.476, "stath": 0.036, "statl": 0.036, "systh": 0.0321052, "systl": 0.0312369},
-        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.474, "stath": 0.04, "statl": 0.04, "systh": 0.0312037, "systl": 0.0312037},
-        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.517, "stath": 0.047, "statl": 0.047, "systh": 0.0353847, "systl": 0.034512},
-        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.43, "stath": 0.045, "statl": 0.045, "systh": 0.0278811, "systl": 0.0278811},
-        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.462, "stath": 0.039, "statl": 0.039, "systh": 0.0310071, "systl": 0.0301403},
-        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.473, "stath": 0.046, "statl": 0.046, "systh": 0.0329339, "systl": 0.0329339},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.389, "stath": 0.038, "statl": 0.038, "systh": 0.0272174, "systl": 0.0272174},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.517, "stath": 0.057, "statl": 0.057, "systh": 0.0434865, "systl": 0.0434865},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.3, "stath": 0.049, "statl": 0.049, "systh": 0.0259617, "systl": 0.0259617},
-        {"x": 30, "xl": 24, "xh": 36, "y": 0.454, "stath": 0.132, "statl": 0.132, "systh": 0.0474285, "systl": 0.0474285},
+        {"x": 1.25, "xl": 1, "xh": 1.5, "y": 0.466, "stath": 0.119, "statl": 0.119, "systh": 0.056, "systl": 0.056},
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.389, "stath": 0.051, "statl": 0.051, "systh": 0.036, "systl": 0.036},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.393, "stath": 0.037, "statl": 0.037, "systh": 0.031, "systl": 0.031},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.441, "stath": 0.029, "statl": 0.029, "systh": 0.035, "systl": 0.035},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.438, "stath": 0.024, "statl": 0.024, "systh": 0.023, "systl": 0.023},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.442, "stath": 0.024, "statl": 0.024, "systh": 0.024, "systl": 0.023},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.464, "stath": 0.026, "statl": 0.026, "systh": 0.026, "systl": 0.026},
+        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.487, "stath": 0.028, "statl": 0.028, "systh": 0.027, "systl": 0.027},
+        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.469, "stath": 0.028, "statl": 0.028, "systh": 0.026, "systl": 0.026},
+        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.432, "stath": 0.027, "statl": 0.027, "systh": 0.024, "systl": 0.024},
+        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.476, "stath": 0.036, "statl": 0.036, "systh": 0.028, "systl": 0.027},
+        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.474, "stath": 0.04, "statl": 0.04, "systh": 0.027, "systl": 0.027},
+        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.517, "stath": 0.047, "statl": 0.047, "systh": 0.031, "systl": 0.03},
+        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.43, "stath": 0.045, "statl": 0.045, "systh": 0.024, "systl": 0.024},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.462, "stath": 0.039, "statl": 0.039, "systh": 0.027, "systl": 0.026},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.473, "stath": 0.046, "statl": 0.046, "systh": 0.029, "systl": 0.029},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.389, "stath": 0.038, "statl": 0.038, "systh": 0.024, "systl": 0.024},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.517, "stath": 0.057, "statl": 0.057, "systh": 0.04, "systl": 0.04},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.3, "stath": 0.049, "statl": 0.049, "systh": 0.024, "systl": 0.024},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.454, "stath": 0.132, "statl": 0.132, "systh": 0.045, "systl": 0.045},
     ]
 };
 
@@ -1858,7 +1858,7 @@ dataset["aprDstarToD0_DstarToD0_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-0p5"] = {
 dataset["aprDstarToD0_DstarToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DstarToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
@@ -1868,25 +1868,25 @@ dataset["aprDstarToD0_DstarToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     kinea : "",
     kineb : "-0.96 < y<sub>cm</sub> < 0.04",
     data : [
-        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.383, "stath": 0.071, "statl": 0.071, "systh": 0.0440816, "systl": 0.0440816},
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.423, "stath": 0.036, "statl": 0.036, "systh": 0.0371183, "systl": 0.0371183},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.451, "stath": 0.027, "statl": 0.027, "systh": 0.0331507, "systl": 0.0321554},
-        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.472, "stath": 0.023, "statl": 0.023, "systh": 0.0262091, "systl": 0.0252174},
-        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.472, "stath": 0.021, "statl": 0.021, "systh": 0.0272014, "systl": 0.0262091},
-        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.528, "stath": 0.022, "statl": 0.022, "systh": 0.0332063, "systl": 0.0302268},
-        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.485, "stath": 0.021, "statl": 0.021, "systh": 0.0311853, "systl": 0.0272126},
-        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.518, "stath": 0.023, "statl": 0.023, "systh": 0.0312113, "systl": 0.0272424},
-        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.509, "stath": 0.024, "statl": 0.024, "systh": 0.0312041, "systl": 0.0272341},
-        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.546, "stath": 0.028, "statl": 0.028, "systh": 0.0391868, "systl": 0.0312347},
-        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.537, "stath": 0.029, "statl": 0.029, "systh": 0.0371905, "systl": 0.0302346},
-        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.504, "stath": 0.03, "statl": 0.03, "systh": 0.0361725, "systl": 0.0292138},
-        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.552, "stath": 0.035, "statl": 0.035, "systh": 0.0421774, "systl": 0.0332255},
-        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.567, "stath": 0.029, "statl": 0.029, "systh": 0.0421871, "systl": 0.0342309},
-        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.526, "stath": 0.031, "statl": 0.031, "systh": 0.038178, "systl": 0.0312179},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.573, "stath": 0.03, "statl": 0.03, "systh": 0.0382111, "systl": 0.0332429},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.536, "stath": 0.033, "statl": 0.033, "systh": 0.0352005, "systl": 0.0312262},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.505, "stath": 0.045, "statl": 0.045, "systh": 0.0391599, "systl": 0.0371685},
-        {"x": 30, "xl": 24, "xh": 36, "y": 0.511, "stath": 0.094, "statl": 0.094, "systh": 0.0890718, "systl": 0.0880727},
+        {"x": 1.75, "xl": 1.5, "xh": 2, "y": 0.383, "stath": 0.071, "statl": 0.071, "systh": 0.044, "systl": 0.044},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.423, "stath": 0.036, "statl": 0.036, "systh": 0.037, "systl": 0.037},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.451, "stath": 0.027, "statl": 0.027, "systh": 0.033, "systl": 0.032},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.472, "stath": 0.023, "statl": 0.023, "systh": 0.026, "systl": 0.025},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.472, "stath": 0.021, "statl": 0.021, "systh": 0.027, "systl": 0.026},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.528, "stath": 0.022, "statl": 0.022, "systh": 0.033, "systl": 0.03},
+        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.485, "stath": 0.021, "statl": 0.021, "systh": 0.031, "systl": 0.027},
+        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.518, "stath": 0.023, "statl": 0.023, "systh": 0.031, "systl": 0.027},
+        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.509, "stath": 0.024, "statl": 0.024, "systh": 0.031, "systl": 0.027},
+        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.546, "stath": 0.028, "statl": 0.028, "systh": 0.039, "systl": 0.031},
+        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.537, "stath": 0.029, "statl": 0.029, "systh": 0.037, "systl": 0.03},
+        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.504, "stath": 0.03, "statl": 0.03, "systh": 0.036, "systl": 0.029},
+        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.552, "stath": 0.035, "statl": 0.035, "systh": 0.042, "systl": 0.033},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.567, "stath": 0.029, "statl": 0.029, "systh": 0.042, "systl": 0.034},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.526, "stath": 0.031, "statl": 0.031, "systh": 0.038, "systl": 0.031},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.573, "stath": 0.03, "statl": 0.03, "systh": 0.038, "systl": 0.033},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.536, "stath": 0.033, "statl": 0.033, "systh": 0.035, "systl": 0.031},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.505, "stath": 0.045, "statl": 0.045, "systh": 0.039, "systl": 0.037},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.511, "stath": 0.094, "statl": 0.094, "systh": 0.089, "systl": 0.088},
     ]
 };
 
@@ -1930,7 +1930,7 @@ dataset["aprDstarToD0_DstarToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDstarToD0_DstarToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DstarToD0",
     xtitle : "pT",
     particle : "Prompt D<sup>*</sup> / D<sup>0</sup>",
@@ -1940,25 +1940,25 @@ dataset["aprDstarToD0_DstarToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     kinea : "",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.374, "stath": 0.077, "statl": 0.077, "systh": 0.0460744, "systl": 0.0460744},
-        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.457, "stath": 0.058, "statl": 0.058, "systh": 0.0381344, "systl": 0.0381344},
-        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.508, "stath": 0.049, "statl": 0.049, "systh": 0.0371705, "systl": 0.0371705},
-        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.444, "stath": 0.036, "statl": 0.036, "systh": 0.023209, "systl": 0.023209},
-        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.517, "stath": 0.039, "statl": 0.039, "systh": 0.0222957, "systl": 0.0222957},
-        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.554, "stath": 0.037, "statl": 0.037, "systh": 0.0243113, "systl": 0.0243113},
-        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.527, "stath": 0.038, "statl": 0.038, "systh": 0.023294, "systl": 0.023294},
-        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.465, "stath": 0.034, "statl": 0.034, "systh": 0.0212508, "systl": 0.0212508},
-        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.495, "stath": 0.036, "statl": 0.036, "systh": 0.0232595, "systl": 0.0222712},
-        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.572, "stath": 0.047, "statl": 0.047, "systh": 0.0282848, "systl": 0.0272953},
-        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.498, "stath": 0.045, "statl": 0.045, "systh": 0.0242519, "systl": 0.0232627},
-        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.489, "stath": 0.05, "statl": 0.05, "systh": 0.0242429, "systl": 0.0232533},
-        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.576, "stath": 0.061, "statl": 0.061, "systh": 0.0282888, "systl": 0.0272994},
-        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.588, "stath": 0.054, "statl": 0.054, "systh": 0.0292906, "systl": 0.0283009},
-        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.563, "stath": 0.06, "statl": 0.06, "systh": 0.026297, "systl": 0.0253087},
-        {"x": 11, "xl": 10, "xh": 12, "y": 0.475, "stath": 0.051, "statl": 0.051, "systh": 0.0212616, "systl": 0.0202745},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.615, "stath": 0.075, "statl": 0.075, "systh": 0.0392369, "systl": 0.0392369},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.47, "stath": 0.086, "statl": 0.086, "systh": 0.0301799, "systl": 0.0301799},
-        {"x": 30, "xl": 24, "xh": 36, "y": 0.811, "stath": 0.247, "statl": 0.247, "systh": 0.0533032, "systl": 0.052309},
+        {"x": 1.5, "xl": 1, "xh": 2, "y": 0.374, "stath": 0.077, "statl": 0.077, "systh": 0.046, "systl": 0.046},
+        {"x": 2.25, "xl": 2, "xh": 2.5, "y": 0.457, "stath": 0.058, "statl": 0.058, "systh": 0.038, "systl": 0.038},
+        {"x": 2.75, "xl": 2.5, "xh": 3, "y": 0.508, "stath": 0.049, "statl": 0.049, "systh": 0.037, "systl": 0.037},
+        {"x": 3.25, "xl": 3, "xh": 3.5, "y": 0.444, "stath": 0.036, "statl": 0.036, "systh": 0.023, "systl": 0.023},
+        {"x": 3.75, "xl": 3.5, "xh": 4, "y": 0.517, "stath": 0.039, "statl": 0.039, "systh": 0.022, "systl": 0.022},
+        {"x": 4.25, "xl": 4, "xh": 4.5, "y": 0.554, "stath": 0.037, "statl": 0.037, "systh": 0.024, "systl": 0.024},
+        {"x": 4.75, "xl": 4.5, "xh": 5, "y": 0.527, "stath": 0.038, "statl": 0.038, "systh": 0.023, "systl": 0.023},
+        {"x": 5.25, "xl": 5, "xh": 5.5, "y": 0.465, "stath": 0.034, "statl": 0.034, "systh": 0.021, "systl": 0.021},
+        {"x": 5.75, "xl": 5.5, "xh": 6, "y": 0.495, "stath": 0.036, "statl": 0.036, "systh": 0.023, "systl": 0.022},
+        {"x": 6.25, "xl": 6, "xh": 6.5, "y": 0.572, "stath": 0.047, "statl": 0.047, "systh": 0.028, "systl": 0.027},
+        {"x": 6.75, "xl": 6.5, "xh": 7, "y": 0.498, "stath": 0.045, "statl": 0.045, "systh": 0.024, "systl": 0.023},
+        {"x": 7.25, "xl": 7, "xh": 7.5, "y": 0.489, "stath": 0.05, "statl": 0.05, "systh": 0.024, "systl": 0.023},
+        {"x": 7.75, "xl": 7.5, "xh": 8, "y": 0.576, "stath": 0.061, "statl": 0.061, "systh": 0.028, "systl": 0.027},
+        {"x": 8.5, "xl": 8, "xh": 9, "y": 0.588, "stath": 0.054, "statl": 0.054, "systh": 0.029, "systl": 0.028},
+        {"x": 9.5, "xl": 9, "xh": 10, "y": 0.563, "stath": 0.06, "statl": 0.06, "systh": 0.026, "systl": 0.025},
+        {"x": 11, "xl": 10, "xh": 12, "y": 0.475, "stath": 0.051, "statl": 0.051, "systh": 0.021, "systl": 0.02},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.615, "stath": 0.075, "statl": 0.075, "systh": 0.039, "systl": 0.039},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.47, "stath": 0.086, "statl": 0.086, "systh": 0.03, "systl": 0.03},
+        {"x": 30, "xl": 24, "xh": 36, "y": 0.811, "stath": 0.247, "statl": 0.247, "systh": 0.053, "systl": 0.052},
     ]
 };
 
@@ -2383,7 +2383,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_PbPb_5TeV_CMS_cent-0-100_absy-lt-1"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -2393,12 +2393,12 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     kinea : "",
     kineb : "-0.96 < y<sub>cm</sub> < 0.04",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.263, "stath": 0.018, "statl": 0.018, "systh": 0.0249738, "systl": 0.0249738},
-        {"x": 5, "xl": 4, "xh": 6, "y": 0.236, "stath": 0.011, "statl": 0.011, "systh": 0.0182277, "systl": 0.0182277},
-        {"x": 7, "xl": 6, "xh": 8, "y": 0.276, "stath": 0.016, "statl": 0.016, "systh": 0.0233513, "systl": 0.0215705},
-        {"x": 10, "xl": 8, "xh": 12, "y": 0.274, "stath": 0.018, "statl": 0.018, "systh": 0.0224227, "systl": 0.0224227},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.263, "stath": 0.037, "statl": 0.037, "systh": 0.0258977, "systl": 0.0249738},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.192, "stath": 0.042, "statl": 0.042, "systh": 0.0240721, "systl": 0.0240721},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.263, "stath": 0.018, "statl": 0.018, "systh": 0.023, "systl": 0.023},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.236, "stath": 0.011, "statl": 0.011, "systh": 0.016, "systl": 0.016},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.276, "stath": 0.016, "statl": 0.016, "systh": 0.021, "systl": 0.019},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.274, "stath": 0.018, "statl": 0.018, "systh": 0.02, "systl": 0.02},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.263, "stath": 0.037, "statl": 0.037, "systh": 0.024, "systl": 0.023},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.192, "stath": 0.042, "statl": 0.042, "systh": 0.023, "systl": 0.023},
     ]
 };
 
@@ -2568,7 +2568,7 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DsubsToD0",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>0</sup>",
@@ -2578,14 +2578,14 @@ dataset["aprDsubsToD0_DsubsToD0_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     kinea : "",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.256, "stath": 0.045, "statl": 0.045, "systh": 0.0333724, "systl": 0.0333724},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.216, "stath": 0.025, "statl": 0.025, "systh": 0.017885, "systl": 0.017885},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.241, "stath": 0.023, "statl": 0.023, "systh": 0.0209884, "systl": 0.0209884},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.173, "stath": 0.021, "statl": 0.021, "systh": 0.0144904, "systl": 0.0144904},
-        {"x": 7, "xl": 6, "xh": 8, "y": 0.263, "stath": 0.028, "statl": 0.028, "systh": 0.021347, "systl": 0.021347},
-        {"x": 10, "xl": 8, "xh": 12, "y": 0.22, "stath": 0.032, "statl": 0.032, "systh": 0.0179516, "systl": 0.0179516},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.345, "stath": 0.073, "statl": 0.073, "systh": 0.0353828, "systl": 0.0353828},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.237, "stath": 0.079, "statl": 0.079, "systh": 0.0236832, "systl": 0.0236832},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.256, "stath": 0.045, "statl": 0.045, "systh": 0.032, "systl": 0.032},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.216, "stath": 0.025, "statl": 0.025, "systh": 0.016, "systl": 0.016},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.241, "stath": 0.023, "statl": 0.023, "systh": 0.019, "systl": 0.019},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.173, "stath": 0.021, "statl": 0.021, "systh": 0.013, "systl": 0.013},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.263, "stath": 0.028, "statl": 0.028, "systh": 0.019, "systl": 0.019},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.22, "stath": 0.032, "statl": 0.032, "systh": 0.016, "systl": 0.016},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.345, "stath": 0.073, "statl": 0.073, "systh": 0.033, "systl": 0.033},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.237, "stath": 0.079, "statl": 0.079, "systh": 0.022, "systl": 0.022},
     ]
 };
 
@@ -2720,10 +2720,73 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_PbPb_5TeV_ALICE_cent-60-80_absy-lt-
     ]
 };
 
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE_avgdNchdeta-eq-10p8_ycm-M0p96-0p04"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 10.8",
+    kineb : "-0.96 < y<sub>cm</sub> < 0.04",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.502, "stath": 0.088, "statl": 0.088, "systh": 0.049, "systl": 0.052},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.507, "stath": 0.049, "statl": 0.049, "systh": 0.04, "systl": 0.042},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.587, "stath": 0.065, "statl": 0.065, "systh": 0.044, "systl": 0.054},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.653, "stath": 0.074, "statl": 0.074, "systh": 0.051, "systl": 0.061},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.689, "stath": 0.137, "statl": 0.137, "systh": 0.081, "systl": 0.085},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE_avgdNchdeta-eq-31p6_ycm-M0p96-0p04"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 31.6",
+    kineb : "-0.96 < y<sub>cm</sub> < 0.04",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.527, "stath": 0.081, "statl": 0.081, "systh": 0.049, "systl": 0.052},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.532, "stath": 0.044, "statl": 0.044, "systh": 0.039, "systl": 0.042},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.512, "stath": 0.052, "statl": 0.052, "systh": 0.041, "systl": 0.049},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.578, "stath": 0.064, "statl": 0.064, "systh": 0.051, "systl": 0.059},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.438, "stath": 0.102, "statl": 0.102, "systh": 0.062, "systl": 0.064},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE_avgdNchdeta-eq-51p3_ycm-M0p96-0p04"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "pT",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 51.3",
+    kineb : "-0.96 < y<sub>cm</sub> < 0.04",
+    data : [
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.564, "stath": 0.108, "statl": 0.108, "systh": 0.056, "systl": 0.059},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.552, "stath": 0.07, "statl": 0.07, "systh": 0.043, "systl": 0.046},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.666, "stath": 0.09, "statl": 0.09, "systh": 0.053, "systl": 0.063},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.578, "stath": 0.09, "statl": 0.09, "systh": 0.049, "systl": 0.058},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.773, "stath": 0.224, "statl": 0.224, "systh": 0.099, "systl": 0.103},
+    ]
+};
+
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = {
     reference : "JHEP 12 (2019) 092",
     link : "https://arxiv.org/abs/1906.03425",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -2733,12 +2796,12 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pPb_5TeV_ALICE__ycm-M0p96-0p04"] = 
     kinea : "",
     kineb : "-0.96 < y<sub>cm</sub> < 0.04",
     data : [
-        {"x": 3, "xl": 2, "xh": 4, "y": 0.579, "stath": 0.039, "statl": 0.039, "systh": 0.0640667, "systl": 0.0649734},
-        {"x": 5, "xl": 4, "xh": 6, "y": 0.476, "stath": 0.023, "statl": 0.023, "systh": 0.0398686, "systl": 0.0407002},
-        {"x": 7, "xl": 6, "xh": 8, "y": 0.524, "stath": 0.03, "statl": 0.03, "systh": 0.0452829, "systl": 0.0452829},
-        {"x": 10, "xl": 8, "xh": 12, "y": 0.59, "stath": 0.039, "statl": 0.039, "systh": 0.0545706, "systl": 0.0554342},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.606, "stath": 0.085, "statl": 0.085, "systh": 0.0628269, "systl": 0.0628269},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.545, "stath": 0.121, "statl": 0.121, "systh": 0.0707964, "systl": 0.0707964},
+        {"x": 3, "xl": 2, "xh": 4, "y": 0.579, "stath": 0.039, "statl": 0.039, "systh": 0.058, "systl": 0.059},
+        {"x": 5, "xl": 4, "xh": 6, "y": 0.476, "stath": 0.023, "statl": 0.023, "systh": 0.033, "systl": 0.034},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.524, "stath": 0.03, "statl": 0.03, "systh": 0.038, "systl": 0.038},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.59, "stath": 0.039, "statl": 0.039, "systh": 0.047, "systl": 0.048},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.606, "stath": 0.085, "statl": 0.085, "systh": 0.056, "systl": 0.056},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.545, "stath": 0.121, "statl": 0.121, "systh": 0.066, "systl": 0.066},
     ]
 };
 
@@ -3606,7 +3669,7 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_13TeV_ALICE__absy-lt-0p5"] = {
 dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     reference : "EPJC 79 (2019) 388",
     link : "https://arxiv.org/abs/1901.07979",
-    update : "2000-01-01",
+    update : "2024-09-02",
     observable : "DsubsToDplusmn",
     xtitle : "pT",
     particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
@@ -3616,14 +3679,14 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_5TeV_ALICE__absy-lt-0p5"] = {
     kinea : "",
     kineb : "|y| < 0.5",
     data : [
-        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.621, "stath": 0.111, "statl": 0.111, "systh": 0.0804791, "systl": 0.0804791},
-        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.492, "stath": 0.057, "statl": 0.057, "systh": 0.0427869, "systl": 0.0427869},
-        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.51, "stath": 0.049, "statl": 0.049, "systh": 0.0449284, "systl": 0.0449284},
-        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.383, "stath": 0.046, "statl": 0.046, "systh": 0.0341326, "systl": 0.0341326},
-        {"x": 7, "xl": 6, "xh": 8, "y": 0.552, "stath": 0.057, "statl": 0.057, "systh": 0.0460119, "systl": 0.0460119},
-        {"x": 10, "xl": 8, "xh": 12, "y": 0.496, "stath": 0.071, "statl": 0.071, "systh": 0.0404036, "systl": 0.0404036},
-        {"x": 14, "xl": 12, "xh": 16, "y": 0.668, "stath": 0.133, "statl": 0.133, "systh": 0.0633302, "systl": 0.0633302},
-        {"x": 20, "xl": 16, "xh": 24, "y": 0.789, "stath": 0.261, "statl": 0.261, "systh": 0.0783336, "systl": 0.0783336},
+        {"x": 2.5, "xl": 2, "xh": 3, "y": 0.621, "stath": 0.111, "statl": 0.111, "systh": 0.075, "systl": 0.075},
+        {"x": 3.5, "xl": 3, "xh": 4, "y": 0.492, "stath": 0.057, "statl": 0.057, "systh": 0.036, "systl": 0.036},
+        {"x": 4.5, "xl": 4, "xh": 5, "y": 0.51, "stath": 0.049, "statl": 0.049, "systh": 0.038, "systl": 0.038},
+        {"x": 5.5, "xl": 5, "xh": 6, "y": 0.383, "stath": 0.046, "statl": 0.046, "systh": 0.029, "systl": 0.029},
+        {"x": 7, "xl": 6, "xh": 8, "y": 0.552, "stath": 0.057, "statl": 0.057, "systh": 0.038, "systl": 0.038},
+        {"x": 10, "xl": 8, "xh": 12, "y": 0.496, "stath": 0.071, "statl": 0.071, "systh": 0.033, "systl": 0.033},
+        {"x": 14, "xl": 12, "xh": 16, "y": 0.668, "stath": 0.133, "statl": 0.133, "systh": 0.055, "systl": 0.055},
+        {"x": 20, "xl": 16, "xh": 24, "y": 0.789, "stath": 0.261, "statl": 0.261, "systh": 0.069, "systl": 0.069},
     ]
 };
 
@@ -3644,6 +3707,261 @@ dataset["aprDsubsToDplusmn_DsubsToDplusmn_pT_pp_7TeV_ALICE__absy-lt-0p5"] = {
         {"x": 5, "xl": 4, "xh": 6, "y": 0.486, "stath": 0.081, "statl": 0.081, "systh": 0.0660739, "systl": 0.0660739},
         {"x": 7, "xl": 6, "xh": 8, "y": 0.497, "stath": 0.088, "statl": 0.088, "systh": 0.0671911, "systl": 0.0681296},
         {"x": 10, "xl": 8, "xh": 12, "y": 0.508, "stath": 0.082, "statl": 0.082, "systh": 0.0692464, "systl": 0.0692464},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-10p8_pT-12-16"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 10.8",
+    kineb : "12 < p<sub>T</sub> < 16 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.689, "stath": 0.137, "statl": 0.137, "systh": 0.081, "systl": 0.085},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-10p8_pT-2-4"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 10.8",
+    kineb : "2 < p<sub>T</sub> < 4 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.502, "stath": 0.088, "statl": 0.088, "systh": 0.049, "systl": 0.052},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-10p8_pT-4-6"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 10.8",
+    kineb : "4 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.507, "stath": 0.049, "statl": 0.049, "systh": 0.04, "systl": 0.042},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-10p8_pT-6-8"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 10.8",
+    kineb : "6 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.587, "stath": 0.065, "statl": 0.065, "systh": 0.044, "systl": 0.054},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-10p8_pT-8-12"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 10.8",
+    kineb : "8 < p<sub>T</sub> < 12 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.653, "stath": 0.074, "statl": 0.074, "systh": 0.051, "systl": 0.061},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-31p6_pT-12-16"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 31.6",
+    kineb : "12 < p<sub>T</sub> < 16 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.438, "stath": 0.102, "statl": 0.102, "systh": 0.062, "systl": 0.064},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-31p6_pT-2-4"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 31.6",
+    kineb : "2 < p<sub>T</sub> < 4 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.527, "stath": 0.081, "statl": 0.081, "systh": 0.049, "systl": 0.052},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-31p6_pT-4-6"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 31.6",
+    kineb : "4 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.532, "stath": 0.044, "statl": 0.044, "systh": 0.039, "systl": 0.042},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-31p6_pT-6-8"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 31.6",
+    kineb : "6 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.512, "stath": 0.052, "statl": 0.052, "systh": 0.041, "systl": 0.049},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-31p6_pT-8-12"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 31.6",
+    kineb : "8 < p<sub>T</sub> < 12 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.578, "stath": 0.064, "statl": 0.064, "systh": 0.051, "systl": 0.059},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-51p3_pT-12-16"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 51.3",
+    kineb : "12 < p<sub>T</sub> < 16 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.773, "stath": 0.224, "statl": 0.224, "systh": 0.099, "systl": 0.103},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-51p3_pT-2-4"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 51.3",
+    kineb : "2 < p<sub>T</sub> < 4 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.564, "stath": 0.108, "statl": 0.108, "systh": 0.056, "systl": 0.059},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-51p3_pT-4-6"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 51.3",
+    kineb : "4 < p<sub>T</sub> < 6 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.552, "stath": 0.07, "statl": 0.07, "systh": 0.043, "systl": 0.046},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-51p3_pT-6-8"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 51.3",
+    kineb : "6 < p<sub>T</sub> < 8 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.666, "stath": 0.09, "statl": 0.09, "systh": 0.053, "systl": 0.063},
+    ]
+};
+
+dataset["aprDsubsToDplusmn_DsubsToDplusmn_ycm_pPb_5TeV_ALICE_avgdNchdeta-eq-51p3_pT-8-12"] = {
+    reference : "JHEP 12 (2019) 092",
+    link : "https://arxiv.org/abs/1906.03425",
+    update : "2024-09-02",
+    observable : "DsubsToDplusmn",
+    xtitle : "ycm",
+    particle : "Prompt D<sub>s</sub> / D<sup>&plusmn;</sup>",
+    collision : "pPb",
+    energy : "5.02 TeV",
+    collab : "ALICE",
+    kinea : "&langle;dN<sub>ch</sub>/d&eta;&rangle; = 51.3",
+    kineb : "8 < p<sub>T</sub> < 12 GeV",
+    data : [
+        {"x": -0.46, "xl": -0.96, "xh": 0.04, "y": 0.578, "stath": 0.09, "statl": 0.09, "systh": 0.049, "systl": 0.058},
     ]
 };
 
